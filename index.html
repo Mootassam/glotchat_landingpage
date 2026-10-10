@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- SEO: the build script (_tools/build.py) fills the absolute URLs from SITE and writes /zh/ from this page -->
+  <title>GlotChat – Multiple WhatsApp Accounts + Translator for PC</title>
+  <meta name="description" content="Run multiple WhatsApp accounts in one window on Windows and translate every chat, voice note and photo offline in 49 languages. Separate notifications per account. Pay in USDT.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://glotchat.com/">
+  <link rel="alternate" hreflang="en" href="https://glotchat.com/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://glotchat.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://glotchat.com/">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="application-name" content="GlotChat">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- social previews (Telegram, WhatsApp, Facebook, X, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GlotChat">
+  <meta property="og:url" content="https://glotchat.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:title" content="GlotChat – All your WhatsApp accounts in one window, every customer in their language">
+  <meta property="og:description" content="Multiple WhatsApp accounts in one window. Messages, voice notes and photos translated offline on your PC. Pay in USDT.">
+  <meta property="og:image" content="https://glotchat.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GlotChat – multiple WhatsApp accounts with translation">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GlotChat – Multiple WhatsApp Accounts + Translator for PC">
+  <meta name="twitter:description" content="Multiple WhatsApp accounts in one window. Messages, voice notes and photos translated offline.">
+  <meta name="twitter:image" content="https://glotchat.com/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preload" as="image" href="/assets/media/chat-en.webp">
+  <!--jsonld--><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://glotchat.com/#org","name":"GlotChat","url":"https://glotchat.com/","logo":"https://glotchat.com/assets/img/icon-512.png","sameAs":["https://t.me/Capooo007"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","url":"https://t.me/Capooo007","availableLanguage":["English","Chinese"]}},{"@type":"WebSite","@id":"https://glotchat.com/#website","url":"https://glotchat.com/","name":"GlotChat","inLanguage":["en","zh-Hans"],"publisher":{"@id":"https://glotchat.com/#org"}},{"@type":"SoftwareApplication","@id":"https://glotchat.com/#app","name":"GlotChat","url":"https://glotchat.com/","operatingSystem":"Windows 10, Windows 11","applicationCategory":"BusinessApplication","description":"Run multiple WhatsApp accounts in one window on Windows, each isolated with its own notifications, with offline translation of messages, voice notes and photos in 49 languages.","image":"https://glotchat.com/og.png","inLanguage":"en","publisher":{"@id":"https://glotchat.com/#org"}},{"@type":"FAQPage","@id":"https://glotchat.com/#faq","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Is it safe for my WhatsApp accounts?","acceptedAnswer":{"@type":"Answer","text":"GlotChat opens the official WhatsApp Web for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you."}},{"@type":"Question","name":"Does translation need the internet?","acceptedAnswer":{"@type":"Answer","text":"No. Translation, voice transcription and photo reading run on your own PC. You only download a language pack once (English is built in). WhatsApp itself of course needs the internet."}},{"@type":"Question","name":"Which computer do I need?","acceptedAnswer":{"@type":"Answer","text":"Windows 10 or 11 (64-bit). Each WhatsApp account uses about 300–450 MB of memory: 8 GB RAM is fine for about 10 accounts, 16 GB or more for 20–30 accounts."}},{"@type":"Question","name":"Which languages are supported?","acceptedAnswer":{"@type":"Answer","text":"49 translation languages, including English, Chinese, Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Hindi, Japanese, Korean and Vietnamese. Voice messages are recognised in about 100 languages."}},{"@type":"Question","name":"How do I pay and receive the software?","acceptedAnswer":{"@type":"Answer","text":"Message us on Telegram, choose your plan and pay in USDT. You receive the installer, and we help you set it up if needed."}},{"@type":"Question","name":"Do I need to scan a QR code for every account?","acceptedAnswer":{"@type":"Answer","text":"Yes, once per account — with WhatsApp on that phone → Linked devices. After that the account stays logged in, even after restarting the PC."}},{"@type":"Question","name":"Does it work on Mac or phone?","acceptedAnswer":{"@type":"Answer","text":"GlotChat is a Windows desktop app. Your phones keep working normally — GlotChat is a linked device, like WhatsApp Web."}},{"@type":"Question","name":"Can my Chinese-speaking team use it?","acceptedAnswer":{"@type":"Answer","text":"Yes. The whole interface is available in Chinese, and agents can read and write in Chinese while customers receive their own language."}}]}]}</script><!--/jsonld-->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================== header ============================== -->
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="GlotChat home"><img src="/assets/img/logo-96.png" alt="" width="34" height="34"><span>GlotChat</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#demo" data-i18n="nav_demo">Demo</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    </nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page">EN</a>
+        <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh">中文</a>
+      </div>
+      <a class="btn tg sm" data-tg="general" data-place="nav" href="https://t.me/Capooo007" target="_blank" rel="noopener">
+        <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+        <span data-i18n="cta_nav">Contact us</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============================== hero ============================== -->
+<section class="hero">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dotlive"></span><span data-i18n="eyebrow">For sellers & support teams who chat with the world</span></span>
+      <h1 data-i18n-html="h1">All your WhatsApp accounts in one window. <span class="grad">Every customer in their language.</span></h1>
+      <p class="lead" data-i18n="lead">GlotChat runs many WhatsApp accounts side by side, each one fully isolated with its own notifications — and translates text, voice messages and photos instantly, right on your PC.</p>
+      <div class="hero-cta">
+        <a class="btn tg lg" data-tg="general" data-place="hero" href="https://t.me/Capooo007" target="_blank" rel="noopener">
+          <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+          <span data-i18n="cta_hero">Get GlotChat on Telegram</span>
+        </a>
+        <a class="btn ghost lg" href="#demo"><span class="play" aria-hidden="true">▶</span><span data-i18n="cta_demo">Watch it work</span></a>
+      </div>
+      <ul class="micro">
+        <li data-i18n="micro1">Fast reply on Telegram</li>
+        <li data-i18n="micro2">Pay with USDT</li>
+        <li data-i18n="micro3">Windows 10 / 11</li>
+      </ul>
+    </div>
+    <div class="hero-shot">
+      <div class="window">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+        <video class="vid" data-scene="chat" muted loop playsinline preload="none" poster="/assets/media/chat-en.webp" aria-label="GlotChat translating a WhatsApp chat">
+          <source data-src="/assets/media/chat-en.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="float f1" aria-hidden="true"><b>🌐 ES → EN</b><span data-i18n="float1">translated instantly</span></div>
+      <div class="float f2" aria-hidden="true"><b>27+</b><span data-i18n="float2">accounts in one window</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== facts ============================== -->
+<section class="facts" aria-label="Key facts">
+  <div class="wrap facts-in">
+    <div><b>27+</b><span data-i18n="fact1">WhatsApp accounts at once</span></div>
+    <div><b>49</b><span data-i18n="fact2">translation languages</span></div>
+    <div><b>100%</b><span data-i18n="fact3">offline — nothing sent to the cloud</span></div>
+    <div><b>🎤 + 🖼</b><span data-i18n="fact4">voice & photo translation</span></div>
+  </div>
+</section>
+
+<!-- ============================== demo tabs ============================== -->
+<section class="sec" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker" data-i18n="demo_k">See it in action</span>
+      <h2 data-i18n="demo_h">Read, reply and understand — in any language</h2>
+      <p data-i18n="demo_p">Real GlotChat features, recorded. Pick one:</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-tab="chat"><span>💬</span><b data-i18n="t_chat">Chat translation</b></button>
+      <button role="tab" aria-selected="false" data-tab="voice"><span>🎤</span><b data-i18n="t_voice">Voice messages</b></button>
+      <button role="tab" aria-selected="false" data-tab="photo"><span>🖼</span><b data-i18n="t_photo">Photos & documents</b></button>
+      <button role="tab" aria-selected="false" data-tab="accounts"><span>🗂</span><b data-i18n="t_accounts">Many accounts</b></button>
+    </div>
+    <div class="demo">
+      <div class="window big">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+        <video class="vid" id="demoVid" data-scene="chat" muted loop playsinline preload="none" poster="/assets/media/chat-en.webp" aria-label="GlotChat demo">
+          <source data-src="/assets/media/chat-en.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="demo-text">
+        <div class="pane" data-pane="chat">
+          <h3 data-i18n="p_chat_h">Two-way chat translation</h3>
+          <ul class="ticks">
+            <li data-i18n="p_chat_1">Every customer message is translated right under the original.</li>
+            <li data-i18n="p_chat_2">Write in your own language — GlotChat shows the translation before it goes out.</li>
+            <li data-i18n="p_chat_3">The customer receives perfect Spanish, Arabic, Turkish… you keep what you wrote.</li>
+          </ul>
+        </div>
+        <div class="pane" data-pane="voice" hidden>
+          <h3 data-i18n="p_voice_h">Voice notes become text</h3>
+          <ul class="ticks">
+            <li data-i18n="p_voice_1">One click on 🎤 Transcribe under any voice message.</li>
+            <li data-i18n="p_voice_2">You get what the customer said — and the translation.</li>
+            <li data-i18n="p_voice_3">Works offline. The audio never leaves your PC.</li>
+          </ul>
+        </div>
+        <div class="pane" data-pane="photo" hidden>
+          <h3 data-i18n="p_photo_h">Text in photos, translated</h3>
+          <ul class="ticks">
+            <li data-i18n="p_photo_1">Orders, invoices, price lists, screenshots — click 🔤 Read text.</li>
+            <li data-i18n="p_photo_2">Latin, Arabic, Cyrillic, Chinese, Korean, Thai and more.</li>
+            <li data-i18n="p_photo_3">The customer is not notified of anything.</li>
+          </ul>
+        </div>
+        <div class="pane" data-pane="accounts" hidden>
+          <h3 data-i18n="p_acc_h">Many accounts, zero mix-ups</h3>
+          <ul class="ticks">
+            <li data-i18n="p_acc_1">Each account has its own sealed session — logins never mix.</li>
+            <li data-i18n="p_acc_2">Notifications show which account they belong to; one click opens the right chat.</li>
+            <li data-i18n="p_acc_3">Ctrl+K finds any of your accounts in a second. Switching is instant.</li>
+          </ul>
+        </div>
+        <a class="btn tg" data-tg="demo" data-place="demo" href="https://t.me/Capooo007" target="_blank" rel="noopener">
+          <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+          <span data-i18n="cta_live">Ask for a live demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== features ============================== -->
+<section class="sec soft" id="features">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker" data-i18n="feat_k">Everything you need</span>
+      <h2 data-i18n="feat_h">Built for people who sell and support across borders</h2>
+    </div>
+    <div class="grid">
+      <article class="card"><span class="ic">🗂</span><h3 data-i18n="f1_h">Many accounts, one window</h3><p data-i18n="f1_p">Tabs for every number. Tested with 27 accounts running at the same time.</p></article>
+      <article class="card"><span class="ic">🔒</span><h3 data-i18n="f2_h">Fully isolated</h3><p data-i18n="f2_p">Each account keeps its own login, cookies and storage. No mixing, no leaks.</p></article>
+      <article class="card"><span class="ic">🔔</span><h3 data-i18n="f3_h">Notifications per account</h3><p data-i18n="f3_p">“Shop UAE · Fatima” — you always know which account a message came to.</p></article>
+      <article class="card"><span class="ic">🌐</span><h3 data-i18n="f4_h">Two-way translation</h3><p data-i18n="f4_p">49 languages. Incoming translated automatically, outgoing previewed before sending.</p></article>
+      <article class="card"><span class="ic">🎤</span><h3 data-i18n="f5_h">Voice → text</h3><p data-i18n="f5_p">Transcribe and translate voice notes in about 100 spoken languages.</p></article>
+      <article class="card"><span class="ic">🔤</span><h3 data-i18n="f6_h">Photo → text</h3><p data-i18n="f6_p">Read and translate the text in photos, invoices and screenshots.</p></article>
+      <article class="card"><span class="ic">⚡</span><h3 data-i18n="f7_h">Quick-reply templates</h3><p data-i18n="f7_p">Saved answers with the customer's name, translated like everything you write.</p></article>
+      <article class="card"><span class="ic">🛡</span><h3 data-i18n="f8_h">Private & offline</h3><p data-i18n="f8_p">Translation runs on your PC. Messages are never sent to Google, DeepL or any AI service.</p></article>
+      <article class="card"><span class="ic">🀄</span><h3 data-i18n="f9_h">English & 中文 interface</h3><p data-i18n="f9_p">Switch GlotChat's menus between English and Chinese in one click.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== real app ============================== -->
+<section class="sec" id="inside">
+  <div class="wrap split">
+    <div>
+      <span class="kicker" data-i18n="in_k">Inside the app</span>
+      <h2 data-i18n="in_h">Made to run all day, every day</h2>
+      <ul class="ticks big">
+        <li data-i18n-html="in_1"><b>Self-healing:</b> a frozen or crashed account restarts by itself — the others keep working.</li>
+        <li data-i18n-html="in_2"><b>Smart start-up:</b> accounts load a few at a time, so your PC stays responsive.</li>
+        <li data-i18n-html="in_3"><b>Memory monitor:</b> see what each account uses; put rarely used ones to sleep.</li>
+        <li data-i18n-html="in_4"><b>Real WhatsApp Web:</b> GlotChat never sends anything on its own — you stay in control.</li>
+      </ul>
+    </div>
+    <figure class="shot">
+      <img src="/assets/img/app-switcher.webp" alt="GlotChat account switcher: search and open any of 27 WhatsApp accounts with Ctrl+K" width="1080" height="840" loading="lazy" decoding="async">
+      <figcaption data-i18n="in_cap">The account switcher (Ctrl+K): every account with its status, memory and unread messages.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap split rev">
+    <div>
+      <span class="kicker" data-i18n="zh_k">中文 / English</span>
+      <h2 data-i18n="zh_h">Your team can use it in Chinese or English</h2>
+      <p class="muted" data-i18n="zh_p">Every menu, button and message inside GlotChat is available in both languages — and the reply translation works into Chinese too, so a Chinese-speaking agent can serve customers in Spanish, Arabic, German or Turkish.</p>
+    </div>
+    <figure class="shot">
+      <img src="/assets/media/chat-zh.webp" alt="GlotChat with a Chinese interface: the agent writes Chinese, the customer receives Spanish" width="1600" height="1000" loading="lazy" decoding="async">
+      <figcaption data-i18n="zh_cap">Chinese interface: the agent writes Chinese, the customer receives Spanish.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================== how it works ============================== -->
+<section class="sec soft" id="how">
+  <div class="wrap">
+    <div class="head"><span class="kicker" data-i18n="how_k">Simple</span><h2 data-i18n="how_h">Up and running in 10 minutes</h2></div>
+    <ol class="steps">
+      <li><span>1</span><h3 data-i18n="s1_h">Message us on Telegram</h3><p data-i18n="s1_p">Tell us how many WhatsApp accounts you have. We answer quickly and can show you a live demo.</p></li>
+      <li><span>2</span><h3 data-i18n="s2_h">Pay with USDT</h3><p data-i18n="s2_p">Choose your plan and pay in USDT. You receive the installer right away.</p></li>
+      <li><span>3</span><h3 data-i18n="s3_h">Install & scan</h3><p data-i18n="s3_p">Run the installer, add your accounts and scan each QR code with WhatsApp → Linked devices. Done.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== before / after ============================== -->
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="head"><span class="kicker" data-i18n="why_k">Why GlotChat</span><h2 data-i18n="why_h">Stop copy-pasting into translators</h2></div>
+    <div class="vs">
+      <div class="col bad">
+        <h3 data-i18n="bad_h">Without GlotChat</h3>
+        <ul>
+          <li data-i18n="bad_1">A phone or browser profile for every number</li>
+          <li data-i18n="bad_2">Copy → paste → translate → paste back, for every message</li>
+          <li data-i18n="bad_3">Voice notes you can't understand</li>
+          <li data-i18n="bad_4">Missed messages on the "other" account</li>
+          <li data-i18n="bad_5">Customer chats pasted into online translators</li>
+        </ul>
+      </div>
+      <div class="col good">
+        <h3 data-i18n="good_h">With GlotChat</h3>
+        <ul>
+          <li data-i18n="good_1">All numbers in one window, one click apart</li>
+          <li data-i18n="good_2">Translation appears under every message automatically</li>
+          <li data-i18n="good_3">Voice notes turned into text, in your language</li>
+          <li data-i18n="good_4">Every notification tells you which account it's for</li>
+          <li data-i18n="good_5">Everything translated offline, on your own PC</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== pricing ==============================
+     EDIT PRICES HERE: change the numbers in data-price and in the <b class="amt"> elements.
+     The Telegram message for each plan is filled automatically from data-plan + data-price. -->
+<section class="sec soft" id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker" data-i18n="pr_k">Pricing</span>
+      <h2 data-i18n="pr_h">One payment. Use it for life.</h2>
+      <p data-i18n="pr_p">Pay once in USDT — no monthly subscription. Every plan includes all features.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3 data-i18n="pl1_n">Starter</h3>
+        <p class="who" data-i18n="pl1_w">For one seller</p>
+        <div class="price"><b class="amt">49</b><span>USDT</span></div>
+        <p class="once" data-i18n="once">one-time · lifetime license</p>
+        <ul class="ticks">
+          <li data-i18n-html="pl1_1">Up to <b>5</b> WhatsApp accounts</li>
+          <li data-i18n="pl_all">Text, voice & photo translation</li>
+          <li data-i18n="pl_tpl">Templates · EN / 中文 interface</li>
+          <li data-i18n="pl1_pc">1 computer</li>
+        </ul>
+        <a class="btn tg block" data-tg="plan" data-plan="Starter" data-price="49" data-place="price-starter" href="https://t.me/Capooo007" target="_blank" rel="noopener"><span data-i18n="buy">Buy on Telegram</span></a>
+      </article>
+      <article class="plan pop">
+        <span class="ribbon" data-i18n="popular">Most popular</span>
+        <h3 data-i18n="pl2_n">Pro</h3>
+        <p class="who" data-i18n="pl2_w">For growing shops & teams</p>
+        <div class="price"><b class="amt">99</b><span>USDT</span></div>
+        <p class="once" data-i18n="once">one-time · lifetime license</p>
+        <ul class="ticks">
+          <li data-i18n-html="pl2_1">Up to <b>15</b> WhatsApp accounts</li>
+          <li data-i18n="pl_all">Text, voice & photo translation</li>
+          <li data-i18n="pl_tpl">Templates · EN / 中文 interface</li>
+          <li data-i18n="pl2_pc">1 computer · setup help</li>
+        </ul>
+        <a class="btn tg block" data-tg="plan" data-plan="Pro" data-price="99" data-place="price-pro" href="https://t.me/Capooo007" target="_blank" rel="noopener"><span data-i18n="buy">Buy on Telegram</span></a>
+      </article>
+      <article class="plan">
+        <h3 data-i18n="pl3_n">Business</h3>
+        <p class="who" data-i18n="pl3_w">For agencies & big teams</p>
+        <div class="price"><b class="amt">199</b><span>USDT</span></div>
+        <p class="once" data-i18n="once">one-time · lifetime license</p>
+        <ul class="ticks">
+          <li data-i18n-html="pl3_1"><b>Unlimited</b> WhatsApp accounts</li>
+          <li data-i18n="pl_all">Text, voice & photo translation</li>
+          <li data-i18n="pl_tpl">Templates · EN / 中文 interface</li>
+          <li data-i18n="pl3_pc">Up to 3 computers · priority support</li>
+        </ul>
+        <a class="btn tg block" data-tg="plan" data-plan="Business" data-price="199" data-place="price-business" href="https://t.me/Capooo007" target="_blank" rel="noopener"><span data-i18n="buy">Buy on Telegram</span></a>
+      </article>
+    </div>
+    <p class="paynote"><span class="usdt">₮</span> <span data-i18n="paynote">Payment in USDT (TRC20 · BEP20 · ERC20). Questions before buying? Just ask — we reply on Telegram.</span></p>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="sec" id="faq">
+  <div class="wrap narrow">
+    <div class="head"><span class="kicker" data-i18n="faq_k">FAQ</span><h2 data-i18n="faq_h">Questions, answered</h2></div>
+    <details><summary data-i18n="q1">Is it safe for my WhatsApp accounts?</summary><p data-i18n="a1">GlotChat opens the official WhatsApp Web for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you.</p></details>
+    <details><summary data-i18n="q2">Does translation need the internet?</summary><p data-i18n="a2">No. Translation, voice transcription and photo reading run on your own PC. You only download a language pack once (English is built in). WhatsApp itself of course needs the internet.</p></details>
+    <details><summary data-i18n="q3">Which computer do I need?</summary><p data-i18n="a3">Windows 10 or 11 (64-bit). Each WhatsApp account uses about 300–450 MB of memory: 8 GB RAM is fine for about 10 accounts, 16 GB or more for 20–30 accounts.</p></details>
+    <details><summary data-i18n="q4">Which languages are supported?</summary><p data-i18n="a4">49 translation languages, including English, Chinese, Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Hindi, Japanese, Korean and Vietnamese. Voice messages are recognised in about 100 languages.</p></details>
+    <details><summary data-i18n="q5">How do I pay and receive the software?</summary><p data-i18n="a5">Message us on Telegram, choose your plan and pay in USDT. You receive the installer, and we help you set it up if needed.</p></details>
+    <details><summary data-i18n="q6">Do I need to scan a QR code for every account?</summary><p data-i18n="a6">Yes, once per account — with WhatsApp on that phone → Linked devices. After that the account stays logged in, even after restarting the PC.</p></details>
+    <details><summary data-i18n="q7">Does it work on Mac or phone?</summary><p data-i18n="a7">GlotChat is a Windows desktop app. Your phones keep working normally — GlotChat is a linked device, like WhatsApp Web.</p></details>
+    <details><summary data-i18n="q8">Can my Chinese-speaking team use it?</summary><p data-i18n="a8">Yes. The whole interface is available in Chinese, and agents can read and write in Chinese while customers receive their own language.</p></details>
+  </div>
+</section>
+
+<!-- ============================== final CTA ============================== -->
+<section class="final" id="contact">
+  <div class="wrap final-in">
+    <div>
+      <h2 data-i18n="fin_h">Ready to talk to the whole world from one window?</h2>
+      <p data-i18n="fin_p">Message us on Telegram — we'll answer your questions, show you a live demo and help you get started.</p>
+      <div class="hero-cta">
+        <a class="btn tg lg" data-tg="general" data-place="final" href="https://t.me/Capooo007" target="_blank" rel="noopener">
+          <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+          <span>@Capooo007</span>
+        </a>
+        <button class="btn ghost lg" type="button" id="copyTg"><span data-i18n="copy">Copy username</span></button>
+      </div>
+    </div>
+    <div class="qr">
+      <img src="/assets/img/telegram-qr.svg" alt="QR code to open Telegram @Capooo007" width="200" height="200" loading="lazy">
+      <span data-i18n="qr">On a computer? Scan with your phone's camera to open Telegram.</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="brand"><img src="/assets/img/logo-96.png" alt="" width="28" height="28"><span>GlotChat</span></div>
+    <p data-i18n="legal">WhatsApp is a trademark of WhatsApp LLC. GlotChat is an independent product and is not affiliated with WhatsApp or Meta.</p>
+    <p>© <span id="year">2026</span> GlotChat · <a data-tg="general" data-place="footer" href="https://t.me/Capooo007" target="_blank" rel="noopener">Telegram @Capooo007</a></p>
+  </div>
+</footer>
+
+<!-- always-visible contact: floating button (desktop) + bottom bar (mobile) -->
+<a class="fab" data-tg="general" data-place="fab" href="https://t.me/Capooo007" target="_blank" rel="noopener" aria-label="Contact us on Telegram">
+  <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+  <span data-i18n="fab">Chat with us</span>
+</a>
+<div class="mbar">
+  <a class="btn tg block" data-tg="general" data-place="mobile-bar" href="https://t.me/Capooo007" target="_blank" rel="noopener">
+    <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>
+    <span data-i18n="mbar">Get GlotChat — message us on Telegram</span>
+  </a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

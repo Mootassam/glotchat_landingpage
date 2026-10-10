@@ -1,0 +1,370 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat demo scenes</title>
+<style>
+  :root { --bg:#0b141a; --panel:#111b21; --panel2:#202c33; --line:#26343d; --txt:#e9edef; --muted:#8696a0;
+          --in:#202c33; --out:#005c4b; --brand:#10c48c; --brand2:#0b8fb0; --acc:#7c5cff; --shell:#0f141b; --shell2:#161d26; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #070b10; font-family: "Segoe UI Variable Text", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #stage { width: 1200px; height: 750px; position: relative; overflow: hidden; background: var(--shell); color: var(--txt); }
+  /* ---------- GlotChat shell ---------- */
+  .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 64px; background: #172029; display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 12px; }
+  .rail .logo { width: 42px; height: 42px; border-radius: 13px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; font-weight: 800; font-size: 13px; color: #fff; letter-spacing: -.5px; }
+  .rail .rb { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #8a97a8; font-size: 18px; }
+  .rail .rb.on { background: rgba(16,196,140,.16); color: #2fd59b; }
+  .tabs { position: absolute; left: 64px; right: 0; top: 0; height: 46px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: stretch; padding: 0 8px; gap: 2px; color: #3b4652; }
+  .tab { display: flex; align-items: center; gap: 8px; padding: 0 12px 0 8px; font-size: 13px; font-weight: 600; position: relative; white-space: nowrap; }
+  .tab .ic { width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 13px; position: relative; }
+  .tab .ic i { position: absolute; right: -3px; bottom: -3px; width: 10px; height: 10px; border-radius: 50%; background: #22c55e; border: 2px solid #fff; }
+  .tab.on { background: #f5f7fa; color: #111; }
+  .tab.on::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--c); }
+  .tab .un { min-width: 18px; height: 18px; border-radius: 9px; background: #e5484d; color: #fff; font-size: 10.5px; font-weight: 800; display: grid; place-items: center; padding: 0 5px; }
+  .tab.add { color: #9aa5b1; font-size: 18px; padding: 0 10px; }
+  .tools { white-space: nowrap; flex: none; margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: #3b4652; }
+  .tools .sw { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border: 1px solid #e3e7ec; border-radius: 9px; background: #f5f7fa; color: #10a37a; }
+  .tools .sw b { width: 30px; height: 17px; border-radius: 9px; background: #10c48c; position: relative; }
+  .tools .sw b::after { content: ""; position: absolute; right: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #fff; }
+  .tools .sel { border: 1px solid #e3e7ec; border-radius: 8px; padding: 5px 10px; background: #fff; }
+  /* ---------- WhatsApp area ---------- */
+  .wa { position: absolute; left: 64px; right: 0; top: 46px; bottom: 0; display: flex; background: var(--bg); }
+  .list { width: 330px; background: var(--panel); border-right: 1px solid var(--line); }
+  .list h3 { margin: 0; padding: 16px 18px 10px; font-size: 19px; font-weight: 700; }
+  .search { margin: 0 14px 10px; height: 34px; border-radius: 9px; background: var(--panel2); color: var(--muted); font-size: 13px; display: flex; align-items: center; padding: 0 12px; }
+  .row { display: flex; gap: 12px; padding: 10px 14px; align-items: center; }
+  .row.on { background: #2a3942; }
+  .av { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #fff; flex: none; font-size: 16px; }
+  .row .t { flex: 1; min-width: 0; }
+  .row .t b { display: block; font-weight: 600; font-size: 14.5px; }
+  .row .t span { display: block; font-size: 13px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .m { font-size: 11.5px; color: var(--muted); text-align: right; }
+  .row .m em { display: inline-grid; place-items: center; min-width: 19px; height: 19px; border-radius: 10px; background: #00a884; color: #111b21; font-style: normal; font-weight: 800; font-size: 11px; margin-top: 4px; padding: 0 5px; }
+  .chat { flex: 1; display: flex; flex-direction: column; position: relative; background-color: #0b141a;
+          background-image: radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px); background-size: 22px 22px; }
+  .chead { height: 58px; background: var(--panel2); display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .chead .av { width: 38px; height: 38px; font-size: 14px; }
+  .chead b { font-size: 15px; font-weight: 600; }
+  .chead small { display: block; color: var(--muted); font-size: 12px; }
+  .chips { position: absolute; right: 14px; top: 70px; display: flex; gap: 6px; z-index: 3; }
+  .chip { height: 28px; padding: 0 11px; border-radius: 14px; background: #fff; color: #1f2933; font-size: 12px; font-weight: 650; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--acc); }
+  .msgs { flex: 1; padding: 18px 60px 10px; display: flex; flex-direction: column; gap: 7px; justify-content: flex-end; overflow: hidden; }
+  .b { max-width: 62%; padding: 7px 10px 6px; border-radius: 9px; font-size: 14.2px; line-height: 1.38; position: relative; box-shadow: 0 1px .5px rgba(0,0,0,.13); }
+  .b.in { align-self: flex-start; background: var(--in); border-top-left-radius: 0; }
+  .b.out { align-self: flex-end; background: var(--out); border-top-right-radius: 0; }
+  .b .tm { float: right; margin: 6px 0 -4px 10px; font-size: 11px; color: rgba(233,237,239,.6); }
+  .tr { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(233,237,239,.25); font-size: 13.4px; color: rgba(233,237,239,.88); }
+  .badge { display: inline-flex; font-size: 10.5px; font-weight: 750; padding: 0 6px; border-radius: 9px; margin-right: 6px; color: #fff; background: var(--acc); vertical-align: 1px; }
+  .badge.grey { background: rgba(140,150,160,.55); }
+  .badge.vo { background: #0ea5e9; }
+  .badge.ph2 { background: #f59e0b; }
+  .comp { height: 62px; background: var(--panel2); display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .comp .box { flex: 1; height: 42px; border-radius: 10px; background: #2a3942; display: flex; align-items: center; padding: 0 14px; font-size: 14.5px; color: var(--txt); }
+  .comp .box .ph { color: var(--muted); }
+  .caret { display: inline-block; width: 2px; height: 18px; background: #00a884; margin-left: 1px; vertical-align: -3px; }
+  .comp .ic { color: var(--muted); font-size: 20px; }
+  /* send preview panel (GlotChat) */
+  .panel { position: absolute; left: 16px; right: 16px; bottom: 74px; background: #fff; color: #1f2933; border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.45); padding: 12px 14px; font-size: 13px; z-index: 4; }
+  .panel .ph { display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 8px; }
+  .panel .ph .link { color: #6d4cff; }
+  .panel .ta { border: 1.5px solid #7c5cff; border-radius: 10px; padding: 9px 11px; font-size: 14.5px; line-height: 1.4; }
+  .panel .orig { color: #6b7684; margin-top: 8px; font-size: 12.5px; }
+  .panel .row2 { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+  .panel .hint { color: #8a95a3; font-size: 11.5px; margin-right: auto; }
+  .btn { height: 30px; padding: 0 13px; border-radius: 9px; font-weight: 650; font-size: 12.5px; display: inline-flex; align-items: center; border: 1px solid #e3e7ec; background: #fff; }
+  .btn.pri { background: linear-gradient(135deg,#7c5cff,#5b3df5); color: #fff; border: 0; }
+  /* voice + photo */
+  .voice { display: flex; align-items: center; gap: 10px; min-width: 300px; }
+  .voice .play { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: #d1d7db; font-size: 16px; }
+  .voice .wave { flex: 1; height: 26px; display: flex; align-items: center; gap: 2px; }
+  .voice .wave i { flex: 1; background: #8696a0; border-radius: 2px; }
+  .voice .pav { width: 40px; height: 40px; border-radius: 50%; background: #c2410c; display: grid; place-items: center; font-weight: 700; }
+  .pill { all: unset; display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 650; padding: 2px 10px; border-radius: 10px; background: rgba(140,150,160,.22); }
+  .pill.hot { background: #7c5cff; color: #fff; }
+  .photo { width: 300px; height: 190px; border-radius: 7px; overflow: hidden; background: #f4efe4; color: #2b2b2b; padding: 16px 18px; font-family: "Segoe Print", "Comic Sans MS", cursive; font-size: 15px; line-height: 1.55; transform: rotate(-1.2deg); box-shadow: inset 0 0 30px rgba(120,90,40,.25); }
+  .photo b { font-family: "Segoe UI", sans-serif; font-weight: 800; display: block; margin-bottom: 4px; font-size: 15px; }
+  /* notifications (Windows toasts) */
+  .toast { position: absolute; right: 18px; width: 330px; background: #2b2b2b; border: 1px solid #3a3a3a; color: #fff; border-radius: 10px; padding: 12px 14px; box-shadow: 0 18px 40px rgba(0,0,0,.55); font-size: 12.5px; z-index: 6; }
+  .toast .top { display: flex; align-items: center; gap: 8px; color: #c8c8c8; font-size: 11.5px; margin-bottom: 6px; }
+  .toast .top .lg { width: 16px; height: 16px; border-radius: 5px; background: linear-gradient(135deg,#10c48c,#0878aa); }
+  .toast b { display: block; font-size: 13.5px; margin-bottom: 2px; }
+  .toast .o { color: #a8a8a8; font-size: 12px; margin-top: 3px; }
+  /* account switcher */
+  .switch { position: absolute; left: 50%; top: 70px; width: 470px; margin-left: -235px; background: #161d26; color: #e8edf3; border: 1px solid #2a3442; border-radius: 16px; box-shadow: 0 30px 60px rgba(0,0,0,.6); z-index: 7; overflow: hidden; }
+  .switch .q { padding: 13px 16px; border-bottom: 1px solid #2a3442; font-size: 15px; color: #8a97a8; }
+  .switch .q span { color: #fff; }
+  .switch .it { display: flex; align-items: center; gap: 12px; padding: 8px 14px; font-size: 13.5px; }
+  .switch .it.sel { background: #222c38; }
+  .switch .it .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 12px; }
+  .switch .it small { display: block; color: #8a97a8; font-size: 11.5px; }
+  .switch .it .un { margin-left: auto; min-width: 20px; height: 20px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 11px; font-weight: 800; display: grid; place-items: center; }
+  .switch .foot { padding: 9px 16px; border-top: 1px solid #2a3442; font-size: 11.5px; color: #8a97a8; }
+  .dim { position: absolute; inset: 0; background: rgba(5,8,12,.55); z-index: 6; }
+  /* cursor + click ripple */
+  .cursor { position: absolute; width: 22px; height: 22px; z-index: 20; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+  .ripple { position: absolute; width: 36px; height: 36px; margin: -18px 0 0 -18px; border-radius: 50%; border: 3px solid rgba(124,92,255,.85); z-index: 19; }
+  [data-k] { will-change: opacity, transform; }
+</style></head>
+<body>
+<div id="stage"></div>
+<script>
+/* ======================= scene data (EN / 中文 agent) ======================= */
+const LANG = new URLSearchParams(location.search).get('lang') === 'zh' ? 'zh' : 'en';
+const SCENE = new URLSearchParams(location.search).get('scene') || 'chat';
+const Z = LANG === 'zh';
+const L = {
+  my: Z ? '中文' : 'English', auto: Z ? '自动检测' : 'Auto-detect',
+  chipLang: (n) => (Z ? '自动 · ' : 'Auto · ') + n, tpl: Z ? '⚡ 快捷回复' : '⚡ Templates', mode: Z ? '👁 发送：预览' : '👁 Send: Preview',
+  sendIn: (n) => (Z ? '以' + n + '发送' : 'Send in ' + n), change: Z ? '更改语言' : 'Change language', wrote: Z ? '你写的是：' : 'You wrote:',
+  hint: Z ? 'Enter 发送 · Shift+Enter 换行 · Esc 编辑' : 'Enter to send · Shift+Enter new line · Esc to edit',
+  edit: Z ? '编辑' : 'Edit', orig: Z ? '发送原文' : 'Send original', send: Z ? '发送 ➤' : 'Send ➤', youWrote: Z ? '✎ 你写的是' : '✎ You wrote',
+  type: Z ? '输入消息' : 'Type a message', search: Z ? '搜索或开始新的聊天' : 'Search or start a new chat',
+  transcribe: Z ? '🎤 转文字' : '🎤 Transcribe', transcribing: Z ? '🎤 正在转写…' : '🎤 Transcribing…',
+  readText: Z ? '🔤 识别文字' : '🔤 Read text', reading: Z ? '🔤 正在识别图片…' : '🔤 Reading the photo…',
+  es: Z ? '西班牙语' : 'Spanish', tr: Z ? '土耳其语' : 'Turkish', de: Z ? '德语' : 'German', to: Z ? 'ZH' : 'EN',
+  online: Z ? '在线' : 'online', searchAcc: Z ? '搜索 27 个账号…' : 'Search 27 accounts…', connected: Z ? '已连接' : 'Connected',
+  running: Z ? '27 个运行中 · 电脑可用：7.9 GB' : '27 running · PC free: 7.9 GB',
+};
+const CHAT = {
+  in1: 'Hola, buenas tardes. ¿Tienen esta camisa en talla grande?',
+  in1t: Z ? '下午好！这件衬衫有大号吗？' : 'Hello, good afternoon. Do you have this shirt in a large size?',
+  in2: '¿Cuánto cuesta el envío a Madrid?',
+  in2t: Z ? '寄到马德里的运费是多少？' : 'How much is shipping to Madrid?',
+  typed: Z ? '有大号的！本周寄到马德里免运费。' : 'Yes, we have it in large! Shipping to Madrid is free this week.',
+  es: '¡Sí, la tenemos en talla grande! El envío a Madrid es gratis esta semana.',
+};
+const VOICE = {
+  text: 'Merhaba, yarın sabah ofis temizliği için gelebilir misiniz? Fiyat ne kadar?',
+  tr: Z ? '你好，你们明天上午可以来做办公室清洁吗？价格是多少？' : 'Hello, can you come tomorrow morning for office cleaning? How much is it?',
+};
+const PHOTO = {
+  lines: ['Bestellung #2381', '3 × Hemd Größe L – 75 €', 'Versand nach Berlin – 6 €', 'Gesamt: 81 €'],
+  tr: Z ? ['订单 #2381', '3 × L 码衬衫 – 75 €', '寄往柏林 – 6 €', '合计：81 €'] : ['Order #2381', '3 × Shirt size L – €75', 'Shipping to Berlin – €6', 'Total: €81'],
+};
+const ACCS = [['Sales EU', '#10b981'], ['Support TR', '#7c5cff'], ['Shop UAE', '#f59e0b'], ['Export CN', '#ef4444'], ['Store FR', '#0ea5e9'], ['B2B DE', '#ec4899'], ['Retail BR', '#84cc16']];
+
+/* ======================= tiny timeline engine (seekable) ======================= */
+const T = [];               // {el, t0, d, props, ease}
+const TY = [];              // typing: {el, t0, cps, text, caret}
+const ease = (x) => 1 - Math.pow(1 - x, 3);
+const $ = (s, r = document) => r.querySelector(s);
+function tween(el, t0, d, props, e = ease) { T.push({ el, t0, d, props, e }); return el; }
+function show(el, t0, d = 0.35, dy = 10) { el.style.opacity = 0; return tween(el, t0, d, { opacity: [0, 1], y: [dy, 0] }); }
+function hide(el, t0, d = 0.25) { return tween(el, t0, d, { opacity: [1, 0] }); }
+function type(el, t0, text, cps = 18, caret = true) { TY.push({ el, t0, text, cps, caret }); return t0 + [...text].length / cps; }
+function seek(t) {
+  // per element + property: before the first tween -> its start value; otherwise the latest tween that has started
+  const st = new Map();
+  const sorted = T.slice().sort((a, b) => a.t0 - b.t0);
+  for (const a of sorted) {
+    const s = st.get(a.el) || {};
+    for (const p in a.props) {
+      const [f, to] = a.props[p];
+      if (!(p in s)) s[p] = f;                              // state before anything starts
+      if (t >= a.t0) { const k = Math.min(1, (t - a.t0) / a.d); s[p] = f + (to - f) * a.e(k); }
+    }
+    st.set(a.el, s);
+  }
+  for (const [el, s] of st) {
+    if ('opacity' in s) el.style.opacity = s.opacity.toFixed(3);
+    const tr = [];
+    if ('x' in s || 'y' in s) tr.push(`translate(${(s.x || 0).toFixed(1)}px, ${(s.y || 0).toFixed(1)}px)`);
+    if ('scale' in s) tr.push(`scale(${s.scale.toFixed(3)})`);
+    if (tr.length) el.style.transform = tr.join(' ');
+    if ('h' in s) el.style.maxHeight = s.h.toFixed(0) + 'px';
+  }
+  // typing: each element shows the latest typing entry that has started (or its empty placeholder)
+  const byEl = new Map();
+  for (const y of TY) { if (!byEl.has(y.el)) byEl.set(y.el, null); if (t >= y.t0 && (!byEl.get(y.el) || y.t0 >= byEl.get(y.el).t0)) byEl.set(y.el, y); }
+  const blink = Math.floor(t * 2) % 2 === 0;
+  for (const [el, y] of byEl) {
+    if (!y || !y.text) { el.innerHTML = el.dataset.empty || ''; continue; }
+    const chars = [...y.text];
+    const n = Math.max(0, Math.min(chars.length, Math.floor((t - y.t0) * y.cps)));
+    el.innerHTML = esc(chars.slice(0, n).join('')) + (y.caret && blink ? '<span class="caret"></span>' : '');
+  }
+}
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const h = (html) => { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstChild; };
+
+/* cursor path: list of [t, x, y, click] */
+function cursor(points) {
+  const c = h(`<svg class="cursor" viewBox="0 0 24 24"><path d="M4 2l16 9.5-7.2 1.6L9.4 21z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>`);
+  $('#stage').append(c);
+  c.style.opacity = 0;
+  let prev = null;
+  for (const [t, x, y, click] of points) {
+    if (!prev) { c.style.left = '0px'; c.style.top = '0px'; tween(c, t, 0.3, { opacity: [0, 1], x: [x, x], y: [y + 20, y] }); }
+    else tween(c, prev[0] + 0.05, Math.max(0.2, t - prev[0] - 0.05), { x: [prev[1], x], y: [prev[2], y] });
+    if (click) { const r = h('<div class="ripple"></div>'); r.style.left = x + 4 + 'px'; r.style.top = y + 4 + 'px'; r.style.opacity = 0; $('#stage').append(r);
+      tween(r, t, 0.12, { opacity: [0, 1], scale: [0.4, 0.9] }); tween(r, t + 0.12, 0.35, { opacity: [1, 0], scale: [0.9, 1.6] }); }
+    prev = [t, x, y];
+  }
+  return c;
+}
+
+/* ======================= shared layout ======================= */
+function shell(tabs, active, chatName, chatAv, chatColor, rows, chipLang) {
+  const st = $('#stage');
+  st.innerHTML = `
+    <div class="rail"><div class="logo">A文</div><div class="rb on">💬</div><div class="rb">⚡</div><div class="rb">🌐</div></div>
+    <div class="tabs">${tabs.map(([n, c], i) => `<div class="tab ${i === active ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">💬<i></i></span>${esc(n)}<span class="un" data-un="${i}" style="display:none"></span></div>`).join('')}
+      <div class="tab add">＋</div>
+      <div class="tools"><span class="sw">文A <b></b></span><span class="sel">${L.my} ▾</span>→<span class="sel">${L.auto} ▾</span></div></div>
+    <div class="wa">
+      <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${L.search}</div>
+        ${rows.map((r, i) => `<div class="row ${i === 0 ? 'on' : ''}"><div class="av" style="background:${r[2]}">${r[1]}</div><div class="t"><b>${esc(r[0])}</b><span>${esc(r[3])}</span></div><div class="m">${r[4]}${r[5] ? `<br><em>${r[5]}</em>` : ''}</div></div>`).join('')}
+      </div>
+      <div class="chat">
+        <div class="chead"><div class="av" style="background:${chatColor}">${chatAv}</div><div><b>${esc(chatName)}</b><small>${L.online}</small></div></div>
+        <div class="chips"><span class="chip"><span class="dot"></span>${esc(L.chipLang(chipLang))} ▾</span><span class="chip">${L.tpl}</span><span class="chip">${L.mode}</span></div>
+        <div class="msgs" id="msgs"></div>
+        <div class="comp"><span class="ic">😊</span><span class="ic">📎</span><div class="box" id="box"><span class="ph">${L.type}</span></div><span class="ic">🎤</span></div>
+      </div>
+    </div>`;
+}
+const ROWS = (first) => [first,
+  ['Ahmet Yılmaz', 'A', '#c2410c', 'Merhaba, fiyat ne kadar?', '10:41', '2'],
+  ['Lukas Weber', 'L', '#0369a1', 'Danke! Bis morgen.', '10:12', ''],
+  ['Fatima Al Zahra', 'F', '#7e22ce', 'شكرا جزيلا', '09:58', '1'],
+  ['Wang Lei', 'W', '#be123c', '好的，明天发货', '09:30', ''],
+  ['Sophie Martin', 'S', '#15803d', 'Merci beaucoup !', Z ? '昨天' : 'Yesterday', ''],
+  ['João Silva', 'J', '#a16207', 'Obrigado!', Z ? '昨天' : 'Yesterday', '']];
+function bubble(dir, html, time) { const b = h(`<div class="b ${dir}">${html}<span class="tm">${time}${dir === 'out' ? ' ✓✓' : ''}</span></div>`); $('#msgs').append(b); b.style.opacity = 0; return b; }
+
+/* ======================= scenes ======================= */
+const SCENES = {
+  /* incoming translated + outgoing typed in my language, sent in the customer's */
+  chat() {
+    shell(ACCS.slice(0, 5), 0, 'María López', 'M', '#db2777', ROWS(['María López', 'M', '#db2777', '¿Cuánto cuesta el envío a Madrid?', '10:44', '']), L.es);
+    const b1 = bubble('in', `${esc(CHAT.in1)}<span class="tr" data-tr1><span class="badge">🌐 ES→${L.to}</span>${esc(CHAT.in1t)}</span>`, '10:43');
+    const b2 = bubble('in', `${esc(CHAT.in2)}<span class="tr" data-tr2><span class="badge">🌐 ES→${L.to}</span>${esc(CHAT.in2t)}</span>`, '10:44');
+    show(b1, 0.4); const t1 = $('[data-tr1]'); show(t1, 1.3, 0.45, 6);
+    show(b2, 2.4); const t2 = $('[data-tr2]'); show(t2, 3.2, 0.45, 6);
+    const box = $('#box'); box.dataset.empty = `<span class="ph">${L.type}</span>`;
+    const typedEnd = type(box, 4.4, CHAT.typed, Z ? 9 : 26);
+    const panel = h(`<div class="panel"><div class="ph"><span>${esc(L.sendIn(L.es))}</span><span class="link">${L.change}</span></div>
+      <div class="ta">${esc(CHAT.es)}</div><div class="orig">${L.wrote} ${esc(CHAT.typed)}</div>
+      <div class="row2"><span class="hint">${L.hint}</span><span class="btn">${L.edit}</span><span class="btn">${L.orig}</span><span class="btn pri" data-send>${L.send}</span></div></div>`);
+    $('.chat').append(panel);
+    show(panel, typedEnd + 0.5, 0.35, 14);
+    const sendAt = typedEnd + 2.6;
+    hide(panel, sendAt + 0.25, 0.2);
+    TY.push({ el: box, t0: sendAt + 0.25, text: '', cps: 1, caret: false });
+    const b3 = bubble('out', `${esc(CHAT.es)}<span class="tr"><span class="badge grey">${L.youWrote}</span>${esc(CHAT.typed)}</span>`, '10:45');
+    show(b3, sendAt + 0.4, 0.4, 10);
+    cursor([[typedEnd + 1.2, 900, 600], [sendAt - 0.4, 1088, 646], [sendAt, 1088, 646, true], [sendAt + 1.2, 1000, 560]]);
+    return sendAt + 3.2;
+  },
+  voice() {
+    shell(ACCS.slice(0, 5), 1, 'Ahmet Yılmaz', 'A', '#c2410c', ROWS(['Ahmet Yılmaz', 'A', '#c2410c', '🎤 0:12', '10:41', '']).filter((r, i) => i !== 1), L.tr);
+    const wave = Array.from({ length: 34 }, (_, i) => `<i style="height:${6 + Math.round(18 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * .6)))}px"></i>`).join('');
+    const b = bubble('in', `<div class="voice"><div class="pav">A</div><div class="play">▶</div><div class="wave">${wave}</div></div><div style="font-size:11.5px;color:#8696a0;margin:2px 0 0 92px">0:12</div>
+      <div data-vbtn><button class="pill">${L.transcribe}</button></div><div data-vbusy style="position:absolute;opacity:0"><button class="pill">${L.transcribing}</button></div>
+      <div data-vres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div><span class="badge vo">🎤 TR</span>${esc(VOICE.text)}</div><div class="tr" style="border-top-style:dashed"><span class="badge">🌐 TR→${L.to}</span>${esc(VOICE.tr)}</div></div>`, '10:41');
+    show(b, 0.4);
+    const btn = $('[data-vbtn]'), busy = $('[data-vbusy]'), res = $('[data-vres]');
+    const click = 2.3;
+    tween($('[data-vbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
+    tween(btn, click + 0.1, 0.01, { opacity: [1, 0] });
+    busy.style.position = 'static'; busy.style.maxHeight = '0'; busy.style.overflow = 'hidden';
+    tween(busy, click + 0.1, 0.2, { opacity: [0, 1], h: [0, 40] });
+    tween(btn, click + 0.1, 0.2, { h: [40, 0] }); btn.style.overflow = 'hidden'; btn.style.maxHeight = '40px';
+    tween(busy, click + 2.2, 0.2, { opacity: [1, 0], h: [40, 0] });
+    tween(res, click + 2.25, 0.6, { opacity: [0, 1], h: [0, 200] });
+    cursor([[1.2, 760, 560], [click - 0.3, 444 + 70, 405], [click, 444 + 70, 405, true], [click + 1.5, 700, 520]]);
+    return click + 6;
+  },
+  photo() {
+    shell(ACCS.slice(0, 5), 4, 'Lukas Weber', 'L', '#0369a1', ROWS(['Lukas Weber', 'L', '#0369a1', Z ? '📷 照片' : '📷 Photo', '10:52', '']).filter((r, i) => i !== 2), L.de);
+    const b = bubble('in', `<div class="photo"><b>Rechnung · Shop</b>${PHOTO.lines.map(esc).join('<br>')}</div>
+      <div data-pbtn style="overflow:hidden;max-height:40px"><button class="pill">${L.readText}</button></div><div data-pbusy style="opacity:0;max-height:0;overflow:hidden"><button class="pill">${L.reading}</button></div>
+      <div data-pres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div><span class="badge ph2">🔤 DE</span><br>${PHOTO.lines.map(esc).join('<br>')}</div><div class="tr"><span class="badge">🌐 DE→${L.to}</span><br>${PHOTO.tr.map(esc).join('<br>')}</div></div>`, '10:52');
+    show(b, 0.4);
+    const click = 2.2;
+    tween($('[data-pbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
+    tween($('[data-pbtn]'), click + 0.1, 0.2, { opacity: [1, 0], h: [40, 0] });
+    tween($('[data-pbusy]'), click + 0.1, 0.2, { opacity: [0, 1], h: [0, 40] });
+    tween($('[data-pbusy]'), click + 1.8, 0.2, { opacity: [1, 0], h: [40, 0] });
+    tween($('[data-pres]'), click + 1.85, 0.7, { opacity: [0, 1], h: [0, 460] });
+    cursor([[1.0, 760, 520], [click - 0.3, 450, 500], [click, 450, 500, true], [click + 1.4, 760, 540]]);
+    return click + 6.5;
+  },
+  accounts() {
+    const tabs = ACCS.slice(0, 6);
+    shell(tabs, 0, 'María López', 'M', '#db2777', ROWS(['María López', 'M', '#db2777', '¿Cuánto cuesta el envío a Madrid?', '10:44', '']), L.es);
+    bubble('in', `${esc(CHAT.in2)}<span class="tr"><span class="badge">🌐 ES→${L.to}</span>${esc(CHAT.in2t)}</span>`, '10:44').style.opacity = 1;
+    const toasts = [
+      [0.8, 'Support TR · Ahmet Yılmaz', Z ? '你们明天可以来吗？' : 'Can you come tomorrow?', 'Yarın gelebilir misiniz?', 1, 1],
+      [2.2, 'Shop UAE · Fatima', Z ? '非常感谢！' : 'Thank you very much!', 'شكرا جزيلا', 2, 1],
+      [3.6, 'Export CN · Wang Lei', Z ? '好的，明天发货' : 'OK, it ships tomorrow', '好的，明天发货', 3, 2],
+    ];
+    toasts.forEach(([t, title, tr, orig, tab, n], i) => {
+      const el = h(`<div class="toast"><div class="top"><span class="lg"></span>GlotChat</div><b>${esc(title)}</b>${esc(tr)}<div class="o">— ${esc(orig)}</div></div>`);
+      el.style.bottom = 18 + i * 0 + 'px'; $('#stage').append(el);
+      show(el, t, 0.35, 30); hide(el, t + 1.25, 0.25);
+      const un = $(`[data-un="${tab}"]`); un.textContent = n; un.style.display = 'grid'; show(un, t + 0.2, 0.25, 0);
+      tween(un, t + 0.2, 0.25, { scale: [0.3, 1] });
+    });
+    // Ctrl+K switcher
+    const dim = h('<div class="dim"></div>'); $('#stage').append(dim); dim.style.opacity = 0;
+    const list = ACCS.concat([['VIP Asia', '#a855f7'], ['Shop KSA', '#f97316']]).map(([n, c], i) => [n, c, i]);
+    const sw = h(`<div class="switch"><div class="q">🔍 <span data-q></span></div>
+      ${list.slice(0, 6).map(([n, c, i]) => `<div class="it ${i === 2 ? '' : ''}" data-it="${i}"><span class="ic" style="background:${c}">💬</span><div>${esc(n)}<small>${L.connected} · ${300 + i * 23} MB</small></div>${[1, 2, 3].includes(i) ? `<span class="un">${i === 3 ? 2 : 1}</span>` : ''}</div>`).join('')}
+      <div class="foot">${L.running}</div></div>`);
+    $('#stage').append(sw);
+    const k = 5.4;
+    show(dim, k, 0.25, 0); show(sw, k, 0.3, -12);
+    const q = $('[data-q]'); q.dataset.empty = `<span style="color:#8a97a8">${L.searchAcc}</span>`;
+    const qe = type(q, k + 0.7, 'shop', 6);
+    // filter: hide non-matching rows after typing
+    list.slice(0, 6).forEach(([n, c, i]) => { if (!/shop/i.test(n)) tween($(`[data-it="${i}"]`), qe - 0.1, 0.25, { opacity: [1, 0], h: [60, 0] }); $(`[data-it="${i}"]`).style.maxHeight = '60px'; $(`[data-it="${i}"]`).style.overflow = 'hidden'; });
+    tween($('[data-it="2"]'), qe + 0.2, 0.01, { opacity: [1, 1] });
+    $('[data-it="2"]').classList.add('sel');
+    const pick = qe + 1.1;
+    hide(sw, pick, 0.2); hide(dim, pick, 0.2);
+    // switch the active tab to Shop UAE
+    const tabsEl = document.querySelectorAll('.tab[data-tab]');
+    tween(tabsEl[0], pick, 0.01, { opacity: [1, 1] });
+    const ov = h(`<div style="position:absolute;left:64px;right:0;top:46px;bottom:0;background:#0b141a;z-index:5"></div>`);
+    $('#stage').append(ov); ov.style.opacity = 0;
+    const chat2 = h(`<div style="position:absolute;left:394px;right:0;top:46px;bottom:0;z-index:5;display:flex;flex-direction:column">
+      <div class="chead"><div class="av" style="background:#7e22ce">F</div><div><b>Fatima Al Zahra</b><small>${L.online}</small></div></div>
+      <div class="msgs" style="padding-bottom:84px"><div class="b in">مرحبا، هل الطلب جاهز؟<span class="tr"><span class="badge">🌐 AR→${L.to}</span>${Z ? '你好，订单准备好了吗？' : 'Hello, is the order ready?'}</span><span class="tm">10:47</span></div>
+      <div class="b in">شكرا جزيلا<span class="tr"><span class="badge">🌐 AR→${L.to}</span>${Z ? '非常感谢！' : 'Thank you very much!'}</span><span class="tm">10:48</span></div></div>
+      <div class="chips" style="top:70px"><span class="chip"><span class="dot"></span>${esc(L.chipLang(Z ? '阿拉伯语' : 'Arabic'))} ▾</span><span class="chip">${L.tpl}</span><span class="chip">${L.mode}</span></div>
+      <div class="comp" style="position:absolute;left:0;right:0;bottom:0"><span class="ic">😊</span><span class="ic">📎</span><div class="box"><span class="ph">${L.type}</span></div><span class="ic">🎤</span></div></div>`);
+    $('#stage').append(chat2); chat2.style.opacity = 0;
+    const list2 = h(`<div style="position:absolute;left:64px;width:330px;top:46px;bottom:0;z-index:5;background:#111b21;border-right:1px solid #26343d"><h3 style="margin:0;padding:16px 18px 10px;font-size:19px">WhatsApp</h3>
+      <div class="row on"><div class="av" style="background:#7e22ce">F</div><div class="t"><b>Fatima Al Zahra</b><span>شكرا جزيلا</span></div><div class="m">10:48</div></div>
+      <div class="row"><div class="av" style="background:#0f766e">O</div><div class="t"><b>Omar Haddad</b><span>تم الدفع</span></div><div class="m">10:20</div></div>
+      <div class="row"><div class="av" style="background:#9333ea">N</div><div class="t"><b>Noura</b><span>كم السعر؟</span></div><div class="m">09:02</div></div></div>`);
+    $('#stage').append(list2); list2.style.opacity = 0;
+    show(ov, pick + 0.05, 0.2, 0); show(list2, pick + 0.1, 0.3, 0); show(chat2, pick + 0.1, 0.3, 0);
+    // tab highlight moves
+    const hl = h(`<div style="position:absolute;top:43px;height:3px;border-radius:3px 3px 0 0;background:#f59e0b;z-index:8"></div>`);
+    $('#stage').append(hl);
+    const r0 = tabsEl[0].getBoundingClientRect(), r2 = tabsEl[2].getBoundingClientRect();
+    hl.style.left = r2.left + 8 + 'px'; hl.style.width = r2.width - 16 + 'px'; hl.style.opacity = 0; show(hl, pick + 0.05, 0.2, 0);
+    // the old tab loses its highlight, the new one gets the tab background
+    const cover = h(`<div style="position:absolute;top:0;height:46px;background:#fff;color:#3b4652;z-index:8"></div>`);
+    cover.style.left = r0.left + 'px'; cover.style.width = r0.width + 'px'; $('#stage').append(cover);
+    cover.innerHTML = tabsEl[0].outerHTML.replace('tab on', 'tab'); cover.firstChild.style.height = '46px';
+    cover.style.opacity = 0; show(cover, pick + 0.05, 0.15, 0);
+    const bg2 = h(`<div style="position:absolute;top:0;height:46px;background:#f5f7fa;color:#111;z-index:7"></div>`);
+    bg2.style.left = r2.left + 'px'; bg2.style.width = r2.width + 'px'; $('#stage').append(bg2);
+    bg2.innerHTML = tabsEl[2].outerHTML.replace('tab ', 'tab on ').replace(/<span class="un"[^>]*>[^<]*<\/span>/, ''); bg2.firstChild.style.height = '46px';
+    bg2.firstChild.classList.add('on'); bg2.style.opacity = 0; show(bg2, pick + 0.05, 0.15, 0);
+    const un2 = $('[data-un="2"]'); hide(un2, pick + 0.1, 0.2);
+    cursor([[5.0, 700, 420], [pick - 0.35, 560, 186], [pick - 0.1, 560, 186, true], [pick + 1.2, 800, 500]]);
+    return pick + 4.2;
+  },
+};
+const $$ = (s) => [...document.querySelectorAll(s)];
+window.DURATION = SCENES[SCENE]();
+window.seek = seek;
+seek(0);
+if (!new URLSearchParams(location.search).get('record')) {
+  let t0 = performance.now();
+  (function loop() { const t = ((performance.now() - t0) / 1000) % (window.DURATION + 0.6); seek(t); requestAnimationFrame(loop); })();
+}
+</script>
+</body></html>

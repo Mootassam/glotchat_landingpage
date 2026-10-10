@@ -1,0 +1,11 @@
+# test output and temporary recording frames (rebuilt by the scripts in _tools/)
+_tools/frames/
+_tools/preview/
+_tools/shots/
+_tools/*.png
+__pycache__/
+*.pyc
+.vercel/
+Thumbs.db
+desktop.ini
+.DS_Store
