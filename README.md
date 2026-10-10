@@ -20,7 +20,7 @@ ready-made message. English at `/`, 中文 at `/zh/` (Chinese browsers are sent 
 - Structured data: Organization, WebSite, SoftwareApplication and FAQ (can appear in Google results).
 - `sitemap.xml` + `robots.txt`.
 
-**Domain** is set in `_tools/build.py` (`SITE = "https://glotchat.com"`). After changing it — or after
+**Domain** is set in `_tools/build.py` (`SITE = "https://www.glotchat.com"`). After changing it — or after
 editing any text in `index.html` / `assets/js/main.js` — run:
 
 ```
@@ -32,7 +32,7 @@ It rewrites the absolute URLs, the structured data, `zh/index.html`, `sitemap.xm
 `zh/index.html` directly** — it is generated.
 
 After going live: add the site to **Google Search Console** (and **Bing Webmaster Tools**), verify the
-domain, and submit `https://glotchat.com/sitemap.xml`.
+domain, and submit `https://www.glotchat.com/sitemap.xml`.
 
 ## Edit prices / plans
 
