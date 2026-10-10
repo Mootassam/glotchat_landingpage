@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glotchat.com/sitemap.xml
+Sitemap: https://glotchatlandingpage.vercel.app/sitemap.xml

@@ -13,16 +13,16 @@ Change the domain: edit SITE below and run the script again.
 import datetime, json, os, re, subprocess, sys, time
 from playwright.sync_api import sync_playwright
 
-SITE = "https://glotchat.com"
+SITE = "https://glotchatlandingpage.vercel.app"  # change to https://glotchat.com once the domain is bought
 TELEGRAM = "https://t.me/Capooo007"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORT = 8766
 
 ZH_META = {
     "title": "GlotChat – WhatsApp 多开 + 聊天翻译电脑版",
-    "description": "在电脑上一个窗口同时运行多个 WhatsApp 账号，离线翻译聊天、语音和图片，支持 49 种语言，每个账号通知独立。支持 USDT 付款。",
+    "description": "在电脑上一个窗口同时运行多个 WhatsApp 账号，离线翻译聊天、语音和图片，支持 49 种语言，每个账号通知独立。免费试用 3 天。",
     "og_title": "GlotChat – 所有 WhatsApp 账号一个窗口，每位客户都用他的语言沟通",
-    "og_description": "多个 WhatsApp 账号同屏运行，文字、语音和图片在电脑上离线翻译。支持 USDT 付款。",
+    "og_description": "多个 WhatsApp 账号同屏运行，文字、语音和图片在电脑上离线翻译。免费试用 3 天。",
 }
 APP_DESC = {
     "en": "Run multiple WhatsApp accounts in one window on Windows, each isolated with its own notifications, "

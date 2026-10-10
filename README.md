@@ -36,9 +36,16 @@ domain, and submit `https://glotchat.com/sitemap.xml`.
 
 ## Edit prices / plans
 
-In `index.html`, section `id="pricing"` (look for **EDIT PRICES HERE**): change the number in
-`<b class="amt">` **and** in `data-price="…"` of the same plan's button. Chinese plan texts are in
-`assets/js/main.js` (`pl1_…`, `pl2_…`, `pl3_…`).
+Prices are **yearly** (Starter 69, Pro 129, Business 249 USDT / year) with a **free 3-day trial**
+(the trial key is made on https://glotchat-license.vercel.app). In `index.html`, section
+`id="pricing"` (look for **EDIT PRICES HERE**): change the number in `<b class="amt">`, in
+`data-price="…"` of the same plan's button, and the "≈ … per month" line. Also update "From 69 USDT / year"
+(`micro3`) in the hero — Chinese texts are in `assets/js/main.js` (`micro3`, `pl1_…`, `pl2_…`, `pl3_…`).
+Then run `python _tools/build.py`.
+
+Every button opens Telegram with a ready-made message (see `MSG` in `main.js`): free trial, plan finder
+("I use 6–15 accounts… try Pro"), buy a plan, custom/lifetime offer, live demo. Vercel Analytics events:
+`telegram_click` (place, plan), `plan_finder`, `exit_popup`, `demo_tab`.
 
 ## Change the Telegram username
 
