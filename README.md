@@ -1,6 +1,6 @@
 # GlotChat landing page
 
-Static site (HTML + CSS + JS, no build step) — every button opens Telegram **@Capooo007** with a
+Static site (HTML + CSS + JS, no build step) — every button opens Telegram **@GlotChat** with a
 ready-made message. English at `/`, 中文 at `/zh/` (Chinese browsers are sent there once; EN / 中文 switch in the header).
 
 ## Deploy on Vercel
@@ -49,7 +49,7 @@ Every button opens Telegram with a ready-made message (see `MSG` in `main.js`): 
 
 ## Change the Telegram username
 
-`assets/js/main.js` → `var TG_USER = 'Capooo007';` and the `href="https://t.me/Capooo007"` links in
+`assets/js/main.js` → `var TG_USER = 'GlotChat';` and the `href="https://t.me/GlotChat"` links in
 `index.html` (fallback when JavaScript is off), plus `assets/img/telegram-qr.svg`
 (regenerate: `python -c "import segno; segno.make('https://t.me/NEWNAME').save('telegram-qr.svg', scale=8, border=2, dark='#0b1220')"`).
 

@@ -2,7 +2,7 @@
    lazy videos, sticky contact buttons, scroll reveal and click tracking. */
 (function () {
   'use strict';
-  var TG_USER = 'Capooo007';
+  var TG_USER = 'GlotChat';
 
   /* -------- Telegram messages (pre-filled, so visitors don't have to think what to write) -------- */
   var MSG = {
@@ -122,7 +122,7 @@
     fin_h: '免费试用 GlotChat 3 天', fin_p: '在 Telegram 联系我们——我们发给你安装程序和免费试用密钥，解答问题并帮助你快速上手。',
     copy: '复制用户名', qr: '在电脑上浏览？用手机相机扫码即可打开 Telegram。',
     legal: 'WhatsApp 是 WhatsApp LLC 的商标。GlotChat 是独立产品，与 WhatsApp 或 Meta 无关联。',
-    fab: '免费试用 · 联系我们', mbar: '免费试用 3 天 — 在 Telegram 联系我们', copied: '已复制 @Capooo007',
+    fab: '免费试用 · 联系我们', mbar: '免费试用 3 天 — 在 Telegram 联系我们', copied: '已复制 @GlotChat',
     lv_h: '先别走——免费试用一下', lv_p: '获取解锁全部功能的 GlotChat 3 天试用。无需付款、没有任何承诺——发条消息就行。', lv_btn: '在 Telegram 领取免费试用', lv_no: '不用了，谢谢'
   };
   var EN = {};                                  // filled from the HTML on first switch
@@ -272,7 +272,7 @@
   /* -------- copy username -------- */
   var toast = document.getElementById('toast');
   document.getElementById('copyTg').addEventListener('click', function () {
-    var done = function () { toast.textContent = lang === 'zh' ? ZH.copied : 'Copied @Capooo007'; toast.classList.add('show'); setTimeout(function () { toast.classList.remove('show'); }, 1800); };
+    var done = function () { toast.textContent = lang === 'zh' ? ZH.copied : 'Copied @GlotChat'; toast.classList.add('show'); setTimeout(function () { toast.classList.remove('show'); }, 1800); };
     if (navigator.clipboard) navigator.clipboard.writeText('@' + TG_USER).then(done, done); else done();
     track('copy_username', {});
   });

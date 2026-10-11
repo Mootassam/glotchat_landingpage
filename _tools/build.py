@@ -14,7 +14,7 @@ import datetime, json, os, re, subprocess, sys, time
 from playwright.sync_api import sync_playwright
 
 SITE = "https://www.glotchat.com"
-TELEGRAM = "https://t.me/Capooo007"
+TELEGRAM = "https://t.me/GlotChat"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORT = 8766
 
