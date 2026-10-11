@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% macro tgbtn(kind, place, label, cls='btn tg lg', plan=None, price=None, n=None, id=None) -%}
+<a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
+{%- endmacro %}
+
+{% macro media(spec, alt='', eager=False) -%}
+{%- set kind, name = spec.split(':') -%}
+{%- if kind == 'video' -%}
+<div class="window{% if eager %} big{% endif %}">
+  <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+  <video class="vid" data-scene="{{ name }}" muted loop playsinline preload="none" poster="/assets/media/{{ name }}-{{ vlang }}.webp" aria-label="{{ alt }}">
+    <source data-src="/assets/media/{{ name }}-{{ vlang }}.mp4" type="video/mp4">
+  </video>
+</div>
+{%- elif kind == 'img' -%}
+{%- set im = images[name] -%}
+<img src="{{ im.src }}" alt="{{ alt }}" width="{{ im.w }}" height="{{ im.h }}" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+{%- endif -%}
+{%- endmacro %}
+
+{% macro head(b) -%}
+{%- if b.k or b.h or b.p %}
+<div class="head">
+  {%- if b.k %}<span class="kicker">{{ b.k }}</span>{% endif %}
+  {%- if b.h %}<h2{% if b.id %} id="{{ b.id }}-h"{% endif %}>{{ b.h }}</h2>{% endif %}
+  {%- if b.p %}<p>{{ b.p|safe }}</p>{% endif %}
+</div>
+{%- endif %}
+{%- endmacro %}
+
+{% block main %}
+{%- for b in page.blocks %}
+{%- set t = b.type %}
+
+{%- if t == 'hero_home' %}
+<section class="hero">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dotlive"></span><span>{{ b.eyebrow }}</span></span>
+      <h1>{{ b.h1|safe }}</h1>
+      <p class="lead">{{ b.lead }}</p>
+      <div class="hero-cta">
+        {{ tgbtn('trial', 'hero', ui.cta_trial) }}
+        <a class="btn ghost lg" href="#demo"><span class="play" aria-hidden="true">▶</span><span>{{ ui.cta_demo }}</span></a>
+      </div>
+      <ul class="micro">{% for m in b.micro %}<li>{{ m }}</li>{% endfor %}</ul>
+    </div>
+    <div class="hero-shot">
+      {{ media('video:chat', b.media_alt, True) }}
+      <div class="float f1" aria-hidden="true"><b>🌐 ES → EN</b><span>{{ b.float1 }}</span></div>
+      <div class="float f2" aria-hidden="true"><b>{{ cfg.FACTS.accounts_tested }}+</b><span>{{ b.float2 }}</span></div>
+    </div>
+  </div>
+  <div class="wrap"><ul class="trust">{% for x in ui.trust %}<li>{{ x }}</li>{% endfor %}</ul></div>
+</section>
+
+{%- elif t == 'hero' %}
+<section class="phero">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap{% if b.media %} phero-in{% endif %}">
+    <div class="phero-copy">
+      {%- if crumbs|length > 1 %}
+      <nav class="crumbs" aria-label="{{ ui.breadcrumb }}"><ol>{% for c in crumbs %}<li>{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}</li>{% endfor %}</ol></nav>
+      {%- endif %}
+      {%- if b.k %}<span class="eyebrow"><span class="dotlive"></span><span>{{ b.k }}</span></span>{% endif %}
+      <h1>{{ b.h1|safe }}</h1>
+      {%- if b.lead %}<p class="lead">{{ b.lead|safe }}</p>{% endif %}
+      {%- if page.article %}<p class="meta">{{ ui.updated }} <time datetime="{{ page.updated }}">{{ page.updated_h }}</time> · {{ page.read_min }} {{ ui.min_read }}</p>{% endif %}
+      {%- if not b.no_cta %}
+      <div class="hero-cta">
+        {{ tgbtn('trial', 'hero-' ~ page_id, b.cta or ui.cta_trial) }}
+        {%- if b.cta2 %}<a class="btn ghost lg" href="{{ link(b.cta2[0]) if not b.cta2[0].startswith('#') else b.cta2[0] }}">{{ b.cta2[1] }}</a>{% endif %}
+      </div>
+      <ul class="micro">{% for m in ui.micro %}<li>{{ m }}</li>{% endfor %}</ul>
+      {%- endif %}
+    </div>
+    {%- if b.media %}
+    <div class="phero-media">{{ media(b.media, b.media_alt or b.h1|striptags, True) }}</div>
+    {%- endif %}
+  </div>
+</section>
+
+{%- elif t == 'facts' %}
+<section class="facts" aria-label="{{ b.label or '' }}">
+  <div class="wrap facts-in">{% for big, txt in b['items'] %}<div><b>{{ big }}</b><span>{{ txt }}</span></div>{% endfor %}</div>
+</section>
+
+{%- elif t == 'demo' %}
+<section class="sec" id="demo">
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="tabs" role="tablist">
+      {%- for p in b.panes %}
+      <button role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" data-tab="{{ p.id }}"><span aria-hidden="true">{{ p.icon }}</span><b>{{ p.tab }}</b></button>
+      {%- endfor %}
+    </div>
+    <div class="demo">
+      <div class="window big">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+        <video class="vid" id="demoVid" data-scene="chat" muted loop playsinline preload="none" poster="/assets/media/chat-{{ vlang }}.webp" aria-label="{{ b.h }}">
+          <source data-src="/assets/media/chat-{{ vlang }}.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="demo-text">
+        {%- for p in b.panes %}
+        <div class="pane" data-pane="{{ p.id }}"{% if not loop.first %} hidden{% endif %}>
+          <h3>{{ p.h }}</h3>
+          <ul class="ticks">{% for x in p.ticks %}<li>{{ x|safe }}</li>{% endfor %}</ul>
+          {%- if p.link %}<a class="more" href="{{ link(p.link[0]) }}">{{ p.link[1] }} {{ arr }}</a>{% endif %}
+        </div>
+        {%- endfor %}
+        {{ tgbtn('demo', 'demo', ui.cta_live, 'btn tg') }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'cards' %}
+<section class="sec{% if b.soft %} soft{% endif %}"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="grid{% if b.cols == 2 %} g2{% elif b.cols == 4 %} g4{% endif %}{% if b.who %} who{% endif %}">
+      {%- for c in b['items'] %}
+      <article class="card">
+        {%- if c.icon %}<span class="ic" aria-hidden="true">{{ c.icon }}</span>{% endif %}
+        <h3>{% if c.link %}<a href="{{ link(c.link) }}">{{ c.h }}</a>{% else %}{{ c.h }}{% endif %}</h3>
+        <p>{{ c.p|safe }}</p>
+        {%- if c.pair %}<span class="pair">{{ c.pair }}</span>{% endif %}
+        {%- if c.link %}<a class="more" href="{{ link(c.link) }}" aria-hidden="true" tabindex="-1">{{ ui.learn_more }} {{ arr }}</a>{% endif %}
+      </article>
+      {%- endfor %}
+    </div>
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn(b.cta_kind or 'usecase', 'cards-' ~ page_id, b.cta) }}</div>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'split' %}
+<section class="sec{% if b.soft %} soft{% endif %}"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="wrap split{% if b.rev %} rev{% endif %}">
+    <div>
+      {%- if b.k %}<span class="kicker">{{ b.k }}</span>{% endif %}
+      <h2>{{ b.h }}</h2>
+      {%- if b.p %}<p class="muted">{{ b.p|safe }}</p>{% endif %}
+      {%- if b.ticks %}<ul class="ticks big">{% for x in b.ticks %}<li>{{ x|safe }}</li>{% endfor %}</ul>{% endif %}
+      {%- if b.link %}<a class="more" href="{{ link(b.link[0]) }}">{{ b.link[1] }} {{ arr }}</a>{% endif %}
+    </div>
+    <figure class="shot">
+      {{ media(b.media, b.alt) }}
+      {%- if b.caption %}<figcaption>{{ b.caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+{%- elif t == 'steps' %}
+<section class="sec{% if b.soft is not defined or b.soft %} soft{% endif %}" id="{{ b.id or 'how' }}">
+  <div class="wrap">
+    {{ head(b) }}
+    <ol class="steps">{% for h, p in b['items'] %}<li><span>{{ loop.index }}</span><h3>{{ h }}</h3><p>{{ p|safe }}</p></li>{% endfor %}</ol>
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'steps-' ~ page_id, b.cta) }}</div>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'vs' %}
+<section class="sec" id="why">
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="vs">
+      <div class="col bad"><h3>{{ b.bad_h }}</h3><ul>{% for x in b.bad %}<li>{{ x }}</li>{% endfor %}</ul></div>
+      <div class="col good"><h3>{{ b.good_h }}</h3><ul>{% for x in b.good %}<li>{{ x }}</li>{% endfor %}</ul></div>
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'table' %}
+<section class="sec{% if b.soft %} soft{% endif %}"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="tbl-wrap" tabindex="0" role="region" aria-label="{{ b.h }}">
+      <table class="tbl">
+        <thead><tr>{% for c in b.cols %}<th scope="col"{% if loop.index0 == b.hl %} class="hl"{% endif %}>{{ c|safe }}</th>{% endfor %}</tr></thead>
+        <tbody>
+        {%- for r in b.rows %}
+          <tr>{% for c in r %}{% if loop.first %}<th scope="row">{{ c|safe }}</th>{% else %}<td{% if loop.index0 == b.hl %} class="hl"{% endif %}>{{ c|mark|safe }}</td>{% endif %}{% endfor %}</tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'table-' ~ page_id, b.cta) }}</div>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'calc' %}
+<section class="sec{% if b.soft %} soft{% endif %}" id="calc">
+  <div class="wrap narrow">
+    {{ head(b) }}
+    <div class="calc" data-calc>
+      <div class="calc-in">
+        <label><span>{{ ui.calc.msgs }}</span><input type="range" min="10" max="400" step="10" value="80" data-c="msgs"><output data-o="msgs">80</output></label>
+        <label><span>{{ ui.calc.secs }}</span><input type="range" min="10" max="90" step="5" value="30" data-c="secs"><output data-o="secs">30</output></label>
+        <label><span>{{ ui.calc.people }}</span><input type="range" min="1" max="20" step="1" value="1" data-c="people"><output data-o="people">1</output></label>
+      </div>
+      <div class="calc-out">
+        <div><b data-o="hours">0</b><span>{{ ui.calc.hours }}</span></div>
+        <div><b data-o="days">0</b><span>{{ ui.calc.days }}</span></div>
+      </div>
+      <p class="calc-note">{{ ui.calc.note }}</p>
+      <div class="center-cta">{{ tgbtn('trial', 'calc', ui.calc.cta) }}</div>
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'plans' %}
+<section class="sec{% if b.soft is not defined or b.soft %} soft{% endif %}" id="pricing">
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="finder" id="finder">
+      <div class="finder-q">
+        <b>{{ ui.finder.q }}</b>
+        <div class="chips" role="radiogroup" aria-label="{{ ui.finder.q }}">
+          <button type="button" role="radio" aria-checked="false" data-n="1–5" data-plan="Starter">1–5</button>
+          <button type="button" role="radio" aria-checked="false" data-n="6–15" data-plan="Pro">6–15</button>
+          <button type="button" role="radio" aria-checked="false" data-n="16+" data-plan="Business">16+</button>
+        </div>
+      </div>
+      <div class="finder-a" id="finderA" hidden>
+        <span>{{ ui.finder.a }}</span> <b id="finderPlan">Pro</b>
+        {{ tgbtn('finder', 'finder', ui.finder.btn, 'btn tg', 'Pro', None, '6–15', 'finderBtn') }}
+      </div>
+    </div>
+    <div class="plans">
+      {%- for p in cfg.PLANS %}
+      {%- set pt = ui.plans[p.id] %}
+      <article class="plan{% if p.popular %} pop{% endif %}" data-plan-card="{{ p.id }}">
+        {%- if p.popular %}<span class="ribbon">{{ ui.popular }}</span>{% endif %}
+        <span class="ribbon pick-r">{{ ui.for_you }}</span>
+        <h3>{{ pt.name }}</h3>
+        <p class="who">{{ pt.who }}</p>
+        <div class="price"><b class="amt">{{ p.price }}</b><span>USDT</span><em>{{ ui.per_year }}</em></div>
+        <p class="once">≈ {{ '%.2f'|format(p.price / 12) }} {{ ui.per_month }}</p>
+        <ul class="ticks">
+          <li>{{ (ui.unlimited_accounts if p.accounts is none else ui.up_to_accounts|replace('{n}', p.accounts|string))|safe }}</li>
+          <li>{{ ui.plan_f.translate }}</li>
+          <li>{{ ui.plan_f.templates }}</li>
+          <li>{{ ui.plan_f.updates }}</li>
+          <li>{{ pt.pcs }}</li>
+        </ul>
+        {{ tgbtn('plan', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block', p.id, p.price) }}
+        {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.try, 'trylink', p.id) }}
+      </article>
+      {%- endfor %}
+    </div>
+    <div class="custom">
+      <p>{{ ui.custom_html|safe }}</p>
+      {{ tgbtn('custom', 'custom', ui.custom_btn, 'btn outline') }}
+    </div>
+    <p class="paynote"><span class="usdt" aria-hidden="true">₮</span> {{ ui.paynote }}</p>
+    {%- if b.more %}<p class="center-more"><a class="more" href="{{ link('pricing') }}">{{ b.more }} {{ arr }}</a></p>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'langs' %}
+<section class="sec{% if b.soft %} soft{% endif %}" id="languages">
+  <div class="wrap">
+    {{ head(b) }}
+    <ul class="langs" aria-label="{{ b.h }}">{% for x in cfg.TRANSLATION_LANGUAGES %}<li>{{ x }}</li>{% endfor %}</ul>
+    {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'prose' %}
+<section class="sec article">
+  <div class="wrap art-grid">
+    {%- if b.toc and toc %}
+    <aside class="toc"><b>{{ ui.toc }}</b><ol>{% for id, title in toc %}<li><a href="#{{ id }}">{{ title }}</a></li>{% endfor %}</ol></aside>
+    {%- endif %}
+    <div class="prose">{{ b.html|safe }}</div>
+  </div>
+</section>
+
+{%- elif t == 'faq' %}
+<section class="sec{% if b.soft %} soft{% endif %}" id="faq">
+  <div class="wrap narrow">
+    {{ head(b) }}
+    {%- for q, a in b['items'] %}
+    <details{% if loop.first and b.open_first %} open{% endif %}><summary>{{ q }}</summary><p>{{ a|safe }}</p></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- elif t == 'related' %}
+<section class="sec soft related">
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="grid">
+      {%- for pid in b['items'] if pid in registry %}
+      {%- set r = registry[pid] %}
+      <a class="card rel" href="{{ link(pid) }}"><span class="ic" aria-hidden="true">{{ r.icon }}</span><h3>{{ r.short }}</h3><p>{{ r.description }}</p><span class="more">{{ ui.learn_more }} {{ arr }}</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'guides_list' %}
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2">
+      {%- for g in guides %}
+      <a class="card rel guide" href="{{ link(g.id) }}"><span class="ic" aria-hidden="true">{{ g.icon }}</span><h3>{{ g.h1 }}</h3><p>{{ g.description }}</p><span class="more">{{ ui.read_guide }} {{ arr }}</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'html' %}
+<section class="sec{% if b.soft %} soft{% endif %}">
+  <div class="wrap narrow prose">{{ b.html|safe }}</div>
+</section>
+{%- endif %}
+{%- endfor %}
+
+{%- if not page.no_final %}
+<section class="final" id="contact">
+  <div class="wrap final-in">
+    <div>
+      <h2>{{ ui.final.h }}</h2>
+      <p>{{ ui.final.p }}</p>
+      <div class="hero-cta">
+        {{ tgbtn('trial', 'final', '@' ~ cfg.TELEGRAM_USER) }}
+        <button class="btn ghost lg" type="button" data-copy="@{{ cfg.TELEGRAM_USER }}">{{ ui.copy_username }}</button>
+      </div>
+      {%- if contacts %}
+      <div class="alt-contacts">
+        <span>{{ ui.also }}</span>
+        {%- for c in contacts %}<a class="chip-link" href="{{ c.href }}"{% if c.ext %} target="_blank" rel="noopener"{% endif %}{% if c.copy %} data-copy="{{ c.copy }}"{% endif %}>{{ c.label }}</a>{% endfor %}
+      </div>
+      {%- endif %}
+    </div>
+    <div class="qr">
+      <img src="/assets/img/telegram-qr.svg" alt="{{ ui.qr_alt }}" width="200" height="200" loading="lazy">
+      <span>{{ ui.qr }}</span>
+    </div>
+  </div>
+</section>
+{%- endif %}
+{% endblock %}

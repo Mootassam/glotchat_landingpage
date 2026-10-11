@@ -1,0 +1,32 @@
+# GlotChat
+
+> Windows desktop app that runs multiple WhatsApp accounts in one window — each isolated with its own notifications — and translates messages, voice notes and photos offline in 49 languages.
+
+GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each account in its own isolated session and adds offline translation of messages, voice notes and text in photos. It is an independent product, not affiliated with WhatsApp or Meta.
+
+## Key facts
+
+- Platform: Windows 10, Windows 11 (64-bit)
+- Accounts: tested with 27 WhatsApp accounts at the same time; each uses about 300–450 MB of memory
+- Translation: 49 languages, offline on the user's PC; voice notes recognised in about 100 languages
+- Free trial: 3 days, every feature, no payment
+- Prices (per year, paid in USDT TRC20 · BEP20 · ERC20): Starter 69 USDT (up to 5 accounts, 1 PC), Pro 129 USDT (up to 15 accounts, 1 PC), Business 249 USDT (unlimited accounts, 3 PCs)
+- Contact / purchase: Telegram https://t.me/GlotChat
+- Website languages: English, 中文, العربية, Türkçe, Español, Português, Русский
+
+## Pages
+
+- [Home](https://www.glotchat.com/): Run many WhatsApp accounts in one window on Windows and translate chats, voice notes and photos offline in 49 languages. Free 3-day trial.
+- [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter 69, Pro 129, Business 249 USDT a year. Every feature included, free 3-day trial, pay in USDT. Compare plans and limits.
+- [WhatsApp translator](https://www.glotchat.com/whatsapp-translator/): Translate WhatsApp chats both ways on your PC: messages, voice notes and text in photos, in 49 languages, offline and private. Free 3-day trial.
+- [Multiple WhatsApp accounts](https://www.glotchat.com/multiple-whatsapp-accounts/): Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, notifications per account, Ctrl+K switching, built-in translation.
+- [Compare](https://www.glotchat.com/compare/): WhatsApp Web, browser profiles, translator extensions or a multi-account app? An honest comparison of ways to run many WhatsApp numbers with translation.
+- [Real estate](https://www.glotchat.com/for/real-estate/): Handle every agent's WhatsApp number in one window and answer foreign buyers in their language — chats, voice notes and documents translated. Free trial.
+- [Clinics & medical tourism](https://www.glotchat.com/for/clinics/): Answer international patients on WhatsApp in their language. Every coordinator's number in one window, voice notes and photos translated, offline.
+- [Exporters & wholesalers](https://www.glotchat.com/for/exporters/): Quote and negotiate with foreign buyers on WhatsApp in Arabic, Spanish, Russian or Portuguese while you write in your language. Many numbers, one window.
+- [Travel & tourism](https://www.glotchat.com/for/travel/): Handle bookings and questions from tourists worldwide on WhatsApp. Every booking number in one window, chats and voice notes translated offline.
+- [Guides](https://www.glotchat.com/guides/): Practical guides to using multiple WhatsApp accounts on a PC and translating WhatsApp messages, voice notes and photos for international customers.
+- [Multiple accounts on one PC](https://www.glotchat.com/guides/multiple-whatsapp-accounts-on-pc/): 3 ways to run two or more WhatsApp accounts on Windows: WhatsApp Desktop + Web, browser profiles, or a multi-account app. Steps, limits and tips.
+- [Translate WhatsApp on PC](https://www.glotchat.com/guides/translate-whatsapp-messages-on-pc/): How to translate WhatsApp chats on a computer: copy-paste, browser extensions or built-in translation — plus voice notes and photos, and privacy tips.
+- [Privacy policy](https://www.glotchat.com/privacy/): How GlotChat handles data: chats and translations stay on your PC; the website uses cookie-free analytics; licensing only needs your key and Machine ID.
+- [Terms of use](https://www.glotchat.com/terms/): The terms for using the GlotChat app and website: licenses, free trial, payments, acceptable use and limits of liability.

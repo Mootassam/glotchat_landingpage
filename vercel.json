@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "glotchatlandingpage.vercel.app" }], "destination": "https://www.glotchat.com/:path*", "permanent": true }
+  ],
   "headers": [
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
     { "source": "/(favicon.ico|apple-touch-icon.png|og.png)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] },

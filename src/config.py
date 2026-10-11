@@ -1,0 +1,54 @@
+"""Site-wide settings for the GlotChat website. Edit here, then run:  python src/build.py"""
+
+SITE = "https://www.glotchat.com"
+BRAND = "GlotChat"
+
+# ---------------------------------------------------------------- contact
+# Telegram is the main channel. The others are optional: fill one in and its button
+# appears everywhere automatically (leave "" to hide it).
+TELEGRAM_USER = "GlotChat"
+WHATSAPP_NUMBER = ""      # international format without + or spaces, e.g. "971501234567"
+WECHAT_ID = ""            # shown on the Chinese pages (Telegram is blocked in mainland China)
+EMAIL = ""                # e.g. "hello@glotchat.com"
+
+# ---------------------------------------------------------------- plans (USDT per year)
+# The USDT price is also published as USD in the structured data (USDT is pegged to the dollar).
+PLANS = [
+    {"id": "Starter", "price": 69, "accounts": 5, "pcs": 1},
+    {"id": "Pro", "price": 129, "accounts": 15, "pcs": 1, "popular": True},
+    {"id": "Business", "price": 249, "accounts": None, "pcs": 3},   # None = unlimited
+]
+TRIAL_DAYS = 3
+PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
+
+# ---------------------------------------------------------------- product facts (keep them true)
+FACTS = {
+    "accounts_tested": 27,      # accounts tested running at the same time
+    "languages": 49,            # translation languages (offline packs)
+    "voice_languages": 100,     # spoken languages recognised in voice notes (about)
+    "os": "Windows 10, Windows 11",
+    "ram_per_account": "300–450 MB",
+}
+
+# The 49 translation languages, as the app lists them (desktop/translator.py NAMES)
+TRANSLATION_LANGUAGES = [
+    "English", "العربية", "Français", "Español", "Deutsch", "Italiano", "Português", "Português (Brasil)",
+    "Русский", "Türkçe", "Nederlands", "Polski", "हिन्दी", "中文 (简体)", "中文 (繁體)", "日本語", "한국어",
+    "فارسی", "اردو", "עברית", "Bahasa Indonesia", "Bahasa Melayu", "ไทย", "Tiếng Việt", "Українська",
+    "Ελληνικά", "Svenska", "Dansk", "Norsk", "Suomi", "Čeština", "Slovenčina", "Magyar", "Română",
+    "Български", "বাংলা", "Català", "Esperanto", "Eesti", "Gaeilge", "Galego", "Lietuvių", "Latviešu",
+    "Slovenščina", "Shqip", "Azərbaycan", "Euskara", "Tagalog", "Кыргызча",
+]
+
+# ---------------------------------------------------------------- languages of the website
+# code -> settings. English lives at "/", the others at "/<code>/".
+LANGS = {
+    "en": {"name": "English", "hreflang": "en", "html": "en", "og": "en_US", "dir": "ltr"},
+    "zh": {"name": "中文", "hreflang": "zh-Hans", "html": "zh-Hans", "og": "zh_CN", "dir": "ltr"},
+    "ar": {"name": "العربية", "hreflang": "ar", "html": "ar", "og": "ar_AR", "dir": "rtl"},
+    "tr": {"name": "Türkçe", "hreflang": "tr", "html": "tr", "og": "tr_TR", "dir": "ltr"},
+    "es": {"name": "Español", "hreflang": "es", "html": "es", "og": "es_ES", "dir": "ltr"},
+    "pt": {"name": "Português", "hreflang": "pt", "html": "pt", "og": "pt_BR", "dir": "ltr"},
+    "ru": {"name": "Русский", "hreflang": "ru", "html": "ru", "og": "ru_RU", "dir": "ltr"},
+}
+DEFAULT_LANG = "en"

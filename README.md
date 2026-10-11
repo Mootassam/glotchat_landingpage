@@ -1,67 +1,70 @@
-# GlotChat landing page
+# GlotChat website — www.glotchat.com
 
-Static site (HTML + CSS + JS, no build step) — every button opens Telegram **@GlotChat** with a
-ready-made message. English at `/`, 中文 at `/zh/` (Chinese browsers are sent there once; EN / 中文 switch in the header).
+Static, multi-language marketing site, generated from templates + one text file per language.
+Every button opens Telegram **@GlotChat** with a ready-made message in the visitor's language.
 
-## Deploy on Vercel
+## Languages and pages
 
-1. Put this folder in a GitHub repo (or use the Vercel CLI: `npx vercel` inside this folder).
-2. In Vercel: **Add New → Project → import the repo** → Framework preset **Other** → Deploy.
-   No build command, no output directory needed.
-3. **Settings → Domains** → add `glotchat.com` (and `www.glotchat.com`), then add the DNS records Vercel
-   shows at Namecheap (usually A `@` → `76.76.21.21`, CNAME `www` → `cname.vercel-dns.com`).
-4. **Analytics** tab → *Enable Web Analytics*. Telegram clicks are tracked as the event
-   `telegram_click` (with `place` = which button and `plan`), so you see what converts.
+7 languages: English (`/`), 中文 (`/zh/`), العربية (`/ar/`, right-to-left), Türkçe (`/tr/`),
+Español (`/es/`), Português (`/pt/`), Русский (`/ru/`). Each has 12 pages:
 
-## SEO
+| Page | Path |
+|---|---|
+| Home | `/` |
+| Pricing | `/pricing/` |
+| WhatsApp translator | `/whatsapp-translator/` |
+| Multiple WhatsApp accounts | `/multiple-whatsapp-accounts/` |
+| Comparison | `/compare/` |
+| Industries | `/for/real-estate/`, `/for/clinics/`, `/for/exporters/`, `/for/travel/` |
+| Guides | `/guides/` + 2 guides |
 
-- English page `/`, Chinese page `/zh/` (real Chinese HTML, not only JavaScript), linked with hreflang.
-- Titles / descriptions target searches like "multiple WhatsApp accounts on PC", "WhatsApp translator".
-- Structured data: Organization, WebSite, SoftwareApplication and FAQ (can appear in Google results).
-- `sitemap.xml` + `robots.txt`.
+Plus (English only) `/privacy/`, `/terms/`, `/404.html`, and `sitemap.xml`, `robots.txt`, `llms.txt`.
 
-**Domain** is set in `_tools/build.py` (`SITE = "https://www.glotchat.com"`). After changing it — or after
-editing any text in `index.html` / `assets/js/main.js` — run:
+## Edit and rebuild
 
 ```
-python _tools/build.py
+python src/build.py          # build every page (+ social preview images, needs Chrome + Playwright)
+python src/build.py --no-og  # faster while editing text
+python src/check.py          # SEO + broken-link check — must say 0 errors
 ```
 
-It rewrites the absolute URLs, the structured data, `zh/index.html`, `sitemap.xml` and `robots.txt`
-(needs Chrome + Playwright). **Edit English text in `index.html` and Chinese text in `main.js`, never
-`zh/index.html` directly** — it is generated.
+- **Text:** `src/content/<lang>.yaml`. `en.yaml` is the reference; the build refuses to run if another
+  language is missing a UI text that English has.
+- **Layout:** `src/templates/` (`base.html` = head, header, footer; `page.html` = the content blocks).
+- **Prices, contact, product facts, languages:** `src/config.py`.
+  Optional extra contact buttons: set `WHATSAPP_NUMBER`, `WECHAT_ID` (shown on 中文 pages — Telegram is
+  blocked in mainland China) or `EMAIL` and rebuild.
+- **Never edit the generated `index.html` files directly** — they are overwritten by the build.
 
-After going live: add the site to **Google Search Console** (and **Bing Webmaster Tools**), verify the
-domain, and submit `https://www.glotchat.com/sitemap.xml`.
+Commit the generated files: Vercel serves the repository as plain static files (no build step on Vercel).
+`src/`, `_tools/` and this README are not deployed (`.vercelignore`).
 
-## Edit prices / plans
+## SEO built in
 
-Prices are **yearly** (Starter 69, Pro 129, Business 249 USDT / year) with a **free 3-day trial**
-(the trial key is made on https://glotchat-license.vercel.app). In `index.html`, section
-`id="pricing"` (look for **EDIT PRICES HERE**): change the number in `<b class="amt">`, in
-`data-price="…"` of the same plan's button, and the "≈ … per month" line. Also update "From 69 USDT / year"
-(`micro3`) in the hero — Chinese texts are in `assets/js/main.js` (`micro3`, `pl1_…`, `pl2_…`, `pl3_…`).
-Then run `python _tools/build.py`.
+- Static HTML per language, `hreflang` between all 7 versions + `x-default`, canonical URLs.
+- Structured data: Organization, WebSite, WebPage, BreadcrumbList, SoftwareApplication with the three
+  plans as Offers (price in USD — USDT is pegged), FAQPage, Article (guides).
+- Per-page social preview image (`assets/og/<lang>-<page>.jpg`), titles ≤ 70 and descriptions ≤ 160 chars.
+- `sitemap.xml` with language alternates, `robots.txt`, `llms.txt` for AI assistants.
+- First visit: visitors whose browser language is one of the 7 are sent to their language once
+  (search engines are not redirected; a manual language choice is remembered).
+- `vercel.json`: the old `glotchatlandingpage.vercel.app` address redirects permanently to www.glotchat.com.
 
-Every button opens Telegram with a ready-made message (see `MSG` in `main.js`): free trial, plan finder
-("I use 6–15 accounts… try Pro"), buy a plan, custom/lifetime offer, live demo. Vercel Analytics events:
-`telegram_click` (place, plan), `plan_finder`, `exit_popup`, `demo_tab`.
+After a deploy, in **Google Search Console** submit `https://www.glotchat.com/sitemap.xml`
+(and the same in Bing Webmaster Tools).
 
-## Change the Telegram username
+## Analytics
 
-`assets/js/main.js` → `var TG_USER = 'GlotChat';` and the `href="https://t.me/GlotChat"` links in
-`index.html` (fallback when JavaScript is off), plus `assets/img/telegram-qr.svg`
-(regenerate: `python -c "import segno; segno.make('https://t.me/NEWNAME').save('telegram-qr.svg', scale=8, border=2, dark='#0b1220')"`).
+Vercel Web Analytics events: `telegram_click` (place, plan, lang), `plan_finder`, `calculator`,
+`exit_popup`, `demo_tab`, `language`, `copy`.
 
 ## Media
 
 | File | Use |
 |---|---|
-| `assets/media/*-en.mp4`, `*-zh.mp4` | Demo videos on the page (English / Chinese agent) |
+| `assets/media/*-en.mp4`, `*-zh.mp4` | Demo videos (English / Chinese agent) |
 | `assets/media/*.webp` | Video posters |
-| `assets/gif/*.gif` | **GIFs for marketing** — post them in Telegram groups, WhatsApp status, social media |
-| `og.png` | Link preview image (1200 × 630) |
+| `assets/gif/*.gif` | GIFs for marketing posts |
+| `assets/og/*.jpg` | Social previews (generated) |
 
-Scenes: `chat` (two-way translation), `voice` (voice note → text), `photo` (photo text → translation),
-`accounts` (many accounts, notifications, Ctrl+K). Re-record after editing `_tools/scenes.html`:
-`python _tools/record.py` (needs Chrome, Playwright and ffmpeg).
+Re-record the demos after editing `_tools/scenes.html`: `python _tools/record.py` (Chrome, Playwright, ffmpeg).

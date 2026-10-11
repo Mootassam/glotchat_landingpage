@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="{{ L.html }}" dir="{{ L.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="{{ page.robots or 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }}">
+  <link rel="canonical" href="{{ url }}">
+{%- for a in alternates %}
+  <link rel="alternate" hreflang="{{ a.hreflang }}" href="{{ a.url }}">
+{%- endfor %}
+  <meta name="theme-color" content="#0b1220">
+  <meta name="application-name" content="GlotChat">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="{{ 'article' if page.article else 'website' }}">
+  <meta property="og:site_name" content="GlotChat">
+  <meta property="og:url" content="{{ url }}">
+  <meta property="og:locale" content="{{ L.og }}">
+{%- for a in alternates if a.og and a.og != L.og %}
+  <meta property="og:locale:alternate" content="{{ a.og }}">
+{%- endfor %}
+  <meta property="og:title" content="{{ page.og_title or page.title }}">
+  <meta property="og:description" content="{{ page.og_description or page.description }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ page.og_title or page.title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.og_title or page.title }}">
+  <meta name="twitter:description" content="{{ page.og_description or page.description }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{% if lang == 'ar' %}&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700{% endif %}&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ v }}">
+{%- if preload %}
+  <link rel="preload" as="image" href="{{ preload }}" fetchpriority="high">
+{%- endif %}
+  <script type="application/ld+json">{{ jsonld }}</script>
+  <script>window.GC={{ gc }};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="pg-{{ page_id|replace('/', '-') }}">
+<a class="skip" href="#main">{{ ui.skip }}</a>
+
+<a class="promo" data-tg="trial" data-place="promo" href="{{ tg }}" target="_blank" rel="noopener">
+  <span class="gift" aria-hidden="true">🎁</span>
+  <span>{{ ui.promo_html|safe }}</span>
+  <span class="promo-go">{{ ui.promo_go }}</span>
+</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="{{ home_url }}" aria-label="GlotChat"><img src="/assets/img/logo-96.png" alt="" width="34" height="34"><span>GlotChat</span></a>
+    <nav class="links" aria-label="{{ ui.nav_label }}">
+      <div class="dd">
+        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.product }} <span aria-hidden="true">▾</span></button>
+        <div class="dd-m">
+          <a href="{{ link('whatsapp-translator') }}"><b>🌐 {{ ui.nav.translator }}</b><small>{{ ui.nav.translator_s }}</small></a>
+          <a href="{{ link('multiple-whatsapp-accounts') }}"><b>🗂 {{ ui.nav.accounts }}</b><small>{{ ui.nav.accounts_s }}</small></a>
+          <a href="{{ link('compare') }}"><b>⚖️ {{ ui.nav.compare }}</b><small>{{ ui.nav.compare_s }}</small></a>
+        </div>
+      </div>
+      <div class="dd">
+        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.usecases }} <span aria-hidden="true">▾</span></button>
+        <div class="dd-m">
+{%- for s in industries %}
+          <a href="{{ link('for/' ~ s.slug) }}"><b>{{ s.icon }} {{ s.name }}</b><small>{{ s.short }}</small></a>
+{%- endfor %}
+        </div>
+      </div>
+      <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
+      <a href="{{ link('guides') }}">{{ ui.nav.guides }}</a>
+    </nav>
+    <div class="nav-r">
+      <div class="dd lang-dd">
+        <button class="dd-b lang-b" type="button" aria-expanded="false" aria-label="{{ ui.lang_label }}"><span aria-hidden="true">🌐</span> {{ L.name }} <span aria-hidden="true">▾</span></button>
+        <div class="dd-m end">
+{%- for a in lang_menu %}
+          <a href="{{ a.url }}" hreflang="{{ a.hreflang }}" lang="{{ a.html }}" data-lang="{{ a.code }}"{% if a.code == lang %} aria-current="page"{% endif %}>{{ a.name }}</a>
+{%- endfor %}
+        </div>
+      </div>
+      <a class="btn tg sm" data-tg="general" data-place="nav" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.contact }}</span></a>
+      <button class="burger" type="button" aria-label="{{ ui.menu }}" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="{{ ui.nav_label }}" hidden>
+    <a href="{{ link('whatsapp-translator') }}">🌐 {{ ui.nav.translator }}</a>
+    <a href="{{ link('multiple-whatsapp-accounts') }}">🗂 {{ ui.nav.accounts }}</a>
+{%- for s in industries %}
+    <a href="{{ link('for/' ~ s.slug) }}">{{ s.icon }} {{ s.name }}</a>
+{%- endfor %}
+    <a href="{{ link('compare') }}">⚖️ {{ ui.nav.compare }}</a>
+    <a href="{{ link('pricing') }}">💳 {{ ui.nav.pricing }}</a>
+    <a href="{{ link('guides') }}">📘 {{ ui.nav.guides }}</a>
+  </nav>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="{{ home_url }}"><img src="/assets/img/logo-96.png" alt="" width="28" height="28" loading="lazy"><span>GlotChat</span></a>
+      <p>{{ ui.footer.tagline }}</p>
+      <a class="btn tg sm" data-tg="general" data-place="footer" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>@{{ cfg.TELEGRAM_USER }}</span></a>
+    </div>
+    <div>
+      <h3>{{ ui.footer.product }}</h3>
+      <a href="{{ link('whatsapp-translator') }}">{{ ui.nav.translator }}</a>
+      <a href="{{ link('multiple-whatsapp-accounts') }}">{{ ui.nav.accounts }}</a>
+      <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
+      <a href="{{ link('compare') }}">{{ ui.nav.compare }}</a>
+    </div>
+    <div>
+      <h3>{{ ui.nav.usecases }}</h3>
+{%- for s in industries %}
+      <a href="{{ link('for/' ~ s.slug) }}">{{ s.name }}</a>
+{%- endfor %}
+    </div>
+    <div>
+      <h3>{{ ui.footer.resources }}</h3>
+      <a href="{{ link('guides') }}">{{ ui.nav.guides }}</a>
+{%- for g in guides %}
+      <a href="{{ link(g.id) }}">{{ g.short }}</a>
+{%- endfor %}
+      <a href="/privacy/">{{ ui.footer.privacy }}</a>
+      <a href="/terms/">{{ ui.footer.terms }}</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>{{ ui.footer.trademark }}</p>
+    <p>© <span class="year">2026</span> GlotChat · <span class="foot-langs">{% for a in lang_menu %}<a href="{{ a.url }}" hreflang="{{ a.hreflang }}" lang="{{ a.html }}">{{ a.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span></p>
+  </div>
+</footer>
+
+<a class="fab" data-tg="general" data-place="fab" href="{{ tg }}" target="_blank" rel="noopener" aria-label="{{ ui.fab }}">{{ icon_tg|safe }}<span>{{ ui.fab }}</span></a>
+<div class="mbar">
+  <a class="btn tg block" data-tg="trial" data-place="mobile-bar" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.mbar }}</span></a>
+</div>
+<div class="modal" id="leave" hidden role="dialog" aria-modal="true" aria-labelledby="leaveH">
+  <div class="modal-box">
+    <button class="modal-x" type="button" data-close aria-label="{{ ui.close }}">×</button>
+    <span class="gift big" aria-hidden="true">🎁</span>
+    <h2 id="leaveH">{{ ui.leave.h }}</h2>
+    <p>{{ ui.leave.p }}</p>
+    <a class="btn tg lg block" data-tg="trial" data-place="exit-popup" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.leave.btn }}</span></a>
+    <button class="modal-no" type="button" data-close>{{ ui.leave.no }}</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/main.js?v={{ v }}" defer></script>
+</body>
+</html>
