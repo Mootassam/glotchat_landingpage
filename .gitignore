@@ -3,6 +3,9 @@ _tools/frames/
 _tools/preview/
 _tools/shots/
 _tools/*.png
+_tools/demo/frames/
+_tools/demo/preview/
+_tools/demo/*.log
 __pycache__/
 *.pyc
 .vercel/

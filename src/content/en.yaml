@@ -22,6 +22,8 @@ ui:
   cta_trial: "Start your free 3-day trial"
   cta_demo: "Watch it work"
   cta_live: "Ask for a live demo"
+  expand: "Watch full screen"
+  demo_label: "GlotChat demo"
   micro: ["3 days free — no payment", "Fast reply on Telegram", "From 69 USDT / year"]
   trust: ["Official WhatsApp Web inside", "Chats stay on your PC", "Windows 10 & 11", "49 languages offline"]
   breadcrumb: "Breadcrumb"
@@ -109,141 +111,188 @@ pages:
     short: "Home"
     icon: "🏠"
     blocks:
-      - type: hero_home
-        eyebrow: "For sellers & support teams who chat with the world"
-        h1: 'All your WhatsApp accounts in one window. <span class="grad">Every customer in their language.</span>'
-        lead: "GlotChat runs many WhatsApp accounts side by side, each fully isolated with its own notifications — and translates text, voice messages and photos instantly, right on your PC."
-        micro: ["3 days free — no payment", "Fast reply on Telegram", "From 69 USDT / year"]
-        float1: "translated instantly"
-        float2: "accounts in one window"
-        media_alt: "GlotChat translating a WhatsApp chat between Spanish and English"
-      - type: facts
-        label: "Key facts"
-        items: [["27+", "WhatsApp accounts at once (tested)"], ["49", "translation languages"], ["100%", "offline translation on your PC"], ["🎤 + 🖼", "voice & photo translation"]]
-      - type: demo
-        k: "See it in action"
-        h: "Read, reply and understand — in any language"
-        p: "Real GlotChat features, recorded. Pick one:"
-        panes:
-          - id: chat
-            icon: "💬"
-            tab: "Chat translation"
-            h: "Two-way chat translation"
-            ticks: ["Every customer message is translated right under the original.", "Write in your own language — GlotChat shows the translation before it goes out.", "The customer receives natural Spanish, Arabic, Turkish… you keep what you wrote."]
-            link: ["whatsapp-translator", "How the WhatsApp translator works"]
-          - id: voice
-            icon: "🎤"
-            tab: "Voice messages"
-            h: "Voice notes become text"
-            ticks: ["One click on 🎤 Transcribe under any voice message.", "You get what the customer said — and the translation.", "Works offline. The audio never leaves your PC."]
-          - id: photo
-            icon: "🖼"
-            tab: "Photos & documents"
-            h: "Text in photos, translated"
-            ticks: ["Orders, invoices, price lists, screenshots — click 🔤 Read text.", "Latin, Arabic, Cyrillic, Chinese, Korean, Thai and more.", "The customer is not notified of anything."]
-          - id: accounts
-            icon: "🗂"
-            tab: "Many accounts"
-            h: "Many accounts, zero mix-ups"
-            ticks: ["Each account has its own sealed session — logins never mix.", "Notifications show which account they belong to; one click opens the right chat.", "Ctrl+K finds any of your accounts in a second. Switching is instant."]
-            link: ["multiple-whatsapp-accounts", "Run multiple WhatsApp accounts on one PC"]
-      - type: cards
-        id: features
-        soft: true
-        k: "Everything you need"
-        h: "Built for people who sell and support across borders"
-        items:
-          - {icon: "🗂", h: "Many accounts, one window", p: "A tab for every number. Tested with 27 accounts running at the same time.", link: "multiple-whatsapp-accounts"}
-          - {icon: "🔒", h: "Fully isolated", p: "Each account keeps its own login, cookies and storage. No mixing, no leaks."}
-          - {icon: "🔔", h: "Notifications per account", p: "“Shop UAE · Fatima” — you always know which number a message came to."}
-          - {icon: "🌐", h: "Two-way translation", p: "49 languages. Incoming messages translated automatically, your replies previewed before sending.", link: "whatsapp-translator"}
-          - {icon: "🎤", h: "Voice → text", p: "Transcribe and translate voice notes in about 100 spoken languages."}
-          - {icon: "🔤", h: "Photo → text", p: "Read and translate the text in photos, invoices and screenshots."}
-          - {icon: "⚡", h: "Quick-reply templates", p: "Saved answers with the customer's name, translated like everything you write."}
-          - {icon: "🛡", h: "Private & offline", p: "Translation runs on your PC. Messages are never sent to Google, DeepL or any AI service."}
-          - {icon: "🀄", h: "English & 中文 interface", p: "Switch GlotChat's menus between English and Chinese in one click."}
-      - type: cards
-        id: who
-        who: true
-        k: "Who it's for"
-        h: "Made for businesses whose customers speak another language"
-        p: "If you answer WhatsApp customers from different countries — on more than one number — GlotChat saves you hours every day."
-        cta: "Tell us your business — get a free trial"
-        items:
-          - {icon: "🏠", h: "Real estate agencies", p: "Foreign buyers send voice notes and photos of documents. Understand them instantly and never miss a lead on any agent's number.", pair: "English ⇄ Русский · العربية", link: "for/real-estate"}
-          - {icon: "🩺", h: "Clinics & medical tourism", p: "One window for every coordinator's number. Patients write in their language, your team answers in theirs.", pair: "Türkçe ⇄ English · Deutsch", link: "for/clinics"}
-          - {icon: "🚢", h: "Exporters & wholesalers", p: "Quote, negotiate and follow up with buyers in Arabic, Spanish, Russian or Portuguese — while you write in your own language.", pair: "中文 ⇄ العربية · Español", link: "for/exporters"}
-          - {icon: "✈️", h: "Travel & tourism", p: "Bookings, changes and questions from tourists all over the world — handled from one PC.", pair: "English ⇄ Français · Italiano", link: "for/travel"}
-          - {icon: "🛒", h: "E-commerce & resellers", p: "Separate numbers for each shop or country, quick-reply templates, and translated photos of orders and receipts.", pair: "Português ⇄ Español · English"}
-          - {icon: "🎧", h: "Support & sales teams", p: "Your agents work in their own language; every customer gets answers in theirs.", pair: "中文 ⇄ English · Tiếng Việt"}
-      - type: split
-        id: inside
-        k: "Inside the app"
-        h: "Made to run all day, every day"
-        ticks: ["<b>Self-healing:</b> a frozen or crashed account restarts by itself — the others keep working.", "<b>Smart start-up:</b> accounts load a few at a time, so your PC stays responsive.", "<b>Memory monitor:</b> see what each account uses; put rarely used ones to sleep.", "<b>Real WhatsApp Web:</b> GlotChat never sends anything on its own — you stay in control."]
-        media: "img:switcher"
-        alt: "GlotChat account switcher: search and open any of 27 WhatsApp accounts with Ctrl+K"
-        caption: "The account switcher (Ctrl+K): every account with its status, memory and unread messages."
-      - type: steps
-        k: "Try before you pay"
-        h: "Free for 3 days. Up and running in 10 minutes."
-        items:
-          - ["Message us on Telegram", "Tell us how many WhatsApp accounts you use. We send you the installer and answer every question."]
-          - ["Get your free trial key", "Install GlotChat, send us the Machine ID it shows, and receive a 3-day key with every feature unlocked."]
-          - ["Love it? Keep it.", "Pay in USDT and get your yearly key. Your accounts and settings stay exactly as they are — nothing to set up again."]
-        cta: "Get my free trial on Telegram"
-      - type: vs
-        k: "Why GlotChat"
-        h: "Stop copy-pasting into translators"
-        bad_h: "Without GlotChat"
-        bad: ["A phone or browser profile for every number", "Copy → paste → translate → paste back, for every message", "Voice notes you can't understand", "Missed messages on the “other” account", "Customer chats pasted into online translators"]
-        good_h: "With GlotChat"
-        good: ["All numbers in one window, one click apart", "Translation appears under every message automatically", "Voice notes turned into text, in your language", "Every notification tells you which account it's for", "Everything translated offline, on your own PC"]
-      - type: calc
-        soft: true
-        k: "Time saved"
-        h: "How much does copy-paste translation cost you?"
-        p: "Move the sliders to your day. Most teams are surprised."
-      - type: table
-        id: compare
-        k: "Compare"
-        h: "GlotChat vs. the usual workarounds"
-        hl: 4
-        cols: ["", "WhatsApp Web + phones", "Browser profiles", "Translator extension", "GlotChat"]
-        rows:
-          - ["Many numbers in one window", "✕", "~ one window each", "✕ one account", "✓ 27+ tested"]
-          - ["Notifications show the account", "✕", "~", "✕", "✓"]
-          - ["Chats translated automatically", "✕", "✕", "✓", "✓ 49 languages"]
-          - ["Voice notes → text", "✕", "✕", "✕ usually", "✓ ~100 languages"]
-          - ["Text in photos translated", "✕", "✕", "✕", "✓"]
-          - ["Messages stay on your PC", "✓", "✓", "✕ usually sent online", "✓ offline"]
-        note: "General comparison of typical setups. Extensions and apps differ — check each one's details."
-        cta: "See it on your own accounts — free"
-      - type: plans
-        k: "Pricing"
-        h: "Simple yearly plans. Try free first."
-        p: "Every plan includes all features and all updates. Start with a free 3-day trial — pay only if you love it."
-        more: "Compare plans in detail"
-      - type: faq
-        k: "FAQ"
-        h: "Questions, answered"
-        items:
-          - ["Is there a free trial?", "Yes. Message us on Telegram and you get a 3-day trial key with every feature unlocked — no payment needed. If you like it, you buy a plan and keep all your accounts and settings."]
-          - ["Is it safe for my WhatsApp accounts?", "GlotChat opens the official WhatsApp Web for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you. As with any WhatsApp use, avoid spam and bulk unsolicited messages."]
-          - ["Does translation need the internet?", "No. Translation, voice transcription and photo reading run on your own PC. You download a language pack once (English is built in). WhatsApp itself of course needs the internet."]
-          - ["Which computer do I need?", "Windows 10 or 11 (64-bit). Each WhatsApp account uses about 300–450 MB of memory: 8 GB RAM is fine for about 10 accounts, 16 GB or more for 20–30 accounts."]
-          - ["Which languages are supported?", "49 translation languages, including English, Chinese, Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Hindi, Japanese, Korean and Vietnamese. Voice messages are recognised in about 100 languages."]
-          - ["Does it work with WhatsApp Business?", "Yes. Both WhatsApp and WhatsApp Business accounts can be linked, the same way you link WhatsApp Web."]
-          - ["Do I need to scan a QR code for every account?", "Yes, once per account — with WhatsApp on that phone → Linked devices. After that the account stays logged in, even after restarting the PC."]
-          - ["How do I pay and receive the software?", "Message us on Telegram, choose your plan and pay in USDT (TRC20, BEP20 or ERC20). You receive the installer and your license key, and we help you set it up if needed."]
-          - ["What happens after one year?", "You renew your plan at the same price and keep working without interruption. Your accounts, chats and settings stay on your PC."]
-          - ["Can I upgrade later?", "Yes. When you add more WhatsApp numbers, message us and we upgrade your key — you only pay the difference."]
-          - ["Does it work on Mac or phone?", "GlotChat is a Windows desktop app. Your phones keep working normally — GlotChat is a linked device, like WhatsApp Web."]
-          - ["Can my Chinese-speaking team use it?", "Yes. The whole interface is available in Chinese, and agents can read and write in Chinese while customers receive their own language."]
-      - type: related
-        k: "Learn more"
-        h: "Guides and comparisons"
-        items: ["guides/multiple-whatsapp-accounts-on-pc", "guides/translate-whatsapp-messages-on-pc", "compare"]
+    - type: hero_home
+      eyebrow: WhatsApp multi-account + translator for Windows
+      h1: Many WhatsApp accounts. <span class="grad">One window. Any language.</span>
+      lead: Add all your numbers, get each account's notifications, and read every message, voice note and photo in your own language.
+      micro:
+      - 3 days free — no payment
+      - Fast reply on Telegram
+      - From 69 USDT / year
+      media_alt: GlotChat translating a WhatsApp chat between Spanish and English
+      chapters:
+      - id: accounts
+        icon: 👥
+        label: Add accounts
+        cap: 'Add each WhatsApp number in seconds: name it, pick your language, scan the QR code.'
+      - id: notify
+        icon: 🔔
+        label: Notifications
+        cap: Every notification shows which account it's for — click it and the right chat opens.
+      - id: chat
+        icon: 🌐
+        label: Translate chats
+        cap: Customers write in their language, you read yours. Your reply is sent in theirs.
+      - id: voice
+        icon: 🎤
+        label: Voice notes
+        cap: One click turns a voice note into text — translated into your language.
+      - id: photo
+        icon: 📷
+        label: Photos
+        cap: 'Photos of invoices, orders and documents: the text is read and translated.'
+    - type: facts
+      label: Key facts
+      items:
+      - - 27+
+        - WhatsApp accounts at once (tested)
+      - - '49'
+        - translation languages
+      - - 100%
+        - offline translation on your PC
+      - - 🎤 + 🖼
+        - voice & photo translation
+    - type: showcase
+      id: features
+      k: How it works
+      h: See what GlotChat does — in 5 short clips
+      rows:
+      - media: video:accounts
+        h: All your WhatsApp numbers in one window
+        p: Add as many accounts as you need. Each one is separate, with its own login and its own languages.
+        ticks:
+        - Scan the QR code once — it stays logged in
+        - Tested with 27 accounts at the same time
+        - WhatsApp and WhatsApp Business
+      - media: video:notify
+        h: Know which account every message is for
+        p: Notifications show the account and the customer — already translated.
+        ticks:
+        - “Shop UAE · Fatima” — never miss a number
+        - Click the notification, the right chat opens
+        - Unread counts on every account tab
+      - media: video:chat
+        h: Chat in any language, both ways
+        p: Messages are translated under the original. You write in your language — the customer gets theirs.
+        ticks:
+        - 49 languages
+        - Check the translation before it's sent
+        - The customer sees a normal message
+      - media: video:voice
+        h: Voice notes → text in your language
+        p: Can't understand a voice message? One click and you read it.
+        ticks:
+        - About 100 spoken languages
+        - Works offline — the audio stays on your PC
+      - media: video:photo
+        h: Read the text in photos and documents
+        p: Invoices, orders, price lists, screenshots — read and translated in one click.
+        ticks:
+        - Latin, Arabic, Cyrillic, Chinese and more
+        - The customer isn't notified
+      extras:
+      - ⚡ Quick-reply templates
+      - 🛡 Offline & private translation
+      - 🩹 Frozen accounts restart by themselves
+      - 🀄 English & 中文 interface
+    - type: cards
+      id: who
+      who: true
+      k: Who it's for
+      h: Made for businesses whose customers speak another language
+      p: If you answer WhatsApp customers from different countries — on more than one number — GlotChat saves you hours every day.
+      cta: Tell us your business — get a free trial
+      items:
+      - icon: 🏠
+        h: Real estate agencies
+        p: Foreign buyers send voice notes and photos of documents. Understand them instantly and never miss a lead on any agent's number.
+        pair: English ⇄ Русский · العربية
+        link: for/real-estate
+      - icon: 🩺
+        h: Clinics & medical tourism
+        p: One window for every coordinator's number. Patients write in their language, your team answers in theirs.
+        pair: Türkçe ⇄ English · Deutsch
+        link: for/clinics
+      - icon: 🚢
+        h: Exporters & wholesalers
+        p: Quote, negotiate and follow up with buyers in Arabic, Spanish, Russian or Portuguese — while you write in your own language.
+        pair: 中文 ⇄ العربية · Español
+        link: for/exporters
+      - icon: ✈️
+        h: Travel & tourism
+        p: Bookings, changes and questions from tourists all over the world — handled from one PC.
+        pair: English ⇄ Français · Italiano
+        link: for/travel
+      - icon: 🛒
+        h: E-commerce & resellers
+        p: Separate numbers for each shop or country, quick-reply templates, and translated photos of orders and receipts.
+        pair: Português ⇄ Español · English
+      - icon: 🎧
+        h: Support & sales teams
+        p: Your agents work in their own language; every customer gets answers in theirs.
+        pair: 中文 ⇄ English · Tiếng Việt
+      soft: true
+    - type: vs
+      k: Why GlotChat
+      h: Stop copy-pasting into translators
+      bad_h: Without GlotChat
+      bad:
+      - A phone or browser profile for every number
+      - Copy → paste → translate → paste back, for every message
+      - Voice notes you can't understand
+      - Missed messages on the “other” account
+      - Customer chats pasted into online translators
+      good_h: With GlotChat
+      good:
+      - All numbers in one window, one click apart
+      - Translation appears under every message automatically
+      - Voice notes turned into text, in your language
+      - Every notification tells you which account it's for
+      - Everything translated offline, on your own PC
+    - type: steps
+      k: Try before you pay
+      h: Free for 3 days. Up and running in 10 minutes.
+      items:
+      - - Message us on Telegram
+        - Tell us how many WhatsApp accounts you use. We send you the installer and answer every question.
+      - - Get your free trial key
+        - Install GlotChat, send us the Machine ID it shows, and receive a 3-day key with every feature unlocked.
+      - - Love it? Keep it.
+        - Pay in USDT and get your yearly key. Your accounts and settings stay exactly as they are — nothing to set up again.
+      cta: Get my free trial on Telegram
+    - type: plans
+      k: Pricing
+      h: Simple yearly plans. Try free first.
+      p: Every plan includes all features and all updates. Start with a free 3-day trial — pay only if you love it.
+      more: Compare plans in detail
+      soft: false
+    - type: faq
+      k: FAQ
+      h: Questions, answered
+      items:
+      - - Is there a free trial?
+        - Yes. Message us on Telegram and you get a 3-day trial key with every feature unlocked — no payment needed. If you like it, you buy a plan and keep all your accounts and settings.
+      - - Is it safe for my WhatsApp accounts?
+        - 'GlotChat opens the official WhatsApp Web for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you. As with any WhatsApp use, avoid spam and bulk unsolicited messages.'
+      - - Does translation need the internet?
+        - No. Translation, voice transcription and photo reading run on your own PC. You download a language pack once (English is built in). WhatsApp itself of course needs the internet.
+      - - Which computer do I need?
+        - 'Windows 10 or 11 (64-bit). Each WhatsApp account uses about 300–450 MB of memory: 8 GB RAM is fine for about 10 accounts, 16 GB or more for 20–30 accounts.'
+      - - Which languages are supported?
+        - 49 translation languages, including English, Chinese, Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Hindi, Japanese, Korean and Vietnamese. Voice messages are recognised in about 100 languages.
+      - - Does it work with WhatsApp Business?
+        - Yes. Both WhatsApp and WhatsApp Business accounts can be linked, the same way you link WhatsApp Web.
+      - - How do I pay and receive the software?
+        - Message us on Telegram, choose your plan and pay in USDT (TRC20, BEP20 or ERC20). You receive the installer and your license key, and we help you set it up if needed.
+      - - Does it work on Mac or phone?
+        - GlotChat is a Windows desktop app. Your phones keep working normally — GlotChat is a linked device, like WhatsApp Web.
+    - type: related
+      k: Learn more
+      h: Guides and comparisons
+      items:
+      - guides/multiple-whatsapp-accounts-on-pc
+      - guides/translate-whatsapp-messages-on-pc
+      - compare
 
   # ================================================================ PRICING
   pricing:

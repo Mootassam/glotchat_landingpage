@@ -38,8 +38,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{% if lang == 'ar' %}&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700{% endif %}&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css?v={{ v }}">
-{%- if preload %}
-  <link rel="preload" as="image" href="{{ preload }}" fetchpriority="high">
+{%- if preload and preload[1] %}
+  <link rel="preload" as="image" href="{{ preload[0] }}" media="(min-width: 701px)" fetchpriority="high">
+  <link rel="preload" as="image" href="{{ preload[1] }}" media="(max-width: 700px)" fetchpriority="high">
+{%- elif preload %}
+  <link rel="preload" as="image" href="{{ preload[0] }}" fetchpriority="high">
 {%- endif %}
   <script type="application/ld+json">{{ jsonld }}</script>
   <script>window.GC={{ gc }};</script>

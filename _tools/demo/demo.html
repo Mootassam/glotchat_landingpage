@@ -1,0 +1,485 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat demo scenes</title>
+<!-- Seekable animated scenes of the GlotChat app, recorded to video by record.py.
+     ?scene=accounts|notify|chat|voice|photo  &lang=en|zh|ar|tr|es|pt|ru  &fmt=land|port  &record=1 (no auto-play) -->
+<style>
+  :root { --bg:#0b141a; --panel:#111b21; --panel2:#202c33; --line:#26343d; --txt:#e9edef; --muted:#8696a0;
+          --in:#202c33; --out:#005c4b; --acc:#7c5cff; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0b1220; overflow: hidden;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #vp { position: relative; overflow: hidden; background: radial-gradient(900px 600px at 70% 0%, #13324a, #0b1220 70%); }
+  #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 800px; overflow: hidden; background: #0f141b; color: var(--txt);
+           transform-origin: 0 0; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); }
+  /* ---------- GlotChat shell ---------- */
+  .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 64px; background: #172029; display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 10px; }
+  .rail .logo { width: 42px; height: 42px; border-radius: 13px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; font-weight: 800; font-size: 13px; color: #fff; }
+  .rail .rb { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #8a97a8; font-size: 18px; }
+  .rail .rb.on { background: rgba(16,196,140,.16); }
+  .tabs { position: absolute; left: 64px; right: 0; top: 0; height: 50px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: stretch; padding: 0 6px; color: #3b4652; }
+  .tab { display: flex; align-items: center; gap: 8px; padding: 0 12px 0 8px; font-size: 14px; font-weight: 600; position: relative; white-space: nowrap; }
+  .tab .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 14px; position: relative; }
+  .tab .ic i { position: absolute; right: -3px; bottom: -3px; width: 11px; height: 11px; border-radius: 50%; background: #22c55e; border: 2px solid #fff; }
+  .tab .ic i.wait { background: #f59e0b; }
+  .tab.on { background: #f1f5f9; color: #0f172a; }
+  .tab.on::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--c); }
+  .tab .un { min-width: 20px; height: 20px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 11.5px; font-weight: 800; display: grid; place-items: center; padding: 0 6px; }
+  .tab.add { color: #64748b; font-size: 22px; padding: 0 12px; font-weight: 400; }
+  .tools { flex: none; margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: #3b4652; white-space: nowrap; padding-right: 6px; }
+  .tools .sw { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border: 1px solid #e3e7ec; border-radius: 9px; background: #f5f7fa; color: #10a37a; }
+  .tools .sw b { width: 30px; height: 17px; border-radius: 9px; background: #10c48c; position: relative; }
+  .tools .sw b::after { content: ""; position: absolute; right: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #fff; }
+  .tools .sel { border: 1px solid #e3e7ec; border-radius: 8px; padding: 6px 10px; background: #fff; }
+  /* ---------- WhatsApp area ---------- */
+  .wa { position: absolute; left: 64px; right: 0; top: 50px; bottom: 0; display: flex; background: var(--bg); }
+  .list { width: 340px; flex: none; background: var(--panel); border-right: 1px solid var(--line); }
+  .list h3 { margin: 0; padding: 16px 18px 10px; font-size: 20px; font-weight: 700; }
+  .search { margin: 0 14px 10px; height: 36px; border-radius: 9px; background: var(--panel2); color: var(--muted); font-size: 13.5px; display: flex; align-items: center; padding: 0 12px; }
+  .row { display: flex; gap: 12px; padding: 10px 14px; align-items: center; }
+  .row.on { background: #2a3942; }
+  .av { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #fff; flex: none; font-size: 17px; }
+  .row .t { flex: 1; min-width: 0; }
+  .row .t b { display: block; font-weight: 600; font-size: 15px; }
+  .row .t span { display: block; font-size: 13.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .m { font-size: 12px; color: var(--muted); text-align: right; }
+  .row .m em { display: inline-grid; place-items: center; min-width: 20px; height: 20px; border-radius: 10px; background: #00a884; color: #111b21; font-style: normal; font-weight: 800; font-size: 11.5px; margin-top: 4px; padding: 0 5px; }
+  .chat { flex: 1; display: flex; flex-direction: column; position: relative; background-color: #0b141a;
+          background-image: radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px); background-size: 22px 22px; }
+  .chead { height: 60px; flex: none; background: var(--panel2); display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .chead .av { width: 40px; height: 40px; font-size: 15px; }
+  .chead b { font-size: 16px; font-weight: 600; }
+  .chead small { display: block; color: var(--muted); font-size: 12.5px; }
+  .chips { position: absolute; right: 14px; top: 72px; display: flex; gap: 6px; z-index: 3; }
+  .chip { height: 30px; padding: 0 12px; border-radius: 15px; background: #fff; color: #1f2933; font-size: 13px; font-weight: 650; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+  .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--acc); }
+  .msgs { flex: 1; padding: 18px 56px 12px; display: flex; flex-direction: column; gap: 8px; justify-content: flex-end; overflow: hidden; }
+  .b { max-width: 66%; padding: 8px 11px 7px; border-radius: 10px; font-size: 15.5px; line-height: 1.4; position: relative; box-shadow: 0 1px .5px rgba(0,0,0,.13); }
+  .b.in { align-self: flex-start; background: var(--in); border-top-left-radius: 0; }
+  .b.out { align-self: flex-end; background: var(--out); border-top-right-radius: 0; }
+  .b .tm { float: right; margin: 7px 0 -4px 12px; font-size: 11.5px; color: rgba(233,237,239,.6); }
+  .tr { display: block; margin-top: 7px; padding-top: 7px; border-top: 1px dashed rgba(233,237,239,.28); font-size: 15px; color: #fff; }
+  .tr .tt { unicode-bidi: plaintext; }
+  .badge { display: inline-flex; font-size: 11px; font-weight: 750; padding: 1px 7px; border-radius: 9px; margin-right: 7px; color: #fff; background: var(--acc); vertical-align: 1px; white-space: nowrap; }
+  .badge.grey { background: rgba(140,150,160,.55); }
+  .badge.vo { background: #0ea5e9; }
+  .badge.ph2 { background: #f59e0b; }
+  .comp { height: 64px; flex: none; background: var(--panel2); display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .comp .box { flex: 1; height: 44px; border-radius: 10px; background: #2a3942; display: flex; align-items: center; padding: 0 14px; font-size: 15.5px; color: var(--txt); unicode-bidi: plaintext; }
+  .comp .box .ph { color: var(--muted); }
+  .caret { display: inline-block; width: 2px; height: 19px; background: #00a884; margin-left: 1px; vertical-align: -3px; }
+  .comp .ic { color: var(--muted); font-size: 21px; }
+  /* send preview panel */
+  .panel { position: absolute; left: 16px; right: 16px; bottom: 76px; background: #fff; color: #1f2933; border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.45); padding: 13px 15px; font-size: 13.5px; z-index: 4; }
+  .panel .ph { display: flex; justify-content: space-between; font-weight: 650; margin-bottom: 8px; }
+  .panel .ph .link { color: #6d4cff; }
+  .panel .ta { border: 2px solid #7c5cff; border-radius: 10px; padding: 10px 12px; font-size: 16px; line-height: 1.4; unicode-bidi: plaintext; }
+  .panel .orig { color: #5b6573; margin-top: 8px; font-size: 13.5px; unicode-bidi: plaintext; }
+  .panel .row2 { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+  .panel .hint { color: #8a95a3; font-size: 12px; margin-right: auto; }
+  .btn { height: 32px; padding: 0 14px; border-radius: 9px; font-weight: 650; font-size: 13px; display: inline-flex; align-items: center; border: 1px solid #e3e7ec; background: #fff; color: #1f2933; white-space: nowrap; }
+  .btn.pri { background: linear-gradient(135deg,#7c5cff,#5b3df5); color: #fff; border: 0; }
+  .btn.green { background: linear-gradient(135deg,#10c48c,#0b8f6a); color: #fff; border: 0; height: 40px; padding: 0 18px; font-size: 14px; }
+  /* voice + photo */
+  .voice { display: flex; align-items: center; gap: 10px; min-width: 330px; }
+  .voice .play { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: #d1d7db; font-size: 17px; }
+  .voice .wave { flex: 1; height: 28px; display: flex; align-items: center; gap: 2px; }
+  .voice .wave i { flex: 1; background: #8696a0; border-radius: 2px; }
+  .voice .pav { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
+  .pill { display: inline-block; margin-top: 7px; font-size: 13px; font-weight: 650; padding: 3px 11px; border-radius: 11px; background: rgba(140,150,160,.24); color: #e9edef; }
+  .photo { width: 320px; height: 196px; border-radius: 7px; overflow: hidden; background: #f4efe4; color: #2b2b2b; padding: 16px 18px; font-family: "Segoe Print", "Comic Sans MS", cursive; font-size: 15.5px; line-height: 1.55; transform: rotate(-1.2deg); box-shadow: inset 0 0 30px rgba(120,90,40,.25); }
+  .photo b { font-family: "Segoe UI", sans-serif; font-weight: 800; display: block; margin-bottom: 4px; font-size: 15px; }
+  /* notifications (Windows toasts) */
+  .toast { position: absolute; right: 18px; width: 350px; background: #2b2b2b; border: 1px solid #3d3d3d; color: #fff; border-radius: 10px; padding: 12px 15px; box-shadow: 0 18px 40px rgba(0,0,0,.55); font-size: 14px; z-index: 6; }
+  .toast .top { display: flex; align-items: center; gap: 8px; color: #c8c8c8; font-size: 12px; margin-bottom: 6px; }
+  .toast .top .lg { width: 16px; height: 16px; border-radius: 5px; background: linear-gradient(135deg,#10c48c,#0878aa); }
+  .toast b { display: block; font-size: 14.5px; margin-bottom: 3px; }
+  .toast .o { color: #a8a8a8; font-size: 13px; margin-top: 4px; unicode-bidi: plaintext; }
+  .toast .tt { unicode-bidi: plaintext; }
+  /* add-account dialog */
+  .dim { position: absolute; inset: 0; background: rgba(5,8,12,.6); z-index: 6; }
+  .modal { position: absolute; left: 50%; top: 92px; width: 560px; margin-left: -280px; background: #fff; color: #0f172a; border-radius: 18px; padding: 24px 26px 20px; z-index: 7; box-shadow: 0 40px 90px rgba(0,0,0,.55); }
+  .modal h2 { margin: 0 0 6px; font-size: 22px; }
+  .modal .sub { margin: 0 0 16px; color: #64748b; font-size: 13.5px; line-height: 1.45; }
+  .f { display: block; margin-bottom: 14px; }
+  .f > span { display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px; }
+  .f small { display: block; color: #94a3b8; font-size: 12px; margin-top: 5px; }
+  .inp { height: 42px; border: 1.5px solid #cbd5e1; border-radius: 10px; display: flex; align-items: center; padding: 0 12px; font-size: 15.5px; color: #0f172a; }
+  .inp.focus { border-color: #7c5cff; box-shadow: 0 0 0 4px rgba(124,92,255,.15); }
+  .inp .ph { color: #94a3b8; }
+  .inp .caret { background: #7c5cff; }
+  .sel2 { justify-content: space-between; font-weight: 600; }
+  .sw2 { display: flex; gap: 8px; }
+  .sw2 i { width: 28px; height: 28px; border-radius: 50%; display: block; }
+  .sw2 i.on { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0f172a; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .mfoot { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+  .ring { position: absolute; border-radius: 12px; box-shadow: 0 0 0 3px #10c48c, 0 0 24px 6px rgba(16,196,140,.45); z-index: 9; pointer-events: none; }
+  /* QR link page */
+  .lpage { position: absolute; left: 64px; right: 0; top: 50px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
+  .lpage .card { width: 820px; background: #fff; border-radius: 14px; padding: 36px 40px; display: flex; gap: 40px; align-items: center; color: #111b21; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+  .lpage h4 { margin: 0 0 18px; font-size: 25px; font-weight: 400; }
+  .lpage ol { margin: 0; padding-left: 22px; font-size: 16.5px; line-height: 2.05; color: #3b4a54; }
+  .qr { width: 240px; height: 240px; flex: none; position: relative; }
+  .qr svg { width: 100%; height: 100%; }
+  .qr .ok { position: absolute; inset: 0; background: rgba(255,255,255,.94); display: grid; place-items: center; text-align: center; color: #0b8f6a; font-weight: 800; font-size: 18px; }
+  .qr .ok span { display: block; font-size: 54px; line-height: 1; }
+  .phone { position: absolute; width: 150px; height: 290px; border-radius: 26px; background: #111; border: 6px solid #2a2a2a; z-index: 8; box-shadow: 0 30px 60px rgba(0,0,0,.45); overflow: hidden; }
+  .phone .scr { position: absolute; inset: 0; background: #0b141a; display: flex; align-items: center; justify-content: center; }
+  .phone .fr { width: 104px; height: 104px; border: 3px solid #fff; border-radius: 12px; position: relative; overflow: hidden; }
+  .phone .ln { position: absolute; left: 0; right: 0; height: 3px; background: #22c55e; box-shadow: 0 0 12px #22c55e; }
+  .note { position: absolute; left: 50%; top: 18px; transform: translateX(-50%); background: #111b21; color: #fff; padding: 9px 16px; border-radius: 10px; font-size: 14px; font-weight: 600; z-index: 9; white-space: nowrap; }
+  /* cursor + click ripple */
+  .cursor { position: absolute; left: 0; top: 0; width: 26px; height: 26px; z-index: 20; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+  .ripple { position: absolute; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; border: 3px solid rgba(124,92,255,.9); z-index: 19; }
+  [data-k] { will-change: opacity, transform; }
+  .rtl { direction: rtl; }
+  /* portrait (phones): narrower bubbles and preview so the camera can frame them closely */
+  .port .b { max-width: 470px; }
+  .port .panel { right: auto; width: 560px; }
+</style></head>
+<body>
+<div id="vp"><div id="stage"></div></div>
+<script src="texts.js"></script>
+<script>
+const Q = new URLSearchParams(location.search);
+const LANG = Q.get('lang') || 'en', SCENE = Q.get('scene') || 'chat', FMT = Q.get('fmt') === 'port' ? 'port' : 'land';
+const VW = FMT === 'port' ? 640 : 1280, VH = 800, SW = 1280, SH = 800;
+const D = DEMO_TEXTS(LANG), U = D.ui;
+if (FMT === 'port') document.documentElement.classList.add('port');
+const vp = document.getElementById('vp'); vp.style.width = VW + 'px'; vp.style.height = VH + 'px';
+
+/* ======================= timeline engine (seekable: any frame can be rendered in any order) ======================= */
+const T = [], TY = [], CL = [], CAM = [];
+const ease = (x) => 1 - Math.pow(1 - x, 3);
+const easeIO = (x) => (x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const h = (html) => { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstChild; };
+const stage = document.getElementById('stage');
+function tween(el, t0, d, props, e = ease) { T.push({ el, t0, d, props, e }); return el; }
+function show(el, t0, d = 0.35, dy = 10) { return tween(el, t0, d, { opacity: [0, 1], y: [dy, 0] }); }
+function pop(el, t0, d = 0.3) { return tween(el, t0, d, { opacity: [0, 1], scale: [0.6, 1] }, (x) => 1 + 2.2 * Math.pow(x - 1, 3) + 1.2 * Math.pow(x - 1, 2)); }
+function hide(el, t0, d = 0.25) { return tween(el, t0, d, { opacity: [1, 0] }); }
+function type(el, t0, text, cps = 18, caret = true) { TY.push({ el, t0, text, cps, caret }); return t0 + [...text].length / cps; }
+function cls(el, t, name, on = true) { CL.push({ el, t, name, on }); }
+/* camera: at time t, move over d seconds to [x, y, zoom] (stage pixels) — one target for landscape, one for portrait */
+function cam(t, d, land, port) { const [x, y, z] = FMT === 'port' ? port : land; CAM.push({ t, d, x, y, z }); }
+function pos(el, fx = 0.5, fy = 0.5) {   // a point inside an element, in stage pixels (measured before the camera moves)
+  const s = stage.getBoundingClientRect(), r = el.getBoundingClientRect();
+  return [r.left - s.left + r.width * fx, r.top - s.top + r.height * fy];
+}
+function seek(t) {
+  const st = new Map();
+  for (const a of T.slice().sort((p, q) => p.t0 - q.t0)) {
+    const s = st.get(a.el) || {};
+    for (const p in a.props) {
+      const [f, to] = a.props[p];
+      if (!(p in s)) s[p] = f;
+      if (t >= a.t0) { const k = Math.min(1, (t - a.t0) / a.d); s[p] = f + (to - f) * a.e(k); }
+    }
+    st.set(a.el, s);
+  }
+  for (const [el, s] of st) {
+    if ('opacity' in s) el.style.opacity = Math.max(0, Math.min(1, s.opacity)).toFixed(3);
+    const tr = [];
+    if ('x' in s || 'y' in s) tr.push(`translate(${(s.x || 0).toFixed(1)}px, ${(s.y || 0).toFixed(1)}px)`);
+    if ('scale' in s) tr.push(`scale(${s.scale.toFixed(3)})`);
+    if (tr.length) el.style.transform = (el.dataset.base || '') + ' ' + tr.join(' ');
+    if ('h' in s) el.style.maxHeight = Math.max(0, s.h).toFixed(0) + 'px';
+  }
+  const byEl = new Map();
+  for (const y of TY) { if (!byEl.has(y.el)) byEl.set(y.el, null); if (t >= y.t0 && (!byEl.get(y.el) || y.t0 >= byEl.get(y.el).t0)) byEl.set(y.el, y); }
+  const blink = Math.floor(t * 2.5) % 2 === 0;
+  for (const [el, y] of byEl) {
+    if (!y || !y.text) { el.innerHTML = el.dataset.empty || ''; continue; }
+    const chars = [...y.text], n = Math.max(0, Math.min(chars.length, Math.floor((t - y.t0) * y.cps)));
+    el.innerHTML = esc(chars.slice(0, n).join('')) + (y.caret && blink ? '<span class="caret"></span>' : '');
+  }
+  const cs = new Map();
+  for (const c of CL.slice().sort((p, q) => p.t - q.t)) {
+    const k = c.el; if (!cs.has(k)) cs.set(k, {});
+    const m = cs.get(k); if (!(c.name in m)) m[c.name] = !c.on;
+    if (t >= c.t) m[c.name] = c.on;
+  }
+  for (const [el, m] of cs) for (const n in m) el.classList.toggle(n, m[n]);
+  // camera
+  let cx = SW / 2, cy = SH / 2, z = Math.min(VW / SW, VH / SH);
+  const ks = CAM.slice().sort((p, q) => p.t - q.t);
+  if (ks.length) { cx = ks[0].x; cy = ks[0].y; z = ks[0].z; }
+  for (const k of ks) {
+    if (t < k.t) break;
+    const f = k.d ? easeIO(Math.min(1, (t - k.t) / k.d)) : 1;
+    cx += (k.x - cx) * f; cy += (k.y - cy) * f; z += (k.z - z) * f;
+  }
+  const clamp = (c, view, size) => (size * z <= view ? size / 2 : Math.max(view / (2 * z), Math.min(size - view / (2 * z), c)));
+  cx = clamp(cx, VW, SW); cy = clamp(cy, VH, SH);
+  stage.style.transform = `translate(${(VW / 2 - cx * z).toFixed(2)}px, ${(VH / 2 - cy * z).toFixed(2)}px) scale(${z.toFixed(4)})`;
+  stage.style.borderRadius = z * SW < VW - 1 || z * SH < VH - 1 ? '14px' : '0';
+}
+
+/* cursor path: [t, x, y, click] in stage pixels */
+function cursor(points) {
+  const c = h(`<svg class="cursor" viewBox="0 0 24 24"><path d="M4 2l16 9.5-7.2 1.6L9.4 21z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>`);
+  stage.append(c); c.style.opacity = 0;
+  let prev = null;
+  for (const [t, x, y, click] of points) {
+    if (!prev) tween(c, t, 0.3, { opacity: [0, 1], x: [x, x], y: [y + 24, y] });
+    else tween(c, prev[0] + 0.05, Math.max(0.2, t - prev[0] - 0.05), { x: [prev[1], x], y: [prev[2], y] }, easeIO);
+    if (click) {
+      const r = h('<div class="ripple"></div>'); r.style.left = x + 5 + 'px'; r.style.top = y + 5 + 'px'; r.style.opacity = 0; stage.append(r);
+      tween(r, t, 0.12, { opacity: [0, 1], scale: [0.4, 0.9] }); tween(r, t + 0.12, 0.38, { opacity: [1, 0], scale: [0.9, 1.7] });
+    }
+    prev = [t, x, y];
+  }
+  return c;
+}
+function ring(el, t0, t1, pad = 6) {
+  const [x, y] = pos(el, 0, 0), r = el.getBoundingClientRect();
+  const g = h('<div class="ring"></div>');
+  Object.assign(g.style, { left: x - pad + 'px', top: y - pad + 'px', width: r.width + pad * 2 + 'px', height: r.height + pad * 2 + 'px', opacity: 0 });
+  stage.append(g); tween(g, t0, 0.3, { opacity: [0, 1] }); tween(g, t1, 0.3, { opacity: [1, 0] });
+}
+
+/* ======================= shared layout ======================= */
+const ACCS = [['Sales EU', '#10b981'], ['Support', '#7c5cff'], ['Shop UAE', '#f59e0b'], ['Export', '#ef4444'], ['Store BR', '#0ea5e9'], ['B2B DE', '#ec4899'], ['VIP Asia', '#a855f7'], ['Shop KSA', '#f97316']];
+const tabHtml = ([n, c], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">💬<i></i></span>${esc(n)}<span class="un" data-un="${i}" style="display:none"></span></div>`;
+const tt = (s) => `<span class="tt">${esc(s)}</span>`;
+const badge = (from, cls = '') => `<span class="badge ${cls}">🌐 ${from.toUpperCase()}→${D.code}</span>`;
+function shell(tabs, active, chat, rows) {
+  stage.innerHTML = `
+    <div class="rail"><div class="logo">A文</div><div class="rb on">💬</div><div class="rb">⚡</div><div class="rb">🌐</div></div>
+    <div class="tabs"><div class="tabset" style="display:flex">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
+      <div class="tab add">＋</div>
+      <div class="tools"><span class="sw">文A <b></b></span><span class="sel" data-my>${esc(D.my)} ▾</span>→<span class="sel">${esc(U.autoDetect)} ▾</span></div></div>
+    <div class="wa">
+      <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
+        ${rows.map((r, i) => `<div class="row ${i === 0 ? 'on' : ''}"><div class="av" style="background:${r[2]}">${r[1]}</div><div class="t"><b>${esc(r[0])}</b><span>${esc(r[3])}</span></div><div class="m">${r[4]}${r[5] ? `<br><em>${r[5]}</em>` : ''}</div></div>`).join('')}
+      </div>
+      <div class="chat">
+        <div class="chead"><div class="av" style="background:${chat.who[2]}">${chat.who[1]}</div><div><b>${esc(chat.who[0])}</b><small>${esc(U.online)}</small></div></div>
+        <div class="chips"><span class="chip"><span class="dot"></span>${esc(U.chipAuto(U.lang[chat.src]))} ▾</span><span class="chip">${esc(U.tpl)}</span><span class="chip">${esc(U.mode)}</span></div>
+        <div class="msgs" id="msgs"></div>
+        <div class="comp"><span class="ic">😊</span><span class="ic">📎</span><div class="box" id="box"><span class="ph">${esc(U.type)}</span></div><span class="ic">🎤</span></div>
+      </div>
+    </div>`;
+}
+function rowsWith(first, drop) { return [first].concat(D.rows.filter((r) => r[0] !== drop && r[0] !== first[0])).slice(0, 7); }
+function bubble(dir, html, time, parent = $('#msgs')) {
+  const b = h(`<div class="b ${dir}">${html}<span class="tm">${time}${dir === 'out' ? ' ✓✓' : ''}</span></div>`); parent.append(b); b.style.opacity = 0; return b;
+}
+function qrSvg() {   // decorative QR-like pattern (not a real code)
+  let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+  const n = 29, cells = [];
+  const finder = (x, y) => (x >= 0 && x < 7 && y >= 0 && y < 7) ? ((x === 0 || x === 6 || y === 0 || y === 6) || (x > 1 && x < 5 && y > 1 && y < 5)) : null;
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) {
+    let v = finder(x, y); if (v === null) v = finder(x - (n - 7), y); if (v === null) v = finder(x, y - (n - 7));
+    if (v === null) v = (x < 8 && y < 8) || (x > n - 9 && y < 8) || (x < 8 && y > n - 9) ? false : rnd() > 0.52;
+    if (v) cells.push(`<rect x="${x}" y="${y}" width="1.02" height="1.02"/>`);
+  }
+  return `<svg viewBox="-1 -1 ${n + 2} ${n + 2}" shape-rendering="crispEdges"><rect x="-1" y="-1" width="${n + 2}" height="${n + 2}" fill="#fff"/><g fill="#111b21">${cells.join('')}</g></svg>`;
+}
+
+function uaePane(z = 5) {
+  const n1 = D.notes[0];
+  const pane = h(`<div style="position:absolute;left:64px;right:0;top:50px;bottom:0;z-index:${z};display:flex;background:#0b141a">
+    <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
+      <div class="row on"><div class="av" style="background:${n1.who[2]}">${n1.who[1]}</div><div class="t"><b>${esc(n1.who[0])}</b><span>${esc(n1.chat[1])}</span></div><div class="m">10:48</div></div>
+      <div class="row"><div class="av" style="background:#0f766e">O</div><div class="t"><b>Omar Haddad</b><span>تم الدفع</span></div><div class="m">10:20</div></div>
+      <div class="row"><div class="av" style="background:#9333ea">N</div><div class="t"><b>Noura</b><span>كم السعر؟</span></div><div class="m">09:02</div></div>
+      <div class="row"><div class="av" style="background:#b45309">K</div><div class="t"><b>Khalid</b><span>شكرا</span></div><div class="m">08:40</div></div></div>
+    <div class="chat"><div class="chead"><div class="av" style="background:${n1.who[2]}">${n1.who[1]}</div><div><b>${esc(n1.who[0])}</b><small>${esc(U.online)}</small></div></div>
+      <div class="chips"><span class="chip"><span class="dot"></span>${esc(U.chipAuto(U.lang[n1.src]))} ▾</span><span class="chip">${esc(U.tpl)}</span><span class="chip">${esc(U.mode)}</span></div>
+      <div class="msgs" data-m2></div>
+      <div class="comp"><span class="ic">😊</span><span class="ic">📎</span><div class="box"><span class="ph">${esc(U.type)}</span></div><span class="ic">🎤</span></div></div></div>`);
+  stage.append(pane);
+  const m2 = $('[data-m2]', pane);
+  const c1 = bubble('in', `${esc(n1.chat[0])}<span class="tr">${badge(n1.src)}${tt(n1.tr[LANG][1])}</span>`, '10:47', m2);
+  const c2 = bubble('in', `${esc(n1.chat[1])}<span class="tr">${badge(n1.src)}${tt(n1.tr[LANG][2])}</span>`, '10:48', m2);
+  if (n1.src === 'ar') for (const c of [c1, c2]) { c.style.direction = 'rtl'; c.querySelector('.tr').style.direction = 'ltr'; }
+  return [pane, c1, c2];
+}
+
+/* ======================= scenes ======================= */
+const SCENES = {
+  /* 1. add a WhatsApp account: name, colour, languages, QR scan -> connected; more accounts appear */
+  accounts() {
+    const uae = D.notes[0];
+    shell(ACCS.slice(0, 2), 0, D.chat, rowsWith([D.chat.who[0], D.chat.who[1], D.chat.who[2], D.chat.in2, '10:44', ''], ''));
+    bubble('in', `${esc(D.chat.in2)}<span class="tr">${badge(D.chat.src)}${tt(D.chatTr[1])}</span>`, '10:44').style.opacity = 1;
+    const plus = $('.tab.add');
+    // dialog
+    const dim = h('<div class="dim"></div>'); stage.append(dim); dim.style.opacity = 0;
+    const m = h(`<div class="modal"><h2>${esc(U.addTitle)}</h2><p class="sub">${esc(U.addSub)}</p>
+      <label class="f"><span>${esc(U.name)}</span><div class="inp" data-name></div></label>
+      <label class="f"><span>${esc(U.color)}</span><div class="sw2">${['#10b981', '#7c5cff', '#f59e0b', '#ef4444', '#0ea5e9', '#ec4899'].map((c, i) => `<i data-sw="${i}" style="background:${c}"></i>`).join('')}</div></label>
+      <div class="grid2"><label class="f"><span>${esc(U.iWrite)}</span><div class="inp sel2" data-l1>${esc(D.my)} <b>▾</b></div><small>${esc(U.iWriteHint)}</small></label>
+        <label class="f"><span>${esc(U.custSpeak)}</span><div class="inp sel2" data-l2>${esc(U.autoDetect)} <b>▾</b></div><small>${esc(U.custHint)}</small></label></div>
+      <div class="mfoot"><span class="btn">${esc(U.cancel)}</span><span class="btn green" data-create>▦ ${esc(U.create)}</span></div></div>`);
+    stage.append(m); m.style.opacity = 0;
+    const name = $('[data-name]', m); name.dataset.empty = '<span class="ph">Sales, Support…</span>';
+    cls(name, 1.9, 'focus'); cls(name, 3.0, 'focus', false);
+    const nameEnd = type(name, 2.1, 'Shop UAE', 11);
+    const sw = $('[data-sw="2"]', m); cls($('[data-sw="0"]', m), 0, 'on'); cls($('[data-sw="0"]', m), 3.3, 'on', false); cls(sw, 3.3, 'on');
+    const pPlus = pos(plus), pSw = pos(sw), pCreate = pos($('[data-create]', m)), pL1 = pos($('[data-l1]', m)), pL2 = pos($('[data-l2]', m));
+    ring($('[data-l1]', m), 3.9, 5.4); ring($('[data-l2]', m), 4.5, 5.4);
+    show(dim, 1.45, 0.25, 0); pop(m, 1.45, 0.35);
+    const close = 6.2;
+    hide(m, close, 0.2); hide(dim, close, 0.2);
+    // new tab
+    const newTab = h(tabHtml(ACCS[2], 2, true)); $('.tabset').append(newTab); newTab.querySelector('i').classList.add('wait');
+    pop(newTab, close + 0.05, 0.35);
+    cls($('.tab[data-tab="0"]'), close + 0.05, 'on', false);
+    // QR link page
+    const link = h(`<div class="lpage"><div class="card"><div><h4>${esc(U.linkTitle)}</h4><ol>${U.linkSteps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>
+      <div class="qr">${qrSvg()}<div class="ok" data-ok><div><span>✓</span>${esc(U.connected)}</div></div></div></div></div>`);
+    stage.append(link); link.style.opacity = 0; show(link, close + 0.15, 0.3, 0);
+    const ok = $('[data-ok]', link); ok.style.opacity = 0;
+    const pQr = pos($('.qr', link)), pCard = pos($('.card', link));
+    const phone = h(`<div class="phone"><div class="scr"><div class="fr"><div class="ln"></div></div></div></div>`);
+    stage.append(phone); phone.style.left = pQr[0] + 50 + 'px'; phone.style.top = pQr[1] - 40 + 'px'; phone.style.opacity = 0;
+    const ph = close + 1.0;
+    tween(phone, ph, 0.6, { opacity: [0, 1], x: [160, 0], y: [80, 0] });
+    const ln = $('.ln', phone);
+    for (let i = 0; i < 3; i++) tween(ln, ph + 0.6 + i * 0.5, 0.5, { y: [0, 100] }, (x) => x);
+    const okAt = ph + 2.2;
+    show(ok, okAt, 0.3, 0); tween(phone, okAt + 0.3, 0.4, { opacity: [1, 0], x: [0, 160] });
+    cls(newTab.querySelector('i'), okAt, 'wait', false);
+    hide(link, okAt + 0.9, 0.35);
+    // Shop UAE's own chats appear behind the link page
+    const [pane2, c1, c2] = uaePane(4); pane2.style.opacity = 0;
+    tween(pane2, close + 0.15, 0.01, { opacity: [0, 1] });
+    show(c1, okAt + 1.0, 0.35); show(c2, okAt + 1.3, 0.35);
+    // more accounts pop in
+    const more = okAt + 1.6;
+    ACCS.slice(3).forEach((a, i) => { const tb = h(tabHtml(a, 3 + i, false)); $('.tabset').append(tb); pop(tb, more + i * 0.3, 0.35); });
+    cursor([[0.3, 700, 420], [1.1, pPlus[0], pPlus[1]], [1.3, pPlus[0], pPlus[1], true], [1.9, pos(name)[0] + 120, pos(name)[1]],
+      [3.1, pSw[0], pSw[1]], [3.3, pSw[0], pSw[1], true], [4.0, pL1[0], pL1[1] + 6], [4.6, pL2[0], pL2[1] + 6],
+      [5.8, pCreate[0], pCreate[1]], [6.0, pCreate[0], pCreate[1], true], [7.2, 1000, 640]]);
+    // camera
+    cam(0, 0, [640, 400, 1], [640, 400, 0.5]);
+    cam(0.6, 0.7, [330, 60, 1.6], [pPlus[0] - 120, 200, 1.3]);
+    cam(1.5, 0.8, [640, 330, 1.45], [640, 330, 1.13]);
+    cam(close, 0.7, [760, 420, 1.12], [pCard[0] - 120, pCard[1], 0.92]);
+    cam(ph, 0.6, [pCard[0], pCard[1], 1.3], [pQr[0] + 40, pCard[1], 1.15]);
+    cam(okAt + 0.9, 0.8, [640, 400, 1], [640, 400, 0.5]);
+    cam(more + 0.2, 0.9, [640, 300, 1.08], [400, 330, 1.0]);
+    return more + 3.4;
+  },
+
+  /* 2. notifications from different accounts, each named; click one -> the right account and chat open */
+  notify() {
+    const [n1, n2, n3] = D.notes;
+    shell(ACCS.slice(0, 7), 0, D.chat, rowsWith([D.chat.who[0], D.chat.who[1], D.chat.who[2], D.chat.in2, '10:44', ''], ''));
+    bubble('in', `${esc(D.chat.in1)}<span class="tr">${badge(D.chat.src)}${tt(D.chatTr[0])}</span>`, '10:43').style.opacity = 1;
+    bubble('in', `${esc(D.chat.in2)}<span class="tr">${badge(D.chat.src)}${tt(D.chatTr[1])}</span>`, '10:44').style.opacity = 1;
+    const tabIdx = { 'Shop UAE': 2, Support: 1, Export: 3 };
+    const toasts = [[0.7, n1, 1], [1.9, n2, 1], [3.1, n3, 2]].map(([t, n, cnt], i) => {
+      const el = h(`<div class="toast"><div class="top"><span class="lg"></span>GlotChat</div><b>${esc(n.acc)} · ${esc(n.first)}</b>${tt(n.tr[LANG][0])}<div class="o">— ${esc(n.text)}</div></div>`);
+      el.style.bottom = 18 + i * 118 + 'px'; stage.append(el); tween(el, t, 0.4, { opacity: [0, 1], x: [380, 0] });
+      const un = $(`[data-un="${tabIdx[n.acc]}"]`); un.textContent = cnt; un.style.display = 'grid'; un.style.opacity = 0;
+      tween(un, t + 0.25, 0.3, { opacity: [0, 1], scale: [0.3, 1] });
+      return el;
+    });
+    const click = 4.6;
+    const p1 = pos(toasts[0]);
+    toasts.forEach((el, i) => hide(el, click + 0.15 + i * 0.05, 0.25));
+    // switch to Shop UAE: the chat with Fatima, translated
+    cls($('.tab[data-tab="0"]'), click + 0.2, 'on', false); cls($('.tab[data-tab="2"]'), click + 0.2, 'on');
+    hide($('[data-un="2"]'), click + 0.2, 0.2);
+    const [pane, c1, c2] = uaePane(5); pane.style.opacity = 0; tween(pane, click + 0.2, 0.3, { opacity: [0, 1] });
+    show(c1, click + 0.6, 0.35); show(c2, click + 1.1, 0.35);
+    cursor([[3.4, 900, 420], [click - 0.3, p1[0] - 40, p1[1]], [click, p1[0] - 40, p1[1], true], [click + 1.4, 700, 520]]);
+    const pc1 = pos(c1, 0, 0.5), pc2 = pos(c2, 0, 1);
+    cam(0, 0, [900, 470, 1.0], [900, 470, 0.75]);
+    cam(0.5, 1.0, [1060, 560, 1.3], [p1[0], 560, 1.15]);
+    cam(click + 0.3, 0.8, [640, 300, 1.0], [640, 400, 0.5]);
+    cam(click + 1.6, 0.9, [760, 560, 1.45], [pc1[0] + 230, pc2[1] - 120, 1.3]);
+    return click + 5.2;
+  },
+
+  /* 3. two-way chat translation: incoming translated, reply typed in my language, sent in theirs */
+  chat() {
+    const c = D.chat, tr = D.chatTr;
+    shell(ACCS.slice(0, 6), 0, c, rowsWith([c.who[0], c.who[1], c.who[2], c.in2, '10:44', ''], ''));
+    const b1 = bubble('in', `${esc(c.in1)}<span class="tr" data-tr1>${badge(c.src)}${tt(tr[0])}</span>`, '10:43');
+    const b2 = bubble('in', `${esc(c.in2)}<span class="tr" data-tr2>${badge(c.src)}${tt(tr[1])}</span>`, '10:44');
+    ring($('.tools'), 0.5, 1.9, 4);
+    show(b1, 1.9); show($('[data-tr1]'), 2.6, 0.45, 6);
+    show(b2, 3.3); show($('[data-tr2]'), 4.0, 0.45, 6);
+    const box = $('#box'); box.dataset.empty = `<span class="ph">${esc(U.type)}</span>`;
+    const typedEnd = type(box, 5.1, tr[2], LANG === 'zh' ? 9 : 27);
+    const panel = h(`<div class="panel"><div class="ph"><span>${esc(U.sendIn(U.lang[c.src]))}</span><span class="link">${esc(U.change)}</span></div>
+      <div class="ta">${esc(c.out)}</div><div class="orig">${esc(U.wrote)} ${esc(tr[2])}</div>
+      <div class="row2"><span class="hint">${esc(U.hint)}</span><span class="btn">${esc(U.edit)}</span><span class="btn">${esc(U.orig)}</span><span class="btn pri" data-send>${esc(U.send)}</span></div></div>`);
+    $('.chat').append(panel); panel.style.opacity = 0;
+    show(panel, typedEnd + 0.4, 0.35, 14);
+    const pSend = pos($('[data-send]', panel));
+    const sendAt = typedEnd + 2.6;
+    hide(panel, sendAt + 0.25, 0.2);
+    TY.push({ el: box, t0: sendAt + 0.25, text: '', cps: 1, caret: false });
+    const b3 = bubble('out', `${esc(c.out)}<span class="tr"><span class="badge grey">${esc(U.youWrote)}</span>${tt(tr[2])}</span>`, '10:45');
+    show(b3, sendAt + 0.4, 0.4, 10);
+    cursor([[typedEnd + 0.9, 900, 560], [sendAt - 0.4, pSend[0], pSend[1]], [sendAt, pSend[0], pSend[1], true], [sendAt + 1.2, 1000, 520]]);
+    const pb1 = pos(b1, 0, 0), pb2 = pos(b2, 0, 1), pBox = pos(box, 0, 0.5), pPan = pos(panel, 0, 0.5), pb3 = pos(b3, 1, 0.5);
+    cam(0, 0, [1060, 30, 1.7], [1060, 30, 1.3]);
+    cam(1.7, 0.9, [760, 560, 1.4], [pb1[0] + 230, (pb1[1] + pb2[1]) / 2, 1.3]);
+    cam(4.8, 0.7, [840, 650, 1.4], [pBox[0] + 230, pBox[1] - 140, 1.3]);
+    cam(typedEnd + 0.3, 0.6, [840, 650, 1.4], [pPan[0] + 280, pPan[1] + 30, 1.12]);
+    cam(sendAt + 0.3, 0.8, [840, 560, 1.32], [pb3[0] - 240, pb3[1] - 90, 1.3]);
+    return sendAt + 3.4;
+  },
+
+  /* 4. voice note -> text -> translation */
+  voice() {
+    const v = D.voice;
+    shell(ACCS.slice(0, 6), 1, v, rowsWith([v.who[0], v.who[1], v.who[2], '🎤 0:12', '10:41', ''], v.who[0]));
+    const wave = Array.from({ length: 36 }, (_, i) => `<i style="height:${6 + Math.round(20 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * .6)))}px"></i>`).join('');
+    const b = bubble('in', `<div class="voice"><div class="pav" style="background:${v.who[2]}">${v.who[1]}</div><div class="play">▶</div><div class="wave">${wave}</div></div><div style="font-size:12px;color:#8696a0;margin:2px 0 0 96px">0:12</div>
+      <div data-vbtn style="overflow:hidden;max-height:44px"><span class="pill">${esc(U.transcribe)}</span></div><div data-vbusy style="opacity:0;max-height:0;overflow:hidden"><span class="pill">${esc(U.transcribing)}</span></div>
+      <div data-vres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div><span class="badge vo">🎤 ${v.src.toUpperCase()}</span>${tt(v.text)}</div><div class="tr">${badge(v.src)}${tt(D.voiceTr)}</div></div>`, '10:41');
+    show(b, 0.4);
+    const click = 2.2, pBtn = pos($('[data-vbtn] .pill'));
+    tween($('[data-vbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
+    tween($('[data-vbtn]'), click + 0.1, 0.2, { opacity: [1, 0], h: [44, 0] });
+    tween($('[data-vbusy]'), click + 0.1, 0.2, { opacity: [0, 1], h: [0, 44] });
+    tween($('[data-vbusy]'), click + 1.9, 0.2, { opacity: [1, 0], h: [44, 0] });
+    tween($('[data-vres]'), click + 1.95, 0.7, { opacity: [0, 1], h: [0, 260] });
+    cursor([[1.0, 760, 560], [click - 0.3, pBtn[0], pBtn[1]], [click, pBtn[0], pBtn[1], true], [click + 1.3, 820, 600]]);
+    cam(0, 0, [760, 500, 1.0], [760, 500, 0.8]);
+    cam(0.6, 0.9, [pBtn[0] + 120, pBtn[1] - 20, 1.6], [pBtn[0] + 170, pBtn[1] - 20, 1.3]);
+    cam(click + 1.9, 0.9, [pBtn[0] + 150, pBtn[1] - 70, 1.5], [pBtn[0] + 170, pBtn[1] - 70, 1.25]);
+    return click + 6.4;
+  },
+
+  /* 5. text in a photo -> read -> translated */
+  photo() {
+    const p = D.photo;
+    shell(ACCS.slice(0, 6), 5, p, rowsWith([p.who[0], p.who[1], p.who[2], U.photo, '10:52', ''], ''));
+    const b = bubble('in', `<div class="photo"><b>Rechnung · Shop</b>${p.lines.map(esc).join('<br>')}</div>
+      <div data-pbtn style="overflow:hidden;max-height:44px"><span class="pill">${esc(U.readText)}</span></div><div data-pbusy style="opacity:0;max-height:0;overflow:hidden"><span class="pill">${esc(U.reading)}</span></div>
+      <div data-pres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div class="tr" style="border:0;margin:0;padding:0">${badge(p.src)}<br>${D.photoTr.map(tt).join('<br>')}</div></div>`, '10:52');
+    show(b, 0.4);
+    const click = 2.1, pBtn = pos($('[data-pbtn] .pill'));
+    tween($('[data-pbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
+    tween($('[data-pbtn]'), click + 0.1, 0.2, { opacity: [1, 0], h: [44, 0] });
+    tween($('[data-pbusy]'), click + 0.1, 0.2, { opacity: [0, 1], h: [0, 44] });
+    tween($('[data-pbusy]'), click + 1.7, 0.2, { opacity: [1, 0], h: [44, 0] });
+    tween($('[data-pres]'), click + 1.75, 0.7, { opacity: [0, 1], h: [0, 200] });
+    cursor([[0.9, 800, 560], [click - 0.3, pBtn[0], pBtn[1]], [click, pBtn[0], pBtn[1], true], [click + 1.3, 860, 640]]);
+    cam(0, 0, [760, 500, 1.0], [760, 500, 0.8]);
+    cam(0.6, 0.9, [pBtn[0] + 100, pBtn[1] - 90, 1.5], [pBtn[0] + 150, pBtn[1] - 90, 1.3]);
+    cam(click + 1.8, 0.9, [pBtn[0] + 130, pBtn[1] - 150, 1.6], [pBtn[0] + 150, pBtn[1] - 150, 1.25]);
+    return click + 6.2;
+  },
+};
+if (D.rtl) document.documentElement.classList.add('ar');
+window.DURATION = SCENES[SCENE]();
+window.seek = seek;
+seek(0);
+if (!Q.get('record')) {
+  const t0 = performance.now();
+  (function loop() { seek(((performance.now() - t0) / 1000) % (window.DURATION + 0.6)); requestAnimationFrame(loop); })();
+}
+</script>
+</body></html>

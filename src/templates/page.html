@@ -4,14 +4,23 @@
 <a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
 {%- endmacro %}
 
+{% macro screen(name, alt='', eager=False, player=False) -%}
+<div class="screen">
+  <picture class="poster"><source media="(max-width: 700px)" srcset="/assets/media/{{ name }}-{{ vlang }}-port.webp"><img src="/assets/media/{{ name }}-{{ vlang }}-land.webp" alt="{{ alt }}" width="1600" height="1000" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async"></picture>
+  {%- if player %}
+  <video class="pv" muted playsinline preload="none" aria-hidden="true"></video><video class="pv" muted playsinline preload="none" aria-hidden="true"></video>
+  {%- else %}
+  <video class="vid" data-scene="{{ name }}" muted loop playsinline preload="none" aria-hidden="true"></video>
+  {%- endif %}
+</div>
+{%- endmacro %}
+
 {% macro media(spec, alt='', eager=False) -%}
 {%- set kind, name = spec.split(':') -%}
 {%- if kind == 'video' -%}
 <div class="window{% if eager %} big{% endif %}">
   <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
-  <video class="vid" data-scene="{{ name }}" muted loop playsinline preload="none" poster="/assets/media/{{ name }}-{{ vlang }}.webp" aria-label="{{ alt }}">
-    <source data-src="/assets/media/{{ name }}-{{ vlang }}.mp4" type="video/mp4">
-  </video>
+  {{ screen(name, alt, eager) }}
 </div>
 {%- elif kind == 'img' -%}
 {%- set im = images[name] -%}
@@ -34,26 +43,57 @@
 {%- set t = b.type %}
 
 {%- if t == 'hero_home' %}
-<section class="hero">
+<section class="hero hero2">
   <div class="glow" aria-hidden="true"></div>
-  <div class="wrap hero-in">
-    <div class="hero-copy">
+  <div class="wrap hero2-in">
+    <div class="hero2-copy">
       <span class="eyebrow"><span class="dotlive"></span><span>{{ b.eyebrow }}</span></span>
       <h1>{{ b.h1|safe }}</h1>
       <p class="lead">{{ b.lead }}</p>
+    </div>
+    <div class="hero2-cta">
       <div class="hero-cta">
         {{ tgbtn('trial', 'hero', ui.cta_trial) }}
-        <a class="btn ghost lg" href="#demo"><span class="play" aria-hidden="true">▶</span><span>{{ ui.cta_demo }}</span></a>
+        <a class="btn ghost lg" href="#demo" data-watch><span class="play" aria-hidden="true">▶</span><span>{{ ui.cta_demo }}</span></a>
       </div>
       <ul class="micro">{% for m in b.micro %}<li>{{ m }}</li>{% endfor %}</ul>
     </div>
-    <div class="hero-shot">
-      {{ media('video:chat', b.media_alt, True) }}
-      <div class="float f1" aria-hidden="true"><b>🌐 ES → EN</b><span>{{ b.float1 }}</span></div>
-      <div class="float f2" aria-hidden="true"><b>{{ cfg.FACTS.accounts_tested }}+</b><span>{{ b.float2 }}</span></div>
+    <div class="player" id="demo" role="region" aria-label="{{ ui.demo_label }}">
+      <div class="steps2" role="tablist">
+        {%- for c in b.chapters %}
+        <button type="button" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" data-ch="{{ c.id }}" data-cap="{{ c.cap }}"><span class="n">{{ loop.index }}</span><span class="l"><span aria-hidden="true">{{ c.icon }}</span> {{ c.label }}</span><i class="bar"><i></i></i></button>
+        {%- endfor %}
+      </div>
+      <div class="window big">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+        {{ screen(b.chapters[0].id, b.media_alt, True, True) }}
+        <button type="button" class="expand" data-expand aria-label="{{ ui.expand }}" title="{{ ui.expand }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+        <button type="button" class="pclose" data-expand aria-label="{{ ui.close }}">×</button>
+      </div>
+      <p class="cap" aria-live="polite">{{ b.chapters[0].cap }}</p>
     </div>
   </div>
   <div class="wrap"><ul class="trust">{% for x in ui.trust %}<li>{{ x }}</li>{% endfor %}</ul></div>
+</section>
+
+{%- elif t == 'showcase' %}
+<section class="sec show"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="wrap">
+    {{ head(b) }}
+    {%- for r in b.rows %}
+    <article class="srow{% if loop.index is even %} rev{% endif %}">
+      <div class="stext">
+        <span class="snum">{{ loop.index }}</span>
+        <h3>{{ r.h }}</h3>
+        <p>{{ r.p|safe }}</p>
+        <ul class="ticks">{% for x in r.ticks %}<li>{{ x|safe }}</li>{% endfor %}</ul>
+      </div>
+      <div class="smedia">{{ media(r.media, r.h) }}</div>
+    </article>
+    {%- endfor %}
+    {%- if b.extras %}<ul class="extras">{% for x in b.extras %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
+    <div class="center-cta">{{ tgbtn('trial', 'showcase', ui.cta_trial) }}</div>
+  </div>
 </section>
 
 {%- elif t == 'hero' %}
@@ -85,36 +125,6 @@
 {%- elif t == 'facts' %}
 <section class="facts" aria-label="{{ b.label or '' }}">
   <div class="wrap facts-in">{% for big, txt in b['items'] %}<div><b>{{ big }}</b><span>{{ txt }}</span></div>{% endfor %}</div>
-</section>
-
-{%- elif t == 'demo' %}
-<section class="sec" id="demo">
-  <div class="wrap">
-    {{ head(b) }}
-    <div class="tabs" role="tablist">
-      {%- for p in b.panes %}
-      <button role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" data-tab="{{ p.id }}"><span aria-hidden="true">{{ p.icon }}</span><b>{{ p.tab }}</b></button>
-      {%- endfor %}
-    </div>
-    <div class="demo">
-      <div class="window big">
-        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
-        <video class="vid" id="demoVid" data-scene="chat" muted loop playsinline preload="none" poster="/assets/media/chat-{{ vlang }}.webp" aria-label="{{ b.h }}">
-          <source data-src="/assets/media/chat-{{ vlang }}.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="demo-text">
-        {%- for p in b.panes %}
-        <div class="pane" data-pane="{{ p.id }}"{% if not loop.first %} hidden{% endif %}>
-          <h3>{{ p.h }}</h3>
-          <ul class="ticks">{% for x in p.ticks %}<li>{{ x|safe }}</li>{% endfor %}</ul>
-          {%- if p.link %}<a class="more" href="{{ link(p.link[0]) }}">{{ p.link[1] }} {{ arr }}</a>{% endif %}
-        </div>
-        {%- endfor %}
-        {{ tgbtn('demo', 'demo', ui.cta_live, 'btn tg') }}
-      </div>
-    </div>
-  </div>
 </section>
 
 {%- elif t == 'cards' %}

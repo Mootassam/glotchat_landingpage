@@ -22,6 +22,8 @@ ui:
   cta_trial: "3 günlük ücretsiz denemeyi başlatın"
   cta_demo: "Nasıl çalıştığını izleyin"
   cta_live: "Canlı demo isteyin"
+  expand: "Tam ekran izle"
+  demo_label: "GlotChat demosu"
   micro: ["3 gün ücretsiz — ödeme yok", "Telegram'da hızlı yanıt", "Yıllık 69 USDT'den başlayan fiyatlar"]
   trust: ["İçinde resmi WhatsApp Web", "Sohbetler bilgisayarınızda kalır", "Windows 10 ve 11", "49 dil çevrimdışı"]
   breadcrumb: "Sayfa yolu"
@@ -108,141 +110,188 @@ pages:
     short: "Ana sayfa"
     icon: "🏠"
     blocks:
-      - type: hero_home
-        eyebrow: "Dünyayla yazışan satıcılar ve destek ekipleri için"
-        h1: 'Tüm WhatsApp hesaplarınız tek pencerede. <span class="grad">Her müşteri kendi dilinde.</span>'
-        lead: "GlotChat birçok WhatsApp hesabını yan yana çalıştırır; her biri kendi bildirimleriyle tamamen izoledir — ve metinleri, sesli mesajları ve fotoğrafları anında, doğrudan bilgisayarınızda çevirir."
-        micro: ["3 gün ücretsiz — ödeme yok", "Telegram'da hızlı yanıt", "Yıllık 69 USDT'den başlayan fiyatlar"]
-        float1: "anında çevrildi"
-        float2: "hesap tek pencerede"
-        media_alt: "GlotChat bir WhatsApp sohbetini İspanyolca ile İngilizce arasında çeviriyor"
-      - type: facts
-        label: "Temel bilgiler"
-        items: [["27+", "aynı anda WhatsApp hesabı (test edildi)"], ["49", "çeviri dili"], ["%100", "bilgisayarınızda çevrimdışı çeviri"], ["🎤 + 🖼", "ses ve fotoğraf çevirisi"]]
-      - type: demo
-        k: "Çalışırken görün"
-        h: "Her dilde okuyun, yanıtlayın ve anlayın"
-        p: "Gerçek GlotChat özellikleri, kayıt halinde. Birini seçin:"
-        panes:
-          - id: chat
-            icon: "💬"
-            tab: "Sohbet çevirisi"
-            h: "Çift yönlü sohbet çevirisi"
-            ticks: ["Müşterinin her mesajı, orijinalin hemen altında çevrilir.", "Kendi dilinizde yazın — GlotChat göndermeden önce çeviriyi gösterir.", "Müşteri doğal Arapça, İspanyolca, Rusça… alır; siz yazdığınızı görmeye devam edersiniz."]
-            link: ["whatsapp-translator", "WhatsApp çevirmeni nasıl çalışır"]
-          - id: voice
-            icon: "🎤"
-            tab: "Sesli mesajlar"
-            h: "Sesli notlar yazıya dönüşür"
-            ticks: ["Herhangi bir sesli mesajın altında 🎤 Yazıya dök'e tek tık.", "Müşterinin ne dediğini — ve çevirisini — görürsünüz.", "Çevrimdışı çalışır. Ses bilgisayarınızdan çıkmaz."]
-          - id: photo
-            icon: "🖼"
-            tab: "Fotoğraf ve belgeler"
-            h: "Fotoğraftaki metin, çevrilmiş"
-            ticks: ["Siparişler, faturalar, fiyat listeleri, ekran görüntüleri — 🔤 Metni oku'ya tıklayın.", "Latin, Arap, Kiril, Çince, Korece, Tayca ve daha fazlası.", "Müşteriye hiçbir bildirim gitmez."]
-          - id: accounts
-            icon: "🗂"
-            tab: "Çoklu hesap"
-            h: "Çok hesap, sıfır karışıklık"
-            ticks: ["Her hesabın kendi kapalı oturumu var — girişler asla karışmaz.", "Bildirimler hangi hesaba ait olduğunu gösterir; tek tıkla doğru sohbet açılır.", "Ctrl+K ile herhangi bir hesabı bir saniyede bulun. Geçiş anında."]
-            link: ["multiple-whatsapp-accounts", "Tek bilgisayarda çoklu WhatsApp hesabı"]
-      - type: cards
-        id: features
-        soft: true
-        k: "İhtiyacınız olan her şey"
-        h: "Sınır ötesi satış ve destek yapanlar için tasarlandı"
-        items:
-          - {icon: "🗂", h: "Çok hesap, tek pencere", p: "Her numara için bir sekme. Aynı anda çalışan 27 hesapla test edildi.", link: "multiple-whatsapp-accounts"}
-          - {icon: "🔒", h: "Tamamen izole", p: "Her hesabın kendi girişi, çerezleri ve depolaması vardır. Karışma yok, sızıntı yok."}
-          - {icon: "🔔", h: "Hesap bazlı bildirimler", p: "“Mağaza BAE · Fatma” — mesajın hangi numaraya geldiğini her zaman bilirsiniz."}
-          - {icon: "🌐", h: "Çift yönlü çeviri", p: "49 dil. Gelen mesajlar otomatik çevrilir, yanıtlarınız göndermeden önce önizlenir.", link: "whatsapp-translator"}
-          - {icon: "🎤", h: "Ses → metin", p: "Yaklaşık 100 konuşma dilinde sesli notları yazıya döker ve çevirir."}
-          - {icon: "🔤", h: "Fotoğraf → metin", p: "Fotoğraflardaki, faturalardaki ve ekran görüntülerindeki metni okur ve çevirir."}
-          - {icon: "⚡", h: "Hızlı yanıt şablonları", p: "Müşterinin adını içeren kayıtlı yanıtlar, yazdığınız her şey gibi çevrilir."}
-          - {icon: "🛡", h: "Gizli ve çevrimdışı", p: "Çeviri bilgisayarınızda çalışır. Mesajlar asla Google'a, DeepL'e veya bir yapay zekâ servisine gönderilmez."}
-          - {icon: "🀄", h: "İngilizce ve 中文 arayüz", p: "GlotChat menülerini tek tıkla İngilizce ve Çince arasında değiştirin."}
-      - type: cards
-        id: who
-        who: true
-        k: "Kimler için"
-        h: "Müşterileri başka dil konuşan işletmeler için"
-        p: "Farklı ülkelerden WhatsApp müşterilerine — birden fazla numaradan — yanıt veriyorsanız GlotChat size her gün saatler kazandırır."
-        cta: "İşinizi anlatın — ücretsiz deneme alın"
-        items:
-          - {icon: "🏠", h: "Emlak ofisleri", p: "Yabancı alıcılar sesli not ve belge fotoğrafı gönderir. Anında anlayın ve hiçbir danışmanın numarasında müşteri kaçırmayın.", pair: "Türkçe ⇄ Русский · العربية", link: "for/real-estate"}
-          - {icon: "🩺", h: "Klinikler ve sağlık turizmi", p: "Tüm koordinatörlerin numaraları tek pencerede. Hastalar kendi dilinde yazar, ekibiniz onların dilinde yanıtlar.", pair: "Türkçe ⇄ English · Deutsch", link: "for/clinics"}
-          - {icon: "🚢", h: "İhracatçılar ve toptancılar", p: "Alıcılarla Arapça, İspanyolca, Rusça veya Fransızca fiyat verin, pazarlık yapın, takip edin — siz Türkçe yazarken.", pair: "Türkçe ⇄ العربية · Español", link: "for/exporters"}
-          - {icon: "✈️", h: "Turizm ve seyahat", p: "Dünyanın her yerinden turistlerin rezervasyon, değişiklik ve soruları — tek bilgisayardan.", pair: "Türkçe ⇄ English · Deutsch", link: "for/travel"}
-          - {icon: "🛒", h: "E-ticaret ve bayiler", p: "Her mağaza veya ülke için ayrı numara, hızlı yanıt şablonları ve sipariş ile fiş fotoğraflarının çevirisi.", pair: "Türkçe ⇄ English · Русский"}
-          - {icon: "🎧", h: "Destek ve satış ekipleri", p: "Temsilcileriniz kendi dilinde çalışır; her müşteri kendi dilinde yanıt alır.", pair: "Türkçe ⇄ English · العربية"}
-      - type: split
-        id: inside
-        k: "Uygulamanın içi"
-        h: "Bütün gün, her gün çalışmak için yapıldı"
-        ticks: ["<b>Kendini onarır:</b> donan veya çöken bir hesap kendiliğinden yeniden başlar — diğerleri çalışmaya devam eder.", "<b>Akıllı başlatma:</b> hesaplar birkaç tane birden yüklenir, bilgisayarınız hızlı kalır.", "<b>Bellek takibi:</b> her hesabın kullanımını görün; az kullanılanları uyku moduna alın.", "<b>Gerçek WhatsApp Web:</b> GlotChat kendi başına hiçbir şey göndermez — kontrol sizde."]
-        media: "img:switcher"
-        alt: "GlotChat hesap değiştirici: Ctrl+K ile 27 WhatsApp hesabından herhangi birini arayıp açın"
-        caption: "Hesap değiştirici (Ctrl+K): her hesabın durumu, belleği ve okunmamış mesajları."
-      - type: steps
-        k: "Ödemeden önce deneyin"
-        h: "3 gün ücretsiz. 10 dakikada hazır."
-        items:
-          - ["Telegram'dan yazın", "Kaç WhatsApp hesabı kullandığınızı söyleyin. Kurulum dosyasını gönderir, tüm sorularınızı yanıtlarız."]
-          - ["Ücretsiz deneme anahtarınızı alın", "GlotChat'i kurun, gösterdiği Makine Kimliğini bize gönderin ve tüm özellikleri açık 3 günlük anahtarı alın."]
-          - ["Beğendiniz mi? Devam edin.", "USDT ile ödeyin, yıllık anahtarınızı alın. Hesaplarınız ve ayarlarınız olduğu gibi kalır — yeniden kurulacak bir şey yok."]
-        cta: "Ücretsiz denememi Telegram'dan al"
-      - type: vs
-        k: "Neden GlotChat"
-        h: "Çeviri sitelerine kopyala-yapıştır yapmayı bırakın"
-        bad_h: "GlotChat olmadan"
-        bad: ["Her numara için bir telefon veya tarayıcı profili", "Her mesaj için kopyala → yapıştır → çevir → geri yapıştır", "Anlayamadığınız sesli notlar", "“Diğer” hesapta kaçırılan mesajlar", "Müşteri sohbetleri çevrimiçi çeviricilere yapıştırılıyor"]
-        good_h: "GlotChat ile"
-        good: ["Tüm numaralar tek pencerede, bir tık uzakta", "Çeviri her mesajın altında otomatik görünür", "Sesli notlar sizin dilinizde yazıya dönüşür", "Her bildirim hangi hesaba ait olduğunu söyler", "Her şey çevrimdışı, kendi bilgisayarınızda çevrilir"]
-      - type: calc
-        soft: true
-        k: "Kazanılan zaman"
-        h: "Kopyala-yapıştır çeviri size ne kadara mal oluyor?"
-        p: "Kaydırıcıları gününüze göre ayarlayın. Çoğu ekip şaşırır."
-      - type: table
-        id: compare
-        k: "Karşılaştırma"
-        h: "GlotChat ve alışılmış geçici çözümler"
-        hl: 4
-        cols: ["", "WhatsApp Web + telefonlar", "Tarayıcı profilleri", "Çeviri eklentisi", "GlotChat"]
-        rows:
-          - ["Çok numara tek pencerede", "✕", "~ her biri ayrı pencere", "✕ tek hesap", "✓ 27+ test edildi"]
-          - ["Bildirim hesabı gösterir", "✕", "~", "✕", "✓"]
-          - ["Sohbetler otomatik çevrilir", "✕", "✕", "✓", "✓ 49 dil"]
-          - ["Sesli not → metin", "✕", "✕", "✕ genelde", "✓ ~100 dil"]
-          - ["Fotoğraftaki metin çevrilir", "✕", "✕", "✕", "✓"]
-          - ["Mesajlar bilgisayarınızda kalır", "✓", "✓", "✕ genelde internete gider", "✓ çevrimdışı"]
-        note: "Yaygın kurulumların genel karşılaştırmasıdır. Eklentiler ve uygulamalar farklıdır — her birinin ayrıntılarını kontrol edin."
-        cta: "Kendi hesaplarınızda görün — ücretsiz"
-      - type: plans
-        k: "Fiyatlar"
-        h: "Basit yıllık paketler. Önce ücretsiz deneyin."
-        p: "Her paket tüm özellikleri ve tüm güncellemeleri içerir. 3 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin."
-        more: "Paketleri ayrıntılı karşılaştırın"
-      - type: faq
-        k: "SSS"
-        h: "Sorularınız, yanıtlarıyla"
-        items:
-          - ["Ücretsiz deneme var mı?", "Evet. Telegram'dan yazın, tüm özellikleri açık 3 günlük deneme anahtarı alın — ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesap ve ayarlarınızı korursunuz."]
-          - ["WhatsApp hesaplarım için güvenli mi?", "GlotChat her hesap için resmi WhatsApp Web'i kendi izole oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına asla mesaj göndermez: her şeyi siz gönderirsiniz. Her WhatsApp kullanımında olduğu gibi spam ve istenmeyen toplu mesajlardan kaçının."]
-          - ["Çeviri internet gerektirir mi?", "Hayır. Çeviri, ses dökümü ve fotoğraf okuma bilgisayarınızda çalışır. Dil paketini bir kez indirirsiniz (İngilizce dahildir). WhatsApp'ın kendisi elbette internet ister."]
-          - ["Nasıl bir bilgisayar gerekir?", "Windows 10 veya 11 (64 bit). Her WhatsApp hesabı yaklaşık 300–450 MB bellek kullanır: 8 GB RAM yaklaşık 10 hesaba, 16 GB veya fazlası 20–30 hesaba yeter."]
-          - ["Hangi diller destekleniyor?", "Türkçe, İngilizce, Arapça, Rusça, Almanca, İspanyolca, Fransızca, Çince, Farsça ve Hintçe dahil 49 çeviri dili. Sesli mesajlar yaklaşık 100 dilde tanınır."]
-          - ["WhatsApp Business ile çalışır mı?", "Evet. Hem WhatsApp hem WhatsApp Business hesapları, WhatsApp Web'i bağladığınız gibi bağlanabilir."]
-          - ["Her hesap için QR kod okutmam gerekir mi?", "Evet, her hesap için bir kez — o telefondaki WhatsApp → Bağlı cihazlar üzerinden. Sonrasında hesap, bilgisayar yeniden başlasa bile oturumu açık tutar."]
-          - ["Nasıl ödeme yapar ve programı alırım?", "Telegram'dan yazın, paketinizi seçin ve USDT (TRC20, BEP20 veya ERC20) ile ödeyin. Kurulum dosyasını ve lisans anahtarınızı alırsınız; gerekirse kurulumda yardım ederiz."]
-          - ["Bir yıl sonra ne olur?", "Paketinizi aynı fiyata yenilersiniz ve kesintisiz çalışmaya devam edersiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız bilgisayarınızda kalır."]
-          - ["Sonradan yükseltebilir miyim?", "Evet. Daha fazla numara eklediğinizde bize yazın, anahtarınızı yükseltelim — sadece farkı ödersiniz."]
-          - ["Mac veya telefonda çalışır mı?", "GlotChat bir Windows masaüstü uygulamasıdır. Telefonlarınız normal çalışmaya devam eder — GlotChat, WhatsApp Web gibi bağlı bir cihazdır."]
-          - ["Arayüz Türkçe mi?", "Uygulama arayüzü şu an İngilizce ve Çince; çeviri ise Türkçeyi tam destekler: müşteri mesajlarını Türkçe okur, yanıtlarınızı Türkçe yazarsınız."]
-      - type: related
-        k: "Daha fazlası"
-        h: "Rehberler ve karşılaştırmalar"
-        items: ["guides/multiple-whatsapp-accounts-on-pc", "guides/translate-whatsapp-messages-on-pc", "compare"]
+    - type: hero_home
+      eyebrow: Windows için çoklu WhatsApp hesabı + çevirmen
+      h1: Birçok WhatsApp hesabı. <span class="grad">Tek pencere. Her dil.</span>
+      lead: Tüm numaralarını ekle, her hesabın bildirimini ayrı al; her mesajı, sesli notu ve fotoğrafı kendi dilinde oku.
+      micro:
+      - 3 gün ücretsiz — ödeme yok
+      - Telegram'da hızlı yanıt
+      - Yıllık 69 USDT'den başlayan fiyatlar
+      media_alt: GlotChat bir WhatsApp sohbetini İspanyolca ile İngilizce arasında çeviriyor
+      chapters:
+      - id: accounts
+        icon: 👥
+        label: Hesap ekle
+        cap: 'Her WhatsApp numarasını saniyeler içinde ekle: adını yaz, dilini seç, QR kodu okut.'
+      - id: notify
+        icon: 🔔
+        label: Bildirimler
+        cap: Her bildirim hangi hesaba geldiğini gösterir — tıkla, doğru sohbet açılsın.
+      - id: chat
+        icon: 🌐
+        label: Sohbet çevirisi
+        cap: Müşteri kendi dilinde yazar, sen kendi dilinde okursun. Cevabın onun dilinde gider.
+      - id: voice
+        icon: 🎤
+        label: Sesli mesajlar
+        cap: Tek tıkla sesli mesaj yazıya dönüşür ve senin diline çevrilir.
+      - id: photo
+        icon: 📷
+        label: Fotoğraflar
+        cap: 'Fatura, sipariş ve belge fotoğrafları: yazı okunur ve çevrilir.'
+    - type: facts
+      label: Temel bilgiler
+      items:
+      - - 27+
+        - aynı anda WhatsApp hesabı (test edildi)
+      - - '49'
+        - çeviri dili
+      - - '%100'
+        - bilgisayarınızda çevrimdışı çeviri
+      - - 🎤 + 🖼
+        - ses ve fotoğraf çevirisi
+    - type: showcase
+      id: features
+      k: Nasıl çalışır
+      h: GlotChat'in yaptıklarını 5 kısa videoda gör
+      rows:
+      - media: video:accounts
+        h: Tüm WhatsApp numaraların tek pencerede
+        p: 'İstediğin kadar hesap ekle. Her biri ayrı: kendi oturumu, kendi dilleri.'
+        ticks:
+        - QR kodu bir kez okut, oturum açık kalır
+        - Aynı anda 27 hesapla test edildi
+        - WhatsApp ve WhatsApp Business
+      - media: video:notify
+        h: Her mesajın hangi hesaba geldiğini bil
+        p: Bildirim hesabı ve müşteriyi gösterir — hem de çevrilmiş olarak.
+        ticks:
+        - “Shop UAE · Fatima” — hiçbir numarayı kaçırma
+        - Bildirime tıkla, doğru sohbet açılsın
+        - Her hesap sekmesinde okunmamış sayısı
+      - media: video:chat
+        h: Her dilde, iki yönlü sohbet
+        p: Çeviri orijinal mesajın altında görünür. Sen kendi dilinde yazarsın, müşteri kendi dilinde alır.
+        ticks:
+        - 49 dil
+        - Göndermeden önce çeviriyi kontrol et
+        - Müşteri normal bir mesaj görür
+      - media: video:voice
+        h: Sesli mesaj → senin dilinde yazı
+        p: Sesli mesajı anlamadın mı? Tek tıkla oku.
+        ticks:
+        - Yaklaşık 100 konuşma dili
+        - İnternetsiz çalışır — ses bilgisayarında kalır
+      - media: video:photo
+        h: Fotoğraf ve belgelerdeki yazıyı oku
+        p: Fatura, sipariş, fiyat listesi, ekran görüntüsü — tek tıkla okunur ve çevrilir.
+        ticks:
+        - Latin, Arap, Kiril, Çin alfabeleri ve daha fazlası
+        - Müşteriye hiçbir bildirim gitmez
+      extras:
+      - ⚡ Hazır hızlı cevaplar
+      - 🛡 İnternetsiz ve gizli çeviri
+      - 🩹 Donan hesaplar kendini yeniden başlatır
+      - 🀄 İngilizce ve Çince arayüz
+    - type: cards
+      id: who
+      who: true
+      k: Kimler için
+      h: Müşterileri başka dil konuşan işletmeler için
+      p: Farklı ülkelerden WhatsApp müşterilerine — birden fazla numaradan — yanıt veriyorsanız GlotChat size her gün saatler kazandırır.
+      cta: İşinizi anlatın — ücretsiz deneme alın
+      items:
+      - icon: 🏠
+        h: Emlak ofisleri
+        p: Yabancı alıcılar sesli not ve belge fotoğrafı gönderir. Anında anlayın ve hiçbir danışmanın numarasında müşteri kaçırmayın.
+        pair: Türkçe ⇄ Русский · العربية
+        link: for/real-estate
+      - icon: 🩺
+        h: Klinikler ve sağlık turizmi
+        p: Tüm koordinatörlerin numaraları tek pencerede. Hastalar kendi dilinde yazar, ekibiniz onların dilinde yanıtlar.
+        pair: Türkçe ⇄ English · Deutsch
+        link: for/clinics
+      - icon: 🚢
+        h: İhracatçılar ve toptancılar
+        p: Alıcılarla Arapça, İspanyolca, Rusça veya Fransızca fiyat verin, pazarlık yapın, takip edin — siz Türkçe yazarken.
+        pair: Türkçe ⇄ العربية · Español
+        link: for/exporters
+      - icon: ✈️
+        h: Turizm ve seyahat
+        p: Dünyanın her yerinden turistlerin rezervasyon, değişiklik ve soruları — tek bilgisayardan.
+        pair: Türkçe ⇄ English · Deutsch
+        link: for/travel
+      - icon: 🛒
+        h: E-ticaret ve bayiler
+        p: Her mağaza veya ülke için ayrı numara, hızlı yanıt şablonları ve sipariş ile fiş fotoğraflarının çevirisi.
+        pair: Türkçe ⇄ English · Русский
+      - icon: 🎧
+        h: Destek ve satış ekipleri
+        p: Temsilcileriniz kendi dilinde çalışır; her müşteri kendi dilinde yanıt alır.
+        pair: Türkçe ⇄ English · العربية
+      soft: true
+    - type: vs
+      k: Neden GlotChat
+      h: Çeviri sitelerine kopyala-yapıştır yapmayı bırakın
+      bad_h: GlotChat olmadan
+      bad:
+      - Her numara için bir telefon veya tarayıcı profili
+      - Her mesaj için kopyala → yapıştır → çevir → geri yapıştır
+      - Anlayamadığınız sesli notlar
+      - “Diğer” hesapta kaçırılan mesajlar
+      - Müşteri sohbetleri çevrimiçi çeviricilere yapıştırılıyor
+      good_h: GlotChat ile
+      good:
+      - Tüm numaralar tek pencerede, bir tık uzakta
+      - Çeviri her mesajın altında otomatik görünür
+      - Sesli notlar sizin dilinizde yazıya dönüşür
+      - Her bildirim hangi hesaba ait olduğunu söyler
+      - Her şey çevrimdışı, kendi bilgisayarınızda çevrilir
+    - type: steps
+      k: Ödemeden önce deneyin
+      h: 3 gün ücretsiz. 10 dakikada hazır.
+      items:
+      - - Telegram'dan yazın
+        - Kaç WhatsApp hesabı kullandığınızı söyleyin. Kurulum dosyasını gönderir, tüm sorularınızı yanıtlarız.
+      - - Ücretsiz deneme anahtarınızı alın
+        - GlotChat'i kurun, gösterdiği Makine Kimliğini bize gönderin ve tüm özellikleri açık 3 günlük anahtarı alın.
+      - - Beğendiniz mi? Devam edin.
+        - USDT ile ödeyin, yıllık anahtarınızı alın. Hesaplarınız ve ayarlarınız olduğu gibi kalır — yeniden kurulacak bir şey yok.
+      cta: Ücretsiz denememi Telegram'dan al
+    - type: plans
+      k: Fiyatlar
+      h: Basit yıllık paketler. Önce ücretsiz deneyin.
+      p: Her paket tüm özellikleri ve tüm güncellemeleri içerir. 3 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin.
+      more: Paketleri ayrıntılı karşılaştırın
+      soft: false
+    - type: faq
+      k: SSS
+      h: Sorularınız, yanıtlarıyla
+      items:
+      - - Ücretsiz deneme var mı?
+        - Evet. Telegram'dan yazın, tüm özellikleri açık 3 günlük deneme anahtarı alın — ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesap ve ayarlarınızı korursunuz.
+      - - WhatsApp hesaplarım için güvenli mi?
+        - 'GlotChat her hesap için resmi WhatsApp Web''i kendi izole oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına asla mesaj göndermez: her şeyi siz gönderirsiniz. Her WhatsApp kullanımında olduğu gibi spam ve istenmeyen toplu mesajlardan kaçının.'
+      - - Çeviri internet gerektirir mi?
+        - Hayır. Çeviri, ses dökümü ve fotoğraf okuma bilgisayarınızda çalışır. Dil paketini bir kez indirirsiniz (İngilizce dahildir). WhatsApp'ın kendisi elbette internet ister.
+      - - Nasıl bir bilgisayar gerekir?
+        - 'Windows 10 veya 11 (64 bit). Her WhatsApp hesabı yaklaşık 300–450 MB bellek kullanır: 8 GB RAM yaklaşık 10 hesaba, 16 GB veya fazlası 20–30 hesaba yeter.'
+      - - Hangi diller destekleniyor?
+        - Türkçe, İngilizce, Arapça, Rusça, Almanca, İspanyolca, Fransızca, Çince, Farsça ve Hintçe dahil 49 çeviri dili. Sesli mesajlar yaklaşık 100 dilde tanınır.
+      - - WhatsApp Business ile çalışır mı?
+        - Evet. Hem WhatsApp hem WhatsApp Business hesapları, WhatsApp Web'i bağladığınız gibi bağlanabilir.
+      - - Nasıl ödeme yapar ve programı alırım?
+        - Telegram'dan yazın, paketinizi seçin ve USDT (TRC20, BEP20 veya ERC20) ile ödeyin. Kurulum dosyasını ve lisans anahtarınızı alırsınız; gerekirse kurulumda yardım ederiz.
+      - - Mac veya telefonda çalışır mı?
+        - GlotChat bir Windows masaüstü uygulamasıdır. Telefonlarınız normal çalışmaya devam eder — GlotChat, WhatsApp Web gibi bağlı bir cihazdır.
+    - type: related
+      k: Daha fazlası
+      h: Rehberler ve karşılaştırmalar
+      items:
+      - guides/multiple-whatsapp-accounts-on-pc
+      - guides/translate-whatsapp-messages-on-pc
+      - compare
 
   pricing:
     title: "GlotChat Fiyatları – Yıllık 69 USDT'den, Ücretsiz Deneme"

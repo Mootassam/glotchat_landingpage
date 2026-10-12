@@ -56,15 +56,20 @@ After a deploy, in **Google Search Console** submit `https://www.glotchat.com/si
 ## Analytics
 
 Vercel Web Analytics events: `telegram_click` (place, plan, lang), `plan_finder`, `calculator`,
-`exit_popup`, `demo_tab`, `language`, `copy`.
+`exit_popup`, `demo_chapter`, `demo_fullscreen`, `language`, `copy`.
 
 ## Media
 
 | File | Use |
 |---|---|
-| `assets/media/*-en.mp4`, `*-zh.mp4` | Demo videos (English / Chinese agent) |
-| `assets/media/*.webp` | Video posters |
-| `assets/gif/*.gif` | GIFs for marketing posts |
+| `assets/media/<scene>-<lang>-land.mp4` / `.webp` | Demo clips for computers (16:10) + poster, in every website language |
+| `assets/media/<scene>-<lang>-port.mp4` / `.webp` | The same clips framed for phones (4:5) |
 | `assets/og/*.jpg` | Social previews (generated) |
 
-Re-record the demos after editing `_tools/scenes.html`: `python _tools/record.py` (Chrome, Playwright, ffmpeg).
+Scenes: `accounts` (add an account, QR scan), `notify` (notifications per account), `chat` (two-way translation),
+`voice` (voice note → text), `photo` (text in a photo). The visitor's language is the "agent" language, so every
+visitor sees messages translated into their own language. App labels stay English (Chinese on /zh/), like the real app.
+
+Edit the scenes in `_tools/demo/demo.html` (texts per language in `_tools/demo/texts.js`), check them with
+`python _tools/demo/preview.py <lang> <land|port>`, then re-record with `python _tools/demo/record.py [langs] [--scene name]`
+(Chrome, Playwright, ffmpeg; ~35 s per clip). Marketing GIFs go to `D:\glotchat-marketing\gifs` (not deployed).

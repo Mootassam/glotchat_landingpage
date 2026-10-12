@@ -33,11 +33,6 @@ ICON_TG = ('<svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21
            '2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>')
 IMAGES = {
     "switcher": {"src": "/assets/img/app-switcher.webp", "w": 1080, "h": 840},
-    "chat-zh": {"src": "/assets/media/chat-zh.webp", "w": 1600, "h": 1000},
-    "chat-en": {"src": "/assets/media/chat-en.webp", "w": 1600, "h": 1000},
-    "voice-en": {"src": "/assets/media/voice-en.webp", "w": 1600, "h": 1000},
-    "photo-en": {"src": "/assets/media/photo-en.webp", "w": 1600, "h": 1000},
-    "accounts-en": {"src": "/assets/media/accounts-en.webp", "w": 1600, "h": 1000},
 }
 
 
@@ -263,14 +258,16 @@ def build(make_og=True):
                             "sub": page.get("og_sub") or ui["og_sub"], "chips": ui["og_chips"]})
 
             jsonld = ld(make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks))
-            vlang = "zh" if lang == "zh" else "en"
-            preload = None
+            vlang = lang                      # demo videos exist in every website language
+            preload = None                    # (desktop image, phone image) of the first big picture
             if blocks and blocks[0]["type"] == "hero_home":
-                preload = f"/assets/media/chat-{vlang}.webp"
+                first = blocks[0]["chapters"][0]["id"]
+                preload = (f"/assets/media/{first}-{vlang}-land.webp", f"/assets/media/{first}-{vlang}-port.webp")
             elif blocks and blocks[0].get("media", "").startswith("img:"):
-                preload = IMAGES[blocks[0]["media"].split(":")[1]]["src"]
+                preload = (IMAGES[blocks[0]["media"].split(":")[1]]["src"], None)
             elif blocks and blocks[0].get("media", "").startswith("video:"):
-                preload = f"/assets/media/{blocks[0]['media'].split(':')[1]}-{vlang}.webp"
+                name = blocks[0]["media"].split(":")[1]
+                preload = (f"/assets/media/{name}-{vlang}-land.webp", f"/assets/media/{name}-{vlang}-port.webp")
 
             html = tpl.render(
                 cfg=cfg, L=L, lang=lang, ui=ui, page=page, page_id=pid, url=url, alternates=alts,
