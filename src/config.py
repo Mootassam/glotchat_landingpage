@@ -21,10 +21,12 @@ PLANS = [
 TRIAL_DAYS = 3
 
 # ---------------------------------------------------------------- download (Cloudflare R2 bucket glotchat-download)
-# Upload each new installer under the SAME name so the link never changes, then update version/size/sha256.
+# Upload each new installer under a VERSIONED name (Cloudflare caches .exe files at its edge, so a reused
+# name keeps serving the old file), then update url/file/version/size/sha256 here and rebuild.
+# Also upload it as GlotChat-Setup.exe for links shared earlier, and purge that URL in Cloudflare.
 DOWNLOAD = {
-    "url": "https://download.glotchat.com/GlotChat-Setup.exe",
-    "file": "GlotChat-Setup.exe",
+    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.3.exe",
+    "file": "GlotChat-Setup-1.2.3.exe",
     "version": "1.2.3",
     "date": "2026-10-16",
     "size_mb": 381,          # as Windows shows it (399,630,243 bytes)
