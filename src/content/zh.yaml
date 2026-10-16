@@ -66,7 +66,7 @@ ui:
   paynote: "支持 USDT 付款（TRC20 · BEP20 · ERC20）。购买前有疑问？直接问我们——Telegram 上回复。"
   final:
     h: "免费试用 GlotChat 3 天"
-    p: "在 Telegram 联系我们——我们发给你安装程序和免费试用密钥，解答问题并帮助你快速上手。"
+    p: "下载 GlotChat，打开后点击“免费试用 3 天”——几分钟内即可在 Telegram 收到激活码。有问题？随时给我们发消息，我们回复很快。"
   copy_username: "复制用户名"
   copied: "已复制"
   also: "其他方式："
@@ -101,6 +101,34 @@ ui:
     plan: "你好！我想购买 GlotChat {plan}（{price} USDT / 年），怎么付款？"
     custom: "你好！我需要 GlotChat 定制方案：__ 台电脑，__ 个 WhatsApp 账号（是否有终身授权？）。"
 
+  dl:
+    nav: 下载
+    nav_long: Windows 版下载
+    btn: 下载 Windows 版
+    version: 版本
+    os_short: Windows 10 和 11（64 位）
+    no_admin: 无需管理员权限
+    alt_html: 下载遇到问题？我们可以在 Telegram 上直接发送安装文件：
+    card_sub: 电脑版 WhatsApp 多开 + 翻译
+    sha: SHA-256 校验值
+    copy_sha: 复制校验值
+    mock:
+      downloads: 下载
+      done: 已完成
+      open_file: 打开文件
+      ss_title: Windows 已保护你的电脑
+      ss_text: Microsoft Defender SmartScreen 阻止了无法识别的应用启动。
+      ss_more: 更多信息
+      ss_app: 应用
+      ss_pub: 发布者
+      ss_unknown: 未知发布者
+      ss_run: 仍要运行
+      ss_dont: 不运行
+      act_title: 激活 GlotChat
+      act_sub: 先免费试用 3 天，或输入您收到的激活码。
+      act_trial: 免费试用 3 天
+      act_mid: 您的机器码
+      act_btn: 激活
 pages:
   home:
     title: "GlotChat – WhatsApp 多开 + 聊天翻译电脑版"
@@ -873,3 +901,93 @@ pages:
         k: "继续阅读"
         h: "下一篇"
         items: ["guides/multiple-whatsapp-accounts-on-pc", "whatsapp-translator", "pricing"]
+
+  download:
+    title: 下载 GlotChat 电脑版 – WhatsApp 多开与翻译软件（Windows）
+    description: 免费下载 GlotChat Windows 版：一个窗口登录多个 WhatsApp 账号，聊天、语音、图片离线翻译。安装包 381 MB，支持 Windows 10/11，免费试用 3 天。
+    short: 下载
+    icon: ⬇️
+    og_heading: 下载 GlotChat Windows 版 — 免费试用 3 天
+    blocks:
+    - type: dl_hero
+      k: 免费下载 · Windows 10 和 11
+      h1: 下载 GlotChat <span class="grad">Windows 版</span>
+      lead: 所有 WhatsApp 号码集中在一个窗口，每条消息都在您的电脑上翻译。约 1 分钟装好，全部功能免费试用 3 天。
+      card:
+      - WhatsApp 多账号同时在线
+      - 文字、语音、图片翻译
+      - 49 种语言，离线可用
+      - 免费试用 3 天，无需付款
+    - type: dl_steps
+      k: 安装指南
+      h: 4 个简单步骤，马上用起来
+      p: 不需要任何技术基础。大多数用户 5 分钟内就能用客户的语言聊天。
+      items:
+      - h: 下载安装包
+        p: 点击绿色按钮，<b>GlotChat-Setup.exe</b>（381 MB）会保存到“<b>下载</b>”文件夹。下载完成后点击“<b>打开文件</b>”。
+        tip: 在用手机浏览？请在 Windows 电脑上打开本页 — GlotChat 是电脑软件。
+        mock: download
+      - h: 安装 — 如果 Windows 提示，点击“仍要运行”
+        p: 双击安装文件，按提示完成安装（约 1 分钟，无需管理员权限）。如果出现蓝色窗口“<b>Windows 已保护你的电脑</b>”，先点“<b>更多信息</b>”，再点“<b>仍要运行</b>”。
+        tip: 这是新软件的正常现象：Windows SmartScreen 只是还没见过很多次 GlotChat。文件是安全的 — 您可以在下方核对 SHA-256 校验值。
+        mock: smartscreen
+      - h: 开始 3 天免费试用
+        p: 打开 GlotChat，点击“<b>免费试用 3 天</b>”。Telegram 会自动打开，并已写好您的机器码 — 直接发送即可。几分钟内收到试用激活码：粘贴后点击“<b>激活</b>”。
+        tip: 试用期间所有功能全部开放。无需银行卡，无需付款，也不用取消。
+        mock: activate
+      - h: 添加您的 WhatsApp 账号
+        p: 添加账号，用手机扫描二维码（WhatsApp → <b>已关联的设备</b>）。每个号码重复一次即可。消息、语音和图片立即自动翻译。
+        mock: accounts
+    - type: dl_specs
+      k: 安装前须知
+      h: 系统要求与安全
+      req_h: 系统要求
+      req:
+      - - 操作系统
+        - Windows 10 或 11（64 位）
+      - - 内存
+        - 4 GB · 10 个以上账号建议 8 GB
+      - - 可用磁盘空间
+        - 2 GB
+      - - 网络
+        - WhatsApp 需要联网（翻译离线进行）
+      - - 管理员权限
+        - 不需要
+      - - 最新版本
+        - '{version} · {size} MB'
+      safe_h: 安全、干净
+      safe:
+      - 官方文件，仅从 <b>download.glotchat.com</b> 提供下载
+      - 无广告、无工具栏、无捆绑软件
+      - 内置官方 WhatsApp Web — 聊天记录保存在您自己的电脑上
+      - 更新自动安装，并带有数字签名
+      - 随时可在 Windows 设置 → 应用 中卸载
+    - type: faq
+      soft: true
+      k: 下载常见问题
+      h: 关于下载和安装
+      open_first: true
+      items:
+      - - GlotChat 可以免费下载吗？
+        - 可以。下载免费，3 天试用期内所有功能全部开放，无需付款。试用结束后，套餐每年 69 USDT 起。
+      - - 为什么 Windows 提示“Windows 已保护你的电脑”？
+        - Windows SmartScreen 会对还不常见的新软件显示这个提示。点击“<b>更多信息</b>”，再点击“<b>仍要运行</b>”即可。请始终从本页下载 GlotChat — 您可以核对 SHA-256 校验值，确认文件是原版。
+      - - 需要激活码吗？
+        - 需要。第一次打开 GlotChat 时会要求输入激活码。在软件里点击“<b>免费试用 3 天</b>”，我们几分钟内就会通过 Telegram 发给您免费试用激活码。购买套餐后，也用同样的方式获得一年期激活码。
+      - - 有 Mac、安卓或 iPhone 版本吗？
+        - 目前没有。GlotChat 是 Windows 10 和 11 电脑软件。您的 WhatsApp 号码仍然在手机上 — GlotChat 像 WhatsApp Web 一样把它们关联到电脑。
+      - - Windows 7 或 8 能用吗？
+        - 不能。GlotChat 需要 64 位的 Windows 10 或 Windows 11。
+      - - 如何更新 GlotChat？
+        - 不需要手动更新。GlotChat 会自动检查新版本，在后台下载，并在下次启动时自动安装。
+      - - 如何卸载 GlotChat？
+        - 打开 Windows“<b>设置 → 应用 → 已安装的应用</b>”，找到 GlotChat，点击“<b>卸载</b>”。
+      - - 下载中断或很慢怎么办？
+        - 请再次点击下载按钮。如果仍然不行，请在 Telegram 上联系我们，我们直接把安装文件发给您。
+    - type: related
+      k: 下一步
+      h: 开始前了解更多
+      items:
+      - pricing
+      - multiple-whatsapp-accounts
+      - whatsapp-translator

@@ -4,6 +4,10 @@
 <a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
 {%- endmacro %}
 
+{% macro dlbtn(place, cls='btn dl lg', label=None) -%}
+<a class="{{ cls }}" href="{{ dl.url }}" download data-dl="{{ place }}" rel="nofollow"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span>{{ label or ui.dl.btn }}</span>{% if 'xl' in cls %}<small>{{ dl.file }} · {{ dl.size_mb }} MB</small>{% endif %}</span></a>
+{%- endmacro %}
+
 {% macro screen(name, alt='', eager=False, player=False) -%}
 <div class="screen">
   <picture class="poster"><source media="(max-width: 700px)" srcset="/assets/media/{{ name }}-{{ vlang }}-port.webp"><img src="/assets/media/{{ name }}-{{ vlang }}-land.webp" alt="{{ alt }}" width="1600" height="1000" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async"></picture>
@@ -324,6 +328,115 @@
   </div>
 </section>
 
+{%- elif t == 'dl_hero' %}
+<section class="phero dlhero">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap phero-in">
+    <div class="phero-copy">
+      <nav class="crumbs" aria-label="{{ ui.breadcrumb }}"><ol>{% for c in crumbs %}<li>{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}</li>{% endfor %}</ol></nav>
+      <span class="eyebrow"><span class="dotlive"></span><span>{{ b.k }}</span></span>
+      <h1>{{ b.h1|safe }}</h1>
+      <p class="lead">{{ b.lead|safe }}</p>
+      <div class="dlbox">
+        {{ dlbtn('hero', 'btn dl xl') }}
+        <ul class="dlmeta">
+          <li>{{ ui.dl.version }} <b>{{ dl.version }}</b></li>
+          <li>{{ ui.dl.os_short }}</li>
+          <li>{{ ui.dl.no_admin }}</li>
+        </ul>
+      </div>
+      <p class="dlalt">{{ ui.dl.alt_html|safe }} <a data-tg="general" data-place="dl-alt" href="{{ tg }}" target="_blank" rel="noopener">@{{ cfg.TELEGRAM_USER }}</a></p>
+    </div>
+    <div class="phero-media">
+      <div class="dlcard" aria-hidden="true">
+        <img src="/assets/img/icon-512.png" alt="" width="96" height="96">
+        <b>GlotChat</b>
+        <span>{{ ui.dl.card_sub }}</span>
+        <ul>{% for x in b.card %}<li>{{ x }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- elif t == 'dl_steps' %}
+{%- set m = ui.dl.mock %}
+<section class="sec soft" id="install">
+  <div class="wrap">
+    {{ head(b) }}
+    <ol class="dlsteps">
+      {%- for s in b['items'] %}
+      <li class="dlstep{% if loop.index is even %} rev{% endif %}">
+        <div class="dltext">
+          <span class="snum">{{ loop.index }}</span>
+          <h3>{{ s.h }}</h3>
+          <p>{{ s.p|safe }}</p>
+          {%- if s.tip %}<p class="tip">💡 {{ s.tip|safe }}</p>{% endif %}
+          {%- if s.mock == 'download' %}<div class="dlstep-cta">{{ dlbtn('step1', 'btn dl') }}</div>{% endif %}
+        </div>
+        <div class="dlmock" aria-hidden="true">
+        {%- if s.mock == 'download' %}
+          <div class="mk mk-browser">
+            <div class="mk-bar"><i></i><i></i><i></i><span>glotchat.com/download</span><em class="mk-dlicon">⤓</em></div>
+            <div class="mk-pop">
+              <b>{{ m.downloads }}</b>
+              <div class="mk-file hl"><span class="mk-exe">EXE</span><div><b>{{ dl.file }}</b><small>{{ dl.size_mb }} MB · {{ m.done }}</small></div></div>
+              <span class="mk-open hl2">{{ m.open_file }}</span>
+            </div>
+          </div>
+        {%- elif s.mock == 'smartscreen' %}
+          <div class="mk mk-ss">
+            <div class="mk-ssin">
+              <b>{{ m.ss_title }}</b>
+              <p>{{ m.ss_text }}</p>
+              <span class="mk-more hl"><i>1</i>{{ m.ss_more }}</span>
+              <small>{{ m.ss_app }}: {{ dl.file }}<br>{{ m.ss_pub }}: {{ m.ss_unknown }}</small>
+            </div>
+            <div class="mk-ssbtns"><span class="mk-run hl"><i>2</i>{{ m.ss_run }}</span><span>{{ m.ss_dont }}</span></div>
+          </div>
+        {%- elif s.mock == 'activate' %}
+          <div class="mk mk-act">
+            <img src="/assets/img/logo-96.png" alt="" width="44" height="44">
+            <b>{{ m.act_title }}</b>
+            <p>{{ m.act_sub }}</p>
+            <span class="mk-trial hl">{{ m.act_trial }}</span>
+            <div class="mk-mid"><small>{{ m.act_mid }}</small><code>A1B2-C3D4-E5F6-7</code></div>
+            <div class="mk-key"><span>GC1-…</span><em>{{ m.act_btn }}</em></div>
+          </div>
+        {%- elif s.mock == 'accounts' %}
+          {{ media('video:accounts', s.h) }}
+        {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+{%- elif t == 'dl_specs' %}
+<section class="sec" id="requirements">
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="dlspecs">
+      <article class="card">
+        <span class="ic" aria-hidden="true">💻</span>
+        <h3>{{ b.req_h }}</h3>
+        <dl class="specs">{% for k, v in b.req %}<div><dt>{{ k }}</dt><dd{% if '{version}' in v %} class="ltr"{% endif %}>{{ v|replace('{version}', dl.version)|replace('{size}', dl.size_mb|string) }}</dd></div>{% endfor %}</dl>
+      </article>
+      <article class="card">
+        <span class="ic" aria-hidden="true">🛡️</span>
+        <h3>{{ b.safe_h }}</h3>
+        <ul class="ticks">{% for x in b.safe %}<li>{{ x|safe }}</li>{% endfor %}</ul>
+        <div class="hash">
+          <small>{{ ui.dl.sha }} ({{ dl.file }})</small>
+          <code>{{ dl.sha256 }}</code>
+          <button type="button" class="btn outline sm" data-copy="{{ dl.sha256 }}">{{ ui.dl.copy_sha }}</button>
+        </div>
+      </article>
+    </div>
+    <div class="center-cta">{{ dlbtn('specs', 'btn dl lg') }}</div>
+  </div>
+</section>
+
 {%- elif t == 'html' %}
 <section class="sec{% if b.soft %} soft{% endif %}">
   <div class="wrap narrow prose">{{ b.html|safe }}</div>
@@ -338,6 +451,7 @@
       <h2>{{ ui.final.h }}</h2>
       <p>{{ ui.final.p }}</p>
       <div class="hero-cta">
+        {%- if page_id != 'download' %}<a class="btn dl lg" href="{{ link('download') }}" data-place="final-dl"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.dl.btn }}</span></a>{% endif %}
         {{ tgbtn('trial', 'final', '@' ~ cfg.TELEGRAM_USER) }}
         <button class="btn ghost lg" type="button" data-copy="@{{ cfg.TELEGRAM_USER }}">{{ ui.copy_username }}</button>
       </div>

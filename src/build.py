@@ -271,7 +271,7 @@ def build(make_og=True):
 
             html = tpl.render(
                 cfg=cfg, L=L, lang=lang, ui=ui, page=page, page_id=pid, url=url, alternates=alts,
-                lang_menu=lang_menu, link=link, home_url=link("home"), tg=f"https://t.me/{cfg.TELEGRAM_USER}",
+                lang_menu=lang_menu, link=link, home_url=link("home"), tg=f"https://t.me/{cfg.TELEGRAM_USER}", dl=cfg.DOWNLOAD,
                 icon_tg=ICON_TG, industries=industries, guides=guides, registry=registry, crumbs=crumbs,
                 og_image=cfg.SITE + og_rel, jsonld=jsonld,
                 gc=ld(dict(gc, alts={l: path_of(l, pid) for l in available.get(pid, [])})), v=version, vlang=vlang, images=IMAGES,
@@ -324,6 +324,10 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
             "applicationCategory": "BusinessApplication", "applicationSubCategory": "Communication",
             "description": ui["app_description"], "image": S + og_rel, "inLanguage": hl,
             "featureList": ui["feature_list"], "publisher": {"@id": S + "/#org"},
+            "downloadUrl": cfg.DOWNLOAD["url"], "installUrl": S + path_of(lang, "download"),
+            "softwareVersion": cfg.DOWNLOAD["version"], "fileSize": f"{cfg.DOWNLOAD['size_mb']}MB",
+            "softwareRequirements": "Windows 10 or Windows 11, 64-bit", "memoryRequirements": "4 GB RAM",
+            "storageRequirements": "2 GB free disk space",
             "offers": [{"@type": "Offer", "name": ui["plans"][p["id"]]["name"], "price": str(p["price"]),
                         "priceCurrency": "USD", "url": pricing_url, "availability": "https://schema.org/InStock",
                         "category": "subscription",
@@ -401,6 +405,7 @@ def write_llms(en, available):
              f"- Accounts: tested with {cfg.FACTS['accounts_tested']} WhatsApp accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
              f"- Translation: {cfg.FACTS['languages']} languages, offline on the user's PC; voice notes recognised in about {cfg.FACTS['voice_languages']} languages",
              f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment",
+             f"- Download (Windows installer, version {cfg.DOWNLOAD['version']}, {cfg.DOWNLOAD['size_mb']} MB): {cfg.DOWNLOAD['url']} — install guide: {S}{path_of('en', 'download')}",
              "- Prices (per year, paid in USDT " + cfg.PAY_NETWORKS + "): " + ", ".join(
                  f"{p['id']} {p['price']} USDT ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),
              f"- Contact / purchase: Telegram https://t.me/{cfg.TELEGRAM_USER}",

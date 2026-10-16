@@ -89,6 +89,7 @@
 {%- endfor %}
         </div>
       </div>
+      <a class="btn dl sm navdl" href="{{ link('download') }}"{% if page_id == 'download' %} aria-current="page"{% endif %}><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.dl.nav }}</span></a>
       <a class="btn tg sm" data-tg="general" data-place="nav" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.contact }}</span></a>
       <button class="burger" type="button" aria-label="{{ ui.menu }}" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
@@ -102,6 +103,7 @@
     <a href="{{ link('compare') }}">⚖️ {{ ui.nav.compare }}</a>
     <a href="{{ link('pricing') }}">💳 {{ ui.nav.pricing }}</a>
     <a href="{{ link('guides') }}">📘 {{ ui.nav.guides }}</a>
+    <a href="{{ link('download') }}">⬇️ {{ ui.dl.nav }}</a>
   </nav>
 </header>
 
@@ -121,6 +123,7 @@
       <a href="{{ link('whatsapp-translator') }}">{{ ui.nav.translator }}</a>
       <a href="{{ link('multiple-whatsapp-accounts') }}">{{ ui.nav.accounts }}</a>
       <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
+      <a href="{{ link('download') }}">{{ ui.dl.nav_long }}</a>
       <a href="{{ link('compare') }}">{{ ui.nav.compare }}</a>
     </div>
     <div>

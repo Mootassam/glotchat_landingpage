@@ -19,6 +19,17 @@ PLANS = [
     {"id": "Business", "price": 249, "accounts": None, "pcs": 3},   # None = unlimited
 ]
 TRIAL_DAYS = 3
+
+# ---------------------------------------------------------------- download (Cloudflare R2 bucket glotchat-download)
+# Upload each new installer under the SAME name so the link never changes, then update version/size/sha256.
+DOWNLOAD = {
+    "url": "https://download.glotchat.com/GlotChat-Setup.exe",
+    "file": "GlotChat-Setup.exe",
+    "version": "1.2.1",
+    "date": "2026-10-10",
+    "size_mb": 381,          # as Windows shows it (399,630,480 bytes)
+    "sha256": "98d034cb4dab9091d2bf84e391c8398fdfcd93fb6085644009b4717f13265cdb",
+}
 PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
 
 # ---------------------------------------------------------------- product facts (keep them true)

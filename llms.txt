@@ -10,6 +10,7 @@ GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each a
 - Accounts: tested with 27 WhatsApp accounts at the same time; each uses about 300–450 MB of memory
 - Translation: 49 languages, offline on the user's PC; voice notes recognised in about 100 languages
 - Free trial: 3 days, every feature, no payment
+- Download (Windows installer, version 1.2.1, 381 MB): https://download.glotchat.com/GlotChat-Setup.exe — install guide: https://www.glotchat.com/download/
 - Prices (per year, paid in USDT TRC20 · BEP20 · ERC20): Starter 69 USDT (up to 5 accounts, 1 PC), Pro 129 USDT (up to 15 accounts, 1 PC), Business 249 USDT (unlimited accounts, 3 PCs)
 - Contact / purchase: Telegram https://t.me/GlotChat
 - Website languages: English, 中文, العربية, Türkçe, Español, Português, Русский
@@ -30,3 +31,4 @@ GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each a
 - [Translate WhatsApp on PC](https://www.glotchat.com/guides/translate-whatsapp-messages-on-pc/): How to translate WhatsApp chats on a computer: copy-paste, browser extensions or built-in translation — plus voice notes and photos, and privacy tips.
 - [Privacy policy](https://www.glotchat.com/privacy/): How GlotChat handles data: chats and translations stay on your PC; the website uses cookie-free analytics; licensing only needs your key and Machine ID.
 - [Terms of use](https://www.glotchat.com/terms/): The terms for using the GlotChat app and website: licenses, free trial, payments, acceptable use and limits of liability.
+- [Download](https://www.glotchat.com/download/): Download GlotChat free for Windows 10 & 11: many WhatsApp accounts in one window with offline translation. 381 MB installer, 3-day free trial.

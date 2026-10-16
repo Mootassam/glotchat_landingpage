@@ -66,7 +66,7 @@ ui:
   paynote: "Pagamento em USDT (TRC20 · BEP20 · ERC20). Dúvidas antes de comprar? É só perguntar — respondemos no Telegram."
   final:
     h: "Teste o GlotChat grátis por 3 dias"
-    p: "Fale com a gente no Telegram — enviamos o instalador e sua chave de teste grátis, tiramos suas dúvidas e ajudamos você a começar."
+    p: "Baixe o GlotChat, abra e clique em “Get a free 3-day trial” — sua chave chega pelo Telegram em minutos. Tem dúvidas? Mande uma mensagem, respondemos rápido."
   copy_username: "Copiar usuário"
   copied: "Copiado"
   also: "Também:"
@@ -101,6 +101,34 @@ ui:
     plan: "Olá! Quero o plano {plan} do GlotChat ({price} USDT / ano). Como faço o pagamento?"
     custom: "Olá! Preciso de uma proposta personalizada do GlotChat: __ computadores, __ contas de WhatsApp (licença vitalícia?)."
 
+  dl:
+    nav: Baixar
+    nav_long: Baixar para Windows
+    btn: Baixar para Windows
+    version: Versão
+    os_short: Windows 10 e 11 (64 bits)
+    no_admin: Sem permissão de administrador
+    alt_html: 'Problema no download? Enviamos o arquivo pelo Telegram:'
+    card_sub: Várias contas de WhatsApp + tradutor para PC
+    sha: Soma de verificação SHA-256
+    copy_sha: Copiar soma
+    mock:
+      downloads: Downloads
+      done: Concluído
+      open_file: Abrir arquivo
+      ss_title: O Windows protegeu o computador
+      ss_text: O Microsoft Defender SmartScreen impediu a inicialização de um aplicativo não reconhecido.
+      ss_more: Mais informações
+      ss_app: Aplicativo
+      ss_pub: Editor
+      ss_unknown: Editor desconhecido
+      ss_run: Executar assim mesmo
+      ss_dont: Não executar
+      act_title: Activate GlotChat
+      act_sub: Start with a free 3-day trial, or enter the license key you received.
+      act_trial: Get a free 3-day trial
+      act_mid: Your Machine ID
+      act_btn: Activate
 pages:
   home:
     title: "GlotChat – Várias Contas de WhatsApp + Tradutor para PC"
@@ -873,3 +901,93 @@ pages:
         k: "Próximo"
         h: "Continue lendo"
         items: ["guides/multiple-whatsapp-accounts-on-pc", "whatsapp-translator", "pricing"]
+
+  download:
+    title: Baixar GlotChat para Windows – Várias Contas de WhatsApp
+    description: 'Baixe o GlotChat grátis para Windows 10 e 11: várias contas de WhatsApp em uma janela, com tradução offline. Instalador de 381 MB, teste grátis de 3 dias.'
+    short: Baixar
+    icon: ⬇️
+    og_heading: Baixe o GlotChat para Windows — teste grátis por 3 dias
+    blocks:
+    - type: dl_hero
+      k: Download grátis · Windows 10 e 11
+      h1: Baixe o GlotChat <span class="grad">para Windows</span>
+      lead: Todos os seus números de WhatsApp em uma janela, cada mensagem traduzida no seu PC. Instale em cerca de um minuto e teste todos os recursos grátis por 3 dias.
+      card:
+      - Várias contas de WhatsApp
+      - Tradução de texto, áudios e fotos
+      - 49 idiomas, funciona offline
+      - Teste grátis de 3 dias, sem pagamento
+    - type: dl_steps
+      k: Guia de instalação
+      h: Pronto em 4 passos simples
+      p: Não precisa de conhecimento técnico. A maioria já está conversando no idioma dos clientes em 5 minutos.
+      items:
+      - h: Baixe o instalador
+        p: Clique no botão verde. O <b>GlotChat-Setup.exe</b> (381 MB) é salvo na pasta <b>Downloads</b>. Quando terminar, clique em <b>Abrir arquivo</b>.
+        tip: Está no celular? Abra esta página no seu computador com Windows — o GlotChat é um aplicativo para desktop.
+        mock: download
+      - h: Instale — e clique em “Executar assim mesmo” se o Windows perguntar
+        p: Dê dois cliques no arquivo e siga o instalador (cerca de 1 minuto, sem permissão de administrador). Se aparecer uma janela azul dizendo <b>“O Windows protegeu o computador”</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.
+        tip: 'Isso é normal com programas novos: o Windows SmartScreen ainda não viu o GlotChat muitas vezes. O arquivo é seguro — você pode conferir a soma SHA-256 abaixo.'
+        mock: smartscreen
+      - h: Comece seu teste grátis de 3 dias
+        p: 'Abra o GlotChat e clique em <b>Get a free 3-day trial</b>. O Telegram abre com o seu Machine ID já escrito — é só enviar. Sua chave de teste chega em minutos: cole e clique em <b>Activate</b>.'
+        tip: Todos os recursos ficam liberados durante o teste. Sem cartão, sem pagamento, nada para cancelar. A interface do app é em inglês ou chinês.
+        mock: activate
+      - h: Adicione suas contas de WhatsApp
+        p: Adicione uma conta e escaneie o QR code com o celular (WhatsApp → <b>Dispositivos conectados</b>). Repita para cada número. Mensagens, áudios e fotos são traduzidos na hora.
+        mock: accounts
+    - type: dl_specs
+      k: Antes de instalar
+      h: Requisitos do sistema e segurança
+      req_h: Requisitos do sistema
+      req:
+      - - Sistema operacional
+        - Windows 10 ou 11 (64 bits)
+      - - Memória (RAM)
+        - 4 GB · 8 GB para 10+ contas
+      - - Espaço livre em disco
+        - 2 GB
+      - - Internet
+        - Necessária para o WhatsApp (tradução offline)
+      - - Permissão de administrador
+        - Não precisa
+      - - Versão mais recente
+        - '{version} · {size} MB'
+      safe_h: Seguro e limpo
+      safe:
+      - Arquivo oficial, disponível só em <b>download.glotchat.com</b>
+      - Sem anúncios, sem barras de ferramentas, sem programas extras
+      - O WhatsApp Web oficial roda dentro — suas conversas ficam no seu PC
+      - As atualizações são instaladas sozinhas e têm assinatura digital
+      - Desinstale quando quiser em Configurações do Windows → Aplicativos
+    - type: faq
+      soft: true
+      k: Dúvidas sobre o download
+      h: Perguntas sobre download e instalação
+      open_first: true
+      items:
+      - - Baixar o GlotChat é grátis?
+        - Sim. O download é grátis e o teste de 3 dias libera todos os recursos sem pagamento. Depois do teste, os planos começam em 69 USDT por ano.
+      - - Por que o Windows diz “O Windows protegeu o computador”?
+        - O Windows SmartScreen mostra esse aviso para aplicativos novos que ele ainda não viu muitas vezes. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Baixe o GlotChat sempre por esta página — você pode comparar a soma SHA-256 para ter certeza de que o arquivo é o original.
+      - - Preciso de uma chave de licença?
+        - Sim, o GlotChat pede uma chave na primeira vez que você abre. Clique em <b>Get a free 3-day trial</b> no app e enviamos uma chave de teste grátis pelo Telegram em minutos. Ao comprar um plano, você recebe a chave anual do mesmo jeito.
+      - - Existe versão para Mac, Android ou iPhone?
+        - Ainda não. O GlotChat é um aplicativo para Windows 10 e 11. Seus números de WhatsApp continuam nos celulares — o GlotChat conecta todos ao PC como o WhatsApp Web.
+      - - Funciona no Windows 7 ou 8?
+        - Não. O GlotChat precisa do Windows 10 ou Windows 11, 64 bits.
+      - - Como atualizo o GlotChat?
+        - Você não precisa fazer nada. O GlotChat procura novas versões sozinho, baixa em segundo plano e instala na próxima vez que você abrir.
+      - - Como desinstalo o GlotChat?
+        - Abra <b>Configurações do Windows → Aplicativos → Aplicativos instalados</b>, encontre o GlotChat e clique em <b>Desinstalar</b>.
+      - - O download parou ou está lento. O que faço?
+        - Clique de novo no botão de download. Se ainda não funcionar, fale com a gente no Telegram e enviamos o instalador diretamente.
+    - type: related
+      k: Próximo passo
+      h: Saiba mais antes de começar
+      items:
+      - pricing
+      - multiple-whatsapp-accounts
+      - whatsapp-translator
