@@ -7,7 +7,7 @@ ui:
   close: "Cerrar"
   contact: "Contáctanos"
   promo_html: "<b>Prueba gratis de 3 días</b> — todas las funciones, sin pagar."
-  promo_go: "Pídela por Telegram →"
+  promo_go: "Descárgalo gratis →"
   nav:
     product: "Producto"
     translator: "Traductor de WhatsApp"
@@ -66,7 +66,7 @@ ui:
   paynote: "Pago en USDT (TRC20 · BEP20 · ERC20). ¿Dudas antes de comprar? Pregúntanos — respondemos por Telegram."
   final:
     h: "Prueba GlotChat gratis durante 3 días"
-    p: "Descarga GlotChat, ábrelo y haz clic en “Get a free 3-day trial”: tu clave llega por Telegram en minutos. ¿Tienes preguntas? Escríbenos, respondemos rápido."
+    p: "Descarga GlotChat, ábrelo y haz clic en “Start my free 3-day trial”: la prueba empieza al instante. ¿Tienes preguntas? Escríbenos por Telegram, respondemos rápido."
   copy_username: "Copiar usuario"
   copied: "Copiado"
   also: "También:"
@@ -76,8 +76,8 @@ ui:
   mbar: "Prueba gratis de 3 días — escríbenos por Telegram"
   leave:
     h: "Antes de irte — pruébalo gratis"
-    p: "Consigue una prueba de 3 días de GlotChat con todas las funciones. Sin pagar ni compromiso — solo envíanos un mensaje."
-    btn: "Quiero mi prueba gratis por Telegram"
+    p: "Descarga GlotChat y empieza una prueba de 3 días con todas las funciones: un clic en la app, sin pago y sin compromiso."
+    btn: "Descargar y probar gratis"
     "no": "No, gracias"
   footer:
     tagline: "Todos tus números de WhatsApp en una ventana, cada cliente en su idioma. Para empresas que venden más allá de sus fronteras."
@@ -124,11 +124,11 @@ ui:
       ss_unknown: Editor desconocido
       ss_run: Ejecutar de todas formas
       ss_dont: No ejecutar
-      act_title: Activate GlotChat
-      act_sub: Start with a free 3-day trial, or enter the license key you received.
-      act_trial: Get a free 3-day trial
-      act_mid: Your Machine ID
-      act_btn: Activate
+      act_title: "Welcome to GlotChat"
+      act_sub: "Try every feature free for 3 days — no payment, no card. Or enter the license key you bought."
+      act_trial: "Start my free 3-day trial"
+      act_mid: "Starts instantly · every feature · one free trial per PC"
+      act_btn: "I already have a license key"
 pages:
   home:
     title: "GlotChat – Varias Cuentas de WhatsApp + Traductor para PC"
@@ -280,13 +280,13 @@ pages:
       k: Prueba antes de pagar
       h: Gratis 3 días. Funcionando en 10 minutos.
       items:
-      - - Escríbenos por Telegram
-        - Dinos cuántas cuentas de WhatsApp usas. Te enviamos el instalador y respondemos todas tus preguntas.
-      - - Recibe tu clave de prueba gratis
-        - Instala GlotChat, envíanos el ID de equipo que muestra y recibe una clave de 3 días con todas las funciones.
+      - - "Descarga GlotChat"
+        - "Descarga el instalador para Windows desde nuestra web e instálalo en un minuto, sin permisos de administrador."
+      - - "Empieza tu prueba gratis con un clic"
+        - "Abre GlotChat y haz clic en “Start my free 3-day trial”. Todas las funciones se desbloquean al instante: sin pago y sin enviar mensajes."
       - - ¿Te encanta? Quédatelo.
         - Paga en USDT y recibe tu clave anual. Tus cuentas y ajustes quedan exactamente igual — nada que volver a configurar.
-      cta: Quiero mi prueba gratis por Telegram
+      cta: "Descargar y empezar mi prueba gratis"
     - type: plans
       k: Precios
       h: Planes anuales simples. Prueba gratis primero.
@@ -298,7 +298,7 @@ pages:
       h: Tus preguntas, respondidas
       items:
       - - ¿Hay prueba gratis?
-        - Sí. Escríbenos por Telegram y recibes una clave de prueba de 3 días con todas las funciones — sin pagar. Si te gusta, compras un plan y conservas todas tus cuentas y ajustes.
+        - "Sí. Descarga GlotChat, ábrelo y haz clic en “Start my free 3-day trial”: todas las funciones se desbloquean al instante, sin pagar. Si te gusta, compras un plan y conservas todas tus cuentas y ajustes."
       - - ¿Es seguro para mis cuentas de WhatsApp?
         - 'GlotChat abre el WhatsApp Web oficial de cada cuenta, en su propia sesión aislada — igual que un navegador, solo que ordenado. Nunca envía mensajes por su cuenta: todo lo envías tú. Como con cualquier uso de WhatsApp, evita el spam y los mensajes masivos no solicitados.'
       - - ¿La traducción necesita internet?
@@ -365,7 +365,7 @@ pages:
         k: "Preguntas de pago"
         h: "Pagar, renovar y mejorar"
         items:
-          - ["¿Cómo funciona la prueba gratis?", "Escríbenos por Telegram, instala GlotChat y envíanos el ID de equipo que muestra. Recibes una clave de 3 días con todas las funciones. No se necesitan datos de pago."]
+          - ["¿Cómo funciona la prueba gratis?", "Descarga e instala GlotChat y haz clic en “Start my free 3-day trial” en la app. La prueba de 3 días empieza al instante con todas las funciones. No necesitas datos de pago y hay una prueba gratis por ordenador."]
           - ["¿Cómo pago?", "En USDT por TRC20, BEP20 o ERC20. Te enviamos la dirección de pago por Telegram y tu clave anual en cuanto llega el pago."]
           - ["¿El precio es por cuenta o por computadora?", "Por plan. Cada plan incluye un número de cuentas de WhatsApp y de computadoras (Starter y Pro: 1 computadora; Business: hasta 3)."]
           - ["¿Qué pasa después de un año?", "Renuevas al mismo precio y sigues trabajando sin interrupciones. Tus cuentas, chats y ajustes se quedan en tu PC todo el tiempo."]
@@ -931,9 +931,9 @@ pages:
         p: Haz doble clic en el archivo y sigue el instalador (1 minuto aprox., sin permisos de administrador). Si aparece una ventana azul que dice <b>“Windows protegió su PC”</b>, haz clic en <b>Más información</b> y luego en <b>Ejecutar de todas formas</b>.
         tip: 'Es normal con programas nuevos: Windows SmartScreen todavía no ha visto GlotChat muchas veces. El archivo es seguro; puedes comprobar su suma SHA-256 más abajo.'
         mock: smartscreen
-      - h: Empieza tu prueba gratis de 3 días
-        p: 'Abre GlotChat y haz clic en <b>Get a free 3-day trial</b>. Telegram se abre con tu Machine ID ya escrito: solo pulsa enviar. Tu clave de prueba llega en minutos: pégala y haz clic en <b>Activate</b>.'
-        tip: Todas las funciones están desbloqueadas durante la prueba. Sin tarjeta, sin pago, nada que cancelar. La interfaz de la app está en inglés o chino.
+      - h: "Empieza tu prueba gratis de 3 días con un clic"
+        p: "Abre GlotChat y haz clic en <b>Start my free 3-day trial</b>. Eso es todo: todas las funciones se desbloquean al instante, sin mensajes ni claves que copiar."
+        tip: "Una prueba gratis por ordenador. Sin tarjeta, sin pago, nada que cancelar. La interfaz de la app está en inglés o chino."
         mock: activate
       - h: Añade tus cuentas de WhatsApp
         p: Añade una cuenta y escanea el código QR con tu teléfono (WhatsApp → <b>Dispositivos vinculados</b>). Repite con cada número. Los mensajes, audios y fotos se traducen al instante.
@@ -973,7 +973,7 @@ pages:
       - - ¿Por qué Windows dice “Windows protegió su PC”?
         - Windows SmartScreen muestra este aviso con aplicaciones nuevas que aún no ha visto muchas veces. Haz clic en <b>Más información</b> y luego en <b>Ejecutar de todas formas</b>. Descarga GlotChat siempre desde esta página; puedes comparar la suma SHA-256 para asegurarte de que el archivo es el original.
       - - ¿Necesito una clave de licencia?
-        - Sí, GlotChat pide una clave la primera vez que lo abres. Haz clic en <b>Get a free 3-day trial</b> en la app y te enviamos una clave de prueba gratis por Telegram en minutos. Al comprar un plan recibes tu clave anual de la misma forma.
+        - "Para la prueba, no: haz clic en <b>Start my free 3-day trial</b> en la app y empieza al instante. Al comprar un plan te enviamos una clave anual por Telegram; pégala en <b>I already have a license key</b>."
       - - ¿Hay versión para Mac, Android o iPhone?
         - 'Por ahora no. GlotChat es una aplicación de escritorio para Windows 10 y 11. Tus números de WhatsApp siguen en tus teléfonos: GlotChat los vincula a tu PC como WhatsApp Web.'
       - - ¿Funciona en Windows 7 u 8?

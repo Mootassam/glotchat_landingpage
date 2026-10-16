@@ -51,7 +51,7 @@
 <body class="pg-{{ page_id|replace('/', '-') }}">
 <a class="skip" href="#main">{{ ui.skip }}</a>
 
-<a class="promo" data-tg="trial" data-place="promo" href="{{ tg }}" target="_blank" rel="noopener">
+<a class="promo" data-place="promo" href="{{ link('download') }}">
   <span class="gift" aria-hidden="true">🎁</span>
   <span>{{ ui.promo_html|safe }}</span>
   <span class="promo-go">{{ ui.promo_go }}</span>
@@ -158,7 +158,7 @@
     <span class="gift big" aria-hidden="true">🎁</span>
     <h2 id="leaveH">{{ ui.leave.h }}</h2>
     <p>{{ ui.leave.p }}</p>
-    <a class="btn tg lg block" data-tg="trial" data-place="exit-popup" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.leave.btn }}</span></a>
+    <a class="btn dl lg block" data-place="exit-popup" href="{{ link('download') }}"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.leave.btn }}</span></a>
     <button class="modal-no" type="button" data-close>{{ ui.leave.no }}</button>
   </div>
 </div>

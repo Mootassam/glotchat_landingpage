@@ -404,7 +404,7 @@ def write_llms(en, available):
              f"- Platform: {cfg.FACTS['os']} (64-bit)",
              f"- Accounts: tested with {cfg.FACTS['accounts_tested']} WhatsApp accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
              f"- Translation: {cfg.FACTS['languages']} languages, offline on the user's PC; voice notes recognised in about {cfg.FACTS['voice_languages']} languages",
-             f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment",
+             f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 3-day trial\"), one trial per computer",
              f"- Download (Windows installer, version {cfg.DOWNLOAD['version']}, {cfg.DOWNLOAD['size_mb']} MB): {cfg.DOWNLOAD['url']} — install guide: {S}{path_of('en', 'download')}",
              "- Prices (per year, paid in USDT " + cfg.PAY_NETWORKS + "): " + ", ".join(
                  f"{p['id']} {p['price']} USDT ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),

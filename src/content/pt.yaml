@@ -7,7 +7,7 @@ ui:
   close: "Fechar"
   contact: "Fale conosco"
   promo_html: "<b>Teste grátis de 3 dias</b> — todos os recursos, sem pagar."
-  promo_go: "Peça pelo Telegram →"
+  promo_go: "Baixe grátis →"
   nav:
     product: "Produto"
     translator: "Tradutor de WhatsApp"
@@ -66,7 +66,7 @@ ui:
   paynote: "Pagamento em USDT (TRC20 · BEP20 · ERC20). Dúvidas antes de comprar? É só perguntar — respondemos no Telegram."
   final:
     h: "Teste o GlotChat grátis por 3 dias"
-    p: "Baixe o GlotChat, abra e clique em “Get a free 3-day trial” — sua chave chega pelo Telegram em minutos. Tem dúvidas? Mande uma mensagem, respondemos rápido."
+    p: "Baixe o GlotChat, abra e clique em “Start my free 3-day trial” — o teste começa na hora. Tem dúvidas? Fale com a gente no Telegram, respondemos rápido."
   copy_username: "Copiar usuário"
   copied: "Copiado"
   also: "Também:"
@@ -76,8 +76,8 @@ ui:
   mbar: "Teste grátis de 3 dias — fale no Telegram"
   leave:
     h: "Antes de sair — teste grátis"
-    p: "Ganhe um teste de 3 dias do GlotChat com todos os recursos. Sem pagamento, sem compromisso — é só mandar uma mensagem."
-    btn: "Quero meu teste grátis pelo Telegram"
+    p: "Baixe o GlotChat e comece um teste de 3 dias com todos os recursos — um clique no app, sem pagamento e sem compromisso."
+    btn: "Baixar e testar grátis"
     "no": "Não, obrigado"
   footer:
     tagline: "Todos os números de WhatsApp numa janela, cada cliente no idioma dele. Para empresas que vendem além das fronteiras."
@@ -124,11 +124,11 @@ ui:
       ss_unknown: Editor desconhecido
       ss_run: Executar assim mesmo
       ss_dont: Não executar
-      act_title: Activate GlotChat
-      act_sub: Start with a free 3-day trial, or enter the license key you received.
-      act_trial: Get a free 3-day trial
-      act_mid: Your Machine ID
-      act_btn: Activate
+      act_title: "Welcome to GlotChat"
+      act_sub: "Try every feature free for 3 days — no payment, no card. Or enter the license key you bought."
+      act_trial: "Start my free 3-day trial"
+      act_mid: "Starts instantly · every feature · one free trial per PC"
+      act_btn: "I already have a license key"
 pages:
   home:
     title: "GlotChat – Várias Contas de WhatsApp + Tradutor para PC"
@@ -280,13 +280,13 @@ pages:
       k: Teste antes de pagar
       h: Grátis por 3 dias. Funcionando em 10 minutos.
       items:
-      - - Fale com a gente no Telegram
-        - Diga quantas contas de WhatsApp você usa. Enviamos o instalador e respondemos todas as dúvidas.
-      - - Receba sua chave de teste grátis
-        - Instale o GlotChat, envie o ID da máquina que ele mostra e receba uma chave de 3 dias com todos os recursos.
+      - - "Baixe o GlotChat"
+        - "Baixe o instalador para Windows no nosso site e instale em cerca de um minuto — sem permissão de administrador."
+      - - "Comece o teste grátis com um clique"
+        - "Abra o GlotChat e clique em “Start my free 3-day trial”. Todos os recursos são liberados na hora — sem pagamento e sem precisar mandar mensagem."
       - - Gostou? Fique com ele.
         - Pague em USDT e receba sua chave anual. Suas contas e configurações continuam exatamente iguais — nada para configurar de novo.
-      cta: Quero meu teste grátis pelo Telegram
+      cta: "Baixar e começar meu teste grátis"
     - type: plans
       k: Preços
       h: Planos anuais simples. Teste grátis primeiro.
@@ -298,7 +298,7 @@ pages:
       h: Suas dúvidas, respondidas
       items:
       - - Tem teste grátis?
-        - Sim. Fale com a gente no Telegram e você recebe uma chave de teste de 3 dias com todos os recursos — sem pagar nada. Se gostar, compra um plano e mantém todas as suas contas e configurações.
+        - "Sim. Baixe o GlotChat, abra e clique em “Start my free 3-day trial” — todos os recursos são liberados na hora, sem pagamento. Se gostar, você compra um plano e mantém todas as contas e configurações."
       - - É seguro para minhas contas de WhatsApp?
         - 'O GlotChat abre o WhatsApp Web oficial de cada conta, numa sessão isolada — igual a um navegador, só que organizado. Ele nunca envia mensagens sozinho: tudo é enviado por você. Como em qualquer uso do WhatsApp, evite spam e mensagens em massa não solicitadas.'
       - - A tradução precisa de internet?
@@ -365,7 +365,7 @@ pages:
         k: "Dúvidas sobre pagamento"
         h: "Pagar, renovar e mudar de plano"
         items:
-          - ["Como funciona o teste grátis?", "Fale com a gente no Telegram, instale o GlotChat e envie o ID da máquina que ele mostra. Você recebe uma chave de 3 dias com todos os recursos. Não precisa de dados de pagamento."]
+          - ["Como funciona o teste grátis?", "Baixe e instale o GlotChat e clique em “Start my free 3-day trial” no app. O teste de 3 dias começa na hora com todos os recursos. Não precisa de dados de pagamento, e há um teste grátis por computador."]
           - ["Como faço o pagamento?", "Em USDT pelas redes TRC20, BEP20 ou ERC20. Enviamos o endereço de pagamento pelo Telegram e sua chave anual assim que o pagamento chega."]
           - ["O preço é por conta ou por computador?", "Por plano. Cada plano inclui um número de contas de WhatsApp e de computadores (Starter e Pro: 1 computador; Business: até 3)."]
           - ["O que acontece depois de um ano?", "Você renova pelo mesmo preço e continua sem interrupção. Suas contas, conversas e configurações ficam no seu PC o tempo todo."]
@@ -931,9 +931,9 @@ pages:
         p: Dê dois cliques no arquivo e siga o instalador (cerca de 1 minuto, sem permissão de administrador). Se aparecer uma janela azul dizendo <b>“O Windows protegeu o computador”</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.
         tip: 'Isso é normal com programas novos: o Windows SmartScreen ainda não viu o GlotChat muitas vezes. O arquivo é seguro — você pode conferir a soma SHA-256 abaixo.'
         mock: smartscreen
-      - h: Comece seu teste grátis de 3 dias
-        p: 'Abra o GlotChat e clique em <b>Get a free 3-day trial</b>. O Telegram abre com o seu Machine ID já escrito — é só enviar. Sua chave de teste chega em minutos: cole e clique em <b>Activate</b>.'
-        tip: Todos os recursos ficam liberados durante o teste. Sem cartão, sem pagamento, nada para cancelar. A interface do app é em inglês ou chinês.
+      - h: "Comece seu teste grátis de 3 dias — com um clique"
+        p: "Abra o GlotChat e clique em <b>Start my free 3-day trial</b>. Pronto: todos os recursos são liberados na hora — sem mensagem e sem chave para copiar."
+        tip: "Um teste grátis por computador. Sem cartão, sem pagamento, nada para cancelar. A interface do app é em inglês ou chinês."
         mock: activate
       - h: Adicione suas contas de WhatsApp
         p: Adicione uma conta e escaneie o QR code com o celular (WhatsApp → <b>Dispositivos conectados</b>). Repita para cada número. Mensagens, áudios e fotos são traduzidos na hora.
@@ -973,7 +973,7 @@ pages:
       - - Por que o Windows diz “O Windows protegeu o computador”?
         - O Windows SmartScreen mostra esse aviso para aplicativos novos que ele ainda não viu muitas vezes. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Baixe o GlotChat sempre por esta página — você pode comparar a soma SHA-256 para ter certeza de que o arquivo é o original.
       - - Preciso de uma chave de licença?
-        - Sim, o GlotChat pede uma chave na primeira vez que você abre. Clique em <b>Get a free 3-day trial</b> no app e enviamos uma chave de teste grátis pelo Telegram em minutos. Ao comprar um plano, você recebe a chave anual do mesmo jeito.
+        - "Para o teste, não: clique em <b>Start my free 3-day trial</b> no app e ele começa na hora. Ao comprar um plano, enviamos sua chave anual pelo Telegram — cole em <b>I already have a license key</b>."
       - - Existe versão para Mac, Android ou iPhone?
         - Ainda não. O GlotChat é um aplicativo para Windows 10 e 11. Seus números de WhatsApp continuam nos celulares — o GlotChat conecta todos ao PC como o WhatsApp Web.
       - - Funciona no Windows 7 ou 8?

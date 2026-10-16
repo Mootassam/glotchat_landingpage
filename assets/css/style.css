@@ -607,6 +607,11 @@ body.noscroll { overflow: hidden; }
 .mk-act > b { font-size: 20px; }
 .mk-act p { color: var(--text2); font-size: 13.5px; max-width: 320px; }
 .mk-trial { padding: 11px 20px; border-radius: 12px; background: linear-gradient(180deg, #2aabee, var(--tg2)); color: #fff; font-weight: 700; margin: 4px 0; }
+.mk-trialbox { display: grid; gap: 8px; justify-items: center; width: 100%; padding: 16px 12px 12px; border-radius: 14px; background: linear-gradient(160deg, rgba(16, 196, 140, .12), transparent 80%); border: 1px solid var(--line); }
+.mk-trialbox .mk-trial { background: linear-gradient(90deg, #10b981, #0891b2); margin: 0; }
+.mk-trialbox small { color: var(--muted); font-size: 12px; }
+.mk-have { display: flex; width: 100%; justify-content: space-between; padding: 10px 4px 0; border-top: 1px solid var(--line); color: var(--text2); font-weight: 600; font-size: 13.5px; }
+.mk-have em { font-style: normal; }
 .mk-mid { display: grid; gap: 4px; padding: 10px 16px; border-radius: 12px; background: var(--soft); width: 100%; }
 .mk-mid small { color: var(--muted); }
 .mk-mid code { font-size: 15px; font-weight: 700; letter-spacing: .04em; direction: ltr; }

@@ -7,7 +7,7 @@ ui:
   close: "Close"
   contact: "Contact us"
   promo_html: "<b>Free 3-day trial</b> — every feature, no payment."
-  promo_go: "Get it on Telegram →"
+  promo_go: "Download free →"
   nav:
     product: "Product"
     translator: "WhatsApp translator"
@@ -66,7 +66,7 @@ ui:
   paynote: "Payment in USDT (TRC20 · BEP20 · ERC20). Questions before buying? Just ask — we reply on Telegram."
   final:
     h: "Try GlotChat free for 3 days"
-    p: "Download GlotChat, open it and click “Get a free 3-day trial” — your key arrives on Telegram within minutes. Questions first? Message us, we reply fast."
+    p: "Download GlotChat, open it and click “Start my free 3-day trial” — it starts instantly. Questions first? Message us on Telegram, we reply fast."
   copy_username: "Copy username"
   copied: "Copied"
   also: "Also:"
@@ -76,8 +76,8 @@ ui:
   mbar: "Free 3-day trial — message us on Telegram"
   leave:
     h: "Before you go — try it free"
-    p: "Get a 3-day GlotChat trial with every feature unlocked. No payment, no commitment — just send us a message."
-    btn: "Get my free trial on Telegram"
+    p: "Download GlotChat and start a 3-day trial with every feature unlocked — one click in the app, no payment, no commitment."
+    btn: "Download & try it free"
     "no": "No thanks"
   footer:
     tagline: "Every WhatsApp number in one window, every customer in their language. Made for businesses that sell across borders."
@@ -124,11 +124,11 @@ ui:
       ss_unknown: Unknown publisher
       ss_run: Run anyway
       ss_dont: Don't run
-      act_title: Activate GlotChat
-      act_sub: Start with a free 3-day trial, or enter the license key you received.
-      act_trial: Get a free 3-day trial
-      act_mid: Your Machine ID
-      act_btn: Activate
+      act_title: "Welcome to GlotChat"
+      act_sub: "Try every feature free for 3 days — no payment, no card. Or enter the license key you bought."
+      act_trial: "Start my free 3-day trial"
+      act_mid: "Starts instantly · every feature · one free trial per PC"
+      act_btn: "I already have a license key"
 pages:
   # ================================================================ HOME
   home:
@@ -281,13 +281,13 @@ pages:
       k: Try before you pay
       h: Free for 3 days. Up and running in 10 minutes.
       items:
-      - - Message us on Telegram
-        - Tell us how many WhatsApp accounts you use. We send you the installer and answer every question.
-      - - Get your free trial key
-        - Install GlotChat, send us the Machine ID it shows, and receive a 3-day key with every feature unlocked.
+      - - "Download GlotChat"
+        - "Get the Windows installer from our website and install it in about a minute — no admin rights needed."
+      - - "Start your free trial in one click"
+        - "Open GlotChat and click “Start my free 3-day trial”. Every feature is unlocked at once — no payment, no message needed."
       - - Love it? Keep it.
         - Pay in USDT and get your yearly key. Your accounts and settings stay exactly as they are — nothing to set up again.
-      cta: Get my free trial on Telegram
+      cta: "Download & start my free trial"
     - type: plans
       k: Pricing
       h: Simple yearly plans. Try free first.
@@ -299,7 +299,7 @@ pages:
       h: Questions, answered
       items:
       - - Is there a free trial?
-        - Yes. Message us on Telegram and you get a 3-day trial key with every feature unlocked — no payment needed. If you like it, you buy a plan and keep all your accounts and settings.
+        - "Yes. Download GlotChat, open it and click “Start my free 3-day trial” — every feature is unlocked at once, no payment needed. If you like it, you buy a plan and keep all your accounts and settings."
       - - Is it safe for my WhatsApp accounts?
         - 'GlotChat opens the official WhatsApp Web for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you. As with any WhatsApp use, avoid spam and bulk unsolicited messages.'
       - - Does translation need the internet?
@@ -367,7 +367,7 @@ pages:
         k: "Billing questions"
         h: "Paying, renewing and upgrading"
         items:
-          - ["How does the free trial work?", "Message us on Telegram, install GlotChat and send us the Machine ID it shows. You get a 3-day key with every feature unlocked. No payment details are needed."]
+          - ["How does the free trial work?", "Download and install GlotChat, then click “Start my free 3-day trial” in the app. Your 3-day trial starts at once with every feature unlocked. No payment details are needed, and there is one free trial per computer."]
           - ["How do I pay?", "In USDT on TRC20, BEP20 or ERC20. We send you the payment address on Telegram, and your yearly key as soon as the payment arrives."]
           - ["Is the price per account or per computer?", "Per plan. Each plan includes a number of WhatsApp accounts and computers (Starter and Pro: 1 computer, Business: up to 3)."]
           - ["What happens after one year?", "You renew at the same price and keep working without interruption. Your accounts, chats and settings stay on your PC the whole time."]
@@ -1064,9 +1064,9 @@ pages:
         p: Double-click the file and follow the installer (about 1 minute, no admin rights needed). If a blue window says <b>“Windows protected your PC”</b>, click <b>More info</b>, then <b>Run anyway</b>.
         tip: 'This is normal for new software: Windows SmartScreen simply hasn''t seen GlotChat many times yet. The file is safe — you can check its SHA-256 checksum below.'
         mock: smartscreen
-      - h: Start your free 3-day trial
-        p: 'Open GlotChat and click <b>Get a free 3-day trial</b>. Telegram opens with your Machine ID already written — just press send. Your trial key arrives within minutes: paste it and click <b>Activate</b>.'
-        tip: Every feature is unlocked during the trial. No card, no payment, nothing to cancel.
+      - h: "Start your free 3-day trial — one click"
+        p: "Open GlotChat and click <b>Start my free 3-day trial</b>. That's it: every feature is unlocked at once — no message, no key to copy."
+        tip: "One free trial per computer. No card, no payment, nothing to cancel."
         mock: activate
       - h: Add your WhatsApp accounts
         p: Add an account and scan the QR code with your phone (WhatsApp → <b>Linked devices</b>). Repeat for every number. Messages, voice notes and photos are translated right away.
@@ -1106,7 +1106,7 @@ pages:
       - - Why does Windows say “Windows protected your PC”?
         - Windows SmartScreen shows this warning for new apps it hasn't seen many times yet. Click <b>More info</b>, then <b>Run anyway</b>. Always download GlotChat from this page — you can compare the SHA-256 checksum to be sure the file is the original.
       - - Do I need a license key?
-        - Yes, GlotChat asks for a key the first time you open it. Click <b>Get a free 3-day trial</b> in the app and we send you a free trial key on Telegram within minutes. When you buy a plan, you get a yearly key the same way.
+        - "Not for the trial: click <b>Start my free 3-day trial</b> in the app and it starts at once. When you buy a plan, we send you a yearly key on Telegram — paste it under <b>I already have a license key</b>."
       - - Is there a version for Mac, Android or iPhone?
         - Not at the moment. GlotChat is a Windows 10 and 11 desktop app. Your WhatsApp numbers stay on your phones — GlotChat links them to your PC like WhatsApp Web does.
       - - Does it work on Windows 7 or 8?

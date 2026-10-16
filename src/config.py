@@ -25,10 +25,10 @@ TRIAL_DAYS = 3
 DOWNLOAD = {
     "url": "https://download.glotchat.com/GlotChat-Setup.exe",
     "file": "GlotChat-Setup.exe",
-    "version": "1.2.1",
-    "date": "2026-10-10",
-    "size_mb": 381,          # as Windows shows it (399,630,480 bytes)
-    "sha256": "98d034cb4dab9091d2bf84e391c8398fdfcd93fb6085644009b4717f13265cdb",
+    "version": "1.2.3",
+    "date": "2026-10-16",
+    "size_mb": 381,          # as Windows shows it (399,630,243 bytes)
+    "sha256": "4d91ab092ff4d21796febc618b8220fa245e22763c61df66949bfd6c4c503550",
 }
 PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
 

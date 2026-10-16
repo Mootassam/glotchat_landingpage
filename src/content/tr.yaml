@@ -7,7 +7,7 @@ ui:
   close: "Kapat"
   contact: "Bize ulaşın"
   promo_html: "<b>3 gün ücretsiz deneme</b> — tüm özellikler, ödeme yok."
-  promo_go: "Telegram'dan alın →"
+  promo_go: "Ücretsiz indir →"
   nav:
     product: "Ürün"
     translator: "WhatsApp çevirmeni"
@@ -66,7 +66,7 @@ ui:
   paynote: "Ödeme USDT ile (TRC20 · BEP20 · ERC20). Satın almadan önce sorunuz mu var? Sorun — Telegram'dan yanıt veriyoruz."
   final:
     h: "GlotChat'i 3 gün ücretsiz deneyin"
-    p: "GlotChat'i indirin, açın ve “Get a free 3-day trial”a tıklayın — anahtarınız birkaç dakika içinde Telegram'dan gelir. Sorunuz mu var? Yazın, hızlı yanıt veriyoruz."
+    p: "GlotChat'i indirin, açın ve “Start my free 3-day trial”a tıklayın — deneme hemen başlar. Sorunuz mu var? Telegram'dan yazın, hızlı yanıt veriyoruz."
   copy_username: "Kullanıcı adını kopyala"
   copied: "Kopyalandı"
   also: "Ayrıca:"
@@ -76,8 +76,8 @@ ui:
   mbar: "3 gün ücretsiz — Telegram'dan yazın"
   leave:
     h: "Gitmeden önce — ücretsiz deneyin"
-    p: "Tüm özellikleri açık 3 günlük GlotChat denemesi alın. Ödeme yok, taahhüt yok — sadece bize bir mesaj gönderin."
-    btn: "Ücretsiz denememi Telegram'dan al"
+    p: "GlotChat'i indirin ve tüm özellikler açık 3 günlük denemeyi başlatın — uygulamada tek tık, ödeme yok, taahhüt yok."
+    btn: "İndir ve ücretsiz dene"
     "no": "Hayır, teşekkürler"
   footer:
     tagline: "Tüm WhatsApp numaraları tek pencerede, her müşteri kendi dilinde. Sınır ötesi satış yapan işletmeler için."
@@ -124,11 +124,11 @@ ui:
       ss_unknown: Bilinmeyen yayımcı
       ss_run: Yine de çalıştır
       ss_dont: Çalıştırma
-      act_title: Activate GlotChat
-      act_sub: Start with a free 3-day trial, or enter the license key you received.
-      act_trial: Get a free 3-day trial
-      act_mid: Your Machine ID
-      act_btn: Activate
+      act_title: "Welcome to GlotChat"
+      act_sub: "Try every feature free for 3 days — no payment, no card. Or enter the license key you bought."
+      act_trial: "Start my free 3-day trial"
+      act_mid: "Starts instantly · every feature · one free trial per PC"
+      act_btn: "I already have a license key"
 pages:
   home:
     title: "GlotChat – Bilgisayarda Çoklu WhatsApp + Çevirmen"
@@ -280,13 +280,13 @@ pages:
       k: Ödemeden önce deneyin
       h: 3 gün ücretsiz. 10 dakikada hazır.
       items:
-      - - Telegram'dan yazın
-        - Kaç WhatsApp hesabı kullandığınızı söyleyin. Kurulum dosyasını gönderir, tüm sorularınızı yanıtlarız.
-      - - Ücretsiz deneme anahtarınızı alın
-        - GlotChat'i kurun, gösterdiği Makine Kimliğini bize gönderin ve tüm özellikleri açık 3 günlük anahtarı alın.
+      - - "GlotChat'i indirin"
+        - "Windows kurulum dosyasını sitemizden indirin ve yaklaşık bir dakikada kurun — yönetici izni gerekmez."
+      - - "Ücretsiz denemeyi tek tıkla başlatın"
+        - "GlotChat'i açın ve “Start my free 3-day trial”a tıklayın. Tüm özellikler hemen açılır — ödeme yok, mesaj göndermeye gerek yok."
       - - Beğendiniz mi? Devam edin.
         - USDT ile ödeyin, yıllık anahtarınızı alın. Hesaplarınız ve ayarlarınız olduğu gibi kalır — yeniden kurulacak bir şey yok.
-      cta: Ücretsiz denememi Telegram'dan al
+      cta: "İndir ve ücretsiz denemeyi başlat"
     - type: plans
       k: Fiyatlar
       h: Basit yıllık paketler. Önce ücretsiz deneyin.
@@ -298,7 +298,7 @@ pages:
       h: Sorularınız, yanıtlarıyla
       items:
       - - Ücretsiz deneme var mı?
-        - Evet. Telegram'dan yazın, tüm özellikleri açık 3 günlük deneme anahtarı alın — ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesap ve ayarlarınızı korursunuz.
+        - "Evet. GlotChat'i indirin, açın ve “Start my free 3-day trial”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir plan alırsınız; tüm hesaplarınız ve ayarlarınız korunur."
       - - WhatsApp hesaplarım için güvenli mi?
         - 'GlotChat her hesap için resmi WhatsApp Web''i kendi izole oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına asla mesaj göndermez: her şeyi siz gönderirsiniz. Her WhatsApp kullanımında olduğu gibi spam ve istenmeyen toplu mesajlardan kaçının.'
       - - Çeviri internet gerektirir mi?
@@ -365,7 +365,7 @@ pages:
         k: "Ödeme soruları"
         h: "Ödeme, yenileme ve yükseltme"
         items:
-          - ["Ücretsiz deneme nasıl çalışır?", "Telegram'dan yazın, GlotChat'i kurun ve gösterdiği Makine Kimliğini bize gönderin. Tüm özellikleri açık 3 günlük bir anahtar alırsınız. Ödeme bilgisi gerekmez."]
+          - ["Ücretsiz deneme nasıl çalışır?", "GlotChat'i indirip kurun, ardından uygulamada “Start my free 3-day trial”a tıklayın. 3 günlük deneme tüm özelliklerle hemen başlar. Ödeme bilgisi gerekmez; her bilgisayar için bir ücretsiz deneme vardır."]
           - ["Nasıl ödeme yaparım?", "TRC20, BEP20 veya ERC20 üzerinden USDT ile. Ödeme adresini Telegram'dan gönderiyoruz; ödeme gelir gelmez yıllık anahtarınızı iletiyoruz."]
           - ["Fiyat hesap başına mı, bilgisayar başına mı?", "Paket başına. Her paket belirli sayıda WhatsApp hesabı ve bilgisayar içerir (Başlangıç ve Pro: 1 bilgisayar, Kurumsal: 3'e kadar)."]
           - ["Bir yıl sonra ne olur?", "Aynı fiyata yenilersiniz ve kesintisiz devam edersiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız her zaman bilgisayarınızda kalır."]
@@ -931,9 +931,9 @@ pages:
         p: Dosyaya çift tıklayın ve kurulumu izleyin (yaklaşık 1 dakika, yönetici izni gerekmez). <b>“Windows bilgisayarınızı korudu”</b> yazan mavi bir pencere çıkarsa önce <b>Ek bilgi</b>'ye, sonra <b>Yine de çalıştır</b>'a tıklayın.
         tip: 'Yeni yazılımlarda bu normaldir: Windows SmartScreen GlotChat''i henüz çok görmedi. Dosya güvenlidir — aşağıdaki SHA-256 değeriyle kontrol edebilirsiniz.'
         mock: smartscreen
-      - h: 3 günlük ücretsiz denemenizi başlatın
-        p: 'GlotChat''i açın ve <b>Get a free 3-day trial</b>''a tıklayın. Telegram, Machine ID''niz yazılı olarak açılır — sadece gönderin. Deneme anahtarınız birkaç dakikada gelir: yapıştırın ve <b>Activate</b>''e tıklayın.'
-        tip: Deneme süresince tüm özellikler açıktır. Kart yok, ödeme yok, iptal edilecek bir şey yok. Uygulama arayüzü İngilizce veya Çincedir.
+      - h: "3 günlük ücretsiz denemeyi başlatın — tek tık"
+        p: "GlotChat'i açın ve <b>Start my free 3-day trial</b>'a tıklayın. Bu kadar: tüm özellikler hemen açılır — mesaj yok, kopyalanacak anahtar yok."
+        tip: "Her bilgisayar için bir ücretsiz deneme. Kart yok, ödeme yok, iptal edilecek bir şey yok. Uygulama arayüzü İngilizce veya Çincedir."
         mock: activate
       - h: WhatsApp hesaplarınızı ekleyin
         p: Bir hesap ekleyin ve QR kodu telefonunuzla okutun (WhatsApp → <b>Bağlı cihazlar</b>). Her numara için tekrarlayın. Mesajlar, sesli notlar ve fotoğraflar hemen çevrilir.
@@ -973,7 +973,7 @@ pages:
       - - Windows neden “Windows bilgisayarınızı korudu” diyor?
         - Windows SmartScreen bu uyarıyı henüz çok görmediği yeni uygulamalarda gösterir. <b>Ek bilgi</b>'ye, sonra <b>Yine de çalıştır</b>'a tıklayın. GlotChat'i her zaman bu sayfadan indirin — dosyanın orijinal olduğundan emin olmak için SHA-256 değerini karşılaştırabilirsiniz.
       - - Lisans anahtarı gerekli mi?
-        - Evet, GlotChat ilk açılışta bir anahtar ister. Uygulamada <b>Get a free 3-day trial</b>'a tıklayın, ücretsiz deneme anahtarınızı birkaç dakikada Telegram'dan gönderelim. Plan satın aldığınızda yıllık anahtarı da aynı şekilde alırsınız.
+        - "Deneme için gerekmez: uygulamada <b>Start my free 3-day trial</b>'a tıklayın, hemen başlar. Plan satın aldığınızda yıllık anahtarınızı Telegram'dan gönderiyoruz — <b>I already have a license key</b> bölümüne yapıştırın."
       - - Mac, Android veya iPhone sürümü var mı?
         - Şu an yok. GlotChat, Windows 10 ve 11 için bir masaüstü uygulamasıdır. WhatsApp numaralarınız telefonlarınızda kalır — GlotChat onları WhatsApp Web gibi bilgisayara bağlar.
       - - Windows 7 veya 8'de çalışır mı?

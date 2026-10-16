@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
 {% macro tgbtn(kind, place, label, cls='btn tg lg', plan=None, price=None, n=None, id=None) -%}
+{%- if kind in ('trial', 'planTrial', 'finder') -%}
+{#- the free trial starts inside the app now: every "try it free" button leads to the download page -#}
+<a{% if id %} id="{{ id }}"{% endif %} class="{{ (' ' ~ cls ~ ' ')|replace(' tg ', ' dl ')|trim }}" href="{{ link('download') }}" data-place="{{ place }}">{% if ' tg' in ' ' ~ cls %}<svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endif %}<span>{{ label }}</span></a>
+{%- else -%}
 <a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
+{%- endif -%}
 {%- endmacro %}
 
 {% macro dlbtn(place, cls='btn dl lg', label=None) -%}
@@ -398,9 +403,8 @@
             <img src="/assets/img/logo-96.png" alt="" width="44" height="44">
             <b>{{ m.act_title }}</b>
             <p>{{ m.act_sub }}</p>
-            <span class="mk-trial hl">{{ m.act_trial }}</span>
-            <div class="mk-mid"><small>{{ m.act_mid }}</small><code>A1B2-C3D4-E5F6-7</code></div>
-            <div class="mk-key"><span>GC1-…</span><em>{{ m.act_btn }}</em></div>
+            <div class="mk-trialbox"><span class="mk-trial hl">🎁 {{ m.act_trial }}</span><small>{{ m.act_mid }}</small></div>
+            <div class="mk-have"><span>🔑 {{ m.act_btn }}</span><em>▾</em></div>
           </div>
         {%- elif s.mock == 'accounts' %}
           {{ media('video:accounts', s.h) }}
@@ -452,7 +456,7 @@
       <p>{{ ui.final.p }}</p>
       <div class="hero-cta">
         {%- if page_id != 'download' %}<a class="btn dl lg" href="{{ link('download') }}" data-place="final-dl"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.dl.btn }}</span></a>{% endif %}
-        {{ tgbtn('trial', 'final', '@' ~ cfg.TELEGRAM_USER) }}
+        {{ tgbtn('general', 'final', '@' ~ cfg.TELEGRAM_USER) }}
         <button class="btn ghost lg" type="button" data-copy="@{{ cfg.TELEGRAM_USER }}">{{ ui.copy_username }}</button>
       </div>
       {%- if contacts %}
