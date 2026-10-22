@@ -26,16 +26,18 @@ PLANS = [
 TRIAL_DAYS = 3
 
 # ---------------------------------------------------------------- download (Cloudflare R2 bucket glotchat-download)
+# The installer stays on a version Windows Smart App Control already trusts (a new unsigned installer is
+# blocked until Microsoft learns it); newer versions reach customers as automatic updates a minute after start.
 # Upload each new installer under a VERSIONED name (Cloudflare caches .exe files at its edge, so a reused
 # name keeps serving the old file), then update url/file/version/size/sha256 here and rebuild.
 # Also upload it as GlotChat-Setup.exe for links shared earlier, and purge that URL in Cloudflare.
 DOWNLOAD = {
-    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.6.exe",
-    "file": "GlotChat-Setup-1.2.6.exe",
-    "version": "1.2.6",
+    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.5.exe",
+    "file": "GlotChat-Setup-1.2.5.exe",
+    "version": "1.2.5",
     "date": "2026-10-22",
-    "size_mb": 381,          # as Windows shows it (399,641,926 bytes)
-    "sha256": "d5d321ac8e488d0579f7c6d92915f1799605e35e61dc0eaeea3cd4b614d8fd0a",
+    "size_mb": 381,          # as Windows shows it (399,644,511 bytes)
+    "sha256": "56800eb5894ca7f1336cae5c616a1d8ded4b3e90219862014c21f0959c113c5a",
 }
 PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
 
