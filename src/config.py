@@ -30,12 +30,12 @@ TRIAL_DAYS = 3
 # name keeps serving the old file), then update url/file/version/size/sha256 here and rebuild.
 # Also upload it as GlotChat-Setup.exe for links shared earlier, and purge that URL in Cloudflare.
 DOWNLOAD = {
-    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.3.exe",
-    "file": "GlotChat-Setup-1.2.3.exe",
-    "version": "1.2.3",
-    "date": "2026-10-16",
-    "size_mb": 381,          # as Windows shows it (399,630,243 bytes)
-    "sha256": "4d91ab092ff4d21796febc618b8220fa245e22763c61df66949bfd6c4c503550",
+    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.5.exe",
+    "file": "GlotChat-Setup-1.2.5.exe",
+    "version": "1.2.5",
+    "date": "2026-10-22",
+    "size_mb": 381,          # as Windows shows it (399,644,511 bytes)
+    "sha256": "56800eb5894ca7f1336cae5c616a1d8ded4b3e90219862014c21f0959c113c5a",
 }
 PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
 
