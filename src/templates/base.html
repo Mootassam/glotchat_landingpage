@@ -34,9 +34,27 @@
   <meta name="twitter:title" content="{{ page.og_title or page.title }}">
   <meta name="twitter:description" content="{{ page.og_description or page.description }}">
   <meta name="twitter:image" content="{{ og_image }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{% if lang == 'ar' %}&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700{% endif %}&display=swap" rel="stylesheet">
+{%- if lang == 'zh' %}
+  {#- Baidu / 360 / Sogou: no transcoding of the page into their own mobile copy, served as-is on PC and phones #}
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="renderer" content="webkit">
+{%- if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+{%- endif %}
+{%- endif %}
+{%- if cfg.BAIDU_SITE_VERIFICATION %}
+  <meta name="baidu-site-verification" content="{{ cfg.BAIDU_SITE_VERIFICATION }}">
+{%- endif %}
+{%- if cfg.BING_SITE_VERIFICATION %}
+  <meta name="msvalidate.01" content="{{ cfg.BING_SITE_VERIFICATION }}">
+{%- endif %}
+  {#- fonts come from this site, not Google (blocked in mainland China: pages waited for it) #}
+  <link rel="stylesheet" href="/assets/fonts/inter.css?v={{ v }}">
+{%- if lang == 'ar' %}
+  <link rel="stylesheet" href="/assets/fonts/plex-arabic.css?v={{ v }}">
+{%- endif %}
   <link rel="stylesheet" href="/assets/css/style.css?v={{ v }}">
 {%- if preload and preload[1] %}
   <link rel="preload" as="image" href="{{ preload[0] }}" media="(min-width: 701px)" fetchpriority="high">

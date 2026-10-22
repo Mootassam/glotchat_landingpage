@@ -11,6 +11,11 @@ WHATSAPP_NUMBER = ""      # international format without + or spaces, e.g. "9715
 WECHAT_ID = ""            # shown on the Chinese pages (Telegram is blocked in mainland China)
 EMAIL = ""                # e.g. "hello@glotchat.com"
 
+# ---------------------------------------------------------------- search engine ownership checks
+# Paste the code each webmaster tool gives you (only the content="..." part), then rebuild.
+BAIDU_SITE_VERIFICATION = ""   # ziyuan.baidu.com → 用户中心 → 站点管理 → 添加网站 → HTML 标签验证
+BING_SITE_VERIFICATION = ""    # bing.com/webmasters (Bing also powers cn.bing.com, used by many sellers in China)
+
 # ---------------------------------------------------------------- plans (USDT per year)
 # The USDT price is also published as USD in the structured data (USDT is pegged to the dollar).
 PLANS = [

@@ -69,8 +69,8 @@ def validate(content):
         if missing:
             problems.append(f"{code}: ui keys missing: {', '.join(missing[:12])}{' …' if len(missing) > 12 else ''}")
         for pid, pg in (c.get("pages") or {}).items():
-            if pid not in content["en"]["pages"]:
-                problems.append(f"{code}: page '{pid}' does not exist in en.yaml")
+            if pid not in content["en"]["pages"] and not pg.get("single"):
+                problems.append(f"{code}: page '{pid}' does not exist in en.yaml (or mark it single: true)")
             for k in ("title", "description", "blocks"):
                 if not pg.get(k):
                     problems.append(f"{code}: page '{pid}' has no {k}")
@@ -156,6 +156,8 @@ def build(make_og=True):
 
     en_pages = content["en"]["pages"]
     page_ids = list(en_pages)
+    for c in content.values():                    # + pages written for one language only (single: true)
+        page_ids += [pid for pid in (c.get("pages") or {}) if pid not in page_ids]
     available = {pid: [l for l in cfg.LANGS if l in content and pid in (content[l].get("pages") or {})] for pid in page_ids}
 
     env = Environment(loader=FileSystemLoader(os.path.join(HERE, "templates")), autoescape=True,
@@ -199,7 +201,7 @@ def build(make_og=True):
         industries = [dict(slug=pid.split("/", 1)[1], name=(pages.get(pid) or en_pages[pid]).get("short"),
                            short=(pages.get(pid) or en_pages[pid]).get("nav_sub", ""), icon=(pages.get(pid) or en_pages[pid]).get("icon", ""))
                       for pid in page_ids if pid.startswith("for/")]
-        guides = [dict(id=pid, **registry[pid]) for pid in page_ids if pid.startswith("guides/")]
+        guides = [dict(id=pid, **registry[pid]) for pid in page_ids if pid.startswith("guides/") and pid in registry]
 
         contacts = []
         if cfg.WHATSAPP_NUMBER:
