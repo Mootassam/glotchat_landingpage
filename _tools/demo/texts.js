@@ -5,7 +5,9 @@
 window.DEMO_TEXTS = (function () {
   const UI_EN = {
     addTitle: 'Add a WhatsApp account',
-    addSub: 'It opens in a new isolated tab. Then scan the QR code with the phone of this WhatsApp number.',
+    addSub: 'It gets its own isolated space in GlotChat. Then scan the QR code with the phone of this WhatsApp number.',
+    sbAccounts: 'WhatsApp accounts', sbAll: 'All', sbUnread: 'Unread', sbAdd: 'Add account',
+    navAll: 'All accounts', navTpl: 'Templates', navLang: 'Languages', navSet: 'Settings',
     name: 'Name', color: 'Color', iWrite: 'I write in', custSpeak: 'Customers speak', autoDetect: 'Auto-detect',
     iWriteHint: 'Messages are translated into this language for you.', custHint: 'Auto-detect learns each chat’s language.',
     cancel: 'Cancel', create: 'Add & connect WhatsApp', scanQr: 'Scan the QR code with WhatsApp on your phone → Linked devices',
@@ -21,7 +23,9 @@ window.DEMO_TEXTS = (function () {
   };
   const UI_ZH = {
     addTitle: '添加 WhatsApp 账号',
-    addSub: '账号将在新的独立标签页中打开。然后用该 WhatsApp 号码的手机扫描二维码。',
+    addSub: '账号在 GlotChat 中拥有独立的空间。然后用该 WhatsApp 号码的手机扫描二维码。',
+    sbAccounts: 'WhatsApp 账号', sbAll: '所有', sbUnread: '未读', sbAdd: '添加账号',
+    navAll: '所有账号', navTpl: '快捷回复', navLang: '语言', navSet: '设置',
     name: '名称', color: '颜色', iWrite: '我使用的语言', custSpeak: '客户使用的语言', autoDetect: '自动检测',
     iWriteHint: '消息会为你翻译成这种语言。', custHint: '自动检测会记住每个聊天的语言。',
     cancel: '取消', create: '添加并连接 WhatsApp', scanQr: '请用手机 WhatsApp 扫描二维码 → 已关联的设备',

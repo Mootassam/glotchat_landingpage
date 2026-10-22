@@ -112,6 +112,9 @@ ui:
     card_sub: WhatsApp multi-account + translator for PC
     sha: SHA-256 checksum
     copy_sha: Copy checksum
+    phone_h: "On your phone?"
+    phone_p: "GlotChat is a Windows app for your PC. Send yourself this link and download it on your computer."
+    phone_send: "Send the link to my PC"
     mock:
       downloads: Downloads
       done: Done
@@ -132,7 +135,7 @@ ui:
 pages:
   # ================================================================ HOME
   home:
-    title: "GlotChat – Multiple WhatsApp Accounts + Translator for PC"
+    title: "Multiple WhatsApp Accounts & Auto-Translate on PC – GlotChat"
     description: "Run many WhatsApp accounts in one window on Windows and translate chats, voice notes and photos offline in 49 languages. Free 3-day trial."
     og_title: "GlotChat – All your WhatsApp accounts in one window, every customer in their language"
     og_heading: "All your WhatsApp accounts in one window. Every customer in their language."
@@ -340,6 +343,15 @@ pages:
         k: "Plans"
         h: "Pick by how many WhatsApp numbers you use"
         p: "Not sure? Answer one question and we'll point you to the right plan."
+      - type: steps
+        id: buy
+        soft: false
+        k: "How buying works"
+        h: "From trial to your own key in 3 steps"
+        items:
+          - ["Message us on Telegram", "Pick your plan and send your Machine ID — GlotChat shows it in Settings → License, with a Copy button."]
+          - ["Pay in USDT", "TRC20, BEP20 or ERC20. We send you the exact address and amount — no card, no account to create."]
+          - ["Paste your key", "Your yearly key arrives within minutes. Paste it in GlotChat → Settings → Enter a new key. Your accounts, logins and settings stay as they are."]
       - type: table
         soft: true
         k: "Compare plans"

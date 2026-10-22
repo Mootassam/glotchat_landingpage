@@ -62,7 +62,9 @@ TRANSLATION_LANGUAGES = [
 # code -> settings. English lives at "/", the others at "/<code>/".
 LANGS = {
     "en": {"name": "English", "hreflang": "en", "html": "en", "og": "en_US", "dir": "ltr"},
-    "zh": {"name": "中文", "hreflang": "zh-Hans", "html": "zh-Hans", "og": "zh_CN", "dir": "ltr"},
+    "zh": {"name": "简体中文", "short": "简体", "hreflang": "zh-Hans", "html": "zh-Hans", "og": "zh_CN", "dir": "ltr"},
+    # Traditional Chinese (Taiwan / Hong Kong): generated from zh.yaml by src/make_zh_hant.py; uses the zh demo videos
+    "zh-hant": {"name": "繁體中文", "short": "繁體", "hreflang": "zh-Hant", "html": "zh-Hant", "og": "zh_TW", "dir": "ltr", "media": "zh"},
     "ar": {"name": "العربية", "hreflang": "ar", "html": "ar", "og": "ar_AR", "dir": "rtl"},
     "tr": {"name": "Türkçe", "hreflang": "tr", "html": "tr", "og": "tr_TR", "dir": "ltr"},
     "es": {"name": "Español", "hreflang": "es", "html": "es", "og": "es_ES", "dir": "ltr"},

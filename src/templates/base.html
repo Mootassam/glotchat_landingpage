@@ -34,7 +34,7 @@
   <meta name="twitter:title" content="{{ page.og_title or page.title }}">
   <meta name="twitter:description" content="{{ page.og_description or page.description }}">
   <meta name="twitter:image" content="{{ og_image }}">
-{%- if lang == 'zh' %}
+{%- if lang.startswith('zh') %}
   {#- Baidu / 360 / Sogou: no transcoding of the page into their own mobile copy, served as-is on PC and phones #}
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -100,7 +100,7 @@
     </nav>
     <div class="nav-r">
       <div class="dd lang-dd">
-        <button class="dd-b lang-b" type="button" aria-expanded="false" aria-label="{{ ui.lang_label }}"><span aria-hidden="true">🌐</span> {{ L.name }} <span aria-hidden="true">▾</span></button>
+        <button class="dd-b lang-b" type="button" aria-expanded="false" aria-label="{{ ui.lang_label }}"><span aria-hidden="true">🌐</span> {{ L.short or L.name }} <span aria-hidden="true">▾</span></button>
         <div class="dd-m end">
 {%- for a in lang_menu %}
           <a href="{{ a.url }}" hreflang="{{ a.hreflang }}" lang="{{ a.html }}" data-lang="{{ a.code }}"{% if a.code == lang %} aria-current="page"{% endif %}>{{ a.name }}</a>

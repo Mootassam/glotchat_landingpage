@@ -112,6 +112,9 @@ ui:
     card_sub: Várias contas de WhatsApp + tradutor para PC
     sha: Soma de verificação SHA-256
     copy_sha: Copiar soma
+    phone_h: "Está no celular?"
+    phone_p: "O GlotChat é um aplicativo para PC com Windows. Envie este link para você mesmo e baixe no computador."
+    phone_send: "Enviar o link para o meu PC"
     mock:
       downloads: Downloads
       done: Concluído
@@ -338,6 +341,15 @@ pages:
         k: "Planos"
         h: "Escolha pela quantidade de números de WhatsApp que você usa"
         p: "Não tem certeza? Responda uma pergunta e indicamos o plano certo."
+      - type: steps
+        id: buy
+        soft: false
+        k: "Como comprar"
+        h: "Do teste à sua própria chave em 3 passos"
+        items:
+          - ["Fale conosco no Telegram", "Escolha seu plano e envie seu Machine ID — o GlotChat mostra em Settings → License, com um botão para copiar."]
+          - ["Pague em USDT", "TRC20, BEP20 ou ERC20. Enviamos o endereço e o valor exatos — sem cartão e sem criar conta."]
+          - ["Cole sua chave", "Sua chave anual chega em minutos. Cole em GlotChat → Settings → Enter a new key. Suas contas, logins e configurações continuam como estão."]
       - type: table
         soft: true
         k: "Comparar planos"

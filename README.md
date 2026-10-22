@@ -5,8 +5,9 @@ Every button opens Telegram **@GlotChat** with a ready-made message in the visit
 
 ## Languages and pages
 
-7 languages: English (`/`), 中文 (`/zh/`), العربية (`/ar/`, right-to-left), Türkçe (`/tr/`),
-Español (`/es/`), Português (`/pt/`), Русский (`/ru/`). Each has 12 pages:
+8 languages: English (`/`), 简体中文 (`/zh/`), 繁體中文 (`/zh-hant/`, Taiwan / Hong Kong), العربية (`/ar/`,
+right-to-left), Türkçe (`/tr/`), Español (`/es/`), Português (`/pt/`), Русский (`/ru/`). Each has 12 pages
+(Chinese has 3 more guides of its own, marked `single: true`):
 
 | Page | Path |
 |---|---|
@@ -28,6 +29,8 @@ python src/build.py --no-og  # faster while editing text
 python src/check.py          # SEO + broken-link check — must say 0 errors
 ```
 
+- **繁體中文 is generated** from `zh.yaml`: after editing the Chinese text run `python src/make_zh_hant.py`
+  (needs `pip install opencc-python-reimplemented`). Never edit `zh-hant.yaml` by hand.
 - **Text:** `src/content/<lang>.yaml`. `en.yaml` is the reference; the build refuses to run if another
   language is missing a UI text that English has.
 - **Layout:** `src/templates/` (`base.html` = head, header, footer; `page.html` = the content blocks).

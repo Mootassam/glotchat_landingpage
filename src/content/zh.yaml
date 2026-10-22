@@ -112,6 +112,9 @@ ui:
     card_sub: 电脑版 WhatsApp 多开 + 翻译
     sha: SHA-256 校验值
     copy_sha: 复制校验值
+    phone_h: "在手机上浏览？"
+    phone_p: "GlotChat 是 Windows 电脑软件。把这个链接发给自己（WhatsApp、微信或邮件），在电脑上打开下载。"
+    phone_send: "发送链接到电脑"
     mock:
       downloads: 下载
       done: 已完成
@@ -340,6 +343,15 @@ pages:
         k: "套餐"
         h: "按你使用的 WhatsApp 号码数量选择"
         p: "不确定选哪个？回答一个问题，我们帮你推荐。"
+      - type: steps
+        id: buy
+        soft: false
+        k: "购买流程"
+        h: "从试用到正式版，只需 3 步"
+        items:
+          - ["在 Telegram 联系我们", "选好套餐，发送你的机器码——在 GlotChat 的 设置 → 授权 中可以看到，并有复制按钮。"]
+          - ["用 USDT 付款", "支持 TRC20、BEP20、ERC20。我们会发给你准确的地址和金额——无需银行卡，无需注册账号。"]
+          - ["粘贴激活码", "年度激活码几分钟内发给你。在 GlotChat → 设置 → 输入新激活码 中粘贴即可。账号、登录和设置全部保留。"]
       - type: table
         soft: true
         k: "套餐对比"

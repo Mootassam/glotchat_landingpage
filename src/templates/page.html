@@ -342,6 +342,12 @@
       <span class="eyebrow"><span class="dotlive"></span><span>{{ b.k }}</span></span>
       <h1>{{ b.h1|safe }}</h1>
       <p class="lead">{{ b.lead|safe }}</p>
+      {#- phones can't run a Windows app: offer to send the page to the visitor's PC (share sheet, else copy) #}
+      <div class="dlphone">
+        <b>{{ ui.dl.phone_h }}</b>
+        <p>{{ ui.dl.phone_p }}</p>
+        <button type="button" class="btn dl lg block" data-share="{{ url }}" data-copy="{{ url }}" data-place="dl-phone">{{ ui.dl.phone_send }}</button>
+      </div>
       <div class="dlbox">
         {{ dlbtn('hero', 'btn dl xl') }}
         <ul class="dlmeta">

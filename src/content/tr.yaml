@@ -112,6 +112,9 @@ ui:
     card_sub: PC için çoklu WhatsApp hesabı + çevirmen
     sha: SHA-256 sağlama toplamı
     copy_sha: Sağlama toplamını kopyala
+    phone_h: "Telefondan mı bakıyorsunuz?"
+    phone_p: "GlotChat, Windows bilgisayarlar için bir uygulamadır. Bu bağlantıyı kendinize gönderin ve bilgisayarınızda indirin."
+    phone_send: "Bağlantıyı bilgisayarıma gönder"
     mock:
       downloads: İndirilenler
       done: Tamamlandı
@@ -338,6 +341,15 @@ pages:
         k: "Paketler"
         h: "Kullandığınız WhatsApp numarası sayısına göre seçin"
         p: "Emin değil misiniz? Bir soruyu yanıtlayın, doğru paketi önerelim."
+      - type: steps
+        id: buy
+        soft: false
+        k: "Satın alma nasıl işler"
+        h: "Denemeden kendi anahtarınıza 3 adımda"
+        items:
+          - ["Telegram'dan bize yazın", "Planınızı seçin ve Makine Kimliğinizi (Machine ID) gönderin — GlotChat'te Settings → License bölümünde, kopyala düğmesiyle birlikte görünür."]
+          - ["USDT ile ödeyin", "TRC20, BEP20 veya ERC20. Size tam adresi ve tutarı göndeririz — kart yok, hesap açmak yok."]
+          - ["Anahtarınızı yapıştırın", "Yıllık anahtarınız birkaç dakika içinde gelir. GlotChat → Settings → Enter a new key bölümüne yapıştırın. Hesaplarınız, oturumlarınız ve ayarlarınız olduğu gibi kalır."]
       - type: table
         soft: true
         k: "Paket karşılaştırma"

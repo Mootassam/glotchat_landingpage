@@ -12,27 +12,46 @@
   #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 800px; overflow: hidden; background: #0f141b; color: var(--txt);
            transform-origin: 0 0; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); }
   /* ---------- GlotChat shell ---------- */
-  .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 64px; background: #172029; display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 10px; }
-  .rail .logo { width: 42px; height: 42px; border-radius: 13px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; font-weight: 800; font-size: 13px; color: #fff; }
-  .rail .rb { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #8a97a8; font-size: 18px; }
-  .rail .rb.on { background: rgba(16,196,140,.16); }
-  .tabs { position: absolute; left: 64px; right: 0; top: 0; height: 50px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: stretch; padding: 0 6px; color: #3b4652; }
-  .tab { display: flex; align-items: center; gap: 8px; padding: 0 12px 0 8px; font-size: 14px; font-weight: 600; position: relative; white-space: nowrap; }
-  .tab .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 14px; position: relative; }
-  .tab .ic i { position: absolute; right: -3px; bottom: -3px; width: 11px; height: 11px; border-radius: 50%; background: #22c55e; border: 2px solid #fff; }
+  /* left: the accounts (avatar, name, number, unread) like the app since 1.2.4; top: the open account */
+  .sb { position: absolute; left: 0; top: 0; bottom: 0; width: 232px; background: #141c25; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; color: #e8edf3; }
+  .sbtop { display: flex; align-items: center; gap: 10px; padding: 14px 16px 4px; }
+  .sbtop .logo { width: 36px; height: 36px; border-radius: 11px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; }
+  .sbtop .logo svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .sbtop b { font-size: 16px; }
+  .sblabel { padding: 14px 18px 6px; color: #8c99ab; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .sbtabs { display: flex; gap: 4px; margin: 0 10px 6px; padding: 3px; border-radius: 10px; background: rgba(255,255,255,.05); font-size: 12.5px; font-weight: 650; color: #8c99ab; }
+  .sbtabs span { flex: 1; text-align: center; padding: 5px 0; border-radius: 8px; }
+  .sbtabs span.on { background: rgba(255,255,255,.1); color: #e8edf3; }
+  .sbtabs em { font-style: normal; margin-left: 5px; padding: 0 6px; border-radius: 8px; background: rgba(255,255,255,.1); font-size: 11px; }
+  .tabset { display: flex; flex-direction: column; padding: 0 10px; }
+  .tab { position: relative; display: flex; align-items: center; gap: 10px; padding: 6px 8px; margin-bottom: 2px; border-radius: 11px; font-size: 14px; white-space: nowrap; }
+  .tab.on { background: rgba(255,255,255,.09); }
+  .tab.on::before { content: ""; position: absolute; left: -10px; top: 9px; bottom: 9px; width: 4px; border-radius: 0 4px 4px 0; background: var(--c); }
+  .tab .ic { width: 36px; height: 36px; flex: none; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 750; position: relative; }
+  .tab .ic i { position: absolute; right: -1px; bottom: -1px; width: 11px; height: 11px; border-radius: 50%; background: #22c55e; border: 2px solid #141c25; }
   .tab .ic i.wait { background: #f59e0b; }
-  .tab.on { background: #f1f5f9; color: #0f172a; }
-  .tab.on::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--c); }
+  .tab .nm { flex: 1; min-width: 0; line-height: 1.25; }
+  .tab .nm b { display: block; font-weight: 650; font-size: 13.5px; }
+  .tab .nm small { display: block; color: #8c99ab; font-size: 11.5px; }
   .tab .un { min-width: 20px; height: 20px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 11.5px; font-weight: 800; display: grid; place-items: center; padding: 0 6px; }
-  .tab.add { color: #64748b; font-size: 22px; padding: 0 12px; font-weight: 400; }
-  .tools { flex: none; margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: #3b4652; white-space: nowrap; padding-right: 6px; }
+  .tab.add { margin: 2px 10px 0; color: #8c99ab; }
+  .tab.add .ic { background: rgba(255,255,255,.07); color: #2fd59b; font-size: 20px; font-weight: 400; }
+  .sbnav { margin-top: auto; padding: 8px 10px 12px; border-top: 1px solid rgba(255,255,255,.06); display: grid; gap: 2px; color: #b8c3d1; font-size: 13px; font-weight: 600; }
+  .sbnav span { padding: 7px 10px; border-radius: 9px; }
+  .topbar { position: absolute; left: 232px; right: 0; top: 0; height: 54px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: center; gap: 10px; padding: 0 12px 0 16px; color: #0f172a; z-index: 2; }
+  .topbar .tbava { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 750; flex: none; }
+  .topbar > b { font-size: 15.5px; }
+  .topbar > small { color: #64748b; font-size: 12.5px; }
+  .topbar .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #0b8f6a; background: #e7f8f1; padding: 4px 10px; border-radius: 12px; }
+  .topbar .pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #10c48c; }
+  .tools { flex: none; margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: #3b4652; white-space: nowrap; }
   .tools .sw { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border: 1px solid #e3e7ec; border-radius: 9px; background: #f5f7fa; color: #10a37a; }
   .tools .sw b { width: 30px; height: 17px; border-radius: 9px; background: #10c48c; position: relative; }
   .tools .sw b::after { content: ""; position: absolute; right: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #fff; }
   .tools .sel { border: 1px solid #e3e7ec; border-radius: 8px; padding: 6px 10px; background: #fff; }
   /* ---------- WhatsApp area ---------- */
-  .wa { position: absolute; left: 64px; right: 0; top: 50px; bottom: 0; display: flex; background: var(--bg); }
-  .list { width: 340px; flex: none; background: var(--panel); border-right: 1px solid var(--line); }
+  .wa { position: absolute; left: 232px; right: 0; top: 54px; bottom: 0; display: flex; background: var(--bg); }
+  .list { width: 300px; flex: none; background: var(--panel); border-right: 1px solid var(--line); }
   .list h3 { margin: 0; padding: 16px 18px 10px; font-size: 20px; font-weight: 700; }
   .search { margin: 0 14px 10px; height: 36px; border-radius: 9px; background: var(--panel2); color: var(--muted); font-size: 13.5px; display: flex; align-items: center; padding: 0 12px; }
   .row { display: flex; gap: 12px; padding: 10px 14px; align-items: center; }
@@ -115,7 +134,7 @@
   .mfoot { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
   .ring { position: absolute; border-radius: 12px; box-shadow: 0 0 0 3px #10c48c, 0 0 24px 6px rgba(16,196,140,.45); z-index: 9; pointer-events: none; }
   /* QR link page */
-  .lpage { position: absolute; left: 64px; right: 0; top: 50px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
+  .lpage { position: absolute; left: 232px; right: 0; top: 54px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
   .lpage .card { width: 820px; background: #fff; border-radius: 14px; padding: 36px 40px; display: flex; gap: 40px; align-items: center; color: #111b21; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
   .lpage h4 { margin: 0 0 18px; font-size: 25px; font-weight: 400; }
   .lpage ol { margin: 0; padding-left: 22px; font-size: 16.5px; line-height: 2.05; color: #3b4a54; }
@@ -143,7 +162,7 @@
 <script>
 const Q = new URLSearchParams(location.search);
 const LANG = Q.get('lang') || 'en', SCENE = Q.get('scene') || 'chat', FMT = Q.get('fmt') === 'port' ? 'port' : 'land';
-const VW = FMT === 'port' ? 640 : 1280, VH = 800, SW = 1280, SH = 800;
+const VW = +Q.get('vw') || (FMT === 'port' ? 640 : 1280), VH = 800, SW = 1280, SH = 800;   // vw: wider portrait view for ads
 const D = DEMO_TEXTS(LANG), U = D.ui;
 if (FMT === 'port') document.documentElement.classList.add('port');
 const vp = document.getElementById('vp'); vp.style.width = VW + 'px'; vp.style.height = VH + 'px';
@@ -242,16 +261,25 @@ function ring(el, t0, t1, pad = 6) {
 }
 
 /* ======================= shared layout ======================= */
-const ACCS = [['Sales EU', '#10b981'], ['Support', '#7c5cff'], ['Shop UAE', '#f59e0b'], ['Export', '#ef4444'], ['Store BR', '#0ea5e9'], ['B2B DE', '#ec4899'], ['VIP Asia', '#a855f7'], ['Shop KSA', '#f97316']];
-const tabHtml = ([n, c], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">💬<i></i></span>${esc(n)}<span class="un" data-un="${i}" style="display:none"></span></div>`;
+const ACCS = [['Sales EU', '#10b981', '+44 7700 900123'], ['Support', '#7c5cff', '+1 202 555 0143'], ['Shop UAE', '#f59e0b', '+971 50 123 4567'], ['Export', '#ef4444', '+86 138 0013 8000'],
+  ['Store BR', '#0ea5e9', '+55 11 91234 5678'], ['B2B DE', '#ec4899', '+49 151 2345 6789'], ['VIP Asia', '#a855f7', '+65 8123 4567'], ['Shop KSA', '#f97316', '+966 50 123 4567']];
+const ini = (n) => { const w = n.split(/\s+/); return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase(); };
+const tabHtml = ([n, c, ph], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">${ini(n)}<i></i></span><span class="nm"><b>${esc(n)}</b><small>${ph}</small></span><span class="un" data-un="${i}" style="display:none"></span></div>`;
+const topHtml = ([n, c, ph]) => `<div class="topbar"><span class="tbava" style="background:${c}">${ini(n)}</span><b>${esc(n)}</b><small>${ph}</small><span class="pill">${esc(U.connected)}</span>
+  <div class="tools"><span class="sw">文A <b></b></span><span class="sel" data-my>${esc(D.my)} ▾</span>→<span class="sel">${esc(U.autoDetect)} ▾</span></div></div>`;
+/* the top bar changes to another account at time t */
+function switchTop(acc, t) { const tb = h(topHtml(acc)); stage.append(tb); tb.style.zIndex = 3; tb.style.opacity = 0; tween(tb, t, 0.25, { opacity: [0, 1] }); }
 const tt = (s) => `<span class="tt">${esc(s)}</span>`;
 const badge = (from, cls = '') => `<span class="badge ${cls}">🌐 ${from.toUpperCase()}→${D.code}</span>`;
 function shell(tabs, active, chat, rows) {
   stage.innerHTML = `
-    <div class="rail"><div class="logo">A文</div><div class="rb on">💬</div><div class="rb">⚡</div><div class="rb">🌐</div></div>
-    <div class="tabs"><div class="tabset" style="display:flex">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
-      <div class="tab add">＋</div>
-      <div class="tools"><span class="sw">文A <b></b></span><span class="sel" data-my>${esc(D.my)} ▾</span>→<span class="sel">${esc(U.autoDetect)} ▾</span></div></div>
+    <div class="sb"><div class="sbtop"><div class="logo"><svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M20 9a2 2 0 0 1 1 2v7a1 1 0 0 1-1 1h-1v2l-3-2h-3"/></svg></div><b>GlotChat</b></div>
+      <div class="sblabel">${esc(U.sbAccounts)}</div>
+      <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em>${ACCS.length}</em></span><span>${esc(U.sbUnread)}</span></div>
+      <div class="tabset">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
+      <div class="tab add"><span class="ic">＋</span><span class="nm"><b>${esc(U.sbAdd)}</b></span></div>
+      <div class="sbnav"><span>▦&nbsp; ${esc(U.navAll)}</span><span>⚡&nbsp; ${esc(U.navTpl)}</span><span>🌐&nbsp; ${esc(U.navLang)}</span><span>⚙&nbsp; ${esc(U.navSet)}</span></div></div>
+    ${topHtml(tabs[active])}
     <div class="wa">
       <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
         ${rows.map((r, i) => `<div class="row ${i === 0 ? 'on' : ''}"><div class="av" style="background:${r[2]}">${r[1]}</div><div class="t"><b>${esc(r[0])}</b><span>${esc(r[3])}</span></div><div class="m">${r[4]}${r[5] ? `<br><em>${r[5]}</em>` : ''}</div></div>`).join('')}
@@ -282,7 +310,7 @@ function qrSvg() {   // decorative QR-like pattern (not a real code)
 
 function uaePane(z = 5) {
   const n1 = D.notes[0];
-  const pane = h(`<div style="position:absolute;left:64px;right:0;top:50px;bottom:0;z-index:${z};display:flex;background:#0b141a">
+  const pane = h(`<div style="position:absolute;left:232px;right:0;top:54px;bottom:0;z-index:${z};display:flex;background:#0b141a">
     <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
       <div class="row on"><div class="av" style="background:${n1.who[2]}">${n1.who[1]}</div><div class="t"><b>${esc(n1.who[0])}</b><span>${esc(n1.chat[1])}</span></div><div class="m">10:48</div></div>
       <div class="row"><div class="av" style="background:#0f766e">O</div><div class="t"><b>Omar Haddad</b><span>تم الدفع</span></div><div class="m">10:20</div></div>
@@ -330,6 +358,7 @@ const SCENES = {
     const newTab = h(tabHtml(ACCS[2], 2, true)); $('.tabset').append(newTab); newTab.querySelector('i').classList.add('wait');
     pop(newTab, close + 0.05, 0.35);
     cls($('.tab[data-tab="0"]'), close + 0.05, 'on', false);
+    switchTop(ACCS[2], close + 0.05);
     // QR link page
     const link = h(`<div class="lpage"><div class="card"><div><h4>${esc(U.linkTitle)}</h4><ol>${U.linkSteps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>
       <div class="qr">${qrSvg()}<div class="ok" data-ok><div><span>✓</span>${esc(U.connected)}</div></div></div></div></div>`);
@@ -358,12 +387,12 @@ const SCENES = {
       [5.8, pCreate[0], pCreate[1]], [6.0, pCreate[0], pCreate[1], true], [7.2, 1000, 640]]);
     // camera
     cam(0, 0, [640, 400, 1], [640, 400, 0.5]);
-    cam(0.6, 0.7, [330, 60, 1.6], [pPlus[0] - 120, 200, 1.3]);
+    cam(0.6, 0.7, [pPlus[0] + 300, pPlus[1] - 60, 1.5], [pPlus[0] + 140, pPlus[1] - 60, 1.25]);
     cam(1.5, 0.8, [640, 330, 1.45], [640, 330, 1.13]);
     cam(close, 0.7, [760, 420, 1.12], [pCard[0] - 120, pCard[1], 0.92]);
     cam(ph, 0.6, [pCard[0], pCard[1], 1.3], [pQr[0] + 40, pCard[1], 1.15]);
     cam(okAt + 0.9, 0.8, [640, 400, 1], [640, 400, 0.5]);
-    cam(more + 0.2, 0.9, [640, 300, 1.08], [400, 330, 1.0]);
+    cam(more + 0.2, 0.9, [460, 330, 1.12], [300, 330, 1.0]);
     return more + 3.4;
   },
 
@@ -386,6 +415,7 @@ const SCENES = {
     toasts.forEach((el, i) => hide(el, click + 0.15 + i * 0.05, 0.25));
     // switch to Shop UAE: the chat with Fatima, translated
     cls($('.tab[data-tab="0"]'), click + 0.2, 'on', false); cls($('.tab[data-tab="2"]'), click + 0.2, 'on');
+    switchTop(ACCS[2], click + 0.2);
     hide($('[data-un="2"]'), click + 0.2, 0.2);
     const [pane, c1, c2] = uaePane(5); pane.style.opacity = 0; tween(pane, click + 0.2, 0.3, { opacity: [0, 1] });
     show(c1, click + 0.6, 0.35); show(c2, click + 1.1, 0.35);

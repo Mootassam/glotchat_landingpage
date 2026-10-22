@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   var GC = window.GC || { lang: 'en', tg: 'GlotChat', msg: {}, plans: {}, langs: ['en'], alts: {} };
-  var lang = GC.lang, vlang = lang;
+  var lang = GC.lang, vlang = GC.vlang || lang;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var contacted = false;
   function $(s, r) { return (r || document).querySelector(s); }
@@ -18,8 +18,9 @@
     if (lang !== GC['default'] || store('gc-lang') || /[?&]nolang/.test(location.search)) return;
     var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']);
     for (var i = 0; i < prefs.length; i++) {
-      var code = String(prefs[i]).toLowerCase().split('-')[0];
+      var tag = String(prefs[i]).toLowerCase(), code = tag.split('-')[0];
       if (code === 'en') return;
+      if (/^zh-(tw|hk|mo|hant)/.test(tag)) code = 'zh-hant';        // Taiwan / Hong Kong / Macau read 繁體
       if (GC.alts && GC.alts[code]) { store('gc-lang', code); location.replace(GC.alts[code] + location.hash); return; }
     }
   })();
@@ -207,6 +208,12 @@
     b.addEventListener('click', function (e) {
       e.preventDefault();
       var txt = b.getAttribute('data-copy');
+      // "send the link to my PC": the phone's share sheet (WhatsApp, WeChat, mail…) when there is one
+      if (b.hasAttribute('data-share') && navigator.share) {
+        navigator.share({ title: document.title, url: b.getAttribute('data-share') }).catch(function () {});
+        track('share', { place: b.getAttribute('data-place') || '' });
+        return;
+      }
       var done = function () {
         if (!toast) return;
         toast.textContent = (GC.copied || 'Copied') + ' ' + txt; toast.classList.add('show');

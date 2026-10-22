@@ -79,7 +79,7 @@ def validate(content):
             t, d = pg.get("title", ""), pg.get("description", "")
             if len(t) > 70:
                 problems.append(f"warn {code}/{pid}: title is {len(t)} chars (keep ≤ 65)")
-            if len(d) > 165 and code not in ("zh",):
+            if len(d) > 165 and not code.startswith("zh"):
                 problems.append(f"warn {code}/{pid}: description is {len(d)} chars (keep ≤ 160)")
     return problems
 
@@ -135,7 +135,7 @@ def render_md(md_text):
 
 def words(text, lang):
     plain = re.sub(r"<[^>]+>", " ", text)
-    if lang == "zh":
+    if lang.startswith("zh"):
         return len(re.findall(r"[一-鿿]", plain)) // 2 + len(re.findall(r"[A-Za-z]+", plain))
     return len(re.findall(r"\w+", plain, flags=re.U))
 
@@ -206,12 +206,12 @@ def build(make_og=True):
         contacts = []
         if cfg.WHATSAPP_NUMBER:
             contacts.append({"label": "WhatsApp", "href": f"https://wa.me/{cfg.WHATSAPP_NUMBER}", "ext": True})
-        if cfg.WECHAT_ID and lang == "zh":
+        if cfg.WECHAT_ID and lang.startswith("zh"):
             contacts.append({"label": f"微信 {cfg.WECHAT_ID}", "href": "#", "copy": cfg.WECHAT_ID})
         if cfg.EMAIL:
             contacts.append({"label": cfg.EMAIL, "href": f"mailto:{cfg.EMAIL}"})
 
-        gc = {"lang": lang, "tg": cfg.TELEGRAM_USER, "msg": ui["msg"], "plans": {k: v["name"] for k, v in ui["plans"].items()},
+        gc = {"lang": lang, "vlang": L.get("media", lang), "tg": cfg.TELEGRAM_USER, "msg": ui["msg"], "plans": {k: v["name"] for k, v in ui["plans"].items()},
               "copied": ui["copied"], "langs": list(available["home"]), "default": cfg.DEFAULT_LANG}
 
         for pid, page in pages.items():
@@ -260,7 +260,7 @@ def build(make_og=True):
                             "sub": page.get("og_sub") or ui["og_sub"], "chips": ui["og_chips"]})
 
             jsonld = ld(make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks))
-            vlang = lang                      # demo videos exist in every website language
+            vlang = L.get("media", lang)      # demo videos exist per website language (繁體 uses 简体)
             preload = None                    # (desktop image, phone image) of the first big picture
             if blocks and blocks[0]["type"] == "hero_home":
                 first = blocks[0]["chapters"][0]["id"]
