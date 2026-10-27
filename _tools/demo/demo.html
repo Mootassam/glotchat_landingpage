@@ -14,7 +14,21 @@
   /* ---------- GlotChat shell ---------- */
   /* left: the accounts (avatar, name, number, unread) like the app since 1.2.4; top: the open account */
   .sb { position: absolute; left: 84px; top: 0; bottom: 0; width: 204px; background: #141c25; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; color: #e8edf3; }
-  .sbtop { display: flex; align-items: center; gap: 10px; padding: 16px 16px 2px; }
+  .sbtop { display: flex; align-items: center; gap: 9px; padding: 16px 12px 12px 16px; }
+  /* like GlotChat 1.4: the app's logo + name, a big "Add account" button in the app's colour, and every
+     account without a profile photo shows its app's logo (so many logos = many accounts of one app) */
+  .sbtop .apic { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+  .sbtop .apic svg { width: 16px; height: 16px; fill: #fff; }
+  .sbtop .ticons { margin-left: auto; display: flex; gap: 12px; color: #6f7c8e; font-size: 13px; }
+  .sbadd { display: flex; align-items: center; justify-content: center; gap: 8px; height: 38px; margin: 0 10px 10px; border-radius: 11px;
+    color: #fff; font-size: 13.5px; font-weight: 700; }
+  .sbadd b { font-size: 19px; font-weight: 400; line-height: 1; }
+  .tab .ic svg, .topbar .tbava svg { width: 55%; height: 55%; fill: #fff; }
+  .rapp.add i { background: transparent; border: 1.5px dashed rgba(255,255,255,.25); color: #8c99ab; font-size: 21px; font-weight: 300; }
+  .topbar .pill.qr { color: #b45309; background: #fef3c7; }
+  .topbar .pill.qr::before { background: #f59e0b; }
+  .tools .ticon { color: #64748b; font-size: 15px; }
+  .tools .vline { width: 1px; height: 22px; background: #e3e7ec; }
   /* the app rail, like GlotChat 1.3: the chat apps on the left, each with its unread count */
   .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 84px; background: #0e151e; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; align-items: center; padding: 12px 0; gap: 6px; color: #c9d3df; z-index: 1; }
   .rail .rlogo { width: 46px; height: 46px; border-radius: 14px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; margin-bottom: 8px; }
@@ -197,10 +211,22 @@
   .mfoot { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
   .ring { position: absolute; border-radius: 12px; box-shadow: 0 0 0 3px #10c48c, 0 0 24px 6px rgba(16,196,140,.45); z-index: 9; pointer-events: none; }
   /* QR link page */
-  .lpage { position: absolute; left: 288px; right: 0; top: 54px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
-  .lpage .card { width: 820px; background: #fff; border-radius: 14px; padding: 36px 40px; display: flex; gap: 40px; align-items: center; color: #111b21; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
-  .lpage h4 { margin: 0 0 18px; font-size: 25px; font-weight: 400; }
-  .lpage ol { margin: 0; padding-left: 22px; font-size: 16.5px; line-height: 2.05; color: #3b4a54; }
+  .lpage { position: absolute; left: 288px; right: 0; top: 54px; bottom: 0; background: #fcf5eb; z-index: 5; display: flex; align-items: center; justify-content: center; }
+  .lpage .wahead { position: absolute; left: 34px; top: 22px; display: flex; align-items: center; gap: 8px; color: #25d366; font-size: 21px; font-weight: 700; }
+  .lpage .wahead svg { width: 32px; height: 32px; fill: #25d366; }
+  .lpage .card { width: 840px; background: #fff; border: 1px solid #d1d7db; border-radius: 26px; padding: 40px 46px 30px; color: #111b21; }
+  .lpage .ctop { display: flex; gap: 40px; align-items: center; justify-content: space-between; }
+  .lpage h4 { margin: 0 0 24px; font-size: 33px; font-weight: 400; }
+  .lpage ol { margin: 0; padding: 0; list-style: none; font-size: 16.5px; color: #111b21; }
+  .lpage ol li { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+  .lpage ol li span { width: 26px; height: 26px; flex: none; border: 1.5px solid #111b21; border-radius: 50%; display: grid; place-items: center; font-size: 13px; }
+  .lpage .cfoot { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; font-size: 15.5px; }
+  .lpage .stay { display: flex; align-items: center; gap: 10px; }
+  .lpage .stay i { width: 19px; height: 19px; border-radius: 4px; background: #1daa61; color: #fff; font-style: normal; font-size: 13px; font-weight: 800; display: grid; place-items: center; }
+  .lpage .plink { color: #008069; font-weight: 600; border-bottom: 2px solid #25d366; }
+  .qr .qwa { position: absolute; left: 50%; top: 50%; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+  .qr .qwa svg { width: 46px; height: 46px; fill: #111b21; }
+  .btn .qrico { width: 17px; height: 17px; fill: currentColor; vertical-align: -3px; margin-right: 7px; }
   .qr { width: 240px; height: 240px; flex: none; position: relative; }
   .qr svg { width: 100%; height: 100%; }
   .qr .ok { position: absolute; inset: 0; background: rgba(255,255,255,.94); display: grid; place-items: center; text-align: center; color: #0b8f6a; font-weight: 800; font-size: 18px; }
@@ -326,37 +352,41 @@ function ring(el, t0, t1, pad = 6) {
 /* ======================= shared layout ======================= */
 const ACCS = [['Sales EU', '#10b981', '+44 7700 900123'], ['Support', '#7c5cff', '+1 202 555 0143'], ['Shop UAE', '#f59e0b', '+971 50 123 4567'], ['Export', '#ef4444', '+86 138 0013 8000'],
   ['Store BR', '#0ea5e9', '+55 11 91234 5678'], ['B2B DE', '#ec4899', '+49 151 2345 6789'], ['VIP Asia', '#a855f7', '+65 8123 4567'], ['Shop KSA', '#f97316', '+966 50 123 4567']];
-const ini = (n) => { const w = n.split(/\s+/); return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase(); };
-const tabHtml = ([n, c, ph], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">${ini(n)}<i></i></span><span class="nm"><b>${esc(n)}</b><small>${ph}</small></span><span class="un" data-un="${i}" style="display:none"></span></div>`;
-const topHtml = ([n, c, ph]) => `<div class="topbar"><span class="tbava" style="background:${c}">${ini(n)}</span><b>${esc(n)}</b><small>${ph}</small><span class="pill">${esc(U.connected)}</span>
-  <div class="tools"><span class="sw">文A <b></b></span><span class="sel">${esc(U.autoDetect)} ▾</span><span class="swap">⇄</span><span class="sel" data-my>${esc(D.my)} ▾</span></div></div>`;
-/* the top bar changes to another account at time t */
-function switchTop(acc, t) { const tb = h(topHtml(acc)); stage.append(tb); tb.style.zIndex = 3; tb.style.opacity = 0; tween(tb, t, 0.25, { opacity: [0, 1] }); }
+/* an account's avatar: no profile photo -> its app's logo on the app's colour (GlotChat 1.4) */
+const appFace = (app) => `style="background:${APPS[app][3] || APPS[app][1]}">${ICO[app]}`;
+const tabHtml = ([n, c, ph], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" ${appFace(APP)}<i></i></span><span class="nm"><b>${esc(n)}</b><small>${ph}</small></span><span class="un" data-un="${i}" style="display:none"></span></div>`;
+const topHtml = ([n, c, ph], qr = false) => `<div class="topbar"><span class="tbava" ${appFace(APP)}</span><b>${esc(n)}</b><small>${ph}</small><span class="pill${qr ? ' qr' : ''}">${esc(qr ? U.qrState : U.connected)}</span>
+  <div class="tools"><span class="sw">文A <b></b></span><span class="sel">${esc(D.my)} ▾</span><span class="swap">⇄</span><span class="sel">${esc(U.autoDetect)} ▾</span><span class="vline"></span><span class="ticon">☷</span><span class="ticon">•••</span></div></div>`;
+/* the top bar changes to another account at time t (qr: it still waits for its QR code to be scanned) */
+function switchTop(acc, t, qr = false) { const tb = h(topHtml(acc, qr)); stage.append(tb); tb.style.zIndex = 3; tb.style.opacity = 0; tween(tb, t, 0.25, { opacity: [0, 1] }); return tb; }
 const tt = (s) => `<span class="tt">${esc(s)}</span>`;
 const badge = (from, cls = '') => `<span class="badge ${cls}">🌐 ${from.toUpperCase()}→${D.code}</span>`;
 const ICO = {
-  wa: '<svg viewBox="0 0 24 24"><path d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>',
+  wa: '<svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>',
   tg: '<svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>',
   ms: '<svg viewBox="0 0 24 24"><path d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.8 1.2 5.2 3.1 6.9v3.2l2.9-1.6c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9S17.4 2.5 12 2.5zm1 12.2-2.4-2.6-4.7 2.6 5.2-5.5 2.5 2.6 4.6-2.6-5.2 5.5z"/></svg>',
   ig: '<svg viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm4.5 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.3-2.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" fill-rule="evenodd"/></svg>',
   dc: '<svg viewBox="0 0 24 24"><path d="M19.3 5.3A16.5 16.5 0 0 0 15.2 4l-.5 1a15 15 0 0 0-5.4 0L8.8 4a16.5 16.5 0 0 0-4.1 1.3C2.1 9.2 1.4 13 1.7 16.7a16.6 16.6 0 0 0 5 2.5l1.1-1.7a10.6 10.6 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 11 0l.4.3-1.7.8 1.1 1.7a16.5 16.5 0 0 0 5-2.5c.4-4.3-.7-8-3-11.4zM8.7 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></svg>',
 };
-const APPS = { wa: ['WhatsApp', '#25b864', ''], tg: ['Telegram', '#2aabee', 'tgw'], ms: ['Messenger', '#0a7cff', 'msw'], ig: ['Instagram', '#e1306c', 'igw'], dc: ['Discord', '#5865f2', 'dcw'] };
+/* name, colour, chat-area look, logo background (the app's own gradient, as in GlotChat) */
+const APPS = { wa: ['WhatsApp', '#25b864', ''], tg: ['Telegram', '#2aabee', 'tgw'],
+  ms: ['Messenger', '#0a7cff', 'msw', 'linear-gradient(135deg,#0099ff,#a033ff 70%,#ff5280)'],
+  ig: ['Instagram', '#e1306c', 'igw', 'linear-gradient(45deg,#feda75,#fa7e1e 25%,#d62976 55%,#962fbf 80%,#4f5bd5)'], dc: ['Discord', '#5865f2', 'dcw'] };
 let APP = 'wa';
 function railHtml(app, unread = {}) {
   const apps = Object.entries(APPS).map(([k, [n, c]]) => [k, n, c]);
   return `<div class="rail"><div class="rlogo"><svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M20 9a2 2 0 0 1 1 2v7a1 1 0 0 1-1 1h-1v2l-3-2h-3"/></svg></div>
-    ${apps.map(([k, n, c]) => `<div class="rapp ${k === app ? 'on' : ''}" style="--c:${c}" data-app="${k}"><i>${ICO[k]}</i>${n}${unread[k] ? `<em>${unread[k]}</em>` : ''}</div>`).join('')}
+    ${apps.map(([k, n, c]) => `<div class="rapp ${k === app ? 'on' : ''}" style="--c:${c}" data-app="${k}"><i style="background:${APPS[k][3] || c}">${ICO[k]}</i>${n}${unread[k] ? `<em>${unread[k]}</em>` : ''}</div>`).join('')}
+    <div class="rapp add"><i>+</i>${esc(U.addApp)}</div>
     <div class="rnav"><span><b>▦</b>${esc(U.navAllApps)}</span><span><b>⚡</b>${esc(U.navTpl)}</span><span><b>🌐</b>${esc(U.navLang)}</span><span><b>⚙</b>${esc(U.navSet)}</span></div></div>`;
 }
 function shell(tabs, active, chat, rows, opt = {}) {
   APP = opt.app || 'wa';
   stage.innerHTML = railHtml(APP, opt.unread || (APP === 'wa' ? { tg: 2 } : { wa: 3 })) + `
-    <div class="sb"><div class="sbtop"><b>${APPS[APP][0]}</b></div>
-      <div class="sblabel">${esc(U.sbApp(APPS[APP][0]))}</div>
-      <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em>${tabs.length}</em></span><span>${esc(U.sbUnread)}</span></div>
+    <div class="sb"><div class="sbtop"><span class="apic" ${appFace(APP)}</span><b>${APPS[APP][0]}</b><span class="ticons"><span>⌕</span><span>◫</span></span></div>
+      <div class="sbadd" style="background:${APPS[APP][3] || APPS[APP][1]};box-shadow:0 8px 18px -10px ${APPS[APP][1]}"><b>+</b>${esc(U.sbAdd)}</div>
+      <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em data-count>${tabs.length}</em></span><span>${esc(U.sbUnread)}</span></div>
       <div class="tabset">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
-      <div class="tab add"><span class="ic">＋</span><span class="nm"><b>${esc(U.sbAdd)}</b></span></div>
       </div>
     ${topHtml(tabs[active])}
     <div class="wa ${APPS[APP][2]}">
@@ -414,15 +444,16 @@ const SCENES = {
     const uae = D.notes[0];
     shell(ACCS.slice(0, 2), 0, D.chat, rowsWith([D.chat.who[0], D.chat.who[1], D.chat.who[2], D.chat.in2, '10:44', ''], ''));
     bubble('in', `${esc(D.chat.in2)}<span class="tr">${badge(D.chat.src)}${tt(D.chatTr[1])}</span>`, '10:44').style.opacity = 1;
-    const plus = $('.tab.add');
+    const plus = $('.sbadd');
+    const count = $('[data-count]'); count.dataset.empty = '2';
     // dialog
     const dim = h('<div class="dim"></div>'); stage.append(dim); dim.style.opacity = 0;
     const m = h(`<div class="modal"><h2>${esc(U.addTitle)}</h2><p class="sub">${esc(U.addSub)}</p>
       <label class="f"><span>${esc(U.name)}</span><div class="inp" data-name></div></label>
-      <label class="f"><span>${esc(U.color)}</span><div class="sw2">${['#10b981', '#7c5cff', '#f59e0b', '#ef4444', '#0ea5e9', '#ec4899'].map((c, i) => `<i data-sw="${i}" style="background:${c}"></i>`).join('')}</div></label>
+      <label class="f"><span>${esc(U.color)}</span><div class="sw2">${['#10b981', '#7c5cff', '#f59e0b', '#ef4444', '#06b6d4', '#ec4899', '#84cc16', '#f97316', '#3b82f6', '#a855f7'].map((c, i) => `<i data-sw="${i}" style="background:${c}"></i>`).join('')}</div></label>
       <div class="grid2"><label class="f"><span>${esc(U.iWrite)}</span><div class="inp sel2" data-l1>${esc(D.my)} <b>▾</b></div><small>${esc(U.iWriteHint)}</small></label>
         <label class="f"><span>${esc(U.custSpeak)}</span><div class="inp sel2" data-l2>${esc(U.autoDetect)} <b>▾</b></div><small>${esc(U.custHint)}</small></label></div>
-      <div class="mfoot"><span class="btn">${esc(U.cancel)}</span><span class="btn green" data-create>▦ ${esc(U.create)}</span></div></div>`);
+      <div class="mfoot"><span class="btn">${esc(U.cancel)}</span><span class="btn green" data-create><svg class="qrico" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z"/></svg>${esc(U.create)}</span></div></div>`);
     stage.append(m); m.style.opacity = 0;
     const name = $('[data-name]', m); name.dataset.empty = '<span class="ph">Sales, Support…</span>';
     cls(name, 1.9, 'focus'); cls(name, 3.0, 'focus', false);
@@ -436,11 +467,14 @@ const SCENES = {
     // new tab
     const newTab = h(tabHtml(ACCS[2], 2, true)); $('.tabset').append(newTab); newTab.querySelector('i').classList.add('wait');
     pop(newTab, close + 0.05, 0.35);
+    type(count, close + 0.05, '3', 100, false);
     cls($('.tab[data-tab="0"]'), close + 0.05, 'on', false);
-    switchTop(ACCS[2], close + 0.05);
+    switchTop(ACCS[2], close + 0.05, true);              // "Scan the QR code" until the phone has scanned it
     // QR link page
-    const link = h(`<div class="lpage"><div class="card"><div><h4>${esc(U.linkTitle)}</h4><ol>${U.linkSteps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol></div>
-      <div class="qr">${qrSvg()}<div class="ok" data-ok><div><span>✓</span>${esc(U.connected)}</div></div></div></div></div>`);
+    // WhatsApp Web's own sign-in page (its 2026 look), inside the new account
+    const link = h(`<div class="lpage"><div class="wahead">${ICO.wa}WhatsApp</div><div class="card"><div class="ctop"><div><h4>${esc(U.linkTitle)}</h4><ol>${U.linkSteps.map((s, i) => `<li><span>${i + 1}</span>${esc(s)}</li>`).join('')}</ol></div>
+      <div class="qr">${qrSvg()}<span class="qwa">${ICO.wa}</span><div class="ok" data-ok><div><span>✓</span>${esc(U.connected)}</div></div></div></div>
+      <div class="cfoot"><span class="stay"><i>✓</i>${esc(U.linkStay)}</span><span class="plink">${esc(U.linkPhone)} ›</span></div></div></div>`);
     stage.append(link); link.style.opacity = 0; show(link, close + 0.15, 0.3, 0);
     const ok = $('[data-ok]', link); ok.style.opacity = 0;
     const pQr = pos($('.qr', link)), pCard = pos($('.card', link));
@@ -453,6 +487,7 @@ const SCENES = {
     const okAt = ph + 2.2;
     show(ok, okAt, 0.3, 0); tween(phone, okAt + 0.3, 0.4, { opacity: [1, 0], x: [0, 160] });
     cls(newTab.querySelector('i'), okAt, 'wait', false);
+    switchTop(ACCS[2], okAt);                            // connected
     hide(link, okAt + 0.9, 0.35);
     // Shop UAE's own chats appear behind the link page
     const [pane2, c1, c2] = uaePane(4); pane2.style.opacity = 0;
@@ -460,7 +495,7 @@ const SCENES = {
     show(c1, okAt + 1.0, 0.35); show(c2, okAt + 1.3, 0.35);
     // more accounts pop in
     const more = okAt + 1.6;
-    ACCS.slice(3).forEach((a, i) => { const tb = h(tabHtml(a, 3 + i, false)); $('.tabset').append(tb); pop(tb, more + i * 0.3, 0.35); });
+    ACCS.slice(3).forEach((a, i) => { const tb = h(tabHtml(a, 3 + i, false)); $('.tabset').append(tb); pop(tb, more + i * 0.3, 0.35); type(count, more + i * 0.3, String(4 + i), 100, false); });
     cursor([[0.3, 700, 420], [1.1, pPlus[0], pPlus[1]], [1.3, pPlus[0], pPlus[1], true], [1.9, pos(name)[0] + 120, pos(name)[1]],
       [3.1, pSw[0], pSw[1]], [3.3, pSw[0], pSw[1], true], [4.0, pL1[0], pL1[1] + 6], [4.6, pL2[0], pL2[1] + 6],
       [5.8, pCreate[0], pCreate[1]], [6.0, pCreate[0], pCreate[1], true], [7.2, 1000, 640]]);
