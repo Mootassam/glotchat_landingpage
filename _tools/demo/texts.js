@@ -6,7 +6,8 @@ window.DEMO_TEXTS = (function () {
   const UI_EN = {
     addTitle: 'Add a WhatsApp account',
     addSub: 'It gets its own isolated space in GlotChat. Then scan the QR code with the phone of this WhatsApp number.',
-    sbAccounts: 'WhatsApp accounts', sbAll: 'All', sbUnread: 'Unread', sbAdd: 'Add account',
+    sbAccounts: 'WhatsApp accounts', sbTgAccounts: 'Telegram accounts', sbAll: 'All', sbUnread: 'Unread', sbAdd: 'Add account', navAllApps: 'All apps',
+    theyRead: '↩ They will read:', other: '🔁 Other wording', transPct: (p) => '🎤 Transcribing… ' + p + '%', translatingV: '🌐 Translating…',
     navAll: 'All accounts', navTpl: 'Templates', navLang: 'Languages', navSet: 'Settings',
     name: 'Name', color: 'Color', iWrite: 'I write in', custSpeak: 'Customers speak', autoDetect: 'Auto-detect',
     iWriteHint: 'Messages are translated into this language for you.', custHint: 'Auto-detect learns each chat’s language.',
@@ -24,7 +25,8 @@ window.DEMO_TEXTS = (function () {
   const UI_ZH = {
     addTitle: '添加 WhatsApp 账号',
     addSub: '账号在 GlotChat 中拥有独立的空间。然后用该 WhatsApp 号码的手机扫描二维码。',
-    sbAccounts: 'WhatsApp 账号', sbAll: '所有', sbUnread: '未读', sbAdd: '添加账号',
+    sbAccounts: 'WhatsApp 账号', sbTgAccounts: 'Telegram 账号', sbAll: '所有', sbUnread: '未读', sbAdd: '添加账号', navAllApps: '所有应用',
+    theyRead: '↩ 对方将读到：', other: '🔁 换个说法', transPct: (p) => '🎤 正在转写… ' + p + '%', translatingV: '🌐 正在翻译…',
     navAll: '所有账号', navTpl: '快捷回复', navLang: '语言', navSet: '设置',
     name: '名称', color: '颜色', iWrite: '我使用的语言', custSpeak: '客户使用的语言', autoDetect: '自动检测',
     iWriteHint: '消息会为你翻译成这种语言。', custHint: '自动检测会记住每个聊天的语言。',
@@ -61,6 +63,29 @@ window.DEMO_TEXTS = (function () {
     in2: 'Combien coûte la livraison à Paris ?',
     out: 'Oui, nous avons la taille L ! La livraison à Paris est gratuite cette semaine.',
     tr: { es: ['Hola, ¿tienen esta camisa en talla L?', '¿Cuánto cuesta el envío a París?', '¡Sí, tenemos la talla L! El envío a París es gratis esta semana.'] },
+  };
+
+  /* ---- Telegram: a buyer in Kazakhstan asks about delivery (Russian), or in Turkish on the Russian site ---- */
+  const TG_RU = {
+    who: ['Айгерим', 'А', '#0ea5e9'], src: 'ru',
+    in1: 'Здравствуйте! Сколько стоит доставка в Алматы?',
+    in2: 'Можно оплатить при получении?',
+    out: 'Доставка в Алматы — 12 $. Да, можно оплатить при получении.',
+    tr: {
+      en: ['Hello! How much is delivery to Almaty?', 'Can I pay on delivery?', 'Delivery to Almaty is $12. Yes, you can pay on delivery.', 'Delivery to Almaty is $12. Yes, you can pay upon receipt.'],
+      zh: ['你好！寄到阿拉木图的运费是多少？', '可以货到付款吗？', '寄到阿拉木图的运费是 12 美元。可以，支持货到付款。', '寄到阿拉木图的运费是 12 美元。可以，收货时付款。'],
+      ar: ['مرحبًا! كم تكلفة التوصيل إلى ألماتي؟', 'هل يمكنني الدفع عند الاستلام؟', 'التوصيل إلى ألماتي 12 دولارًا. نعم، يمكنك الدفع عند الاستلام.', 'التوصيل إلى ألماتي 12 دولارًا. نعم، يمكن الدفع عند الاستلام.'],
+      tr: ['Merhaba! Almatı’ya kargo ne kadar?', 'Kapıda ödeme yapabilir miyim?', 'Almatı’ya kargo 12 $. Evet, kapıda ödeme yapabilirsiniz.', 'Almatı’ya teslimat 12 $. Evet, teslimatta ödeme yapılabilir.'],
+      es: ['¡Hola! ¿Cuánto cuesta el envío a Almaty?', '¿Puedo pagar contra entrega?', 'El envío a Almaty cuesta 12 $. Sí, puede pagar contra entrega.', 'La entrega en Almaty cuesta 12 $. Sí, se puede pagar al recibirlo.'],
+      pt: ['Olá! Quanto custa o frete para Almaty?', 'Posso pagar na entrega?', 'O frete para Almaty custa US$ 12. Sim, você pode pagar na entrega.', 'A entrega em Almaty custa US$ 12. Sim, é possível pagar ao receber.'],
+    },
+  };
+  const TG_TR = {
+    who: ['Elif Kaya', 'E', '#0ea5e9'], src: 'tr',
+    in1: 'Merhaba! İstanbul’a kargo ne kadar?',
+    in2: 'Kapıda ödeme yapabilir miyim?',
+    out: 'İstanbul’a kargo 12 $. Evet, kapıda ödeme yapabilirsiniz.',
+    tr: { ru: ['Здравствуйте! Сколько стоит доставка в Стамбул?', 'Можно оплатить при получении?', 'Доставка в Стамбул — 12 $. Да, можно оплатить при получении.', 'Доставка в Стамбул стоит 12 $. Да, оплата при получении возможна.'] },
   };
 
   /* ---- voice note ---- */
@@ -134,7 +159,7 @@ window.DEMO_TEXTS = (function () {
     const chat = pick(CHAT_ES, CHAT_FR), voice = pick(VOICE_TR, VOICE_DE);
     return {
       lang, ui, rtl: lang === 'ar', my: ui.lang[lang], code: lang.toUpperCase(),
-      chat, chatTr: chat.tr[lang], voice, voiceTr: voice.tr[lang], photo: PHOTO, photoTr: PHOTO.tr[lang],
+      chat, chatTr: chat.tr[lang], tg: lang === 'ru' ? TG_TR : TG_RU, tgTr: (lang === 'ru' ? TG_TR : TG_RU).tr[lang], voice, voiceTr: voice.tr[lang], photo: PHOTO, photoTr: PHOTO.tr[lang],
       notes: [pick(N_UAE, N_UAE_RU), pick(N_SUP, N_SUP_DE), pick(N_EXP, N_EXP_ES)],
       rows: ROWS.map((r) => r.map((c) => (c === '*' ? ui.yesterday : c))),
     };

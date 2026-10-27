@@ -135,7 +135,7 @@
         if (on && !started && !reduce) { started = true; go(0); }
         else if (on && started && !reduce) play(vids[k]);
         else if (!on && !full) vids[k].pause();
-      }, { threshold: 0.25 }).observe($('.screen', pl));
+      }, { threshold: 0.08 }).observe($('.screen', pl));
     }
     // phone <-> computer layout (rotation, resizing): restart the chapter in the other format
     if (PORT && PORT.addEventListener) PORT.addEventListener('change', function () { if (started && fmt() !== shown) go(cur, true); });
@@ -143,7 +143,7 @@
   if (PORT && PORT.addEventListener) PORT.addEventListener('change', function () { clips.forEach(function (v) { if (v.dataset.visible) { setSrc(v, v.dataset.scene); play(v); } }); });
 
   /* -------- sticky contact: after the hero, hidden over the final contact block -------- */
-  var fab = $('.fab'), mbar = $('.mbar'), hero = $('.hero') || $('.phero'), fin = $('.final');
+  var fab = $('.fab'), mbar = $('.mbar'), hero = $('.hero') || $('.phero'), fin = $('.final') || $('.foot');
   var heroOut = false, finIn = false;
   function stick() { var on = heroOut && !finIn; if (fab) fab.classList.toggle('show', on); if (mbar) mbar.classList.toggle('show', on); }
   if ('IntersectionObserver' in window && hero) {
@@ -227,7 +227,7 @@
   /* -------- reveal on scroll -------- */
   if ('IntersectionObserver' in window && !reduce) {
     var ro = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); ro.unobserve(en.target); } }); }, { threshold: 0.1 });
-    $$('.card, .steps li, .plan, .vs .col, .shot, .srow, .head, .calc, .tbl-wrap, .extras').forEach(function (el) { el.classList.add('rv'); ro.observe(el); });
+    $$('.card, .steps li, .plan, .vs .col, .shot, .srow, .head, .calc, .tbl-wrap, .extras, .tcard, .appcard, .buy li').forEach(function (el) { el.classList.add('rv'); ro.observe(el); });
   }
   $$('.year').forEach(function (y) { y.textContent = new Date().getFullYear(); });
 })();

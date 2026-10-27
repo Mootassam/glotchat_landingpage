@@ -1,0 +1,633 @@
+ui:
+  contact: "联系我们"
+  promo_html: "<b>GlotChat 1.3 新增 Telegram</b> —— 发送前还能核对译文。"
+  promo_go: "免费试用 3 天 →"
+  apps_label: "支持的应用"
+  beta: "测试版"
+  nav:
+    translator: "WhatsApp 翻译器"
+    translator_s: "聊天、语音和图片，49 种语言"
+    accounts: "WhatsApp 多开"
+    accounts_s: "所有号码集中在一个窗口"
+    tg_translator: "Telegram 翻译器"
+    tg_translator_s: "用任何语言阅读和回复"
+    tg_accounts: "Telegram 多开"
+    tg_accounts_s: "多个 Telegram 账号并排使用"
+  cta_trial: "免费下载 · 试用 3 天"
+  micro: ["免费试用 3 天，无需付款", "Telegram 真人客服回复", "每年 69 USDT 起"]
+  trust: ["内置官方 WhatsApp 网页版和 Telegram", "聊天记录只在你的电脑上", "Windows 10 和 11", "49 种语言，离线翻译"]
+  faq_more: "还有其他问题？在 Telegram 上直接问我们："
+  finder:
+    q: "你一共使用多少个账号（WhatsApp + Telegram）？"
+  up_to_accounts: "最多 <b>{n}</b> 个账号"
+  unlimited_accounts: "<b>不限</b>账号数量"
+  plan_f:
+    apps: "WhatsApp、Telegram 及测试版应用"
+  paynote: "使用 USDT 付款（TRC20 · BEP20 · ERC20）。购买前有疑问？直接问我们 —— Telegram 真人回复。"
+  final:
+    k: "免费试用 3 天"
+    h: "你的下一位海外客户，正在输入消息。"
+    p: "下载 GlotChat，点击“开始 3 天免费试用”，添加你的 WhatsApp 和 Telegram 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。"
+    tg: "在 Telegram 上联系我们"
+    points: ["全部功能可用", "无需银行卡，无需付款", "10 分钟完成设置", "聊天记录只在你的电脑上"]
+  fab: "有疑问？联系我们"
+  mbar: "咨询"
+  mbar_dl: "免费试用"
+  leave:
+    tg: "或者问我们一个问题"
+  footer:
+    tagline: "所有 WhatsApp 和 Telegram 账号集中在一个窗口，每位客户都用他的语言沟通。专为跨境生意打造。"
+    trademark: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 是其各自所有者的商标。GlotChat 是独立产品，与上述公司没有任何隶属、认可或赞助关系。"
+  og_kicker: "WhatsApp + Telegram 多开翻译软件（电脑版）"
+  og_chips: ["WhatsApp + Telegram", "49 种语言", "免费试用 3 天"]
+  app_description: "Windows 桌面软件：在一个窗口中运行多个 WhatsApp 和 Telegram 账号（每个账号独立隔离，可单独设置通知和代理），并在电脑上离线翻译消息、语音和图片中的文字，支持 49 种语言，发送前可核对译文。"
+  feature_list: ["一个窗口运行多个 WhatsApp 和 Telegram 账号", "Messenger、Instagram、Discord（测试版）", "每个账号独立会话，可单独设置代理", "按账号显示通知", "49 种语言双向聊天翻译", "发送前回译核对", "自动检查译文中的价格和数字", "语音消息转文字并翻译（显示进度）", "图片文字识别并翻译（OCR）", "品牌名“不翻译”列表", "快捷回复模板", "在电脑上离线翻译", "中文和英文界面"]
+  msg:
+    general: "你好！我想了解 GlotChat（WhatsApp 和 Telegram 多开 + 翻译），可以介绍一下吗？"
+    demo: "你好！可以给我在线演示一下 GlotChat 吗？"
+    trial: "你好！我想试用 GlotChat，我大约有 __ 个 WhatsApp / Telegram 账号。"
+    usecase: "你好！我想试用 GlotChat。我的行业：__ · 客户说的语言：__"
+    finder: "你好！我有 {n} 个账号，GlotChat {plan} 适合我吗？"
+    planTrial: "你好！我想先试用 GlotChat {plan} 套餐。"
+    plan: "你好！我想购买 GlotChat {plan} 套餐（{price} USDT / 年），怎么付款？"
+    custom: "你好！我需要 GlotChat 定制方案：__ 台电脑，__ 个账号（终身授权？）。"
+  dl:
+    autoupdate: "会自动更新到最新版本"
+    card_sub: "WhatsApp + Telegram 多开翻译软件（电脑版）"
+
+pages:
+  home:
+    title: "WhatsApp 和 Telegram 多开翻译软件（电脑版）| GlotChat"
+    description: "一个窗口管理所有 WhatsApp 和 Telegram 账号，聊天、语音、图片在电脑上离线翻译，支持 49 种语言，发送前可核对译文。免费试用 3 天。"
+    keywords: "WhatsApp翻译,Telegram翻译,WhatsApp多开,Telegram多开,WhatsApp电脑版多开,外贸WhatsApp翻译软件,WhatsApp自动翻译,TG翻译"
+    og_title: "GlotChat —— 所有 WhatsApp 和 Telegram 账号一个窗口，每位客户都用他的语言"
+    og_heading: "WhatsApp 和 Telegram 一个窗口，每位客户都用他的语言"
+    short: "首页"
+    icon: "🏠"
+    blocks:
+    - type: hero_home
+      eyebrow: "1.3 新功能 —— Telegram + 发送前核对译文"
+      h1: "WhatsApp 和 Telegram 全部账号，<span class=\"grad\">一个窗口，任何语言。</span>"
+      lead: "所有号码和 Telegram 账号在电脑上并排运行。每条消息、语音和图片都用中文阅读；回复用客户的语言发出 —— 而且发送前你就知道对方会读到什么。"
+      micro: ["免费试用 3 天，无需付款", "Telegram 真人客服回复", "每年 69 USDT 起"]
+      media_alt: "GlotChat 把一段西班牙语 WhatsApp 聊天翻译成中文"
+      floats:
+      - ["↩", "对方将读到：“有 L 码，现货”", "每条回复发送前都能核对"]
+      - ["🔢", "$45 · 15/11 · +971 50…", "价格和数字绝不会被改错"]
+      - ["🎤", "正在转写… 64%", "长语音实时显示进度"]
+      - ["🛡", "100% 在你的电脑上", "不经过任何云端翻译"]
+      chapters:
+      - {id: accounts, icon: "👥", label: "添加账号", cap: "几秒钟添加一个 WhatsApp 号码或 Telegram 账号：起名、选语言、扫码。"}
+      - {id: telegram, icon: "✈️", label: "Telegram", cap: "Telegram 也一样 —— 每个聊天自动翻译，回复用客户的语言发出。"}
+      - {id: chat, icon: "🌐", label: "聊天翻译", cap: "客户用他的语言写，你看到中文。发送前，你能看到对方将读到的内容。"}
+      - {id: notify, icon: "🔔", label: "通知", cap: "每条通知都显示来自哪个账号，并且已经翻译好。点一下就打开对应聊天。"}
+      - {id: voice, icon: "🎤", label: "语音消息", cap: "一键把语音转成文字并翻译成中文 —— 长语音也会实时显示进度。"}
+      - {id: photo, icon: "📷", label: "图片", cap: "发票、订单、文件的照片：识别文字并翻译。"}
+    - type: facts
+      label: "关键数据"
+      items: [["2 + 3", "WhatsApp 和 Telegram，另有 3 个测试版应用"], ["27+", "个账号同时运行（实测）"], ["49", "种翻译语言，离线"], ["0", "条消息发送到云端翻译"]]
+    - type: apps
+      id: apps
+      k: "一个软件，管理所有聊天"
+      h: "你的客户在 WhatsApp，<em>也在</em> Telegram。现在你可以在同一个地方回复他们。"
+      p: "每个账号都在独立的空间里运行：独立登录、独立通知，还可以设置独立代理。"
+      items:
+      - {icon: wa, cls: wa, name: "WhatsApp 和 WhatsApp Business", p: "公司用到的所有号码 —— 扫码一次就保持连接。聊天、语音、图片全部翻译。", link: "whatsapp-translator", more: "WhatsApp 翻译器"}
+      - {icon: tg, cls: tgc, name: "Telegram", p: "所有 Telegram 账号并排使用 —— 个人号、店铺号、客服号。扫码或用手机号登录，聊天双向翻译。", link: "telegram-translator", more: "Telegram 翻译器"}
+      - {icon: ms, cls: beta, beta: true, name: "Messenger", p: "Facebook Messenger 收件箱，消息下方显示翻译，回复前一键翻译。"}
+      - {icon: ig, cls: beta, beta: true, name: "Instagram 私信", p: "客户的 Instagram 私信逐条翻译；你的回复发送前翻译成客户的语言。"}
+      - {icon: dc, cls: beta, beta: true, name: "Discord", p: "服务器和私信中的每条消息都能翻译，你写的内容也能翻译。"}
+      note: "所有套餐都包含测试版应用。测试版应用翻译文字消息；语音和图片翻译在 WhatsApp 和 Telegram 中可用。"
+    - type: showcase
+      id: features
+      k: "功能演示"
+      h: "看看 GlotChat 怎么工作 —— 几段短视频"
+      rows:
+      - media: "video:accounts"
+        h: "所有号码、所有账号，一个窗口"
+        p: "需要多少个 WhatsApp 和 Telegram 账号就加多少个。每个账号独立：独立登录、颜色、语言和通知。"
+        ticks: ["扫码一次，保持登录", "实测 27 个账号同时运行", "可为每个账号设置代理，每分钟自动检测"]
+      - media: "video:telegram"
+        tag: "1.3 新功能"
+        h: "Telegram 也能像 WhatsApp 一样翻译"
+        p: "打开一个 Telegram 聊天，每条消息都已经翻译成中文。你用中文回复，客户收到他的语言。"
+        ticks: ["扫码或手机号登录", "每条消息下方显示翻译，双向翻译", "快捷回复模板在 Telegram 中同样可用"]
+        link: ["telegram-translator", "了解 Telegram 翻译器"]
+      - media: "video:chat"
+        h: "发送前就知道客户会读到什么"
+        p: "用中文写好，按 Enter。GlotChat 显示译文，并把译文再翻译回中文，让你确认意思没有变。"
+        ticks: ["每条译文下方都有“对方将读到”核对", "自动检查价格、日期和电话号码", "“换个说法”提供几种不同表达"]
+      - media: "video:voice"
+        h: "语音消息 → 中文文字"
+        p: "听不懂语音？点一下就能看文字 —— 即使是 5 分钟的长语音，也会显示进度，文字边转边出现。"
+        ticks: ["约 100 种口语语言", "离线处理，音频不离开你的电脑", "一键复制转写内容或译文"]
+      - media: "video:photo"
+        h: "识别图片和文件里的文字"
+        p: "发票、订单、价目表、截图 —— 一键识别并翻译。"
+        ticks: ["拉丁文、阿拉伯文、西里尔文、中文等", "客户不会收到任何提示"]
+      extras: ["⚡ 快捷回复模板", "🔔 通知显示账号名称", "🛡 离线、私密翻译", "🩹 卡住的账号自动重启", "🀄 中文和英文界面"]
+    - type: trust
+      id: trust
+      k: "可以信赖的翻译"
+      h: "一个错误的价格就可能丢掉客户。GlotChat 会检查每一条译文。"
+      p: "机器翻译速度快，但并不完美。所以 GlotChat 在翻译前先整理聊天式的写法，在发送前再检查结果。"
+      items:
+      - h: "清楚看到客户将读到的内容"
+        p: "每条译文下方，GlotChat 都会把它再翻译回中文。如果意思变了，你会比客户先发现 —— 可以直接修改，或换一种说法。"
+        wide: true
+        mock:
+          top: "<span>以 <b>阿拉伯语</b> 发送</span><span>原文：中文</span>"
+          input: "周五前能发 3 箱吗？总共 45 美元"
+          main: "هل يمكنك إرسال 3 صناديق بحلول يوم الجمعة؟ المجموع 45 دولارًا"
+          rtl: true
+          notes: [["back", "↩ 对方将读到：周五前能发 3 箱吗？总共 45 美元"]]
+      - h: "价格和数字绝不会被改错"
+        p: "价格、数量、日期、时间、订单号、电话号码和链接，每条译文都会检查。被改动的数字会自动改回；缺少的数字会提醒你。"
+        mock:
+          input: "订单 #4521：1,250.50 欧元。下午 3:30 打 +33 6 12 34 56 78。"
+          arrow: true
+          main: "Commande n° 4521 : 1 250,50 EUR. Appelez le +33 6 12 34 56 78 à 15h30."
+          notes: [["ok", "✓ 4521 · 1,250.50 · +33 6 12 34 56 78 —— 全部保留"]]
+      - h: "看得懂真实的聊天写法"
+        p: "“how r u pls send ur address thx”、全大写、“hiiiii”、阿拉伯语方言 —— GlotChat 先把这些整理成规范句子，再交给翻译。"
+        mock:
+          input: "how r u? pls send ur address thx"
+          arrow: true
+          main: "你好吗？请把你的地址发给我，谢谢"
+          notes: [["info", "阿拉伯语方言也可以：“مرحبااااا كيفك” → “你好，最近怎么样？”"]]
+      - h: "不满意？换个说法"
+        p: "点一下“换个说法”，就能看到几种不同的表达方式 —— 每一种都附带回译。"
+        mock:
+          top: "<span>🔁 <b>换个说法</b></span><span>法语</span>"
+          chips: ["Pouvez-vous m'envoyer la liste des prix aujourd'hui ?", "Tu peux m'envoyer la liste des prix aujourd'hui ?", "Pouvez-vous m'envoyer la liste de prix aujourd'hui ?"]
+      - h: "品牌名称永远不会被翻译"
+        p: "把店铺名、品牌名、产品型号加入“不翻译”列表，在任何聊天、任何语言中都保持原样。"
+        mock:
+          input: "在 GlotShop 下单，优惠码 SAVE20"
+          arrow: true
+          main: "Ordena en GlotShop con el código SAVE20"
+          notes: [["ok", "✓ “GlotShop” 在你的不翻译列表中"]]
+      cta: "免费试用翻译功能 3 天"
+    - type: cards
+      id: who
+      who: true
+      soft: true
+      k: "适合谁"
+      h: "专为客户说外语的企业打造"
+      p: "如果你要用多个号码或多个应用回复来自不同国家的客户，GlotChat 每天都能帮你节省几个小时。"
+      cta: "告诉我们你的行业 —— 我们帮你看看是否适合"
+      items:
+      - {icon: "🚢", h: "外贸和批发", p: "在 WhatsApp 和 Telegram 上用阿拉伯语、西班牙语、俄语、葡萄牙语报价、谈判、跟进 —— 你只需用中文写。", pair: "中文 ⇄ العربية · Español", link: "for/exporters"}
+      - {icon: "🛒", h: "跨境电商和代理", p: "每个店铺或国家一个号码，快捷回复模板，订单和收据照片也能翻译。", pair: "中文 ⇄ Português · English"}
+      - {icon: "🏠", h: "房产中介", p: "海外买家发来语音和证件照片，马上看懂，任何一个经纪人的号码都不漏掉客户。", pair: "中文 ⇄ Русский · العربية", link: "for/real-estate"}
+      - {icon: "🩺", h: "诊所和医疗旅游", p: "所有顾问的号码在一个窗口。患者用自己的语言写，团队用患者的语言回复。", pair: "中文 ⇄ English · Deutsch", link: "for/clinics"}
+      - {icon: "✈️", h: "旅游和出行", p: "来自世界各地游客的预订、变更和问题 —— 一台电脑全部处理。", pair: "中文 ⇄ Français · Italiano", link: "for/travel"}
+      - {icon: "🎧", h: "客服和销售团队", p: "员工用中文工作，每位客户都在 WhatsApp 和 Telegram 上收到他自己语言的回复。", pair: "中文 ⇄ English · Tiếng Việt"}
+    - type: vs
+      k: "为什么选 GlotChat"
+      h: "不用再复制粘贴到翻译网站"
+      bad_h: "没有 GlotChat"
+      bad: ["每个账号一部手机、一个浏览器或一个软件", "每条消息都要复制 → 粘贴 → 翻译 → 再粘贴回去", "不确定译文是不是你想表达的意思", "听不懂的语音消息", "客户聊天内容被粘贴到在线翻译网站"]
+      good_h: "使用 GlotChat"
+      good: ["WhatsApp 和 Telegram 账号在一个窗口，一键切换", "每条消息下方自动显示翻译", "发送前就能看到客户将读到的内容", "语音转成中文文字", "全部在你自己的电脑上离线翻译"]
+    - type: steps
+      k: "先试用，再付款"
+      h: "免费 3 天，10 分钟就能用起来"
+      items:
+      - ["下载 GlotChat", "从本网站下载 Windows 安装包，大约 1 分钟装好 —— 不需要管理员权限。"]
+      - ["一键开始免费试用", "打开 GlotChat，点击“开始 3 天免费试用”。全部功能立即可用 —— 无需付款，也不用发消息。"]
+      - ["满意再购买", "用 USDT 付款，获得一年的授权码。账号和设置全部保留 —— 不需要重新设置。"]
+      cta: "下载并开始免费试用"
+    - type: plans
+      k: "价格"
+      h: "简单的年度套餐，先免费试用"
+      p: "每个套餐都包含全部功能、全部应用和全部更新。先免费试用 3 天 —— 满意再付款。"
+      more: "查看套餐详细对比"
+      soft: false
+    - type: faq
+      k: "常见问题"
+      h: "常见问题解答"
+      items:
+      - ["有免费试用吗？", "有。下载 GlotChat，打开后点击“开始 3 天免费试用”，全部功能立即可用，无需付款。满意的话购买套餐，所有账号和设置都会保留。"]
+      - ["支持 Telegram 吗？", "支持。从 1.3 版开始，你可以在 WhatsApp 号码旁边添加 Telegram 账号。扫码或手机号登录，聊天双向翻译，和 WhatsApp 一样。"]
+      - ["我的账号安全吗？", "GlotChat 为每个账号打开官方的 WhatsApp 网页版和 Telegram 网页版，各自运行在独立的会话中 —— 和浏览器一样，只是更有条理。它不会自动发送任何消息，所有消息都由你发送。和使用任何聊天软件一样，请不要群发骚扰信息。"]
+      - ["翻译质量怎么样？", "日常商务沟通（价格、订单、预约、问题）非常好用。而且你不用猜：发送前 GlotChat 会显示客户将读到的内容、检查每个数字，还能换几种说法。合同或医疗用语，请让专业人士核对。"]
+      - ["翻译需要联网吗？", "不需要。翻译、语音转写和图片识别都在你的电脑上运行。每种语言包只需下载一次（英语内置）。WhatsApp 和 Telegram 本身当然需要联网。"]
+      - ["需要什么样的电脑？", "Windows 10 或 11（64 位）。每个账号约占 300–450 MB 内存：8 GB 内存可运行约 10 个账号，16 GB 及以上可运行 20–30 个。"]
+      - ["怎么付款和获得软件？", "先在本网站下载免费试用版。准备购买时，在 Telegram 上联系我们，选择套餐并用 USDT 付款（TRC20、BEP20 或 ERC20）。授权码几分钟内送达，需要的话我们帮你设置。"]
+      - ["支持 Mac 或手机吗？", "GlotChat 是 Windows 桌面软件。你的手机照常使用 —— GlotChat 和 WhatsApp 网页版、Telegram 桌面版一样，是一个关联设备。"]
+    - type: related
+      k: "了解更多"
+      h: "指南和对比"
+      items: ["telegram-translator", "guides/whatsapp-auto-translate-setup", "compare"]
+
+  pricing:
+    title: "GlotChat 价格 —— 每年 69 USDT 起，免费试用"
+    description: "GlotChat 套餐：Starter 69、Pro 129、Business 249 USDT/年。包含 WhatsApp、Telegram 和全部功能，免费试用 3 天，USDT 付款。"
+    keywords: "GlotChat价格,WhatsApp多开软件价格,WhatsApp翻译软件价格,Telegram多开软件"
+    short: "价格"
+    icon: "💳"
+    og_heading: "简单的年度套餐，全部功能，免费试用 3 天"
+    blocks:
+      - type: hero
+        k: "价格"
+        h1: "简单的年度套餐，<span class=\"grad\">先免费试用全部功能</span>"
+        lead: "一年一个价格，包含全部功能、全部应用、全部更新。先免费试用 3 天 —— 无需付款，无需银行卡，也不用取消。"
+        cta2: ["#pricing", "查看套餐"]
+      - type: plans
+        soft: false
+        k: "套餐"
+        h: "按你使用的账号数量选择"
+        p: "WhatsApp 和 Telegram 账号合并计算。不确定？回答一个问题，我们帮你推荐合适的套餐。"
+      - type: buying
+        soft: true
+        k: "购买流程"
+        h: "从试用到拿到授权码，只需 3 步"
+        p: "不用注册账号，不用银行卡。每个订单都由真人在 Telegram 上处理，通常几分钟内完成。"
+        items:
+          - ["在 Telegram 上联系我们", "选择套餐，并发送你的机器码 —— 在 GlotChat 的“设置 → 授权”中可以看到，旁边有复制按钮。"]
+          - ["用 USDT 付款", "TRC20、BEP20 或 ERC20。我们会发给你准确的地址和金额 —— 不用银行卡，不用注册。"]
+          - ["粘贴授权码", "一年的授权码几分钟内送达。在 GlotChat → 设置 → 输入新授权码 中粘贴即可。账号、登录状态和设置全部保留。"]
+        cta: "购买前有问题？直接问我们"
+      - type: table
+        k: "套餐对比"
+        h: "每个套餐包含什么"
+        hl: 2
+        cols: ["", "Starter", "Pro", "Business"]
+        rows:
+          - ["账号数量（WhatsApp + Telegram + 测试版应用）", "最多 5 个", "最多 15 个", "不限"]
+          - ["电脑数量", "1", "1", "最多 3 台"]
+          - ["WhatsApp 和 WhatsApp Business", "✓", "✓", "✓"]
+          - ["Telegram", "✓", "✓", "✓"]
+          - ["Messenger、Instagram、Discord（测试版）", "✓", "✓", "✓"]
+          - ["双向聊天翻译（49 种语言）", "✓", "✓", "✓"]
+          - ["“对方将读到”核对 + 数字检查", "✓", "✓", "✓"]
+          - ["语音转文字（约 100 种语言）", "✓", "✓", "✓"]
+          - ["图片文字翻译", "✓", "✓", "✓"]
+          - ["每个账号独立代理", "✓", "✓", "✓"]
+          - ["快捷回复模板", "✓", "✓", "✓"]
+          - ["一年内的全部更新", "✓", "✓", "✓"]
+          - ["支持", "Telegram 支持", "✓ 协助设置", "✓ 优先支持"]
+          - ["每年价格", "69 USDT", "129 USDT", "249 USDT"]
+      - type: calc
+        soft: true
+        k: "值不值？"
+        h: "和你现在浪费的时间比一比"
+        p: "Pro 每月约 10.75 USDT。看看它能帮你省下多少小时的复制粘贴翻译。"
+      - type: faq
+        k: "付款问题"
+        h: "付款、续费和升级"
+        items:
+          - ["免费试用怎么用？", "下载并安装 GlotChat，然后在软件里点击“开始 3 天免费试用”。试用立即开始，全部功能可用。不需要任何付款信息，每台电脑可以免费试用一次。"]
+          - ["怎么付款？", "使用 USDT（TRC20、BEP20 或 ERC20）。我们在 Telegram 上发给你付款地址，收到付款后立即发送一年的授权码。"]
+          - ["Telegram 账号单独计算吗？", "不单独计算。所有账号合并计算：例如 Pro 套餐的 15 个账号，可以是 10 个 WhatsApp 号码加 5 个 Telegram 账号。"]
+          - ["一年后怎么办？", "按同样的价格续费，不会中断使用。你的账号、聊天和设置一直保存在你的电脑上。"]
+          - ["可以升级或增加电脑吗？", "可以，随时都行。只需补差价（按剩余时间计算）。需要更多电脑或终身授权，可以向我们要定制报价。"]
+          - ["有更新吗？", "有。一年内发布的所有更新都包含在内，并自动安装。"]
+      - type: related
+        k: "购买前"
+        h: "看清楚你能得到什么"
+        items: ["whatsapp-translator", "telegram-translator", "compare"]
+
+  whatsapp-translator:
+    title: "WhatsApp 翻译器电脑版 —— 聊天、语音、图片离线翻译"
+    description: "在电脑上双向翻译 WhatsApp：消息、语音和图片文字，49 种语言，离线翻译，发送前可核对译文。免费试用 3 天。"
+    keywords: "WhatsApp翻译,WhatsApp翻译软件,WhatsApp自动翻译,WhatsApp语音翻译,WhatsApp电脑版翻译,外贸WhatsApp翻译"
+    short: "WhatsApp 翻译器"
+    icon: "🌐"
+    og_heading: "WhatsApp 翻译器电脑版 —— 聊天、语音、图片，离线翻译"
+    blocks:
+      - type: hero
+        k: "WhatsApp 翻译器（电脑版）"
+        h1: "每个 WhatsApp 聊天都能翻译 —— <span class=\"grad\">双向翻译，就在 WhatsApp 里</span>"
+        lead: "客户的消息在原文下方显示翻译。你的回复在发送前翻译 —— 并且你能看到客户将读到什么。语音和图片也一样，49 种语言，在你的电脑上离线完成。"
+        media: "video:chat"
+        media_alt: "GlotChat 把西班牙语 WhatsApp 聊天翻译成中文"
+      - type: steps
+        id: how
+        soft: false
+        k: "工作原理"
+        h: "每个聊天里发生的三件事"
+        items:
+          - ["客户用他的语言写", "每条收到的消息都会在原文下方自动显示翻译。"]
+          - ["你用中文写", "用中文写回复，按 Enter。GlotChat 显示译文和客户将读到的内容。"]
+          - ["客户收到他的语言", "客户收到自然的本国语言消息。你的聊天里仍然能看到你写的中文。"]
+      - type: cards
+        soft: true
+        k: "不只是文字"
+        h: "客户发来的一切，都能看懂"
+        items:
+          - {icon: "💬", h: "文字消息", p: "每条消息自动翻译，保留原文。能看懂聊天缩写、全大写和阿拉伯语方言。"}
+          - {icon: "🎤", h: "语音消息", p: "把语音转成文字并翻译 —— 约 100 种口语语言，长语音实时显示进度。"}
+          - {icon: "🖼", h: "图片和截图", p: "识别发票、价目表、证件和截图中的文字 —— 拉丁文、阿拉伯文、西里尔文、中文、韩文、泰文等。"}
+          - {icon: "↩", h: "“对方将读到”核对", p: "发送前，把译文再翻译回中文给你看 —— 不满意一键换个说法。"}
+          - {icon: "🔢", h: "数字不会错", p: "价格、数量、日期、电话号码和链接在每条译文中都会检查。品牌名称不会被翻译。"}
+          - {icon: "🛡", h: "隐私优先", p: "翻译在你的电脑上完成。客户消息不会发送给 Google、DeepL 或任何 AI 服务。"}
+      - type: split
+        k: "发送前核对"
+        h: "不再发送自己看不懂的译文"
+        p: "按 Enter 后，GlotChat 在小窗口中显示译文，下面是把译文翻译回中文的内容。如果缺少数字，会有明显提醒 —— 在自动模式下，这条消息会先等你确认，而不是直接发出。"
+        ticks: ["修改译文时，“对方将读到”会同步更新", "“换个说法”提供几种表达", "一键改为发送原文"]
+        mock:
+          top: "<span>以 <b>西班牙语</b> 发送</span><span>原文：中文</span>"
+          main: "¡Sí, tenemos la talla L! El envío a Madrid es gratis esta semana."
+          notes: [["back", "↩ 对方将读到：有 L 码！本周寄到马德里免运费。"], ["info", "你写的是：有L码，这周寄马德里包邮"]]
+      - type: langs
+        k: "49 种语言"
+        h: "以下任意两种语言之间互译"
+        p: "任意组合都可以 —— 中文到阿拉伯语、土耳其语到西班牙语、俄语到葡萄牙语。语音消息可识别约 100 种口语语言。"
+      - type: faq
+        soft: true
+        k: "常见问题"
+        h: "WhatsApp 翻译器常见问题"
+        items:
+          - ["电脑上能自动翻译 WhatsApp 消息吗？", "可以。GlotChat 自动翻译每条收到的消息，在原文下方显示译文，适用于你添加的每个账号的每个聊天。"]
+          - ["客户会知道我在用翻译吗？", "不会。客户只是收到他自己语言的消息，对话中不会添加任何内容。"]
+          - ["怎么知道翻译对不对？", "发送前，GlotChat 会把你的译文再翻译回中文（“对方将读到”），同时检查每个价格、日期和电话号码，还能换几种说法。"]
+          - ["能翻译 WhatsApp 语音吗？", "能。点击语音下方的“转文字”：GlotChat 离线把它转成文字并翻译，支持约 100 种口语语言，长语音会显示进度。"]
+          - ["翻译需要联网吗？", "只在下载语言包时需要一次。之后在电脑上离线翻译。"]
+          - ["也能翻译 Telegram 吗？", "能 —— 同样的翻译功能适用于 Telegram 账号。请看 Telegram 翻译器页面。"]
+      - type: related
+        k: "继续了解"
+        h: "相关内容"
+        items: ["telegram-translator", "guides/whatsapp-auto-translate-setup", "pricing"]
+
+  telegram-translator:
+    title: "Telegram 翻译器电脑版 —— 每个聊天自动翻译"
+    description: "在 Windows 上双向翻译 Telegram：收到的消息在原文下方显示翻译，回复在发送前翻译。49 种语言，离线翻译。免费试用 3 天。"
+    keywords: "Telegram翻译,TG翻译,Telegram翻译软件,Telegram自动翻译,电报翻译,Telegram电脑版翻译"
+    short: "Telegram 翻译器"
+    icon: "✈️"
+    og_heading: "Telegram 翻译器电脑版 —— 用任何语言阅读和回复"
+    blocks:
+      - type: hero
+        k: "Telegram 翻译器（电脑版）"
+        h1: "用客户的语言，<span class=\"grad\">和每位 Telegram 客户沟通</span>"
+        lead: "打开聊天，每条消息都已经在原文下方翻译好。用中文写回复 —— GlotChat 翻译、显示客户将读到的内容，然后发送。49 种语言，在你的电脑上离线完成。"
+        media: "video:telegram"
+        media_alt: "GlotChat 把俄语 Telegram 聊天翻译成中文"
+      - type: steps
+        id: how
+        soft: false
+        k: "工作原理"
+        h: "三步用上翻译版 Telegram"
+        items:
+          - ["登录一次", "在 GlotChat 中添加 Telegram 账号，扫码（Telegram → 设置 → 设备）或用手机号登录。"]
+          - ["用中文阅读", "每个聊天的每条消息都会在原文下方显示翻译，自动识别聊天语言。"]
+          - ["用对方的语言回复", "用中文写，按 Enter。确认预览（包括对方将读到的内容）后发送。"]
+      - type: cards
+        soft: true
+        k: "你能得到什么"
+        h: "让 Telegram 销售更轻松"
+        items:
+          - {icon: "🌐", h: "双向翻译", p: "收到的消息自动翻译；你的回复发送前翻译，原文保留给你看。"}
+          - {icon: "↩", h: "“对方将读到”核对", p: "发送前把译文再翻译回中文。数字和价格自动检查。"}
+          - {icon: "🗂", h: "多个 Telegram 账号", p: "个人号、店铺号、客服号、业务员账号并排使用，每个账号独立，各自通知。", link: "multiple-telegram-accounts"}
+          - {icon: "⚡", h: "快捷回复", p: "价格、物流、付款等回复保存一次，在任何 Telegram 聊天中插入并翻译。"}
+          - {icon: "💬", h: "WhatsApp 在同一个窗口", p: "WhatsApp 号码就在 Telegram 账号旁边。一个窗口，一种工作方式。"}
+          - {icon: "🛡", h: "离线、私密", p: "翻译在你的电脑上完成，Telegram 聊天不会发送到在线翻译或 AI 服务。"}
+      - type: split
+        k: "为什么不用 Telegram 自带的翻译？"
+        h: "专为销售打造，不只是阅读"
+        p: "Telegram 可以翻译你点选的消息 —— 但不会翻译你写的内容，完整的翻译功能还需要每个账号订阅 Premium。GlotChat 在每个账号上自动双向翻译，并在发送前核对你的回复。"
+        ticks: ["翻译你的回复，不只是收到的消息", "每个账号都一样 —— 不需要每个账号订阅", "翻译在你的电脑上完成，不经过服务器"]
+        mock:
+          top: "<span>以 <b>俄语</b> 发送</span><span>原文：中文</span>"
+          main: "Да, мы можем отправить заказ завтра. Оплата при получении."
+          notes: [["back", "↩ 对方将读到：可以，我们明天就能发货。货到付款。"]]
+      - type: langs
+        soft: true
+        k: "49 种语言"
+        h: "以下任意语言的 Telegram 聊天"
+        p: "俄语、阿拉伯语、波斯语、土耳其语、西班牙语、印地语等 —— 任意组合都可以。"
+      - type: faq
+        k: "常见问题"
+        h: "Telegram 翻译器常见问题"
+        items:
+          - ["电脑上能自动翻译 Telegram 消息吗？", "可以。在 GlotChat 中，每条收到的 Telegram 消息都会自动翻译并显示在原文下方，适用于你添加的每个账号的每个聊天。"]
+          - ["我的回复也能翻译吗？", "能。用中文写好按 Enter：GlotChat 显示译文和对方将读到的内容，然后用对方的语言发送。"]
+          - ["怎么在 GlotChat 里登录 Telegram？", "添加 Telegram 账号，用手机扫描二维码（Telegram → 设置 → 设备 → 添加设备），或用手机号和 Telegram 发来的验证码登录。"]
+          - ["需要 Telegram Premium 吗？", "不需要。GlotChat 的翻译适用于任何 Telegram 账号，免费或 Premium 都可以。"]
+          - ["是官方的 Telegram 吗？", "是的。GlotChat 为每个账号打开官方 Telegram 网页版，各自运行在独立的会话中。"]
+          - ["对方会知道我在用翻译吗？", "不会。对方收到的是他自己语言的普通消息。"]
+      - type: related
+        k: "继续了解"
+        h: "相关内容"
+        items: ["multiple-telegram-accounts", "whatsapp-translator", "pricing"]
+
+  multiple-whatsapp-accounts:
+    title: "WhatsApp 多开电脑版 —— 多个号码一个窗口"
+    description: "在 Windows 上同时运行 2 个、10 个或 27 个以上 WhatsApp 账号。独立会话、每个账号独立代理和通知，内置翻译。"
+    keywords: "WhatsApp多开,WhatsApp电脑版多开,WhatsApp多账号,WhatsApp多开软件,WhatsApp双开"
+    short: "WhatsApp 多开"
+    icon: "🗂"
+    og_heading: "所有 WhatsApp 号码，电脑上一个窗口"
+    blocks:
+      - type: hero
+        k: "WhatsApp 多开（电脑版）"
+        h1: "公司用到的每个 WhatsApp 号码 —— <span class=\"grad\">一个窗口全部搞定</span>"
+        lead: "不用再在多部手机、多个浏览器和 WhatsApp 网页版标签之间来回切换。GlotChat 让每个账号运行在独立会话中，通知显示属于哪个号码，一键切换。"
+        media: "video:accounts"
+        media_alt: "GlotChat 中并排运行的多个 WhatsApp 账号"
+      - type: facts
+        label: "关键数据"
+        items: [["27+", "个账号同时运行（实测）"], ["1", "个窗口管理全部"], ["1 个代理", "每个账号可单独设置"], ["0", "登录串号"]]
+      - type: cards
+        id: features
+        k: "为多号码打造"
+        h: "轻松管理多个账号所需的一切"
+        items:
+          - {icon: "🔒", h: "独立会话", p: "每个账号有独立的登录、Cookie 和存储 —— 就像多台电脑，却在一个软件里。"}
+          - {icon: "🌍", h: "每个账号独立代理", p: "为任意账号设置 HTTP 或 SOCKS5 代理。GlotChat 每分钟检测一次，失效时提醒你。"}
+          - {icon: "🔔", h: "按账号显示通知", p: "每条通知都写明属于哪个账号，并且已经翻译。点击就打开对应聊天。"}
+          - {icon: "🏷", h: "名称、颜色和头像", p: "按店铺、国家或业务员命名 ——“迪拜店”、“德国诊所”、“小王 —— 销售”。显示 WhatsApp 头像和号码。"}
+          - {icon: "🩹", h: "自动恢复", p: "某个账号卡住或崩溃时会自动重启，其他账号不受影响。"}
+          - {icon: "💤", h: "电脑不卡", p: "不常用的账号会休眠，打开时再唤醒，4–8 GB 内存的电脑也流畅。"}
+      - type: split
+        soft: true
+        k: "工作原理"
+        h: "官方 WhatsApp 网页版，井井有条"
+        p: "GlotChat 为每个账号打开官方的 WhatsApp 网页版。每个账号只需用对应手机扫码一次（WhatsApp → 已关联的设备），之后保持登录，重启电脑也不用重新扫码。"
+        ticks: ["支持 WhatsApp 和 WhatsApp Business", "手机照常使用", "GlotChat 不会自动发送任何消息 —— 一切由你掌控"]
+        media: "video:notify"
+        alt: "GlotChat 中来自多个 WhatsApp 账号的通知"
+      - type: table
+        k: "你的选择"
+        h: "在电脑上使用多个 WhatsApp 账号的方法"
+        hl: 4
+        cols: ["", "WhatsApp 桌面版 + 网页版", "浏览器多用户", "手机模拟器", "GlotChat"]
+        rows:
+          - ["账号数量", "2 个", "多个，每个一个窗口", "多个，很占电脑资源", "实测 27+，一个窗口"]
+          - ["通知显示账号", "~", "~", "✕", "✓"]
+          - ["每个账号独立代理", "✕", "~ 需要插件", "~", "✓"]
+          - ["自动重启卡住的账号", "✕", "✕", "✕", "✓"]
+          - ["Telegram 在同一个窗口", "✕", "✕", "✕", "✓"]
+          - ["内置翻译", "✕", "✕", "✕", "✓ 49 种语言"]
+          - ["费用", "免费", "免费", "免费 / 付费", "每年 69 USDT 起"]
+        note: "两三个号码用免费方法就够了。号码多、客户说外语时，才需要 GlotChat。"
+      - type: faq
+        soft: true
+        k: "常见问题"
+        h: "WhatsApp 多开常见问题"
+        items:
+          - ["一台电脑能运行多少个 WhatsApp 账号？", "我们实测过 27 个同时运行。真正的限制是内存：每个账号约 300–450 MB，8 GB 内存约 10 个，16 GB 及以上可运行 20–30 个。"]
+          - ["每个账号都需要一部手机吗？", "需要。每个 WhatsApp 账号对应一个手机号码，用那部手机扫码关联一次即可，手机不需要一直放在电脑旁边。"]
+          - ["每个账号能用不同的代理吗？", "能。打开账号设置，粘贴代理（http:// 或 socks5://，需要的话带用户名和密码）。GlotChat 会检测代理，失效时提醒你。"]
+          - ["账号会被封吗？", "GlotChat 使用官方 WhatsApp 网页版，和在浏览器里使用 WhatsApp 一样。封号来自 WhatsApp 禁止的行为 —— 骚扰信息、群发、修改版软件。正常使用就没问题。"]
+          - ["支持 WhatsApp Business 吗？", "支持 —— WhatsApp 和 WhatsApp Business 账号都可以关联。"]
+      - type: related
+        k: "继续了解"
+        h: "相关内容"
+        items: ["guides/best-whatsapp-multi-account-software", "multiple-telegram-accounts", "pricing"]
+
+  multiple-telegram-accounts:
+    title: "Telegram 多开电脑版 —— 多个账号一个窗口 | GlotChat"
+    description: "在 Windows 上同时使用多个 Telegram 账号 —— 每个账号独立，各自通知和代理，内置翻译。突破 Telegram 桌面版 3 个账号的限制。"
+    keywords: "Telegram多开,TG多开,电报多开,Telegram多账号,Telegram电脑版多开"
+    short: "Telegram 多开"
+    icon: "🗂"
+    og_heading: "所有 Telegram 账号，电脑上一个窗口"
+    blocks:
+      - type: hero
+        k: "Telegram 多开（电脑版）"
+        h1: "所有 Telegram 账号 —— <span class=\"grad\">一个窗口并排使用</span>"
+        lead: "Telegram 桌面版最多切换 3 个账号，而且一次只能看一个。GlotChat 让每个 Telegram 账号和你的 WhatsApp 号码并排打开 —— 每个都独立，每个都能翻译。"
+        media: "video:telegram"
+        media_alt: "GlotChat 中的多个 Telegram 账号"
+      - type: facts
+        label: "关键数据"
+        items: [["3+", "没有 3 个账号的限制"], ["1", "个窗口管理 Telegram + WhatsApp"], ["1 个代理", "每个账号可单独设置"], ["49", "种翻译语言"]]
+      - type: cards
+        k: "为多账号打造"
+        h: "每个店铺、每个员工、每个市场都有自己的 Telegram"
+        items:
+          - {icon: "🔒", h: "每个账号独立", p: "每个 Telegram 账号都有独立的会话和存储，登录不会串号，账号之间互不可见。"}
+          - {icon: "🔔", h: "知道是哪个账号", p: "通知写明账号名称并已翻译，点击打开对应聊天。"}
+          - {icon: "🌍", h: "每个账号独立代理", p: "为每个 Telegram 账号设置 HTTP 或 SOCKS5 代理，每分钟自动检测。"}
+          - {icon: "🌐", h: "聊天自动翻译", p: "每个账号的每个聊天都双向翻译，发送前可核对。"}
+          - {icon: "⚡", h: "共用快捷回复", p: "价格、付款、物流模板在所有 Telegram 和 WhatsApp 账号中都能用。"}
+          - {icon: "🩹", h: "稳定运行", p: "卡住的账号自动重启；不常用的账号休眠，电脑保持流畅。"}
+      - type: table
+        soft: true
+        k: "你的选择"
+        h: "在电脑上使用多个 Telegram 账号的方法"
+        hl: 3
+        cols: ["", "Telegram 桌面版", "浏览器多用户 + 网页版", "GlotChat"]
+        rows:
+          - ["账号数量", "最多 3 个（Premium 更多），一次显示一个", "多个，每个一个窗口", "按套餐数量，并排显示"]
+          - ["通知显示账号", "~", "~", "✓"]
+          - ["每个账号独立代理", "✕ 所有账号共用", "~ 需要插件", "✓"]
+          - ["WhatsApp 在同一个窗口", "✕", "✕", "✓"]
+          - ["你的回复自动翻译", "✕", "✕", "✓ 49 种语言"]
+          - ["费用", "免费", "免费", "每年 69 USDT 起"]
+        note: "Telegram 的账号限制可能会变化；以上为 2026 年 Telegram 桌面版的情况。"
+      - type: faq
+        k: "常见问题"
+        h: "Telegram 多开常见问题"
+        items:
+          - ["一台电脑能用多少个 Telegram 账号？", "在 GlotChat 中，按套餐数量 —— Starter 5 个、Pro 15 个、Business 不限（WhatsApp 和 Telegram 账号合并计算）。实际限制是内存：每个账号约 300–450 MB。"]
+          - ["怎么添加 Telegram 账号？", "点击“添加账号”，选择 Telegram，然后用手机扫码（Telegram → 设置 → 设备 → 添加设备）或用手机号登录。"]
+          - ["Telegram 允许这样用吗？", "允许。GlotChat 为每个账号打开官方 Telegram 网页版，和在浏览器里登录一样。请遵守 Telegram 的规则 —— 不要发骚扰信息或群发。"]
+          - ["Telegram 和 WhatsApp 能一起用吗？", "能。两个应用都在同一个窗口的左侧，一键切换应用和账号。"]
+      - type: related
+        k: "继续了解"
+        h: "相关内容"
+        items: ["telegram-translator", "multiple-whatsapp-accounts", "pricing"]
+
+  compare:
+    title: "WhatsApp 和 Telegram 多账号 + 翻译：哪种方法最好？"
+    description: "WhatsApp 网页版、Telegram 桌面版、浏览器多用户、翻译插件，还是多开软件？为跨境团队做的客观对比。"
+    short: "对比"
+    icon: "⚖️"
+    og_heading: "GlotChat 与其他多账号翻译方法对比"
+    blocks:
+      - type: hero
+        k: "对比"
+        h1: "GlotChat 与其他方法对比：<span class=\"grad\">多账号聊天 + 翻译</span>"
+        lead: "有些免费方法能做到 GlotChat 的一部分功能。下面客观地看看每种方法 —— 以及什么时候值得为 GlotChat 付费。"
+        cta2: ["#compare", "直接看对比表"]
+      - type: table
+        id: compare
+        k: "逐项对比"
+        h: "各种方法对比"
+        hl: 5
+        cols: ["", "WhatsApp 网页版 / Telegram 桌面版", "浏览器多用户", "翻译插件", "多开软件", "GlotChat"]
+        rows:
+          - ["多个账号一个窗口", "✕", "~ 每个一个窗口", "✕", "✓", "✓ 实测 27+"]
+          - ["WhatsApp 和 Telegram 在一起", "✕", "~", "✕", "~ 部分", "✓"]
+          - ["收到的消息自动翻译", "✕", "✕", "✓", "~ 部分", "✓"]
+          - ["回复发送前翻译", "✕", "✕", "~", "~ 部分", "✓"]
+          - ["看到客户将读到的内容", "✕", "✕", "✕", "✕ 一般没有", "✓"]
+          - ["语音转文字", "✕", "✕", "✕ 一般没有", "~ 少见", "✓ 约 100 种语言"]
+          - ["图片文字翻译", "✕", "✕", "✕", "✕ 一般没有", "✓"]
+          - ["消息留在你的电脑上", "✓", "✓", "✕ 一般走云端", "~ 视情况", "✓ 离线"]
+          - ["一般费用", "免费", "免费", "免费 / 按月", "按账号按月收费", "每年 69 USDT 起"]
+        note: "以上是各类工具的一般情况对比，不针对某一具体产品。功能会变化 —— 选择任何工具前请核实细节。"
+      - type: cards
+        soft: true
+        k: "怎么选"
+        h: "选择适合你的方法"
+        cols: 2
+        items:
+          - {icon: "📱", h: "只有两个号码、只说一种语言", p: "一个号码用 WhatsApp 桌面版，另一个用浏览器里的网页版，免费又够用。"}
+          - {icon: "🧩", h: "一个账号、偶尔翻译", p: "浏览器翻译插件可以用 —— 但你的消息通常会被发送到在线翻译服务。"}
+          - {icon: "🗂", h: "多个账号、只说一种语言", p: "浏览器多用户或多开软件都能隔离会话。用浏览器多用户会有很多窗口，不好管理。"}
+          - {icon: "🌍", h: "多个账号、客户说外语", p: "这正是 GlotChat 的用途：WhatsApp 和 Telegram 一个窗口，聊天、语音、图片全部翻译，每条回复都可核对，不经过云端。", link: "pricing"}
+      - type: faq
+        k: "常见问题"
+        h: "对比常见问题"
+        items:
+          - ["GlotChat 比翻译插件好在哪里？", "一个账号、偶尔翻译，插件可能就够了。GlotChat 多了：多个 WhatsApp 和 Telegram 账号一个窗口、语音和图片翻译、发送前核对回复，而且在电脑上离线翻译，不会把聊天发送到网页服务。"]
+          - ["WhatsApp 网页版和 Telegram 桌面版都免费，为什么要付费？", "它们一次只显示一个账号，也不翻译你的回复。号码多、客户说外语时，来回切换和复制粘贴浪费的时间，很快就超过 GlotChat 的价格。"]
+          - ["可以先试用再决定吗？", "可以 —— 免费试用 3 天，全部功能可用。在你真实的账号上和现在的方法比一比。"]
+      - type: related
+        k: "详细了解"
+        h: "仔细看看"
+        items: ["multiple-whatsapp-accounts", "multiple-telegram-accounts", "pricing"]
+
+  download:
+    title: "下载 GlotChat Windows 版 —— WhatsApp 和 Telegram 翻译软件"
+    description: "免费下载 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 账号一个窗口，离线翻译。免费试用 3 天，无需付款。"
+    keywords: "GlotChat下载,WhatsApp翻译软件下载,WhatsApp多开软件下载,Telegram翻译软件下载"
+    short: "下载"
+    icon: "⬇️"
+    og_heading: "下载 GlotChat Windows 版 —— 免费试用 3 天"
+    blocks:
+    - type: dl_hero
+      k: "免费下载 · Windows 10 和 11"
+      h1: "下载 GlotChat <span class=\"grad\">Windows 版</span>"
+      lead: "所有 WhatsApp 和 Telegram 账号一个窗口，每条消息在你的电脑上翻译。大约 1 分钟装好，免费试用全部功能 3 天。"
+      card: ["WhatsApp + Telegram 账号", "文字、语音、图片翻译", "发送前“对方将读到”核对", "免费试用 3 天，无需付款"]
+    - type: dl_steps
+      k: "安装指南"
+      h: "4 个简单步骤就能用起来"
+      p: "不需要任何技术基础。大多数人 5 分钟内就能用客户的语言聊天。"
+      items:
+      - {h: "下载安装包", p: "点击绿色按钮，安装包会保存到你的<b>下载</b>文件夹。下载完成后，点击<b>打开文件</b>。", tip: "在手机上？请在 Windows 电脑上打开这个页面 —— GlotChat 是电脑软件。", mock: download}
+      - {h: "安装 —— 如果 Windows 提示，点击“仍要运行”", p: "双击文件，按提示安装（约 1 分钟，不需要管理员权限）。如果出现蓝色窗口“<b>Windows 已保护你的电脑</b>”，点击<b>更多信息</b>，再点击<b>仍要运行</b>。", tip: "新软件都会这样：Windows SmartScreen 只是还没见过 GlotChat 很多次。文件是安全的 —— 你可以在下方核对 SHA-256 校验值。", mock: smartscreen}
+      - {h: "一键开始 3 天免费试用", p: "打开 GlotChat，点击<b>开始 3 天免费试用</b>。全部功能立即可用，一分钟内 GlotChat 会自动更新到最新版本。", tip: "每台电脑可免费试用一次。无需银行卡，无需付款，也不用取消。", mock: activate}
+      - {h: "添加 WhatsApp 和 Telegram 账号", p: "添加账号，用手机扫码（WhatsApp → <b>已关联的设备</b>，或 Telegram → <b>设置 → 设备</b>）。每个账号重复一次。消息、语音和图片立即可以翻译。", mock: accounts}
+    - type: dl_specs
+      k: "安装前"
+      h: "系统要求和安全性"
+      req_h: "系统要求"
+      req: [["操作系统", "Windows 10 或 11（64 位）"], ["内存", "4 GB · 10 个以上账号建议 8 GB"], ["磁盘空间", "2 GB"], ["网络", "聊天软件需要联网（翻译离线）"], ["管理员权限", "不需要"], ["安装包", "{version} · {size} MB"]]
+      safe_h: "安全、干净"
+      safe: ["官方文件，只从 <b>download.glotchat.com</b> 下载", "无广告、无工具栏、无捆绑软件", "内置官方 WhatsApp 网页版和 Telegram —— 聊天记录留在你的电脑上", "更新自动安装，并带有数字签名", "随时可在 Windows 设置 → 应用 中卸载"]
+    - type: faq
+      soft: true
+      k: "下载常见问题"
+      h: "下载和安装问题"
+      open_first: true
+      items:
+      - ["GlotChat 可以免费下载吗？", "可以。下载免费，3 天试用期内全部功能可用，无需付款。试用结束后，套餐每年 69 USDT 起。"]
+      - ["为什么 Windows 提示“Windows 已保护你的电脑”？", "Windows SmartScreen 对还不常见的新软件都会显示这个提示。点击<b>更多信息</b>，再点击<b>仍要运行</b>。请只从本页面下载 GlotChat —— 可以对比 SHA-256 校验值，确认是原始文件。"]
+      - ["为什么安装包的版本比最新版旧？", "安装包保持在 Windows 已经信任的版本，这样在任何电脑上都能顺利安装。打开 GlotChat 一分钟后，它会自动更新到最新版本（包括 Telegram 和所有新功能）。"]
+      - ["需要授权码吗？", "试用不需要：在软件中点击<b>开始 3 天免费试用</b>即可。购买套餐后，我们会在 Telegram 上发给你一年的授权码 —— 粘贴到<b>我已有授权码</b>中。"]
+      - ["有 Mac、安卓或 iPhone 版吗？", "目前没有。GlotChat 是 Windows 10 和 11 电脑软件。你的账号仍在手机上 —— GlotChat 像 WhatsApp 网页版一样把它们关联到电脑。"]
+      - ["怎么卸载 GlotChat？", "打开 Windows <b>设置 → 应用 → 已安装的应用</b>，找到 GlotChat，点击<b>卸载</b>。"]
+      - ["下载中断或很慢怎么办？", "再点一次下载按钮。如果还不行，在 Telegram 上联系我们，我们直接把安装包发给你。"]
+    - type: related
+      k: "下一步"
+      h: "开始前再了解一下"
+      items: ["pricing", "telegram-translator", "whatsapp-translator"]

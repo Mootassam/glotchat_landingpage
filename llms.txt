@@ -1,13 +1,14 @@
 # GlotChat
 
-> Windows desktop app that runs multiple WhatsApp accounts in one window — each isolated with its own notifications — and translates messages, voice notes and photos offline in 49 languages.
+> Windows desktop app that runs many WhatsApp and Telegram accounts in one window — each isolated, with its own notifications and proxy — and translates messages, voice notes and photos offline in 49 languages, with a check of every translation before it is sent.
 
-GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each account in its own isolated session and adds offline translation of messages, voice notes and text in photos. It is an independent product, not affiliated with WhatsApp or Meta.
+GlotChat is a Windows desktop app. It opens the official WhatsApp Web and Telegram Web for each account in its own isolated session (plus Messenger, Instagram and Discord in beta) and adds offline translation of messages, voice notes and text in photos. Before a reply is sent, it shows the translation translated back into the writer's language and checks that prices, numbers and links are unchanged. It is an independent product, not affiliated with WhatsApp, Meta or Telegram.
 
 ## Key facts
 
 - Platform: Windows 10, Windows 11 (64-bit)
-- Accounts: tested with 27 WhatsApp accounts at the same time; each uses about 300–450 MB of memory
+- Apps: WhatsApp, WhatsApp Business, Telegram; Messenger, Instagram and Discord in beta
+- Accounts: tested with 27 accounts at the same time; each uses about 300–450 MB of memory
 - Translation: 49 languages, offline on the user's PC; voice notes recognised in about 100 languages
 - Free trial: 3 days, every feature, no payment — starts with one click in the app ("Start my free 3-day trial"), one trial per computer
 - Download (Windows installer, version 1.2.5, 381 MB): https://download.glotchat.com/GlotChat-Setup-1.2.5.exe — install guide: https://www.glotchat.com/download/
@@ -17,18 +18,21 @@ GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each a
 
 ## Pages
 
-- [Home](https://www.glotchat.com/): Run many WhatsApp accounts in one window on Windows and translate chats, voice notes and photos offline in 49 languages. Free 3-day trial.
-- [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter 69, Pro 129, Business 249 USDT a year. Every feature included, free 3-day trial, pay in USDT. Compare plans and limits.
-- [WhatsApp translator](https://www.glotchat.com/whatsapp-translator/): Translate WhatsApp chats both ways on your PC: messages, voice notes and text in photos, in 49 languages, offline and private. Free 3-day trial.
-- [Multiple WhatsApp accounts](https://www.glotchat.com/multiple-whatsapp-accounts/): Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, notifications per account, Ctrl+K switching, built-in translation.
-- [Compare](https://www.glotchat.com/compare/): WhatsApp Web, browser profiles, translator extensions or a multi-account app? An honest comparison of ways to run many WhatsApp numbers with translation.
-- [Real estate](https://www.glotchat.com/for/real-estate/): Handle every agent's WhatsApp number in one window and answer foreign buyers in their language — chats, voice notes and documents translated. Free trial.
-- [Clinics & medical tourism](https://www.glotchat.com/for/clinics/): Answer international patients on WhatsApp in their language. Every coordinator's number in one window, voice notes and photos translated, offline.
-- [Exporters & wholesalers](https://www.glotchat.com/for/exporters/): Quote and negotiate with foreign buyers on WhatsApp in Arabic, Spanish, Russian or Portuguese while you write in your language. Many numbers, one window.
-- [Travel & tourism](https://www.glotchat.com/for/travel/): Handle bookings and questions from tourists worldwide on WhatsApp. Every booking number in one window, chats and voice notes translated offline.
-- [Guides](https://www.glotchat.com/guides/): Practical guides to using multiple WhatsApp accounts on a PC and translating WhatsApp messages, voice notes and photos for international customers.
-- [Multiple accounts on one PC](https://www.glotchat.com/guides/multiple-whatsapp-accounts-on-pc/): 3 ways to run two or more WhatsApp accounts on Windows: WhatsApp Desktop + Web, browser profiles, or a multi-account app. Steps, limits and tips.
+- [Home](https://www.glotchat.com/): All your WhatsApp and Telegram accounts in one window on Windows. Chats, voice notes and photos translated offline in 49 languages. Free 3-day trial.
+- [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter 69, Pro 129, Business 249 USDT a year. WhatsApp, Telegram and every feature included, free 3-day trial, pay in USDT.
+- [WhatsApp translator](https://www.glotchat.com/whatsapp-translator/): Translate WhatsApp chats both ways on your PC: messages, voice notes and text in photos, in 49 languages, offline — with a check before you send. Free trial.
+- [Telegram translator](https://www.glotchat.com/telegram-translator/): Translate Telegram chats both ways on Windows: incoming messages under the original, your replies before you send. 49 languages, offline. Free 3-day trial.
+- [Multiple WhatsApp accounts](https://www.glotchat.com/multiple-whatsapp-accounts/): Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, a proxy per account, notifications per account, built-in translation.
+- [Multiple Telegram accounts](https://www.glotchat.com/multiple-telegram-accounts/): Use many Telegram accounts at once on Windows — each isolated, with its own notifications and proxy, plus built-in translation. Beyond Telegram's 3-account limit.
+- [Compare](https://www.glotchat.com/compare/): WhatsApp Web, Telegram Desktop, browser profiles, translator extensions or a multi-account app? An honest comparison for teams selling across borders.
+- [Real estate](https://www.glotchat.com/for/real-estate/): Handle every agent's WhatsApp and Telegram in one window and answer foreign buyers in their language — chats, voice notes and documents translated.
+- [Clinics & medical tourism](https://www.glotchat.com/for/clinics/): Answer international patients on WhatsApp and Telegram in their language. Every coordinator's account in one window, voice notes and photos translated, offline.
+- [Exporters & wholesalers](https://www.glotchat.com/for/exporters/): Quote and negotiate with foreign buyers on WhatsApp and Telegram in Arabic, Spanish, Russian or Portuguese while you write in your language. One window.
+- [Travel & tourism](https://www.glotchat.com/for/travel/): Handle bookings and questions from tourists worldwide on WhatsApp and Telegram. Every booking account in one window, chats and voice notes translated offline.
+- [Guides](https://www.glotchat.com/guides/): Practical guides to using multiple WhatsApp and Telegram accounts on a PC and translating messages, voice notes and photos for international customers.
+- [Multiple WhatsApp accounts on one PC](https://www.glotchat.com/guides/multiple-whatsapp-accounts-on-pc/): 3 ways to run two or more WhatsApp accounts on Windows: WhatsApp Desktop + Web, browser profiles, or a multi-account app. Steps, limits and tips.
 - [Translate WhatsApp on PC](https://www.glotchat.com/guides/translate-whatsapp-messages-on-pc/): How to translate WhatsApp chats on a computer: copy-paste, browser extensions or built-in translation — plus voice notes and photos, and privacy tips.
+- [Multiple Telegram accounts on PC](https://www.glotchat.com/guides/multiple-telegram-accounts-on-pc/): How to run more than one Telegram account on Windows: Telegram Desktop's account switcher, Telegram Web in browser profiles, or a multi-account app.
 - [Privacy policy](https://www.glotchat.com/privacy/): How GlotChat handles data: chats and translations stay on your PC; the website uses cookie-free analytics; licensing only needs your key and Machine ID.
 - [Terms of use](https://www.glotchat.com/terms/): The terms for using the GlotChat app and website: licenses, free trial, payments, acceptable use and limits of liability.
-- [Download](https://www.glotchat.com/download/): Download GlotChat free for Windows 10 & 11: many WhatsApp accounts in one window with offline translation. 381 MB installer, 3-day free trial.
+- [Download](https://www.glotchat.com/download/): Download GlotChat free for Windows 10 & 11: WhatsApp and Telegram accounts in one window with offline translation. 3-day free trial, no card.

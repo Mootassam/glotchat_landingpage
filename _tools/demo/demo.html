@@ -13,8 +13,21 @@
            transform-origin: 0 0; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); }
   /* ---------- GlotChat shell ---------- */
   /* left: the accounts (avatar, name, number, unread) like the app since 1.2.4; top: the open account */
-  .sb { position: absolute; left: 0; top: 0; bottom: 0; width: 232px; background: #141c25; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; color: #e8edf3; }
-  .sbtop { display: flex; align-items: center; gap: 10px; padding: 14px 16px 4px; }
+  .sb { position: absolute; left: 84px; top: 0; bottom: 0; width: 204px; background: #141c25; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; color: #e8edf3; }
+  .sbtop { display: flex; align-items: center; gap: 10px; padding: 16px 16px 2px; }
+  /* the app rail, like GlotChat 1.3: the chat apps on the left, each with its unread count */
+  .rail { position: absolute; left: 0; top: 0; bottom: 0; width: 84px; background: #0e151e; border-right: 1px solid rgba(255,255,255,.06); display: flex; flex-direction: column; align-items: center; padding: 12px 0; gap: 6px; color: #c9d3df; z-index: 1; }
+  .rail .rlogo { width: 46px; height: 46px; border-radius: 14px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; margin-bottom: 8px; }
+  .rail .rlogo svg { width: 24px; height: 24px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .rapp { position: relative; width: 72px; padding: 7px 0 6px; border-radius: 14px; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 11px; font-weight: 650; }
+  .rapp.on { background: rgba(255,255,255,.08); color: #fff; }
+  .rapp.on::before { content: ""; position: absolute; left: -6px; top: 14px; bottom: 14px; width: 4px; border-radius: 0 4px 4px 0; background: var(--c); }
+  .rapp i { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; font-style: normal; }
+  .rapp i svg { width: 22px; height: 22px; fill: #fff; }
+  .rapp em { position: absolute; right: 8px; top: 3px; min-width: 18px; height: 18px; border-radius: 9px; background: #e5484d; color: #fff; font-size: 10.5px; font-style: normal; font-weight: 800; display: grid; place-items: center; padding: 0 5px; }
+  .rapp small { font-size: 9px; font-weight: 800; letter-spacing: .04em; color: #a78bfa; margin-top: -2px; }
+  .rnav { margin-top: auto; display: grid; gap: 10px; font-size: 10.5px; font-weight: 600; color: #8c99ab; text-align: center; }
+  .rnav span b { display: block; font-size: 17px; font-weight: 400; color: #b8c3d1; }
   .sbtop .logo { width: 36px; height: 36px; border-radius: 11px; background: linear-gradient(135deg,#10c48c,#0878aa); display: grid; place-items: center; }
   .sbtop .logo svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .sbtop b { font-size: 16px; }
@@ -31,14 +44,14 @@
   .tab .ic i { position: absolute; right: -1px; bottom: -1px; width: 11px; height: 11px; border-radius: 50%; background: #22c55e; border: 2px solid #141c25; }
   .tab .ic i.wait { background: #f59e0b; }
   .tab .nm { flex: 1; min-width: 0; line-height: 1.25; }
-  .tab .nm b { display: block; font-weight: 650; font-size: 13.5px; }
+  .tab .nm b { display: block; font-weight: 650; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; }
   .tab .nm small { display: block; color: #8c99ab; font-size: 11.5px; }
   .tab .un { min-width: 20px; height: 20px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 11.5px; font-weight: 800; display: grid; place-items: center; padding: 0 6px; }
   .tab.add { margin: 2px 10px 0; color: #8c99ab; }
   .tab.add .ic { background: rgba(255,255,255,.07); color: #2fd59b; font-size: 20px; font-weight: 400; }
   .sbnav { margin-top: auto; padding: 8px 10px 12px; border-top: 1px solid rgba(255,255,255,.06); display: grid; gap: 2px; color: #b8c3d1; font-size: 13px; font-weight: 600; }
   .sbnav span { padding: 7px 10px; border-radius: 9px; }
-  .topbar { position: absolute; left: 232px; right: 0; top: 0; height: 54px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: center; gap: 10px; padding: 0 12px 0 16px; color: #0f172a; z-index: 2; }
+  .topbar { position: absolute; left: 288px; right: 0; top: 0; height: 54px; background: #fff; border-bottom: 1px solid #e3e7ec; display: flex; align-items: center; gap: 10px; padding: 0 12px 0 16px; color: #0f172a; z-index: 2; }
   .topbar .tbava { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 750; flex: none; }
   .topbar > b { font-size: 15.5px; }
   .topbar > small { color: #64748b; font-size: 12.5px; }
@@ -48,9 +61,10 @@
   .tools .sw { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border: 1px solid #e3e7ec; border-radius: 9px; background: #f5f7fa; color: #10a37a; }
   .tools .sw b { width: 30px; height: 17px; border-radius: 9px; background: #10c48c; position: relative; }
   .tools .sw b::after { content: ""; position: absolute; right: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #fff; }
-  .tools .sel { border: 1px solid #e3e7ec; border-radius: 8px; padding: 6px 10px; background: #fff; }
+  .tools .sel { border: 1px solid #e3e7ec; border-radius: 8px; padding: 6px 10px; background: #fff; min-width: 120px; }
+  .tools .swap { color: #64748b; font-weight: 700; }
   /* ---------- WhatsApp area ---------- */
-  .wa { position: absolute; left: 232px; right: 0; top: 54px; bottom: 0; display: flex; background: var(--bg); }
+  .wa { position: absolute; left: 288px; right: 0; top: 54px; bottom: 0; display: flex; background: var(--bg); }
   .list { width: 300px; flex: none; background: var(--panel); border-right: 1px solid var(--line); }
   .list h3 { margin: 0; padding: 16px 18px 10px; font-size: 20px; font-weight: 700; }
   .search { margin: 0 14px 10px; height: 36px; border-radius: 9px; background: var(--panel2); color: var(--muted); font-size: 13.5px; display: flex; align-items: center; padding: 0 12px; }
@@ -87,12 +101,34 @@
   .comp .box .ph { color: var(--muted); }
   .caret { display: inline-block; width: 2px; height: 19px; background: #00a884; margin-left: 1px; vertical-align: -3px; }
   .comp .ic { color: var(--muted); font-size: 21px; }
+  /* Telegram Web, light theme */
+  .tgw { --bg: #ffffff; --panel: #ffffff; --panel2: #ffffff; --line: #e6e9ed; --txt: #0f1419; --muted: #707579; --in: #ffffff; --out: #e3fee0; }
+  .tgw .list { color: #0f1419; }
+  .tgw .search { background: #f1f3f4; }
+  .tgw .row.on { background: #3390ec; color: #fff; }
+  .tgw .row.on .t span, .tgw .row.on .m { color: #e6f1fd; }
+  .tgw .row .m em { background: #3390ec; color: #fff; }
+  .tgw .chat { background: linear-gradient(135deg, #d2e5b5, #a6c98a 45%, #c6dd9c); }
+  .tgw .chat { background-image: radial-gradient(rgba(255,255,255,.18) 1.5px, transparent 1.5px), linear-gradient(135deg, #d2e5b5, #a6c98a 45%, #c6dd9c); background-size: 26px 26px, auto; }
+  .tgw .chead { background: #fff; color: #0f1419; border-bottom: 1px solid #e6e9ed; }
+  .tgw .b { color: #0f1419; box-shadow: 0 1px 2px rgba(16,35,47,.15); border-radius: 14px; }
+  .tgw .b.in { border-bottom-left-radius: 4px; border-top-left-radius: 14px; }
+  .tgw .b.out { border-bottom-right-radius: 4px; border-top-right-radius: 14px; }
+  .tgw .b .tm { color: #6ea56b; }
+  .tgw .b.in .tm { color: #9aa3ab; }
+  .tgw .tr { color: #0f1419; border-top-color: rgba(15,20,25,.18); }
+  .tgw .comp { background: transparent; padding: 0 56px 12px; }
+  .tgw .comp .box { background: #fff; color: #0f1419; border-radius: 14px; box-shadow: 0 1px 2px rgba(16,35,47,.15); }
+  .tgw .comp .ic { color: #8a9299; }
+  .tgw .caret { background: #3390ec; }
   /* send preview panel */
   .panel { position: absolute; left: 16px; right: 16px; bottom: 76px; background: #fff; color: #1f2933; border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.45); padding: 13px 15px; font-size: 13.5px; z-index: 4; }
   .panel .ph { display: flex; justify-content: space-between; font-weight: 650; margin-bottom: 8px; }
   .panel .ph .link { color: #6d4cff; }
   .panel .ta { border: 2px solid #7c5cff; border-radius: 10px; padding: 10px 12px; font-size: 16px; line-height: 1.4; unicode-bidi: plaintext; }
   .panel .orig { color: #5b6573; margin-top: 8px; font-size: 13.5px; unicode-bidi: plaintext; }
+  .panel .back { color: #17663b; margin-top: 8px; font-size: 13.5px; unicode-bidi: plaintext; background: #ecfdf3; border-radius: 8px; padding: 6px 10px; }
+  .panel .back i { font-style: normal; color: #5b6573; }
   .panel .row2 { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
   .panel .hint { color: #8a95a3; font-size: 12px; margin-right: auto; }
   .btn { height: 32px; padding: 0 14px; border-radius: 9px; font-weight: 650; font-size: 13px; display: inline-flex; align-items: center; border: 1px solid #e3e7ec; background: #fff; color: #1f2933; white-space: nowrap; }
@@ -104,6 +140,10 @@
   .voice .wave { flex: 1; height: 28px; display: flex; align-items: center; gap: 2px; }
   .voice .wave i { flex: 1; background: #8696a0; border-radius: 2px; }
   .voice .pav { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
+  .vprog { margin-top: 7px; font-size: 13px; font-weight: 650; color: #e9edef; }
+  .vprog .pb { height: 4px; border-radius: 2px; background: rgba(255,255,255,.18); overflow: hidden; margin: 5px 0 4px; width: 280px; }
+  .vprog .pb i { display: block; height: 100%; background: #7c5cff; width: 100%; }
+  .vprog .vl { font-weight: 400; color: rgba(233,237,239,.8); min-height: 18px; unicode-bidi: plaintext; }
   .pill { display: inline-block; margin-top: 7px; font-size: 13px; font-weight: 650; padding: 3px 11px; border-radius: 11px; background: rgba(140,150,160,.24); color: #e9edef; }
   .photo { width: 320px; height: 196px; border-radius: 7px; overflow: hidden; background: #f4efe4; color: #2b2b2b; padding: 16px 18px; font-family: "Segoe Print", "Comic Sans MS", cursive; font-size: 15.5px; line-height: 1.55; transform: rotate(-1.2deg); box-shadow: inset 0 0 30px rgba(120,90,40,.25); }
   .photo b { font-family: "Segoe UI", sans-serif; font-weight: 800; display: block; margin-bottom: 4px; font-size: 15px; }
@@ -134,7 +174,7 @@
   .mfoot { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
   .ring { position: absolute; border-radius: 12px; box-shadow: 0 0 0 3px #10c48c, 0 0 24px 6px rgba(16,196,140,.45); z-index: 9; pointer-events: none; }
   /* QR link page */
-  .lpage { position: absolute; left: 232px; right: 0; top: 54px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
+  .lpage { position: absolute; left: 288px; right: 0; top: 54px; bottom: 0; background: #f0f2f5; z-index: 5; display: flex; align-items: center; justify-content: center; }
   .lpage .card { width: 820px; background: #fff; border-radius: 14px; padding: 36px 40px; display: flex; gap: 40px; align-items: center; color: #111b21; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
   .lpage h4 { margin: 0 0 18px; font-size: 25px; font-weight: 400; }
   .lpage ol { margin: 0; padding-left: 22px; font-size: 16.5px; line-height: 2.05; color: #3b4a54; }
@@ -266,22 +306,36 @@ const ACCS = [['Sales EU', '#10b981', '+44 7700 900123'], ['Support', '#7c5cff',
 const ini = (n) => { const w = n.split(/\s+/); return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase(); };
 const tabHtml = ([n, c, ph], i, on) => `<div class="tab ${on ? 'on' : ''}" style="--c:${c}" data-tab="${i}"><span class="ic" style="background:${c}">${ini(n)}<i></i></span><span class="nm"><b>${esc(n)}</b><small>${ph}</small></span><span class="un" data-un="${i}" style="display:none"></span></div>`;
 const topHtml = ([n, c, ph]) => `<div class="topbar"><span class="tbava" style="background:${c}">${ini(n)}</span><b>${esc(n)}</b><small>${ph}</small><span class="pill">${esc(U.connected)}</span>
-  <div class="tools"><span class="sw">文A <b></b></span><span class="sel" data-my>${esc(D.my)} ▾</span>→<span class="sel">${esc(U.autoDetect)} ▾</span></div></div>`;
+  <div class="tools"><span class="sw">文A <b></b></span><span class="sel">${esc(U.autoDetect)} ▾</span><span class="swap">⇄</span><span class="sel" data-my>${esc(D.my)} ▾</span></div></div>`;
 /* the top bar changes to another account at time t */
 function switchTop(acc, t) { const tb = h(topHtml(acc)); stage.append(tb); tb.style.zIndex = 3; tb.style.opacity = 0; tween(tb, t, 0.25, { opacity: [0, 1] }); }
 const tt = (s) => `<span class="tt">${esc(s)}</span>`;
 const badge = (from, cls = '') => `<span class="badge ${cls}">🌐 ${from.toUpperCase()}→${D.code}</span>`;
-function shell(tabs, active, chat, rows) {
-  stage.innerHTML = `
-    <div class="sb"><div class="sbtop"><div class="logo"><svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M20 9a2 2 0 0 1 1 2v7a1 1 0 0 1-1 1h-1v2l-3-2h-3"/></svg></div><b>GlotChat</b></div>
-      <div class="sblabel">${esc(U.sbAccounts)}</div>
+const ICO = {
+  wa: '<svg viewBox="0 0 24 24"><path d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>',
+  tg: '<svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>',
+  ms: '<svg viewBox="0 0 24 24"><path d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.8 1.2 5.2 3.1 6.9v3.2l2.9-1.6c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9S17.4 2.5 12 2.5zm1 12.2-2.4-2.6-4.7 2.6 5.2-5.5 2.5 2.6 4.6-2.6-5.2 5.5z"/></svg>',
+  ig: '<svg viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm4.5 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.3-2.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" fill-rule="evenodd"/></svg>',
+};
+let APP = 'wa';
+function railHtml(app, unread = {}) {
+  const apps = [['wa', 'WhatsApp', '#25b864'], ['tg', 'Telegram', '#2aabee'], ['ms', 'Messenger', '#8b5cf6', 1], ['ig', 'Instagram', '#e1306c', 1]];
+  return `<div class="rail"><div class="rlogo"><svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M20 9a2 2 0 0 1 1 2v7a1 1 0 0 1-1 1h-1v2l-3-2h-3"/></svg></div>
+    ${apps.map(([k, n, c, beta]) => `<div class="rapp ${k === app ? 'on' : ''}" style="--c:${c}" data-app="${k}"><i>${ICO[k]}</i>${n}${beta ? '<small>BETA</small>' : ''}${unread[k] ? `<em>${unread[k]}</em>` : ''}</div>`).join('')}
+    <div class="rnav"><span><b>▦</b>${esc(U.navAllApps)}</span><span><b>⚡</b>${esc(U.navTpl)}</span><span><b>🌐</b>${esc(U.navLang)}</span><span><b>⚙</b>${esc(U.navSet)}</span></div></div>`;
+}
+function shell(tabs, active, chat, rows, opt = {}) {
+  APP = opt.app || 'wa';
+  stage.innerHTML = railHtml(APP, opt.unread || (APP === 'wa' ? { tg: 2 } : { wa: 3 })) + `
+    <div class="sb"><div class="sbtop"><b>${APP === 'tg' ? 'Telegram' : 'WhatsApp'}</b></div>
+      <div class="sblabel">${esc(APP === 'tg' ? U.sbTgAccounts : U.sbAccounts)}</div>
       <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em>${ACCS.length}</em></span><span>${esc(U.sbUnread)}</span></div>
       <div class="tabset">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
       <div class="tab add"><span class="ic">＋</span><span class="nm"><b>${esc(U.sbAdd)}</b></span></div>
-      <div class="sbnav"><span>▦&nbsp; ${esc(U.navAll)}</span><span>⚡&nbsp; ${esc(U.navTpl)}</span><span>🌐&nbsp; ${esc(U.navLang)}</span><span>⚙&nbsp; ${esc(U.navSet)}</span></div></div>
+      </div>
     ${topHtml(tabs[active])}
-    <div class="wa">
-      <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
+    <div class="wa${APP === 'tg' ? ' tgw' : ''}">
+      <div class="list"><h3>${APP === 'tg' ? 'Telegram' : 'WhatsApp'}</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
         ${rows.map((r, i) => `<div class="row ${i === 0 ? 'on' : ''}"><div class="av" style="background:${r[2]}">${r[1]}</div><div class="t"><b>${esc(r[0])}</b><span>${esc(r[3])}</span></div><div class="m">${r[4]}${r[5] ? `<br><em>${r[5]}</em>` : ''}</div></div>`).join('')}
       </div>
       <div class="chat">
@@ -310,7 +364,7 @@ function qrSvg() {   // decorative QR-like pattern (not a real code)
 
 function uaePane(z = 5) {
   const n1 = D.notes[0];
-  const pane = h(`<div style="position:absolute;left:232px;right:0;top:54px;bottom:0;z-index:${z};display:flex;background:#0b141a">
+  const pane = h(`<div style="position:absolute;left:288px;right:0;top:54px;bottom:0;z-index:${z};display:flex;background:#0b141a">
     <div class="list"><h3>WhatsApp</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
       <div class="row on"><div class="av" style="background:${n1.who[2]}">${n1.who[1]}</div><div class="t"><b>${esc(n1.who[0])}</b><span>${esc(n1.chat[1])}</span></div><div class="m">10:48</div></div>
       <div class="row"><div class="av" style="background:#0f766e">O</div><div class="t"><b>Omar Haddad</b><span>تم الدفع</span></div><div class="m">10:20</div></div>
@@ -429,9 +483,45 @@ const SCENES = {
   },
 
   /* 3. two-way chat translation: incoming translated, reply typed in my language, sent in theirs */
-  chat() {
-    const c = D.chat, tr = D.chatTr;
-    shell(ACCS.slice(0, 6), 0, c, rowsWith([c.who[0], c.who[1], c.who[2], c.in2, '10:44', ''], ''));
+  chat() { return chatScene(D.chat, D.chatTr, { app: 'wa', accs: ACCS.slice(0, 6) }); },
+
+  /* 3b. the same in Telegram (light Telegram Web look, Telegram accounts on the left) */
+  telegram() { return chatScene(D.tg, D.tgTr, { app: 'tg', accs: TG_ACCS }); },
+
+  /* 4. voice note -> text (with progress, like a long one) -> translation */
+  voice() {
+    const v = D.voice;
+    shell(ACCS.slice(0, 6), 1, v, rowsWith([v.who[0], v.who[1], v.who[2], '🎤 1:48', '10:41', ''], v.who[0]));
+    const wave = Array.from({ length: 36 }, (_, i) => `<i style="height:${6 + Math.round(20 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * .6)))}px"></i>`).join('');
+    const b = bubble('in', `<div class="voice"><div class="pav" style="background:${v.who[2]}">${v.who[1]}</div><div class="play">▶</div><div class="wave">${wave}</div></div><div style="font-size:12px;color:#8696a0;margin:2px 0 0 96px">1:48</div>
+      <div data-vbtn style="overflow:hidden;max-height:44px"><span class="pill">${esc(U.transcribe)}</span></div>
+      <div data-vbusy style="opacity:0;max-height:0;overflow:hidden"><div class="vprog"><span data-pct></span> · 1:48<div class="pb"><i data-bar></i></div><div class="vl" data-vl></div></div></div>
+      <div data-vres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div><span class="badge vo">🎤 ${v.src.toUpperCase()}</span>${tt(v.text)}</div><div class="tr">${badge(v.src)}${tt(D.voiceTr)}</div></div>`, '10:41');
+    show(b, 0.4);
+    const click = 2.2, pBtn = pos($('[data-vbtn] .pill'));
+    const busy = 3.6;                                    // transcribing, part by part
+    tween($('[data-vbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
+    tween($('[data-vbtn]'), click + 0.1, 0.2, { opacity: [1, 0], h: [44, 0] });
+    tween($('[data-vbusy]'), click + 0.1, 0.2, { opacity: [0, 1], h: [0, 120] });
+    const pct = $('[data-pct]');
+    [0, 12, 27, 41, 58, 73, 88, 100].forEach((p, i, a) => TY.push({ el: pct, t0: click + 0.1 + busy * i / (a.length - 1), text: p === 100 ? U.translatingV : U.transPct(p), cps: 999, caret: false }));
+    tween($('[data-bar]'), click + 0.1, busy, { x: [-280, 0] }, (x) => x);
+    type($('[data-vl]'), click + 0.4, v.text, [...v.text].length / (busy - 0.5), false);
+    tween($('[data-vbusy]'), click + busy + 0.4, 0.2, { opacity: [1, 0], h: [120, 0] });
+    tween($('[data-vres]'), click + busy + 0.45, 0.7, { opacity: [0, 1], h: [0, 260] });
+    cursor([[1.0, 760, 560], [click - 0.3, pBtn[0], pBtn[1]], [click, pBtn[0], pBtn[1], true], [click + 1.3, 820, 640]]);
+    cam(0, 0, [760, 500, 1.0], [760, 500, 0.8]);
+    cam(0.6, 0.9, [pBtn[0] + 120, pBtn[1] - 20, 1.6], [pBtn[0] + 170, pBtn[1] - 20, 1.3]);
+    cam(click + busy + 0.4, 0.9, [pBtn[0] + 150, pBtn[1] - 70, 1.5], [pBtn[0] + 170, pBtn[1] - 70, 1.25]);
+    return click + busy + 5.6;
+  },
+};
+const TG_ACCS = [['Shop KZ', '#2aabee', '+7 701 234 5678'], ['Support', '#7c5cff', '@glot_support'], ['Wholesale', '#f59e0b', '+90 532 123 4567'], ['Agent Ali', '#10b981', '+971 55 765 4321']];
+
+/* two-way chat translation: incoming translated, reply typed in my language, checked ("They will read"), sent in theirs */
+function chatScene(c, tr, opt) {
+  {
+    shell(opt.accs, 0, c, rowsWith([c.who[0], c.who[1], c.who[2], c.in2, '10:44', ''], ''), { app: opt.app });
     const b1 = bubble('in', `${esc(c.in1)}<span class="tr" data-tr1>${badge(c.src)}${tt(tr[0])}</span>`, '10:43');
     const b2 = bubble('in', `${esc(c.in2)}<span class="tr" data-tr2>${badge(c.src)}${tt(tr[1])}</span>`, '10:44');
     ring($('.tools'), 0.5, 1.9, 4);
@@ -440,12 +530,15 @@ const SCENES = {
     const box = $('#box'); box.dataset.empty = `<span class="ph">${esc(U.type)}</span>`;
     const typedEnd = type(box, 5.1, tr[2], LANG === 'zh' ? 9 : 27);
     const panel = h(`<div class="panel"><div class="ph"><span>${esc(U.sendIn(U.lang[c.src]))}</span><span class="link">${esc(U.change)}</span></div>
-      <div class="ta">${esc(c.out)}</div><div class="orig">${esc(U.wrote)} ${esc(tr[2])}</div>
-      <div class="row2"><span class="hint">${esc(U.hint)}</span><span class="btn">${esc(U.edit)}</span><span class="btn">${esc(U.orig)}</span><span class="btn pri" data-send>${esc(U.send)}</span></div></div>`);
+      <div class="ta">${esc(c.out)}</div><div class="back" data-back><i>${esc(U.theyRead)}</i> ${esc(tr[3] || tr[2])}</div><div class="orig">${esc(U.wrote)} ${esc(tr[2])}</div>
+      <div class="row2"><span class="hint">${esc(U.hint)}</span><span class="btn">${esc(U.other)}</span><span class="btn">${esc(U.orig)}</span><span class="btn pri" data-send>${esc(U.send)}</span></div></div>`);
     $('.chat').append(panel); panel.style.opacity = 0;
     show(panel, typedEnd + 0.4, 0.35, 14);
+    const back = $('[data-back]', panel); back.style.opacity = 0;
+    show(back, typedEnd + 1.1, 0.4, 4);
+    ring(back, typedEnd + 1.3, typedEnd + 3.0, 3);
     const pSend = pos($('[data-send]', panel));
-    const sendAt = typedEnd + 2.6;
+    const sendAt = typedEnd + 3.6;
     hide(panel, sendAt + 0.25, 0.2);
     TY.push({ el: box, t0: sendAt + 0.25, text: '', cps: 1, caret: false });
     const b3 = bubble('out', `${esc(c.out)}<span class="tr"><span class="badge grey">${esc(U.youWrote)}</span>${tt(tr[2])}</span>`, '10:45');
@@ -458,30 +551,9 @@ const SCENES = {
     cam(typedEnd + 0.3, 0.6, [840, 650, 1.4], [pPan[0] + 280, pPan[1] + 30, 1.12]);
     cam(sendAt + 0.3, 0.8, [840, 560, 1.32], [pb3[0] - 240, pb3[1] - 90, 1.3]);
     return sendAt + 3.4;
-  },
-
-  /* 4. voice note -> text -> translation */
-  voice() {
-    const v = D.voice;
-    shell(ACCS.slice(0, 6), 1, v, rowsWith([v.who[0], v.who[1], v.who[2], '🎤 0:12', '10:41', ''], v.who[0]));
-    const wave = Array.from({ length: 36 }, (_, i) => `<i style="height:${6 + Math.round(20 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * .6)))}px"></i>`).join('');
-    const b = bubble('in', `<div class="voice"><div class="pav" style="background:${v.who[2]}">${v.who[1]}</div><div class="play">▶</div><div class="wave">${wave}</div></div><div style="font-size:12px;color:#8696a0;margin:2px 0 0 96px">0:12</div>
-      <div data-vbtn style="overflow:hidden;max-height:44px"><span class="pill">${esc(U.transcribe)}</span></div><div data-vbusy style="opacity:0;max-height:0;overflow:hidden"><span class="pill">${esc(U.transcribing)}</span></div>
-      <div data-vres class="tr" style="opacity:0;max-height:0;overflow:hidden"><div><span class="badge vo">🎤 ${v.src.toUpperCase()}</span>${tt(v.text)}</div><div class="tr">${badge(v.src)}${tt(D.voiceTr)}</div></div>`, '10:41');
-    show(b, 0.4);
-    const click = 2.2, pBtn = pos($('[data-vbtn] .pill'));
-    tween($('[data-vbtn] .pill'), click - 0.1, 0.1, { scale: [1, 0.94] });
-    tween($('[data-vbtn]'), click + 0.1, 0.2, { opacity: [1, 0], h: [44, 0] });
-    tween($('[data-vbusy]'), click + 0.1, 0.2, { opacity: [0, 1], h: [0, 44] });
-    tween($('[data-vbusy]'), click + 1.9, 0.2, { opacity: [1, 0], h: [44, 0] });
-    tween($('[data-vres]'), click + 1.95, 0.7, { opacity: [0, 1], h: [0, 260] });
-    cursor([[1.0, 760, 560], [click - 0.3, pBtn[0], pBtn[1]], [click, pBtn[0], pBtn[1], true], [click + 1.3, 820, 600]]);
-    cam(0, 0, [760, 500, 1.0], [760, 500, 0.8]);
-    cam(0.6, 0.9, [pBtn[0] + 120, pBtn[1] - 20, 1.6], [pBtn[0] + 170, pBtn[1] - 20, 1.3]);
-    cam(click + 1.9, 0.9, [pBtn[0] + 150, pBtn[1] - 70, 1.5], [pBtn[0] + 170, pBtn[1] - 70, 1.25]);
-    return click + 6.4;
-  },
-
+  }
+}
+const SCENES2 = {
   /* 5. text in a photo -> read -> translated */
   photo() {
     const p = D.photo;
@@ -503,6 +575,7 @@ const SCENES = {
     return click + 6.2;
   },
 };
+Object.assign(SCENES, SCENES2);
 if (D.rtl) document.documentElement.classList.add('ar');
 window.DURATION = SCENES[SCENE]();
 window.seek = seek;

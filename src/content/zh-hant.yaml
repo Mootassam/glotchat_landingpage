@@ -1,107 +1,151 @@
 # GENERATED from zh.yaml by src/make_zh_hant.py: do not edit by hand.
-# GlotChat 網站 — 簡體中文
+# GlotChat website — zh (structure follows en.yaml; updated with src/merge_content.py)
 ui:
-  skip: "跳到正文"
-  nav_label: "主導航"
-  menu: "選單"
-  lang_label: "語言"
-  close: "關閉"
-  contact: "聯絡我們"
-  promo_html: "<b>免費試用 3 天</b> — 全部功能，無需付款。"
-  promo_go: "免費下載 →"
+  skip: 跳到正文
+  nav_label: 主導航
+  menu: 選單
+  lang_label: 語言
+  close: 關閉
+  contact: 聯絡我們
+  promo_html: <b>GlotChat 1.3 新增 Telegram</b> —— 傳送前還能核對譯文。
+  promo_go: 免費試用 3 天 →
   nav:
-    product: "產品"
-    translator: "WhatsApp 翻譯"
-    translator_s: "文字、語音、圖片，49 種語言"
-    accounts: "WhatsApp 多開"
-    accounts_s: "所有號碼在電腦上一個視窗"
-    compare: "對比"
-    compare_s: "GlotChat 與其他方案對比"
-    usecases: "適用行業"
-    pricing: "價格"
-    guides: "教學"
-  cta_trial: "免費試用 3 天"
-  cta_demo: "觀看演示"
-  cta_live: "預約線上演示"
-  expand: "全屏觀看"
-  demo_label: "GlotChat 演示"
-  micro: ["3 天免費 · 無需付款", "Telegram 快速回復", "低至 69 USDT / 年"]
-  trust: ["內建官方 WhatsApp 網頁版", "聊天記錄只儲存在你的電腦", "支援 Windows 10 和 11", "49 種語言離線翻譯"]
-  breadcrumb: "麵包屑導航"
-  breadcrumb_home: "首頁"
-  updated: "更新於"
-  min_read: "分鐘閱讀"
-  learn_more: "瞭解更多"
-  read_guide: "閱讀教學"
-  toc: "本頁目錄"
+    product: 產品
+    translator: WhatsApp 翻譯器
+    translator_s: 聊天、語音和圖片，49 種語言
+    accounts: WhatsApp 多開
+    accounts_s: 所有號碼集中在一個視窗
+    compare: 對比
+    compare_s: GlotChat 與其他方案對比
+    usecases: 適用行業
+    pricing: 價格
+    guides: 教學
+    tg_translator: Telegram 翻譯器
+    tg_translator_s: 用任何語言閱讀和回覆
+    tg_accounts: Telegram 多開
+    tg_accounts_s: 多個 Telegram 帳號並排使用
+  cta_trial: 免費下載 · 試用 3 天
+  cta_demo: 觀看演示
+  cta_live: 預約線上演示
+  expand: 全屏觀看
+  demo_label: GlotChat 演示
+  micro:
+  - 免費試用 3 天，無需付款
+  - Telegram 真人客服回覆
+  - 每年 69 USDT 起
+  trust:
+  - 內建官方 WhatsApp 網頁版和 Telegram
+  - 聊天記錄只在你的電腦上
+  - Windows 10 和 11
+  - 49 種語言，離線翻譯
+  breadcrumb: 麵包屑導航
+  breadcrumb_home: 首頁
+  updated: 更新於
+  min_read: 分鐘閱讀
+  learn_more: 瞭解更多
+  read_guide: 閱讀教學
+  toc: 本頁目錄
   calc:
-    msgs: "每天收到的外語訊息數"
-    secs: "每條訊息複製、翻譯、貼上所需秒數"
-    people: "團隊人數"
-    hours: "每月花在複製貼上上的小時數"
-    days: "相當於每月的完整工作日"
-    note: "估算：每月 22 個工作日，每天 8 小時。GlotChat 在訊息到達時自動翻譯，這些時間都可以用來成交。"
-    cta: "把這些時間要回來 — 免費試用"
+    msgs: 每天收到的外語訊息數
+    secs: 每條訊息複製、翻譯、貼上所需秒數
+    people: 團隊人數
+    hours: 每月花在複製貼上上的小時數
+    days: 相當於每月的完整工作日
+    note: 估算：每月 22 個工作日，每天 8 小時。GlotChat 在訊息到達時自動翻譯，這些時間都可以用來成交。
+    cta: 把這些時間要回來 — 免費試用
   finder:
-    q: "你使用多少個 WhatsApp 帳號？"
-    a: "最適合你："
-    btn: "免費試用 3 天"
+    q: 你一共使用多少個帳號（WhatsApp + Telegram）？
+    a: 最適合你：
+    btn: 免費試用 3 天
   plans:
-    Starter: {name: "入門版", who: "適合個人賣家", pcs: "1 台電腦"}
-    Pro: {name: "專業版", who: "適合成長中的店鋪和團隊", pcs: "1 台電腦 · 協助安裝"}
-    Business: {name: "企業版", who: "適合代理商和大型團隊", pcs: "最多 3 台電腦 · 優先支援"}
-  popular: "最受歡迎"
-  for_you: "為你推薦"
-  per_year: "/ 年"
-  per_month: "USDT / 月"
-  up_to_accounts: "最多 <b>{n}</b> 個 WhatsApp 帳號"
-  unlimited_accounts: "<b>不限</b> WhatsApp 帳號數量"
+    Starter:
+      name: 入門版
+      who: 適合個人賣家
+      pcs: 1 台電腦
+    Pro:
+      name: 專業版
+      who: 適合成長中的店鋪和團隊
+      pcs: 1 台電腦 · 協助安裝
+    Business:
+      name: 企業版
+      who: 適合代理商和大型團隊
+      pcs: 最多 3 台電腦 · 優先支援
+  popular: 最受歡迎
+  for_you: 為你推薦
+  per_year: / 年
+  per_month: USDT / 月
+  up_to_accounts: 最多 <b>{n}</b> 個帳號
+  unlimited_accounts: <b>不限</b>帳號數量
   plan_f:
-    translate: "文字、語音和圖片翻譯"
-    templates: "快捷回覆 · 簡體簡體中文 / 英文介面"
-    updates: "包含所有更新"
-  buy: "在 Telegram 購買{plan}"
-  try: "或先免費試用 3 天"
-  custom_html: "<b>需要更多電腦、團隊部署或終身授權？</b>告訴我們你的需求，我們為你定製報價。"
-  custom_btn: "獲取定製報價"
-  paynote: "支援 USDT 付款（TRC20 · BEP20 · ERC20）。購買前有疑問？直接問我們——Telegram 上回復。"
+    translate: 文字、語音和圖片翻譯
+    templates: 快捷回覆 · 簡體簡體中文 / 英文介面
+    updates: 包含所有更新
+    apps: WhatsApp、Telegram 及測試版應用
+  buy: 在 Telegram 購買{plan}
+  try: 或先免費試用 3 天
+  custom_html: <b>需要更多電腦、團隊部署或終身授權？</b>告訴我們你的需求，我們為你定製報價。
+  custom_btn: 獲取定製報價
+  paynote: 使用 USDT 付款（TRC20 · BEP20 · ERC20）。購買前有疑問？直接問我們 —— Telegram 真人回覆。
   final:
-    h: "免費試用 GlotChat 3 天"
-    p: "下載 GlotChat，開啟後點選「開始 3 天免費試用」——立即開始。有問題？在 Telegram 上給我們發訊息，我們回覆很快。"
-  copy_username: "複製使用者名稱"
-  copied: "已複製"
-  also: "其他方式："
-  qr: "在電腦上瀏覽？用手機相機掃碼即可開啟 Telegram。"
-  qr_alt: "開啟 Telegram @GlotChat 的 QR Code"
-  fab: "免費試用 · 聯絡我們"
-  mbar: "免費試用 3 天 — 在 Telegram 聯絡我們"
+    h: 你的下一位海外客戶，正在輸入訊息。
+    p: 下載 GlotChat，點選「開始 3 天免費試用」，新增你的 WhatsApp 和 Telegram 帳號。想先聊聊？給我們發訊息 —— 可以線上演示，也可以解答任何問題。
+    k: 免費試用 3 天
+    tg: 在 Telegram 上聯絡我們
+    points:
+    - 全部功能可用
+    - 無需信用卡，無需付款
+    - 10 分鐘完成設定
+    - 聊天記錄只在你的電腦上
+  copy_username: 複製使用者名稱
+  copied: 已複製
+  also: 其他方式：
+  qr: 在電腦上瀏覽？用手機相機掃碼即可開啟 Telegram。
+  qr_alt: 開啟 Telegram @GlotChat 的 QR Code
+  fab: 有疑問？聯絡我們
+  mbar: 諮詢
   leave:
-    h: "先別走——免費試用一下"
-    p: "下載 GlotChat，在軟體裡一鍵開始 3 天免費試用，全部功能開放 — 無需付款，無需承諾。"
-    btn: "下載並免費試用"
-    "no": "不用了，謝謝"
+    h: 先別走——免費試用一下
+    p: 下載 GlotChat，在軟體裡一鍵開始 3 天免費試用，全部功能開放 — 無需付款，無需承諾。
+    btn: 下載並免費試用
+    'no': 不用了，謝謝
+    tg: 或者問我們一個問題
   footer:
-    tagline: "所有 WhatsApp 號碼一個視窗，每位客戶都用他的語言溝通。專為跨境銷售的企業打造。"
-    product: "產品"
-    resources: "資源"
-    privacy: "隱私政策（英文）"
-    terms: "使用條款（英文）"
-    trademark: "WhatsApp 是 WhatsApp LLC 的商標。GlotChat 是獨立產品，與 WhatsApp 或 Meta 無連結，未獲其認可或贊助。"
-  og_kicker: "WhatsApp 多開 + 翻譯電腦版"
-  og_sub: "文字、語音和圖片在你的電腦上離線翻譯。"
-  og_chips: ["27+ 個帳號", "49 種語言", "免費試用 3 天"]
-  app_description: "Windows 桌面軟體：一個視窗同時執行多個 WhatsApp 帳號，每個帳號相互隔離、通知獨立，並可離線翻譯文字、語音和圖片，支援 49 種語言。"
-  feature_list: ["一個視窗執行多個 WhatsApp 帳號", "每個帳號獨立會話", "按帳號區分通知", "49 種語言雙向聊天翻譯", "語音訊息轉文字並翻譯", "圖片文字識別與翻譯", "快捷回覆模板", "電腦本地離線翻譯", "簡體簡體中文 / 英文介面"]
+    tagline: 所有 WhatsApp 和 Telegram 帳號集中在一個視窗，每位客戶都用他的語言溝通。專為跨境生意打造。
+    product: 產品
+    resources: 資源
+    privacy: 隱私政策（英文）
+    terms: 使用條款（英文）
+    trademark: WhatsApp、Telegram、Messenger、Instagram 和 Discord 是其各自所有者的商標。GlotChat 是獨立產品，與上述公司沒有任何隸屬、認可或贊助關係。
+  og_kicker: WhatsApp + Telegram 多開翻譯軟體（電腦版）
+  og_sub: 文字、語音和圖片在你的電腦上離線翻譯。
+  og_chips:
+  - WhatsApp + Telegram
+  - 49 種語言
+  - 免費試用 3 天
+  app_description: Windows 桌面軟體：在一個視窗中執行多個 WhatsApp 和 Telegram 帳號（每個帳號獨立隔離，可單獨設定通知和代理），並在電腦上離線翻譯訊息、語音和圖片中的文字，支援 49 種語言，傳送前可核對譯文。
+  feature_list:
+  - 一個視窗執行多個 WhatsApp 和 Telegram 帳號
+  - Messenger、Instagram、Discord（測試版）
+  - 每個帳號獨立會話，可單獨設定代理
+  - 按帳號顯示通知
+  - 49 種語言雙向聊天翻譯
+  - 傳送前回譯核對
+  - 自動檢查譯文中的價格和數字
+  - 語音訊息轉文字並翻譯（顯示進度）
+  - 圖片文字識別並翻譯（OCR）
+  - 品牌名「不翻譯」列表
+  - 快捷回覆模板
+  - 在電腦上離線翻譯
+  - 中文和英文介面
   msg:
-    general: "你好！我對 GlotChat（WhatsApp 多開 + 翻譯）感興趣，可以介紹一下嗎？"
-    demo: "你好！可以給我演示一下 GlotChat 嗎？"
-    trial: "你好！我想免費試用 GlotChat 3 天。我大約有 __ 個 WhatsApp 帳號。"
-    usecase: "你好！我想免費試用 GlotChat 3 天。我的行業：__ · 我的客戶說：__"
-    finder: "你好！我有 {n} 個 WhatsApp 帳號，想先免費試用 GlotChat {plan} 3 天。"
-    planTrial: "你好！我想先免費試用 GlotChat {plan} 3 天。"
-    plan: "你好！我想購買 GlotChat {plan}（{price} USDT / 年），怎麼付款？"
-    custom: "你好！我需要 GlotChat 定製方案：__ 台電腦，__ 個 WhatsApp 帳號（是否有終身授權？）。"
-
+    general: 你好！我想了解 GlotChat（WhatsApp 和 Telegram 多開 + 翻譯），可以介紹一下嗎？
+    demo: 你好！可以給我線上演示一下 GlotChat 嗎？
+    trial: 你好！我想試用 GlotChat，我大約有 __ 個 WhatsApp / Telegram 帳號。
+    usecase: 你好！我想試用 GlotChat。我的行業：__ · 客戶說的語言：__
+    finder: 你好！我有 {n} 個帳號，GlotChat {plan} 適合我嗎？
+    planTrial: 你好！我想先試用 GlotChat {plan} 套餐。
+    plan: 你好！我想購買 GlotChat {plan} 套餐（{price} USDT / 年），怎麼付款？
+    custom: 你好！我需要 GlotChat 定製方案：__ 台電腦，__ 個帳號（終身授權？）。
   dl:
     nav: 下載
     nav_long: Windows 版下載
@@ -110,12 +154,12 @@ ui:
     os_short: Windows 10 和 11（64 位）
     no_admin: 無需管理員許可權
     alt_html: 下載遇到問題？我們可以在 Telegram 上直接傳送安裝檔案：
-    card_sub: 電腦版 WhatsApp 多開 + 翻譯
+    card_sub: WhatsApp + Telegram 多開翻譯軟體（電腦版）
     sha: SHA-256 校驗值
     copy_sha: 複製校驗值
-    phone_h: "在手機上瀏覽？"
-    phone_p: "GlotChat 是 Windows 電腦軟體。把這個連結發給自己（WhatsApp、微信或郵件），在電腦上開啟下載。"
-    phone_send: "傳送連結到電腦"
+    phone_h: 在手機上瀏覽？
+    phone_p: GlotChat 是 Windows 電腦軟體。把這個連結發給自己（WhatsApp、微信或郵件），在電腦上開啟下載。
+    phone_send: 傳送連結到電腦
     mock:
       downloads: 下載
       done: 已完成
@@ -128,1167 +172,1802 @@ ui:
       ss_unknown: 未知釋出者
       ss_run: 仍要執行
       ss_dont: 不執行
-      act_title: "歡迎使用 GlotChat"
-      act_sub: "所有功能免費試用 3 天 — 無需付款，無需信用卡。或輸入您購買的啟用碼。"
-      act_trial: "開始 3 天免費試用"
-      act_mid: "立即開始 · 全部功能 · 每台電腦可試用一次"
-      act_btn: "我已經有啟用碼"
+      act_title: 歡迎使用 GlotChat
+      act_sub: 所有功能免費試用 3 天 — 無需付款，無需信用卡。或輸入您購買的啟用碼。
+      act_trial: 開始 3 天免費試用
+      act_mid: 立即開始 · 全部功能 · 每台電腦可試用一次
+      act_btn: 我已經有啟用碼
+    autoupdate: 會自動更新到最新版本
+  apps_label: 支援的應用
+  beta: 測試版
+  faq_more: 還有其他問題？在 Telegram 上直接問我們：
+  mbar_dl: 免費試用
 pages:
   home:
-    title: "WhatsApp 多開 + 即時翻譯電腦版｜WS 多帳號聚合聊天 – GlotChat"
-    description: "WhatsApp（WS）多開 + 自動翻譯電腦版：一個視窗同時登入多個 WhatsApp 帳號，聊天、語音、圖片即時翻譯，支援 49 種語言，離線保護隱私。外貿必備，免費試用 3 天。"
-    keywords: "WhatsApp多開,WS多開,WhatsApp翻譯,WhatsApp自動翻譯,WhatsApp即時翻譯,WhatsApp電腦版多開,WhatsApp聚合聊天,WhatsApp多帳號管理,外貿WhatsApp"
-    og_title: "GlotChat – 所有 WhatsApp 帳號一個視窗，每位客戶都用他的語言溝通"
-    og_heading: "所有 WhatsApp 帳號，一個視窗搞定。每位客戶，都用他的語言溝通。"
-    short: "首頁"
-    icon: "🏠"
+    title: WhatsApp 和 Telegram 多開翻譯軟體（電腦版）| GlotChat
+    description: 一個視窗管理所有 WhatsApp 和 Telegram 帳號，聊天、語音、圖片在電腦上離線翻譯，支援 49 種語言，傳送前可核對譯文。免費試用 3 天。
+    keywords: WhatsApp翻譯,Telegram翻譯,WhatsApp多開,Telegram多開,WhatsApp電腦版多開,外貿WhatsApp翻譯軟體,WhatsApp自動翻譯,TG翻譯
+    og_title: GlotChat —— 所有 WhatsApp 和 Telegram 帳號一個視窗，每位客戶都用他的語言
+    og_heading: WhatsApp 和 Telegram 一個視窗，每位客戶都用他的語言
+    short: 首頁
+    icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: Windows 版 WhatsApp 多開 + 翻譯
-      h1: 多個 WhatsApp 帳號，<span class="grad">一個視窗，任何語言。</span>
-      lead: 新增所有號碼，每個帳號都有自己的通知；每條訊息、語音和圖片都翻譯成你的語言。
+      eyebrow: 1.3 新功能 —— Telegram + 傳送前核對譯文
+      h1: WhatsApp 和 Telegram 全部帳號，<span class="grad">一個視窗，任何語言。</span>
+      lead: 所有號碼和 Telegram 帳號在電腦上並排執行。每條訊息、語音和圖片都用中文閱讀；回覆用客戶的語言發出 —— 而且傳送前你就知道對方會讀到什麼。
       micro:
-      - 3 天免費 · 無需付款
-      - Telegram 快速回復
-      - 低至 69 USDT / 年
-      media_alt: GlotChat 在中文與西班牙語之間翻譯 WhatsApp 聊天
+      - 免費試用 3 天，無需付款
+      - Telegram 真人客服回覆
+      - 每年 69 USDT 起
+      media_alt: GlotChat 把一段西班牙語 WhatsApp 聊天翻譯成中文
+      floats:
+      - - ↩
+        - 對方將讀到：「有 L 碼，現貨」
+        - 每條回覆傳送前都能核對
+      - - 🔢
+        - $45 · 15/11 · +971 50…
+        - 價格和數字絕不會被改錯
+      - - 🎤
+        - 正在轉寫… 64%
+        - 長語音即時顯示進度
+      - - 🛡
+        - 100% 在你的電腦上
+        - 不經過任何雲端翻譯
       chapters:
       - id: accounts
         icon: 👥
         label: 新增帳號
-        cap: 幾秒新增一個 WhatsApp 號碼：起名、選擇語言、掃碼即可。
-      - id: notify
-        icon: 🔔
-        label: 通知
-        cap: 每條通知都顯示來自哪個帳號 — 點選即可開啟對應的聊天。
+        cap: 幾秒鐘新增一個 WhatsApp 號碼或 Telegram 帳號：起名、選語言、掃碼。
+      - id: telegram
+        icon: ✈️
+        label: Telegram
+        cap: Telegram 也一樣 —— 每個聊天自動翻譯，回覆用客戶的語言發出。
       - id: chat
         icon: 🌐
         label: 聊天翻譯
-        cap: 客戶用他們的語言寫，你看到的是你的語言；你的回覆以客戶的語言發出。
+        cap: 客戶用他的語言寫，你看到中文。傳送前，你能看到對方將讀到的內容。
+      - id: notify
+        icon: 🔔
+        label: 通知
+        cap: 每條通知都顯示來自哪個帳號，並且已經翻譯好。點一下就開啟對應聊天。
       - id: voice
         icon: 🎤
         label: 語音訊息
-        cap: 一鍵把語音轉成文字，並翻譯成你的語言。
+        cap: 一鍵把語音轉成文字並翻譯成中文 —— 長語音也會即時顯示進度。
       - id: photo
         icon: 📷
         label: 圖片
-        cap: 發票、訂單、文件照片：識別圖中文字並翻譯。
+        cap: 發票、訂單、檔案的照片：識別文字並翻譯。
     - type: facts
       label: 關鍵資料
       items:
+      - - 2 + 3
+        - WhatsApp 和 Telegram，另有 3 個測試版應用
       - - 27+
-        - 個 WhatsApp 帳號同時執行（實測）
+        - 個帳號同時執行（實測）
       - - '49'
-        - 種翻譯語言
-      - - 100%
-        - 在你的電腦上離線翻譯
-      - - 🎤 + 🖼
-        - 語音和圖片翻譯
+        - 種翻譯語言，離線
+      - - '0'
+        - 條訊息傳送到雲端翻譯
+    - type: apps
+      id: apps
+      k: 一個軟體，管理所有聊天
+      h: 你的客戶在 WhatsApp，<em>也在</em> Telegram。現在你可以在同一個地方回覆他們。
+      p: 每個帳號都在獨立的空間裡執行：獨立登入、獨立通知，還可以設定獨立代理。
+      items:
+      - icon: wa
+        cls: wa
+        name: WhatsApp 和 WhatsApp Business
+        p: 公司用到的所有號碼 —— 掃碼一次就保持連線。聊天、語音、圖片全部翻譯。
+        link: whatsapp-translator
+        more: WhatsApp 翻譯器
+      - icon: tg
+        cls: tgc
+        name: Telegram
+        p: 所有 Telegram 帳號並排使用 —— 個人號、店鋪號、客服號。掃碼或用手機號登入，聊天雙向翻譯。
+        link: telegram-translator
+        more: Telegram 翻譯器
+      - icon: ms
+        cls: beta
+        beta: true
+        name: Messenger
+        p: Facebook Messenger 收件箱，訊息下方顯示翻譯，回覆前一鍵翻譯。
+      - icon: ig
+        cls: beta
+        beta: true
+        name: Instagram 私信
+        p: 客戶的 Instagram 私信逐條翻譯；你的回覆傳送前翻譯成客戶的語言。
+      - icon: dc
+        cls: beta
+        beta: true
+        name: Discord
+        p: 伺服器和私信中的每條訊息都能翻譯，你寫的內容也能翻譯。
+      note: 所有套餐都包含測試版應用。測試版應用翻譯文字訊息；語音和圖片翻譯在 WhatsApp 和 Telegram 中可用。
     - type: showcase
       id: features
       k: 功能演示
-      h: 5 段短影片，看懂 GlotChat
+      h: 看看 GlotChat 怎麼工作 —— 幾段短影片
       rows:
       - media: video:accounts
-        h: 所有 WhatsApp 號碼，一個視窗
-        p: 需要多少帳號就新增多少。每個帳號相互獨立，有自己的登入和語言設定。
+        h: 所有號碼、所有帳號，一個視窗
+        p: 需要多少個 WhatsApp 和 Telegram 帳號就加多少個。每個帳號獨立：獨立登入、顏色、語言和通知。
         ticks:
         - 掃碼一次，保持登入
-        - 已測試 27 個帳號同時執行
-        - 支援 WhatsApp 和 WhatsApp Business
-      - media: video:notify
-        h: 每條訊息來自哪個帳號，一目瞭然
-        p: 通知顯示帳號和客戶名稱 — 並且已經翻譯好。
+        - 實測 27 個帳號同時執行
+        - 可為每個帳號設定代理，每分鐘自動檢測
+      - media: video:telegram
+        tag: 1.3 新功能
+        h: Telegram 也能像 WhatsApp 一樣翻譯
+        p: 開啟一個 Telegram 聊天，每條訊息都已經翻譯成中文。你用中文回覆，客戶收到他的語言。
         ticks:
-        - 「Shop UAE · Fatima」 — 不再漏掉任何號碼
-        - 點選通知，直接開啟對應聊天
-        - 每個帳號標籤都顯示未讀數
+        - 掃碼或手機號登入
+        - 每條訊息下方顯示翻譯，雙向翻譯
+        - 快捷回覆模板在 Telegram 中同樣可用
+        link:
+        - telegram-translator
+        - 瞭解 Telegram 翻譯器
       - media: video:chat
-        h: 雙向翻譯，任何語言都能聊
-        p: 訊息翻譯顯示在原文下方。你用中文寫，客戶收到他們的語言。
+        h: 傳送前就知道客戶會讀到什麼
+        p: 用中文寫好，按 Enter。GlotChat 顯示譯文，並把譯文再翻譯回中文，讓你確認意思沒有變。
         ticks:
-        - 49 種語言
-        - 傳送前可檢查譯文
-        - 客戶看到的是正常訊息
+        - 每條譯文下方都有「對方將讀到」核對
+        - 自動檢查價格、日期和電話號碼
+        - 「換個說法」提供幾種不同表達
       - media: video:voice
-        h: 語音訊息 → 你的語言的文字
-        p: 聽不懂語音？點一下就能讀。
+        h: 語音訊息 → 中文文字
+        p: 聽不懂語音？點一下就能看文字 —— 即使是 5 分鐘的長語音，也會顯示進度，文字邊轉邊出現。
         ticks:
-        - 識別約 100 種口語
-        - 離線處理 — 音訊不離開你的電腦
+        - 約 100 種口語語言
+        - 離線處理，音訊不離開你的電腦
+        - 一鍵複製轉寫內容或譯文
       - media: video:photo
-        h: 識別圖片和文件中的文字
-        p: 發票、訂單、價目表、截圖 — 一鍵識別並翻譯。
+        h: 識別圖片和檔案裡的文字
+        p: 發票、訂單、價目表、截圖 —— 一鍵識別並翻譯。
         ticks:
         - 拉丁文、阿拉伯文、西里爾文、中文等
         - 客戶不會收到任何提示
       extras:
       - ⚡ 快捷回覆模板
-      - 🛡 離線翻譯，保護隱私
+      - 🔔 通知顯示帳號名稱
+      - 🛡 離線、私密翻譯
       - 🩹 卡住的帳號自動重啟
-      - 🀄 簡體中文 / 英文介面
+      - 🀄 中文和英文介面
+    - type: trust
+      id: trust
+      k: 可以信賴的翻譯
+      h: 一個錯誤的價格就可能丟掉客戶。GlotChat 會檢查每一條譯文。
+      p: 機器翻譯速度快，但並不完美。所以 GlotChat 在翻譯前先整理聊天式的寫法，在傳送前再檢查結果。
+      items:
+      - h: 清楚看到客戶將讀到的內容
+        p: 每條譯文下方，GlotChat 都會把它再翻譯回中文。如果意思變了，你會比客戶先發現 —— 可以直接修改，或換一種說法。
+        wide: true
+        mock:
+          top: <span>以 <b>阿拉伯語</b> 傳送</span><span>原文：中文</span>
+          input: 週五前能發 3 箱嗎？總共 45 美元
+          main: هل يمكنك إرسال 3 صناديق بحلول يوم الجمعة؟ المجموع 45 دولارًا
+          rtl: true
+          notes:
+          - - back
+            - ↩ 對方將讀到：週五前能發 3 箱嗎？總共 45 美元
+      - h: 價格和數字絕不會被改錯
+        p: 價格、數量、日期、時間、訂單號、電話號碼和連結，每條譯文都會檢查。被改動的數字會自動改回；缺少的數字會提醒你。
+        mock:
+          input: '訂單 #4521：1,250.50 歐元。下午 3:30 打 +33 6 12 34 56 78。'
+          arrow: true
+          main: 'Commande n° 4521 : 1 250,50 EUR. Appelez le +33 6 12 34 56 78 à 15h30.'
+          notes:
+          - - ok
+            - ✓ 4521 · 1,250.50 · +33 6 12 34 56 78 —— 全部保留
+      - h: 看得懂真實的聊天寫法
+        p: 「how r u pls send ur address thx」、全大寫、「hiiiii」、阿拉伯語方言 —— GlotChat 先把這些整理成規範句子，再交給翻譯。
+        mock:
+          input: how r u? pls send ur address thx
+          arrow: true
+          main: 你好嗎？請把你的地址發給我，謝謝
+          notes:
+          - - info
+            - 阿拉伯語方言也可以：「مرحبااااا كيفك」 → 「你好，最近怎麼樣？」
+      - h: 不滿意？換個說法
+        p: 點一下「換個說法」，就能看到幾種不同的表達方式 —— 每一種都附帶回譯。
+        mock:
+          top: <span>🔁 <b>換個說法</b></span><span>法語</span>
+          chips:
+          - Pouvez-vous m'envoyer la liste des prix aujourd'hui ?
+          - Tu peux m'envoyer la liste des prix aujourd'hui ?
+          - Pouvez-vous m'envoyer la liste de prix aujourd'hui ?
+      - h: 品牌名稱永遠不會被翻譯
+        p: 把店鋪名、品牌名、產品型號加入「不翻譯」列表，在任何聊天、任何語言中都保持原樣。
+        mock:
+          input: 在 GlotShop 下單，優惠碼 SAVE20
+          arrow: true
+          main: Ordena en GlotShop con el código SAVE20
+          notes:
+          - - ok
+            - ✓ 「GlotShop」 在你的不翻譯列表中
+      cta: 免費試用翻譯功能 3 天
     - type: cards
       id: who
       who: true
-      k: 適用行業
-      h: 專為客戶說其他語言的企業打造
-      p: 如果你用多個號碼在 WhatsApp 上服務不同國家的客戶，GlotChat 每天為你節省數小時。
-      cta: 告訴我們你的行業，免費試用
+      soft: true
+      k: 適合誰
+      h: 專為客戶說外語的企業打造
+      p: 如果你要用多個號碼或多個應用回覆來自不同國家的客戶，GlotChat 每天都能幫你節省幾個小時。
+      cta: 告訴我們你的行業 —— 我們幫你看看是否適合
       items:
+      - icon: 🚢
+        h: 外貿和批發
+        p: 在 WhatsApp 和 Telegram 上用阿拉伯語、西班牙語、俄語、葡萄牙語報價、談判、跟進 —— 你只需用中文寫。
+        pair: 中文 ⇄ العربية · Español
+        link: for/exporters
+      - icon: 🛒
+        h: 跨境電商和代理
+        p: 每個店鋪或國家一個號碼，快捷回覆模板，訂單和收據照片也能翻譯。
+        pair: 中文 ⇄ Português · English
       - icon: 🏠
         h: 房產中介
-        p: 外國買家發來語音和證件照片，立即看懂，任何經紀人號碼上的客戶都不會漏掉。
-        pair: English ⇄ Русский · العربية
+        p: 海外買家發來語音和證件照片，馬上看懂，任何一個經紀人的號碼都不漏掉客戶。
+        pair: 中文 ⇄ Русский · العربية
         link: for/real-estate
       - icon: 🩺
         h: 診所和醫療旅遊
-        p: 每位顧問的號碼都在一個視窗裡。患者用他們的語言諮詢，團隊用他們的語言回覆。
-        pair: Türkçe ⇄ English · Deutsch
+        p: 所有顧問的號碼在一個視窗。患者用自己的語言寫，團隊用患者的語言回覆。
+        pair: 中文 ⇄ English · Deutsch
         link: for/clinics
-      - icon: 🚢
-        h: 外貿和批發商
-        p: 用阿拉伯語、西班牙語、俄語或葡萄牙語給買家報價、談判和跟進——你只需用中文輸入。
-        pair: 中文 ⇄ العربية · Español
-        link: for/exporters
       - icon: ✈️
-        h: 旅遊和旅行社
-        p: 來自世界各地遊客的預訂、改期和諮詢——一台電腦全部搞定。
-        pair: 中文 ⇄ English · Français
+        h: 旅遊和出行
+        p: 來自世界各地遊客的預訂、變更和問題 —— 一台電腦全部處理。
+        pair: 中文 ⇄ Français · Italiano
         link: for/travel
-      - icon: 🛒
-        h: 電商和分銷商
-        p: 每個店鋪或國家一個號碼，快捷回覆模板，訂單和收據照片一鍵翻譯。
-        pair: Português ⇄ Español · 中文
       - icon: 🎧
         h: 客服和銷售團隊
-        p: 客服用中文或英文工作，每位客戶都收到他自己語言的回覆。
+        p: 員工用中文工作，每位客戶都在 WhatsApp 和 Telegram 上收到他自己語言的回覆。
         pair: 中文 ⇄ English · Tiếng Việt
-      soft: true
     - type: vs
-      k: 為什麼選擇 GlotChat
-      h: 不再來回複製貼上到翻譯器
+      k: 為什麼選 GlotChat
+      h: 不用再複製貼上到翻譯網站
       bad_h: 沒有 GlotChat
       bad:
-      - 每個號碼都要一部手機或一個瀏覽器配置
+      - 每個帳號一部手機、一個瀏覽器或一個軟體
       - 每條訊息都要複製 → 貼上 → 翻譯 → 再貼上回去
+      - 不確定譯文是不是你想表達的意思
       - 聽不懂的語音訊息
-      - 「另一個」帳號上的訊息常被漏掉
       - 客戶聊天內容被貼上到線上翻譯網站
       good_h: 使用 GlotChat
       good:
-      - 所有號碼在一個視窗，一鍵切換
-      - 每條訊息下方自動顯示譯文
-      - 語音訊息轉成你的語言的文字
-      - 每條通知都標明屬於哪個帳號
+      - WhatsApp 和 Telegram 帳號在一個視窗，一鍵切換
+      - 每條訊息下方自動顯示翻譯
+      - 傳送前就能看到客戶將讀到的內容
+      - 語音轉成中文文字
       - 全部在你自己的電腦上離線翻譯
     - type: steps
       k: 先試用，再付款
-      h: 免費試用 3 天，10 分鐘即可上手
+      h: 免費 3 天，10 分鐘就能用起來
       items:
-      - - "下載 GlotChat"
-        - "從官網下載 Windows 安裝包，約 1 分鐘裝好 — 無需管理員許可權。"
-      - - "一鍵開始免費試用"
-        - "開啟 GlotChat，點選「開始 3 天免費試用」。全部功能立即開放 — 無需付款，也不用發訊息。"
-      - - 滿意？繼續使用
-        - 用 USDT 付款，獲取一年金鑰。帳號和設定保持不變，無需重新設定。
-      cta: "下載並開始免費試用"
+      - - 下載 GlotChat
+        - 從本網站下載 Windows 安裝包，大約 1 分鐘裝好 —— 不需要管理員許可權。
+      - - 一鍵開始免費試用
+        - 開啟 GlotChat，點選「開始 3 天免費試用」。全部功能立即可用 —— 無需付款，也不用發訊息。
+      - - 滿意再購買
+        - 用 USDT 付款，獲得一年的授權碼。帳號和設定全部保留 —— 不需要重新設定。
+      cta: 下載並開始免費試用
     - type: plans
       k: 價格
       h: 簡單的年度套餐，先免費試用
-      p: 每個套餐都包含全部功能和所有更新。先免費試用 3 天——滿意再付款。
+      p: 每個套餐都包含全部功能、全部應用和全部更新。先免費試用 3 天 —— 滿意再付款。
       more: 檢視套餐詳細對比
       soft: false
     - type: faq
       k: 常見問題
-      h: 你可能想知道
+      h: 常見問題解答
       items:
-      - - 可以免費試用嗎？
-        - "有。下載 GlotChat，開啟後點選「開始 3 天免費試用」——全部功能立即開放，無需付款。喜歡的話再購買套餐，所有帳號和設定都會保留。"
-      - - 會影響我的 WhatsApp 帳號安全嗎？
-        - GlotChat 為每個帳號開啟官方 WhatsApp 網頁版，並放在各自獨立的會話中——和瀏覽器一樣，只是更有條理。它絕不會自行傳送訊息，所有內容都由你傳送。和平時使用 WhatsApp 一樣，請避免群發騷擾訊息。
+      - - 有免費試用嗎？
+        - 有。下載 GlotChat，開啟後點選「開始 3 天免費試用」，全部功能立即可用，無需付款。滿意的話購買套餐，所有帳號和設定都會保留。
+      - - 支援 Telegram 嗎？
+        - 支援。從 1.3 版開始，你可以在 WhatsApp 號碼旁邊新增 Telegram 帳號。掃碼或手機號登入，聊天雙向翻譯，和 WhatsApp 一樣。
+      - - 我的帳號安全嗎？
+        - GlotChat 為每個帳號開啟官方的 WhatsApp 網頁版和 Telegram 網頁版，各自執行在獨立的會話中 —— 和瀏覽器一樣，只是更有條理。它不會自動傳送任何訊息，所有訊息都由你傳送。和使用任何聊天軟體一樣，請不要群發騷擾訊息。
+      - - 翻譯質量怎麼樣？
+        - 日常商務溝通（價格、訂單、預約、問題）非常好用。而且你不用猜：傳送前 GlotChat 會顯示客戶將讀到的內容、檢查每個數字，還能換幾種說法。合同或醫療用語，請讓專業人士核對。
       - - 翻譯需要聯網嗎？
-        - 不需要。翻譯、語音轉寫和圖片識別都在你的電腦上執行。語言包只需下載一次（英語已內建）。當然，WhatsApp 本身需要聯網。
-      - - 需要什麼配置的電腦？
-        - Windows 10 或 11（64 位）。每個 WhatsApp 帳號約佔用 300–450 MB 記憶體：8 GB 記憶體約可執行 10 個帳號，20–30 個帳號建議 16 GB 或以上。
-      - - 支援哪些語言？
-        - 49 種翻譯語言，包括英語、中文、西班牙語、阿拉伯語、法語、德語、葡萄牙語、俄語、土耳其語、印地語、日語、韓語和越南語。語音訊息可識別約 100 種語言。
-      - - 支援 WhatsApp Business 嗎？
-        - 支援。WhatsApp 和 WhatsApp Business 帳號都可以連結，方式和連結 WhatsApp 網頁版一樣。
-      - - 如何付款和獲取軟體？
-        - 在 Telegram 聯絡我們，選擇套餐並用 USDT（TRC20、BEP20 或 ERC20）付款。你會收到安裝程式和授權金鑰，如有需要我們會協助安裝。
+        - 不需要。翻譯、語音轉寫和圖片識別都在你的電腦上執行。每種語言包只需下載一次（英語內建）。WhatsApp 和 Telegram 本身當然需要聯網。
+      - - 需要什麼樣的電腦？
+        - Windows 10 或 11（64 位）。每個帳號約佔 300–450 MB 記憶體：8 GB 記憶體可執行約 10 個帳號，16 GB 及以上可執行 20–30 個。
+      - - 怎麼付款和獲得軟體？
+        - 先在本網站下載免費試用版。準備購買時，在 Telegram 上聯絡我們，選擇套餐並用 USDT 付款（TRC20、BEP20 或 ERC20）。授權碼幾分鐘內送達，需要的話我們幫你設定。
       - - 支援 Mac 或手機嗎？
-        - GlotChat 是 Windows 桌面軟體。你的手機照常使用——GlotChat 和 WhatsApp 網頁版一樣，是一個已連結的裝置。
+        - GlotChat 是 Windows 桌面軟體。你的手機照常使用 —— GlotChat 和 WhatsApp 網頁版、Telegram 桌面版一樣，是一個連結裝置。
     - type: related
       k: 瞭解更多
-      h: 教學與對比
+      h: 指南和對比
+      items:
+      - telegram-translator
+      - guides/whatsapp-auto-translate-setup
+      - compare
+  pricing:
+    title: GlotChat 價格 —— 每年 69 USDT 起，免費試用
+    description: GlotChat 套餐：Starter 69、Pro 129、Business 249 USDT/年。包含 WhatsApp、Telegram 和全部功能，免費試用 3 天，USDT 付款。
+    keywords: GlotChat價格,WhatsApp多開軟體價格,WhatsApp翻譯軟體價格,Telegram多開軟體
+    short: 價格
+    icon: 💳
+    og_heading: 簡單的年度套餐，全部功能，免費試用 3 天
+    blocks:
+    - type: hero
+      k: 價格
+      h1: 簡單的年度套餐，<span class="grad">先免費試用全部功能</span>
+      lead: 一年一個價格，包含全部功能、全部應用、全部更新。先免費試用 3 天 —— 無需付款，無需信用卡，也不用取消。
+      cta2:
+      - '#pricing'
+      - 檢視套餐
+    - type: plans
+      soft: false
+      k: 套餐
+      h: 按你使用的帳號數量選擇
+      p: WhatsApp 和 Telegram 帳號合併計算。不確定？回答一個問題，我們幫你推薦合適的套餐。
+    - type: buying
+      soft: true
+      k: 購買流程
+      h: 從試用到拿到授權碼，只需 3 步
+      p: 不用註冊帳號，不用信用卡。每個訂單都由真人在 Telegram 上處理，通常幾分鐘內完成。
+      items:
+      - - 在 Telegram 上聯絡我們
+        - 選擇套餐，併傳送你的機器碼 —— 在 GlotChat 的「設定 → 授權」中可以看到，旁邊有複製按鈕。
+      - - 用 USDT 付款
+        - TRC20、BEP20 或 ERC20。我們會發給你準確的地址和金額 —— 不用信用卡，不用註冊。
+      - - 貼上授權碼
+        - 一年的授權碼幾分鐘內送達。在 GlotChat → 設定 → 輸入新授權碼 中貼上即可。帳號、登入狀態和設定全部保留。
+      cta: 購買前有問題？直接問我們
+    - type: table
+      k: 套餐對比
+      h: 每個套餐包含什麼
+      hl: 2
+      cols:
+      - ''
+      - Starter
+      - Pro
+      - Business
+      rows:
+      - - 帳號數量（WhatsApp + Telegram + 測試版應用）
+        - 最多 5 個
+        - 最多 15 個
+        - 不限
+      - - 電腦數量
+        - '1'
+        - '1'
+        - 最多 3 台
+      - - WhatsApp 和 WhatsApp Business
+        - ✓
+        - ✓
+        - ✓
+      - - Telegram
+        - ✓
+        - ✓
+        - ✓
+      - - Messenger、Instagram、Discord（測試版）
+        - ✓
+        - ✓
+        - ✓
+      - - 雙向聊天翻譯（49 種語言）
+        - ✓
+        - ✓
+        - ✓
+      - - 「對方將讀到」核對 + 數字檢查
+        - ✓
+        - ✓
+        - ✓
+      - - 語音轉文字（約 100 種語言）
+        - ✓
+        - ✓
+        - ✓
+      - - 圖片文字翻譯
+        - ✓
+        - ✓
+        - ✓
+      - - 每個帳號獨立代理
+        - ✓
+        - ✓
+        - ✓
+      - - 快捷回覆模板
+        - ✓
+        - ✓
+        - ✓
+      - - 一年內的全部更新
+        - ✓
+        - ✓
+        - ✓
+      - - 支援
+        - Telegram 支援
+        - ✓ 協助設定
+        - ✓ 優先支援
+      - - 每年價格
+        - 69 USDT
+        - 129 USDT
+        - 249 USDT
+    - type: calc
+      soft: true
+      k: 值不值？
+      h: 和你現在浪費的時間比一比
+      p: Pro 每月約 10.75 USDT。看看它能幫你省下多少小時的複製貼上翻譯。
+    - type: faq
+      k: 付款問題
+      h: 付款、續費和升級
+      items:
+      - - 免費試用怎麼用？
+        - 下載並安裝 GlotChat，然後在軟體裡點選「開始 3 天免費試用」。試用立即開始，全部功能可用。不需要任何付款資訊，每台電腦可以免費試用一次。
+      - - 怎麼付款？
+        - 使用 USDT（TRC20、BEP20 或 ERC20）。我們在 Telegram 上發給你付款地址，收到付款後立即傳送一年的授權碼。
+      - - Telegram 帳號單獨計算嗎？
+        - 不單獨計算。所有帳號合併計算：例如 Pro 套餐的 15 個帳號，可以是 10 個 WhatsApp 號碼加 5 個 Telegram 帳號。
+      - - 一年後怎麼辦？
+        - 按同樣的價格續費，不會中斷使用。你的帳號、聊天和設定一直儲存在你的電腦上。
+      - - 可以升級或增加電腦嗎？
+        - 可以，隨時都行。只需補差價（按剩餘時間計算）。需要更多電腦或終身授權，可以向我們要定製報價。
+      - - 有更新嗎？
+        - 有。一年內釋出的所有更新都包含在內，並自動安裝。
+    - type: related
+      k: 購買前
+      h: 看清楚你能得到什麼
+      items:
+      - whatsapp-translator
+      - telegram-translator
+      - compare
+  whatsapp-translator:
+    title: WhatsApp 翻譯器電腦版 —— 聊天、語音、圖片離線翻譯
+    description: 在電腦上雙向翻譯 WhatsApp：訊息、語音和圖片文字，49 種語言，離線翻譯，傳送前可核對譯文。免費試用 3 天。
+    keywords: WhatsApp翻譯,WhatsApp翻譯軟體,WhatsApp自動翻譯,WhatsApp語音翻譯,WhatsApp電腦版翻譯,外貿WhatsApp翻譯
+    short: WhatsApp 翻譯器
+    icon: 🌐
+    og_heading: WhatsApp 翻譯器電腦版 —— 聊天、語音、圖片，離線翻譯
+    blocks:
+    - type: hero
+      k: WhatsApp 翻譯器（電腦版）
+      h1: 每個 WhatsApp 聊天都能翻譯 —— <span class="grad">雙向翻譯，就在 WhatsApp 裡</span>
+      lead: 客戶的訊息在原文下方顯示翻譯。你的回覆在傳送前翻譯 —— 並且你能看到客戶將讀到什麼。語音和圖片也一樣，49 種語言，在你的電腦上離線完成。
+      media: video:chat
+      media_alt: GlotChat 把西班牙語 WhatsApp 聊天翻譯成中文
+    - type: steps
+      id: how
+      soft: false
+      k: 工作原理
+      h: 每個聊天裡發生的三件事
+      items:
+      - - 客戶用他的語言寫
+        - 每條收到的訊息都會在原文下方自動顯示翻譯。
+      - - 你用中文寫
+        - 用中文寫回復，按 Enter。GlotChat 顯示譯文和客戶將讀到的內容。
+      - - 客戶收到他的語言
+        - 客戶收到自然的本國語言訊息。你的聊天裡仍然能看到你寫的中文。
+    - type: cards
+      soft: true
+      k: 不只是文字
+      h: 客戶發來的一切，都能看懂
+      items:
+      - icon: 💬
+        h: 文字訊息
+        p: 每條訊息自動翻譯，保留原文。能看懂聊天縮寫、全大寫和阿拉伯語方言。
+      - icon: 🎤
+        h: 語音訊息
+        p: 把語音轉成文字並翻譯 —— 約 100 種口語語言，長語音即時顯示進度。
+      - icon: 🖼
+        h: 圖片和截圖
+        p: 識別發票、價目表、證件和截圖中的文字 —— 拉丁文、阿拉伯文、西里爾文、中文、韓文、泰文等。
+      - icon: ↩
+        h: 「對方將讀到」核對
+        p: 傳送前，把譯文再翻譯回中文給你看 —— 不滿意一鍵換個說法。
+      - icon: 🔢
+        h: 數字不會錯
+        p: 價格、數量、日期、電話號碼和連結在每條譯文中都會檢查。品牌名稱不會被翻譯。
+      - icon: 🛡
+        h: 隱私優先
+        p: 翻譯在你的電腦上完成。客戶訊息不會傳送給 Google、DeepL 或任何 AI 服務。
+    - type: split
+      k: 傳送前核對
+      h: 不再傳送自己看不懂的譯文
+      p: 按 Enter 後，GlotChat 在小視窗中顯示譯文，下面是把譯文翻譯回中文的內容。如果缺少數字，會有明顯提醒 —— 在自動模式下，這條訊息會先等你確認，而不是直接發出。
+      ticks:
+      - 修改譯文時，「對方將讀到」會同步更新
+      - 「換個說法」提供幾種表達
+      - 一鍵改為傳送原文
+      mock:
+        top: <span>以 <b>西班牙語</b> 傳送</span><span>原文：中文</span>
+        main: ¡Sí, tenemos la talla L! El envío a Madrid es gratis esta semana.
+        notes:
+        - - back
+          - ↩ 對方將讀到：有 L 碼！本週寄到馬德里免運費。
+        - - info
+          - 你寫的是：有L碼，這周寄馬德里包郵
+    - type: langs
+      k: 49 種語言
+      h: 以下任意兩種語言之間互譯
+      p: 任意組合都可以 —— 中文到阿拉伯語、土耳其語到西班牙語、俄語到葡萄牙語。語音訊息可識別約 100 種口語語言。
+    - type: faq
+      soft: true
+      k: 常見問題
+      h: WhatsApp 翻譯器常見問題
+      items:
+      - - 電腦上能自動翻譯 WhatsApp 訊息嗎？
+        - 可以。GlotChat 自動翻譯每條收到的訊息，在原文下方顯示譯文，適用於你新增的每個帳號的每個聊天。
+      - - 客戶會知道我在用翻譯嗎？
+        - 不會。客戶只是收到他自己語言的訊息，對話中不會新增任何內容。
+      - - 怎麼知道翻譯對不對？
+        - 傳送前，GlotChat 會把你的譯文再翻譯回中文（「對方將讀到」），同時檢查每個價格、日期和電話號碼，還能換幾種說法。
+      - - 能翻譯 WhatsApp 語音嗎？
+        - 能。點選語音下方的「轉文字」：GlotChat 離線把它轉成文字並翻譯，支援約 100 種口語語言，長語音會顯示進度。
+      - - 翻譯需要聯網嗎？
+        - 只在下載語言包時需要一次。之後在電腦上離線翻譯。
+      - - 也能翻譯 Telegram 嗎？
+        - 能 —— 同樣的翻譯功能適用於 Telegram 帳號。請看 Telegram 翻譯器頁面。
+    - type: related
+      k: 繼續瞭解
+      h: 相關內容
+      items:
+      - telegram-translator
+      - guides/whatsapp-auto-translate-setup
+      - pricing
+  multiple-whatsapp-accounts:
+    title: WhatsApp 多開電腦版 —— 多個號碼一個視窗
+    description: 在 Windows 上同時執行 2 個、10 個或 27 個以上 WhatsApp 帳號。獨立會話、每個帳號獨立代理和通知，內建翻譯。
+    keywords: WhatsApp多開,WhatsApp電腦版多開,WhatsApp多帳號,WhatsApp多開軟體,WhatsApp雙開
+    short: WhatsApp 多開
+    icon: 🗂
+    og_heading: 所有 WhatsApp 號碼，電腦上一個視窗
+    blocks:
+    - type: hero
+      k: WhatsApp 多開（電腦版）
+      h1: 公司用到的每個 WhatsApp 號碼 —— <span class="grad">一個視窗全部搞定</span>
+      lead: 不用再在多部手機、多個瀏覽器和 WhatsApp 網頁版標籤之間來回切換。GlotChat 讓每個帳號執行在獨立會話中，通知顯示屬於哪個號碼，一鍵切換。
+      media: video:accounts
+      media_alt: GlotChat 中並排執行的多個 WhatsApp 帳號
+    - type: facts
+      label: 關鍵資料
+      items:
+      - - 27+
+        - 個帳號同時執行（實測）
+      - - '1'
+        - 個視窗管理全部
+      - - 1 個代理
+        - 每個帳號可單獨設定
+      - - '0'
+        - 登入串號
+    - type: cards
+      id: features
+      k: 為多號碼打造
+      h: 輕鬆管理多個帳號所需的一切
+      items:
+      - icon: 🔒
+        h: 獨立會話
+        p: 每個帳號有獨立的登入、Cookie 和儲存 —— 就像多台電腦，卻在一個軟體裡。
+      - icon: 🌍
+        h: 每個帳號獨立代理
+        p: 為任意帳號設定 HTTP 或 SOCKS5 代理。GlotChat 每分鐘檢測一次，失效時提醒你。
+      - icon: 🔔
+        h: 按帳號顯示通知
+        p: 每條通知都寫明屬於哪個帳號，並且已經翻譯。點選就開啟對應聊天。
+      - icon: 🏷
+        h: 名稱、顏色和頭像
+        p: 按店鋪、國家或業務員命名 ——「迪拜店」、「德國診所」、「小王 —— 銷售」。顯示 WhatsApp 頭像和號碼。
+      - icon: 🩹
+        h: 自動恢復
+        p: 某個帳號卡住或崩潰時會自動重啟，其他帳號不受影響。
+      - icon: 💤
+        h: 電腦不卡
+        p: 不常用的帳號會休眠，開啟時再喚醒，4–8 GB 記憶體的電腦也流暢。
+    - type: split
+      soft: true
+      k: 工作原理
+      h: 官方 WhatsApp 網頁版，井井有條
+      p: GlotChat 為每個帳號開啟官方的 WhatsApp 網頁版。每個帳號只需用對應手機掃碼一次（WhatsApp → 已連結的裝置），之後保持登入，重啟電腦也不用重新掃碼。
+      ticks:
+      - 支援 WhatsApp 和 WhatsApp Business
+      - 手機照常使用
+      - GlotChat 不會自動傳送任何訊息 —— 一切由你掌控
+      media: video:notify
+      alt: GlotChat 中來自多個 WhatsApp 帳號的通知
+    - type: table
+      k: 你的選擇
+      h: 在電腦上使用多個 WhatsApp 帳號的方法
+      hl: 4
+      cols:
+      - ''
+      - WhatsApp 桌面版 + 網頁版
+      - 瀏覽器多使用者
+      - 手機模擬器
+      - GlotChat
+      rows:
+      - - 帳號數量
+        - 2 個
+        - 多個，每個一個視窗
+        - 多個，很佔電腦資源
+        - 實測 27+，一個視窗
+      - - 通知顯示帳號
+        - '~'
+        - '~'
+        - ✕
+        - ✓
+      - - 每個帳號獨立代理
+        - ✕
+        - ~ 需要外掛
+        - '~'
+        - ✓
+      - - 自動重啟卡住的帳號
+        - ✕
+        - ✕
+        - ✕
+        - ✓
+      - - Telegram 在同一個視窗
+        - ✕
+        - ✕
+        - ✕
+        - ✓
+      - - 內建翻譯
+        - ✕
+        - ✕
+        - ✕
+        - ✓ 49 種語言
+      - - 費用
+        - 免費
+        - 免費
+        - 免費 / 付費
+        - 每年 69 USDT 起
+      note: 兩三個號碼用免費方法就夠了。號碼多、客戶說外語時，才需要 GlotChat。
+    - type: faq
+      soft: true
+      k: 常見問題
+      h: WhatsApp 多開常見問題
+      items:
+      - - 一台電腦能執行多少個 WhatsApp 帳號？
+        - 我們實測過 27 個同時執行。真正的限制是記憶體：每個帳號約 300–450 MB，8 GB 記憶體約 10 個，16 GB 及以上可執行 20–30 個。
+      - - 每個帳號都需要一部手機嗎？
+        - 需要。每個 WhatsApp 帳號對應一個手機號碼，用那部手機掃碼連結一次即可，手機不需要一直放在電腦旁邊。
+      - - 每個帳號能用不同的代理嗎？
+        - 能。開啟帳號設定，貼上代理（http:// 或 socks5://，需要的話帶使用者名稱和密碼）。GlotChat 會檢測代理，失效時提醒你。
+      - - 帳號會被封嗎？
+        - GlotChat 使用官方 WhatsApp 網頁版，和在瀏覽器裡使用 WhatsApp 一樣。封號來自 WhatsApp 禁止的行為 —— 騷擾訊息、群發、修改版軟體。正常使用就沒問題。
+      - - 支援 WhatsApp Business 嗎？
+        - 支援 —— WhatsApp 和 WhatsApp Business 帳號都可以連結。
+    - type: related
+      k: 繼續瞭解
+      h: 相關內容
+      items:
+      - guides/best-whatsapp-multi-account-software
+      - multiple-telegram-accounts
+      - pricing
+  compare:
+    title: WhatsApp 和 Telegram 多帳號 + 翻譯：哪種方法最好？
+    description: WhatsApp 網頁版、Telegram 桌面版、瀏覽器多使用者、翻譯外掛，還是多開軟體？為跨境團隊做的客觀對比。
+    short: 對比
+    icon: ⚖️
+    og_heading: GlotChat 與其他多帳號翻譯方法對比
+    blocks:
+    - type: hero
+      k: 對比
+      h1: GlotChat 與其他方法對比：<span class="grad">多帳號聊天 + 翻譯</span>
+      lead: 有些免費方法能做到 GlotChat 的一部分功能。下面客觀地看看每種方法 —— 以及什麼時候值得為 GlotChat 付費。
+      cta2:
+      - '#compare'
+      - 直接看對比表
+    - type: table
+      id: compare
+      k: 逐項對比
+      h: 各種方法對比
+      hl: 5
+      cols:
+      - ''
+      - WhatsApp 網頁版 / Telegram 桌面版
+      - 瀏覽器多使用者
+      - 翻譯外掛
+      - 多開軟體
+      - GlotChat
+      rows:
+      - - 多個帳號一個視窗
+        - ✕
+        - ~ 每個一個視窗
+        - ✕
+        - ✓
+        - ✓ 實測 27+
+      - - WhatsApp 和 Telegram 在一起
+        - ✕
+        - '~'
+        - ✕
+        - ~ 部分
+        - ✓
+      - - 收到的訊息自動翻譯
+        - ✕
+        - ✕
+        - ✓
+        - ~ 部分
+        - ✓
+      - - 回覆傳送前翻譯
+        - ✕
+        - ✕
+        - '~'
+        - ~ 部分
+        - ✓
+      - - 看到客戶將讀到的內容
+        - ✕
+        - ✕
+        - ✕
+        - ✕ 一般沒有
+        - ✓
+      - - 語音轉文字
+        - ✕
+        - ✕
+        - ✕ 一般沒有
+        - ~ 少見
+        - ✓ 約 100 種語言
+      - - 圖片文字翻譯
+        - ✕
+        - ✕
+        - ✕
+        - ✕ 一般沒有
+        - ✓
+      - - 訊息留在你的電腦上
+        - ✓
+        - ✓
+        - ✕ 一般走雲端
+        - ~ 視情況
+        - ✓ 離線
+      - - 一般費用
+        - 免費
+        - 免費
+        - 免費 / 按月
+        - 按帳號按月收費
+        - 每年 69 USDT 起
+      note: 以上是各類工具的一般情況對比，不針對某一具體產品。功能會變化 —— 選擇任何工具前請核實細節。
+    - type: cards
+      soft: true
+      k: 怎麼選
+      h: 選擇適合你的方法
+      cols: 2
+      items:
+      - icon: 📱
+        h: 只有兩個號碼、只說一種語言
+        p: 一個號碼用 WhatsApp 桌面版，另一個用瀏覽器裡的網頁版，免費又夠用。
+      - icon: 🧩
+        h: 一個帳號、偶爾翻譯
+        p: 瀏覽器翻譯外掛可以用 —— 但你的訊息通常會被髮送到線上翻譯服務。
+      - icon: 🗂
+        h: 多個帳號、只說一種語言
+        p: 瀏覽器多使用者或多開軟體都能隔離會話。用瀏覽器多使用者會有很多視窗，不好管理。
+      - icon: 🌍
+        h: 多個帳號、客戶說外語
+        p: 這正是 GlotChat 的用途：WhatsApp 和 Telegram 一個視窗，聊天、語音、圖片全部翻譯，每條回覆都可核對，不經過雲端。
+        link: pricing
+    - type: faq
+      k: 常見問題
+      h: 對比常見問題
+      items:
+      - - GlotChat 比翻譯外掛好在哪裡？
+        - 一個帳號、偶爾翻譯，外掛可能就夠了。GlotChat 多了：多個 WhatsApp 和 Telegram 帳號一個視窗、語音和圖片翻譯、傳送前核對回覆，而且在電腦上離線翻譯，不會把聊天傳送到網頁服務。
+      - - WhatsApp 網頁版和 Telegram 桌面版都免費，為什麼要付費？
+        - 它們一次只顯示一個帳號，也不翻譯你的回覆。號碼多、客戶說外語時，來回切換和複製貼上浪費的時間，很快就超過 GlotChat 的價格。
+      - - 可以先試用再決定嗎？
+        - 可以 —— 免費試用 3 天，全部功能可用。在你真實的帳號上和現在的方法比一比。
+    - type: related
+      k: 詳細瞭解
+      h: 仔細看看
+      items:
+      - multiple-whatsapp-accounts
+      - multiple-telegram-accounts
+      - pricing
+  for/real-estate:
+    title: 房產中介 WhatsApp 多開 + 翻譯 – 用買家的語言回覆
+    description: 所有經紀人的 WhatsApp 號碼在一個視窗，用外國買家的語言回覆——聊天、語音和證件照片都能翻譯。免費試用。
+    keywords: 房產中介WhatsApp,海外房產客戶溝通,WhatsApp多開,WhatsApp翻譯
+    short: 房產中介
+    nav_sub: 外國買家，每位經紀人的號碼
+    icon: 🏠
+    og_heading: 房產 WhatsApp：每位經紀人的號碼，每位買家的語言
+    blocks:
+    - type: hero
+      k: 房產中介適用
+      h1: 用外國買家的語言回覆——<span class="grad">覆蓋每位經紀人的號碼</span>
+      lead: 來自俄羅斯、海灣地區、歐洲和亞洲的買家在 WhatsApp 上諮詢房源，而且常發語音。GlotChat 把所有經紀人的號碼放進一個視窗，並翻譯每條訊息、語音和證件照片。
+      media: video:chat
+      media_alt: 在 GlotChat 中翻譯的一條房源諮詢
+    - type: cards
+      k: 問題所在
+      h: 中介在 WhatsApp 上流失客戶的地方
+      items:
+      - icon: 🕐
+        h: 首次回覆太慢
+        p: 買家晚上 9 點用俄語發來訊息，等有人翻譯好，他已經問了另外三家中介。
+      - icon: 🎤
+        h: 聽不懂的語音
+        p: 阿拉伯語或中文的長語音沒人回覆，因為團隊裡沒人懂這種語言。
+      - icon: 📱
+        h: 一人一部手機
+        p: 客戶分散在很多號碼和手機上，經理看不到誰在等回覆，訊息常被漏掉。
+    - type: cards
+      soft: true
+      k: 使用 GlotChat
+      h: 每個號碼上的每條諮詢都能看懂
+      items:
+      - icon: 🗂
+        h: 所有經紀人號碼一個視窗
+        p: 買賣、租賃、期房、每位經紀人——每個號碼清楚標註，集中在一處。
+      - icon: 🌐
+        h: 用買家的語言回覆
+        p: 你用中文或英文寫，買家收到俄語、阿拉伯語、法語、土耳其語……
+      - icon: 🎤
+        h: 語音轉文字
+        p: 幾秒鐘看懂長語音，並附帶譯文。
+      - icon: 🖼
+        h: 識別證件和截圖
+        p: 護照頁、付款憑證、帶備註的戶型圖——識別並翻譯。
+      - icon: ⚡
+        h: 房源快捷回覆
+        p: 儲存價格、看房、付款方式等常用回覆，為每位買家自動翻譯。
+      - icon: 🛡
+        h: 客戶資料保密
+        p: 翻譯在你的電腦上完成——買家的訊息不會傳送給線上翻譯。
+    - type: faq
+      k: 常見問題
+      h: 房產中介常見問題
+      items:
+      - - 每位經紀人可以保留自己的 WhatsApp 號碼嗎？
+        - 可以。每個號碼在 GlotChat 裡都是獨立隔離的帳號。可以按經紀人或專案命名，通知總會顯示訊息發到了哪個號碼。
+      - - 買家的訊息能從哪些語言翻譯過來？
+        - 文字支援 49 種語言——包括俄語、阿拉伯語、中文、印地語、波斯語、法語、德語和土耳其語——語音約 100 種語言。
+      - - 幾位經紀人能在不同電腦上使用嗎？
+        - 企業版支援最多 3 台電腦。團隊更大的話，請獲取定製報價。
+    - type: related
+      k: 更多
+      h: 相關內容
+      items:
+      - whatsapp-translator
+      - multiple-whatsapp-accounts
+      - pricing
+  for/clinics:
+    title: 診所和醫療旅遊 WhatsApp 翻譯 – 用患者的語言回覆
+    description: 在 WhatsApp 上用國際患者的語言回覆。每位顧問的號碼在一個視窗，語音和圖片離線翻譯。
+    keywords: 醫療旅遊WhatsApp,診所WhatsApp翻譯,國際患者溝通,WhatsApp多開
+    short: 診所和醫療旅遊
+    nav_sub: 國際患者，每位顧問
+    icon: 🩺
+    og_heading: 醫療旅遊 WhatsApp：用每位患者的語言回覆
+    blocks:
+    - type: hero
+      k: 診所和醫療旅遊適用
+      h1: 用國際患者<span class="grad">自己的語言</span>回覆
+      lead: 植髮、牙科、整形和治療類診所的大部分諮詢都來自 WhatsApp——英語、德語、阿拉伯語、俄語等。GlotChat 把每位顧問的號碼放進一個視窗，並離線翻譯每條訊息。
+      media: video:voice
+      media_alt: 一條患者語音被轉寫並翻譯
+    - type: cards
+      k: 為什麼重要
+      h: 患者會選擇回覆最快、最清楚的診所
+      items:
+      - icon: ⏱
+        h: 速度決定成交
+        p: 患者會同時諮詢多家診所。用他的語言快速、清楚地回覆，他才會預約。
+      - icon: 🗣
+        h: 不是每位顧問都會每種語言
+        p: 有了翻譯，任何一位顧問都能回覆德語、阿拉伯語或俄語患者。
+      - icon: 🔒
+        h: 健康資訊很敏感
+        p: 把患者訊息貼上到線上翻譯，等於傳送給第三方。GlotChat 在你的電腦上翻譯。
+    - type: cards
+      soft: true
+      k: 使用 GlotChat
+      h: 每位顧問、每種語言，一個視窗
+      items:
+      - icon: 🗂
+        h: 所有顧問號碼集中
+        p: 每個號碼獨立隔離並標註——按顧問、科室或國家。
+      - icon: 🎤
+        h: 語音轉文字
+        p: 患者常用語音描述病情，幾秒鐘就能看到翻譯後的文字。
+      - icon: 🖼
+        h: 圖片和報告
+        p: 識別患者發來的病歷、處方和檢查結果中的文字。
+      - icon: ⚡
+        h: 快捷回覆
+        p: 儲存價格、套餐、行程和術後護理等回覆，為每位患者自動翻譯。
+      - icon: 🔔
+        h: 不漏掉任何諮詢
+        p: 通知會顯示訊息發到了哪位顧問的號碼。
+      - icon: 🛡
+        h: 離線翻譯
+        p: 患者訊息不會傳送給谷歌、DeepL 或 AI 服務。
+    - type: faq
+      k: 常見問題
+      h: 診所常見問題
+      items:
+      - - 翻譯用於醫療話題夠準確嗎？
+        - 日常患者溝通很可靠——諮詢、預約、價格、行程。診斷、知情同意書或醫囑等內容，最終措辭請由專業人員核對。
+      - - 患者訊息會被髮送到伺服器嗎？
+        - 不會。翻譯、語音轉寫和圖片識別都在你自己的電腦上執行。WhatsApp 本身照常使用。
+      - - 可以在多台電腦上使用嗎？
+        - 企業版包含最多 3 台電腦。團隊更大可以獲取定製報價。
+    - type: related
+      k: 更多
+      h: 相關內容
+      items:
+      - whatsapp-translator
+      - multiple-whatsapp-accounts
+      - pricing
+  for/exporters:
+    title: 外貿 WhatsApp 多開 + 翻譯 – 用中文和海外買家溝通
+    description: 用中文寫，海外買家收到阿拉伯語、西班牙語、俄語或葡萄牙語。多個外貿號碼一個視窗，訂單照片和語音也能翻譯。
+    keywords: 外貿WhatsApp,外貿翻譯軟體,外貿WhatsApp多開,WhatsApp開發客戶,海外買家溝通,用中文回覆外國客戶,跨境電商WhatsApp
+    short: 外貿和批發商
+    nav_sub: 海外買家和供應商
+    icon: 🚢
+    og_heading: 外貿 WhatsApp：用每位買家的語言溝通
+    blocks:
+    - type: hero
+      k: 外貿、貿易商和批發商適用
+      h1: 用 49 種語言和買家溝通——<span class="grad">你只需用中文寫</span>
+      lead: 報價、樣品、付款條件和物流更新都在 WhatsApp 上進行。GlotChat 把所有銷售號碼放進一個視窗，離線翻譯每條訊息、語音和訂單照片。
+      media: video:photo
+      media_alt: 在 GlotChat 中翻譯的一張訂單截圖
+    - type: cards
+      k: 為外貿打造
+      h: 你的銷售團隊會有哪些變化
+      items:
+      - icon: 💬
+        h: 用買家的語言談判
+        p: 海灣、拉美、非洲和中亞的買家用阿拉伯語、西班牙語、葡萄牙語、法語或俄語閱讀你的報價。
+      - icon: 🧾
+        h: 看懂訂單和憑證
+        p: 採購訂單、銀行水單和裝箱單照片——識別並翻譯文字。
+      - icon: 🎤
+        h: 聽懂語音
+        p: 海外買家很愛發語音。直接看到翻譯後的文字。
+      - icon: 🗂
+        h: 一個市場一個號碼
+        p: 按國家、產品線或業務員分開號碼——全部在一個視窗。
+      - icon: ⚡
+        h: 報價快捷回覆
+        p: 價格、起訂量、交期和付款條件儲存一次，為每位買家自動翻譯。
+      - icon: 🀄
+        h: 簡體中文介面
+        p: 團隊可以完全用中文操作 GlotChat，並用中文寫回復。
+    - type: faq
+      k: 常見問題
+      h: 外貿常見問題
+      items:
+      - - 我們用中文寫，買家能收到阿拉伯語或西班牙語嗎？
+        - 能。你用中文寫，買家收到他的語言。GlotChat 介面也有簡體中文版。
+      - - 能執行多少個銷售號碼？
+        - 專業版最多 15 個 WhatsApp 帳號，企業版不限。我們實測過一台電腦同時執行 27 個帳號。
+      - - 可以用 USDT 付款嗎？
+        - 可以——所有套餐都用 USDT 付款（TRC20、BEP20 或 ERC20）。
+    - type: related
+      k: 更多
+      h: 相關內容
+      items:
+      - whatsapp-translator
+      - multiple-whatsapp-accounts
+      - pricing
+  for/travel:
+    title: 旅行社 WhatsApp 翻譯 – 用每位遊客的語言回覆
+    description: 在 WhatsApp 上處理來自世界各地遊客的預訂和諮詢。所有預訂號碼一個視窗，聊天和語音離線翻譯。
+    keywords: 旅行社WhatsApp,遊客溝通翻譯,WhatsApp多開,WhatsApp翻譯
+    short: 旅遊和旅行社
+    nav_sub: 來自各國的遊客
+    icon: ✈️
+    og_heading: 旅遊 WhatsApp：用每位遊客的語言回覆
+    blocks:
+    - type: hero
+      k: 旅行社和地接社適用
+      h1: 用每位遊客的語言回覆——<span class="grad">一台電腦搞定</span>
+      lead: 預訂、接送時間、改期和臨時問題，以十幾種語言出現在 WhatsApp 上。GlotChat 把所有預訂號碼放進一個視窗，訊息一到就自動翻譯。
+      media: video:chat
+      media_alt: 在 GlotChat 中翻譯的一條遊客預訂諮詢
+    - type: cards
+      k: 使用 GlotChat
+      h: 與遊客溝通，不再有語言障礙
+      items:
+      - icon: 🌍
+        h: 用遊客的語言回覆
+        p: 法語、義大利語、德語、阿拉伯語、俄語、中文——遊客讀到的是他自己的語言。
+      - icon: 🗂
+        h: 所有預訂號碼集中
+        p: 跟團、接送、酒店或合作伙伴各用一個號碼——一個視窗，清楚標註。
+      - icon: 🎤
+        h: 路上發來的語音
+        p: 遊客在機場或行程中發語音，直接看到翻譯後的文字。
+      - icon: 🖼
+        h: 票據和截圖
+        p: 識別遊客以照片發來的預訂確認、車票和地圖。
+      - icon: ⚡
+        h: 快捷回覆
+        p: 集合地點、行程安排、注意事項——儲存一次，為每位遊客自動翻譯。
+      - icon: 🔔
+        h: 旺季也不漏訊息
+        p: 通知會顯示訊息發到了哪個號碼。
+    - type: faq
+      k: 常見問題
+      h: 旅行社常見問題
+      items:
+      - - 遊客會發現訊息是翻譯的嗎？
+        - 不會。他們只是收到用自己語言寫的訊息。
+      - - 團隊用中文或英文、遊客用其他語言，可以嗎？
+        - 可以。每位客服用自己的語言閱讀和回覆，遊客收到他自己的語言。
+      - - 開始需要準備什麼？
+        - 一台 Windows 10 或 11 電腦，以及要新增的 WhatsApp 號碼對應的手機（掃碼一次）。免費試用大約 10 分鐘即可設定好。
+    - type: related
+      k: 更多
+      h: 相關內容
+      items:
+      - whatsapp-translator
+      - multiple-whatsapp-accounts
+      - pricing
+  guides:
+    title: WhatsApp 教學 – 多開、翻譯與跨境銷售
+    description: 實用教學：如何在電腦上使用多個 WhatsApp 帳號，以及如何為國際客戶翻譯 WhatsApp 訊息、語音和圖片。
+    keywords: WhatsApp教學,WhatsApp多開教學,WhatsApp翻譯教學,外貿WhatsApp技巧
+    short: 教學
+    icon: 📘
+    og_heading: 教學：電腦 WhatsApp 多開與翻譯
+    blocks:
+    - type: hero
+      k: 教學
+      h1: 實用的 WhatsApp 教學，<span class="grad">專為跨境業務</span>
+      lead: 一步步教你在電腦上執行多個 WhatsApp 號碼，以及和說其他語言的客戶溝通。
+      no_cta: true
+    - type: guides_list
+  guides/multiple-whatsapp-accounts-on-pc:
+    title: 如何在一台電腦上使用多個 WhatsApp 帳號（2026）
+    description: 在 Windows 上執行兩個或更多 WhatsApp 帳號的 3 種方法：桌面版 + 網頁版、瀏覽器多配置或多開軟體。步驟、限制和技巧。
+    keywords: WhatsApp多開教學,電腦登入多個WhatsApp,WhatsApp電腦版多開,WS多開方法
+    short: 電腦 WhatsApp 多開
+    icon: 🗂
+    article: true
+    published: '2026-10-11'
+    updated: '2026-10-11'
+    og_heading: 如何在一台電腦上使用多個 WhatsApp 帳號
+    blocks:
+    - type: hero
+      k: 教學
+      h1: 如何在一台電腦上使用多個 WhatsApp 帳號
+      lead: 2026 年仍然有效的三種方法——從免費的雙開技巧到在一個視窗執行幾十個號碼——包括步驟、限制和注意事項。
+      no_cta: true
+    - type: prose
+      toc: true
+      md: |
+        很多企業不止一個 WhatsApp 號碼：每個店鋪、每個國家、每位業務員各一個。在手機上，這意味著好幾部手機；在電腦上，你有三個不錯的選擇。
+
+        > **簡短回答：**兩個帳號的話，一個用 WhatsApp 桌面版，另一個用瀏覽器裡的 WhatsApp 網頁版。超過兩個，用瀏覽器多配置或 GlotChat 這樣的多開軟體。
+
+        ## 首先需要準備什麼
+
+        - **每個 WhatsApp 帳號一部手機。**每個帳號對應一個手機號，需要用這部手機掃碼連結到電腦（WhatsApp → *已連結的裝置*）。
+        - **記憶體足夠的 Windows 電腦。**每個開啟的 WhatsApp 帳號約佔用 300–450 MB 記憶體。8 GB 約可執行 10 個帳號；20–30 個帳號建議 16 GB 或以上。
+        - **手機要偶爾上線。**手機關機時已連結的裝置照常工作，但如果手機本身約 14 天不使用，WhatsApp 會讓連結裝置退出登入。
+
+        ## 方法一：WhatsApp 桌面版 + 網頁版（2 個帳號，免費）
+
+        1. 在 Microsoft Store 安裝 **WhatsApp**，連結第一個號碼。
+        2. 在瀏覽器開啟 **web.whatsapp.com**，連結第二個號碼。
+        3. 兩個都保持開啟。通知來自兩個不同的程式，所以能分清。
+
+        **適合：**兩個號碼。**限制：**第三個帳號需要另一個瀏覽器，而且不會翻譯。
+
+        ## 方法二：瀏覽器多配置（多個帳號，免費）
+
+        1. 在 Chrome 或 Edge 中點選頭像 → **新增個人資料**，每個 WhatsApp 號碼建一個，並起個清楚的名字。
+        2. 在每個個人資料裡開啟 **web.whatsapp.com**，各連結一個號碼。
+        3. 把每個個人資料固定到工作列，方便快速開啟。
+
+        **適合：**三到五個號碼。**限制：**每個帳號一個視窗，通知不能清楚顯示屬於哪個號碼，每條訊息仍需手動翻譯。
+
+        ## 方法三：多開軟體（多個帳號，一個視窗）
+
+        多開桌面軟體讓每個 WhatsApp 帳號在同一個視窗裡的獨立會話中執行。使用 **GlotChat**：
+
+        1. 在 Windows 10 或 11 上安裝 GlotChat，為每個號碼點選 **新增帳號**。
+        2. 用該號碼的手機掃碼（WhatsApp → *已連結的裝置*），並給帳號命名——「Shop UAE」「銷售 — Ahmed」。
+        3. 一鍵或用 **Ctrl+K** 切換。每條通知都顯示屬於哪個帳號。
+        4. 開啟翻譯：收到的訊息在原文下方顯示譯文，你的回覆在傳送前自動翻譯。
+
+        **適合：**號碼多，而且客戶說其他語言。我們實測過 27 個帳號同時執行。
+
+        ## 應該選哪種方法？
+
+        | | 桌面版 + 網頁版 | 瀏覽器多配置 | 多開軟體 |
+        |---|---|---|---|
+        | 帳號數量 | 2 個 | 3–5 個比較舒服 | 很多（GlotChat 實測 27+） |
+        | 一個視窗 | 否 | 否 | 是 |
+        | 通知顯示所屬帳號 | 部分 | 部分 | 是 |
+        | 翻譯 | 否 | 否 | 是（GlotChat） |
+        | 費用 | 免費 | 免費 | 付費（GlotChat 每年 69 USDT 起） |
+
+        ## 這樣做合規嗎？帳號會被封嗎？
+
+        把帳號連結到 WhatsApp 網頁版是 WhatsApp 的官方功能，三種方法都用的是它。導致封號的是**行為**：垃圾訊息、給沒要求的人群發訊息，以及修改版 WhatsApp（如「GB WhatsApp」）。像用手機一樣正常使用，就沒問題。
+
+        ## 運營多個號碼的技巧
+
+        - **給每個帳號命名**——店鋪、國家或人名。到第 10 個號碼時你會感謝自己。
+        - **儲存快捷回覆**，應對每天都會被問到的問題。
+        - **讓不常用的帳號休眠**，保持電腦流暢。
+        - **用客戶的語言回覆。**這是贏得買家最快的方法——有了內建翻譯，不會多花一點時間。
+
+        想在你自己的號碼上試試方法三？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+    - type: faq
+      k: 常見問題
+      h: 快速解答
+      items:
+      - - 一台電腦能用兩個 WhatsApp 帳號嗎？
+        - 能。最簡單的方法：一個帳號用 WhatsApp 桌面版，另一個用瀏覽器裡的 WhatsApp 網頁版。
+      - - 一台電腦最多能用多少個 WhatsApp 帳號？
+        - 每個帳號在獨立會話中執行時沒有固定上限，限制在於記憶體。GlotChat 實測過 27 個帳號同時執行。
+      - - 手機需要一直開著嗎？
+        - 不需要，手機關機時連結裝置照常工作。但每部手機至少每兩週開啟一次 WhatsApp，否則連結裝置會退出登入。
+    - type: related
+      k: 繼續閱讀
+      h: 下一篇
+      items:
+      - guides/translate-whatsapp-messages-on-pc
+      - multiple-whatsapp-accounts
+      - compare
+  guides/translate-whatsapp-messages-on-pc:
+    title: 如何在電腦上翻譯 WhatsApp 訊息（文字、語音、圖片）
+    description: 在電腦上翻譯 WhatsApp 聊天的方法：複製貼上、瀏覽器外掛或內建翻譯——以及語音、圖片翻譯和隱私建議。
+    keywords: WhatsApp翻譯教學,WhatsApp訊息翻譯,WhatsApp語音翻譯,WhatsApp圖片翻譯,電腦版WhatsApp翻譯
+    short: 電腦翻譯 WhatsApp
+    icon: 🌐
+    article: true
+    published: '2026-10-11'
+    updated: '2026-10-11'
+    og_heading: 如何在電腦上翻譯 WhatsApp 訊息、語音和圖片
+    blocks:
+    - type: hero
+      k: 教學
+      h1: 如何在電腦上翻譯 WhatsApp 訊息——文字、語音和圖片
+      lead: 從免費手動到全自動的各種方法，每種方法如何處理客戶的訊息，以及讓客戶信任的翻譯技巧。
+      no_cta: true
+    - type: prose
+      toc: true
+      md: |
+        當客戶用你不會的語言寫訊息，每一條都變成一個小專案。下面是在電腦上翻譯 WhatsApp 的幾種方法，從最簡單到最快。
+
+        > **簡短回答：**偶爾幾條訊息，複製到線上翻譯即可。每天都要和外國客戶溝通，就用內建在 WhatsApp 裡的翻譯——最好也能處理語音和圖片，並且在你的電腦上翻譯，保護聊天隱私。
+
+        ## 方法一：複製貼上到線上翻譯（免費，手動）
+
+        1. 在 WhatsApp 網頁版或桌面版中選中訊息並複製。
+        2. 貼上到線上翻譯，閱讀結果。
+        3. 寫好回覆，翻譯，複製，再貼上回 WhatsApp。
+
+        **適合：**每天幾條訊息。**缺點：**每條 20–40 秒，容易貼上到錯誤的聊天，而且客戶的文字會被髮送到翻譯網站。
+
+        ## 方法二：WhatsApp 網頁版翻譯外掛
+
+        翻譯外掛會給 WhatsApp 網頁版加上翻譯按鈕或自動翻譯。
+
+        **適合：**一個帳號、只翻譯文字。**缺點：**通常只支援一個帳號，不支援語音和圖片，而且大多數外掛會把訊息傳送到線上服務進行翻譯。用於客戶資料前，請先檢視外掛的隱私政策。
+
+        ## 方法三：WhatsApp 桌面軟體內建翻譯
+
+        有些桌面軟體直接在 WhatsApp 裡翻譯。**GlotChat** 為你新增的每個帳號都提供翻譯：
+
+        1. **收到的訊息**自動翻譯，譯文顯示在原文下方。
+        2. **你的回覆**用你的語言寫，傳送前自動翻譯——你會先看到譯文。
+        3. **語音訊息：**點選*轉文字*，把語音轉成文字並翻譯。
+        4. **圖片：**點選*識別文字*，識別並翻譯發票、價目表或截圖。
+
+        翻譯**在你的電腦上離線執行**，支援 49 種語言，訊息不會傳送給谷歌、DeepL 或 AI 服務。
+
+        ## 如何翻譯 WhatsApp 語音訊息
+
+        語音訊息需要先轉成文字（轉寫）才能翻譯。在手機上可以把語音放給翻譯軟體的麥克風聽，但又慢又不可靠。在 GlotChat 中，語音訊息下的*轉文字*按鈕會在你的電腦上一次完成兩步，支援約 100 種語言。
+
+        ## 如何翻譯圖片和截圖中的文字
+
+        客戶會發來訂單、收據和文件的照片。需要先識別圖片中的文字（OCR），再翻譯。GlotChat 的*識別文字*支援拉丁文、阿拉伯文、西里爾文、中文、韓文、泰文等多種文字。
+
+        ## 哪種方法適合你？
+
+        | | 複製貼上 | 瀏覽器外掛 | GlotChat |
+        |---|---|---|---|
+        | 自動 | 否 | 通常是 | 是 |
+        | 翻譯你的回覆 | 手動 | 有時 | 是，可預覽 |
+        | 語音訊息 | 否 | 很少 | 是 |
+        | 圖片 | 否 | 否 | 是 |
+        | 多個帳號 | 否 | 通常否 | 是 |
+        | 訊息留在你的電腦 | 否 | 通常否 | 是 |
+
+        ## 讓客戶信任的翻譯技巧
+
+        - **寫簡短清楚的句子。**一句話說一件事，翻譯效果最好。
+        - **仔細核對數字。**價格、日期、數量和地址最重要——在譯文預覽中確認無誤。
+        - **回覆中避免俚語和成語。**
+        - **保留原文。**重要內容，也要回看客戶的原始訊息。
+        - **合同請人工核對。**機器翻譯非常適合日常溝通；法律或醫療措辭值得人工檢查。
+
+        不想再複製貼上了？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+    - type: faq
+      k: 常見問題
+      h: 快速解答
+      items:
+      - - WhatsApp 網頁版能翻譯訊息嗎？
+        - WhatsApp 網頁版沒有內建翻譯。你需要把訊息複製到翻譯工具、使用外掛，或使用內建翻譯的桌面軟體，比如 GlotChat。
+      - - 如何在電腦上翻譯 WhatsApp 語音訊息？
+        - 先把語音轉成文字，再翻譯。GlotChat 一鍵完成兩步，離線執行，支援約 100 種語言。
+      - - 把客戶訊息貼上到線上翻譯安全嗎？
+        - 這會把文字傳送給第三方。涉及個人、醫療或財務資訊時，請使用在你自己電腦上離線執行的翻譯工具。
+    - type: related
+      k: 繼續閱讀
+      h: 下一篇
       items:
       - guides/multiple-whatsapp-accounts-on-pc
-      - guides/translate-whatsapp-messages-on-pc
-      - compare
-
-  pricing:
-    title: "GlotChat 價格 – 每年 69 USDT 起，免費試用"
-    description: "GlotChat 套餐：入門版 69、專業版 129、企業版 249 USDT/年。包含全部功能，免費試用 3 天，USDT 付款。檢視套餐對比與限制。"
-    keywords: "GlotChat價格,WhatsApp多開軟體價格,WhatsApp翻譯軟體價格,WhatsApp多開免費試用,USDT付款"
-    short: "價格"
-    icon: "💳"
-    og_heading: "簡單的年度套餐，全部功能，免費試用 3 天"
-    blocks:
-      - type: hero
-        k: "價格"
-        h1: '簡單的年度套餐，<span class="grad">先免費試用全部功能</span>'
-        lead: "一年一個價格，全部功能，全部更新。先免費試用 3 天——無需付款，無需綁卡，也不用取消訂閱。"
-        cta2: ["#pricing", "檢視套餐"]
-      - type: plans
-        soft: false
-        k: "套餐"
-        h: "按你使用的 WhatsApp 號碼數量選擇"
-        p: "不確定選哪個？回答一個問題，我們幫你推薦。"
-      - type: steps
-        id: buy
-        soft: false
-        k: "購買流程"
-        h: "從試用到正式版，只需 3 步"
-        items:
-          - ["在 Telegram 聯絡我們", "選好套餐，傳送你的機器碼——在 GlotChat 的 設定 → 授權 中可以看到，並有複製按鈕。"]
-          - ["用 USDT 付款", "支援 TRC20、BEP20、ERC20。我們會發給你準確的地址和金額——無需信用卡，無需註冊帳號。"]
-          - ["貼上啟用碼", "年度啟用碼幾分鐘內發給你。在 GlotChat → 設定 → 輸入新啟用碼 中貼上即可。帳號、登入和設定全部保留。"]
-      - type: table
-        soft: true
-        k: "套餐對比"
-        h: "每個套餐包含什麼"
-        hl: 2
-        cols: ["", "入門版", "專業版", "企業版"]
-        rows:
-          - ["WhatsApp 帳號", "最多 5 個", "最多 15 個", "不限"]
-          - ["電腦數量", "1", "1", "最多 3 台"]
-          - ["雙向聊天翻譯（49 種語言）", "✓", "✓", "✓"]
-          - ["語音 → 文字（約 100 種語言）", "✓", "✓", "✓"]
-          - ["圖片文字翻譯", "✓", "✓", "✓"]
-          - ["快捷回覆模板", "✓", "✓", "✓"]
-          - ["按帳號區分通知", "✓", "✓", "✓"]
-          - ["簡體簡體中文 / 英文介面", "✓", "✓", "✓"]
-          - ["一年內所有更新", "✓", "✓", "✓"]
-          - ["安裝協助", "Telegram 支援", "✓ 協助安裝", "✓ 優先支援"]
-          - ["每年價格", "69 USDT", "129 USDT", "249 USDT"]
-      - type: calc
-        k: "值不值得？"
-        h: "把價格和你今天浪費的時間比一比"
-        p: "專業版每月約 10.75 USDT。看看它能替你省下多少小時的複製貼上翻譯。"
-      - type: faq
-        soft: true
-        k: "付款問題"
-        h: "付款、續費和升級"
-        items:
-          - ["免費試用怎麼進行？", "下載並安裝 GlotChat，然後在軟體裡點選「開始 3 天免費試用」。試用立即開始，全部功能開放。無需任何付款資訊，每台電腦可免費試用一次。"]
-          - ["怎麼付款？", "使用 USDT，支援 TRC20、BEP20 或 ERC20。我們在 Telegram 上發給你收款地址，到帳後立即傳送一年金鑰。"]
-          - ["價格按帳號還是按電腦計算？", "按套餐計算。每個套餐包含一定數量的 WhatsApp 帳號和電腦（入門版和專業版：1 台電腦；企業版：最多 3 台）。"]
-          - ["一年到期後怎麼辦？", "按相同價格續費即可繼續使用，不會中斷。你的帳號、聊天和設定一直儲存在你的電腦上。"]
-          - ["可以升級或增加電腦嗎？", "可以，隨時都行。只需補足剩餘時間的差價。需要更多電腦或終身授權，請獲取定製報價。"]
-          - ["包含更新嗎？", "包含。你這一年內釋出的所有更新都免費，並會自動安裝。"]
-      - type: related
-        k: "購買前"
-        h: "看看你能得到什麼"
-        items: ["whatsapp-translator", "multiple-whatsapp-accounts", "compare"]
-
-  whatsapp-translator:
-    title: "WhatsApp 自動翻譯電腦版 – 聊天、語音、圖片即時翻譯"
-    description: "在電腦上雙向翻譯 WhatsApp 聊天：文字、語音訊息和圖片中的文字，49 種語言，離線且保護隱私。免費試用 3 天。"
-    keywords: "WhatsApp翻譯,WhatsApp自動翻譯,WhatsApp即時翻譯,WhatsApp翻譯外掛,WhatsApp翻譯軟體,WhatsApp語音翻譯,WhatsApp圖片翻譯,WS翻譯,外貿聊天翻譯"
-    short: "WhatsApp 翻譯"
-    icon: "🌐"
-    og_heading: "WhatsApp 翻譯電腦版——聊天、語音、圖片，離線翻譯"
-    blocks:
-      - type: hero
-        k: "WhatsApp 翻譯電腦版"
-        h1: '翻譯每一條 WhatsApp 聊天——<span class="grad">雙向翻譯，就在 WhatsApp 裡</span>'
-        lead: "客戶訊息的譯文顯示在原文下方；你的回覆在傳送前自動翻譯。語音和圖片也一樣——49 種語言，在你自己的電腦上離線完成。"
-        media: "video:chat"
-        media_alt: "GlotChat 中一段在中文與西班牙語之間翻譯的 WhatsApp 聊天"
-        cta2: ["#how", "瞭解原理"]
-      - type: steps
-        id: how
-        soft: false
-        k: "工作原理"
-        h: "每一段聊天裡發生的三件事"
-        items:
-          - ["客戶用他的語言寫", "每條收到的訊息，譯文都會自動顯示在原文下方。"]
-          - ["你用你的語言寫", "用自己的語言輸入回覆，GlotChat 會顯示譯文，傳送前你可以檢查。"]
-          - ["客戶收到他的語言", "客戶收到地道的譯文，而你的聊天裡仍然顯示你寫的原文。"]
-      - type: cards
-        soft: true
-        k: "不只是文字"
-        h: "客戶發來的一切，都能看懂"
-        items:
-          - {icon: "💬", h: "文字訊息", p: "每條收到的訊息自動翻譯，同時保留原文以便對照。"}
-          - {icon: "🎤", h: "語音訊息", p: "把語音訊息轉成文字並翻譯，可識別約 100 種語言。"}
-          - {icon: "🖼", h: "圖片和截圖", p: "識別發票、價目表、證件和截圖中的文字——拉丁文、阿拉伯文、西里爾文、中文、韓文、泰文等。"}
-          - {icon: "⚡", h: "快捷回覆", p: "常用回覆只需儲存一次，自動帶入客戶名字，並像你寫的內容一樣被翻譯。"}
-          - {icon: "🔁", h: "自動識別語言", p: "GlotChat 識別每個聊天的語言，巴西客戶和沙特客戶各自收到正確的語言。"}
-          - {icon: "🛡", h: "隱私優先", p: "翻譯在你的電腦上完成，客戶的訊息絕不會傳送給谷歌、DeepL 或 AI 服務。"}
-      - type: split
-        k: "離線 · 隱私"
-        h: "客戶的聊天內容永遠不離開你的電腦"
-        p: "線上翻譯和大多數瀏覽器外掛會把你要翻譯的文字傳送到它們的伺服器。GlotChat 使用在你電腦上執行的翻譯模型——每種語言只需下載一次，之後不會把任何一條訊息傳送出去。"
-        ticks: ["沒有翻譯訂閱費，不按字數收費", "網路慢也能翻譯——只有 WhatsApp 本身需要聯網", "醫療、法律和財務溝通更安全"]
-        media: "video:voice"
-        alt: "GlotChat 中一條被轉寫並翻譯的 WhatsApp 語音訊息"
-      - type: langs
-        soft: true
-        k: "49 種語言"
-        h: "以下任意語言之間都能互譯"
-        p: "任意組合都可以——阿拉伯語到中文、土耳其語到西班牙語、俄語到葡萄牙語。語音訊息可識別約 100 種語言。"
-      - type: faq
-        k: "常見問題"
-        h: "WhatsApp 翻譯常見問題"
-        items:
-          - ["電腦上能自動翻譯 WhatsApp 訊息嗎？", "可以。GlotChat 會自動翻譯每條收到的訊息，並把譯文顯示在原文下方，適用於你新增的每個帳號的每個聊天。"]
-          - ["客戶會知道我在用翻譯嗎？", "不會。客戶只是收到用他語言寫的訊息，聊天裡不會多出任何內容。"]
-          - ["能翻譯 WhatsApp 語音訊息嗎？", "能。在語音訊息下點選「轉文字」，GlotChat 會把它轉成文字並離線翻譯，可識別約 100 種語言。"]
-          - ["翻譯質量怎麼樣？", "日常商務溝通完全夠用——價格、訂單、預約、諮詢。合同或法律措辭等重要內容，請務必再請人核對。"]
-          - ["翻譯需要聯網嗎？", "只需在下載每種語言包時聯網一次，之後在你的電腦上離線翻譯。"]
-          - ["可以免費試用嗎？", "可以——3 天全部功能，無需付款。在 Telegram 聯絡我們領取金鑰。"]
-      - type: related
-        k: "繼續瞭解"
-        h: "相關內容"
-        items: ["multiple-whatsapp-accounts", "guides/translate-whatsapp-messages-on-pc", "pricing"]
-
-  multiple-whatsapp-accounts:
-    title: "WhatsApp 多開軟體 – 電腦一個視窗登入多個 WS 帳號"
-    description: "在 Windows 上同時執行 2 個、10 個甚至 27 個以上 WhatsApp 帳號。會話隔離、按帳號通知、Ctrl+K 切換，內建翻譯。"
-    keywords: "WhatsApp多開,WS多開,WhatsApp多開軟體,WhatsApp電腦版多開,WhatsApp多帳號登入,WhatsApp聚合聊天,一台電腦多個WhatsApp,WhatsApp Business多開"
-    short: "WhatsApp 多開"
-    icon: "🗂"
-    og_heading: "所有 WhatsApp 號碼，在電腦上一個視窗"
-    blocks:
-      - type: hero
-        k: "電腦 WhatsApp 多開"
-        h1: '你公司用的每一個 WhatsApp 號碼——<span class="grad">都在一個視窗裡</span>'
-        lead: "不用再來回切換手機、瀏覽器配置和 WhatsApp 網頁版標籤。GlotChat 讓每個帳號執行在獨立的會話裡，每條通知都標明屬於哪個號碼，切換瞬間完成。"
-        media: "video:accounts"
-        media_alt: "GlotChat 中並排執行的多個 WhatsApp 帳號"
-        cta2: ["#features", "檢視功能"]
-      - type: facts
-        label: "關鍵資料"
-        items: [["27+", "個帳號同時執行（實測）"], ["1", "個視窗全部搞定"], ["Ctrl+K", "瞬間找到任意帳號"], ["0", "登入混亂"]]
-      - type: cards
-        id: features
-        k: "為多號碼而生"
-        h: "輕鬆管理多個帳號所需的一切"
-        items:
-          - {icon: "🔒", h: "獨立會話", p: "每個帳號擁有獨立的登入、Cookie 和儲存——就像多台電腦，卻在一個軟體裡。"}
-          - {icon: "🔔", h: "按帳號區分通知", p: "每條通知都寫明所屬帳號，點一下就開啟正確的聊天。"}
-          - {icon: "⌨️", h: "Ctrl+K 切換器", p: "輸入幾個字就能跳到任意帳號，未讀數和狀態一目瞭然。"}
-          - {icon: "🏷", h: "名稱和顏色", p: "按店鋪、國家或業務員給帳號命名——「Shop UAE」「Clinic DE」「Ahmed — 銷售」。"}
-          - {icon: "🩹", h: "自動修復", p: "某個帳號卡死或崩潰會自動重啟，其他帳號照常工作。"}
-          - {icon: "💤", h: "記憶體控制", p: "檢視每個帳號的佔用，讓不常用的帳號休眠，電腦保持流暢。"}
-      - type: split
-        soft: true
-        k: "工作原理"
-        h: "真實的 WhatsApp 網頁版，更有條理"
-        p: "GlotChat 為每個帳號開啟官方 WhatsApp 網頁版。每個帳號只需用對應手機掃碼連結一次（WhatsApp → 已連結的裝置），之後會一直保持登入，重啟也不影響。"
-        ticks: ["支援 WhatsApp 和 WhatsApp Business", "你的手機照常使用", "GlotChat 絕不會自行傳送任何內容——一切由你掌控"]
-        media: "img:switcher"
-        alt: "GlotChat 帳號切換器中的 27 個 WhatsApp 帳號"
-        caption: "帳號切換器：每個號碼的狀態、記憶體和未讀訊息。"
-      - type: table
-        k: "你的選擇"
-        h: "在電腦上使用多個 WhatsApp 帳號的方法"
-        hl: 4
-        cols: ["", "WhatsApp 桌面版 + 網頁版", "瀏覽器多配置", "手機模擬器", "GlotChat"]
-        rows:
-          - ["帳號數量", "2 個", "多個，每個一個視窗", "多個，非常佔電腦資源", "實測 27+，一個視窗"]
-          - ["通知顯示所屬帳號", "~", "~", "✕", "✓"]
-          - ["一鍵切換", "✕", "✕", "✕", "✓ Ctrl+K"]
-          - ["卡死帳號自動重啟", "✕", "✕", "✕", "✓"]
-          - ["內建翻譯", "✕", "✕", "✕", "✓ 49 種語言"]
-          - ["費用", "免費", "免費", "免費 / 付費", "每年 69 USDT 起"]
-        note: "兩三個號碼用免費方法就夠了。號碼多、又要和說其他語言的客戶溝通時，才需要 GlotChat。"
-      - type: faq
-        soft: true
-        k: "常見問題"
-        h: "WhatsApp 多開常見問題"
-        items:
-          - ["一台電腦能執行多少個 WhatsApp 帳號？", "我們實測過 27 個同時執行。真正的限制是記憶體：每個帳號約佔 300–450 MB，8 GB 記憶體約可執行 10 個，16 GB 或以上可執行 20–30 個。"]
-          - ["每個帳號都需要一部手機嗎？", "是的。每個 WhatsApp 帳號對應一個手機號，需要用這部手機掃碼連結一次。之後手機不必放在電腦旁邊。"]
-          - ["帳號會被封嗎？", "GlotChat 使用官方 WhatsApp 網頁版，和在瀏覽器裡用 WhatsApp 一樣。封號來自 WhatsApp 禁止的行為——垃圾訊息、群發騷擾、修改版應用。正常使用就沒問題。"]
-          - ["支援 WhatsApp Business 嗎？", "支援——WhatsApp 和 WhatsApp Business 帳號都可以連結。"]
-          - ["兩個人能同時用同一批帳號嗎？", "每個帳號連結到一台電腦上的 GlotChat。團隊在多台電腦上使用，請選擇企業版（最多 3 台電腦）或獲取定製報價。"]
-      - type: related
-        k: "繼續瞭解"
-        h: "相關內容"
-        items: ["guides/multiple-whatsapp-accounts-on-pc", "whatsapp-translator", "pricing"]
-
-  compare:
-    title: "WhatsApp 多帳號 + 翻譯最佳方案對比（2026）"
-    description: "WhatsApp 網頁版、瀏覽器多配置、翻譯外掛還是多開軟體？客觀對比多個 WhatsApp 號碼加翻譯的各種方案。"
-    keywords: "WhatsApp多開軟體哪個好,WhatsApp翻譯外掛對比,WhatsApp多開方案,WhatsApp網頁版多開,WhatsApp翻譯軟體推薦"
-    short: "對比"
-    icon: "⚖️"
-    og_heading: "GlotChat 與其他 WhatsApp 多開 + 翻譯方案對比"
-    blocks:
-      - type: hero
-        k: "對比"
-        h1: 'GlotChat 與其他<span class="grad">WhatsApp 多開 + 翻譯方案</span>的對比'
-        lead: "GlotChat 的部分功能也有免費的替代方法。這裡客觀地看看每種方案——以及什麼時候值得為 GlotChat 付費。"
-        cta2: ["#compare", "直接看對比表"]
-      - type: table
-        id: compare
-        k: "並排對比"
-        h: "各方案對比"
-        hl: 5
-        cols: ["", "WhatsApp 網頁版 + 手機", "瀏覽器多配置", "翻譯外掛", "多開軟體", "GlotChat"]
-        rows:
-          - ["多個號碼在一個視窗", "✕", "~ 每個一個視窗", "✕", "✓", "✓ 實測 27+"]
-          - ["通知顯示所屬帳號", "✕", "~", "✕", "✓ 通常", "✓"]
-          - ["收到的訊息自動翻譯", "✕", "✕", "✓", "~ 部分有", "✓"]
-          - ["傳送前翻譯你的回覆", "✕", "✕", "~", "~ 部分有", "✓"]
-          - ["語音 → 文字", "✕", "✕", "✕ 通常沒有", "~ 很少", "✓ 約 100 種語言"]
-          - ["圖片文字翻譯", "✕", "✕", "✕", "✕ 通常沒有", "✓"]
-          - ["訊息留在你的電腦", "✓", "✓", "✕ 通常在雲端", "~ 視情況", "✓ 離線"]
-          - ["常見費用", "免費", "免費", "免費 / 按月", "按帳號按月", "每年 69 USDT 起"]
-        note: "這是各類常見工具的一般性對比，並非針對某一具體產品。功能會變化——請以你考慮的工具的具體說明為準。"
-      - type: cards
-        soft: true
-        k: "如何選擇"
-        h: "選擇適合你的方案"
-        cols: 2
-        items:
-          - {icon: "📱", h: "只有兩個號碼、一種語言", p: "一個號碼用 WhatsApp 桌面版，另一個用瀏覽器裡的網頁版，免費且夠用。"}
-          - {icon: "🧩", h: "一個號碼、偶爾翻譯", p: "在 WhatsApp 網頁版上裝翻譯外掛也可以——但你的訊息通常會被髮送到線上翻譯服務。"}
-          - {icon: "🗂", h: "多個號碼、一種語言", p: "瀏覽器多配置或多開軟體可以把會話分開。用瀏覽器配置會有更多視窗、更難統攬全域性。"}
-          - {icon: "🌍", h: "多個號碼、客戶說其他語言", p: "這正是 GlotChat 的強項：所有號碼一個視窗，每條聊天、語音和圖片都翻譯，而且不上傳雲端。", link: "pricing"}
-      - type: faq
-        k: "常見問題"
-        h: "對比常見問題"
-        items:
-          - ["GlotChat 比 WhatsApp 翻譯外掛好嗎？", "如果只有一個帳號、偶爾翻譯，外掛可能就夠了。GlotChat 增加了多帳號同視窗、語音和圖片翻譯、回覆翻譯，而且離線翻譯，不會把聊天傳送到網路服務。"]
-          - ["WhatsApp 網頁版免費，為什麼要付費？", "網頁版每個瀏覽器會話只能顯示一個帳號，也不翻譯。當你運營多個號碼、要和說其他語言的客戶溝通時，來回切換和複製貼上浪費的時間，很快就超過 GlotChat 套餐的費用。"]
-          - ["能先試用再決定嗎？", "可以——3 天全部功能，免費。在你的真實帳號上和現有方案比一比。"]
-      - type: related
-        k: "詳細瞭解"
-        h: "進一步瞭解"
-        items: ["multiple-whatsapp-accounts", "whatsapp-translator", "pricing"]
-
-  for/real-estate:
-    title: "房產中介 WhatsApp 多開 + 翻譯 – 用買家的語言回覆"
-    description: "所有經紀人的 WhatsApp 號碼在一個視窗，用外國買家的語言回覆——聊天、語音和證件照片都能翻譯。免費試用。"
-    keywords: "房產中介WhatsApp,海外房產客戶溝通,WhatsApp多開,WhatsApp翻譯"
-    short: "房產中介"
-    nav_sub: "外國買家，每位經紀人的號碼"
-    icon: "🏠"
-    og_heading: "房產 WhatsApp：每位經紀人的號碼，每位買家的語言"
-    blocks:
-      - type: hero
-        k: "房產中介適用"
-        h1: '用外國買家的語言回覆——<span class="grad">覆蓋每位經紀人的號碼</span>'
-        lead: "來自俄羅斯、海灣地區、歐洲和亞洲的買家在 WhatsApp 上諮詢房源，而且常發語音。GlotChat 把所有經紀人的號碼放進一個視窗，並翻譯每條訊息、語音和證件照片。"
-        media: "video:chat"
-        media_alt: "在 GlotChat 中翻譯的一條房源諮詢"
-      - type: cards
-        k: "問題所在"
-        h: "中介在 WhatsApp 上流失客戶的地方"
-        items:
-          - {icon: "🕐", h: "首次回覆太慢", p: "買家晚上 9 點用俄語發來訊息，等有人翻譯好，他已經問了另外三家中介。"}
-          - {icon: "🎤", h: "聽不懂的語音", p: "阿拉伯語或中文的長語音沒人回覆，因為團隊裡沒人懂這種語言。"}
-          - {icon: "📱", h: "一人一部手機", p: "客戶分散在很多號碼和手機上，經理看不到誰在等回覆，訊息常被漏掉。"}
-      - type: cards
-        soft: true
-        k: "使用 GlotChat"
-        h: "每個號碼上的每條諮詢都能看懂"
-        items:
-          - {icon: "🗂", h: "所有經紀人號碼一個視窗", p: "買賣、租賃、期房、每位經紀人——每個號碼清楚標註，集中在一處。"}
-          - {icon: "🌐", h: "用買家的語言回覆", p: "你用中文或英文寫，買家收到俄語、阿拉伯語、法語、土耳其語……"}
-          - {icon: "🎤", h: "語音轉文字", p: "幾秒鐘看懂長語音，並附帶譯文。"}
-          - {icon: "🖼", h: "識別證件和截圖", p: "護照頁、付款憑證、帶備註的戶型圖——識別並翻譯。"}
-          - {icon: "⚡", h: "房源快捷回覆", p: "儲存價格、看房、付款方式等常用回覆，為每位買家自動翻譯。"}
-          - {icon: "🛡", h: "客戶資料保密", p: "翻譯在你的電腦上完成——買家的訊息不會傳送給線上翻譯。"}
-      - type: faq
-        k: "常見問題"
-        h: "房產中介常見問題"
-        items:
-          - ["每位經紀人可以保留自己的 WhatsApp 號碼嗎？", "可以。每個號碼在 GlotChat 裡都是獨立隔離的帳號。可以按經紀人或專案命名，通知總會顯示訊息發到了哪個號碼。"]
-          - ["買家的訊息能從哪些語言翻譯過來？", "文字支援 49 種語言——包括俄語、阿拉伯語、中文、印地語、波斯語、法語、德語和土耳其語——語音約 100 種語言。"]
-          - ["幾位經紀人能在不同電腦上使用嗎？", "企業版支援最多 3 台電腦。團隊更大的話，請獲取定製報價。"]
-      - type: related
-        k: "更多"
-        h: "相關內容"
-        items: ["whatsapp-translator", "multiple-whatsapp-accounts", "pricing"]
-
-  for/clinics:
-    title: "診所和醫療旅遊 WhatsApp 翻譯 – 用患者的語言回覆"
-    description: "在 WhatsApp 上用國際患者的語言回覆。每位顧問的號碼在一個視窗，語音和圖片離線翻譯。"
-    keywords: "醫療旅遊WhatsApp,診所WhatsApp翻譯,國際患者溝通,WhatsApp多開"
-    short: "診所和醫療旅遊"
-    nav_sub: "國際患者，每位顧問"
-    icon: "🩺"
-    og_heading: "醫療旅遊 WhatsApp：用每位患者的語言回覆"
-    blocks:
-      - type: hero
-        k: "診所和醫療旅遊適用"
-        h1: '用國際患者<span class="grad">自己的語言</span>回覆'
-        lead: "植髮、牙科、整形和治療類診所的大部分諮詢都來自 WhatsApp——英語、德語、阿拉伯語、俄語等。GlotChat 把每位顧問的號碼放進一個視窗，並離線翻譯每條訊息。"
-        media: "video:voice"
-        media_alt: "一條患者語音被轉寫並翻譯"
-      - type: cards
-        k: "為什麼重要"
-        h: "患者會選擇回覆最快、最清楚的診所"
-        items:
-          - {icon: "⏱", h: "速度決定成交", p: "患者會同時諮詢多家診所。用他的語言快速、清楚地回覆，他才會預約。"}
-          - {icon: "🗣", h: "不是每位顧問都會每種語言", p: "有了翻譯，任何一位顧問都能回覆德語、阿拉伯語或俄語患者。"}
-          - {icon: "🔒", h: "健康資訊很敏感", p: "把患者訊息貼上到線上翻譯，等於傳送給第三方。GlotChat 在你的電腦上翻譯。"}
-      - type: cards
-        soft: true
-        k: "使用 GlotChat"
-        h: "每位顧問、每種語言，一個視窗"
-        items:
-          - {icon: "🗂", h: "所有顧問號碼集中", p: "每個號碼獨立隔離並標註——按顧問、科室或國家。"}
-          - {icon: "🎤", h: "語音轉文字", p: "患者常用語音描述病情，幾秒鐘就能看到翻譯後的文字。"}
-          - {icon: "🖼", h: "圖片和報告", p: "識別患者發來的病歷、處方和檢查結果中的文字。"}
-          - {icon: "⚡", h: "快捷回覆", p: "儲存價格、套餐、行程和術後護理等回覆，為每位患者自動翻譯。"}
-          - {icon: "🔔", h: "不漏掉任何諮詢", p: "通知會顯示訊息發到了哪位顧問的號碼。"}
-          - {icon: "🛡", h: "離線翻譯", p: "患者訊息不會傳送給谷歌、DeepL 或 AI 服務。"}
-      - type: faq
-        k: "常見問題"
-        h: "診所常見問題"
-        items:
-          - ["翻譯用於醫療話題夠準確嗎？", "日常患者溝通很可靠——諮詢、預約、價格、行程。診斷、知情同意書或醫囑等內容，最終措辭請由專業人員核對。"]
-          - ["患者訊息會被髮送到伺服器嗎？", "不會。翻譯、語音轉寫和圖片識別都在你自己的電腦上執行。WhatsApp 本身照常使用。"]
-          - ["可以在多台電腦上使用嗎？", "企業版包含最多 3 台電腦。團隊更大可以獲取定製報價。"]
-      - type: related
-        k: "更多"
-        h: "相關內容"
-        items: ["whatsapp-translator", "multiple-whatsapp-accounts", "pricing"]
-
-  for/exporters:
-    title: "外貿 WhatsApp 多開 + 翻譯 – 用中文和海外買家溝通"
-    description: "用中文寫，海外買家收到阿拉伯語、西班牙語、俄語或葡萄牙語。多個外貿號碼一個視窗，訂單照片和語音也能翻譯。"
-    keywords: "外貿WhatsApp,外貿翻譯軟體,外貿WhatsApp多開,WhatsApp開發客戶,海外買家溝通,用中文回覆外國客戶,跨境電商WhatsApp"
-    short: "外貿和批發商"
-    nav_sub: "海外買家和供應商"
-    icon: "🚢"
-    og_heading: "外貿 WhatsApp：用每位買家的語言溝通"
-    blocks:
-      - type: hero
-        k: "外貿、貿易商和批發商適用"
-        h1: '用 49 種語言和買家溝通——<span class="grad">你只需用中文寫</span>'
-        lead: "報價、樣品、付款條件和物流更新都在 WhatsApp 上進行。GlotChat 把所有銷售號碼放進一個視窗，離線翻譯每條訊息、語音和訂單照片。"
-        media: "video:photo"
-        media_alt: "在 GlotChat 中翻譯的一張訂單截圖"
-      - type: cards
-        k: "為外貿打造"
-        h: "你的銷售團隊會有哪些變化"
-        items:
-          - {icon: "💬", h: "用買家的語言談判", p: "海灣、拉美、非洲和中亞的買家用阿拉伯語、西班牙語、葡萄牙語、法語或俄語閱讀你的報價。"}
-          - {icon: "🧾", h: "看懂訂單和憑證", p: "採購訂單、銀行水單和裝箱單照片——識別並翻譯文字。"}
-          - {icon: "🎤", h: "聽懂語音", p: "海外買家很愛發語音。直接看到翻譯後的文字。"}
-          - {icon: "🗂", h: "一個市場一個號碼", p: "按國家、產品線或業務員分開號碼——全部在一個視窗。"}
-          - {icon: "⚡", h: "報價快捷回覆", p: "價格、起訂量、交期和付款條件儲存一次，為每位買家自動翻譯。"}
-          - {icon: "🀄", h: "簡體中文介面", p: "團隊可以完全用中文操作 GlotChat，並用中文寫回復。"}
-      - type: faq
-        k: "常見問題"
-        h: "外貿常見問題"
-        items:
-          - ["我們用中文寫，買家能收到阿拉伯語或西班牙語嗎？", "能。你用中文寫，買家收到他的語言。GlotChat 介面也有簡體中文版。"]
-          - ["能執行多少個銷售號碼？", "專業版最多 15 個 WhatsApp 帳號，企業版不限。我們實測過一台電腦同時執行 27 個帳號。"]
-          - ["可以用 USDT 付款嗎？", "可以——所有套餐都用 USDT 付款（TRC20、BEP20 或 ERC20）。"]
-      - type: related
-        k: "更多"
-        h: "相關內容"
-        items: ["whatsapp-translator", "multiple-whatsapp-accounts", "pricing"]
-
-  for/travel:
-    title: "旅行社 WhatsApp 翻譯 – 用每位遊客的語言回覆"
-    description: "在 WhatsApp 上處理來自世界各地遊客的預訂和諮詢。所有預訂號碼一個視窗，聊天和語音離線翻譯。"
-    keywords: "旅行社WhatsApp,遊客溝通翻譯,WhatsApp多開,WhatsApp翻譯"
-    short: "旅遊和旅行社"
-    nav_sub: "來自各國的遊客"
-    icon: "✈️"
-    og_heading: "旅遊 WhatsApp：用每位遊客的語言回覆"
-    blocks:
-      - type: hero
-        k: "旅行社和地接社適用"
-        h1: '用每位遊客的語言回覆——<span class="grad">一台電腦搞定</span>'
-        lead: "預訂、接送時間、改期和臨時問題，以十幾種語言出現在 WhatsApp 上。GlotChat 把所有預訂號碼放進一個視窗，訊息一到就自動翻譯。"
-        media: "video:chat"
-        media_alt: "在 GlotChat 中翻譯的一條遊客預訂諮詢"
-      - type: cards
-        k: "使用 GlotChat"
-        h: "與遊客溝通，不再有語言障礙"
-        items:
-          - {icon: "🌍", h: "用遊客的語言回覆", p: "法語、義大利語、德語、阿拉伯語、俄語、中文——遊客讀到的是他自己的語言。"}
-          - {icon: "🗂", h: "所有預訂號碼集中", p: "跟團、接送、酒店或合作伙伴各用一個號碼——一個視窗，清楚標註。"}
-          - {icon: "🎤", h: "路上發來的語音", p: "遊客在機場或行程中發語音，直接看到翻譯後的文字。"}
-          - {icon: "🖼", h: "票據和截圖", p: "識別遊客以照片發來的預訂確認、車票和地圖。"}
-          - {icon: "⚡", h: "快捷回覆", p: "集合地點、行程安排、注意事項——儲存一次，為每位遊客自動翻譯。"}
-          - {icon: "🔔", h: "旺季也不漏訊息", p: "通知會顯示訊息發到了哪個號碼。"}
-      - type: faq
-        k: "常見問題"
-        h: "旅行社常見問題"
-        items:
-          - ["遊客會發現訊息是翻譯的嗎？", "不會。他們只是收到用自己語言寫的訊息。"]
-          - ["團隊用中文或英文、遊客用其他語言，可以嗎？", "可以。每位客服用自己的語言閱讀和回覆，遊客收到他自己的語言。"]
-          - ["開始需要準備什麼？", "一台 Windows 10 或 11 電腦，以及要新增的 WhatsApp 號碼對應的手機（掃碼一次）。免費試用大約 10 分鐘即可設定好。"]
-      - type: related
-        k: "更多"
-        h: "相關內容"
-        items: ["whatsapp-translator", "multiple-whatsapp-accounts", "pricing"]
-
-  guides:
-    title: "WhatsApp 教學 – 多開、翻譯與跨境銷售"
-    description: "實用教學：如何在電腦上使用多個 WhatsApp 帳號，以及如何為國際客戶翻譯 WhatsApp 訊息、語音和圖片。"
-    keywords: "WhatsApp教學,WhatsApp多開教學,WhatsApp翻譯教學,外貿WhatsApp技巧"
-    short: "教學"
-    icon: "📘"
-    og_heading: "教學：電腦 WhatsApp 多開與翻譯"
-    blocks:
-      - type: hero
-        k: "教學"
-        h1: '實用的 WhatsApp 教學，<span class="grad">專為跨境業務</span>'
-        lead: "一步步教你在電腦上執行多個 WhatsApp 號碼，以及和說其他語言的客戶溝通。"
-        no_cta: true
-      - type: guides_list
-
-  guides/multiple-whatsapp-accounts-on-pc:
-    title: "如何在一台電腦上使用多個 WhatsApp 帳號（2026）"
-    description: "在 Windows 上執行兩個或更多 WhatsApp 帳號的 3 種方法：桌面版 + 網頁版、瀏覽器多配置或多開軟體。步驟、限制和技巧。"
-    keywords: "WhatsApp多開教學,電腦登入多個WhatsApp,WhatsApp電腦版多開,WS多開方法"
-    short: "電腦 WhatsApp 多開"
-    icon: "🗂"
-    article: true
-    published: "2026-10-11"
-    updated: "2026-10-11"
-    og_heading: "如何在一台電腦上使用多個 WhatsApp 帳號"
-    blocks:
-      - type: hero
-        k: "教學"
-        h1: "如何在一台電腦上使用多個 WhatsApp 帳號"
-        lead: "2026 年仍然有效的三種方法——從免費的雙開技巧到在一個視窗執行幾十個號碼——包括步驟、限制和注意事項。"
-        no_cta: true
-      - type: prose
-        toc: true
-        md: |
-          很多企業不止一個 WhatsApp 號碼：每個店鋪、每個國家、每位業務員各一個。在手機上，這意味著好幾部手機；在電腦上，你有三個不錯的選擇。
-
-          > **簡短回答：**兩個帳號的話，一個用 WhatsApp 桌面版，另一個用瀏覽器裡的 WhatsApp 網頁版。超過兩個，用瀏覽器多配置或 GlotChat 這樣的多開軟體。
-
-          ## 首先需要準備什麼
-
-          - **每個 WhatsApp 帳號一部手機。**每個帳號對應一個手機號，需要用這部手機掃碼連結到電腦（WhatsApp → *已連結的裝置*）。
-          - **記憶體足夠的 Windows 電腦。**每個開啟的 WhatsApp 帳號約佔用 300–450 MB 記憶體。8 GB 約可執行 10 個帳號；20–30 個帳號建議 16 GB 或以上。
-          - **手機要偶爾上線。**手機關機時已連結的裝置照常工作，但如果手機本身約 14 天不使用，WhatsApp 會讓連結裝置退出登入。
-
-          ## 方法一：WhatsApp 桌面版 + 網頁版（2 個帳號，免費）
-
-          1. 在 Microsoft Store 安裝 **WhatsApp**，連結第一個號碼。
-          2. 在瀏覽器開啟 **web.whatsapp.com**，連結第二個號碼。
-          3. 兩個都保持開啟。通知來自兩個不同的程式，所以能分清。
-
-          **適合：**兩個號碼。**限制：**第三個帳號需要另一個瀏覽器，而且不會翻譯。
-
-          ## 方法二：瀏覽器多配置（多個帳號，免費）
-
-          1. 在 Chrome 或 Edge 中點選頭像 → **新增個人資料**，每個 WhatsApp 號碼建一個，並起個清楚的名字。
-          2. 在每個個人資料裡開啟 **web.whatsapp.com**，各連結一個號碼。
-          3. 把每個個人資料固定到工作列，方便快速開啟。
-
-          **適合：**三到五個號碼。**限制：**每個帳號一個視窗，通知不能清楚顯示屬於哪個號碼，每條訊息仍需手動翻譯。
-
-          ## 方法三：多開軟體（多個帳號，一個視窗）
-
-          多開桌面軟體讓每個 WhatsApp 帳號在同一個視窗裡的獨立會話中執行。使用 **GlotChat**：
-
-          1. 在 Windows 10 或 11 上安裝 GlotChat，為每個號碼點選 **新增帳號**。
-          2. 用該號碼的手機掃碼（WhatsApp → *已連結的裝置*），並給帳號命名——「Shop UAE」「銷售 — Ahmed」。
-          3. 一鍵或用 **Ctrl+K** 切換。每條通知都顯示屬於哪個帳號。
-          4. 開啟翻譯：收到的訊息在原文下方顯示譯文，你的回覆在傳送前自動翻譯。
-
-          **適合：**號碼多，而且客戶說其他語言。我們實測過 27 個帳號同時執行。
-
-          ## 應該選哪種方法？
-
-          | | 桌面版 + 網頁版 | 瀏覽器多配置 | 多開軟體 |
-          |---|---|---|---|
-          | 帳號數量 | 2 個 | 3–5 個比較舒服 | 很多（GlotChat 實測 27+） |
-          | 一個視窗 | 否 | 否 | 是 |
-          | 通知顯示所屬帳號 | 部分 | 部分 | 是 |
-          | 翻譯 | 否 | 否 | 是（GlotChat） |
-          | 費用 | 免費 | 免費 | 付費（GlotChat 每年 69 USDT 起） |
-
-          ## 這樣做合規嗎？帳號會被封嗎？
-
-          把帳號連結到 WhatsApp 網頁版是 WhatsApp 的官方功能，三種方法都用的是它。導致封號的是**行為**：垃圾訊息、給沒要求的人群發訊息，以及修改版 WhatsApp（如「GB WhatsApp」）。像用手機一樣正常使用，就沒問題。
-
-          ## 運營多個號碼的技巧
-
-          - **給每個帳號命名**——店鋪、國家或人名。到第 10 個號碼時你會感謝自己。
-          - **儲存快捷回覆**，應對每天都會被問到的問題。
-          - **讓不常用的帳號休眠**，保持電腦流暢。
-          - **用客戶的語言回覆。**這是贏得買家最快的方法——有了內建翻譯，不會多花一點時間。
-
-          想在你自己的號碼上試試方法三？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
-      - type: faq
-        k: "常見問題"
-        h: "快速解答"
-        items:
-          - ["一台電腦能用兩個 WhatsApp 帳號嗎？", "能。最簡單的方法：一個帳號用 WhatsApp 桌面版，另一個用瀏覽器裡的 WhatsApp 網頁版。"]
-          - ["一台電腦最多能用多少個 WhatsApp 帳號？", "每個帳號在獨立會話中執行時沒有固定上限，限制在於記憶體。GlotChat 實測過 27 個帳號同時執行。"]
-          - ["手機需要一直開著嗎？", "不需要，手機關機時連結裝置照常工作。但每部手機至少每兩週開啟一次 WhatsApp，否則連結裝置會退出登入。"]
-      - type: related
-        k: "繼續閱讀"
-        h: "下一篇"
-        items: ["guides/translate-whatsapp-messages-on-pc", "multiple-whatsapp-accounts", "compare"]
-
-  guides/translate-whatsapp-messages-on-pc:
-    title: "如何在電腦上翻譯 WhatsApp 訊息（文字、語音、圖片）"
-    description: "在電腦上翻譯 WhatsApp 聊天的方法：複製貼上、瀏覽器外掛或內建翻譯——以及語音、圖片翻譯和隱私建議。"
-    keywords: "WhatsApp翻譯教學,WhatsApp訊息翻譯,WhatsApp語音翻譯,WhatsApp圖片翻譯,電腦版WhatsApp翻譯"
-    short: "電腦翻譯 WhatsApp"
-    icon: "🌐"
-    article: true
-    published: "2026-10-11"
-    updated: "2026-10-11"
-    og_heading: "如何在電腦上翻譯 WhatsApp 訊息、語音和圖片"
-    blocks:
-      - type: hero
-        k: "教學"
-        h1: "如何在電腦上翻譯 WhatsApp 訊息——文字、語音和圖片"
-        lead: "從免費手動到全自動的各種方法，每種方法如何處理客戶的訊息，以及讓客戶信任的翻譯技巧。"
-        no_cta: true
-      - type: prose
-        toc: true
-        md: |
-          當客戶用你不會的語言寫訊息，每一條都變成一個小專案。下面是在電腦上翻譯 WhatsApp 的幾種方法，從最簡單到最快。
-
-          > **簡短回答：**偶爾幾條訊息，複製到線上翻譯即可。每天都要和外國客戶溝通，就用內建在 WhatsApp 裡的翻譯——最好也能處理語音和圖片，並且在你的電腦上翻譯，保護聊天隱私。
-
-          ## 方法一：複製貼上到線上翻譯（免費，手動）
-
-          1. 在 WhatsApp 網頁版或桌面版中選中訊息並複製。
-          2. 貼上到線上翻譯，閱讀結果。
-          3. 寫好回覆，翻譯，複製，再貼上回 WhatsApp。
-
-          **適合：**每天幾條訊息。**缺點：**每條 20–40 秒，容易貼上到錯誤的聊天，而且客戶的文字會被髮送到翻譯網站。
-
-          ## 方法二：WhatsApp 網頁版翻譯外掛
-
-          翻譯外掛會給 WhatsApp 網頁版加上翻譯按鈕或自動翻譯。
-
-          **適合：**一個帳號、只翻譯文字。**缺點：**通常只支援一個帳號，不支援語音和圖片，而且大多數外掛會把訊息傳送到線上服務進行翻譯。用於客戶資料前，請先檢視外掛的隱私政策。
-
-          ## 方法三：WhatsApp 桌面軟體內建翻譯
-
-          有些桌面軟體直接在 WhatsApp 裡翻譯。**GlotChat** 為你新增的每個帳號都提供翻譯：
-
-          1. **收到的訊息**自動翻譯，譯文顯示在原文下方。
-          2. **你的回覆**用你的語言寫，傳送前自動翻譯——你會先看到譯文。
-          3. **語音訊息：**點選*轉文字*，把語音轉成文字並翻譯。
-          4. **圖片：**點選*識別文字*，識別並翻譯發票、價目表或截圖。
-
-          翻譯**在你的電腦上離線執行**，支援 49 種語言，訊息不會傳送給谷歌、DeepL 或 AI 服務。
-
-          ## 如何翻譯 WhatsApp 語音訊息
-
-          語音訊息需要先轉成文字（轉寫）才能翻譯。在手機上可以把語音放給翻譯軟體的麥克風聽，但又慢又不可靠。在 GlotChat 中，語音訊息下的*轉文字*按鈕會在你的電腦上一次完成兩步，支援約 100 種語言。
-
-          ## 如何翻譯圖片和截圖中的文字
-
-          客戶會發來訂單、收據和文件的照片。需要先識別圖片中的文字（OCR），再翻譯。GlotChat 的*識別文字*支援拉丁文、阿拉伯文、西里爾文、中文、韓文、泰文等多種文字。
-
-          ## 哪種方法適合你？
-
-          | | 複製貼上 | 瀏覽器外掛 | GlotChat |
-          |---|---|---|---|
-          | 自動 | 否 | 通常是 | 是 |
-          | 翻譯你的回覆 | 手動 | 有時 | 是，可預覽 |
-          | 語音訊息 | 否 | 很少 | 是 |
-          | 圖片 | 否 | 否 | 是 |
-          | 多個帳號 | 否 | 通常否 | 是 |
-          | 訊息留在你的電腦 | 否 | 通常否 | 是 |
-
-          ## 讓客戶信任的翻譯技巧
-
-          - **寫簡短清楚的句子。**一句話說一件事，翻譯效果最好。
-          - **仔細核對數字。**價格、日期、數量和地址最重要——在譯文預覽中確認無誤。
-          - **回覆中避免俚語和成語。**
-          - **保留原文。**重要內容，也要回看客戶的原始訊息。
-          - **合同請人工核對。**機器翻譯非常適合日常溝通；法律或醫療措辭值得人工檢查。
-
-          不想再複製貼上了？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
-      - type: faq
-        k: "常見問題"
-        h: "快速解答"
-        items:
-          - ["WhatsApp 網頁版能翻譯訊息嗎？", "WhatsApp 網頁版沒有內建翻譯。你需要把訊息複製到翻譯工具、使用外掛，或使用內建翻譯的桌面軟體，比如 GlotChat。"]
-          - ["如何在電腦上翻譯 WhatsApp 語音訊息？", "先把語音轉成文字，再翻譯。GlotChat 一鍵完成兩步，離線執行，支援約 100 種語言。"]
-          - ["把客戶訊息貼上到線上翻譯安全嗎？", "這會把文字傳送給第三方。涉及個人、醫療或財務資訊時，請使用在你自己電腦上離線執行的翻譯工具。"]
-      - type: related
-        k: "繼續閱讀"
-        h: "下一篇"
-        items: ["guides/multiple-whatsapp-accounts-on-pc", "whatsapp-translator", "pricing"]
-
+      - whatsapp-translator
+      - pricing
   download:
-    title: 下載 GlotChat 電腦版 – WhatsApp 多開與翻譯軟體（Windows）
-    description: 免費下載 GlotChat Windows 版：一個視窗登入多個 WhatsApp 帳號，聊天、語音、圖片離線翻譯。安裝包 381 MB，支援 Windows 10/11，免費試用 3 天。
-    keywords: "GlotChat下載,WhatsApp多開軟體下載,WhatsApp翻譯軟體下載,WhatsApp電腦版下載"
+    title: 下載 GlotChat Windows 版 —— WhatsApp 和 Telegram 翻譯軟體
+    description: 免費下載 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 帳號一個視窗，離線翻譯。免費試用 3 天，無需付款。
+    keywords: GlotChat下載,WhatsApp翻譯軟體下載,WhatsApp多開軟體下載,Telegram翻譯軟體下載
     short: 下載
     icon: ⬇️
-    og_heading: 下載 GlotChat Windows 版 — 免費試用 3 天
+    og_heading: 下載 GlotChat Windows 版 —— 免費試用 3 天
     blocks:
     - type: dl_hero
       k: 免費下載 · Windows 10 和 11
       h1: 下載 GlotChat <span class="grad">Windows 版</span>
-      lead: 所有 WhatsApp 號碼集中在一個視窗，每條訊息都在您的電腦上翻譯。約 1 分鐘裝好，全部功能免費試用 3 天。
+      lead: 所有 WhatsApp 和 Telegram 帳號一個視窗，每條訊息在你的電腦上翻譯。大約 1 分鐘裝好，免費試用全部功能 3 天。
       card:
-      - WhatsApp 多帳號同時線上
+      - WhatsApp + Telegram 帳號
       - 文字、語音、圖片翻譯
-      - 49 種語言，離線可用
+      - 傳送前「對方將讀到」核對
       - 免費試用 3 天，無需付款
     - type: dl_steps
       k: 安裝指南
-      h: 4 個簡單步驟，馬上用起來
-      p: 不需要任何技術基礎。大多數使用者 5 分鐘內就能用客戶的語言聊天。
+      h: 4 個簡單步驟就能用起來
+      p: 不需要任何技術基礎。大多數人 5 分鐘內就能用客戶的語言聊天。
       items:
       - h: 下載安裝包
-        p: 點選綠色按鈕，<b>GlotChat-Setup.exe</b>（381 MB）會儲存到「<b>下載</b>」資料夾。下載完成後點選「<b>開啟檔案</b>」。
-        tip: 在用手機瀏覽？請在 Windows 電腦上開啟本頁 — GlotChat 是電腦軟體。
+        p: 點選綠色按鈕，安裝包會儲存到你的<b>下載</b>資料夾。下載完成後，點選<b>開啟檔案</b>。
+        tip: 在手機上？請在 Windows 電腦上開啟這個頁面 —— GlotChat 是電腦軟體。
         mock: download
-      - h: 安裝 — 如果 Windows 提示，點選「仍要執行」
-        p: 雙擊安裝檔案，按提示完成安裝（約 1 分鐘，無需管理員許可權）。如果出現藍色視窗「<b>Windows 已保護你的電腦</b>」，先點「<b>其他資訊</b>」，再點「<b>仍要執行</b>」。
-        tip: 這是新軟體的正常現象：Windows SmartScreen 只是還沒見過很多次 GlotChat。檔案是安全的 — 您可以在下方核對 SHA-256 校驗值。
+      - h: 安裝 —— 如果 Windows 提示，點選「仍要執行」
+        p: 雙擊檔案，按提示安裝（約 1 分鐘，不需要管理員許可權）。如果出現藍色視窗「<b>Windows 已保護你的電腦</b>」，點選<b>其他資訊</b>，再點選<b>仍要執行</b>。
+        tip: 新軟體都會這樣：Windows SmartScreen 只是還沒見過 GlotChat 很多次。檔案是安全的 —— 你可以在下方核對 SHA-256 校驗值。
         mock: smartscreen
-      - h: "一鍵開始 3 天免費試用"
-        p: "開啟 GlotChat，點選「<b>開始 3 天免費試用</b>」。就這麼簡單：全部功能立即開放 — 不用發訊息，也不用複製啟用碼。"
-        tip: "每台電腦可免費試用一次。無需信用卡，無需付款，也不用取消。"
+      - h: 一鍵開始 3 天免費試用
+        p: 開啟 GlotChat，點選<b>開始 3 天免費試用</b>。全部功能立即可用，一分鐘內 GlotChat 會自動更新到最新版本。
+        tip: 每台電腦可免費試用一次。無需信用卡，無需付款，也不用取消。
         mock: activate
-      - h: 新增您的 WhatsApp 帳號
-        p: 新增帳號，用手機掃描 QR Code（WhatsApp → <b>已連結的裝置</b>）。每個號碼重複一次即可。訊息、語音和圖片立即自動翻譯。
+      - h: 新增 WhatsApp 和 Telegram 帳號
+        p: 新增帳號，用手機掃碼（WhatsApp → <b>已連結的裝置</b>，或 Telegram → <b>設定 → 裝置</b>）。每個帳號重複一次。訊息、語音和圖片立即可以翻譯。
         mock: accounts
     - type: dl_specs
-      k: 安裝前須知
-      h: 系統要求與安全
+      k: 安裝前
+      h: 系統要求和安全性
       req_h: 系統要求
       req:
       - - 作業系統
         - Windows 10 或 11（64 位）
       - - 記憶體
         - 4 GB · 10 個以上帳號建議 8 GB
-      - - 可用磁碟空間
+      - - 磁碟空間
         - 2 GB
       - - 網路
-        - WhatsApp 需要聯網（翻譯離線進行）
+        - 聊天軟體需要聯網（翻譯離線）
       - - 管理員許可權
         - 不需要
-      - - 最新版本
+      - - 安裝包
         - '{version} · {size} MB'
       safe_h: 安全、乾淨
       safe:
-      - 官方檔案，僅從 <b>download.glotchat.com</b> 提供下載
+      - 官方檔案，只從 <b>download.glotchat.com</b> 下載
       - 無廣告、無工具欄、無捆綁軟體
-      - 內建官方 WhatsApp Web — 聊天記錄儲存在您自己的電腦上
+      - 內建官方 WhatsApp 網頁版和 Telegram —— 聊天記錄留在你的電腦上
       - 更新自動安裝，並帶有數字簽名
       - 隨時可在 Windows 設定 → 應用 中解除安裝
     - type: faq
       soft: true
       k: 下載常見問題
-      h: 關於下載和安裝
+      h: 下載和安裝問題
       open_first: true
       items:
       - - GlotChat 可以免費下載嗎？
-        - 可以。下載免費，3 天試用期內所有功能全部開放，無需付款。試用結束後，套餐每年 69 USDT 起。
+        - 可以。下載免費，3 天試用期內全部功能可用，無需付款。試用結束後，套餐每年 69 USDT 起。
       - - 為什麼 Windows 提示「Windows 已保護你的電腦」？
-        - Windows SmartScreen 會對還不常見的新軟體顯示這個提示。點選「<b>其他資訊</b>」，再點選「<b>仍要執行</b>」即可。請始終從本頁下載 GlotChat — 您可以核對 SHA-256 校驗值，確認檔案是原版。
-      - - 需要啟用碼嗎？
-        - "試用不需要。在軟體裡點選「<b>開始 3 天免費試用</b>」即可立即開始。購買套餐後，我們會在 Telegram 上傳送一年期啟用碼 — 貼上到「<b>我已經有啟用碼</b>」中即可。"
-      - - 有 Mac、Android 或 iPhone 版本嗎？
-        - 目前沒有。GlotChat 是 Windows 10 和 11 電腦軟體。您的 WhatsApp 號碼仍然在手機上 — GlotChat 像 WhatsApp Web 一樣把它們連結到電腦。
-      - - Windows 7 或 8 能用嗎？
-        - 不能。GlotChat 需要 64 位的 Windows 10 或 Windows 11。
-      - - 如何更新 GlotChat？
-        - 不需要手動更新。GlotChat 會自動檢查新版本，在後台下載，並在下次啟動時自動安裝。
-      - - 如何解除安裝 GlotChat？
-        - 開啟 Windows「<b>設定 → 應用 → 已安裝的應用</b>」，找到 GlotChat，點選「<b>解除安裝</b>」。
+        - Windows SmartScreen 對還不常見的新軟體都會顯示這個提示。點選<b>其他資訊</b>，再點選<b>仍要執行</b>。請只從本頁面下載 GlotChat —— 可以對比 SHA-256 校驗值，確認是原始檔案。
+      - - 為什麼安裝包的版本比最新版舊？
+        - 安裝包保持在 Windows 已經信任的版本，這樣在任何電腦上都能順利安裝。開啟 GlotChat 一分鐘後，它會自動更新到最新版本（包括 Telegram 和所有新功能）。
+      - - 需要授權碼嗎？
+        - 試用不需要：在軟體中點選<b>開始 3 天免費試用</b>即可。購買套餐後，我們會在 Telegram 上發給你一年的授權碼 —— 貼上到<b>我已有授權碼</b>中。
+      - - 有 Mac、Android 或 iPhone 版嗎？
+        - 目前沒有。GlotChat 是 Windows 10 和 11 電腦軟體。你的帳號仍在手機上 —— GlotChat 像 WhatsApp 網頁版一樣把它們連結到電腦。
+      - - 怎麼解除安裝 GlotChat？
+        - 開啟 Windows <b>設定 → 應用 → 已安裝的應用</b>，找到 GlotChat，點選<b>解除安裝</b>。
       - - 下載中斷或很慢怎麼辦？
-        - 請再次點選下載按鈕。如果仍然不行，請在 Telegram 上聯絡我們，我們直接把安裝檔案發給您。
+        - 再點一次下載按鈕。如果還不行，在 Telegram 上聯絡我們，我們直接把安裝包發給你。
     - type: related
       k: 下一步
-      h: 開始前瞭解更多
+      h: 開始前再瞭解一下
       items:
       - pricing
-      - multiple-whatsapp-accounts
+      - telegram-translator
       - whatsapp-translator
-
   guides/whatsapp-auto-translate-setup:
     single: true
-    title: "WhatsApp 自動翻譯怎麼設定？電腦版即時翻譯教學（2026）"
-    description: "手把手設定 WhatsApp 自動翻譯：收到的訊息自動翻成中文，你用中文回覆、客戶收到他的語言。文字、語音、圖片都能翻譯，離線保護隱私，5 分鐘搞定。"
-    keywords: "WhatsApp自動翻譯怎麼設定,WhatsApp即時翻譯,WhatsApp翻譯設定,WhatsApp中文翻譯,WS自動翻譯,WhatsApp聊天翻譯教學"
-    short: "WhatsApp 自動翻譯設定"
-    icon: "🌐"
+    title: WhatsApp 自動翻譯怎麼設定？電腦版即時翻譯教學（2026）
+    description: 手把手設定 WhatsApp 自動翻譯：收到的訊息自動翻成中文，你用中文回覆、客戶收到他的語言。文字、語音、圖片都能翻譯，離線保護隱私，5 分鐘搞定。
+    keywords: WhatsApp自動翻譯怎麼設定,WhatsApp即時翻譯,WhatsApp翻譯設定,WhatsApp中文翻譯,WS自動翻譯,WhatsApp聊天翻譯教學
+    short: WhatsApp 自動翻譯設定
+    icon: 🌐
     article: true
-    published: "2026-10-22"
-    updated: "2026-10-22"
-    og_heading: "WhatsApp 自動翻譯怎麼設定？5 分鐘教學"
+    published: '2026-10-22'
+    updated: '2026-10-22'
+    og_heading: WhatsApp 自動翻譯怎麼設定？5 分鐘教學
     blocks:
-      - type: hero
-        k: "教學"
-        h1: "WhatsApp 自動翻譯怎麼設定？電腦版即時翻譯教學"
-        lead: "收到的每條訊息自動翻成中文，你用中文寫、客戶收到他自己的語言。按下面 6 步，5 分鐘就能在電腦上用起來。"
-        no_cta: true
-      - type: prose
-        toc: true
-        md: |
-          做外貿、跨境電商或者接待海外客戶，最費時間的往往不是談生意，而是**來回複製貼上翻譯**：把客戶的訊息複製到翻譯網站，再把譯文貼回 WhatsApp。客戶一多、號碼一多，根本忙不過來。
+    - type: hero
+      k: 教學
+      h1: WhatsApp 自動翻譯怎麼設定？電腦版即時翻譯教學
+      lead: 收到的每條訊息自動翻成中文，你用中文寫、客戶收到他自己的語言。按下面 6 步，5 分鐘就能在電腦上用起來。
+      no_cta: true
+    - type: prose
+      toc: true
+      md: |
+        做外貿、跨境電商或者接待海外客戶，最費時間的往往不是談生意，而是**來回複製貼上翻譯**：把客戶的訊息複製到翻譯網站，再把譯文貼回 WhatsApp。客戶一多、號碼一多，根本忙不過來。
 
-          > **簡短回答：**WhatsApp 本身沒有自動翻譯功能。在電腦上用 GlotChat 開啟你的 WhatsApp 帳號，收到的訊息會自動在原文下方顯示中文翻譯；你用中文輸入，按 Enter 前就能看到譯文，確認後發出。
+        > **簡短回答：**WhatsApp 本身沒有自動翻譯功能。在電腦上用 GlotChat 開啟你的 WhatsApp 帳號，收到的訊息會自動在原文下方顯示中文翻譯；你用中文輸入，按 Enter 前就能看到譯文，確認後發出。
 
-          > GlotChat 的介面目前是簡體中文和英文，下文的按鈕名稱以繁體字顯示。
+        > GlotChat 的介面目前是簡體中文和英文，下文的按鈕名稱以繁體字顯示。
 
           ## 第 1 步：安裝 GlotChat，開始免費試用
 
-          [下載 GlotChat Windows 版](/zh-hant/download/)（支援 Windows 10 / 11），安裝後開啟，點選 **「開始 3 天免費試用」**。試用包含全部功能，無需付款、無需信用卡。
+        [下載 GlotChat Windows 版](/zh-hant/download/)（支援 Windows 10 / 11），安裝後開啟，點選 **「開始 3 天免費試用」**。試用包含全部功能，無需付款、無需信用卡。
 
-          ## 第 2 步：新增 WhatsApp 帳號
+        ## 第 2 步：新增 WhatsApp 帳號
 
-          點選 **「新增帳號」**：
+        點選 **「新增帳號」**：
 
-          - **名稱**：比如「店鋪 1」「中東客戶」「業務員小王」。
-          - **我使用的語言**：選 **中文**。
-          - **客戶使用的語言**：選 **「自動檢測（推薦）」**——每個聊天會自動識別客戶說的語言。
+        - **名稱**：比如「店鋪 1」「中東客戶」「業務員小王」。
+        - **我使用的語言**：選 **中文**。
+        - **客戶使用的語言**：選 **「自動檢測（推薦）」**——每個聊天會自動識別客戶說的語言。
 
-          然後點選 **「新增並連線 WhatsApp」**。
+        然後點選 **「新增並連線 WhatsApp」**。
 
-          ## 第 3 步：用手機掃碼連結
+        ## 第 3 步：用手機掃碼連結
 
-          螢幕上會出現 WhatsApp 的 QR Code。在手機上開啟 WhatsApp：
+        螢幕上會出現 WhatsApp 的 QR Code。在手機上開啟 WhatsApp：
 
-          - **Android**：右上角 ⋮ → **已連結的裝置** → **連結裝置**
-          - **iPhone**：設定 → **已連結的裝置** → **連結裝置**
+        - **Android**：右上角 ⋮ → **已連結的裝置** → **連結裝置**
+        - **iPhone**：設定 → **已連結的裝置** → **連結裝置**
 
-          掃碼後，這個號碼就在電腦上執行了，之後手機不用一直開著。有多個號碼就重複第 2、3 步，每個號碼都在自己獨立的空間裡，互不影響。
+        掃碼後，這個號碼就在電腦上執行了，之後手機不用一直開著。有多個號碼就重複第 2、3 步，每個號碼都在自己獨立的空間裡，互不影響。
 
-          ## 第 4 步：下載語言包（只需一次）
+        ## 第 4 步：下載語言包（只需一次）
 
-          開啟 **「語言」** 頁面。介面是中文時，GlotChat 會提示 **「請先下載中文」**——先下載中文，再下載你的客戶常用的語言，比如阿拉伯語、西班牙語、俄語、葡萄牙語。英語已內建。
+        開啟 **「語言」** 頁面。介面是中文時，GlotChat 會提示 **「請先下載中文」**——先下載中文，再下載你的客戶常用的語言，比如阿拉伯語、西班牙語、俄語、葡萄牙語。英語已內建。
 
-          每個語言包約 100–150 MB，**下載一次後完全離線翻譯**：聊天內容不會傳送到任何翻譯網站，客戶資料更安全。已下載的任意兩種語言之間都能互相翻譯。
+        每個語言包約 100–150 MB，**下載一次後完全離線翻譯**：聊天內容不會傳送到任何翻譯網站，客戶資料更安全。已下載的任意兩種語言之間都能互相翻譯。
 
-          ## 第 5 步：收到的訊息自動翻成中文
+        ## 第 5 步：收到的訊息自動翻成中文
 
-          開啟任意聊天，客戶的每條訊息下方都會自動出現中文翻譯，並標註原來的語言（例如 🌐 AR）。往上翻看歷史訊息也一樣。某條訊息沒有自動翻譯時，點它下方的 **「🌐 翻譯」** 即可。
+        開啟任意聊天，客戶的每條訊息下方都會自動出現中文翻譯，並標註原來的語言（例如 🌐 AR）。往上翻看歷史訊息也一樣。某條訊息沒有自動翻譯時，點它下方的 **「🌐 翻譯」** 即可。
 
-          ## 第 6 步：用中文回覆，客戶收到他的語言
+        ## 第 6 步：用中文回覆，客戶收到他的語言
 
-          像平時一樣在輸入框裡寫中文，按 Enter。GlotChat 有三種傳送方式（在 **帳號設定 → 傳送** 中切換，聊天視窗上方也能一鍵切換）：
+        像平時一樣在輸入框裡寫中文，按 Enter。GlotChat 有三種傳送方式（在 **帳號設定 → 傳送** 中切換，聊天視窗上方也能一鍵切換）：
 
-          | 傳送方式 | 效果 | 適合 |
-          |---|---|---|
-          | **預覽** | 先顯示譯文，你確認或修改後再傳送 | 剛開始用、重要報價 |
-          | **即時** | 自動翻譯並直接傳送 | 熟練後、聊天量大 |
-          | **關閉** | 按你寫的原文傳送 | 和說中文的客戶聊天 |
+        | 傳送方式 | 效果 | 適合 |
+        |---|---|---|
+        | **預覽** | 先顯示譯文，你確認或修改後再傳送 | 剛開始用、重要報價 |
+        | **即時** | 自動翻譯並直接傳送 | 熟練後、聊天量大 |
+        | **關閉** | 按你寫的原文傳送 | 和說中文的客戶聊天 |
 
-          客戶只會收到他自己語言的訊息。需要的話，還可以設定「同時傳送原文」。
+        客戶只會收到他自己語言的訊息。需要的話，還可以設定「同時傳送原文」。
 
-          ## 語音和圖片也能翻譯
+        ## 語音和圖片也能翻譯
 
-          - **語音訊息**：點選語音下方的 **「🎤 轉文字」**，先轉成文字再翻譯成中文。客戶發來的西班牙語、阿拉伯語語音，一眼看懂。
-          - **圖片中的文字**：價格表、截圖、單據，點選 **「🔤 識別文字」**，識別圖片裡的文字並翻譯。
+        - **語音訊息**：點選語音下方的 **「🎤 轉文字」**，先轉成文字再翻譯成中文。客戶發來的西班牙語、阿拉伯語語音，一眼看懂。
+        - **圖片中的文字**：價格表、截圖、單據，點選 **「🔤 識別文字」**，識別圖片裡的文字並翻譯。
 
-          語音和圖片同樣在你的電腦上離線處理，不會上傳。
+        語音和圖片同樣在你的電腦上離線處理，不會上傳。
 
-          ## 提高效率的 3 個小技巧
+        ## 提高效率的 3 個小技巧
 
-          - **快捷回覆**：在輸入框輸入 **「/」** 調出常用回覆（報價、發貨時間、付款方式），同樣會自動翻譯成客戶的語言。
-          - **給客戶固定語言**：如果自動識別不準（比如很短的訊息），點選聊天上方的語言按鈕，給這個客戶固定一種語言。
-          - **多個號碼一個視窗**：所有號碼在左側列表，Ctrl+1…9 快速切換，每個號碼的通知都標明是哪個帳號。
+        - **快捷回覆**：在輸入框輸入 **「/」** 調出常用回覆（報價、發貨時間、付款方式），同樣會自動翻譯成客戶的語言。
+        - **給客戶固定語言**：如果自動識別不準（比如很短的訊息），點選聊天上方的語言按鈕，給這個客戶固定一種語言。
+        - **多個號碼一個視窗**：所有號碼在左側列表，Ctrl+1…9 快速切換，每個號碼的通知都標明是哪個帳號。
 
-          想馬上試試？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
-      - type: faq
-        k: "常見問題"
-        h: "WhatsApp 自動翻譯常見問題"
-        items:
-          - ["WhatsApp 自帶自動翻譯嗎？", "目前 WhatsApp 沒有內建的聊天自動翻譯。在電腦上可以用 GlotChat 這樣的軟體，收到的訊息自動顯示譯文，發出的訊息自動翻譯成客戶的語言。"]
-          - ["翻譯需要聯網嗎？會洩露聊天內容嗎？", "語言包下載一次後，翻譯完全在你的電腦上離線完成，聊天、語音和圖片都不會傳送到任何翻譯服務。WhatsApp 本身收發訊息仍然需要聯網。"]
-          - ["支援哪些語言？", "GlotChat 支援 49 種翻譯語言，包括中文、英語、阿拉伯語、西班牙語、俄語、葡萄牙語、法語、土耳其語、越南語、泰語、印尼語等。"]
-          - ["不知道客戶說什麼語言怎麼辦？", "把「客戶使用的語言」設為「自動檢測（推薦）」，GlotChat 會識別每個聊天的語言，並用這個語言傳送你的回覆。"]
-          - ["收費嗎？", "可以免費試用 3 天，包含全部功能。之後按年付費：入門版 69 USDT（5 個帳號）、專業版 129 USDT（15 個帳號）、企業版 249 USDT（不限帳號）。"]
-      - type: related
-        k: "繼續閱讀"
-        h: "相關教學"
-        items: ["guides/translate-whatsapp-messages-on-pc", "guides/best-whatsapp-multi-account-software", "whatsapp-translator"]
-
+        想馬上試試？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+    - type: faq
+      k: 常見問題
+      h: WhatsApp 自動翻譯常見問題
+      items:
+      - - WhatsApp 自帶自動翻譯嗎？
+        - 目前 WhatsApp 沒有內建的聊天自動翻譯。在電腦上可以用 GlotChat 這樣的軟體，收到的訊息自動顯示譯文，發出的訊息自動翻譯成客戶的語言。
+      - - 翻譯需要聯網嗎？會洩露聊天內容嗎？
+        - 語言包下載一次後，翻譯完全在你的電腦上離線完成，聊天、語音和圖片都不會傳送到任何翻譯服務。WhatsApp 本身收發訊息仍然需要聯網。
+      - - 支援哪些語言？
+        - GlotChat 支援 49 種翻譯語言，包括中文、英語、阿拉伯語、西班牙語、俄語、葡萄牙語、法語、土耳其語、越南語、泰語、印尼語等。
+      - - 不知道客戶說什麼語言怎麼辦？
+        - 把「客戶使用的語言」設為「自動檢測（推薦）」，GlotChat 會識別每個聊天的語言，並用這個語言傳送你的回覆。
+      - - 收費嗎？
+        - 可以免費試用 3 天，包含全部功能。之後按年付費：入門版 69 USDT（5 個帳號）、專業版 129 USDT（15 個帳號）、企業版 249 USDT（不限帳號）。
+    - type: related
+      k: 繼續閱讀
+      h: 相關教學
+      items:
+      - guides/translate-whatsapp-messages-on-pc
+      - guides/best-whatsapp-multi-account-software
+      - whatsapp-translator
   guides/best-whatsapp-multi-account-software:
     single: true
-    title: "WhatsApp 多開軟體哪個好？選擇前看這 8 點（2026）"
-    description: "WhatsApp 多開軟體怎麼選？從帳號安全、會話隔離、獨立通知、聊天翻譯、語音圖片、電腦配置到價格試用，8 個標準幫你挑到適合外貿團隊的多開工具。"
-    keywords: "WhatsApp多開軟體哪個好,WhatsApp多開軟體推薦,WS多開軟體,WhatsApp多開工具,WhatsApp聚合聊天軟體,WhatsApp多開翻譯"
-    short: "WhatsApp 多開軟體怎麼選"
-    icon: "🧭"
+    title: WhatsApp 多開軟體哪個好？選擇前看這 8 點（2026）
+    description: WhatsApp 多開軟體怎麼選？從帳號安全、會話隔離、獨立通知、聊天翻譯、語音圖片、電腦配置到價格試用，8 個標準幫你挑到適合外貿團隊的多開工具。
+    keywords: WhatsApp多開軟體哪個好,WhatsApp多開軟體推薦,WS多開軟體,WhatsApp多開工具,WhatsApp聚合聊天軟體,WhatsApp多開翻譯
+    short: WhatsApp 多開軟體怎麼選
+    icon: 🧭
     article: true
-    published: "2026-10-22"
-    updated: "2026-10-22"
-    og_heading: "WhatsApp 多開軟體哪個好？8 個選擇標準"
+    published: '2026-10-22'
+    updated: '2026-10-22'
+    og_heading: WhatsApp 多開軟體哪個好？8 個選擇標準
     blocks:
-      - type: hero
-        k: "選購指南"
-        h1: "WhatsApp 多開軟體哪個好？選擇前看這 8 點"
-        lead: "多開軟體很多，但號碼安全、翻譯質量和電腦能不能帶得動，差別很大。下面 8 個標準，幫你少走彎路。"
-        no_cta: true
-      - type: prose
-        toc: true
-        md: |
-          外貿團隊、跨境電商、海外客服，手上常常有 5 個、10 個甚至幾十個 WhatsApp 號碼。一部手機一個號碼不現實，於是「WhatsApp 多開」「WS 多開」成了剛需。選多開軟體之前，先看清下面 8 點。
+    - type: hero
+      k: 選購指南
+      h1: WhatsApp 多開軟體哪個好？選擇前看這 8 點
+      lead: 多開軟體很多，但號碼安全、翻譯質量和電腦能不能帶得動，差別很大。下面 8 個標準，幫你少走彎路。
+      no_cta: true
+    - type: prose
+      toc: true
+      md: |
+        外貿團隊、跨境電商、海外客服，手上常常有 5 個、10 個甚至幾十個 WhatsApp 號碼。一部手機一個號碼不現實，於是「WhatsApp 多開」「WS 多開」成了剛需。選多開軟體之前，先看清下面 8 點。
 
-          > **簡短回答：**選**基於官方 WhatsApp 網頁版**、每個號碼**完全隔離**、通知能**分清帳號**、最好**自帶翻譯**的軟體，並且一定要**先免費試用**，用你自己的號碼和電腦測一測。
+        > **簡短回答：**選**基於官方 WhatsApp 網頁版**、每個號碼**完全隔離**、通知能**分清帳號**、最好**自帶翻譯**的軟體，並且一定要**先免費試用**，用你自己的號碼和電腦測一測。
 
-          ## 1. 帳號安全：只用官方 WhatsApp 網頁版
+        ## 1. 帳號安全：只用官方 WhatsApp 網頁版
 
-          這是最重要的一點。修改版 WhatsApp（如「GB WhatsApp」）和非官方協議的軟體，是封號的常見原因。安全的多開軟體應該為每個號碼開啟**官方 WhatsApp 網頁版**，和你在瀏覽器裡掃碼登入完全一樣，只是更有條理。
+        這是最重要的一點。修改版 WhatsApp（如「GB WhatsApp」）和非官方協議的軟體，是封號的常見原因。安全的多開軟體應該為每個號碼開啟**官方 WhatsApp 網頁版**，和你在瀏覽器裡掃碼登入完全一樣，只是更有條理。
 
-          另外要注意：**群發騷擾訊息**無論用什麼軟體都容易被封。正常聊天、回覆客戶，才是長期安全的用法。
+        另外要注意：**群發騷擾訊息**無論用什麼軟體都容易被封。正常聊天、回覆客戶，才是長期安全的用法。
 
-          ## 2. 會話隔離：每個號碼互不影響
+        ## 2. 會話隔離：每個號碼互不影響
 
-          每個號碼應該有自己獨立的登入、Cookie 和儲存，就像在不同的電腦上一樣。這樣一個號碼出問題（退出登入、需要重新掃碼），不會影響其他號碼。
+        每個號碼應該有自己獨立的登入、Cookie 和儲存，就像在不同的電腦上一樣。這樣一個號碼出問題（退出登入、需要重新掃碼），不會影響其他號碼。
 
-          ## 3. 通知要分清是哪個帳號
+        ## 3. 通知要分清是哪個帳號
 
-          10 個號碼同時收訊息，如果通知只顯示「WhatsApp」，你根本不知道該去哪個號碼回覆。好的多開軟體會在通知裡**標明帳號名稱**，點選通知直接開啟對應的帳號和聊天。
+        10 個號碼同時收訊息，如果通知只顯示「WhatsApp」，你根本不知道該去哪個號碼回覆。好的多開軟體會在通知裡**標明帳號名稱**，點選通知直接開啟對應的帳號和聊天。
 
-          ## 4. 內建聊天翻譯
+        ## 4. 內建聊天翻譯
 
-          做外貿，語言往往比號碼數量更難。能在 WhatsApp 裡直接翻譯的多開軟體，可以省掉大量複製貼上：收到的訊息自動翻成中文，你用中文回覆，客戶收到他的語言。還要看：
+        做外貿，語言往往比號碼數量更難。能在 WhatsApp 裡直接翻譯的多開軟體，可以省掉大量複製貼上：收到的訊息自動翻成中文，你用中文回覆，客戶收到他的語言。還要看：
 
-          - **支援多少種語言**——阿拉伯語、西班牙語、俄語、葡萄牙語是外貿常見需求。
-          - **翻譯是否離線**——線上翻譯會把聊天內容傳送到第三方伺服器；離線翻譯更保護客戶隱私。
+        - **支援多少種語言**——阿拉伯語、西班牙語、俄語、葡萄牙語是外貿常見需求。
+        - **翻譯是否離線**——線上翻譯會把聊天內容傳送到第三方伺服器；離線翻譯更保護客戶隱私。
 
-          ## 5. 語音和圖片能不能處理
+        ## 5. 語音和圖片能不能處理
 
-          海外客戶很愛發語音，也常發價格截圖、產品圖、單據。能把**語音轉文字再翻譯**、能**識別圖片裡的文字**的軟體，在實際工作中非常省時間。
+        海外客戶很愛發語音，也常發價格截圖、產品圖、單據。能把**語音轉文字再翻譯**、能**識別圖片裡的文字**的軟體，在實際工作中非常省時間。
 
-          ## 6. 電腦帶不帶得動
+        ## 6. 電腦帶不帶得動
 
-          每個 WhatsApp 號碼都要佔用記憶體。號碼多的時候，要看軟體有沒有：
+        每個 WhatsApp 號碼都要佔用記憶體。號碼多的時候，要看軟體有沒有：
 
-          - **分批啟動**，開機時不會一下子卡死；
-          - **休眠**不常用的號碼，釋放記憶體；
-          - 號碼崩潰或卡住時**自動恢復**。
+        - **分批啟動**，開機時不會一下子卡死；
+        - **休眠**不常用的號碼，釋放記憶體；
+        - 號碼崩潰或卡住時**自動恢復**。
 
-          一般來說，每個號碼約佔 300–450 MB 記憶體，16 GB 記憶體的電腦可以執行十幾到二十幾個號碼。
+        一般來說，每個號碼約佔 300–450 MB 記憶體，16 GB 記憶體的電腦可以執行十幾到二十幾個號碼。
 
-          ## 7. 簡體中文介面和使用習慣
+        ## 7. 簡體中文介面和使用習慣
 
-          介面、提示、教學都是中文，團隊上手更快。快捷回覆（報價、發貨時間、付款方式）、快捷鍵切換帳號、搜尋帳號這些細節，每天能省下不少時間。
+        介面、提示、教學都是中文，團隊上手更快。快捷回覆（報價、發貨時間、付款方式）、快捷鍵切換帳號、搜尋帳號這些細節，每天能省下不少時間。
 
-          ## 8. 價格透明，先試用再付款
+        ## 8. 價格透明，先試用再付款
 
-          看清楚：按年還是按月、包含幾個帳號、能裝幾台電腦、有沒有**免費試用**。一定要用自己的號碼和電腦先試一試，再決定。
+        看清楚：按年還是按月、包含幾個帳號、能裝幾台電腦、有沒有**免費試用**。一定要用自己的號碼和電腦先試一試，再決定。
 
-          ## 對照清單
+        ## 對照清單
 
-          | 標準 | 要看什麼 | GlotChat |
-          |---|---|---|
-          | 帳號安全 | 官方 WhatsApp 網頁版 | ✓ 官方網頁版，絕不自動傳送訊息 |
-          | 會話隔離 | 每個號碼獨立登入和儲存 | ✓ |
-          | 通知 | 標明帳號，點選直達 | ✓ |
-          | 翻譯 | 雙向、語言多、離線 | ✓ 49 種語言，離線翻譯 |
-          | 語音 / 圖片 | 語音轉文字、圖片識字 | ✓ 都能翻譯 |
-          | 電腦配置 | 分批啟動、休眠、自動恢復 | ✓ 實測 27 個帳號同時執行 |
-          | 中文 | 簡體中文介面 | ✓ |
-          | 價格 | 透明、可試用 | 每年 69 USDT 起，免費試用 3 天 |
+        | 標準 | 要看什麼 | GlotChat |
+        |---|---|---|
+        | 帳號安全 | 官方 WhatsApp 網頁版 | ✓ 官方網頁版，絕不自動傳送訊息 |
+        | 會話隔離 | 每個號碼獨立登入和儲存 | ✓ |
+        | 通知 | 標明帳號，點選直達 | ✓ |
+        | 翻譯 | 雙向、語言多、離線 | ✓ 49 種語言，離線翻譯 |
+        | 語音 / 圖片 | 語音轉文字、圖片識字 | ✓ 都能翻譯 |
+        | 電腦配置 | 分批啟動、休眠、自動恢復 | ✓ 實測 27 個帳號同時執行 |
+        | 中文 | 簡體中文介面 | ✓ |
+        | 價格 | 透明、可試用 | 每年 69 USDT 起，免費試用 3 天 |
 
-          說明：GlotChat 是 **Windows 電腦軟體**，不支援 Mac；它**不提供群發功能**，專注於安全地聊天和翻譯。
+        說明：GlotChat 是 **Windows 電腦軟體**，不支援 Mac；它**不提供群發功能**，專注於安全地聊天和翻譯。
 
-          想用自己的號碼測一測？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
-      - type: faq
-        k: "常見問題"
-        h: "WhatsApp 多開常見問題"
-        items:
-          - ["用多開軟體會被封號嗎？", "基於官方 WhatsApp 網頁版的多開軟體，和在瀏覽器裡使用 WhatsApp 一樣。封號通常來自行為：群發騷擾、垃圾訊息、使用修改版 WhatsApp。正常聊天就沒問題。"]
-          - ["一台電腦能開多少個 WhatsApp？", "沒有固定上限，主要看記憶體。每個號碼約 300–450 MB，GlotChat 實測過 27 個帳號同時執行。"]
-          - ["WhatsApp Business 也能多開嗎？", "可以。WhatsApp 和 WhatsApp Business 的號碼都能透過官方網頁版連結，在同一個視窗裡使用。"]
-          - ["手機需要一直開著嗎？", "不需要。連結後手機關機也能在電腦上收發訊息，但每部手機至少每兩週開啟一次 WhatsApp，否則連結裝置會退出登入。"]
-      - type: related
-        k: "繼續閱讀"
-        h: "相關教學"
-        items: ["guides/multiple-whatsapp-accounts-on-pc", "guides/whatsapp-auto-translate-setup", "compare"]
-
+        想用自己的號碼測一測？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+    - type: faq
+      k: 常見問題
+      h: WhatsApp 多開常見問題
+      items:
+      - - 用多開軟體會被封號嗎？
+        - 基於官方 WhatsApp 網頁版的多開軟體，和在瀏覽器裡使用 WhatsApp 一樣。封號通常來自行為：群發騷擾、垃圾訊息、使用修改版 WhatsApp。正常聊天就沒問題。
+      - - 一台電腦能開多少個 WhatsApp？
+        - 沒有固定上限，主要看記憶體。每個號碼約 300–450 MB，GlotChat 實測過 27 個帳號同時執行。
+      - - WhatsApp Business 也能多開嗎？
+        - 可以。WhatsApp 和 WhatsApp Business 的號碼都能透過官方網頁版連結，在同一個視窗裡使用。
+      - - 手機需要一直開著嗎？
+        - 不需要。連結後手機關機也能在電腦上收發訊息，但每部手機至少每兩週開啟一次 WhatsApp，否則連結裝置會退出登入。
+    - type: related
+      k: 繼續閱讀
+      h: 相關教學
+      items:
+      - guides/multiple-whatsapp-accounts-on-pc
+      - guides/whatsapp-auto-translate-setup
+      - compare
   guides/foreign-trade-whatsapp-tips:
     single: true
-    title: "外貿 WhatsApp 開發客戶：用中文和海外買家溝通的 10 個技巧"
-    description: "外貿人用 WhatsApp 開發和維護海外客戶的 10 個實用技巧：資料設定、首次聯絡、用買家的語言回覆、語音和圖片、時差、跟進與快捷回覆，以及如何避免封號。"
-    keywords: "外貿WhatsApp開發客戶,WhatsApp外貿技巧,外貿客戶溝通,WhatsApp開發客戶,跨境電商WhatsApp,外貿業務員WhatsApp"
-    short: "外貿 WhatsApp 技巧"
-    icon: "🚢"
+    title: 外貿 WhatsApp 開發客戶：用中文和海外買家溝通的 10 個技巧
+    description: 外貿人用 WhatsApp 開發和維護海外客戶的 10 個實用技巧：資料設定、首次聯絡、用買家的語言回覆、語音和圖片、時差、跟進與快捷回覆，以及如何避免封號。
+    keywords: 外貿WhatsApp開發客戶,WhatsApp外貿技巧,外貿客戶溝通,WhatsApp開發客戶,跨境電商WhatsApp,外貿業務員WhatsApp
+    short: 外貿 WhatsApp 技巧
+    icon: 🚢
     article: true
-    published: "2026-10-22"
-    updated: "2026-10-22"
-    og_heading: "外貿 WhatsApp 開發客戶的 10 個技巧"
+    published: '2026-10-22'
+    updated: '2026-10-22'
+    og_heading: 外貿 WhatsApp 開發客戶的 10 個技巧
     blocks:
-      - type: hero
-        k: "外貿乾貨"
-        h1: "外貿 WhatsApp 開發客戶：用中文和海外買家溝通的 10 個技巧"
-        lead: "WhatsApp 是中東、拉美、非洲、東南亞買家最常用的溝通工具。這 10 個技巧，幫你回覆更快、成交更多。"
-        no_cta: true
-      - type: prose
-        toc: true
-        md: |
-          在很多市場，買家不看郵件，只回 WhatsApp。誰回覆得快、說得清楚、讓客戶感覺被重視，訂單就更容易落到誰手裡。
+    - type: hero
+      k: 外貿乾貨
+      h1: 外貿 WhatsApp 開發客戶：用中文和海外買家溝通的 10 個技巧
+      lead: WhatsApp 是中東、拉美、非洲、東南亞買家最常用的溝通工具。這 10 個技巧，幫你回覆更快、成交更多。
+      no_cta: true
+    - type: prose
+      toc: true
+      md: |
+        在很多市場，買家不看郵件，只回 WhatsApp。誰回覆得快、說得清楚、讓客戶感覺被重視，訂單就更容易落到誰手裡。
 
-          ## 1. 把資料設定專業
+        ## 1. 把資料設定專業
 
-          用公司 Logo 或清晰的個人照片做頭像，名稱寫「名字 + 公司」，簡介裡寫主營產品。用 **WhatsApp Business** 還可以設定商品目錄、營業時間和自動歡迎語。
+        用公司 Logo 或清晰的個人照片做頭像，名稱寫「名字 + 公司」，簡介裡寫主營產品。用 **WhatsApp Business** 還可以設定商品目錄、營業時間和自動歡迎語。
 
-          ## 2. 第一條訊息說清楚「你是誰、為什麼聯絡」
+        ## 2. 第一條訊息說清楚「你是誰、為什麼聯絡」
 
-          不要只發「Hello」。一句話介紹自己，說明是從展會、平台詢盤還是官網聯絡過來的，再附一個和客戶相關的問題。
+        不要只發「Hello」。一句話介紹自己，說明是從展會、平台詢盤還是官網聯絡過來的，再附一個和客戶相關的問題。
 
-          ## 3. 用買家的語言回覆
+        ## 3. 用買家的語言回覆
 
-          這是最有效、也最容易被忽略的一點。中東客戶看到阿拉伯語、拉美客戶看到西班牙語，回覆率和信任感都會明顯提高。不會這些語言也沒關係：用 [GlotChat 的自動翻譯](/zh-hant/guides/whatsapp-auto-translate-setup/)，你寫中文，客戶收到他的語言。
+        這是最有效、也最容易被忽略的一點。中東客戶看到阿拉伯語、拉美客戶看到西班牙語，回覆率和信任感都會明顯提高。不會這些語言也沒關係：用 [GlotChat 的自動翻譯](/zh-hant/guides/whatsapp-auto-translate-setup/)，你寫中文，客戶收到他的語言。
 
-          ## 4. 別錯過語音訊息
+        ## 4. 別錯過語音訊息
 
-          很多買家習慣發語音，尤其是中東和拉美。聽不懂就容易拖著不回。把語音轉成文字再翻譯，一分鐘內就能回覆。
+        很多買家習慣發語音，尤其是中東和拉美。聽不懂就容易拖著不回。把語音轉成文字再翻譯，一分鐘內就能回覆。
 
-          ## 5. 看懂客戶發來的圖片
+        ## 5. 看懂客戶發來的圖片
 
-          價格對比截圖、產品照片、付款憑證……圖片裡的文字也是重要資訊。用能識別圖片文字並翻譯的工具，不用再手動打字查。
+        價格對比截圖、產品照片、付款憑證……圖片裡的文字也是重要資訊。用能識別圖片文字並翻譯的工具，不用再手動打字查。
 
-          ## 6. 注意時差，在客戶的上午回覆
+        ## 6. 注意時差，在客戶的上午回覆
 
-          把重要客戶所在的時區記下來，在他們的上午回覆。下班前把常見問題的答案准備成**快捷回覆**，第二天一早就能快速處理。
+        把重要客戶所在的時區記下來，在他們的上午回覆。下班前把常見問題的答案准備成**快捷回覆**，第二天一早就能快速處理。
 
-          ## 7. 用快捷回覆統一話術
+        ## 7. 用快捷回覆統一話術
 
-          報價方式、起訂量、交期、付款方式、物流……每天都會被問到。整理成快捷回覆，團隊每個人回答都一樣專業，新人也能馬上上手。
+        報價方式、起訂量、交期、付款方式、物流……每天都會被問到。整理成快捷回覆，團隊每個人回答都一樣專業，新人也能馬上上手。
 
-          ## 8. 一個市場一個號碼，分開管理
+        ## 8. 一個市場一個號碼，分開管理
 
-          按國家、平台或業務員分號碼，客戶和聊天記錄不會混在一起。號碼多了，用多開軟體把所有號碼放在一個視窗，通知標明是哪個號碼，誰也不會漏回。
+        按國家、平台或業務員分號碼，客戶和聊天記錄不會混在一起。號碼多了，用多開軟體把所有號碼放在一個視窗，通知標明是哪個號碼，誰也不會漏回。
 
-          ## 9. 有節奏地跟進
+        ## 9. 有節奏地跟進
 
-          報價後 2–3 天沒回復，可以發一條有價值的跟進：新品、庫存、優惠截止時間。不要每天催，也不要群發同樣的內容。
+        報價後 2–3 天沒回復，可以發一條有價值的跟進：新品、庫存、優惠截止時間。不要每天催，也不要群發同樣的內容。
 
-          ## 10. 避免封號
+        ## 10. 避免封號
 
-          - 只用官方 WhatsApp 或 WhatsApp Business，不用修改版；
-          - 不給沒有聯絡過你的人群發廣告；
-          - 新號碼先正常聊天，慢慢增加聯絡人數量；
-          - 被客戶舉報多了容易被封，內容要和客戶真正相關。
+        - 只用官方 WhatsApp 或 WhatsApp Business，不用修改版；
+        - 不給沒有聯絡過你的人群發廣告；
+        - 新號碼先正常聊天，慢慢增加聯絡人數量；
+        - 被客戶舉報多了容易被封，內容要和客戶真正相關。
 
-          ## 讓工具替你省時間
+        ## 讓工具替你省時間
 
-          [GlotChat](/zh-hant/download/) 把這些技巧裡最費時的部分自動化：多個號碼一個視窗，收到的訊息、語音和圖片自動翻成中文，你用中文回覆、客戶收到他的語言，快捷回覆同樣自動翻譯。可以免費試用 3 天。
-      - type: faq
-        k: "常見問題"
-        h: "外貿 WhatsApp 常見問題"
-        items:
-          - ["外貿用 WhatsApp 還是 WhatsApp Business？", "建議用 WhatsApp Business：可以設定公司資料、商品目錄、營業時間和自動回覆，看起來更專業，而且免費。"]
-          - ["不會客戶的語言怎麼溝通？", "用能在 WhatsApp 裡直接翻譯的工具。比如 GlotChat：收到的訊息自動翻成中文，你用中文回覆，客戶收到阿拉伯語、西班牙語、俄語等他自己的語言。"]
-          - ["一個業務員管理多個號碼怎麼辦？", "在電腦上用多開軟體，把所有號碼放在一個視窗裡，每個號碼獨立登入、通知標明帳號，切換隻需一下。"]
-      - type: related
-        k: "繼續閱讀"
-        h: "相關內容"
-        items: ["for/exporters", "guides/whatsapp-auto-translate-setup", "guides/best-whatsapp-multi-account-software"]
+        [GlotChat](/zh-hant/download/) 把這些技巧裡最費時的部分自動化：多個號碼一個視窗，收到的訊息、語音和圖片自動翻成中文，你用中文回覆、客戶收到他的語言，快捷回覆同樣自動翻譯。可以免費試用 3 天。
+    - type: faq
+      k: 常見問題
+      h: 外貿 WhatsApp 常見問題
+      items:
+      - - 外貿用 WhatsApp 還是 WhatsApp Business？
+        - 建議用 WhatsApp Business：可以設定公司資料、商品目錄、營業時間和自動回覆，看起來更專業，而且免費。
+      - - 不會客戶的語言怎麼溝通？
+        - 用能在 WhatsApp 裡直接翻譯的工具。比如 GlotChat：收到的訊息自動翻成中文，你用中文回覆，客戶收到阿拉伯語、西班牙語、俄語等他自己的語言。
+      - - 一個業務員管理多個號碼怎麼辦？
+        - 在電腦上用多開軟體，把所有號碼放在一個視窗裡，每個號碼獨立登入、通知標明帳號，切換隻需一下。
+    - type: related
+      k: 繼續閱讀
+      h: 相關內容
+      items:
+      - for/exporters
+      - guides/whatsapp-auto-translate-setup
+      - guides/best-whatsapp-multi-account-software
+  telegram-translator:
+    title: Telegram 翻譯器電腦版 —— 每個聊天自動翻譯
+    description: 在 Windows 上雙向翻譯 Telegram：收到的訊息在原文下方顯示翻譯，回覆在傳送前翻譯。49 種語言，離線翻譯。免費試用 3 天。
+    keywords: Telegram翻譯,TG翻譯,Telegram翻譯軟體,Telegram自動翻譯,電報翻譯,Telegram電腦版翻譯
+    short: Telegram 翻譯器
+    icon: ✈️
+    og_heading: Telegram 翻譯器電腦版 —— 用任何語言閱讀和回覆
+    blocks:
+    - type: hero
+      k: Telegram 翻譯器（電腦版）
+      h1: 用客戶的語言，<span class="grad">和每位 Telegram 客戶溝通</span>
+      lead: 開啟聊天，每條訊息都已經在原文下方翻譯好。用中文寫回復 —— GlotChat 翻譯、顯示客戶將讀到的內容，然後傳送。49 種語言，在你的電腦上離線完成。
+      media: video:telegram
+      media_alt: GlotChat 把俄語 Telegram 聊天翻譯成中文
+    - type: steps
+      id: how
+      soft: false
+      k: 工作原理
+      h: 三步用上翻譯版 Telegram
+      items:
+      - - 登入一次
+        - 在 GlotChat 中新增 Telegram 帳號，掃碼（Telegram → 設定 → 裝置）或用手機號登入。
+      - - 用中文閱讀
+        - 每個聊天的每條訊息都會在原文下方顯示翻譯，自動識別聊天語言。
+      - - 用對方的語言回覆
+        - 用中文寫，按 Enter。確認預覽（包括對方將讀到的內容）後傳送。
+    - type: cards
+      soft: true
+      k: 你能得到什麼
+      h: 讓 Telegram 銷售更輕鬆
+      items:
+      - icon: 🌐
+        h: 雙向翻譯
+        p: 收到的訊息自動翻譯；你的回覆傳送前翻譯，原文保留給你看。
+      - icon: ↩
+        h: 「對方將讀到」核對
+        p: 傳送前把譯文再翻譯回中文。數字和價格自動檢查。
+      - icon: 🗂
+        h: 多個 Telegram 帳號
+        p: 個人號、店鋪號、客服號、業務員帳號並排使用，每個帳號獨立，各自通知。
+        link: multiple-telegram-accounts
+      - icon: ⚡
+        h: 快捷回覆
+        p: 價格、物流、付款等回覆儲存一次，在任何 Telegram 聊天中插入並翻譯。
+      - icon: 💬
+        h: WhatsApp 在同一個視窗
+        p: WhatsApp 號碼就在 Telegram 帳號旁邊。一個視窗，一種工作方式。
+      - icon: 🛡
+        h: 離線、私密
+        p: 翻譯在你的電腦上完成，Telegram 聊天不會傳送到線上翻譯或 AI 服務。
+    - type: split
+      k: 為什麼不用 Telegram 自帶的翻譯？
+      h: 專為銷售打造，不只是閱讀
+      p: Telegram 可以翻譯你點選的訊息 —— 但不會翻譯你寫的內容，完整的翻譯功能還需要每個帳號訂閱 Premium。GlotChat 在每個帳號上自動雙向翻譯，並在傳送前核對你的回覆。
+      ticks:
+      - 翻譯你的回覆，不只是收到的訊息
+      - 每個帳號都一樣 —— 不需要每個帳號訂閱
+      - 翻譯在你的電腦上完成，不經過伺服器
+      mock:
+        top: <span>以 <b>俄語</b> 傳送</span><span>原文：中文</span>
+        main: Да, мы можем отправить заказ завтра. Оплата при получении.
+        notes:
+        - - back
+          - ↩ 對方將讀到：可以，我們明天就能發貨。貨到付款。
+    - type: langs
+      soft: true
+      k: 49 種語言
+      h: 以下任意語言的 Telegram 聊天
+      p: 俄語、阿拉伯語、波斯語、土耳其語、西班牙語、印地語等 —— 任意組合都可以。
+    - type: faq
+      k: 常見問題
+      h: Telegram 翻譯器常見問題
+      items:
+      - - 電腦上能自動翻譯 Telegram 訊息嗎？
+        - 可以。在 GlotChat 中，每條收到的 Telegram 訊息都會自動翻譯並顯示在原文下方，適用於你新增的每個帳號的每個聊天。
+      - - 我的回覆也能翻譯嗎？
+        - 能。用中文寫好按 Enter：GlotChat 顯示譯文和對方將讀到的內容，然後用對方的語言傳送。
+      - - 怎麼在 GlotChat 裡登入 Telegram？
+        - 新增 Telegram 帳號，用手機掃描 QR Code（Telegram → 設定 → 裝置 → 新增裝置），或用手機號和 Telegram 發來的驗證碼登入。
+      - - 需要 Telegram Premium 嗎？
+        - 不需要。GlotChat 的翻譯適用於任何 Telegram 帳號，免費或 Premium 都可以。
+      - - 是官方的 Telegram 嗎？
+        - 是的。GlotChat 為每個帳號開啟官方 Telegram 網頁版，各自執行在獨立的會話中。
+      - - 對方會知道我在用翻譯嗎？
+        - 不會。對方收到的是他自己語言的普通訊息。
+    - type: related
+      k: 繼續瞭解
+      h: 相關內容
+      items:
+      - multiple-telegram-accounts
+      - whatsapp-translator
+      - pricing
+  multiple-telegram-accounts:
+    title: Telegram 多開電腦版 —— 多個帳號一個視窗 | GlotChat
+    description: 在 Windows 上同時使用多個 Telegram 帳號 —— 每個帳號獨立，各自通知和代理，內建翻譯。突破 Telegram 桌面版 3 個帳號的限制。
+    keywords: Telegram多開,TG多開,電報多開,Telegram多帳號,Telegram電腦版多開
+    short: Telegram 多開
+    icon: 🗂
+    og_heading: 所有 Telegram 帳號，電腦上一個視窗
+    blocks:
+    - type: hero
+      k: Telegram 多開（電腦版）
+      h1: 所有 Telegram 帳號 —— <span class="grad">一個視窗並排使用</span>
+      lead: Telegram 桌面版最多切換 3 個帳號，而且一次只能看一個。GlotChat 讓每個 Telegram 帳號和你的 WhatsApp 號碼並排開啟 —— 每個都獨立，每個都能翻譯。
+      media: video:telegram
+      media_alt: GlotChat 中的多個 Telegram 帳號
+    - type: facts
+      label: 關鍵資料
+      items:
+      - - 3+
+        - 沒有 3 個帳號的限制
+      - - '1'
+        - 個視窗管理 Telegram + WhatsApp
+      - - 1 個代理
+        - 每個帳號可單獨設定
+      - - '49'
+        - 種翻譯語言
+    - type: cards
+      k: 為多帳號打造
+      h: 每個店鋪、每個員工、每個市場都有自己的 Telegram
+      items:
+      - icon: 🔒
+        h: 每個帳號獨立
+        p: 每個 Telegram 帳號都有獨立的會話和儲存，登入不會串號，帳號之間互不可見。
+      - icon: 🔔
+        h: 知道是哪個帳號
+        p: 通知寫明帳號名稱並已翻譯，點選開啟對應聊天。
+      - icon: 🌍
+        h: 每個帳號獨立代理
+        p: 為每個 Telegram 帳號設定 HTTP 或 SOCKS5 代理，每分鐘自動檢測。
+      - icon: 🌐
+        h: 聊天自動翻譯
+        p: 每個帳號的每個聊天都雙向翻譯，傳送前可核對。
+      - icon: ⚡
+        h: 共用快捷回覆
+        p: 價格、付款、物流模板在所有 Telegram 和 WhatsApp 帳號中都能用。
+      - icon: 🩹
+        h: 穩定執行
+        p: 卡住的帳號自動重啟；不常用的帳號休眠，電腦保持流暢。
+    - type: table
+      soft: true
+      k: 你的選擇
+      h: 在電腦上使用多個 Telegram 帳號的方法
+      hl: 3
+      cols:
+      - ''
+      - Telegram 桌面版
+      - 瀏覽器多使用者 + 網頁版
+      - GlotChat
+      rows:
+      - - 帳號數量
+        - 最多 3 個（Premium 更多），一次顯示一個
+        - 多個，每個一個視窗
+        - 按套餐數量，並排顯示
+      - - 通知顯示帳號
+        - '~'
+        - '~'
+        - ✓
+      - - 每個帳號獨立代理
+        - ✕ 所有帳號共用
+        - ~ 需要外掛
+        - ✓
+      - - WhatsApp 在同一個視窗
+        - ✕
+        - ✕
+        - ✓
+      - - 你的回覆自動翻譯
+        - ✕
+        - ✕
+        - ✓ 49 種語言
+      - - 費用
+        - 免費
+        - 免費
+        - 每年 69 USDT 起
+      note: Telegram 的帳號限制可能會變化；以上為 2026 年 Telegram 桌面版的情況。
+    - type: faq
+      k: 常見問題
+      h: Telegram 多開常見問題
+      items:
+      - - 一台電腦能用多少個 Telegram 帳號？
+        - 在 GlotChat 中，按套餐數量 —— Starter 5 個、Pro 15 個、Business 不限（WhatsApp 和 Telegram 帳號合併計算）。實際限制是記憶體：每個帳號約 300–450 MB。
+      - - 怎麼新增 Telegram 帳號？
+        - 點選「新增帳號」，選擇 Telegram，然後用手機掃碼（Telegram → 設定 → 裝置 → 新增裝置）或用手機號登入。
+      - - Telegram 允許這樣用嗎？
+        - 允許。GlotChat 為每個帳號開啟官方 Telegram 網頁版，和在瀏覽器裡登入一樣。請遵守 Telegram 的規則 —— 不要發騷擾訊息或群發。
+      - - Telegram 和 WhatsApp 能一起用嗎？
+        - 能。兩個應用都在同一個視窗的左側，一鍵切換應用和帳號。
+    - type: related
+      k: 繼續瞭解
+      h: 相關內容
+      items:
+      - telegram-translator
+      - multiple-whatsapp-accounts
+      - pricing

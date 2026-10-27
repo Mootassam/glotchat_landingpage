@@ -29,17 +29,34 @@ sys.path.insert(0, HERE)
 import config as cfg  # noqa: E402
 
 MANIFEST = os.path.join(ROOT, ".generated.json")
+MEDIA_DATE = "2026-10-27"          # when the demo clips were last recorded (VideoObject uploadDate)
 ICON_TG = ('<svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 '
            '2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>')
+DLI = ('<svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 '
+       '2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+# the chat apps' marks (simple glyphs drawn here, not the companies' logo files)
+ICONS = {
+    "dl": DLI,
+    "wa": '<svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>',
+    "tg": '<svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>',
+    "ms": '<svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.8 1.2 5.2 3.1 6.9v3.2l2.9-1.6c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9S17.4 2.5 12 2.5zm1 12.2-2.4-2.6-4.7 2.6 5.2-5.5 2.5 2.6 4.6-2.6-5.2 5.5z"/></svg>',
+    "ig": '<svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3z"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>',
+    "dc": '<svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.3 5.4A16.5 16.5 0 0 0 15.2 4l-.5 1a15 15 0 0 0-5.4 0l-.5-1a16.4 16.4 0 0 0-4.1 1.4C2.1 9.3 1.4 13.1 1.8 16.9a16.6 16.6 0 0 0 5 2.6l1.1-1.7a10.7 10.7 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 10.2 0l.4.3-1.7.8 1.1 1.7a16.5 16.5 0 0 0 5-2.6c.5-4.4-.8-8.2-2.3-11.5zM8.5 14.6c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></svg>',
+}
 IMAGES = {
     "switcher": {"src": "/assets/img/app-switcher.webp", "w": 1080, "h": 840},
 }
 
 
 # ------------------------------------------------------------------ content
+ONLY = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--lang=")]     # --lang=en: build one language while editing
+
+
 def load_content():
     out = {}
     for code in cfg.LANGS:
+        if ONLY and code not in ONLY[0].split(","):
+            continue
         p = os.path.join(HERE, "content", f"{code}.yaml")
         if os.path.exists(p):
             with open(p, encoding="utf-8") as f:
@@ -274,7 +291,7 @@ def build(make_og=True):
             html = tpl.render(
                 cfg=cfg, L=L, lang=lang, ui=ui, page=page, page_id=pid, url=url, alternates=alts,
                 lang_menu=lang_menu, link=link, home_url=link("home"), tg=f"https://t.me/{cfg.TELEGRAM_USER}", dl=cfg.DOWNLOAD,
-                icon_tg=ICON_TG, industries=industries, guides=guides, registry=registry, crumbs=crumbs,
+                icon_tg=ICON_TG, icons=ICONS, industries=industries, guides=guides, registry=registry, crumbs=crumbs,
                 og_image=cfg.SITE + og_rel, jsonld=jsonld,
                 gc=ld(dict(gc, alts={l: path_of(l, pid) for l in available.get(pid, [])})), v=version, vlang=vlang, images=IMAGES,
                 toc=toc, contacts=contacts, preload=preload, arr='←' if L['dir'] == 'rtl' else '→')
@@ -288,6 +305,11 @@ def build(make_og=True):
             if not page.get("special") and "noindex" not in (page.get("robots") or ""):
                 sitemap.append((pid, lang))
 
+    if ONLY:                                       # a one-language build: the other languages' files stay as they are
+        print(f"built {len(generated)} pages ({ONLY[0]} only) — build all languages before committing")
+        if make_og:
+            render_og(og_jobs)
+        return
     clean_old(generated)
     write_sitemap(sitemap, available, today)
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8", newline="\n") as f:
@@ -344,6 +366,24 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
                       "datePublished": str(page.get("published") or page["updated"]), "dateModified": page["updated"],
                       "author": {"@id": S + "/#org"}, "publisher": {"@id": S + "/#org"},
                       "mainEntityOfPage": {"@id": url + "#webpage"}})
+    # the demo clips of the page, for Google's video results
+    vlang = cfg.LANGS[lang].get("media", lang)
+    vids = []
+    for b in blocks:
+        if b["type"] == "hero_home":
+            vids += [(c["id"], c["label"], c["cap"]) for c in b["chapters"]]
+        elif b["type"] == "showcase":
+            vids += [(r["media"].split(":")[1], r["h"], r["p"]) for r in b["rows"] if r["media"].startswith("video:")]
+    seen = set()
+    for scene, name, desc in vids:
+        if scene in seen:
+            continue
+        seen.add(scene)
+        graph.append({"@type": "VideoObject", "@id": url + "#video-" + scene,
+                      "name": "GlotChat – " + re.sub(r"<[^>]+>", "", name), "description": re.sub(r"<[^>]+>", "", desc),
+                      "inLanguage": hl, "thumbnailUrl": S + f"/assets/media/{scene}-{vlang}-land.webp",
+                      "contentUrl": S + f"/assets/media/{scene}-{vlang}-land.mp4", "uploadDate": MEDIA_DATE,
+                      "publisher": {"@id": S + "/#org"}})
     faq = [b for b in blocks if b["type"] == "faq"]
     if faq:
         items = [it for b in faq for it in b["items"]]
@@ -399,12 +439,15 @@ def write_llms(en, available):
     S = cfg.SITE
     ui = en["ui"]
     lines = [f"# GlotChat", "", f"> {ui['app_description']}", "",
-             "GlotChat is a Windows desktop app. It opens the official WhatsApp Web for each account in its own isolated "
-             "session and adds offline translation of messages, voice notes and text in photos. It is an independent product, "
-             "not affiliated with WhatsApp or Meta.", "",
+             "GlotChat is a Windows desktop app. It opens the official WhatsApp Web and Telegram Web for each account in its own "
+             "isolated session (plus Messenger, Instagram and Discord in beta) and adds offline translation of messages, voice notes "
+             "and text in photos. Before a reply is sent, it shows the translation translated back into the writer's language and "
+             "checks that prices, numbers and links are unchanged. It is an independent product, not affiliated with WhatsApp, "
+             "Meta or Telegram.", "",
              "## Key facts", "",
              f"- Platform: {cfg.FACTS['os']} (64-bit)",
-             f"- Accounts: tested with {cfg.FACTS['accounts_tested']} WhatsApp accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
+             "- Apps: WhatsApp, WhatsApp Business, Telegram; Messenger, Instagram and Discord in beta",
+             f"- Accounts: tested with {cfg.FACTS['accounts_tested']} accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
              f"- Translation: {cfg.FACTS['languages']} languages, offline on the user's PC; voice notes recognised in about {cfg.FACTS['voice_languages']} languages",
              f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 3-day trial\"), one trial per computer",
              f"- Download (Windows installer, version {cfg.DOWNLOAD['version']}, {cfg.DOWNLOAD['size_mb']} MB): {cfg.DOWNLOAD['url']} — install guide: {S}{path_of('en', 'download')}",

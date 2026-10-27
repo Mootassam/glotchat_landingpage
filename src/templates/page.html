@@ -2,15 +2,15 @@
 
 {% macro tgbtn(kind, place, label, cls='btn tg lg', plan=None, price=None, n=None, id=None) -%}
 {%- if kind in ('trial', 'planTrial', 'finder') -%}
-{#- the free trial starts inside the app now: every "try it free" button leads to the download page -#}
-<a{% if id %} id="{{ id }}"{% endif %} class="{{ (' ' ~ cls ~ ' ')|replace(' tg ', ' dl ')|trim }}" href="{{ link('download') }}" data-place="{{ place }}">{% if ' tg' in ' ' ~ cls %}<svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endif %}<span>{{ label }}</span></a>
+{#- the free trial starts inside the app: every "try it free" button leads to the download page -#}
+<a{% if id %} id="{{ id }}"{% endif %} class="{{ (' ' ~ cls ~ ' ')|replace(' tg ', ' dl ')|trim }}" href="{{ link('download') }}" data-place="{{ place }}">{% if ' tg' in ' ' ~ cls %}{{ icons.dl|safe }}{% endif %}<span>{{ label }}</span></a>
 {%- else -%}
-<a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
+<a{% if id %} id="{{ id }}"{% endif %} class="{{ cls }}" data-tg="{{ kind }}" data-place="{{ place }}"{% if plan %} data-plan="{{ plan }}"{% endif %}{% if price %} data-price="{{ price }}"{% endif %}{% if n %} data-n="{{ n }}"{% endif %} href="{{ tg }}" target="_blank" rel="noopener">{% if ' tg' in ' ' ~ cls or ' tgo' in ' ' ~ cls %}{{ icon_tg|safe }}{% endif %}<span>{{ label }}</span></a>
 {%- endif -%}
 {%- endmacro %}
 
 {% macro dlbtn(place, cls='btn dl lg', label=None) -%}
-<a class="{{ cls }}" href="{{ dl.url }}" download data-dl="{{ place }}" rel="nofollow"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span>{{ label or ui.dl.btn }}</span>{% if 'xl' in cls %}<small>{{ dl.file }} · {{ dl.size_mb }} MB</small>{% endif %}</span></a>
+<a class="{{ cls }}" href="{{ dl.url }}" download data-dl="{{ place }}" rel="nofollow">{{ icons.dl|safe }}<span><span>{{ label or ui.dl.btn }}</span>{% if 'xl' in cls %}<small>{{ dl.file }} · {{ dl.size_mb }} MB</small>{% endif %}</span></a>
 {%- endmacro %}
 
 {% macro screen(name, alt='', eager=False, player=False) -%}
@@ -37,14 +37,40 @@
 {%- endif -%}
 {%- endmacro %}
 
-{% macro head(b) -%}
+{% macro head(b, center=True) -%}
 {%- if b.k or b.h or b.p %}
-<div class="head">
+<div class="head{% if not center %} left{% endif %}">
   {%- if b.k %}<span class="kicker">{{ b.k }}</span>{% endif %}
-  {%- if b.h %}<h2{% if b.id %} id="{{ b.id }}-h"{% endif %}>{{ b.h }}</h2>{% endif %}
+  {%- if b.h %}<h2{% if b.id %} id="{{ b.id }}-h"{% endif %}>{{ b.h|safe }}</h2>{% endif %}
   {%- if b.p %}<p>{{ b.p|safe }}</p>{% endif %}
 </div>
 {%- endif %}
+{%- endmacro %}
+
+{#- the small app badges: WhatsApp, Telegram (+ the beta ones) -#}
+{% macro appbadges(beta=True) -%}
+<ul class="apps-row" aria-label="{{ ui.apps_label }}">
+  <li class="app wa">{{ icons.wa|safe }}<span>WhatsApp</span></li>
+  <li class="app wab">{{ icons.wa|safe }}<span>WhatsApp Business</span></li>
+  <li class="app tgc">{{ icons.tg|safe }}<span>Telegram</span></li>
+  {%- if beta %}
+  <li class="app ms">{{ icons.ms|safe }}<span>Messenger</span><em>{{ ui.beta }}</em></li>
+  <li class="app ig">{{ icons.ig|safe }}<span>Instagram</span><em>{{ ui.beta }}</em></li>
+  <li class="app dc">{{ icons.dc|safe }}<span>Discord</span><em>{{ ui.beta }}</em></li>
+  {%- endif %}
+</ul>
+{%- endmacro %}
+
+{#- a small, crisp picture of a GlotChat panel (HTML, not an image: sharp, translatable, readable by Google) -#}
+{% macro minimock(m) -%}
+<div class="mm{% if m.dark %} dark{% endif %}" aria-hidden="true">
+  {%- if m.top %}<div class="mm-top">{{ m.top|safe }}</div>{% endif %}
+  {%- if m.input %}<div class="mm-in" dir="auto">{{ m.input }}</div>{% endif %}
+  {%- if m.arrow %}<div class="mm-arrow">↓</div>{% endif %}
+  {%- if m.main %}<div class="mm-main" dir="auto"{% if m.rtl %} style="direction:rtl"{% endif %}>{{ m.main|safe }}</div>{% endif %}
+  {%- for n in m.notes or [] %}<div class="mm-note {{ n[0] }}" dir="auto">{{ n[1]|safe }}</div>{% endfor %}
+  {%- if m.chips %}<div class="mm-chips">{% for c in m.chips %}<span{% if loop.first %} class="on"{% endif %} dir="auto">{{ c }}</span>{% endfor %}</div>{% endif %}
+</div>
 {%- endmacro %}
 
 {% block main %}
@@ -52,18 +78,16 @@
 {%- set t = b.type %}
 
 {%- if t == 'hero_home' %}
-<section class="hero hero2">
-  <div class="glow" aria-hidden="true"></div>
-  <div class="wrap hero2-in">
-    <div class="hero2-copy">
+<section class="hero">
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
       <span class="eyebrow"><span class="dotlive"></span><span>{{ b.eyebrow }}</span></span>
       <h1>{{ b.h1|safe }}</h1>
-      <p class="lead">{{ b.lead }}</p>
-    </div>
-    <div class="hero2-cta">
+      <p class="lead">{{ b.lead|safe }}</p>
       <div class="hero-cta">
-        {{ tgbtn('trial', 'hero', ui.cta_trial) }}
-        <a class="btn ghost lg" href="#demo" data-watch><span class="play" aria-hidden="true">▶</span><span>{{ ui.cta_demo }}</span></a>
+        {{ tgbtn('trial', 'hero', ui.cta_trial, 'btn dl lg') }}
+        <a class="btn ghost lg" href="#demo" data-watch><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10 6z" fill="currentColor"/></svg></span><span>{{ ui.cta_demo }}</span></a>
       </div>
       <ul class="micro">{% for m in b.micro %}<li>{{ m }}</li>{% endfor %}</ul>
     </div>
@@ -73,16 +97,40 @@
         <button type="button" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" data-ch="{{ c.id }}" data-cap="{{ c.cap }}"><span class="n">{{ loop.index }}</span><span class="l"><span aria-hidden="true">{{ c.icon }}</span> {{ c.label }}</span><i class="bar"><i></i></i></button>
         {%- endfor %}
       </div>
-      <div class="window big">
-        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
-        {{ screen(b.chapters[0].id, b.media_alt, True, True) }}
-        <button type="button" class="expand" data-expand aria-label="{{ ui.expand }}" title="{{ ui.expand }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
-        <button type="button" class="pclose" data-expand aria-label="{{ ui.close }}">×</button>
+      <div class="stagewrap">
+        {%- for f in b.floats or [] %}
+        <div class="float f{{ loop.index }}" aria-hidden="true"><span class="fi">{{ f[0] }}</span><span><b>{{ f[1] }}</b><small>{{ f[2] }}</small></span></div>
+        {%- endfor %}
+        <div class="window big">
+          <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
+          {{ screen(b.chapters[0].id, b.media_alt, True, True) }}
+          <button type="button" class="expand" data-expand aria-label="{{ ui.expand }}" title="{{ ui.expand }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+          <button type="button" class="pclose" data-expand aria-label="{{ ui.close }}">×</button>
+        </div>
       </div>
       <p class="cap" aria-live="polite">{{ b.chapters[0].cap }}</p>
     </div>
+    {{ appbadges() }}
   </div>
-  <div class="wrap"><ul class="trust">{% for x in ui.trust %}<li>{{ x }}</li>{% endfor %}</ul></div>
+  <div class="wrap"><ul class="trust">{% for x in ui.trust %}<li><span aria-hidden="true">{{ ['🛡', '💻', '⚡', '🌍'][loop.index0 % 4] }}</span>{{ x }}</li>{% endfor %}</ul></div>
+</section>
+
+{%- elif t == 'apps' %}
+<section class="sec appsec"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="appgrid">
+      {%- for a in b['items'] %}
+      <article class="appcard {{ a.cls }}">
+        <span class="appic" aria-hidden="true">{{ icons[a.icon]|safe }}</span>
+        <h3>{{ a.name }}{% if a.beta %} <em class="betatag">{{ ui.beta }}</em>{% endif %}</h3>
+        <p>{{ a.p|safe }}</p>
+        {%- if a.link %}<a class="more" href="{{ link(a.link) }}">{{ a.more or ui.learn_more }} {{ arr }}</a>{% endif %}
+      </article>
+      {%- endfor %}
+    </div>
+    {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
+  </div>
 </section>
 
 {%- elif t == 'showcase' %}
@@ -92,22 +140,43 @@
     {%- for r in b.rows %}
     <article class="srow{% if loop.index is even %} rev{% endif %}">
       <div class="stext">
-        <span class="snum">{{ loop.index }}</span>
+        {%- if r.tag %}<span class="stag">{{ r.tag }}</span>{% else %}<span class="snum">{{ '%02d'|format(loop.index) }}</span>{% endif %}
         <h3>{{ r.h }}</h3>
         <p>{{ r.p|safe }}</p>
         <ul class="ticks">{% for x in r.ticks %}<li>{{ x|safe }}</li>{% endfor %}</ul>
+        {%- if r.link %}<a class="more" href="{{ link(r.link[0]) }}">{{ r.link[1] }} {{ arr }}</a>{% endif %}
       </div>
       <div class="smedia">{{ media(r.media, r.h) }}</div>
     </article>
     {%- endfor %}
     {%- if b.extras %}<ul class="extras">{% for x in b.extras %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
-    <div class="center-cta">{{ tgbtn('trial', 'showcase', ui.cta_trial) }}</div>
+    {%- if not b.no_cta %}<div class="center-cta">{{ tgbtn('trial', 'showcase', ui.cta_trial, 'btn dl lg') }}</div>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'trust' %}
+<section class="sec dark trustsec"{% if b.id %} id="{{ b.id }}"{% endif %}>
+  <div class="mesh dim" aria-hidden="true"></div>
+  <div class="wrap">
+    {{ head(b) }}
+    <div class="tgrid">
+      {%- for c in b['items'] %}
+      <article class="tcard{% if c.wide %} wide{% endif %}">
+        {{ minimock(c.mock) }}
+        <div class="tcopy">
+          <h3>{{ c.h }}</h3>
+          <p>{{ c.p|safe }}</p>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'trust-' ~ page_id, b.cta, 'btn dl lg') }}</div>{% endif %}
   </div>
 </section>
 
 {%- elif t == 'hero' %}
 <section class="phero">
-  <div class="glow" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true"></div>
   <div class="wrap{% if b.media %} phero-in{% endif %}">
     <div class="phero-copy">
       {%- if crumbs|length > 1 %}
@@ -119,8 +188,9 @@
       {%- if page.article %}<p class="meta">{{ ui.updated }} <time datetime="{{ page.updated }}">{{ page.updated_h }}</time> · {{ page.read_min }} {{ ui.min_read }}</p>{% endif %}
       {%- if not b.no_cta %}
       <div class="hero-cta">
-        {{ tgbtn('trial', 'hero-' ~ page_id, b.cta or ui.cta_trial) }}
-        {%- if b.cta2 %}<a class="btn ghost lg" href="{{ link(b.cta2[0]) if not b.cta2[0].startswith('#') else b.cta2[0] }}">{{ b.cta2[1] }}</a>{% endif %}
+        {{ tgbtn('trial', 'hero-' ~ page_id, b.cta or ui.cta_trial, 'btn dl lg') }}
+        {%- if b.cta2 %}<a class="btn ghost lg" href="{{ link(b.cta2[0]) if not b.cta2[0].startswith('#') else b.cta2[0] }}">{{ b.cta2[1] }}</a>
+        {%- else %}{{ tgbtn('demo', 'hero2-' ~ page_id, ui.cta_live, 'btn tgo lg') }}{% endif %}
       </div>
       <ul class="micro">{% for m in ui.micro %}<li>{{ m }}</li>{% endfor %}</ul>
       {%- endif %}
@@ -151,7 +221,7 @@
       </article>
       {%- endfor %}
     </div>
-    {%- if b.cta %}<div class="center-cta">{{ tgbtn(b.cta_kind or 'usecase', 'cards-' ~ page_id, b.cta) }}</div>{% endif %}
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn(b.cta_kind or 'usecase', 'cards-' ~ page_id, b.cta, 'btn tg lg') }}</div>{% endif %}
   </div>
 </section>
 
@@ -166,7 +236,7 @@
       {%- if b.link %}<a class="more" href="{{ link(b.link[0]) }}">{{ b.link[1] }} {{ arr }}</a>{% endif %}
     </div>
     <figure class="shot">
-      {{ media(b.media, b.alt) }}
+      {%- if b.mock %}{{ minimock(b.mock) }}{% else %}{{ media(b.media, b.alt) }}{% endif %}
       {%- if b.caption %}<figcaption>{{ b.caption }}</figcaption>{% endif %}
     </figure>
   </div>
@@ -177,7 +247,7 @@
   <div class="wrap">
     {{ head(b) }}
     <ol class="steps">{% for h, p in b['items'] %}<li><span>{{ loop.index }}</span><h3>{{ h }}</h3><p>{{ p|safe }}</p></li>{% endfor %}</ol>
-    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'steps-' ~ page_id, b.cta) }}</div>{% endif %}
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'steps-' ~ page_id, b.cta, 'btn dl lg') }}</div>{% endif %}
   </div>
 </section>
 
@@ -196,7 +266,7 @@
 <section class="sec{% if b.soft %} soft{% endif %}"{% if b.id %} id="{{ b.id }}"{% endif %}>
   <div class="wrap">
     {{ head(b) }}
-    <div class="tbl-wrap" tabindex="0" role="region" aria-label="{{ b.h }}">
+    <div class="tbl-wrap" tabindex="0" role="region" aria-label="{{ b.h|striptags }}">
       <table class="tbl">
         <thead><tr>{% for c in b.cols %}<th scope="col"{% if loop.index0 == b.hl %} class="hl"{% endif %}>{{ c|safe }}</th>{% endfor %}</tr></thead>
         <tbody>
@@ -207,7 +277,7 @@
       </table>
     </div>
     {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
-    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'table-' ~ page_id, b.cta) }}</div>{% endif %}
+    {%- if b.cta %}<div class="center-cta">{{ tgbtn('trial', 'table-' ~ page_id, b.cta, 'btn dl lg') }}</div>{% endif %}
   </div>
 </section>
 
@@ -226,7 +296,7 @@
         <div><b data-o="days">0</b><span>{{ ui.calc.days }}</span></div>
       </div>
       <p class="calc-note">{{ ui.calc.note }}</p>
-      <div class="center-cta">{{ tgbtn('trial', 'calc', ui.calc.cta) }}</div>
+      <div class="center-cta">{{ tgbtn('trial', 'calc', ui.calc.cta, 'btn dl lg') }}</div>
     </div>
   </div>
 </section>
@@ -246,7 +316,7 @@
       </div>
       <div class="finder-a" id="finderA" hidden>
         <span>{{ ui.finder.a }}</span> <b id="finderPlan">Pro</b>
-        {{ tgbtn('finder', 'finder', ui.finder.btn, 'btn tg', 'Pro', None, '6–15', 'finderBtn') }}
+        {{ tgbtn('finder', 'finder', ui.finder.btn, 'btn dl', 'Pro', None, '6–15', 'finderBtn') }}
       </div>
     </div>
     <div class="plans">
@@ -261,22 +331,36 @@
         <p class="once">≈ {{ '%.2f'|format(p.price / 12) }} {{ ui.per_month }}</p>
         <ul class="ticks">
           <li>{{ (ui.unlimited_accounts if p.accounts is none else ui.up_to_accounts|replace('{n}', p.accounts|string))|safe }}</li>
+          <li>{{ ui.plan_f.apps }}</li>
           <li>{{ ui.plan_f.translate }}</li>
           <li>{{ ui.plan_f.templates }}</li>
           <li>{{ ui.plan_f.updates }}</li>
           <li>{{ pt.pcs }}</li>
         </ul>
-        {{ tgbtn('plan', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block', p.id, p.price) }}
+        {{ tgbtn('plan', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block' if p.popular else 'btn tgo block', p.id, p.price) }}
         {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.try, 'trylink', p.id) }}
       </article>
       {%- endfor %}
     </div>
     <div class="custom">
       <p>{{ ui.custom_html|safe }}</p>
-      {{ tgbtn('custom', 'custom', ui.custom_btn, 'btn outline') }}
+      {{ tgbtn('custom', 'custom', ui.custom_btn, 'btn tgo') }}
     </div>
     <p class="paynote"><span class="usdt" aria-hidden="true">₮</span> {{ ui.paynote }}</p>
     {%- if b.more %}<p class="center-more"><a class="more" href="{{ link('pricing') }}">{{ b.more }} {{ arr }}</a></p>{% endif %}
+  </div>
+</section>
+
+{%- elif t == 'buying' %}
+<section class="sec{% if b.soft %} soft{% endif %}" id="{{ b.id or 'buying' }}">
+  <div class="wrap">
+    {{ head(b) }}
+    <ol class="buy">
+      {%- for s in b['items'] %}
+      <li><span class="bn">{{ loop.index }}</span><div><h3>{{ s[0] }}</h3><p>{{ s[1]|safe }}</p></div></li>
+      {%- endfor %}
+    </ol>
+    <div class="center-cta">{{ tgbtn('general', 'buying-' ~ page_id, b.cta or ui.cta_live, 'btn tg lg') }}</div>
   </div>
 </section>
 
@@ -284,7 +368,7 @@
 <section class="sec{% if b.soft %} soft{% endif %}" id="languages">
   <div class="wrap">
     {{ head(b) }}
-    <ul class="langs" aria-label="{{ b.h }}">{% for x in cfg.TRANSLATION_LANGUAGES %}<li>{{ x }}</li>{% endfor %}</ul>
+    <ul class="langs" aria-label="{{ b.h|striptags }}">{% for x in cfg.TRANSLATION_LANGUAGES %}<li>{{ x }}</li>{% endfor %}</ul>
     {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
   </div>
 </section>
@@ -301,11 +385,14 @@
 
 {%- elif t == 'faq' %}
 <section class="sec{% if b.soft %} soft{% endif %}" id="faq">
-  <div class="wrap narrow">
-    {{ head(b) }}
+  <div class="wrap faq-grid">
+    {{ head(b, False) }}
+    <div class="faqs">
     {%- for q, a in b['items'] %}
     <details{% if loop.first and b.open_first %} open{% endif %}><summary>{{ q }}</summary><p>{{ a|safe }}</p></details>
     {%- endfor %}
+    <p class="faq-more">{{ ui.faq_more }} <a data-tg="general" data-place="faq-{{ page_id }}" href="{{ tg }}" target="_blank" rel="noopener">@{{ cfg.TELEGRAM_USER }}</a></p>
+    </div>
   </div>
 </section>
 
@@ -335,7 +422,7 @@
 
 {%- elif t == 'dl_hero' %}
 <section class="phero dlhero">
-  <div class="glow" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true"></div>
   <div class="wrap phero-in">
     <div class="phero-copy">
       <nav class="crumbs" aria-label="{{ ui.breadcrumb }}"><ol>{% for c in crumbs %}<li>{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}</li>{% endfor %}</ol></nav>
@@ -351,7 +438,7 @@
       <div class="dlbox">
         {{ dlbtn('hero', 'btn dl xl') }}
         <ul class="dlmeta">
-          <li>{{ ui.dl.version }} <b>{{ dl.version }}</b></li>
+          <li>{{ ui.dl.version }} <b>{{ dl.version }}</b> · {{ ui.dl.autoupdate }}</li>
           <li>{{ ui.dl.os_short }}</li>
           <li>{{ ui.dl.no_admin }}</li>
         </ul>
@@ -378,7 +465,7 @@
       {%- for s in b['items'] %}
       <li class="dlstep{% if loop.index is even %} rev{% endif %}">
         <div class="dltext">
-          <span class="snum">{{ loop.index }}</span>
+          <span class="snum">{{ '%02d'|format(loop.index) }}</span>
           <h3>{{ s.h }}</h3>
           <p>{{ s.p|safe }}</p>
           {%- if s.tip %}<p class="tip">💡 {{ s.tip|safe }}</p>{% endif %}
@@ -456,15 +543,17 @@
 
 {%- if not page.no_final %}
 <section class="final" id="contact">
+  <div class="mesh dim" aria-hidden="true"></div>
   <div class="wrap final-in">
     <div>
+      <span class="kicker light">{{ ui.final.k }}</span>
       <h2>{{ ui.final.h }}</h2>
       <p>{{ ui.final.p }}</p>
       <div class="hero-cta">
-        {%- if page_id != 'download' %}<a class="btn dl lg" href="{{ link('download') }}" data-place="final-dl"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.dl.btn }}</span></a>{% endif %}
-        {{ tgbtn('general', 'final', '@' ~ cfg.TELEGRAM_USER) }}
-        <button class="btn ghost lg" type="button" data-copy="@{{ cfg.TELEGRAM_USER }}">{{ ui.copy_username }}</button>
+        {%- if page_id != 'download' %}<a class="btn dl lg" href="{{ link('download') }}" data-place="final-dl">{{ icons.dl|safe }}<span>{{ ui.dl.btn }}</span></a>{% endif %}
+        {{ tgbtn('general', 'final', ui.final.tg, 'btn tg lg') }}
       </div>
+      <ul class="final-points">{% for x in ui.final.points %}<li>{{ x }}</li>{% endfor %}</ul>
       {%- if contacts %}
       <div class="alt-contacts">
         <span>{{ ui.also }}</span>
@@ -474,7 +563,9 @@
     </div>
     <div class="qr">
       <img src="/assets/img/telegram-qr.svg" alt="{{ ui.qr_alt }}" width="200" height="200" loading="lazy">
+      <b>@{{ cfg.TELEGRAM_USER }}</b>
       <span>{{ ui.qr }}</span>
+      <button class="btn outline sm" type="button" data-copy="@{{ cfg.TELEGRAM_USER }}">{{ ui.copy_username }}</button>
     </div>
   </div>
 </section>

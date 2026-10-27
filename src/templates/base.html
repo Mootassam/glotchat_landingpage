@@ -10,7 +10,7 @@
 {%- for a in alternates %}
   <link rel="alternate" hreflang="{{ a.hreflang }}" href="{{ a.url }}">
 {%- endfor %}
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#ffffff">
   <meta name="application-name" content="GlotChat">
   <meta name="format-detection" content="telephone=no">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,9 +40,9 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="applicable-device" content="pc,mobile">
   <meta name="renderer" content="webkit">
+{%- endif %}
 {%- if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}">
-{%- endif %}
 {%- endif %}
 {%- if cfg.BAIDU_SITE_VERIFICATION %}
   <meta name="baidu-site-verification" content="{{ cfg.BAIDU_SITE_VERIFICATION }}">
@@ -70,9 +70,7 @@
 <a class="skip" href="#main">{{ ui.skip }}</a>
 
 <a class="promo" data-place="promo" href="{{ link('download') }}">
-  <span class="gift" aria-hidden="true">🎁</span>
-  <span>{{ ui.promo_html|safe }}</span>
-  <span class="promo-go">{{ ui.promo_go }}</span>
+  <span class="promo-in"><span class="gift" aria-hidden="true">🎁</span><span>{{ ui.promo_html|safe }}</span><span class="promo-go">{{ ui.promo_go }}</span></span>
 </a>
 
 <header class="nav" id="top">
@@ -80,48 +78,65 @@
     <a class="brand" href="{{ home_url }}" aria-label="GlotChat"><img src="/assets/img/logo-96.png" alt="" width="34" height="34"><span>GlotChat</span></a>
     <nav class="links" aria-label="{{ ui.nav_label }}">
       <div class="dd">
-        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.product }} <span aria-hidden="true">▾</span></button>
-        <div class="dd-m">
-          <a href="{{ link('whatsapp-translator') }}"><b>🌐 {{ ui.nav.translator }}</b><small>{{ ui.nav.translator_s }}</small></a>
-          <a href="{{ link('multiple-whatsapp-accounts') }}"><b>🗂 {{ ui.nav.accounts }}</b><small>{{ ui.nav.accounts_s }}</small></a>
-          <a href="{{ link('compare') }}"><b>⚖️ {{ ui.nav.compare }}</b><small>{{ ui.nav.compare_s }}</small></a>
+        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.product }} <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <div class="dd-m mega">
+          <div class="mega-col">
+            <span class="mega-h">WhatsApp</span>
+            <a href="{{ link('whatsapp-translator') }}"><span class="mi wa" aria-hidden="true">{{ icons.wa|safe }}</span><span><b>{{ ui.nav.translator }}</b><small>{{ ui.nav.translator_s }}</small></span></a>
+            <a href="{{ link('multiple-whatsapp-accounts') }}"><span class="mi wa" aria-hidden="true">{{ icons.wa|safe }}</span><span><b>{{ ui.nav.accounts }}</b><small>{{ ui.nav.accounts_s }}</small></span></a>
+          </div>
+          <div class="mega-col">
+            <span class="mega-h">Telegram</span>
+            <a href="{{ link('telegram-translator') }}"><span class="mi tgc" aria-hidden="true">{{ icons.tg|safe }}</span><span><b>{{ ui.nav.tg_translator }}</b><small>{{ ui.nav.tg_translator_s }}</small></span></a>
+            <a href="{{ link('multiple-telegram-accounts') }}"><span class="mi tgc" aria-hidden="true">{{ icons.tg|safe }}</span><span><b>{{ ui.nav.tg_accounts }}</b><small>{{ ui.nav.tg_accounts_s }}</small></span></a>
+          </div>
+          <a class="mega-foot" href="{{ link('compare') }}"><b>⚖️ {{ ui.nav.compare }}</b><small>{{ ui.nav.compare_s }}</small></a>
         </div>
       </div>
       <div class="dd">
-        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.usecases }} <span aria-hidden="true">▾</span></button>
+        <button class="dd-b" type="button" aria-expanded="false">{{ ui.nav.usecases }} <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
         <div class="dd-m">
 {%- for s in industries %}
-          <a href="{{ link('for/' ~ s.slug) }}"><b>{{ s.icon }} {{ s.name }}</b><small>{{ s.short }}</small></a>
+          <a href="{{ link('for/' ~ s.slug) }}"><span class="mi" aria-hidden="true">{{ s.icon }}</span><span><b>{{ s.name }}</b><small>{{ s.short }}</small></span></a>
 {%- endfor %}
         </div>
       </div>
-      <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
-      <a href="{{ link('guides') }}">{{ ui.nav.guides }}</a>
+      <a href="{{ link('pricing') }}"{% if page_id == 'pricing' %} aria-current="page"{% endif %}>{{ ui.nav.pricing }}</a>
+      <a href="{{ link('guides') }}"{% if page_id.startswith('guides') %} aria-current="page"{% endif %}>{{ ui.nav.guides }}</a>
     </nav>
     <div class="nav-r">
       <div class="dd lang-dd">
-        <button class="dd-b lang-b" type="button" aria-expanded="false" aria-label="{{ ui.lang_label }}"><span aria-hidden="true">🌐</span> {{ L.short or L.name }} <span aria-hidden="true">▾</span></button>
+        <button class="dd-b lang-b" type="button" aria-expanded="false" aria-label="{{ ui.lang_label }}"><svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>{{ L.short or L.name }}</span></button>
         <div class="dd-m end">
 {%- for a in lang_menu %}
           <a href="{{ a.url }}" hreflang="{{ a.hreflang }}" lang="{{ a.html }}" data-lang="{{ a.code }}"{% if a.code == lang %} aria-current="page"{% endif %}>{{ a.name }}</a>
 {%- endfor %}
         </div>
       </div>
-      <a class="btn dl sm navdl" href="{{ link('download') }}"{% if page_id == 'download' %} aria-current="page"{% endif %}><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.dl.nav }}</span></a>
-      <a class="btn tg sm" data-tg="general" data-place="nav" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.contact }}</span></a>
+      <a class="btn tgo sm navtg" data-tg="general" data-place="nav" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.contact }}</span></a>
+      <a class="btn dl sm navdl" href="{{ link('download') }}"{% if page_id == 'download' %} aria-current="page"{% endif %}>{{ icons.dl|safe }}<span>{{ ui.dl.nav }}</span></a>
       <button class="burger" type="button" aria-label="{{ ui.menu }}" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
   </div>
   <nav class="mnav" id="mnav" aria-label="{{ ui.nav_label }}" hidden>
-    <a href="{{ link('whatsapp-translator') }}">🌐 {{ ui.nav.translator }}</a>
-    <a href="{{ link('multiple-whatsapp-accounts') }}">🗂 {{ ui.nav.accounts }}</a>
+    <span class="mnav-h">WhatsApp</span>
+    <a href="{{ link('whatsapp-translator') }}">{{ ui.nav.translator }}</a>
+    <a href="{{ link('multiple-whatsapp-accounts') }}">{{ ui.nav.accounts }}</a>
+    <span class="mnav-h">Telegram</span>
+    <a href="{{ link('telegram-translator') }}">{{ ui.nav.tg_translator }}</a>
+    <a href="{{ link('multiple-telegram-accounts') }}">{{ ui.nav.tg_accounts }}</a>
+    <span class="mnav-h">{{ ui.nav.usecases }}</span>
 {%- for s in industries %}
     <a href="{{ link('for/' ~ s.slug) }}">{{ s.icon }} {{ s.name }}</a>
 {%- endfor %}
-    <a href="{{ link('compare') }}">⚖️ {{ ui.nav.compare }}</a>
-    <a href="{{ link('pricing') }}">💳 {{ ui.nav.pricing }}</a>
-    <a href="{{ link('guides') }}">📘 {{ ui.nav.guides }}</a>
-    <a href="{{ link('download') }}">⬇️ {{ ui.dl.nav }}</a>
+    <span class="mnav-h">GlotChat</span>
+    <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
+    <a href="{{ link('compare') }}">{{ ui.nav.compare }}</a>
+    <a href="{{ link('guides') }}">{{ ui.nav.guides }}</a>
+    <div class="mnav-cta">
+      <a class="btn dl block" href="{{ link('download') }}">{{ icons.dl|safe }}<span>{{ ui.dl.btn }}</span></a>
+      <a class="btn tg block" data-tg="general" data-place="mnav" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.contact }}</span></a>
+    </div>
   </nav>
 </header>
 
@@ -132,14 +147,20 @@
 <footer class="foot">
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <a class="brand" href="{{ home_url }}"><img src="/assets/img/logo-96.png" alt="" width="28" height="28" loading="lazy"><span>GlotChat</span></a>
+      <a class="brand" href="{{ home_url }}"><img src="/assets/img/logo-96.png" alt="" width="30" height="30" loading="lazy"><span>GlotChat</span></a>
       <p>{{ ui.footer.tagline }}</p>
+      <div class="foot-apps" aria-label="{{ ui.apps_label }}">
+        <span class="appchip wa">{{ icons.wa|safe }}WhatsApp</span><span class="appchip tgc">{{ icons.tg|safe }}Telegram</span>
+        <span class="appchip">Messenger <em>{{ ui.beta }}</em></span><span class="appchip">Instagram <em>{{ ui.beta }}</em></span><span class="appchip">Discord <em>{{ ui.beta }}</em></span>
+      </div>
       <a class="btn tg sm" data-tg="general" data-place="footer" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>@{{ cfg.TELEGRAM_USER }}</span></a>
     </div>
     <div>
       <h3>{{ ui.footer.product }}</h3>
       <a href="{{ link('whatsapp-translator') }}">{{ ui.nav.translator }}</a>
+      <a href="{{ link('telegram-translator') }}">{{ ui.nav.tg_translator }}</a>
       <a href="{{ link('multiple-whatsapp-accounts') }}">{{ ui.nav.accounts }}</a>
+      <a href="{{ link('multiple-telegram-accounts') }}">{{ ui.nav.tg_accounts }}</a>
       <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
       <a href="{{ link('download') }}">{{ ui.dl.nav_long }}</a>
       <a href="{{ link('compare') }}">{{ ui.nav.compare }}</a>
@@ -168,7 +189,8 @@
 
 <a class="fab" data-tg="general" data-place="fab" href="{{ tg }}" target="_blank" rel="noopener" aria-label="{{ ui.fab }}">{{ icon_tg|safe }}<span>{{ ui.fab }}</span></a>
 <div class="mbar">
-  <a class="btn tg block" data-tg="trial" data-place="mobile-bar" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.mbar }}</span></a>
+  <a class="btn dl" data-place="mobile-bar" href="{{ link('download') }}">{{ icons.dl|safe }}<span>{{ ui.mbar_dl }}</span></a>
+  <a class="btn tg" data-tg="general" data-place="mobile-bar" href="{{ tg }}" target="_blank" rel="noopener" aria-label="{{ ui.contact }}">{{ icon_tg|safe }}<span>{{ ui.mbar }}</span></a>
 </div>
 <div class="modal" id="leave" hidden role="dialog" aria-modal="true" aria-labelledby="leaveH">
   <div class="modal-box">
@@ -176,7 +198,8 @@
     <span class="gift big" aria-hidden="true">🎁</span>
     <h2 id="leaveH">{{ ui.leave.h }}</h2>
     <p>{{ ui.leave.p }}</p>
-    <a class="btn dl lg block" data-place="exit-popup" href="{{ link('download') }}"><svg class="dli" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ ui.leave.btn }}</span></a>
+    <a class="btn dl lg block" data-place="exit-popup" href="{{ link('download') }}">{{ icons.dl|safe }}<span>{{ ui.leave.btn }}</span></a>
+    <a class="btn tgo block" data-tg="demo" data-place="exit-popup-tg" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>{{ ui.leave.tg }}</span></a>
     <button class="modal-no" type="button" data-close>{{ ui.leave.no }}</button>
   </div>
 </div>
