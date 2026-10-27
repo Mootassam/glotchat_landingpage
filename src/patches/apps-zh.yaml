@@ -1,0 +1,299 @@
+# 2026-10: Messenger、Instagram、Discord 不再是测试版 —— 新页面 + 首页更新（python src/apply_apps.py zh）
+ui:
+  promo_html: "<b>GlotChat 1.3 新增 Telegram、Messenger、Instagram 和 Discord</b> —— 发送前还能核对译文。"
+  nav:
+    more_apps: "更多应用"
+    all_in_one: "聚合聊天软件"
+    all_in_one_s: "5 个应用一个窗口，全部翻译"
+    ms: "Messenger 翻译器"
+    ms_s: "Facebook 聊天，任何语言"
+    ig: "Instagram 私信翻译"
+    ig_s: "每个 Instagram 账号的私信都翻译"
+    dc: "Discord 翻译器"
+    dc_s: "服务器和私信，任何语言"
+  finder:
+    q: "你一共使用多少个账号（所有应用加起来）？"
+  plan_f:
+    apps: "WhatsApp、Telegram、Messenger、Instagram、Discord"
+  final:
+    p: "下载 GlotChat，点击“开始 3 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。"
+  footer:
+    tagline: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 集中在一个窗口，每位客户都用他的语言沟通。专为跨境生意打造。"
+  og_kicker: "WhatsApp、Telegram、Messenger、Instagram、Discord 多开翻译（电脑版）"
+  og_chips: ["5 个应用一个窗口", "49 种语言", "免费试用 3 天"]
+  app_description: "Windows 桌面软件：在一个窗口中运行多个 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号（每个账号独立隔离，可单独设置通知和代理），在电脑上离线翻译聊天，支持 49 种语言（WhatsApp 和 Telegram 还可翻译语音和图片文字），发送前可核对译文。"
+  feature_first: "一个窗口运行多个 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号"
+  msg:
+    general: "你好！我想了解 GlotChat（WhatsApp、Telegram、Messenger、Instagram、Discord 多开 + 翻译），可以介绍一下吗？"
+    trial: "你好！我想试用 GlotChat，我大约有 __ 个账号（WhatsApp / Telegram / Messenger / Instagram / Discord）。"
+  dl:
+    card_sub: "WhatsApp、Telegram、Messenger、Instagram、Discord 多开翻译（电脑版）"
+
+home:
+  title: "WhatsApp、Telegram 多开翻译软件（电脑版）| GlotChat"
+  description: "一个窗口管理 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号，所有聊天在电脑上离线翻译，支持 49 种语言，发送前可核对译文。免费试用 3 天。"
+  keywords: "WhatsApp翻译,Telegram翻译,WhatsApp多开,Telegram多开,Messenger翻译,Instagram私信翻译,Discord翻译,聚合聊天软件,外贸WhatsApp翻译软件"
+  og_title: "GlotChat —— WhatsApp、Telegram、Messenger、Instagram、Discord 一个窗口，每位客户都用他的语言"
+  og_heading: "所有聊天应用一个窗口，每位客户都用他的语言"
+  eyebrow: "1.3 新功能 —— Telegram、Messenger、Instagram、Discord"
+  h1: "WhatsApp、Telegram 等全部账号，<span class=\"grad\">一个窗口，任何语言。</span>"
+  lead: "所有 WhatsApp 号码，以及 Telegram、Messenger、Instagram、Discord 账号，在电脑上并排运行。每位客户的消息都用中文阅读，回复用客户的语言发出 —— 发送前你就知道对方会读到什么。"
+  chapter: {label: "所有应用", cap: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 并排运行 —— 一键切换，每个聊天都翻译。"}
+  fact: ["5", "个聊天应用：WhatsApp、Telegram、Messenger、Instagram、Discord"]
+  apps_h: "你的客户在 WhatsApp、Telegram、Messenger、Instagram <em>和</em> Discord。现在你可以在同一个地方回复他们。"
+  apps_items:
+    - {icon: ms, cls: ms, name: "Messenger", p: "多个 Facebook 账号的 Messenger 同时打开。每条消息下方显示翻译，回复在发送前翻译成客户的语言。", link: "messenger-translator", more: "Messenger 翻译器"}
+    - {icon: ig, cls: ig, name: "Instagram 私信", p: "你运营的每个 Instagram 账号的私信并排显示。客户消息自动翻译，你的回复用客户的语言发出。", link: "instagram-dm-translator", more: "Instagram 私信翻译"}
+    - {icon: dc, cls: dc, name: "Discord", p: "多个 Discord 账号的服务器和私信，每条消息和你写的内容都能翻译。", link: "discord-translator", more: "Discord 翻译器"}
+  apps_note: "所有套餐都包含这 5 个应用。每个应用都翻译文字消息；语音和图片翻译在 WhatsApp 和 Telegram 中可用。"
+  apps_link: "查看 GlotChat 在每个应用中的功能"
+  showcase:
+    tag: "1.3 新功能"
+    h: "Messenger、Instagram 和 Discord —— 同一个窗口"
+    p: "Facebook 和 Marketplace 的买家、Instagram 粉丝、Discord 成员 —— 每个聊天双向翻译，就在你的 WhatsApp 和 Telegram 账号旁边。"
+    ticks: ["每个应用可添加多个账号，彼此隔离", "每个应用和账号都显示未读数", "回复在发送前核对"]
+    link: ["all-in-one-messenger", "了解聚合聊天软件"]
+  vs_good: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 在一个窗口"
+  faq_apps: ["支持哪些应用？", "WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信和 Discord —— 每个应用都可以添加多个账号，全部在一个窗口里。所有应用的聊天都双向翻译；语音和图片翻译在 WhatsApp 和 Telegram 中可用。"]
+  faq_safe: "GlotChat 为每个账号打开各应用的官方网页版（WhatsApp、Telegram、Messenger、Instagram、Discord），各自运行在独立的会话中 —— 和浏览器一样，只是更有条理。它不会自动发送任何消息，所有消息都由你发送。和使用任何聊天软件一样，请不要群发骚扰信息。"
+
+pricing:
+  accounts: "账号数量（所有应用合计）"
+  apps: "Messenger、Instagram 和 Discord"
+
+pages:
+  all-in-one-messenger:
+    title: "聚合聊天软件（电脑版）：5 个应用一个窗口 + 翻译 | GlotChat"
+    description: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 在 Windows 上一个窗口运行。每个应用多个账号，彼此隔离，所有聊天都翻译。免费试用。"
+    keywords: "聚合聊天软件,多平台聊天管理,WhatsApp Telegram Messenger 聚合,社交账号多开,聚合聊天翻译软件,电脑版聊天聚合"
+    short: "聚合聊天软件"
+    icon: "🧩"
+    og_heading: "WhatsApp、Telegram、Messenger、Instagram、Discord —— 一个窗口"
+    blocks:
+      - type: hero
+        k: "电脑版聚合聊天软件"
+        h1: "所有聊天应用、所有账号 —— <span class=\"grad\">一个窗口，用你的语言</span>"
+        lead: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 在电脑上并排运行。每个应用添加多个账号，一键切换，用中文阅读和回复每一位客户 —— 离线翻译，发送前核对。"
+        media: "video:apps"
+        media_alt: "在 GlotChat 中切换 WhatsApp、Telegram、Messenger、Instagram 和 Discord，每个聊天都已翻译"
+      - type: facts
+        label: "关键数据"
+        items: [["5", "个聊天应用，一个窗口"], ["27+", "个账号同时运行（实测）"], ["49", "种翻译语言，离线"], ["1", "个套餐包含所有应用"]]
+      - type: table
+        id: apps
+        k: "支持的应用"
+        h: "GlotChat 在每个应用中能做什么"
+        cols: ["", "WhatsApp", "Telegram", "Messenger", "Instagram", "Discord"]
+        rows:
+          - ["多个账号并排运行", "✓", "✓", "✓", "✓", "✓"]
+          - ["消息下方显示翻译", "✓", "✓", "✓", "✓", "✓"]
+          - ["回复在发送前翻译", "✓", "✓", "✓", "✓", "✓"]
+          - ["“对方将读到”核对 + 换个说法", "✓", "✓", "✓", "✓", "✓"]
+          - ["通知显示账号名称", "✓", "✓", "✓", "✓", "✓"]
+          - ["每个账号单独代理", "✓", "✓", "✓", "✓", "✓"]
+          - ["语音转文字", "✓", "✓", "✕", "✕", "✕"]
+          - ["图片文字翻译", "✓", "✓", "✕", "✕", "✕"]
+          - ["快捷回复模板", "✓", "✓", "✕", "✕", "✕"]
+        note: "在所有应用中，你还可以选中任意文字，一键翻译。"
+      - type: cards
+        soft: true
+        k: "一个窗口代替五个"
+        h: "不用再在应用、标签页和手机之间来回切换"
+        items:
+          - {icon: "🔒", h: "每个账号独立隔离", p: "每个应用的每个账号都有自己的会话和存储。登录互不干扰，就像一个软件里的多台电脑。"}
+          - {icon: "🔔", h: "谁发的、在哪个账号", p: "每个应用、每个账号都显示未读数，每条通知都标明账号。点击通知直接打开对应聊天。"}
+          - {icon: "🌐", h: "每个聊天都翻译", p: "收到的消息在原文下方显示翻译；你的回复在发送前翻译 —— 5 个应用都可以。"}
+          - {icon: "↩", h: "发送前核对", p: "看到客户将读到的内容（回译成中文）。不满意？换个说法。"}
+          - {icon: "🌍", h: "每个账号单独代理", p: "可以给任何账号设置独立的 HTTP 或 SOCKS5 代理 —— 适合在多个国家做生意。"}
+          - {icon: "🛡", h: "离线、私密", p: "翻译在你的电脑上完成，聊天内容不会发送到任何在线翻译或 AI 服务。"}
+      - type: steps
+        k: "使用方法"
+        h: "几分钟添加你的所有应用"
+        items:
+          - ["添加账号", "点击“添加账号”，选择应用：WhatsApp、Telegram、Messenger、Instagram 或 Discord。设置名称和你的语言。"]
+          - ["登录一次", "扫描二维码（WhatsApp、Telegram），或用平时的账号密码登录（Messenger、Instagram、Discord）。之后保持登录。"]
+          - ["用任何语言聊天", "打开聊天：消息已经是中文。你用中文写，客户读到他的语言。"]
+        cta: "下载并免费试用所有应用"
+      - type: faq
+        soft: true
+        k: "常见问题"
+        h: "聚合聊天软件 —— 常见问题"
+        items:
+          - ["GlotChat 支持哪些应用？", "WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信和 Discord。所有套餐都包含全部应用。"]
+          - ["同一个应用可以添加多个账号吗？", "可以。在套餐允许的范围内随意添加 —— 比如 3 个 WhatsApp 号码、2 个 Telegram 账号和 2 个 Instagram 账号。每个账号彼此隔离。"]
+          - ["套餐里的账号数量怎么计算？", "所有应用合计：入门版 5 个账号，专业版 15 个，商业版不限 —— 应用可以任意组合。"]
+          - ["每个应用都能翻译语音和图片吗？", "语音和图片文字翻译在 WhatsApp 和 Telegram 中可用。在 Messenger、Instagram 和 Discord 中，文字消息双向翻译。"]
+          - ["是官方的 WhatsApp、Telegram、Messenger、Instagram 和 Discord 吗？", "是的。GlotChat 为每个账号打开各应用的官方网页版，运行在独立会话中 —— 和浏览器一样，只是更有条理，并且带翻译。它不会自动发送任何消息。"]
+          - ["支持 Mac 或手机吗？", "GlotChat 是 Windows 10 / 11 桌面软件。你的手机照常使用。"]
+      - type: related
+        k: "继续了解"
+        h: "相关页面"
+        items: ["messenger-translator", "instagram-dm-translator", "discord-translator"]
+
+  messenger-translator:
+    title: "Facebook Messenger 翻译器 + Messenger 多开（电脑版）"
+    description: "在 Windows 上双向翻译 Facebook Messenger 聊天，多个 Messenger 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    keywords: "Messenger翻译,Facebook Messenger翻译,Messenger多开,Facebook多开,Messenger自动翻译,Facebook外贸翻译"
+    short: "Messenger 翻译器"
+    icon: "💬"
+    og_heading: "Facebook Messenger 翻译器 —— 多账号，任何语言"
+    blocks:
+      - type: hero
+        k: "电脑版 Messenger 翻译器"
+        h1: "用客户的语言 <span class=\"grad\">回复每一条 Messenger 消息</span>"
+        lead: "Facebook 和 Marketplace 的客户用德语、西班牙语或阿拉伯语给你发消息？GlotChat 在原文下方显示翻译，你的回复在发送前翻译成客户的语言 —— 并显示对方将读到的内容。多个 Messenger 账号并排运行。"
+        media: "video:messenger"
+        media_alt: "在 GlotChat 中，Facebook Messenger 聊天在德语和中文之间翻译"
+      - type: steps
+        soft: false
+        k: "使用方法"
+        h: "三步实现 Messenger 翻译"
+        items:
+          - ["登录一次", "在 GlotChat 中添加 Messenger 账号，用该 Facebook 账号登录。之后保持登录。"]
+          - ["用中文阅读", "打开聊天：每条消息到达时，原文下方都显示翻译。"]
+          - ["用客户的语言回复", "用中文写好按回车。核对预览（包括对方将读到的内容），然后发送。"]
+      - type: cards
+        soft: true
+        k: "你能得到什么"
+        h: "让 Messenger 销售更轻松"
+        items:
+          - {icon: "🌐", h: "双向翻译", p: "收到的消息自动翻译；你的回复在发送前翻译。49 种语言，任意组合。"}
+          - {icon: "↩", h: "“对方将读到”核对", p: "发送前看到译文回译成中文的内容。价格和数字会自动检查。"}
+          - {icon: "🗂", h: "Messenger 多开", p: "多个 Facebook 账号的 Messenger 同时打开 —— 彼此隔离，各自有通知。"}
+          - {icon: "🔔", h: "按账号显示通知", p: "每条通知都标明所属账号。点击即可打开对应聊天。"}
+          - {icon: "🌍", h: "每个账号单独代理", p: "需要的话，可以给每个 Messenger 账号设置独立的 HTTP 或 SOCKS5 代理。"}
+          - {icon: "💬", h: "所有应用在一起", p: "WhatsApp、Telegram、Instagram 和 Discord 在同一个窗口，同样翻译。", link: "all-in-one-messenger"}
+      - type: split
+        k: "Messenger 多开"
+        h: "多个 Facebook 账号同时在线"
+        p: "浏览器一次只能显示一个 Facebook 账号 —— 切换就得退出再登录。GlotChat 让每个 Messenger 账号在独立的会话中保持打开，你能看到每个账号的未读消息，一键回复。"
+        ticks: ["不用反复退出登录", "每个账号有自己的登录、Cookie 和存储", "用中文阅读，用客户的语言回复"]
+        mock:
+          top: "<span>以<b>德语</b>发送</span><span>原文：中文</span>"
+          main: "Ja, die Lampe ist verfügbar! Der Versand nach München kostet 8 €."
+          notes: [["back", "↩ 对方将读到：是的，这盏灯有货！寄到慕尼黑的运费为 8 欧元。"]]
+      - type: faq
+        k: "常见问题"
+        h: "Messenger 翻译器 —— 常见问题"
+        items:
+          - ["电脑上能自动翻译 Facebook Messenger 吗？", "可以。在 GlotChat 中，每条收到的 Messenger 消息都会自动翻译，显示在原文下方 —— 你添加的每个 Messenger 账号的每个聊天都可以。"]
+          - ["我的回复也能翻译吗？", "可以。用中文写好按回车：GlotChat 显示译文和对方将读到的内容，然后你用客户的语言发出。"]
+          - ["可以同时使用多个 Messenger 账号吗？", "可以。每个 Messenger 账号运行在独立会话中，并排显示 —— 数量取决于你的套餐。"]
+          - ["Messenger 中的语音和图片能翻译吗？", "暂时不能：Messenger 中文字消息双向翻译。语音和图片翻译在 WhatsApp 和 Telegram 中可用。"]
+          - ["是官方的 Messenger 吗？", "是的。GlotChat 为每个账号打开官方的 Facebook Messenger 网页版。它不会自动发送任何消息，一切由你掌控。"]
+      - type: related
+        k: "继续了解"
+        h: "相关页面"
+        items: ["all-in-one-messenger", "instagram-dm-translator", "whatsapp-translator"]
+
+  instagram-dm-translator:
+    title: "Instagram 私信翻译器 + Instagram 多开（电脑版）"
+    description: "在 Windows 上双向翻译 Instagram 私信，多个 Instagram 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    keywords: "Instagram私信翻译,Instagram翻译,Instagram多开,Instagram电脑版,ins私信翻译,Instagram外贸"
+    short: "Instagram 私信翻译"
+    icon: "📸"
+    og_heading: "Instagram 私信翻译器 —— 每个账号，任何语言"
+    blocks:
+      - type: hero
+        k: "电脑版 Instagram 私信翻译器"
+        h1: "把海外 Instagram 私信 <span class=\"grad\">变成订单</span>"
+        lead: "其他国家的粉丝用他们的语言询问价格和发货？GlotChat 在原文下方翻译每条 Instagram 私信，你的回复在发送前翻译 —— 你运营的所有 Instagram 账号并排显示。"
+        media: "video:instagram"
+        media_alt: "在 GlotChat 中，Instagram 私信在法语和中文之间翻译"
+      - type: steps
+        soft: false
+        k: "使用方法"
+        h: "三步实现 Instagram 私信翻译"
+        items:
+          - ["登录一次", "在 GlotChat 中添加 Instagram 账号，用用户名和密码登录。之后保持登录。"]
+          - ["用中文阅读", "打开对话：每条消息的原文下方都显示翻译。"]
+          - ["用客户的语言回复", "用中文写好按回车。核对对方将读到的内容，然后发送。"]
+      - type: cards
+        soft: true
+        k: "你能得到什么"
+        h: "为在 Instagram 上卖货的店铺和博主打造"
+        items:
+          - {icon: "🌐", h: "双向翻译", p: "私信自动翻译；你的回复在发送前翻译。49 种语言，任意组合。"}
+          - {icon: "↩", h: "“对方将读到”核对", p: "发送前看到回复回译成中文的内容。价格、尺码和数字会自动检查。"}
+          - {icon: "🗂", h: "Instagram 多开", p: "店铺号、品牌号和个人号同时打开 —— 彼此隔离，无需切换。"}
+          - {icon: "🔔", h: "按账号显示通知", p: "知道是哪个 Instagram 账号收到了消息。点击通知直接打开对应聊天。"}
+          - {icon: "🌍", h: "每个账号单独代理", p: "需要的话，可以给每个 Instagram 账号设置独立的 HTTP 或 SOCKS5 代理。"}
+          - {icon: "💬", h: "WhatsApp 和 Telegram 也在", p: "把 Instagram 客户转到 WhatsApp 或 Telegram 继续聊 —— 都在同一个窗口。", link: "all-in-one-messenger"}
+      - type: split
+        k: "Instagram 多开"
+        h: "所有 Instagram 账号的私信，无需切换"
+        p: "Instagram 可以切换账号，但一次只能看一个收件箱。在 GlotChat 中，每个 Instagram 账号在独立会话中保持打开，各自显示未读数 —— 在一个窗口回复所有人。"
+        ticks: ["所有收件箱同时打开", "每个账号显示未读数", "客户收到他的语言的回复"]
+        mock:
+          top: "<span>以<b>法语</b>发送</span><span>原文：中文</span>"
+          main: "Oui, le sac noir est disponible ! Nous livrons en Belgique en 3 jours."
+          notes: [["back", "↩ 对方将读到：是的，黑色的包有货！我们在 3 天内送达比利时。"]]
+      - type: faq
+        k: "常见问题"
+        h: "Instagram 私信翻译器 —— 常见问题"
+        items:
+          - ["电脑上能翻译 Instagram 私信吗？", "可以。在 GlotChat 中，每条 Instagram 私信都会自动翻译，显示在原文下方 —— 你添加的每个 Instagram 账号的每个对话都可以。"]
+          - ["我的回复也能翻译吗？", "可以。用中文写好按回车：发送前 GlotChat 显示译文和对方将读到的内容。"]
+          - ["可以同时使用多个 Instagram 账号吗？", "可以。每个账号都有独立会话，所有收件箱并排打开 —— 数量取决于你的套餐。"]
+          - ["Instagram 中的语音和图片能翻译吗？", "暂时不能：Instagram 中文字消息双向翻译。语音和图片翻译在 WhatsApp 和 Telegram 中可用。"]
+          - ["对我的 Instagram 账号安全吗？", "GlotChat 打开官方的 Instagram 网页版，和浏览器完全一样，不会自动发送任何消息。请遵守 Instagram 的规则 —— 不要群发或发送垃圾信息。"]
+      - type: related
+        k: "继续了解"
+        h: "相关页面"
+        items: ["all-in-one-messenger", "messenger-translator", "whatsapp-translator"]
+
+  discord-translator:
+    title: "Discord 翻译器 + Discord 多开（电脑版）"
+    description: "在 Windows 上翻译 Discord 服务器和私信中的消息，多个 Discord 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    keywords: "Discord翻译,Discord翻译器,Discord自动翻译,Discord多开,Discord电脑版多账号"
+    short: "Discord 翻译器"
+    icon: "🎮"
+    og_heading: "Discord 翻译器 —— 服务器和私信，任何语言"
+    blocks:
+      - type: hero
+        k: "电脑版 Discord 翻译器"
+        h1: "用每一种语言 <span class=\"grad\">和整个 Discord 社区交流</span>"
+        lead: "客户、玩家和成员用意大利语、俄语或葡萄牙语发消息？GlotChat 在原文下方翻译每条 Discord 消息（服务器和私信都可以），你的回复在发送前翻译。多个 Discord 账号并排运行。"
+        media: "video:discord"
+        media_alt: "在 GlotChat 中，Discord 对话在意大利语和中文之间翻译"
+      - type: steps
+        soft: false
+        k: "使用方法"
+        h: "三步实现 Discord 翻译"
+        items:
+          - ["登录一次", "在 GlotChat 中添加 Discord 账号，用邮箱和密码或二维码登录。之后保持登录。"]
+          - ["用中文阅读", "打开频道或私信：每条消息的原文下方都显示翻译。"]
+          - ["用对方的语言回复", "用中文写好按回车。核对对方将读到的内容，然后发送。"]
+      - type: cards
+        soft: true
+        k: "你能得到什么"
+        h: "为 Discord 上的社区、工作室和卖家打造"
+        items:
+          - {icon: "🌐", h: "服务器和私信", p: "频道和私信中的消息自动翻译，49 种语言。"}
+          - {icon: "↩", h: "“对方将读到”核对", p: "发送前看到回复回译成中文的内容 —— 价格和数字会自动检查。"}
+          - {icon: "🗂", h: "Discord 多开", p: "工作室号、客服号和个人号同时打开 —— 彼此隔离，各自有通知。"}
+          - {icon: "🔔", h: "按账号显示通知", p: "每条通知都标明账号。点击即可打开对应对话。"}
+          - {icon: "🌍", h: "每个账号单独代理", p: "需要的话，可以给每个 Discord 账号设置独立的 HTTP 或 SOCKS5 代理。"}
+          - {icon: "💬", h: "所有应用在一起", p: "WhatsApp、Telegram、Messenger 和 Instagram 在同一个窗口。", link: "all-in-one-messenger"}
+      - type: split
+        k: "Discord 多开"
+        h: "多个 Discord 账号同时在线"
+        p: "Discord 客户端可以切换账号，但一次只能用一个。GlotChat 让每个 Discord 账号在独立会话中保持打开，每个账号的提及和私信都能收到 —— 而且已经翻译好。"
+        ticks: ["不用来回切换", "每个账号显示未读数", "每个人都用自己的语言读到你的消息"]
+        mock:
+          top: "<span>以<b>意大利语</b>发送</span><span>原文：中文</span>"
+          main: "Il logo animato costa 40 $. Sì, accettiamo USDT."
+          notes: [["back", "↩ 对方将读到：动态 logo 售价 40 美元。是的，我们接受 USDT。"]]
+      - type: faq
+        k: "常见问题"
+        h: "Discord 翻译器 —— 常见问题"
+        items:
+          - ["能自动翻译 Discord 消息吗？", "可以。在 GlotChat 中，你打开的频道或私信里的每条 Discord 消息都会自动翻译，显示在原文下方。"]
+          - ["我写的内容也能翻译吗？", "可以。用中文写好按回车：发送前 GlotChat 显示译文和对方将读到的内容。"]
+          - ["可以同时使用多个 Discord 账号吗？", "可以。每个 Discord 账号运行在独立会话中，并排显示 —— 数量取决于你的套餐。"]
+          - ["语音聊天能翻译吗？", "不能。GlotChat 翻译 Discord 中的文字消息。语音消息翻译在 WhatsApp 和 Telegram 中可用。"]
+          - ["是官方的 Discord 吗？", "是的。GlotChat 为每个账号打开官方的 Discord 网页版，不会自动发送任何消息。"]
+      - type: related
+        k: "继续了解"
+        h: "相关页面"
+        items: ["all-in-one-messenger", "telegram-translator", "messenger-translator"]

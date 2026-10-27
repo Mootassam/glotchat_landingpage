@@ -47,17 +47,14 @@
 {%- endif %}
 {%- endmacro %}
 
-{#- the small app badges: WhatsApp, Telegram (+ the beta ones) -#}
-{% macro appbadges(beta=True) -%}
+{#- the small app badges: every app GlotChat runs, each linked to its page -#}
+{% macro appbadges() -%}
 <ul class="apps-row" aria-label="{{ ui.apps_label }}">
-  <li class="app wa">{{ icons.wa|safe }}<span>WhatsApp</span></li>
-  <li class="app wab">{{ icons.wa|safe }}<span>WhatsApp Business</span></li>
-  <li class="app tgc">{{ icons.tg|safe }}<span>Telegram</span></li>
-  {%- if beta %}
-  <li class="app ms">{{ icons.ms|safe }}<span>Messenger</span><em>{{ ui.beta }}</em></li>
-  <li class="app ig">{{ icons.ig|safe }}<span>Instagram</span><em>{{ ui.beta }}</em></li>
-  <li class="app dc">{{ icons.dc|safe }}<span>Discord</span><em>{{ ui.beta }}</em></li>
-  {%- endif %}
+  <li class="app wa"><a href="{{ link('whatsapp-translator') }}">{{ icons.wa|safe }}<span>WhatsApp</span></a></li>
+  <li class="app tgc"><a href="{{ link('telegram-translator') }}">{{ icons.tg|safe }}<span>Telegram</span></a></li>
+  <li class="app ms"><a href="{{ link('messenger-translator') }}">{{ icons.ms|safe }}<span>Messenger</span></a></li>
+  <li class="app ig"><a href="{{ link('instagram-dm-translator') }}">{{ icons.ig|safe }}<span>Instagram</span></a></li>
+  <li class="app dc"><a href="{{ link('discord-translator') }}">{{ icons.dc|safe }}<span>Discord</span></a></li>
 </ul>
 {%- endmacro %}
 
@@ -128,6 +125,14 @@
         {%- if a.link %}<a class="more" href="{{ link(a.link) }}">{{ a.more or ui.learn_more }} {{ arr }}</a>{% endif %}
       </article>
       {%- endfor %}
+      {%- if b.link %}
+      <a class="appcard allcard" href="{{ link(b.link[0]) }}">
+        <span class="appic" aria-hidden="true">{{ icons.wa|safe }}{{ icons.tg|safe }}{{ icons.ms|safe }}{{ icons.ig|safe }}{{ icons.dc|safe }}</span>
+        <h3>{{ ui.nav.all_in_one }}</h3>
+        <p>{{ ui.nav.all_in_one_s }}</p>
+        <span class="more">{{ b.link[1] }} {{ arr }}</span>
+      </a>
+      {%- endif %}
     </div>
     {%- if b.note %}<p class="tbl-note">{{ b.note|safe }}</p>{% endif %}
   </div>

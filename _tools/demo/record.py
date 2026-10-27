@@ -21,7 +21,7 @@ GIFS = r"D:\glotchat-marketing\gifs"
 FPS = 25
 SCALE = 1.25                                     # 1280x800 stage -> 1600x1000 video, 640x800 -> 800x1000
 LANGS = ["en", "zh", "ar", "tr", "es", "pt", "ru"]
-SCENES = ["accounts", "notify", "chat", "telegram", "voice", "photo"]
+SCENES = ["accounts", "notify", "chat", "telegram", "voice", "photo", "apps", "messenger", "instagram", "discord"]
 
 
 def ff(*args):

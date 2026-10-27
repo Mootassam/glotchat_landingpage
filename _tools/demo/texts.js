@@ -20,7 +20,8 @@ window.DEMO_TEXTS = (function () {
     hint: 'Enter to send · Esc to edit', edit: 'Edit', orig: 'Send original', send: 'Send ➤', youWrote: '✎ You wrote',
     transcribe: '🎤 Transcribe', transcribing: '🎤 Transcribing…', readText: '🔤 Read text', reading: '🔤 Reading the photo…',
     yesterday: 'Yesterday', photo: '📷 Photo',
-    lang: { en: 'English', zh: 'Chinese', ar: 'Arabic', tr: 'Turkish', es: 'Spanish', pt: 'Portuguese', ru: 'Russian', fr: 'French', de: 'German' },
+    lang: { en: 'English', zh: 'Chinese', ar: 'Arabic', tr: 'Turkish', es: 'Spanish', pt: 'Portuguese', ru: 'Russian', fr: 'French', de: 'German', it: 'Italian' },
+    sbApp: (n) => n + ' accounts',
   };
   const UI_ZH = {
     addTitle: '添加 WhatsApp 账号',
@@ -39,7 +40,8 @@ window.DEMO_TEXTS = (function () {
     hint: 'Enter 发送 · Esc 编辑', edit: '编辑', orig: '发送原文', send: '发送 ➤', youWrote: '✎ 你写的是',
     transcribe: '🎤 转文字', transcribing: '🎤 正在转写…', readText: '🔤 识别文字', reading: '🔤 正在识别图片…',
     yesterday: '昨天', photo: '📷 照片',
-    lang: { en: '英语', zh: '中文', ar: '阿拉伯语', tr: '土耳其语', es: '西班牙语', pt: '葡萄牙语', ru: '俄语', fr: '法语', de: '德语' },
+    lang: { en: '英语', zh: '中文', ar: '阿拉伯语', tr: '土耳其语', es: '西班牙语', pt: '葡萄牙语', ru: '俄语', fr: '法语', de: '德语', it: '意大利语' },
+    sbApp: (n) => n + ' 账号',
   };
 
   /* ---- chat: a customer asks about a shirt, the agent answers in their own language ---- */
@@ -86,6 +88,54 @@ window.DEMO_TEXTS = (function () {
     in2: 'Kapıda ödeme yapabilir miyim?',
     out: 'İstanbul’a kargo 12 $. Evet, kapıda ödeme yapabilirsiniz.',
     tr: { ru: ['Здравствуйте! Сколько стоит доставка в Стамбул?', 'Можно оплатить при получении?', 'Доставка в Стамбул — 12 $. Да, можно оплатить при получении.', 'Доставка в Стамбул стоит 12 $. Да, оплата при получении возможна.'] },
+  };
+
+  /* ---- Messenger: a Facebook-shop customer in Germany; Instagram: a buyer in France; Discord: a client in Italy ----
+     [incoming 1, incoming 2, the agent's reply in the page language, what the customer will read (back-translation)] */
+  const MS_DE = {
+    who: ['Lena Schmidt', 'L', '#2563eb'], src: 'de',
+    in1: 'Hallo! Ist die Lampe noch verfügbar?',
+    in2: 'Was kostet der Versand nach München?',
+    out: 'Ja, die Lampe ist verfügbar! Der Versand nach München kostet 8 €.',
+    tr: {
+      en: ['Hello! Is the lamp still available?', 'How much is shipping to Munich?', 'Yes, the lamp is available! Shipping to Munich costs €8.', 'Yes, the lamp is available! Shipping to Munich is €8.'],
+      zh: ['你好！这盏灯还有货吗？', '寄到慕尼黑的运费是多少？', '有货！寄到慕尼黑的运费是 8 欧元。', '是的，这盏灯有货！寄到慕尼黑的运费为 8 欧元。'],
+      ar: ['مرحبًا! هل المصباح لا يزال متوفرًا؟', 'كم تكلفة الشحن إلى ميونخ؟', 'نعم، المصباح متوفر! الشحن إلى ميونخ 8 يورو.', 'نعم، المصباح متوفر! تكلفة الشحن إلى ميونخ 8 يورو.'],
+      tr: ['Merhaba! Lamba hâlâ mevcut mu?', 'Münih’e kargo ne kadar?', 'Evet, lamba mevcut! Münih’e kargo 8 €.', 'Evet, lamba mevcut! Münih’e gönderim 8 € tutuyor.'],
+      es: ['¡Hola! ¿La lámpara sigue disponible?', '¿Cuánto cuesta el envío a Múnich?', '¡Sí, la lámpara está disponible! El envío a Múnich cuesta 8 €.', '¡Sí, la lámpara está disponible! El envío a Múnich son 8 €.'],
+      pt: ['Olá! A luminária ainda está disponível?', 'Quanto custa o frete para Munique?', 'Sim, a luminária está disponível! O frete para Munique custa 8 €.', 'Sim, a luminária está disponível! O envio para Munique custa 8 €.'],
+      ru: ['Здравствуйте! Лампа ещё в наличии?', 'Сколько стоит доставка в Мюнхен?', 'Да, лампа в наличии! Доставка в Мюнхен стоит 8 €.', 'Да, лампа есть в наличии! Доставка в Мюнхен — 8 €.'],
+    },
+  };
+  const IG_FR = {
+    who: ['Chloé Bernard', 'C', '#c026d3'], src: 'fr',
+    in1: 'Coucou ! Le sac noir est dispo ?',
+    in2: 'Vous livrez en Belgique ?',
+    out: 'Oui, le sac noir est disponible ! Nous livrons en Belgique en 3 jours.',
+    tr: {
+      en: ['Hi! Is the black bag available?', 'Do you deliver to Belgium?', 'Yes, the black bag is available! We deliver to Belgium in 3 days.', 'Yes, the black bag is available! We deliver in Belgium in 3 days.'],
+      zh: ['嗨！黑色的包有货吗？', '你们送货到比利时吗？', '黑色的包有货！我们 3 天内送到比利时。', '是的，黑色的包有货！我们在 3 天内送达比利时。'],
+      ar: ['مرحبًا! هل الحقيبة السوداء متوفرة؟', 'هل توصلون إلى بلجيكا؟', 'نعم، الحقيبة السوداء متوفرة! نوصل إلى بلجيكا خلال 3 أيام.', 'نعم، الحقيبة السوداء متوفرة! نقوم بالتوصيل إلى بلجيكا خلال 3 أيام.'],
+      tr: ['Selam! Siyah çanta var mı?', 'Belçika’ya gönderim yapıyor musunuz?', 'Evet, siyah çanta mevcut! Belçika’ya 3 günde teslim ediyoruz.', 'Evet, siyah çanta mevcut! Belçika’ya 3 gün içinde teslimat yapıyoruz.'],
+      es: ['¡Hola! ¿Está disponible el bolso negro?', '¿Hacen envíos a Bélgica?', '¡Sí, el bolso negro está disponible! Enviamos a Bélgica en 3 días.', '¡Sí, el bolso negro está disponible! Entregamos en Bélgica en 3 días.'],
+      pt: ['Oi! A bolsa preta está disponível?', 'Vocês entregam na Bélgica?', 'Sim, a bolsa preta está disponível! Entregamos na Bélgica em 3 dias.', 'Sim, a bolsa preta está disponível! Fazemos entregas na Bélgica em 3 dias.'],
+      ru: ['Привет! Чёрная сумка есть в наличии?', 'Вы доставляете в Бельгию?', 'Да, чёрная сумка в наличии! Доставим в Бельгию за 3 дня.', 'Да, чёрная сумка есть в наличии! Доставка в Бельгию — 3 дня.'],
+    },
+  };
+  const DC_IT = {
+    who: ['Marco Rossi', 'M', '#16a34a'], src: 'it',
+    in1: 'Ciao! Quanto costa il logo animato?',
+    in2: 'Posso pagare con USDT?',
+    out: 'Il logo animato costa 40 $. Sì, accettiamo USDT.',
+    tr: {
+      en: ['Hi! How much is the animated logo?', 'Can I pay with USDT?', 'The animated logo costs $40. Yes, we accept USDT.', 'The animated logo is $40. Yes, we accept USDT.'],
+      zh: ['你好！动态 logo 多少钱？', '可以用 USDT 付款吗？', '动态 logo 价格是 40 美元。可以，我们接受 USDT。', '动态 logo 售价 40 美元。是的，我们接受 USDT。'],
+      ar: ['مرحبًا! كم سعر الشعار المتحرك؟', 'هل يمكنني الدفع بـ USDT؟', 'سعر الشعار المتحرك 40 دولارًا. نعم، نقبل USDT.', 'الشعار المتحرك بـ 40 دولارًا. نعم، نقبل USDT.'],
+      tr: ['Merhaba! Animasyonlu logo ne kadar?', 'USDT ile ödeyebilir miyim?', 'Animasyonlu logo 40 $. Evet, USDT kabul ediyoruz.', 'Animasyonlu logonun fiyatı 40 $. Evet, USDT kabul ediyoruz.'],
+      es: ['¡Hola! ¿Cuánto cuesta el logo animado?', '¿Puedo pagar con USDT?', 'El logo animado cuesta 40 $. Sí, aceptamos USDT.', 'El logo animado vale 40 $. Sí, aceptamos USDT.'],
+      pt: ['Oi! Quanto custa o logo animado?', 'Posso pagar com USDT?', 'O logo animado custa US$ 40. Sim, aceitamos USDT.', 'O logo animado sai por US$ 40. Sim, aceitamos USDT.'],
+      ru: ['Привет! Сколько стоит анимированный логотип?', 'Можно оплатить в USDT?', 'Анимированный логотип стоит 40 $. Да, мы принимаем USDT.', 'Анимированный логотип — 40 $. Да, принимаем USDT.'],
+    },
   };
 
   /* ---- voice note ---- */
@@ -159,7 +209,8 @@ window.DEMO_TEXTS = (function () {
     const chat = pick(CHAT_ES, CHAT_FR), voice = pick(VOICE_TR, VOICE_DE);
     return {
       lang, ui, rtl: lang === 'ar', my: ui.lang[lang], code: lang.toUpperCase(),
-      chat, chatTr: chat.tr[lang], tg: lang === 'ru' ? TG_TR : TG_RU, tgTr: (lang === 'ru' ? TG_TR : TG_RU).tr[lang], voice, voiceTr: voice.tr[lang], photo: PHOTO, photoTr: PHOTO.tr[lang],
+      chat, chatTr: chat.tr[lang], tg: lang === 'ru' ? TG_TR : TG_RU, tgTr: (lang === 'ru' ? TG_TR : TG_RU).tr[lang], ms: MS_DE, msTr: MS_DE.tr[lang], ig: IG_FR, igTr: IG_FR.tr[lang], dc: DC_IT, dcTr: DC_IT.tr[lang],
+      voice, voiceTr: voice.tr[lang], photo: PHOTO, photoTr: PHOTO.tr[lang],
       notes: [pick(N_UAE, N_UAE_RU), pick(N_SUP, N_SUP_DE), pick(N_EXP, N_EXP_ES)],
       rows: ROWS.map((r) => r.map((c) => (c === '*' ? ui.yesterday : c))),
     };

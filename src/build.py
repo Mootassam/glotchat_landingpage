@@ -439,14 +439,14 @@ def write_llms(en, available):
     S = cfg.SITE
     ui = en["ui"]
     lines = [f"# GlotChat", "", f"> {ui['app_description']}", "",
-             "GlotChat is a Windows desktop app. It opens the official WhatsApp Web and Telegram Web for each account in its own "
-             "isolated session (plus Messenger, Instagram and Discord in beta) and adds offline translation of messages, voice notes "
-             "and text in photos. Before a reply is sent, it shows the translation translated back into the writer's language and "
-             "checks that prices, numbers and links are unchanged. It is an independent product, not affiliated with WhatsApp, "
-             "Meta or Telegram.", "",
+             "GlotChat is a Windows desktop app — an all-in-one messenger for business. It opens the official websites of WhatsApp, "
+             "Telegram, Facebook Messenger, Instagram and Discord for each account in its own isolated session, several accounts per app, "
+             "and adds offline two-way translation of messages in every app (plus voice notes and text in photos on WhatsApp and Telegram). "
+             "Before a reply is sent, it shows the translation translated back into the writer's language and checks that prices, numbers "
+             "and links are unchanged. It is an independent product, not affiliated with WhatsApp, Meta, Telegram or Discord.", "",
              "## Key facts", "",
              f"- Platform: {cfg.FACTS['os']} (64-bit)",
-             "- Apps: WhatsApp, WhatsApp Business, Telegram; Messenger, Instagram and Discord in beta",
+             "- Apps: WhatsApp, WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord (several accounts of each; all apps in every plan)",
              f"- Accounts: tested with {cfg.FACTS['accounts_tested']} accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
              f"- Translation: {cfg.FACTS['languages']} languages, offline on the user's PC; voice notes recognised in about {cfg.FACTS['voice_languages']} languages",
              f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 3-day trial\"), one trial per computer",

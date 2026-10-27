@@ -1,0 +1,241 @@
+# 2026-10 update: Messenger, Instagram and Discord out of beta — new pages (applied with src/merge_content.py)
+pages:
+  # ================================================================ ALL-IN-ONE (new)
+  all-in-one-messenger:
+    title: "All-in-One Messenger App for PC with Translation | GlotChat"
+    description: "WhatsApp, Telegram, Messenger, Instagram and Discord in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial."
+    keywords: "all in one messenger, all in one messenger app for pc, multi messenger app, unified inbox whatsapp telegram messenger, manage multiple social media accounts, all in one chat app windows"
+    short: "All-in-one messenger"
+    icon: "🧩"
+    og_heading: "WhatsApp, Telegram, Messenger, Instagram & Discord — one window"
+    blocks:
+      - type: hero
+        k: "All-in-one messenger for PC"
+        h1: "Every chat app, every account — <span class=\"grad\">one window, your language</span>"
+        lead: "WhatsApp, Telegram, Messenger, Instagram and Discord side by side on your PC. Add several accounts of each app, switch with one click, and read and answer every customer in their language — translated offline, checked before you send."
+        media: "video:apps"
+        media_alt: "Switching between WhatsApp, Telegram, Messenger, Instagram and Discord in GlotChat, each chat translated"
+      - type: facts
+        label: "Key facts"
+        items: [["5", "chat apps in one window"], ["27+", "accounts at once (tested)"], ["49", "translation languages, offline"], ["1", "plan for every app"]]
+      - type: table
+        id: apps
+        k: "Supported apps"
+        h: "What GlotChat does in each app"
+        cols: ["", "WhatsApp", "Telegram", "Messenger", "Instagram", "Discord"]
+        rows:
+          - ["Several accounts side by side", "✓", "✓", "✓", "✓", "✓"]
+          - ["Messages translated under the original", "✓", "✓", "✓", "✓", "✓"]
+          - ["Your reply translated before sending", "✓", "✓", "✓", "✓", "✓"]
+          - ["“They will read” check + other wordings", "✓", "✓", "✓", "✓", "✓"]
+          - ["Notifications name the account", "✓", "✓", "✓", "✓", "✓"]
+          - ["Proxy per account", "✓", "✓", "✓", "✓", "✓"]
+          - ["Voice notes → text", "✓", "✓", "✕", "✕", "✕"]
+          - ["Text in photos translated", "✓", "✓", "✕", "✕", "✕"]
+          - ["Quick-reply templates", "✓", "✓", "✕", "✕", "✕"]
+        note: "In every app you can also select any text and translate it with one click."
+      - type: cards
+        soft: true
+        k: "One window instead of five"
+        h: "Stop switching between apps, tabs and phones"
+        items:
+          - {icon: "🔒", h: "Every account sealed", p: "Each account — in every app — has its own session and storage. Logins never mix, like separate computers in one app."}
+          - {icon: "🔔", h: "Know who wrote, where", p: "Unread counts per app and per account, and every notification names the account. Click it and the right chat opens."}
+          - {icon: "🌐", h: "Every chat translated", p: "Incoming messages are translated under the original; your replies are translated before you send them — in all five apps."}
+          - {icon: "↩", h: "Checked before it's sent", p: "See what the customer will read, translated back into your language. Not happy? Pick another wording."}
+          - {icon: "🌍", h: "Proxy per account", p: "Give any account its own HTTP or SOCKS5 proxy — useful when you sell in several countries."}
+          - {icon: "🛡", h: "Offline & private", p: "Translation runs on your PC. No chat is sent to an online translator or AI service."}
+      - type: steps
+        k: "How it works"
+        h: "Add your apps in a few minutes"
+        items:
+          - ["Add an account", "Click Add account and pick the app: WhatsApp, Telegram, Messenger, Instagram or Discord. Give it a name and your language."]
+          - ["Log in once", "Scan the QR code (WhatsApp, Telegram) or log in with your usual username and password (Messenger, Instagram, Discord). It stays logged in."]
+          - ["Chat in any language", "Open a chat: messages are already in your language. Write in yours — the customer reads theirs."]
+        cta: "Download & try all apps free"
+      - type: faq
+        soft: true
+        k: "FAQ"
+        h: "All-in-one messenger — questions"
+        items:
+          - ["Which apps does GlotChat support?", "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct and Discord. All of them are included in every plan."]
+          - ["Can I add several accounts of the same app?", "Yes. Add as many accounts as your plan allows — for example 3 WhatsApp numbers, 2 Telegram accounts and 2 Instagram accounts. Each one is isolated."]
+          - ["How are accounts counted in the plans?", "All apps count together: Starter includes 5 accounts, Pro 15 and Business unlimited — mix the apps any way you like."]
+          - ["Are voice notes and photos translated in every app?", "Voice notes and text in photos are translated on WhatsApp and Telegram. On Messenger, Instagram and Discord, text messages are translated both ways."]
+          - ["Is it the official WhatsApp, Telegram, Messenger, Instagram and Discord?", "Yes. GlotChat opens each app's official website in its own isolated session — like a browser, just organised and translated. It never sends anything by itself."]
+          - ["Does it work on Mac or phone?", "GlotChat is a Windows 10 / 11 desktop app. Your phones keep working normally."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["messenger-translator", "instagram-dm-translator", "discord-translator"]
+
+  # ================================================================ MESSENGER (new)
+  messenger-translator:
+    title: "Facebook Messenger Translator & Multiple Accounts on PC"
+    description: "Translate Facebook Messenger chats both ways on Windows and keep several Messenger accounts open side by side. 49 languages, offline. Free 3-day trial."
+    keywords: "messenger translator, facebook messenger translator, translate messenger messages, multiple messenger accounts, facebook messenger multiple accounts pc, messenger auto translate"
+    short: "Messenger translator"
+    icon: "💬"
+    og_heading: "Facebook Messenger translator — many accounts, every language"
+    blocks:
+      - type: hero
+        k: "Messenger translator for PC"
+        h1: "Answer every Messenger customer <span class=\"grad\">in their language</span>"
+        lead: "Customers from Facebook and Marketplace write in German, Spanish or Arabic? GlotChat shows each message translated under the original and translates your reply before you send it — with what they'll read. Several Messenger accounts, side by side."
+        media: "video:messenger"
+        media_alt: "A Facebook Messenger chat translated between German and English inside GlotChat"
+      - type: steps
+        soft: false
+        k: "How it works"
+        h: "Translated Messenger in three steps"
+        items:
+          - ["Log in once", "Add a Messenger account in GlotChat and log in with that Facebook account. It stays logged in."]
+          - ["Read in your language", "Open a chat: every message shows its translation under the original, as it arrives."]
+          - ["Reply in theirs", "Write in your language and press Enter. Check the preview — with what the customer will read — and send."]
+      - type: cards
+        soft: true
+        k: "What you get"
+        h: "Everything that makes selling on Messenger easier"
+        items:
+          - {icon: "🌐", h: "Two-way translation", p: "Incoming messages translated automatically; your replies translated before sending. 49 languages, any pair."}
+          - {icon: "↩", h: "“They will read” check", p: "See your translation translated back into your language before it goes out. Prices and numbers are checked."}
+          - {icon: "🗂", h: "Many Messenger accounts", p: "Keep several Facebook accounts' Messenger open at once — each isolated, with its own notifications."}
+          - {icon: "🔔", h: "Notifications per account", p: "Every notification names the account it belongs to. Click it and the right chat opens."}
+          - {icon: "🌍", h: "Proxy per account", p: "Give each Messenger account its own HTTP or SOCKS5 proxy if you need one."}
+          - {icon: "💬", h: "All your apps together", p: "WhatsApp, Telegram, Instagram and Discord in the same window, translated the same way.", link: "all-in-one-messenger"}
+      - type: split
+        k: "Multiple Messenger accounts"
+        h: "Several Facebook accounts, open at the same time"
+        p: "A browser shows one Facebook account at a time — switching means logging out and in again. GlotChat keeps every Messenger account open in its own sealed session, so you see each one's unread messages and answer them in one click."
+        ticks: ["No logging out and in again", "Each account has its own login, cookies and storage", "Your own language for reading, the customer's for replying"]
+        mock:
+          top: "<span>Send in <b>German</b></span><span>from English</span>"
+          main: "Ja, die Lampe ist verfügbar! Der Versand nach München kostet 8 €."
+          notes: [["back", "↩ They will read: Yes, the lamp is available! Shipping to Munich is €8."]]
+      - type: faq
+        k: "FAQ"
+        h: "Messenger translator — questions"
+        items:
+          - ["Can I auto-translate Facebook Messenger on PC?", "Yes. In GlotChat every incoming Messenger message is translated automatically and shown under the original, in every chat of every Messenger account you add."]
+          - ["Does it translate my replies too?", "Yes. Write in your own language and press Enter: GlotChat shows the translation and what the customer will read, then you send it in their language."]
+          - ["Can I use several Messenger accounts at once?", "Yes. Each Messenger account runs in its own isolated session, side by side with the others — as many as your plan includes."]
+          - ["Are voice messages and photos translated on Messenger?", "Not yet: on Messenger, text messages are translated both ways. Voice notes and photos are translated on WhatsApp and Telegram."]
+          - ["Is it the official Messenger?", "Yes. GlotChat opens the official Facebook Messenger website for each account. It never sends anything by itself — you stay in control."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["all-in-one-messenger", "instagram-dm-translator", "whatsapp-translator"]
+
+  # ================================================================ INSTAGRAM (new)
+  instagram-dm-translator:
+    title: "Instagram DM Translator & Multiple Instagram Accounts on PC"
+    description: "Translate Instagram Direct messages both ways on Windows and keep several Instagram accounts open side by side. 49 languages, offline. Free 3-day trial."
+    keywords: "instagram dm translator, instagram translator, translate instagram messages, multiple instagram accounts on pc, instagram direct on pc, instagram multi account"
+    short: "Instagram DM translator"
+    icon: "📸"
+    og_heading: "Instagram DM translator — every account, every language"
+    blocks:
+      - type: hero
+        k: "Instagram DM translator for PC"
+        h1: "Turn foreign Instagram DMs <span class=\"grad\">into sales</span>"
+        lead: "Followers from other countries ask about prices and delivery in their language. GlotChat translates every Instagram Direct message under the original and your reply before you send it — on every Instagram account you run, side by side."
+        media: "video:instagram"
+        media_alt: "An Instagram Direct chat translated between French and English inside GlotChat"
+      - type: steps
+        soft: false
+        k: "How it works"
+        h: "Translated Instagram DMs in three steps"
+        items:
+          - ["Log in once", "Add an Instagram account in GlotChat and log in with its username and password. It stays logged in."]
+          - ["Read in your language", "Open a conversation: every message shows its translation under the original."]
+          - ["Reply in theirs", "Write in your language and press Enter. Check what the customer will read, then send."]
+      - type: cards
+        soft: true
+        k: "What you get"
+        h: "Built for shops and creators selling on Instagram"
+        items:
+          - {icon: "🌐", h: "Two-way translation", p: "DMs translated automatically; your replies translated before sending. 49 languages, any pair."}
+          - {icon: "↩", h: "“They will read” check", p: "See your reply translated back before it goes out. Prices, sizes and numbers are checked."}
+          - {icon: "🗂", h: "Many Instagram accounts", p: "Your shop, your brand and your personal account open at once — each isolated, no switching."}
+          - {icon: "🔔", h: "Notifications per account", p: "Know which Instagram account got the message. Click the notification and the right chat opens."}
+          - {icon: "🌍", h: "Proxy per account", p: "Give each Instagram account its own HTTP or SOCKS5 proxy if you need one."}
+          - {icon: "💬", h: "WhatsApp & Telegram too", p: "Move a customer from Instagram to WhatsApp or Telegram — they're all in the same window.", link: "all-in-one-messenger"}
+      - type: split
+        k: "Multiple Instagram accounts"
+        h: "All your Instagram accounts' DMs, without switching"
+        p: "Instagram lets you switch between accounts, but you only see one inbox at a time. In GlotChat each Instagram account stays open in its own sealed session, with its own unread count — answer them all from one window."
+        ticks: ["Every inbox open at the same time", "Unread count for each account", "Customers get replies in their language"]
+        mock:
+          top: "<span>Send in <b>French</b></span><span>from English</span>"
+          main: "Oui, le sac noir est disponible ! Nous livrons en Belgique en 3 jours."
+          notes: [["back", "↩ They will read: Yes, the black bag is available! We deliver in Belgium in 3 days."]]
+      - type: faq
+        k: "FAQ"
+        h: "Instagram DM translator — questions"
+        items:
+          - ["Can I translate Instagram DMs on PC?", "Yes. In GlotChat every Instagram Direct message is translated automatically under the original, in every conversation of every Instagram account you add."]
+          - ["Does it translate my replies?", "Yes. Write in your language and press Enter: GlotChat shows the translation and what the customer will read before you send."]
+          - ["Can I use several Instagram accounts at the same time?", "Yes. Each account has its own isolated session, so all inboxes are open side by side — as many as your plan includes."]
+          - ["Are voice messages and photos translated on Instagram?", "Not yet: on Instagram, text messages are translated both ways. Voice notes and photos are translated on WhatsApp and Telegram."]
+          - ["Is it safe for my Instagram account?", "GlotChat opens the official Instagram website, exactly like a browser, and never sends anything by itself. As always, follow Instagram's rules — no spam or bulk messages."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["all-in-one-messenger", "messenger-translator", "whatsapp-translator"]
+
+  # ================================================================ DISCORD (new)
+  discord-translator:
+    title: "Discord Translator & Multiple Discord Accounts on PC"
+    description: "Translate Discord messages in servers and DMs on Windows, and keep several Discord accounts open side by side. 49 languages, offline. Free 3-day trial."
+    keywords: "discord translator, translate discord messages, discord auto translate, multiple discord accounts, discord multi account pc, discord translation"
+    short: "Discord translator"
+    icon: "🎮"
+    og_heading: "Discord translator — servers and DMs in any language"
+    blocks:
+      - type: hero
+        k: "Discord translator for PC"
+        h1: "Talk to your whole Discord community <span class=\"grad\">in every language</span>"
+        lead: "Clients, players and members write in Italian, Russian or Portuguese? GlotChat translates every Discord message — in servers and DMs — under the original, and your reply before you send it. Several Discord accounts, side by side."
+        media: "video:discord"
+        media_alt: "A Discord conversation translated between Italian and English inside GlotChat"
+      - type: steps
+        soft: false
+        k: "How it works"
+        h: "Translated Discord in three steps"
+        items:
+          - ["Log in once", "Add a Discord account in GlotChat and log in with your email and password or a QR code. It stays logged in."]
+          - ["Read in your language", "Open a channel or a DM: every message shows its translation under the original."]
+          - ["Reply in theirs", "Write in your language and press Enter. Check what they will read, then send."]
+      - type: cards
+        soft: true
+        k: "What you get"
+        h: "For communities, studios and sellers on Discord"
+        items:
+          - {icon: "🌐", h: "Servers and DMs", p: "Messages in channels and direct messages translated automatically, 49 languages."}
+          - {icon: "↩", h: "“They will read” check", p: "See your reply translated back before it goes out — with prices and numbers checked."}
+          - {icon: "🗂", h: "Many Discord accounts", p: "Your studio, support and personal accounts open at once — each isolated, each with its own notifications."}
+          - {icon: "🔔", h: "Notifications per account", p: "Every notification names the account. Click it and the right conversation opens."}
+          - {icon: "🌍", h: "Proxy per account", p: "Give each Discord account its own HTTP or SOCKS5 proxy if you need one."}
+          - {icon: "💬", h: "All your apps together", p: "WhatsApp, Telegram, Messenger and Instagram in the same window.", link: "all-in-one-messenger"}
+      - type: split
+        k: "Multiple Discord accounts"
+        h: "Several Discord accounts, open at the same time"
+        p: "The Discord app lets you switch accounts, one at a time. GlotChat keeps each Discord account open in its own sealed session, so mentions and DMs on every account reach you — already translated."
+        ticks: ["No switching back and forth", "Unread count for each account", "Everyone reads you in their language"]
+        mock:
+          top: "<span>Send in <b>Italian</b></span><span>from English</span>"
+          main: "Il logo animato costa 40 $. Sì, accettiamo USDT."
+          notes: [["back", "↩ They will read: The animated logo is $40. Yes, we accept USDT."]]
+      - type: faq
+        k: "FAQ"
+        h: "Discord translator — questions"
+        items:
+          - ["Can I auto-translate Discord messages?", "Yes. In GlotChat every Discord message in the channel or DM you open is translated automatically and shown under the original."]
+          - ["Does it translate what I write?", "Yes. Write in your language and press Enter: GlotChat shows the translation and what the other person will read before you send."]
+          - ["Can I use several Discord accounts at once?", "Yes. Each Discord account runs in its own isolated session, side by side — as many as your plan includes."]
+          - ["Are voice chats translated?", "No. GlotChat translates text messages on Discord. Voice notes are translated on WhatsApp and Telegram."]
+          - ["Is it the official Discord?", "Yes. GlotChat opens the official Discord website for each account and never sends anything by itself."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["all-in-one-messenger", "telegram-translator", "messenger-translator"]

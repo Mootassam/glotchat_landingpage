@@ -1,4 +1,4 @@
-# GlotChat website — tr (structure follows en.yaml; updated with src/merge_content.py)
+# GlotChat website — tr (structure follows en.yaml; updated with src/merge_content.py and src/apply_apps.py)
 ui:
   skip: İçeriğe geç
   nav_label: Ana menü
@@ -6,7 +6,7 @@ ui:
   lang_label: Dil
   close: Kapat
   contact: Bize yazın
-  promo_html: '<b>Yeni: GlotChat 1.3 Telegram''ı ekliyor</b> — ve göndermeden önce kontrol edebileceğiniz çeviri.'
+  promo_html: '<b>GlotChat 1.3''te yeni: Telegram, Messenger, Instagram ve Discord</b> — ve göndermeden önce kontrol edebileceğiniz çeviri.'
   promo_go: 3 gün ücretsiz deneyin →
   nav:
     product: Ürün
@@ -23,6 +23,15 @@ ui:
     tg_translator_s: Her dilde okuyun ve yanıtlayın
     tg_accounts: Birden fazla Telegram hesabı
     tg_accounts_s: Tüm Telegram hesaplarınız yan yana
+    more_apps: Diğer uygulamalar
+    all_in_one: Hepsi bir arada mesajlaşma
+    all_in_one_s: 5 uygulama tek pencerede, hepsi çevrilmiş
+    ms: Messenger çevirmeni
+    ms_s: Facebook sohbetleri her dilde
+    ig: Instagram DM çevirmeni
+    ig_s: Her Instagram hesabının DM'leri çevrilir
+    dc: Discord çevirmeni
+    dc_s: Sunucular ve DM'ler her dilde
   cta_trial: Ücretsiz indir — 3 gün deneme
   cta_demo: Nasıl çalıştığını izleyin
   cta_live: Canlı demo isteyin
@@ -53,7 +62,7 @@ ui:
     note: 'Tahmin: ayda 22 iş günü, günde 8 saat. GlotChat mesajları geldikleri anda çevirir; bu zaman satışa geri döner.'
     cta: Bu saatleri geri alın — ücretsiz deneyin
   finder:
-    q: Kaç hesap kullanıyorsunuz (WhatsApp + Telegram)?
+    q: Kaç hesap kullanıyorsunuz (tüm uygulamalar birlikte)?
     a: 'Size en uygun:'
     btn: 3 gün ücretsiz deneyin
   plans:
@@ -79,7 +88,7 @@ ui:
     translate: Metin, ses ve fotoğraf çevirisi
     templates: Hızlı yanıtlar · EN / 中文 arayüz
     updates: Tüm güncellemeler dahil
-    apps: WhatsApp, Telegram + beta uygulamalar
+    apps: WhatsApp, Telegram, Messenger, Instagram, Discord
   buy: '{plan} paketini Telegram''dan alın'
   try: veya 3 gün ücretsiz deneyin
   custom_html: <b>Daha fazla bilgisayar, ekip kurulumu veya ömür boyu lisans mı lazım?</b> İhtiyacınızı yazın — size özel teklif hazırlayalım.
@@ -87,7 +96,7 @@ ui:
   paynote: Ödeme USDT ile (TRC20 · BEP20 · ERC20). Satın almadan önce sorunuz mu var? Sorun — Telegram'da gerçek bir kişi yanıtlar.
   final:
     h: Bir sonraki yabancı müşteriniz şu an yazıyor.
-    p: GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp ile Telegram hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım.
+    p: GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım.
     k: 3 gün ücretsiz
     tg: Telegram'dan bize yazın
     points:
@@ -109,22 +118,21 @@ ui:
     'no': Hayır, teşekkürler
     tg: Ya da bize bir soru sorun
   footer:
-    tagline: Tüm WhatsApp ve Telegram hesapları tek pencerede, her müşteri kendi dilinde. Sınır ötesi satış yapan işletmeler için.
+    tagline: WhatsApp, Telegram, Messenger, Instagram ve Discord tek pencerede, her müşteri kendi dilinde. Sınır ötesi satış yapan işletmeler için.
     product: Ürün
     resources: Kaynaklar
     privacy: Gizlilik politikası (İngilizce)
     terms: Kullanım koşulları (İngilizce)
     trademark: WhatsApp, Telegram, Messenger, Instagram ve Discord ilgili sahiplerinin ticari markalarıdır. GlotChat bağımsız bir üründür; hiçbiriyle bağlantılı değildir, onlar tarafından onaylanmamış veya desteklenmemiştir.
-  og_kicker: PC için WhatsApp + Telegram çoklu hesap çevirmeni
+  og_kicker: PC için WhatsApp, Telegram, Messenger, Instagram ve Discord çevirmeni
   og_sub: Metin, sesli notlar ve fotoğraflar bilgisayarınızda çevrimdışı çevrilir.
   og_chips:
-  - WhatsApp + Telegram
+  - 5 uygulama, tek pencere
   - 49 dil
   - 3 gün ücretsiz deneme
-  app_description: Birçok WhatsApp ve Telegram hesabını tek pencerede çalıştıran Windows masaüstü uygulaması — her biri yalıtılmış, kendi bildirimleri ve proxy'siyle — mesajları, sesli mesajları ve fotoğrafları 49 dilde çevrimdışı çevirir, her çeviriyi göndermeden önce kontrol ettirir.
+  app_description: Birçok WhatsApp, Telegram, Messenger, Instagram ve Discord hesabını tek pencerede çalıştıran Windows uygulaması — her hesap yalıtılmış, kendi bildirimleri ve proxy'si ile — sohbetleri 49 dilde bilgisayarınızda çevrimdışı çevirir (WhatsApp ve Telegram'da sesli mesajlar ve fotoğraflar da), her çeviriyi göndermeden önce kontrol eder.
   feature_list:
-  - Tek pencerede birden fazla WhatsApp ve Telegram hesabı
-  - Messenger, Instagram ve Discord (beta)
+  - Birden fazla WhatsApp, Telegram, Messenger, Instagram ve Discord hesabı tek pencerede
   - Hesap başına yalıtılmış oturum ve isteğe bağlı proxy
   - Hesap başına bildirimler
   - 49 dilde çift yönlü sohbet çevirisi
@@ -137,9 +145,9 @@ ui:
   - Bilgisayarınızda çevrimdışı çeviri
   - İngilizce ve Çince arayüz
   msg:
-    general: Merhaba! GlotChat ile ilgileniyorum (WhatsApp ve Telegram hesapları + çeviri). Biraz bilgi verebilir misiniz?
+    general: Merhaba! GlotChat ile ilgileniyorum (WhatsApp, Telegram, Messenger, Instagram, Discord + çeviri). Biraz bilgi verebilir misiniz?
     demo: Merhaba! GlotChat'i bana canlı gösterebilir misiniz?
-    trial: Merhaba! GlotChat'i denemek istiyorum. Yaklaşık __ WhatsApp / Telegram hesabım var.
+    trial: Merhaba! GlotChat'i denemek istiyorum. Yaklaşık __ hesabım var (WhatsApp / Telegram / Messenger / Instagram / Discord).
     usecase: 'Merhaba! GlotChat''i denemek istiyorum. İşim: __ · Müşterilerimin dili: __'
     finder: Merhaba! {n} hesap kullanıyorum. GlotChat {plan} bana uygun mu?
     planTrial: Merhaba! Önce GlotChat {plan} paketini denemek istiyorum.
@@ -153,7 +161,7 @@ ui:
     os_short: Windows 10 ve 11 (64 bit)
     no_admin: Yönetici izni gerekmez
     alt_html: 'İndirme sorunu mu var? Dosyayı Telegram''dan gönderelim:'
-    card_sub: PC için WhatsApp + Telegram çoklu hesap çevirmeni
+    card_sub: PC için WhatsApp, Telegram, Messenger, Instagram ve Discord çevirmeni
     sha: SHA-256 sağlama toplamı
     copy_sha: Sağlama toplamını kopyala
     phone_h: Telefondan mı bakıyorsunuz?
@@ -184,17 +192,17 @@ ui:
 pages:
   home:
     title: PC için WhatsApp ve Telegram Çoklu Hesap Çevirmeni | GlotChat
-    description: Tüm WhatsApp ve Telegram hesaplarınız Windows'ta tek pencerede. Sohbetler, sesli mesajlar ve fotoğraflar 49 dilde çevrimdışı çevrilir. 3 gün ücretsiz.
-    keywords: whatsapp çevirmen, telegram çevirmen, birden fazla whatsapp hesabı, whatsapp çoklu hesap, whatsapp mesaj çevirme, telegram çoklu hesap
-    og_title: GlotChat – Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her müşteri kendi dilinde
-    og_heading: WhatsApp ve Telegram tek pencerede. Her müşteri kendi dilinde.
+    description: WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınız Windows'ta tek pencerede. Her sohbet 49 dilde çevrimdışı çevrilir. 3 gün ücretsiz.
+    keywords: whatsapp çevirmen, telegram çevirmen, whatsapp çoklu hesap, telegram çoklu hesap, messenger çevirmen, instagram dm çeviri, discord çevirmen, hepsi bir arada mesajlaşma
+    og_title: GlotChat – WhatsApp, Telegram, Messenger, Instagram ve Discord tek pencerede, her müşteri kendi dilinde
+    og_heading: 5 uygulama, tek pencere. Her müşteri kendi dilinde.
     short: Ana sayfa
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: 1.3'te yeni — Telegram + kontrol edebileceğiniz çeviri
-      h1: Tüm WhatsApp ve Telegram'ınız. <span class="grad">Tek pencere. Her dil.</span>
-      lead: Tüm numaralarınızı ve Telegram hesaplarınızı bilgisayarınızda yan yana kullanın. Her mesajı, sesli mesajı ve fotoğrafı Türkçe okuyun — müşterinin dilinde yanıtlayın ve ne okuyacağını tam olarak bilin.
+      eyebrow: 1.3'te yeni — Telegram, Messenger, Instagram ve Discord
+      h1: WhatsApp, Telegram ve dahası. <span class="grad">Tek pencere. Her dil.</span>
+      lead: Tüm WhatsApp numaralarınızı ve Telegram, Messenger, Instagram ve Discord hesaplarınızı bilgisayarınızda yan yana kullanın. Her müşteriyi Türkçe okuyun — onun dilinde yanıtlayın ve ne okuyacağını tam olarak bilin.
       micro:
       - 3 gün ücretsiz — kart yok, ödeme yok
       - Telegram'da gerçek kişi yanıtlar
@@ -218,10 +226,10 @@ pages:
         icon: 👥
         label: Hesap ekle
         cap: 'Her WhatsApp numarasını veya Telegram hesabını saniyeler içinde ekleyin: adlandırın, dilinizi seçin, QR kodu okutun.'
-      - id: telegram
-        icon: ✈️
-        label: Telegram
-        cap: Telegram da aynı şekilde çalışır — her sohbet çevrilir, her yanıt müşterinin dilinde gider.
+      - id: apps
+        icon: 🧩
+        label: Tüm uygulamalar
+        cap: WhatsApp, Telegram, Messenger, Instagram ve Discord yan yana — tek tıkla geçiş, her sohbet çevrilmiş.
       - id: chat
         icon: 🌐
         label: Sohbet çevirisi
@@ -241,8 +249,8 @@ pages:
     - type: facts
       label: Temel bilgiler
       items:
-      - - 2 + 3
-        - WhatsApp ve Telegram, + 3 beta uygulama
+      - - '5'
+        - 'mesajlaşma uygulaması: WhatsApp, Telegram, Messenger, Instagram, Discord'
       - - 27+
         - hesap aynı anda (test edildi)
       - - '49'
@@ -252,7 +260,7 @@ pages:
     - type: apps
       id: apps
       k: Tüm sohbetler için tek uygulama
-      h: Müşterileriniz WhatsApp'ta <em>ve</em> Telegram'da. Artık siz de — tek yerde.
+      h: Müşterileriniz WhatsApp, Telegram, Messenger, Instagram <em>ve</em> Discord'da. Artık siz de oradasınız — tek bir yerde.
       p: 'Her hesap kendi kapalı alanında çalışır: kendi oturumu, bildirimleri ve isterseniz kendi proxy''si.'
       items:
       - icon: wa
@@ -268,21 +276,27 @@ pages:
         link: telegram-translator
         more: Telegram çevirmeni
       - icon: ms
-        cls: beta
-        beta: true
+        cls: ms
         name: Messenger
-        p: Facebook Messenger gelen kutusu; mesajların altında çeviri ve yanıtlarınız için Çevir düğmesi.
+        p: Birkaç Facebook hesabının Messenger'ı aynı anda açık. Her mesaj orijinalin altında çevrilir, her yanıt göndermeden önce çevrilir.
+        link: messenger-translator
+        more: Messenger çevirmeni
       - icon: ig
-        cls: beta
-        beta: true
+        cls: ig
         name: Instagram DM
-        p: Müşterilerden gelen Instagram mesajları her mesajın altında çevrilir; yanıtınız göndermeden önce çevrilir.
+        p: Yönettiğiniz her Instagram hesabının DM'leri yan yana. Müşteri mesajları çevrilir; yanıtlarınız onların dilinde gider.
+        link: instagram-dm-translator
+        more: Instagram DM çevirmeni
       - icon: dc
-        cls: beta
-        beta: true
+        cls: dc
         name: Discord
-        p: Sunucular ve DM'ler; her mesajın ve yazdıklarınızın çevirisiyle.
-      note: Beta uygulamalar tüm paketlere dahildir. Metin mesajlarını çevirirler; sesli mesaj ve fotoğraf çevirisi WhatsApp ve Telegram'da kullanılabilir.
+        p: Birkaç Discord hesabının sunucuları ve DM'leri — her mesaj ve yazdıklarınız çevrilir.
+        link: discord-translator
+        more: Discord çevirmeni
+      note: Beş uygulamanın hepsi her pakete dahildir. Metin mesajları her uygulamada çevrilir; sesli mesajlar ve fotoğraflar WhatsApp ve Telegram'da.
+      link:
+      - all-in-one-messenger
+      - GlotChat'in her uygulamada neler yaptığını görün
     - type: showcase
       id: features
       k: Nasıl çalışır
@@ -306,6 +320,17 @@ pages:
         link:
         - telegram-translator
         - Telegram çevirmeni hakkında daha fazlası
+      - media: video:apps
+        tag: 1.3'te yeni
+        h: Messenger, Instagram ve Discord — aynı pencerede
+        p: Facebook ve Marketplace alıcıları, Instagram takipçileri, Discord üyeleri — her sohbet iki yönlü çevrilir, WhatsApp ve Telegram hesaplarınızın hemen yanında.
+        ticks:
+        - Uygulama başına birden fazla hesap, her biri yalıtılmış
+        - Her uygulama ve hesap için okunmamış sayısı
+        - Yanıtınız göndermeden önce kontrol edilir
+        link:
+        - all-in-one-messenger
+        - Hepsi bir arada mesajlaşma hakkında daha fazlası
       - media: video:chat
         h: Göndermeden önce müşterinin ne okuyacağını bilin
         p: Türkçe yazın ve Enter'a basın. GlotChat çeviriyi ve aynı metnin Türkçeye geri çevrilmiş halini gösterir; böylece doğru anlamı verdiğinden emin olursunuz.
@@ -434,7 +459,7 @@ pages:
       - Müşteri sohbetleri çevrimiçi çevirmenlere yapıştırılıyor
       good_h: GlotChat ile
       good:
-      - WhatsApp ve Telegram hesapları tek pencerede, bir tık uzakta
+      - WhatsApp, Telegram, Messenger, Instagram ve Discord tek pencerede
       - Çeviri her mesajın altında otomatik görünür
       - Göndermeden önce müşterinin ne okuyacağını görürsünüz
       - Sesli mesajlar kendi dilinizde metne dönüşür
@@ -462,10 +487,10 @@ pages:
       items:
       - - Ücretsiz deneme var mı?
         - Evet. GlotChat'i indirin, açın ve “3 günlük ücretsiz denememi başlat”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesaplarınızı ve ayarlarınızı korursunuz.
-      - - Telegram ile çalışıyor mu?
-        - Evet. 1.3 sürümünden beri WhatsApp numaralarınızın yanına Telegram hesapları ekleyebilirsiniz. Her biri QR kodla veya telefon numarasıyla giriş yapar; sohbetler WhatsApp'taki gibi iki yönlü çevrilir.
+      - - Hangi uygulamalarla çalışıyor?
+        - WhatsApp ve WhatsApp Business, Telegram, Facebook Messenger, Instagram DM ve Discord — her birinden birden fazla hesap, tek pencerede. Sohbetler her uygulamada iki yönlü çevrilir; sesli mesajlar ve fotoğraflar WhatsApp ve Telegram'da çevrilir.
       - - Hesaplarım için güvenli mi?
-        - 'GlotChat her hesap için resmi WhatsApp Web ve Telegram Web''i kendi yalıtılmış oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına mesaj göndermez: her şeyi siz gönderirsiniz. Her mesajlaşma uygulamasında olduğu gibi spam ve toplu istenmeyen mesajlardan kaçının.'
+        - 'GlotChat her hesap için uygulamanın resmi web sitesini (WhatsApp Web, Telegram Web, Messenger, Instagram, Discord) kendi yalıtılmış oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına mesaj göndermez: her şeyi siz gönderirsiniz. Her mesajlaşma uygulamasında olduğu gibi spam ve toplu istenmeyen mesajlardan kaçının.'
       - - Çeviri ne kadar iyi?
         - 'Günlük iş yazışmaları için çok iyi — fiyatlar, siparişler, randevular, sorular. Üstelik tahmin etmeniz gerekmez: göndermeden önce GlotChat müşterinin ne okuyacağını gösterir, her rakamı kontrol eder ve başka ifadeler sunar. Sözleşme veya tıbbi metinleri bir uzmana kontrol ettirin.'
       - - Çeviri internet gerektirir mi?
@@ -480,9 +505,9 @@ pages:
       k: Daha fazlası
       h: Rehberler ve karşılaştırmalar
       items:
+      - all-in-one-messenger
       - telegram-translator
-      - guides/translate-whatsapp-messages-on-pc
-      - compare
+      - instagram-dm-translator
   pricing:
     title: GlotChat Fiyatları – Yılda 69 USDT'den, Ücretsiz Deneme
     description: 'GlotChat paketleri: Starter 69, Pro 129, Business 249 USDT/yıl. WhatsApp, Telegram ve tüm özellikler dahil, 3 gün ücretsiz deneme, USDT ile ödeme.'
@@ -525,7 +550,7 @@ pages:
       - Pro
       - Business
       rows:
-      - - Hesaplar (WhatsApp + Telegram + beta)
+      - - Hesaplar (tüm uygulamalar birlikte)
         - 5'e kadar
         - 15'e kadar
         - Sınırsız
@@ -541,7 +566,7 @@ pages:
         - ✓
         - ✓
         - ✓
-      - - Messenger, Instagram, Discord (beta)
+      - - Messenger, Instagram ve Discord
         - ✓
         - ✓
         - ✓
@@ -1668,3 +1693,409 @@ pages:
       - telegram-translator
       - multiple-whatsapp-accounts
       - pricing
+  all-in-one-messenger:
+    title: PC için Çeviri Özellikli Hepsi Bir Arada Mesajlaşma | GlotChat
+    description: WhatsApp, Telegram, Messenger, Instagram ve Discord Windows'ta tek pencerede. Uygulama başına birden fazla hesap, her biri yalıtılmış, her sohbet çevrilmiş.
+    keywords: hepsi bir arada mesajlaşma uygulaması, tüm mesajlaşma uygulamaları tek yerde, çoklu mesajlaşma programı, sosyal medya hesaplarını tek yerden yönetme, whatsapp telegram messenger tek pencere
+    short: Hepsi bir arada mesajlaşma
+    icon: 🧩
+    og_heading: WhatsApp, Telegram, Messenger, Instagram ve Discord — tek pencere
+    og_sub: Her sohbet bilgisayarınızda çevrimdışı çevrilir — göndermeden önce kontrol edilir.
+    blocks:
+    - type: hero
+      k: PC için hepsi bir arada mesajlaşma
+      h1: Her uygulama, her hesap — <span class="grad">tek pencerede, kendi dilinizde</span>
+      lead: WhatsApp, Telegram, Messenger, Instagram ve Discord bilgisayarınızda yan yana. Her uygulamadan birden fazla hesap ekleyin, tek tıkla geçin, her müşteriyi kendi dilinde okuyup yanıtlayın — çevrimdışı çeviri, göndermeden önce kontrol.
+      media: video:apps
+      media_alt: GlotChat'te WhatsApp, Telegram, Messenger, Instagram ve Discord arasında geçiş, her sohbet çevrilmiş
+    - type: facts
+      label: Temel bilgiler
+      items:
+      - - '5'
+        - mesajlaşma uygulaması tek pencerede
+      - - 27+
+        - hesap aynı anda (test edildi)
+      - - '49'
+        - çeviri dili, çevrimdışı
+      - - '1'
+        - paket, tüm uygulamalar
+    - type: table
+      id: apps
+      k: Desteklenen uygulamalar
+      h: GlotChat her uygulamada neler yapar
+      cols:
+      - ''
+      - WhatsApp
+      - Telegram
+      - Messenger
+      - Instagram
+      - Discord
+      rows:
+      - - Birden fazla hesap yan yana
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - Mesajlar orijinalin altında çevrilir
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - Yanıtınız göndermeden önce çevrilir
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - “Okuyacağı” kontrolü + başka ifadeler
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - Bildirimler hesabın adını gösterir
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - Hesap başına proxy
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+        - ✓
+      - - Sesli mesaj → metin
+        - ✓
+        - ✓
+        - ✕
+        - ✕
+        - ✕
+      - - Fotoğraftaki metin çevrilir
+        - ✓
+        - ✓
+        - ✕
+        - ✕
+        - ✕
+      - - Hazır yanıt şablonları
+        - ✓
+        - ✓
+        - ✕
+        - ✕
+        - ✕
+      note: Her uygulamada herhangi bir metni seçip tek tıkla çevirebilirsiniz.
+    - type: cards
+      soft: true
+      k: Beş yerine tek pencere
+      h: Uygulamalar, sekmeler ve telefonlar arasında gidip gelmeyi bırakın
+      items:
+      - icon: 🔒
+        h: Her hesap yalıtılmış
+        p: Her uygulamadaki her hesabın kendi oturumu ve depolaması var. Girişler asla karışmaz — tek uygulamada ayrı bilgisayarlar gibi.
+      - icon: 🔔
+        h: Kim, nerede yazdı
+        p: Her uygulama ve her hesap için okunmamış sayısı; her bildirim hesabın adını gösterir. Tıklayın, doğru sohbet açılsın.
+      - icon: 🌐
+        h: Her sohbet çevrilir
+        p: Gelen mesajlar orijinalin altında çevrilir; yanıtlarınız göndermeden önce çevrilir — beş uygulamanın hepsinde.
+      - icon: ↩
+        h: Göndermeden önce kontrol
+        p: Müşterinin ne okuyacağını Türkçeye geri çevrilmiş olarak görün. Beğenmediniz mi? Başka bir ifade seçin.
+      - icon: 🌍
+        h: Hesap başına proxy
+        p: Herhangi bir hesaba kendi HTTP veya SOCKS5 proxy'sini verin — birkaç ülkede satış yapıyorsanız çok işe yarar.
+      - icon: 🛡
+        h: Çevrimdışı ve gizli
+        p: Çeviri bilgisayarınızda yapılır. Hiçbir sohbet çevrimiçi bir çevirmene veya yapay zekâ hizmetine gönderilmez.
+    - type: steps
+      k: Nasıl çalışır
+      h: Uygulamalarınızı birkaç dakikada ekleyin
+      items:
+      - - Hesap ekleyin
+        - 'Hesap ekle''ye tıklayın ve uygulamayı seçin: WhatsApp, Telegram, Messenger, Instagram veya Discord. Bir ad ve dilinizi verin.'
+      - - Bir kez giriş yapın
+        - QR kodu okutun (WhatsApp, Telegram) ya da her zamanki kullanıcı adı ve şifrenizle girin (Messenger, Instagram, Discord). Oturum açık kalır.
+      - - Her dilde sohbet edin
+        - 'Bir sohbet açın: mesajlar zaten Türkçe. Siz Türkçe yazın — müşteri kendi dilinde okusun.'
+      cta: İndirin ve tüm uygulamaları ücretsiz deneyin
+    - type: faq
+      soft: true
+      k: SSS
+      h: Hepsi bir arada mesajlaşma — sorular
+      items:
+      - - GlotChat hangi uygulamaları destekliyor?
+        - WhatsApp ve WhatsApp Business, Telegram, Facebook Messenger, Instagram DM ve Discord. Hepsi her pakete dahildir.
+      - - Aynı uygulamadan birden fazla hesap ekleyebilir miyim?
+        - Evet. Paketinizin izin verdiği kadar hesap ekleyin — örneğin 3 WhatsApp numarası, 2 Telegram ve 2 Instagram hesabı. Her biri yalıtılmıştır.
+      - - Paketlerde hesaplar nasıl sayılır?
+        - 'Tüm uygulamalar birlikte sayılır: Starter 5 hesap, Pro 15, Business sınırsız — uygulamaları dilediğiniz gibi karıştırın.'
+      - - Sesli mesajlar ve fotoğraflar her uygulamada çevriliyor mu?
+        - Sesli mesajlar ve fotoğraflardaki metin WhatsApp ve Telegram'da çevrilir. Messenger, Instagram ve Discord'da metin mesajları iki yönlü çevrilir.
+      - - Resmi WhatsApp, Telegram, Messenger, Instagram ve Discord mu?
+        - Evet. GlotChat her uygulamanın resmi web sitesini kendi yalıtılmış oturumunda açar — bir tarayıcı gibi, sadece düzenli ve çevrilmiş. Kendi başına hiçbir şey göndermez.
+      - - Mac'te veya telefonda çalışır mı?
+        - GlotChat, Windows 10 / 11 için bir masaüstü uygulamasıdır. Telefonlarınız normal şekilde çalışmaya devam eder.
+    - type: related
+      k: Keşfetmeye devam
+      h: İlgili
+      items:
+      - messenger-translator
+      - instagram-dm-translator
+      - discord-translator
+  messenger-translator:
+    title: PC için Facebook Messenger Çevirmeni ve Çoklu Hesap
+    description: Facebook Messenger sohbetlerini Windows'ta iki yönlü çevirin ve birkaç Messenger hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz.
+    keywords: messenger çevirmen, facebook messenger çeviri, messenger mesaj çevirme, birden fazla messenger hesabı, facebook çoklu hesap pc, messenger otomatik çeviri
+    short: Messenger çevirmeni
+    icon: 💬
+    og_heading: Facebook Messenger çevirmeni — birçok hesap, her dil
+    og_sub: Her sohbet bilgisayarınızda çevrimdışı çevrilir — göndermeden önce kontrol edilir.
+    blocks:
+    - type: hero
+      k: PC için Messenger çevirmeni
+      h1: Her Messenger müşterisine <span class="grad">kendi dilinde yanıt verin</span>
+      lead: Facebook ve Marketplace'ten gelen müşteriler Almanca, İspanyolca ya da Arapça mı yazıyor? GlotChat her mesajın çevirisini orijinalin altında gösterir ve yanıtınızı göndermeden önce çevirir — müşterinin ne okuyacağıyla birlikte. Birkaç Messenger hesabı yan yana.
+      media: video:messenger
+      media_alt: GlotChat içinde Almanca ve Türkçe arasında çevrilen bir Facebook Messenger sohbeti
+    - type: steps
+      soft: false
+      k: Nasıl çalışır
+      h: Üç adımda çevrilmiş Messenger
+      items:
+      - - Bir kez giriş yapın
+        - GlotChat'e bir Messenger hesabı ekleyin ve o Facebook hesabıyla giriş yapın. Oturum açık kalır.
+      - - Kendi dilinizde okuyun
+        - 'Bir sohbet açın: her mesaj geldiği anda orijinalin altında çevirisiyle görünür.'
+      - - Onların dilinde yanıtlayın
+        - Türkçe yazın ve Enter'a basın. Önizlemeyi — müşterinin ne okuyacağıyla birlikte — kontrol edin ve gönderin.
+    - type: cards
+      soft: true
+      k: Neler kazanırsınız
+      h: Messenger'da satışı kolaylaştıran her şey
+      items:
+      - icon: 🌐
+        h: İki yönlü çeviri
+        p: Gelen mesajlar otomatik çevrilir; yanıtlarınız göndermeden önce çevrilir. 49 dil, her dil çifti.
+      - icon: ↩
+        h: “Okuyacağı” kontrolü
+        p: Çevirinizin Türkçeye geri çevrilmiş halini gönderilmeden önce görün. Fiyatlar ve rakamlar kontrol edilir.
+      - icon: 🗂
+        h: Birden fazla Messenger hesabı
+        p: Birkaç Facebook hesabının Messenger'ı aynı anda açık — her biri yalıtılmış, kendi bildirimleriyle.
+      - icon: 🔔
+        h: Hesap başına bildirim
+        p: Her bildirim ait olduğu hesabı gösterir. Tıklayın, doğru sohbet açılsın.
+      - icon: 🌍
+        h: Hesap başına proxy
+        p: Gerekirse her Messenger hesabına kendi HTTP veya SOCKS5 proxy'sini verin.
+      - icon: 💬
+        h: Tüm uygulamalarınız bir arada
+        p: WhatsApp, Telegram, Instagram ve Discord aynı pencerede, aynı şekilde çevrilir.
+        link: all-in-one-messenger
+    - type: split
+      k: Birden fazla Messenger hesabı
+      h: Birkaç Facebook hesabı aynı anda açık
+      p: Tarayıcı aynı anda tek bir Facebook hesabı gösterir — geçiş yapmak çıkış yapıp yeniden girmek demektir. GlotChat her Messenger hesabını kendi yalıtılmış oturumunda açık tutar; her hesabın okunmamış mesajlarını görür, tek tıkla yanıtlarsınız.
+      ticks:
+      - Tekrar tekrar çıkış ve giriş yok
+      - Her hesabın kendi girişi, çerezleri ve depolaması
+      - Kendi dilinizde okuyun, müşterinin dilinde yanıtlayın
+      mock:
+        top: <span><b>Almanca</b> gönder</span><span>Türkçeden</span>
+        main: Ja, die Lampe ist verfügbar! Der Versand nach München kostet 8 €.
+        notes:
+        - - back
+          - '↩ Okuyacağı: Evet, lamba mevcut! Münih’e gönderim 8 € tutuyor.'
+    - type: faq
+      k: SSS
+      h: Messenger çevirmeni — sorular
+      items:
+      - - PC'de Facebook Messenger'ı otomatik çevirebilir miyim?
+        - Evet. GlotChat'te gelen her Messenger mesajı otomatik çevrilir ve orijinalin altında gösterilir — eklediğiniz her Messenger hesabının her sohbetinde.
+      - - Yanıtlarımı da çeviriyor mu?
+        - 'Evet. Kendi dilinizde yazın ve Enter''a basın: GlotChat çeviriyi ve müşterinin ne okuyacağını gösterir, siz de onların dilinde gönderirsiniz.'
+      - - Birkaç Messenger hesabını aynı anda kullanabilir miyim?
+        - Evet. Her Messenger hesabı diğerlerinin yanında kendi yalıtılmış oturumunda çalışır — paketinizin içerdiği kadar.
+      - - Messenger'da sesli mesajlar ve fotoğraflar çevriliyor mu?
+        - 'Henüz değil: Messenger''da metin mesajları iki yönlü çevrilir. Sesli mesajlar ve fotoğraflar WhatsApp ve Telegram''da çevrilir.'
+      - - Resmi Messenger mı?
+        - Evet. GlotChat her hesap için resmi Facebook Messenger web sitesini açar. Kendi başına hiçbir şey göndermez — kontrol sizde.
+    - type: related
+      k: Keşfetmeye devam
+      h: İlgili
+      items:
+      - all-in-one-messenger
+      - instagram-dm-translator
+      - whatsapp-translator
+  instagram-dm-translator:
+    title: PC için Instagram DM Çevirmeni ve Çoklu Instagram Hesabı
+    description: Instagram DM'lerini Windows'ta iki yönlü çevirin ve birkaç Instagram hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz deneme.
+    keywords: instagram dm çeviri, instagram çevirmen, instagram mesaj çevirme, birden fazla instagram hesabı pc, instagram dm bilgisayar, instagram çoklu hesap
+    short: Instagram DM çevirmeni
+    icon: 📸
+    og_heading: Instagram DM çevirmeni — her hesap, her dil
+    og_sub: Her sohbet bilgisayarınızda çevrimdışı çevrilir — göndermeden önce kontrol edilir.
+    blocks:
+    - type: hero
+      k: PC için Instagram DM çevirmeni
+      h1: Yabancı Instagram DM'lerini <span class="grad">satışa çevirin</span>
+      lead: Başka ülkelerden takipçiler fiyat ve kargoyu kendi dillerinde mi soruyor? GlotChat her Instagram DM'sini orijinalin altında, yanıtınızı ise göndermeden önce çevirir — yönettiğiniz her Instagram hesabında, yan yana.
+      media: video:instagram
+      media_alt: GlotChat içinde Fransızca ve Türkçe arasında çevrilen bir Instagram DM sohbeti
+    - type: steps
+      soft: false
+      k: Nasıl çalışır
+      h: Üç adımda çevrilmiş Instagram DM'leri
+      items:
+      - - Bir kez giriş yapın
+        - GlotChat'e bir Instagram hesabı ekleyin ve kullanıcı adı ile şifresiyle giriş yapın. Oturum açık kalır.
+      - - Kendi dilinizde okuyun
+        - 'Bir sohbet açın: her mesaj orijinalin altında çevirisiyle görünür.'
+      - - Onların dilinde yanıtlayın
+        - Türkçe yazın ve Enter'a basın. Müşterinin ne okuyacağını kontrol edin ve gönderin.
+    - type: cards
+      soft: true
+      k: Neler kazanırsınız
+      h: Instagram'da satış yapan mağazalar ve içerik üreticileri için
+      items:
+      - icon: 🌐
+        h: İki yönlü çeviri
+        p: DM'ler otomatik çevrilir; yanıtlarınız göndermeden önce çevrilir. 49 dil, her dil çifti.
+      - icon: ↩
+        h: “Okuyacağı” kontrolü
+        p: Yanıtınızın geri çevrilmiş halini gönderilmeden önce görün. Fiyatlar, bedenler ve rakamlar kontrol edilir.
+      - icon: 🗂
+        h: Birden fazla Instagram hesabı
+        p: Mağaza, marka ve kişisel hesabınız aynı anda açık — her biri yalıtılmış, geçiş yok.
+      - icon: 🔔
+        h: Hesap başına bildirim
+        p: Mesajın hangi Instagram hesabına geldiğini bilin. Bildirime tıklayın, doğru sohbet açılsın.
+      - icon: 🌍
+        h: Hesap başına proxy
+        p: Gerekirse her Instagram hesabına kendi HTTP veya SOCKS5 proxy'sini verin.
+      - icon: 💬
+        h: WhatsApp ve Telegram da
+        p: Müşteriyi Instagram'dan WhatsApp veya Telegram'a taşıyın — hepsi aynı pencerede.
+        link: all-in-one-messenger
+    - type: split
+      k: Birden fazla Instagram hesabı
+      h: Tüm Instagram hesaplarınızın DM'leri, geçiş yapmadan
+      p: Instagram hesaplar arasında geçiş yapmanıza izin verir ama aynı anda tek bir gelen kutusu görürsünüz. GlotChat'te her Instagram hesabı kendi yalıtılmış oturumunda, kendi okunmamış sayısıyla açık kalır — hepsini tek pencereden yanıtlayın.
+      ticks:
+      - Tüm gelen kutuları aynı anda açık
+      - Her hesap için okunmamış sayısı
+      - Müşteriler yanıtı kendi dillerinde alır
+      mock:
+        top: <span><b>Fransızca</b> gönder</span><span>Türkçeden</span>
+        main: Oui, le sac noir est disponible ! Nous livrons en Belgique en 3 jours.
+        notes:
+        - - back
+          - '↩ Okuyacağı: Evet, siyah çanta mevcut! Belçika’ya 3 gün içinde teslimat yapıyoruz.'
+    - type: faq
+      k: SSS
+      h: Instagram DM çevirmeni — sorular
+      items:
+      - - PC'de Instagram DM'lerini çevirebilir miyim?
+        - Evet. GlotChat'te her Instagram DM'si orijinalin altında otomatik çevrilir — eklediğiniz her Instagram hesabının her sohbetinde.
+      - - Yanıtlarımı çeviriyor mu?
+        - 'Evet. Kendi dilinizde yazın ve Enter''a basın: GlotChat göndermeden önce çeviriyi ve müşterinin ne okuyacağını gösterir.'
+      - - Birkaç Instagram hesabını aynı anda kullanabilir miyim?
+        - Evet. Her hesabın kendi yalıtılmış oturumu var; tüm gelen kutuları yan yana açık — paketinizin içerdiği kadar.
+      - - Instagram'da sesli mesajlar ve fotoğraflar çevriliyor mu?
+        - 'Henüz değil: Instagram''da metin mesajları iki yönlü çevrilir. Sesli mesajlar ve fotoğraflar WhatsApp ve Telegram''da çevrilir.'
+      - - Instagram hesabım için güvenli mi?
+        - GlotChat resmi Instagram web sitesini tıpkı bir tarayıcı gibi açar ve kendi başına hiçbir şey göndermez. Her zamanki gibi Instagram kurallarına uyun — spam ve toplu mesaj yok.
+    - type: related
+      k: Keşfetmeye devam
+      h: İlgili
+      items:
+      - all-in-one-messenger
+      - messenger-translator
+      - whatsapp-translator
+  discord-translator:
+    title: PC için Discord Çevirmeni ve Çoklu Discord Hesabı
+    description: Discord mesajlarını sunucularda ve DM'lerde Windows'ta çevirin, birkaç Discord hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz.
+    keywords: discord çevirmen, discord mesaj çevirme, discord otomatik çeviri, birden fazla discord hesabı, discord çoklu hesap pc
+    short: Discord çevirmeni
+    icon: 🎮
+    og_heading: Discord çevirmeni — sunucular ve DM'ler her dilde
+    og_sub: Her sohbet bilgisayarınızda çevrimdışı çevrilir — göndermeden önce kontrol edilir.
+    blocks:
+    - type: hero
+      k: PC için Discord çevirmeni
+      h1: Tüm Discord topluluğunuzla <span class="grad">her dilde konuşun</span>
+      lead: Müşteriler, oyuncular ve üyeler İtalyanca, Rusça ya da Portekizce mi yazıyor? GlotChat her Discord mesajını — sunucularda ve DM'lerde — orijinalin altında, yanıtınızı ise göndermeden önce çevirir. Birkaç Discord hesabı yan yana.
+      media: video:discord
+      media_alt: GlotChat içinde İtalyanca ve Türkçe arasında çevrilen bir Discord sohbeti
+    - type: steps
+      soft: false
+      k: Nasıl çalışır
+      h: Üç adımda çevrilmiş Discord
+      items:
+      - - Bir kez giriş yapın
+        - GlotChat'e bir Discord hesabı ekleyin ve e-posta ile şifrenizle ya da QR kodla giriş yapın. Oturum açık kalır.
+      - - Kendi dilinizde okuyun
+        - 'Bir kanal veya DM açın: her mesaj orijinalin altında çevirisiyle görünür.'
+      - - Onların dilinde yanıtlayın
+        - Türkçe yazın ve Enter'a basın. Ne okuyacaklarını kontrol edin ve gönderin.
+    - type: cards
+      soft: true
+      k: Neler kazanırsınız
+      h: Discord'daki topluluklar, stüdyolar ve satıcılar için
+      items:
+      - icon: 🌐
+        h: Sunucular ve DM'ler
+        p: Kanallardaki ve özel mesajlardaki mesajlar otomatik çevrilir, 49 dil.
+      - icon: ↩
+        h: “Okuyacağı” kontrolü
+        p: Yanıtınızın geri çevrilmiş halini gönderilmeden önce görün — fiyatlar ve rakamlar kontrol edilir.
+      - icon: 🗂
+        h: Birden fazla Discord hesabı
+        p: Stüdyo, destek ve kişisel hesaplarınız aynı anda açık — her biri yalıtılmış, kendi bildirimleriyle.
+      - icon: 🔔
+        h: Hesap başına bildirim
+        p: Her bildirim hesabı gösterir. Tıklayın, doğru sohbet açılsın.
+      - icon: 🌍
+        h: Hesap başına proxy
+        p: Gerekirse her Discord hesabına kendi HTTP veya SOCKS5 proxy'sini verin.
+      - icon: 💬
+        h: Tüm uygulamalarınız bir arada
+        p: WhatsApp, Telegram, Messenger ve Instagram aynı pencerede.
+        link: all-in-one-messenger
+    - type: split
+      k: Birden fazla Discord hesabı
+      h: Birkaç Discord hesabı aynı anda açık
+      p: Discord uygulaması hesaplar arasında tek tek geçiş yapmanıza izin verir. GlotChat her Discord hesabını kendi yalıtılmış oturumunda açık tutar; her hesaptaki bahsetmeler ve DM'ler size ulaşır — üstelik çevrilmiş olarak.
+      ticks:
+      - İleri geri geçiş yok
+      - Her hesap için okunmamış sayısı
+      - Herkes sizi kendi dilinde okur
+      mock:
+        top: <span><b>İtalyanca</b> gönder</span><span>Türkçeden</span>
+        main: Il logo animato costa 40 $. Sì, accettiamo USDT.
+        notes:
+        - - back
+          - '↩ Okuyacağı: Animasyonlu logonun fiyatı 40 $. Evet, USDT kabul ediyoruz.'
+    - type: faq
+      k: SSS
+      h: Discord çevirmeni — sorular
+      items:
+      - - Discord mesajlarını otomatik çevirebilir miyim?
+        - Evet. GlotChat'te açtığınız kanal veya DM'deki her Discord mesajı otomatik çevrilir ve orijinalin altında gösterilir.
+      - - Yazdıklarımı da çeviriyor mu?
+        - 'Evet. Kendi dilinizde yazın ve Enter''a basın: GlotChat göndermeden önce çeviriyi ve karşı tarafın ne okuyacağını gösterir.'
+      - - Birkaç Discord hesabını aynı anda kullanabilir miyim?
+        - Evet. Her Discord hesabı kendi yalıtılmış oturumunda, yan yana çalışır — paketinizin içerdiği kadar.
+      - - Sesli sohbetler çevriliyor mu?
+        - Hayır. GlotChat Discord'da metin mesajlarını çevirir. Sesli mesajlar WhatsApp ve Telegram'da çevrilir.
+      - - Resmi Discord mu?
+        - Evet. GlotChat her hesap için resmi Discord web sitesini açar ve kendi başına hiçbir şey göndermez.
+    - type: related
+      k: Keşfetmeye devam
+      h: İlgili
+      items:
+      - all-in-one-messenger
+      - telegram-translator
+      - messenger-translator

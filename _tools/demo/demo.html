@@ -121,6 +121,29 @@
   .tgw .comp .box { background: #fff; color: #0f1419; border-radius: 14px; box-shadow: 0 1px 2px rgba(16,35,47,.15); }
   .tgw .comp .ic { color: #8a9299; }
   .tgw .caret { background: #3390ec; }
+  /* Messenger (facebook.com/messages), light */
+  .msw { --bg: #ffffff; --panel: #ffffff; --panel2: #ffffff; --line: #e4e6eb; --txt: #050505; --muted: #65676b; --in: #f0f0f0; --out: #0a7cff; }
+  .msw .list { color: #050505; } .msw .search { background: #f0f2f5; border-radius: 18px; }
+  .msw .row.on { background: #ebf5ff; } .msw .row .m em { background: #0a7cff; color: #fff; }
+  .msw .chat { background: #fff; } .msw .chead { background: #fff; color: #050505; border-bottom: 1px solid #e4e6eb; }
+  .msw .b { border-radius: 18px; box-shadow: none; color: #050505; } .msw .b.out { background: linear-gradient(160deg,#0a7cff,#7b4dff); color: #fff; }
+  .msw .b .tm { color: rgba(5,5,5,.45); } .msw .b.out .tm { color: rgba(255,255,255,.75); }
+  .msw .tr { color: #050505; border-top-color: rgba(5,5,5,.2); } .msw .b.out .tr { color: #fff; border-top-color: rgba(255,255,255,.4); }
+  .msw .comp { background: #fff; border-top: 1px solid #e4e6eb; } .msw .comp .box { background: #f0f2f5; color: #050505; border-radius: 20px; } .msw .comp .ic { color: #0a7cff; } .msw .caret { background: #0a7cff; }
+  /* Instagram Direct, light */
+  .igw { --bg: #ffffff; --panel: #ffffff; --panel2: #ffffff; --line: #dbdbdb; --txt: #000; --muted: #737373; --in: #efefef; --out: #7a3cff; }
+  .igw .list { color: #000; } .igw .search { background: #efefef; }
+  .igw .row.on { background: #efefef; } .igw .row .m em { background: #ff3040; color: #fff; }
+  .igw .chat { background: #fff; } .igw .chead { background: #fff; color: #000; border-bottom: 1px solid #dbdbdb; }
+  .igw .b { border-radius: 22px; box-shadow: none; color: #000; } .igw .b.out { background: linear-gradient(135deg,#a033ff,#5b51ff); color: #fff; }
+  .igw .b .tm { color: rgba(0,0,0,.4); } .igw .b.out .tm { color: rgba(255,255,255,.75); }
+  .igw .tr { color: #000; border-top-color: rgba(0,0,0,.18); } .igw .b.out .tr { color: #fff; border-top-color: rgba(255,255,255,.4); }
+  .igw .comp { background: #fff; } .igw .comp .box { background: #fff; border: 1px solid #dbdbdb; color: #000; border-radius: 22px; } .igw .comp .ic { color: #000; } .igw .caret { background: #7a3cff; }
+  /* Discord, dark */
+  .dcw { --bg: #313338; --panel: #2b2d31; --panel2: #313338; --line: #1f2023; --txt: #dbdee1; --muted: #949ba4; --in: #383a40; --out: #5865f2; }
+  .dcw .search { background: #1e1f22; } .dcw .row.on { background: #404249; } .dcw .row .m em { background: #f23f43; color: #fff; }
+  .dcw .chat { background: #313338; } .dcw .chead { border-bottom: 1px solid #26282c; }
+  .dcw .b { border-radius: 8px; box-shadow: none; } .dcw .b.out { color: #fff; } .dcw .comp { background: #313338; } .dcw .comp .box { background: #383a40; border-radius: 8px; } .dcw .caret { background: #fff; }
   /* send preview panel */
   .panel { position: absolute; left: 16px; right: 16px; bottom: 76px; background: #fff; color: #1f2933; border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.45); padding: 13px 15px; font-size: 13.5px; z-index: 4; }
   .panel .ph { display: flex; justify-content: space-between; font-weight: 650; margin-bottom: 8px; }
@@ -316,26 +339,28 @@ const ICO = {
   tg: '<svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>',
   ms: '<svg viewBox="0 0 24 24"><path d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.8 1.2 5.2 3.1 6.9v3.2l2.9-1.6c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9S17.4 2.5 12 2.5zm1 12.2-2.4-2.6-4.7 2.6 5.2-5.5 2.5 2.6 4.6-2.6-5.2 5.5z"/></svg>',
   ig: '<svg viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm4.5 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.3-2.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" fill-rule="evenodd"/></svg>',
+  dc: '<svg viewBox="0 0 24 24"><path d="M19.3 5.3A16.5 16.5 0 0 0 15.2 4l-.5 1a15 15 0 0 0-5.4 0L8.8 4a16.5 16.5 0 0 0-4.1 1.3C2.1 9.2 1.4 13 1.7 16.7a16.6 16.6 0 0 0 5 2.5l1.1-1.7a10.6 10.6 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 11 0l.4.3-1.7.8 1.1 1.7a16.5 16.5 0 0 0 5-2.5c.4-4.3-.7-8-3-11.4zM8.7 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></svg>',
 };
+const APPS = { wa: ['WhatsApp', '#25b864', ''], tg: ['Telegram', '#2aabee', 'tgw'], ms: ['Messenger', '#0a7cff', 'msw'], ig: ['Instagram', '#e1306c', 'igw'], dc: ['Discord', '#5865f2', 'dcw'] };
 let APP = 'wa';
 function railHtml(app, unread = {}) {
-  const apps = [['wa', 'WhatsApp', '#25b864'], ['tg', 'Telegram', '#2aabee'], ['ms', 'Messenger', '#8b5cf6', 1], ['ig', 'Instagram', '#e1306c', 1]];
+  const apps = Object.entries(APPS).map(([k, [n, c]]) => [k, n, c]);
   return `<div class="rail"><div class="rlogo"><svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M20 9a2 2 0 0 1 1 2v7a1 1 0 0 1-1 1h-1v2l-3-2h-3"/></svg></div>
-    ${apps.map(([k, n, c, beta]) => `<div class="rapp ${k === app ? 'on' : ''}" style="--c:${c}" data-app="${k}"><i>${ICO[k]}</i>${n}${beta ? '<small>BETA</small>' : ''}${unread[k] ? `<em>${unread[k]}</em>` : ''}</div>`).join('')}
+    ${apps.map(([k, n, c]) => `<div class="rapp ${k === app ? 'on' : ''}" style="--c:${c}" data-app="${k}"><i>${ICO[k]}</i>${n}${unread[k] ? `<em>${unread[k]}</em>` : ''}</div>`).join('')}
     <div class="rnav"><span><b>▦</b>${esc(U.navAllApps)}</span><span><b>⚡</b>${esc(U.navTpl)}</span><span><b>🌐</b>${esc(U.navLang)}</span><span><b>⚙</b>${esc(U.navSet)}</span></div></div>`;
 }
 function shell(tabs, active, chat, rows, opt = {}) {
   APP = opt.app || 'wa';
   stage.innerHTML = railHtml(APP, opt.unread || (APP === 'wa' ? { tg: 2 } : { wa: 3 })) + `
-    <div class="sb"><div class="sbtop"><b>${APP === 'tg' ? 'Telegram' : 'WhatsApp'}</b></div>
-      <div class="sblabel">${esc(APP === 'tg' ? U.sbTgAccounts : U.sbAccounts)}</div>
-      <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em>${ACCS.length}</em></span><span>${esc(U.sbUnread)}</span></div>
+    <div class="sb"><div class="sbtop"><b>${APPS[APP][0]}</b></div>
+      <div class="sblabel">${esc(U.sbApp(APPS[APP][0]))}</div>
+      <div class="sbtabs"><span class="on">${esc(U.sbAll)}<em>${tabs.length}</em></span><span>${esc(U.sbUnread)}</span></div>
       <div class="tabset">${tabs.map((a, i) => tabHtml(a, i, i === active)).join('')}</div>
       <div class="tab add"><span class="ic">＋</span><span class="nm"><b>${esc(U.sbAdd)}</b></span></div>
       </div>
     ${topHtml(tabs[active])}
-    <div class="wa${APP === 'tg' ? ' tgw' : ''}">
-      <div class="list"><h3>${APP === 'tg' ? 'Telegram' : 'WhatsApp'}</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
+    <div class="wa ${APPS[APP][2]}">
+      <div class="list"><h3>${APPS[APP][0]}</h3><div class="search">🔍&nbsp; ${esc(U.search)}</div>
         ${rows.map((r, i) => `<div class="row ${i === 0 ? 'on' : ''}"><div class="av" style="background:${r[2]}">${r[1]}</div><div class="t"><b>${esc(r[0])}</b><span>${esc(r[3])}</span></div><div class="m">${r[4]}${r[5] ? `<br><em>${r[5]}</em>` : ''}</div></div>`).join('')}
       </div>
       <div class="chat">
@@ -516,6 +541,9 @@ const SCENES = {
     return click + busy + 5.6;
   },
 };
+const MS_ACCS = [['Home Decor', '#0a7cff', 'Home Decor Shop'], ['Shop Berlin', '#8b5cf6', 'Marketplace'], ['Sales Team', '#10b981', 'Messenger'], ['Outlet', '#f59e0b', 'Outlet Store']];
+const IG_ACCS = [['Bags Studio', '#e1306c', '@bags.studio'], ['Shop Paris', '#8b5cf6', '@shop.paris'], ['Beauty Line', '#f59e0b', '@beautyline'], ['Outlet', '#10b981', '@outlet.store']];
+const DC_ACCS = [['Design Studio', '#5865f2', 'studio_2041'], ['Support', '#10b981', 'support_team'], ['Community', '#f59e0b', 'glot_mod'], ['Sales', '#ef4444', 'sales_ali']];
 const TG_ACCS = [['Shop KZ', '#2aabee', '+7 701 234 5678'], ['Support', '#7c5cff', '@glot_support'], ['Wholesale', '#f59e0b', '+90 532 123 4567'], ['Agent Ali', '#10b981', '+971 55 765 4321']];
 
 /* two-way chat translation: incoming translated, reply typed in my language, checked ("They will read"), sent in theirs */
@@ -549,11 +577,45 @@ function chatScene(c, tr, opt) {
     cam(1.7, 0.9, [760, 560, 1.4], [pb1[0] + 230, (pb1[1] + pb2[1]) / 2, 1.3]);
     cam(4.8, 0.7, [840, 650, 1.4], [pBox[0] + 230, pBox[1] - 140, 1.3]);
     cam(typedEnd + 0.3, 0.6, [840, 650, 1.4], [pPan[0] + 280, pPan[1] + 30, 1.12]);
-    cam(sendAt + 0.3, 0.8, [840, 560, 1.32], [pb3[0] - 240, pb3[1] - 90, 1.3]);
+    cam(sendAt + 0.3, 0.8, [840, 560, 1.32], [934, pb3[1] - 170, 0.92]);   // phones: the whole conversation
     return sendAt + 3.4;
   }
 }
 const SCENES2 = {
+  /* 7-9. the same two-way translation in Messenger, Instagram and Discord */
+  messenger() { return chatScene(D.ms, D.msTr, { app: 'ms', accs: MS_ACCS, unread: { wa: 3, ig: 1 } }); },
+  instagram() { return chatScene(D.ig, D.igTr, { app: 'ig', accs: IG_ACCS, unread: { wa: 3, ms: 2 } }); },
+  discord() { return chatScene(D.dc, D.dcTr, { app: 'dc', accs: DC_ACCS, unread: { wa: 3, tg: 1 } }); },
+  /* 10. one window for every app: click through WhatsApp → Telegram → Messenger → Instagram → Discord, each chat translated */
+  apps() {
+    const steps = [['wa', ACCS.slice(0, 6), D.chat, D.chatTr], ['tg', TG_ACCS, D.tg, D.tgTr], ['ms', MS_ACCS, D.ms, D.msTr], ['ig', IG_ACCS, D.ig, D.igTr], ['dc', DC_ACCS, D.dc, D.dcTr]];
+    const unread0 = { tg: 2, ms: 1, ig: 3, dc: 1 };
+    const STEP = 2.7, layers = [];
+    let rail = null;
+    steps.forEach(([app, accs, c, tr], i) => {
+      const unread = Object.assign({}, unread0); for (const [a] of steps.slice(0, i + 1)) delete unread[a];
+      shell(accs, 0, c, rowsWith([c.who[0], c.who[1], c.who[2], c.in2, '10:44', ''], ''), { app, unread });
+      const t0 = i * STEP;
+      const b1 = bubble('in', `${esc(c.in1)}<span class="tr">${badge(c.src)}${tt(tr[0])}</span>`, '10:43');
+      const b2 = bubble('in', `${esc(c.in2)}<span class="tr">${badge(c.src)}${tt(tr[1])}</span>`, '10:44');
+      const b3 = bubble('out', `${esc(c.out)}<span class="tr"><span class="badge grey">${esc(U.youWrote)}</span>${tt(tr[2])}</span>`, '10:45');
+      if (i === 0) { b1.style.opacity = 1; b2.style.opacity = 1; b3.style.opacity = 1; } else { show(b1, t0 + 0.35); show(b2, t0 + 0.7); show(b3, t0 + 1.05); }
+      if (!rail) rail = Object.fromEntries(steps.map(([a]) => [a, pos($(`.rapp[data-app="${a}"]`))]));
+      const w = h('<div style="position:absolute;inset:0"></div>'); w.append(...stage.childNodes); layers.push(w);
+      if (i) tween(w, t0, 0.3, { opacity: [0, 1] });
+    });
+    stage.innerHTML = ''; layers.forEach((w, i) => { if (i) w.style.opacity = 0; stage.append(w); });
+    const pts = [[0.6, 700, 520]];
+    steps.slice(1).forEach(([a], i) => { const t = (i + 1) * STEP; pts.push([t - 0.6, rail[a][0], rail[a][1]], [t - 0.1, rail[a][0], rail[a][1], true]); });
+    cursor(pts);
+    const end = steps.length * STEP + 1.2;
+    cam(0, 0, [640, 400, 1.0], [935, 470, 1]);
+    steps.forEach((_, i) => {
+      // phones: the chat, then back to the app rail for the next click
+      if (FMT === 'port') { const t = i * STEP; cam(t + 0.25, 0.6, [0, 0, 1], [935, 470, 1]); if (i < steps.length - 1) cam(t + STEP - 1.0, 0.55, [0, 0, 1], [320, 400, 1]); }
+    });
+    return end;
+  },
   /* 5. text in a photo -> read -> translated */
   photo() {
     const p = D.photo;

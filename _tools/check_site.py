@@ -61,9 +61,9 @@ try:
                 pg.screenshot(path=os.path.join(OUT, f"{name}_{lang}_full.png"))
                 pg.keyboard.press("Escape"); pg.wait_for_timeout(300)
                 check(not pg.evaluate("document.querySelector('.player').classList.contains('full')"), "Esc closes full screen")
-                pg.evaluate("document.querySelector('.show .srow:nth-of-type(3) video').scrollIntoView({block: 'center'})")
+                pg.evaluate("document.querySelector('.show .srow:nth-of-type(4) video').scrollIntoView({block: 'center'})")
                 pg.wait_for_timeout(2500)
-                clip = pg.evaluate("(() => { const v = document.querySelector('.show .srow:nth-of-type(3) video'); return { src: v.currentSrc.split('/').pop(), t: v.currentTime }; })()")
+                clip = pg.evaluate("(() => { const v = document.querySelector('.show .srow:nth-of-type(4) video'); return { src: v.currentSrc.split('/').pop(), t: v.currentTime }; })()")
                 check(clip["src"] == f"chat-{lang}-{fmt}.mp4" and clip["t"] > 0.3, f"feature clip loads + plays when scrolled to ({clip})")
                 h = pg.evaluate("document.body.scrollHeight")
                 for y in range(0, h, 700):
@@ -74,6 +74,17 @@ try:
                 check("?text=" in href, "Telegram button has a pre-filled message: " + urllib.parse.unquote(href.split("text=")[-1])[:60])
                 check(not errs, f"no page errors {errs[:2]}")
                 check(not fails, f"no failed requests {fails[:3]}")
+                # the app pages: their demo clip plays, nothing overflows, nothing fails
+                for pid, scene in (("all-in-one-messenger", "apps"), ("messenger-translator", "messenger"),
+                                   ("instagram-dm-translator", "instagram"), ("discord-translator", "discord")):
+                    errs.clear(); fails.clear()
+                    pg.goto(f"http://127.0.0.1:8765{path}{pid}/?nolang=1", wait_until="load"); pg.wait_for_timeout(800)
+                    pg.evaluate("document.querySelector('.phero video') && document.querySelector('.phero video').scrollIntoView({block: 'center'})"); pg.wait_for_timeout(2500)
+                    v = pg.evaluate("(() => { const v = document.querySelector('.phero video'); return v ? { src: v.currentSrc.split('/').pop(), t: v.currentTime } : null; })()")
+                    check(bool(v) and v["src"] == f"{scene}-{lang}-{fmt}.mp4" and v["t"] > 0.3, f"{pid}: demo clip plays ({v})")
+                    sw = pg.evaluate("[document.documentElement.scrollWidth, document.documentElement.clientWidth]")
+                    check(sw[0] <= sw[1], f"{pid}: no sideways scrolling ({sw[0]} <= {sw[1]})")
+                    check(not errs and not fails, f"{pid}: no page errors / failed requests {errs[:2]} {fails[:3]}")
                 ctx.close()
         b.close()
 finally:
