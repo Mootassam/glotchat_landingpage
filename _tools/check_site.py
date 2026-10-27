@@ -42,28 +42,28 @@ try:
                 print(f"== {name} {lang}")
                 pg.wait_for_timeout(2500)
                 st = pg.evaluate("""() => { const v = [...document.querySelectorAll('.player video.pv')].find(x => x.classList.contains('on'));
-                    return v ? { src: v.currentSrc.split('/').pop(), t: v.currentTime, paused: v.paused } : null; }""")
+                    return v ? { src: v.currentSrc.split('/').pop().split('?')[0], t: v.currentTime, paused: v.paused } : null; }""")
                 check(bool(st) and st["src"] == f"accounts-{lang}-{fmt}.mp4" and not st["paused"] and st["t"] > 0.5,
                       f"hero player plays chapter 1 by itself ({st})")
                 bar = pg.evaluate("parseFloat(document.querySelector('.steps2 [aria-selected=true] .bar i').style.width) || 0")
                 check(bar > 0, f"chapter progress bar moves ({bar:.0f}%)")
                 pg.click(".steps2 [data-ch=chat]"); pg.wait_for_timeout(2500)
                 st = pg.evaluate("""() => { const v = [...document.querySelectorAll('.player video.pv')].find(x => x.classList.contains('on'));
-                    return { src: v && v.currentSrc.split('/').pop(), cap: document.querySelector('.player .cap').textContent,
+                    return { src: v && v.currentSrc.split('/').pop().split('?')[0], cap: document.querySelector('.player .cap').textContent,
                              want: document.querySelector('.steps2 [data-ch=chat]').dataset.cap }; }""")
                 check(st["src"] == f"chat-{lang}-{fmt}.mp4" and st["cap"] == st["want"], f"chapter 3 click switches video + caption ({st['src']})")
                 pg.screenshot(path=os.path.join(OUT, f"{name}_{lang}_hero.png"))
                 pg.evaluate("window.scrollTo(0, 0)")
                 pg.click(".hero [data-watch]"); pg.wait_for_timeout(1500)
                 full = pg.evaluate("document.querySelector('.player').classList.contains('full')")
-                cur = pg.evaluate("[...document.querySelectorAll('.player video.pv')].find(x => x.classList.contains('on'))?.currentSrc.split('/').pop()")
+                cur = pg.evaluate("[...document.querySelectorAll('.player video.pv')].find(x => x.classList.contains('on'))?.currentSrc.split('/').pop().split('?')[0]")
                 check(full and cur == f"accounts-{lang}-{fmt}.mp4", f"'Watch it work' opens full screen from chapter 1 ({cur})")
                 pg.screenshot(path=os.path.join(OUT, f"{name}_{lang}_full.png"))
                 pg.keyboard.press("Escape"); pg.wait_for_timeout(300)
                 check(not pg.evaluate("document.querySelector('.player').classList.contains('full')"), "Esc closes full screen")
                 pg.evaluate("document.querySelector('.show .srow:nth-of-type(4) video').scrollIntoView({block: 'center'})")
                 pg.wait_for_timeout(2500)
-                clip = pg.evaluate("(() => { const v = document.querySelector('.show .srow:nth-of-type(4) video'); return { src: v.currentSrc.split('/').pop(), t: v.currentTime }; })()")
+                clip = pg.evaluate("(() => { const v = document.querySelector('.show .srow:nth-of-type(4) video'); return { src: v.currentSrc.split('/').pop().split('?')[0], t: v.currentTime }; })()")
                 check(clip["src"] == f"chat-{lang}-{fmt}.mp4" and clip["t"] > 0.3, f"feature clip loads + plays when scrolled to ({clip})")
                 h = pg.evaluate("document.body.scrollHeight")
                 for y in range(0, h, 700):
@@ -80,7 +80,7 @@ try:
                     errs.clear(); fails.clear()
                     pg.goto(f"http://127.0.0.1:8765{path}{pid}/?nolang=1", wait_until="load"); pg.wait_for_timeout(800)
                     pg.evaluate("document.querySelector('.phero video') && document.querySelector('.phero video').scrollIntoView({block: 'center'})"); pg.wait_for_timeout(2500)
-                    v = pg.evaluate("(() => { const v = document.querySelector('.phero video'); return v ? { src: v.currentSrc.split('/').pop(), t: v.currentTime } : null; })()")
+                    v = pg.evaluate("(() => { const v = document.querySelector('.phero video'); return v ? { src: v.currentSrc.split('/').pop().split('?')[0], t: v.currentTime } : null; })()")
                     check(bool(v) and v["src"] == f"{scene}-{lang}-{fmt}.mp4" and v["t"] > 0.3, f"{pid}: demo clip plays ({v})")
                     sw = pg.evaluate("[document.documentElement.scrollWidth, document.documentElement.clientWidth]")
                     check(sw[0] <= sw[1], f"{pid}: no sideways scrolling ({sw[0]} <= {sw[1]})")

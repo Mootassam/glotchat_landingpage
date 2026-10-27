@@ -15,7 +15,7 @@
 
 {% macro screen(name, alt='', eager=False, player=False) -%}
 <div class="screen">
-  <picture class="poster"><source media="(max-width: 700px)" srcset="/assets/media/{{ name }}-{{ vlang }}-port.webp"><img src="/assets/media/{{ name }}-{{ vlang }}-land.webp" alt="{{ alt }}" width="1600" height="1000" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async"></picture>
+  <picture class="poster"><source media="(max-width: 700px)" srcset="/assets/media/{{ name }}-{{ vlang }}-port.webp?v={{ mv }}"><img src="/assets/media/{{ name }}-{{ vlang }}-land.webp?v={{ mv }}" alt="{{ alt }}" width="1600" height="1000" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async"></picture>
   {%- if player %}
   <video class="pv" muted playsinline preload="none" aria-hidden="true"></video><video class="pv" muted playsinline preload="none" aria-hidden="true"></video>
   {%- else %}

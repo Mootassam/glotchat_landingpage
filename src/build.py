@@ -29,6 +29,7 @@ sys.path.insert(0, HERE)
 import config as cfg  # noqa: E402
 
 MANIFEST = os.path.join(ROOT, ".generated.json")
+MEDIA_V = ""                 # set by build(): changes when any demo clip changes
 MEDIA_DATE = "2026-10-27"          # when the demo clips were last recorded (VideoObject uploadDate)
 ICON_TG = ('<svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 '
            '2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.3l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.6c.9-.3 1.7.2 1.3 1.7z"/></svg>')
@@ -190,6 +191,15 @@ def build(make_og=True):
         return h.hexdigest()[:8]
     version = asset_hash()
 
+    # demo clips are cached for a year under their name, so a re-recorded clip needs a new address:
+    # ?v= changes whenever any media file changes (name or size)
+    mh = hashlib.sha1()
+    for fn in sorted(os.listdir(os.path.join(ROOT, "assets", "media"))):
+        mh.update(f"{fn}:{os.path.getsize(os.path.join(ROOT, 'assets', 'media', fn))};".encode())
+    mv = mh.hexdigest()[:8]
+    global MEDIA_V
+    MEDIA_V = mv
+
     today = dt.date.today().isoformat()
     generated, sitemap = [], []
     og_jobs = []
@@ -229,7 +239,7 @@ def build(make_og=True):
             contacts.append({"label": cfg.EMAIL, "href": f"mailto:{cfg.EMAIL}"})
 
         gc = {"lang": lang, "vlang": L.get("media", lang), "tg": cfg.TELEGRAM_USER, "msg": ui["msg"], "plans": {k: v["name"] for k, v in ui["plans"].items()},
-              "copied": ui["copied"], "langs": list(available["home"]), "default": cfg.DEFAULT_LANG}
+              "copied": ui["copied"], "langs": list(available["home"]), "default": cfg.DEFAULT_LANG, "mv": mv}
 
         for pid, page in pages.items():
             page = dict(page)
@@ -281,12 +291,12 @@ def build(make_og=True):
             preload = None                    # (desktop image, phone image) of the first big picture
             if blocks and blocks[0]["type"] == "hero_home":
                 first = blocks[0]["chapters"][0]["id"]
-                preload = (f"/assets/media/{first}-{vlang}-land.webp", f"/assets/media/{first}-{vlang}-port.webp")
+                preload = (f"/assets/media/{first}-{vlang}-land.webp?v={mv}", f"/assets/media/{first}-{vlang}-port.webp?v={mv}")
             elif blocks and blocks[0].get("media", "").startswith("img:"):
                 preload = (IMAGES[blocks[0]["media"].split(":")[1]]["src"], None)
             elif blocks and blocks[0].get("media", "").startswith("video:"):
                 name = blocks[0]["media"].split(":")[1]
-                preload = (f"/assets/media/{name}-{vlang}-land.webp", f"/assets/media/{name}-{vlang}-port.webp")
+                preload = (f"/assets/media/{name}-{vlang}-land.webp?v={mv}", f"/assets/media/{name}-{vlang}-port.webp?v={mv}")
 
             html = tpl.render(
                 cfg=cfg, L=L, lang=lang, ui=ui, page=page, page_id=pid, url=url, alternates=alts,
@@ -294,7 +304,7 @@ def build(make_og=True):
                 icon_tg=ICON_TG, icons=ICONS, industries=industries, guides=guides, registry=registry, crumbs=crumbs,
                 og_image=cfg.SITE + og_rel, jsonld=jsonld,
                 gc=ld(dict(gc, alts={l: path_of(l, pid) for l in available.get(pid, [])})), v=version, vlang=vlang, images=IMAGES,
-                toc=toc, contacts=contacts, preload=preload, arr='←' if L['dir'] == 'rtl' else '→')
+                toc=toc, contacts=contacts, preload=preload, mv=mv, arr='←' if L['dir'] == 'rtl' else '→')
             html = re.sub(r"\n\s*\n+", "\n", html)
             dest = os.path.join(ROOT, "404.html") if pid == "404" else out_file(lang, pid)
             os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -381,8 +391,8 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
         seen.add(scene)
         graph.append({"@type": "VideoObject", "@id": url + "#video-" + scene,
                       "name": "GlotChat – " + re.sub(r"<[^>]+>", "", name), "description": re.sub(r"<[^>]+>", "", desc),
-                      "inLanguage": hl, "thumbnailUrl": S + f"/assets/media/{scene}-{vlang}-land.webp",
-                      "contentUrl": S + f"/assets/media/{scene}-{vlang}-land.mp4", "uploadDate": MEDIA_DATE,
+                      "inLanguage": hl, "thumbnailUrl": S + f"/assets/media/{scene}-{vlang}-land.webp?v={MEDIA_V}",
+                      "contentUrl": S + f"/assets/media/{scene}-{vlang}-land.mp4?v={MEDIA_V}", "uploadDate": MEDIA_DATE,
                       "publisher": {"@id": S + "/#org"}})
     faq = [b for b in blocks if b["type"] == "faq"]
     if faq:

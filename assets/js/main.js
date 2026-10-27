@@ -58,7 +58,7 @@
   /* -------- demo clips: the phone or desktop version, loaded when visible, paused when not -------- */
   var PORT = window.matchMedia ? window.matchMedia('(max-width: 700px)') : null;
   function fmt() { return PORT && PORT.matches ? 'port' : 'land'; }
-  function srcOf(scene) { return '/assets/media/' + scene + '-' + vlang + '-' + fmt() + '.mp4'; }
+  function srcOf(scene) { return '/assets/media/' + scene + '-' + vlang + '-' + fmt() + '.mp4' + (GC.mv ? '?v=' + GC.mv : ''); }
   function setSrc(v, scene) { var s = srcOf(scene); if (v.getAttribute('src') !== s) { v.classList.remove('on'); v.src = s; } }
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
   var clips = $$('video.vid');
