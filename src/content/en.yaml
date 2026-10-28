@@ -6,7 +6,7 @@ ui:
   lang_label: "Language"
   close: "Close"
   contact: "Chat with us"
-  promo_html: "<b>New in GlotChat 1.3: Telegram, Messenger, Instagram & Discord</b> — and translation you can check before you send."
+  promo_html: "<b>New in GlotChat 1.4: optional DeepL translation</b> — and Messenger, Instagram & Discord are out of beta."
   promo_go: "Try it free for 3 days →"
   apps_label: "Works with"
   beta: "Beta"
@@ -108,10 +108,10 @@ ui:
     privacy: "Privacy policy"
     terms: "Terms of use"
     trademark: "WhatsApp, Telegram, Messenger, Instagram and Discord are trademarks of their respective owners. GlotChat is an independent product and is not affiliated with, endorsed or sponsored by any of them."
-  og_kicker: "WhatsApp, Telegram, Messenger, Instagram & Discord translator for PC"
+  og_kicker: "All-in-one messenger with translation for PC"
   og_sub: "Text, voice notes & photos translated offline on your PC."
   og_chips: ["5 apps, one window", "49 languages", "3-day free trial"]
-  app_description: "Windows desktop app that runs many WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent."
+  app_description: "All-in-one messenger for Windows that runs many WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent."
   feature_list: ["Multiple WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window", "Isolated session and optional proxy per account", "Notifications per account", "Two-way chat translation in 49 languages", "Back-translation check before sending", "Prices and numbers checked in every translation", "Voice message transcription and translation with progress", "Text-in-photo translation (OCR)", "Never-translate list for brand names", "Quick-reply templates", "Offline translation on your PC", "English and Chinese interface"]
   msg:
     general: "Hi! I'm interested in GlotChat (WhatsApp, Telegram, Messenger, Instagram & Discord + translation). Can you tell me more?"
@@ -159,37 +159,32 @@ ui:
 pages:
   # ================================================================ HOME
   home:
-    title: "WhatsApp & Telegram Multi-Account Translator for PC | GlotChat"
-    description: "WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window on Windows. Every chat translated offline in 49 languages. Free 3-day trial."
-    keywords: "whatsapp translator pc, telegram translator pc, multiple whatsapp accounts, multiple telegram accounts, messenger translator, instagram dm translator, discord translator, all in one messenger"
-    og_title: "GlotChat – WhatsApp, Telegram, Messenger, Instagram & Discord in one window, every customer in their language"
-    og_heading: "All your chat apps in one window. Every customer in their language."
+    title: "GlotChat – All-in-One Messenger with Translation for PC"
+    description: "All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram & Discord accounts in one window, every chat translated into 49 languages. 3 days free."
+    keywords: "all in one messenger, all-in-one messenger for pc, all in one chat app, glotchat, whatsapp translator pc, telegram translator pc, multiple whatsapp accounts, multiple telegram accounts, messenger translator, instagram dm translator, discord translator"
+    og_title: "GlotChat – the all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram & Discord in one window, every chat translated"
+    og_heading: "The all-in-one messenger. Every app, every account, every language."
     short: "Home"
     icon: "🏠"
     blocks:
     - type: hero_home
-      eyebrow: "New in 1.3 — Telegram, Messenger, Instagram & Discord"
-      h1: "WhatsApp, Telegram & more. <span class=\"grad\">One window. Every language.</span>"
-      lead: "Run every WhatsApp number and every Telegram, Messenger, Instagram and Discord account side by side on your PC. Read every customer in your language — and reply in theirs, knowing exactly what they'll read."
+      eyebrow: "New in 1.4 — DeepL translation & profile photos in every app"
+      h1: "The all-in-one messenger. <span class=\"grad\">Every app. Every language.</span>"
+      lead: "WhatsApp, Telegram, Messenger, Instagram and Discord — as many accounts of each as you need — in one window on your PC. Read every customer in your language and reply in theirs, knowing exactly what they'll read."
       micro:
       - 3 days free — no card, no payment
       - Real person replies on Telegram
       - From 69 USDT / year
-      media_alt: GlotChat translating a WhatsApp chat between Spanish and English
-      floats:
-      - ["↩", "They will read: “Yes, size L is in stock”", "Every reply checked before it's sent"]
-      - ["🔢", "$45 · 15/11 · +971 50…", "Prices & numbers never change"]
-      - ["🎤", "Transcribing… 64%", "Long voice notes, live progress"]
-      - ["🛡", "100% on your PC", "No cloud translator sees your chats"]
+      media_alt: "GlotChat all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window, chats translated"
       chapters:
-      - id: accounts
-        icon: 👥
-        label: Add accounts
-        cap: 'Add each WhatsApp number or Telegram login in seconds: name it, pick your language, scan the QR code.'
       - id: apps
         icon: 🧩
         label: All apps
         cap: WhatsApp, Telegram, Messenger, Instagram and Discord side by side — one click apart, every chat translated.
+      - id: accounts
+        icon: 👥
+        label: Add accounts
+        cap: "Add as many accounts of each app as you need: name it, pick your language, log in or scan the QR code."
       - id: chat
         icon: 🌐
         label: Translate chats
@@ -216,7 +211,7 @@ pages:
       - - '49'
         - translation languages, offline
       - - '0'
-        - messages sent to a cloud translator
+        - "messages sent to a cloud translator — unless you turn on DeepL"
     - type: apps
       id: apps
       k: One app for every chat

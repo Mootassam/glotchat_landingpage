@@ -6,7 +6,7 @@ ui:
   lang_label: Язык
   close: Закрыть
   contact: Написать нам
-  promo_html: '<b>Новое в GlotChat 1.3: Telegram, Messenger, Instagram и Discord</b> — и перевод, который можно проверить перед отправкой.'
+  promo_html: "<b>Новое в GlotChat 1.4: перевод DeepL по желанию</b> — а Messenger, Instagram и Discord вышли из беты."
   promo_go: 3 дня бесплатно →
   nav:
     product: Продукт
@@ -124,13 +124,13 @@ ui:
     privacy: Политика конфиденциальности (англ.)
     terms: Условия использования (англ.)
     trademark: WhatsApp, Telegram, Messenger, Instagram и Discord — товарные знаки их владельцев. GlotChat — независимый продукт и не связан с ними, не одобрен и не спонсируется ими.
-  og_kicker: Переводчик для WhatsApp, Telegram, Messenger, Instagram и Discord на ПК
+  og_kicker: "Мессенджер «всё в одном» с переводом для ПК"
   og_sub: Текст, голосовые и фото переводятся офлайн на вашем ПК.
   og_chips:
   - 5 приложений, одно окно
   - 49 языков
   - 3 дня бесплатно
-  app_description: Программа для Windows, которая объединяет много аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне — каждый изолирован, со своими уведомлениями и прокси — и переводит чаты без интернета на 49 языков (а в WhatsApp и Telegram ещё голосовые и фото), проверяя каждый перевод перед отправкой.
+  app_description: "Мессенджер «всё в одном» для Windows, который объединяет много аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне — каждый изолирован, со своими уведомлениями и прокси — и переводит чаты без интернета на 49 языков (а в WhatsApp и Telegram ещё голосовые и фото), проверяя каждый перевод перед отправкой."
   feature_list:
   - Несколько аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне
   - Изолированная сессия и прокси для каждого аккаунта
@@ -191,45 +191,32 @@ ui:
   mbar_dl: Попробовать
 pages:
   home:
-    title: Переводчик и мультиаккаунт WhatsApp и Telegram для ПК | GlotChat
-    description: Аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне Windows. Каждый чат переводится без интернета на 49 языков. 3 дня бесплатно.
-    keywords: переводчик whatsapp, переводчик telegram, несколько аккаунтов whatsapp на пк, мультиаккаунт telegram, переводчик messenger, перевод instagram direct, переводчик discord, все мессенджеры в одном
-    og_title: GlotChat – WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый клиент на своём языке
-    og_heading: Все мессенджеры в одном окне — на любом языке
+    title: "GlotChat – мессенджер «всё в одном» с переводом для ПК"
+    description: "Мессенджер «всё в одном» для ПК: аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый чат переводится на 49 языков. 3 дня бесплатно."
+    keywords: "мессенджер все в одном, все мессенджеры в одном приложении, all in one messenger, GlotChat, переводчик whatsapp, переводчик telegram, несколько аккаунтов whatsapp на пк, мультиаккаунт telegram, переводчик messenger, перевод instagram direct, переводчик discord, все мессенджеры в одном"
+    og_title: "GlotChat – мессенджер «всё в одном»: WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый чат переведён"
+    og_heading: "Мессенджер «всё в одном». Все приложения, все аккаунты, все языки."
     short: Главная
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: Новое в 1.3 — Telegram, Messenger, Instagram и Discord
-      h1: WhatsApp, Telegram и не только. <span class="grad">Одно окно. Любой язык.</span>
-      lead: Все номера WhatsApp и аккаунты Telegram, Messenger, Instagram и Discord рядом на одном ПК. Читайте каждого клиента по-русски — и отвечайте на его языке, точно зная, что он прочитает.
+      eyebrow: "Новое в 1.4 — перевод DeepL и фото профиля во всех приложениях"
+      h1: "Мессенджер «всё в одном». <span class=\"grad\">Все приложения. Любой язык.</span>"
+      lead: "WhatsApp, Telegram, Messenger, Instagram и Discord — сколько угодно аккаунтов в каждом — в одном окне на вашем ПК. Читайте каждого клиента по-русски и отвечайте на его языке, точно зная, что он прочитает."
       micro:
       - 3 дня бесплатно — без карты и оплаты
       - В Telegram отвечает живой человек
       - От 69 USDT в год
-      media_alt: GlotChat переводит чат WhatsApp с испанского на русский
-      floats:
-      - - ↩
-        - 'Прочитает: «Да, размер L в наличии»'
-        - Каждый ответ проверяется до отправки
-      - - 🔢
-        - $45 · 15/11 · +971 50…
-        - Цены и числа никогда не меняются
-      - - 🎤
-        - Расшифровка… 64%
-        - Длинные голосовые с прогрессом
-      - - 🛡
-        - 100% на вашем ПК
-        - Облачные переводчики не видят переписку
+      media_alt: "GlotChat, мессенджер «всё в одном»: аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, чаты переведены"
       chapters:
-      - id: accounts
-        icon: 👥
-        label: Аккаунты
-        cap: 'Добавьте номер WhatsApp или аккаунт Telegram за секунды: назовите, выберите язык, отсканируйте QR-код.'
       - id: apps
         icon: 🧩
         label: Все приложения
         cap: WhatsApp, Telegram, Messenger, Instagram и Discord рядом — в один клик, каждый чат переведён.
+      - id: accounts
+        icon: 👥
+        label: Аккаунты
+        cap: "Добавьте сколько угодно аккаунтов в каждом приложении: назовите, выберите язык, войдите или отсканируйте QR-код."
       - id: chat
         icon: 🌐
         label: Перевод чатов
@@ -256,7 +243,7 @@ pages:
       - - '49'
         - языков перевода без интернета
       - - '0'
-        - сообщений в облачный переводчик
+        - "сообщений в облачный переводчик — если не включить DeepL"
     - type: apps
       id: apps
       k: Одно приложение для всех чатов

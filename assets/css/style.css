@@ -144,6 +144,10 @@ h1 { font-size: clamp(36px, 6.2vw, 66px); font-weight: 800; letter-spacing: -.03
 .hero .lead { max-width: 720px; }
 .hero .hero-cta, .hero .micro, .hero .apps-row { justify-content: center; }
 .player { position: relative; width: min(1040px, 100%); margin-top: 30px; }
+/* on a computer the whole player (chapters + window + caption) fits the screen under the menu, so the video
+   is never cut off: the window's width follows the screen height (16:10 video; 84px scroll padding for the
+   menu, 61px chapters, 34px window bar, 72px caption, a little air = 260px). The chapters keep the full width. */
+@media (min-width: 701px) { .player .stagewrap { width: min(100%, max(560px, calc((100vh - 260px) * 1.6))); margin: 0 auto; } }
 .stagewrap { position: relative; }
 .window { position: relative; border-radius: 18px; overflow: hidden; background: #0f141b; border: 1px solid rgba(16, 24, 40, .12); box-shadow: var(--shadow-l); }
 .window.big { border-radius: 20px; box-shadow: 0 50px 100px -40px rgba(16, 24, 40, .45), 0 20px 40px -20px rgba(16, 24, 40, .2), 0 0 0 6px rgba(255, 255, 255, .6); }
@@ -157,15 +161,6 @@ h1 { font-size: clamp(36px, 6.2vw, 66px); font-weight: 800; letter-spacing: -.03
 .screen video.on { opacity: 1; }
 .vid { width: 100%; }
 
-/* floating feature labels around the hero window */
-.float { position: absolute; z-index: 4; display: none; align-items: center; gap: 10px; padding: 10px 14px 10px 10px; border-radius: 14px; background: rgba(255, 255, 255, .96); text-align: start;
-  box-shadow: 0 18px 40px -16px rgba(16, 24, 40, .35), 0 0 0 1px rgba(16, 24, 40, .06); animation: bob 6s ease-in-out infinite; max-width: 260px; }
-.float .fi { width: 36px; height: 36px; flex: none; border-radius: 10px; display: grid; place-items: center; font-size: 18px; background: var(--soft); }
-.float b { display: block; font-size: 13.5px; color: var(--ink); line-height: 1.25; }
-.float small { display: block; font-size: 12px; color: var(--muted); line-height: 1.35; margin-top: 1px; }
-.float.f1 { left: -128px; top: 16%; } .float.f2 { right: -118px; top: 8%; animation-delay: -2s; }
-.float.f3 { left: -110px; bottom: 14%; animation-delay: -4s; } .float.f4 { right: -128px; bottom: 22%; animation-delay: -3s; }
-@keyframes bob { 50% { transform: translateY(-8px); } }
 
 /* chapter steps of the demo */
 .steps2 { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px 2px 14px; margin: 0 -2px; scroll-snap-type: x proximity; }
@@ -186,7 +181,6 @@ h1 { font-size: clamp(36px, 6.2vw, 66px); font-weight: 800; letter-spacing: -.03
 .pclose { display: none; }
 body.noscroll { overflow: hidden; }
 .player.full { position: fixed; inset: 0; z-index: 95; width: auto; margin: 0; padding: 18px 16px; background: rgba(5, 8, 14, .96); display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.player.full .float { display: none; }
 .player.full .stagewrap { width: min(100%, calc((100vh - 170px) * 1.6)); }
 .player.full .expand { display: none; }
 .player.full .cap { color: #dbe3ee; }
@@ -641,8 +635,7 @@ details p { color: var(--text2); padding: 0 0 20px; }
   .dlstep.rev .dltext { order: 2; }
   .dlspecs { grid-template-columns: 1fr 1fr; }
 }
-@media (min-width: 1320px) { .float { display: flex; } }
-@media (min-width: 701px) { .steps2 { justify-content: center; } }
+@media (min-width: 701px) { .steps2 { justify-content: safe center; } }   /* safe: a row wider than the screen starts at its first chapter */
 @media (max-width: 899px) { .faq-grid .head.left { text-align: center; margin: 0 auto 24px; } }
 @media (max-width: 700px) {
   .screen { aspect-ratio: 4 / 5; }
@@ -696,6 +689,4 @@ html[lang="ar"] body { line-height: 1.75; }
 [dir="rtl"] .window, [dir="rtl"] .langs li, [dir="rtl"] .chips, [dir="rtl"] .facts-in b { direction: ltr; }
 [dir="rtl"] .expand { right: auto; left: 12px; }
 [dir="rtl"] .player.full .pclose { right: auto; left: 14px; }
-[dir="rtl"] .float.f1 { left: auto; right: -128px; } [dir="rtl"] .float.f2 { right: auto; left: -118px; }
-[dir="rtl"] .float.f3 { left: auto; right: -110px; } [dir="rtl"] .float.f4 { right: auto; left: -128px; }
 .hero-in > *, .phero-in > *, .phero-copy, .hero-copy { min-width: 0; }

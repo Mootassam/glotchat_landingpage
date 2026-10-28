@@ -340,7 +340,9 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
            "sameAs": [f"https://t.me/{cfg.TELEGRAM_USER}"],
            "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "url": f"https://t.me/{cfg.TELEGRAM_USER}",
                             "availableLanguage": ["English", "Chinese", "Arabic", "Turkish", "Spanish", "Portuguese", "Russian"]}}
+    # alternateName: what GlotChat is, in the words people search ("GlotChat – All-in-One Messenger")
     site = {"@type": "WebSite", "@id": S + "/#website", "url": S + "/", "name": "GlotChat",
+            "alternateName": ["GlotChat All-in-One Messenger", "GlotChat Messenger"],
             "inLanguage": [cfg.LANGS[l]["hreflang"] for l in cfg.LANGS], "publisher": {"@id": S + "/#org"}}
     webpage = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": page["title"],
                "description": page["description"], "inLanguage": hl, "isPartOf": {"@id": S + "/#website"},
@@ -354,6 +356,7 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
         pricing_url = S + path_of(lang, "pricing")
         graph.append({
             "@type": "SoftwareApplication", "@id": S + f"/#app-{lang}", "name": "GlotChat",
+            "alternateName": "GlotChat All-in-One Messenger",
             "url": S + path_of(lang, "home"), "operatingSystem": cfg.FACTS["os"],
             "applicationCategory": "BusinessApplication", "applicationSubCategory": "Communication",
             "description": ui["app_description"], "image": S + og_rel, "inLanguage": hl,

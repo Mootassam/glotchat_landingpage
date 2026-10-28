@@ -7,7 +7,7 @@ ui:
   lang_label: 語言
   close: 關閉
   contact: 聯絡我們
-  promo_html: <b>GlotChat 1.3 新增 Telegram、Messenger、Instagram 和 Discord</b> —— 傳送前還能核對譯文。
+  promo_html: "<b>GlotChat 1.4 新增可選 DeepL 翻譯</b> —— Messenger、Instagram 和 Discord 正式上線，不再是測試版。"
   promo_go: 免費試用 3 天 →
   nav:
     product: 產品
@@ -125,13 +125,13 @@ ui:
     privacy: 隱私政策（英文）
     terms: 使用條款（英文）
     trademark: WhatsApp、Telegram、Messenger、Instagram 和 Discord 是其各自所有者的商標。GlotChat 是獨立產品，與上述公司沒有任何隸屬、認可或贊助關係。
-  og_kicker: WhatsApp、Telegram、Messenger、Instagram、Discord 多開翻譯（電腦版）
+  og_kicker: "多合一聚合聊天軟體 · 自動翻譯（電腦版）"
   og_sub: 文字、語音和圖片在你的電腦上離線翻譯。
   og_chips:
   - 5 個應用一個視窗
   - 49 種語言
   - 免費試用 3 天
-  app_description: Windows 桌面軟體：在一個視窗中執行多個 WhatsApp、Telegram、Messenger、Instagram 和 Discord 帳號（每個帳號獨立隔離，可單獨設定通知和代理），在電腦上離線翻譯聊天，支援 49 種語言（WhatsApp 和 Telegram 還可翻譯語音和圖片文字），傳送前可核對譯文。
+  app_description: "多合一聚合聊天軟體（Windows 桌面版）：在一個視窗中執行多個 WhatsApp、Telegram、Messenger、Instagram 和 Discord 帳號（每個帳號獨立隔離，可單獨設定通知和代理），在電腦上離線翻譯聊天，支援 49 種語言（WhatsApp 和 Telegram 還可翻譯語音和圖片文字），傳送前可核對譯文。"
   feature_list:
   - 一個視窗執行多個 WhatsApp、Telegram、Messenger、Instagram 和 Discord 帳號
   - 每個帳號獨立會話，可單獨設定代理
@@ -192,45 +192,32 @@ ui:
   mbar_dl: 免費試用
 pages:
   home:
-    title: WhatsApp、Telegram 多開翻譯軟體（電腦版）| GlotChat
-    description: 一個視窗管理 WhatsApp、Telegram、Messenger、Instagram 和 Discord 帳號，所有聊天在電腦上離線翻譯，支援 49 種語言，傳送前可核對譯文。免費試用 3 天。
-    keywords: WhatsApp翻譯,Telegram翻譯,WhatsApp多開,Telegram多開,Messenger翻譯,Instagram私信翻譯,Discord翻譯,聚合聊天軟體,外貿WhatsApp翻譯軟體
-    og_title: GlotChat —— WhatsApp、Telegram、Messenger、Instagram、Discord 一個視窗，每位客戶都用他的語言
-    og_heading: 所有聊天應用一個視窗，每位客戶都用他的語言
+    title: "GlotChat – 多合一聚合聊天軟體 | WhatsApp、Telegram 多開自動翻譯（電腦版）"
+    description: "GlotChat 是電腦版多合一聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord 多個帳號在一個視窗，所有聊天自動翻譯，支援 49 種語言，傳送前可核對譯文。免費試用 3 天。"
+    keywords: "多合一聊天軟體,聚合聊天軟體,All-in-one messenger,GlotChat,WhatsApp翻譯,Telegram翻譯,WhatsApp多開,Telegram多開,Messenger翻譯,Instagram私信翻譯,Discord翻譯,外貿WhatsApp翻譯軟體"
+    og_title: "GlotChat – 多合一聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord 一個視窗，每個聊天自動翻譯"
+    og_heading: "多合一聚合聊天軟體。所有應用，所有帳號，所有語言。"
     short: 首頁
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: 1.3 新功能 —— Telegram、Messenger、Instagram、Discord
-      h1: WhatsApp、Telegram 等全部帳號，<span class="grad">一個視窗，任何語言。</span>
-      lead: 所有 WhatsApp 號碼，以及 Telegram、Messenger、Instagram、Discord 帳號，在電腦上並排執行。每位客戶的訊息都用中文閱讀，回覆用客戶的語言發出 —— 傳送前你就知道對方會讀到什麼。
+      eyebrow: "1.4 新功能 —— DeepL 翻譯，所有應用顯示帳號頭像"
+      h1: "多合一聚合聊天軟體。<span class=\"grad\">所有應用，任何語言。</span>"
+      lead: "WhatsApp、Telegram、Messenger、Instagram 和 Discord —— 每個應用想開多少帳號都行 —— 全部在電腦上的一個視窗裡。客戶的訊息用中文閱讀，回覆用客戶的語言發出，傳送前就知道對方會讀到什麼。"
       micro:
       - 免費試用 3 天，無需付款
       - Telegram 真人客服回覆
       - 每年 69 USDT 起
-      media_alt: GlotChat 把一段西班牙語 WhatsApp 聊天翻譯成中文
-      floats:
-      - - ↩
-        - 對方將讀到：「有 L 碼，現貨」
-        - 每條回覆傳送前都能核對
-      - - 🔢
-        - $45 · 15/11 · +971 50…
-        - 價格和數字絕不會被改錯
-      - - 🎤
-        - 正在轉寫… 64%
-        - 長語音即時顯示進度
-      - - 🛡
-        - 100% 在你的電腦上
-        - 不經過任何雲端翻譯
+      media_alt: "GlotChat 聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord 帳號在一個視窗，聊天自動翻譯"
       chapters:
-      - id: accounts
-        icon: 👥
-        label: 新增帳號
-        cap: 幾秒鐘新增一個 WhatsApp 號碼或 Telegram 帳號：起名、選語言、掃碼。
       - id: apps
         icon: 🧩
         label: 所有應用
         cap: WhatsApp、Telegram、Messenger、Instagram 和 Discord 並排執行 —— 一鍵切換，每個聊天都翻譯。
+      - id: accounts
+        icon: 👥
+        label: 新增帳號
+        cap: "每個應用想加多少帳號都行：起名、選語言、登入或掃碼。"
       - id: chat
         icon: 🌐
         label: 聊天翻譯
@@ -257,7 +244,7 @@ pages:
       - - '49'
         - 種翻譯語言，離線
       - - '0'
-        - 條訊息傳送到雲端翻譯
+        - "條訊息傳送到雲端翻譯（除非你開啟 DeepL）"
     - type: apps
       id: apps
       k: 一個軟體，管理所有聊天

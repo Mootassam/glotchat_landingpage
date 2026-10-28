@@ -95,9 +95,6 @@
         {%- endfor %}
       </div>
       <div class="stagewrap">
-        {%- for f in b.floats or [] %}
-        <div class="float f{{ loop.index }}" aria-hidden="true"><span class="fi">{{ f[0] }}</span><span><b>{{ f[1] }}</b><small>{{ f[2] }}</small></span></div>
-        {%- endfor %}
         <div class="window big">
           <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>GlotChat</span></div>
           {{ screen(b.chapters[0].id, b.media_alt, True, True) }}

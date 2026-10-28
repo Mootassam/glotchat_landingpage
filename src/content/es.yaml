@@ -6,7 +6,7 @@ ui:
   lang_label: Idioma
   close: Cerrar
   contact: Escríbenos
-  promo_html: '<b>Nuevo en GlotChat 1.3: Telegram, Messenger, Instagram y Discord</b> — y traducción que puedes revisar antes de enviar.'
+  promo_html: "<b>Nuevo en GlotChat 1.4: traducción opcional con DeepL</b> — y Messenger, Instagram y Discord ya no son beta."
   promo_go: Pruébalo gratis 3 días →
   nav:
     product: Producto
@@ -124,13 +124,13 @@ ui:
     privacy: Política de privacidad (en inglés)
     terms: Términos de uso (en inglés)
     trademark: WhatsApp, Telegram, Messenger, Instagram y Discord son marcas de sus respectivos propietarios. GlotChat es un producto independiente y no está afiliado, respaldado ni patrocinado por ninguno de ellos.
-  og_kicker: Traductor de WhatsApp, Telegram, Messenger, Instagram y Discord para PC
+  og_kicker: "Mensajería todo en uno con traducción para PC"
   og_sub: Texto, notas de voz y fotos traducidos sin conexión en tu PC.
   og_chips:
   - 5 apps, una ventana
   - 49 idiomas
   - 3 días gratis
-  app_description: App de escritorio para Windows que reúne muchas cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana — cada una aislada, con sus notificaciones y su proxy — y traduce los chats sin internet en 49 idiomas (y en WhatsApp y Telegram también notas de voz y fotos), revisando cada traducción antes de enviarla.
+  app_description: "App de mensajería todo en uno para Windows que reúne muchas cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana — cada una aislada, con sus notificaciones y su proxy — y traduce los chats sin internet en 49 idiomas (y en WhatsApp y Telegram también notas de voz y fotos), revisando cada traducción antes de enviarla."
   feature_list:
   - Varias cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana
   - Sesión aislada y proxy opcional por cuenta
@@ -191,45 +191,32 @@ ui:
   mbar_dl: Prueba gratis
 pages:
   home:
-    title: Traductor de WhatsApp y Telegram multicuenta para PC | GlotChat
-    description: Cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana en Windows. Cada chat traducido sin internet en 49 idiomas. 3 días gratis.
-    keywords: traductor whatsapp pc, traductor telegram, varias cuentas whatsapp, whatsapp multicuenta, traductor messenger, traductor instagram, traductor discord, mensajería todo en uno
-    og_title: GlotChat – WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana, cada cliente en su idioma
-    og_heading: Todas tus apps en una ventana. Cada cliente en su idioma.
+    title: "GlotChat – Mensajería todo en uno con traducción para PC"
+    description: "Mensajería todo en uno para PC: cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana, cada chat traducido a 49 idiomas. 3 días gratis."
+    keywords: "mensajería todo en uno, app de mensajería todo en uno para pc, all in one messenger, GlotChat, traductor whatsapp pc, traductor telegram, varias cuentas whatsapp, whatsapp multicuenta, traductor messenger, traductor instagram, traductor discord"
+    og_title: "GlotChat – mensajería todo en uno: WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana, cada chat traducido"
+    og_heading: "Mensajería todo en uno. Todas las apps, todas las cuentas, todos los idiomas."
     short: Inicio
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: Nuevo en 1.3 — Telegram, Messenger, Instagram y Discord
-      h1: WhatsApp, Telegram y más. <span class="grad">Una ventana. Todos los idiomas.</span>
-      lead: Usa todos tus números de WhatsApp y tus cuentas de Telegram, Messenger, Instagram y Discord lado a lado en tu PC. Lee a cada cliente en español — y responde en su idioma sabiendo exactamente qué va a leer.
+      eyebrow: "Nuevo en 1.4 — traducción con DeepL y fotos de perfil en todas las apps"
+      h1: "Mensajería todo en uno. <span class=\"grad\">Todas las apps. Todos los idiomas.</span>"
+      lead: "WhatsApp, Telegram, Messenger, Instagram y Discord — con todas las cuentas que necesites de cada una — en una sola ventana en tu PC. Lee a cada cliente en español y responde en su idioma sabiendo exactamente qué va a leer."
       micro:
       - 3 días gratis — sin tarjeta ni pago
       - Responde una persona real en Telegram
       - Desde 69 USDT al año
-      media_alt: GlotChat traduciendo un chat de WhatsApp entre francés y español
-      floats:
-      - - ↩
-        - 'Leerá: «Sí, la talla L está en stock»'
-        - Cada respuesta revisada antes de enviarla
-      - - 🔢
-        - $45 · 15/11 · +971 50…
-        - Precios y números nunca cambian
-      - - 🎤
-        - Transcribiendo… 64%
-        - Notas de voz largas con progreso
-      - - 🛡
-        - 100% en tu PC
-        - Ningún traductor en la nube ve tus chats
+      media_alt: "GlotChat, mensajería todo en uno: cuentas de WhatsApp, Telegram, Messenger, Instagram y Discord en una ventana, chats traducidos"
       chapters:
-      - id: accounts
-        icon: 👥
-        label: Añadir cuentas
-        cap: 'Añade cada número de WhatsApp o cuenta de Telegram en segundos: ponle nombre, elige tu idioma, escanea el QR.'
       - id: apps
         icon: 🧩
         label: Todas las apps
         cap: WhatsApp, Telegram, Messenger, Instagram y Discord lado a lado — a un clic, cada chat traducido.
+      - id: accounts
+        icon: 👥
+        label: Añadir cuentas
+        cap: "Añade todas las cuentas que necesites de cada app: ponle nombre, elige tu idioma, inicia sesión o escanea el QR."
       - id: chat
         icon: 🌐
         label: Traducir chats
@@ -256,7 +243,7 @@ pages:
       - - '49'
         - idiomas de traducción, sin internet
       - - '0'
-        - mensajes enviados a un traductor en la nube
+        - "mensajes enviados a un traductor en la nube — salvo que actives DeepL"
     - type: apps
       id: apps
       k: Una app para todos tus chats
