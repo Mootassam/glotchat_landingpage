@@ -1,0 +1,326 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat 30s ad</title>
+<!-- 30-second GlotChat ad (light style, voice-over), rendered frame by frame by promo_build.py.
+     ?lang=en|zh  &fmt=feed (4:5) | story (9:16)  &record=1
+     Text + timing come from promo-<lang>.json (written by promo_build.py). -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; overflow: hidden;
+    font-family: "Segoe UI Variable Display", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #ad { position: relative; width: 540px; overflow: hidden; color: #0f172a; background: #f4f6fb; }
+  .g { position: absolute; inset: 0; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(46px); }
+  .dotgrid { position: absolute; inset: 0; background-image: radial-gradient(rgba(15,23,42,.075) 1.2px, transparent 1.3px); background-size: 22px 22px; }
+  .grad { background: linear-gradient(92deg, #0fb985, #0ea5e9 52%, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .ttl { position: absolute; left: 22px; right: 22px; text-align: center; font-weight: 800; font-size: 34px; line-height: 1.1; letter-spacing: -.6px; }
+  #ad:not(.story) .ttl.sm { font-size: 27px; }
+  .story .ttl.sm { font-size: 31px; }
+  /* hook */
+  .bub { position: absolute; width: 300px; background: #fff; border-radius: 20px; padding: 12px 15px 12px 12px; display: flex; gap: 12px; align-items: center;
+         box-shadow: 0 16px 36px rgba(15,23,42,.13), 0 0 0 1px rgba(15,23,42,.05); }
+  .bub .av { width: 44px; height: 44px; border-radius: 50%; color: #fff; font-weight: 800; font-size: 18px; display: grid; place-items: center; flex: none; }
+  .bub .who { font-size: 13px; font-weight: 700; color: #64748b; }
+  .bub .who em { font-style: normal; margin-left: 7px; padding: 1px 8px; border-radius: 99px; background: #eef2ff; color: #6d28d9; font-size: 11.5px; }
+  .bub .m { font-size: 18.5px; font-weight: 650; margin-top: 2px; unicode-bidi: plaintext; }
+  .bub .q { position: absolute; right: -11px; top: -13px; width: 32px; height: 32px; border-radius: 50%; background: #ef4444; color: #fff; font-weight: 900; font-size: 19px;
+            display: grid; place-items: center; box-shadow: 0 6px 14px rgba(239,68,68,.45); border: 3px solid #fff; }
+  .no { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 27px; font-weight: 800; color: #dc2626; }
+  /* brand */
+  .logo { position: absolute; left: 50%; width: 124px; height: 124px; margin-left: -62px; border-radius: 34px; box-shadow: 0 22px 50px rgba(16,185,129,.42); }
+  .burst { position: absolute; left: 50%; width: 124px; height: 124px; margin-left: -62px; border-radius: 50%; border: 4px solid #10b981; }
+  .bname { position: absolute; left: 0; right: 0; text-align: center; font-size: 58px; font-weight: 800; letter-spacing: -1.2px; }
+  .word { position: absolute; left: 0; right: 0; text-align: center; font-size: 44px; font-weight: 800; height: 60px; }
+  .word span { display: inline-block; }
+  .bline { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 28px; font-weight: 750; line-height: 1.2; color: #334155; }
+  /* chat */
+  .phone2 { position: absolute; left: 50%; width: 476px; margin-left: -238px; border-radius: 28px; background: #0b141a; overflow: hidden;
+            box-shadow: 0 34px 70px rgba(15,23,42,.32), 0 0 0 6px #fff, 0 0 0 7px rgba(15,23,42,.08); }
+  .ch { position: absolute; left: 0; right: 0; top: 0; height: 64px; background: #202c33; display: flex; align-items: center; gap: 11px; padding: 0 14px; color: #e9edef; z-index: 2; }
+  .ch .av { width: 40px; height: 40px; border-radius: 50%; background: #f59e0b; color: #fff; display: grid; place-items: center; font-weight: 800; flex: none; }
+  .ch b { display: block; font-size: 16.5px; font-weight: 650; } .ch small { color: #8696a0; font-size: 12.5px; }
+  .ch .pair { margin-left: auto; padding: 6px 11px; border-radius: 99px; background: #fff; color: #0f172a; font-size: 12.5px; font-weight: 750; white-space: nowrap; }
+  .ch .pair i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10b981; margin-right: 6px; }
+  .cb { position: absolute; left: 0; right: 0; top: 64px; bottom: 66px; overflow: hidden;
+        background-image: radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px); background-size: 20px 20px; }
+  .stack { position: absolute; left: 14px; right: 14px; bottom: 12px; display: flex; flex-direction: column; }
+  .w { max-width: 82%; padding: 9px 12px; font-size: 17px; line-height: 1.38; color: #e9edef; border-radius: 13px; }
+  .w.in { align-self: flex-start; background: #202c33; }
+  .w.out { align-self: flex-end; background: #005c4b; }
+  .w.top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 6px; }
+  .w.bot { border-top-left-radius: 0; border-top-right-radius: 0; border-top: 1px dashed rgba(233,237,239,.3); padding-top: 7px; font-weight: 650; color: #fff; }
+  .w .o { unicode-bidi: plaintext; display: block; }
+  .w .sub { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(233,237,239,.3); font-size: 13.5px; color: rgba(233,237,239,.72); }
+  .bd { display: inline-block; font-size: 11px; font-weight: 800; padding: 1px 7px; border-radius: 9px; background: #7c5cff; color: #fff; margin-right: 7px; vertical-align: 2px; white-space: nowrap; }
+  .bd.g2 { background: rgba(140,150,160,.55); }
+  .cp { position: absolute; left: 0; right: 0; bottom: 0; height: 66px; background: #202c33; display: flex; align-items: center; gap: 10px; padding: 0 12px; z-index: 2; }
+  .cp .box { flex: 1; height: 44px; border-radius: 22px; background: #2a3942; padding: 0 16px; display: flex; align-items: center; color: #e9edef; font-size: 16.5px; white-space: nowrap; overflow: hidden; }
+  .cp .ph { color: #8696a0; }
+  .caret { display: inline-block; width: 2px; height: 20px; background: #00a884; margin-left: 1px; }
+  .cp .send { width: 44px; height: 44px; border-radius: 50%; background: #00a884; display: grid; place-items: center; flex: none; }
+  .cp .send svg { width: 22px; height: 22px; fill: #fff; }
+  .sent { position: absolute; left: 50%; z-index: 3; padding: 8px 15px; border-radius: 99px; background: #0f172a; color: #fff; font-size: 15px; font-weight: 750; white-space: nowrap;
+          box-shadow: 0 10px 24px rgba(15,23,42,.3); }
+  /* features */
+  .fc { position: absolute; left: 26px; right: 26px; border-radius: 22px; background: #fff; box-shadow: 0 16px 36px rgba(15,23,42,.11), 0 0 0 1px rgba(15,23,42,.05);
+        display: flex; align-items: center; gap: 16px; padding: 0 18px; }
+  .fc .ic { width: 58px; height: 58px; border-radius: 17px; display: grid; place-items: center; font-size: 29px; flex: none; }
+  .fc .bx { flex: 1; min-width: 0; }
+  .fc h3 { margin: 0 0 9px; font-size: 21px; font-weight: 800; letter-spacing: -.3px; }
+  .vw { display: flex; align-items: center; gap: 2.5px; height: 26px; }
+  .vw i { flex: 1; border-radius: 2px; background: #cbd5e1; }
+  .vt { margin-top: 8px; font-size: 16.5px; font-weight: 650; color: #0f172a; }
+  .ph2 { display: flex; align-items: center; gap: 12px; }
+  .paper { position: relative; flex: none; width: 128px; height: 62px; border-radius: 8px; background: #fbf6ea; color: #3b3b3b; padding: 7px 9px; font-family: "Segoe Print", "Comic Sans MS", cursive;
+           font-size: 11.5px; line-height: 1.35; transform: rotate(-2deg); box-shadow: 0 4px 12px rgba(120,90,40,.25); overflow: hidden; }
+  .paper .scan { position: absolute; left: 0; right: 0; height: 3px; background: #10b981; box-shadow: 0 0 10px #10b981; }
+  .arrow { font-size: 22px; color: #94a3b8; font-weight: 800; }
+  .ptx { font-size: 15.5px; font-weight: 650; line-height: 1.35; }
+  .tabs2 { display: flex; gap: 8px; }
+  .tb { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 10.5px; font-weight: 700; color: #475569; width: 58px; }
+  .tb .c { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 14px; }
+  .tb .u { position: absolute; top: -7px; right: 4px; min-width: 21px; height: 21px; padding: 0 5px; border-radius: 11px; background: #ef4444; color: #fff; font-size: 11.5px; font-weight: 800; display: grid; place-items: center; border: 2px solid #fff; }
+  /* stats */
+  .num { position: absolute; left: 0; right: 0; text-align: center; font-size: 170px; font-weight: 900; line-height: 1; letter-spacing: -6px; }
+  .nlab { position: absolute; left: 0; right: 0; text-align: center; font-size: 34px; font-weight: 800; }
+  .chips { position: absolute; left: 16px; right: 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .chips span { padding: 10px 16px; border-radius: 99px; background: #fff; font-size: 18px; font-weight: 750; box-shadow: 0 10px 24px rgba(15,23,42,.1), 0 0 0 1px rgba(15,23,42,.05); }
+  .fw { position: absolute; font-weight: 800; color: #0f172a; white-space: nowrap; }
+  /* end */
+  .card { position: absolute; left: 24px; right: 24px; text-align: center; }
+  .card .logo2 { width: 92px; height: 92px; border-radius: 27px; box-shadow: 0 18px 40px rgba(16,185,129,.42); }
+  .card h2 { margin: 16px 0 0; font-size: 44px; font-weight: 850; line-height: 1.06; letter-spacing: -1px; }
+  .card ul { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 7px; font-size: 21px; font-weight: 650; color: #334155; }
+  .card li::before { content: "✓ "; color: #0fb985; font-weight: 900; }
+  .cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 24px; padding: 17px 30px; border-radius: 20px; background: linear-gradient(180deg, #19d39a, #0b9d72); color: #fff;
+         font-size: 26px; font-weight: 800; box-shadow: 0 18px 40px rgba(16,185,129,.45); }
+  .cta svg { width: 29px; height: 29px; fill: #fff; }
+  .site { margin-top: 16px; font-size: 23px; font-weight: 700; color: #475569; }
+  .legal { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 11.5px; color: rgba(15,23,42,.45); }
+  /* captions */
+  .cap { position: absolute; left: 18px; right: 18px; display: flex; justify-content: center; z-index: 9; }
+  .cap span { display: inline-block; max-width: 100%; padding: 9px 16px; border-radius: 14px; background: rgba(15,23,42,.9); color: #fff; font-size: 20px; font-weight: 650;
+              line-height: 1.3; text-align: center; box-shadow: 0 8px 24px rgba(15,23,42,.25); }
+  #ad:not(.story) .cap span { font-size: 18.5px; padding: 8px 14px; }
+  #ad:not(.story) .w { font-size: 18.5px; }
+  .mark { position: absolute; left: 20px; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 16px; z-index: 8; }
+  .mark img { width: 26px; height: 26px; border-radius: 8px; }
+</style></head>
+<body>
+<div id="ad"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dotgrid"></div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const LANG = Q.get('lang') || 'en', FMT = Q.get('fmt') === 'story' ? 'story' : 'feed';
+const story = FMT === 'story', W = 540, H = story ? 960 : 675;
+/* story: keep the important parts out of the top ~13 % and bottom ~30 % that Reels / Stories cover */
+const L = story
+  ? { cap: 704, ttl: 186, hookT: 160, bubs: [[18, 282], [222, 382], [26, 482], [214, 582]], no: 690, logo: 222, bname: 366, word: 440, bline: 514,
+      chatT: 186, phTop: 262, phH: 418, featT: 186, fTop: 258, fH: 128, fGap: 12, num: 240, nlab: 422, chips: 492, card: 214, legal: 924, mark: 64 }
+  : { cap: null, ttl: 22, hookT: 40, bubs: [[18, 158], [222, 250], [26, 342], [214, 434]], no: 556, logo: 120, bname: 262, word: 336, bline: 410,
+      chatT: 20, phTop: 74, phH: 512, featT: 20, fTop: 78, fH: 160, fGap: 14, num: 120, nlab: 302, chips: 372, card: 96, legal: 650, mark: null };
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const pr = (t, a, b) => eo((t - a) / (b - a));
+const back = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const ad = document.getElementById('ad'); ad.style.height = H + 'px'; if (story) ad.classList.add('story');
+const el = (html, parent = ad) => { const d = document.createElement('div'); d.innerHTML = html.trim(); const n = d.firstChild; parent.append(n); return n; };
+const set = (n, o, x = 0, y = 0, s = 1, r = 0) => { n.style.opacity = o.toFixed(3); n.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) scale(${s.toFixed(3)}) rotate(${r.toFixed(2)}deg)`; n.style.visibility = o < 0.002 ? 'hidden' : 'visible'; };
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const LOGO = '../../assets/img/icon-512.png';
+const CHAT = '<svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></svg>';
+const SEND = '<svg viewBox="0 0 24 24"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z"/></svg>';
+const WORDS = ['Hello', 'مرحبا', '你好', 'Hola', 'Merhaba', 'Привет', 'Olá', 'Bonjour', 'こんにちは', 'Ciao', '안녕하세요', 'Hallo', 'नमस्ते', 'Xin chào'];
+
+let D, SEC, T, G = {}, R = {};
+const pos = (n, y) => { n.style.top = y + 'px'; return n; };
+
+function build() {
+  T = D.text; SEC = D.sections; window.DURATION = D.duration;
+  const [b1, b2, b3] = ad.querySelectorAll('.blob');
+  Object.assign(b1.style, { width: '380px', height: '380px', left: '-120px', top: '-90px', background: 'rgba(16,185,129,.30)' });
+  Object.assign(b2.style, { width: '420px', height: '420px', right: '-160px', top: H * 0.35 + 'px', background: 'rgba(124,58,237,.20)' });
+  Object.assign(b3.style, { width: '400px', height: '400px', left: '-60px', bottom: '-170px', background: 'rgba(14,165,233,.24)' });
+  R.blobs = [b1, b2, b3];
+  SEC.forEach((s) => { G[s.id] = el('<div class="g"></div>'); });
+  // ---------- hook
+  R.hookT = pos(el(`<div class="ttl">${T.hook.title}</div>`, G.hook), L.hookT);
+  R.no = pos(el(`<div class="no">${esc(T.hook.no)}</div>`, G.hook), L.no);
+  R.bubG = el('<div class="g"></div>');
+  R.bubs = T.hook.bubs.map((b, i) => {
+    const n = el(`<div class="bub"><div class="av" style="background:${b.c}">${esc(b.n[0])}</div><div><div class="who">${esc(b.n)}<em>${esc(b.lang)}</em></div>
+      <div class="m" dir="auto">${esc(b.m)}</div></div><div class="q">?</div></div>`, R.bubG);
+    n.style.left = L.bubs[i][0] + 'px'; n.style.top = L.bubs[i][1] + 'px'; return n;
+  });
+  // ---------- brand
+  R.burst = pos(el('<div class="burst"></div>', G.brand), L.logo);
+  R.logo = pos(el(`<img class="logo" src="${LOGO}">`, G.brand), L.logo);
+  R.bname = pos(el('<div class="bname">GlotChat</div>', G.brand), L.bname);
+  R.word = pos(el('<div class="word"><span class="grad"></span></div>', G.brand), L.word); R.wordS = R.word.firstChild;
+  R.bline = pos(el(`<div class="bline">${esc(T.brand.line)}</div>`, G.brand), L.bline);
+  // ---------- chat
+  const C = T.chat;
+  R.chatT = pos(el(`<div class="ttl sm">${C.title}</div>`, G.chat), L.chatT);
+  R.ph = pos(el(`<div class="phone2"><div class="ch"><div class="av">A</div><div><b>${esc(C.name)}</b><small>${esc(C.status)}</small></div>
+      <div class="pair"><i></i>${esc(C.pair)}</div></div><div class="cb"><div class="stack"></div></div>
+      <div class="cp"><div class="box"></div><div class="send">${SEND}</div></div></div>`, G.chat), L.phTop);
+  R.ph.style.height = L.phH + 'px';
+  const st = R.ph.querySelector('.stack'); R.stack = st; R.box = R.ph.querySelector('.box'); R.sendB = R.ph.querySelector('.send');
+  const item = (cls, html, mt) => { const n = el(`<div class="w ${cls}">${html}</div>`, st); n.style.marginTop = mt + 'px'; return n; };
+  R.items = [
+    { n: item('in top', `<span class="o" dir="auto">${esc(C.in1)}</span>`, 0), ev: 'in1' },
+    { n: item('in bot', `<span class="bd">🌐 ${C.code1}</span>${esc(C.tr1)}`, 0), ev: 'tr1', reveal: true },
+    { n: item('out', `<span class="o" dir="auto">${esc(C.out)}</span><span class="sub"><span class="bd g2">🌐 ${C.code2}</span>${esc(C.reply)}</span>`, 10), ev: 'out' },
+    { n: item('in top', `<span class="o" dir="auto">${esc(C.in2)}</span>`, 10), ev: 'in2' },
+    { n: item('in bot', `<span class="bd">🌐 ${C.code1}</span>${esc(C.tr2)}`, 0), ev: 'tr2', reveal: true },
+  ];
+  R.sent = pos(el(`<div class="sent">✓✓ ${esc(C.sent)}</div>`, G.chat), L.phTop + 84);
+  // ---------- features
+  const F = T.feat;
+  R.featT = pos(el(`<div class="ttl sm">${F.title}</div>`, G.feat), L.featT);
+  R.fc = F.cards.map((c, i) => {
+    let body = '';
+    if (i === 0) body = `<div class="vw">${Array.from({ length: 34 }, (_, k) => `<i style="height:${(6 + Math.abs(Math.sin(k * 1.7) * 14 + Math.sin(k * 0.6) * 6)).toFixed(0)}px"></i>`).join('')}</div>
+        <div class="vt"><span class="bd">${c.code}</span>${esc(c.text)}</div>`;
+    if (i === 1) body = `<div class="ph2"><div class="paper"><b>${esc(c.paperH)}</b><br>${esc(c.paper)}<div class="scan"></div></div><span class="arrow">→</span>
+        <div class="ptx"><span class="bd">${c.code}</span><br>${esc(c.text)}</div></div>`;
+    if (i === 2) body = `<div class="tabs2">${c.tabs.map(([nm, col, u]) => `<div class="tb"><div class="c" style="background:${col}">${esc(nm[0])}</div>${esc(nm)}<div class="u">${u}</div></div>`).join('')}</div>`;
+    const n = el(`<div class="fc"><div class="ic" style="background:${c.bg}">${c.icon}</div><div class="bx"><h3>${esc(c.h)}</h3>${body}</div></div>`, G.feat);
+    n.style.top = L.fTop + i * (L.fH + L.fGap) + 'px'; n.style.height = L.fH + 'px'; return n;
+  });
+  R.bars = [...R.fc[0].querySelectorAll('.vw i')]; R.vt = R.fc[0].querySelector('.vt');
+  R.scan = R.fc[1].querySelector('.scan'); R.ptx = R.fc[1].querySelector('.ptx');
+  R.tabs = [...R.fc[2].querySelectorAll('.tb')];
+  // ---------- stats
+  const S = T.stats;
+  R.fws = WORDS.map((w, i) => { const n = el(`<div class="fw">${esc(w)}</div>`, G.stats); n.style.fontSize = (18 + (i * 7) % 16) + 'px'; return n; });
+  R.num = pos(el('<div class="num grad">0</div>', G.stats), L.num);
+  R.nlab = pos(el(`<div class="nlab">${esc(S.label)}</div>`, G.stats), L.nlab);
+  R.chips = pos(el(`<div class="chips">${S.chips.map((c) => `<span>${esc(c)}</span>`).join('')}</div>`, G.stats), L.chips);
+  // ---------- end
+  const E = T.end;
+  R.card = pos(el(`<div class="card"><img class="logo2" src="${LOGO}"><h2>${esc(E.h)}</h2><ul>${E.pts.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+      <div class="cta">${CHAT}<span>${esc(E.cta)}</span></div><div class="site" dir="ltr">glotchat.com</div></div>`, G.end), L.card);
+  R.cta = R.card.querySelector('.cta');
+  R.legal = pos(el(`<div class="legal">${esc(E.legal)}</div>`, G.end), L.legal);
+  // ---------- brand mark (story only, feature scenes) + captions
+  if (L.mark != null) R.mark = pos(el(`<div class="mark"><img src="${LOGO}">GlotChat</div>`), L.mark);
+  R.cap = el('<div class="cap"><span></span></div>'); if (L.cap != null) R.cap.style.top = L.cap + 'px'; else R.cap.style.bottom = '14px'; R.capSpan = R.cap.firstChild;
+}
+
+function measure() {   // static layout, measured once: bubble centres and chat item heights
+  R.bubC = R.bubs.map((b) => [b.offsetLeft + b.offsetWidth / 2, b.offsetTop + b.offsetHeight / 2]);
+  R.items.forEach((it) => { it.h = it.n.offsetHeight + parseFloat(it.n.style.marginTop); });
+  R.logoC = [W / 2, L.logo + 62];
+}
+
+const ev = (s, k) => s.ev[k];
+const F = {
+  hook(lt, d, s) {
+    set(R.hookT, pr(lt, 0.05, 0.45), 0, (1 - pr(lt, 0.05, 0.45)) * 22);
+    const a = pr(lt, ev(s, 'no'), ev(s, 'no') + 0.3), sh = Math.sin(lt * 40) * 5 * (1 - pr(lt, ev(s, 'no') + 0.2, ev(s, 'no') + 0.8));
+    set(R.no, a, a ? sh : 0, (1 - a) * 14);
+  },
+  brand(lt, d, s) {
+    const p = pr(lt, 0.25, 0.75);
+    set(R.logo, p, 0, 0, 0.3 + back((lt - 0.25) / 0.55) * 0.7, (1 - p) * -14);
+    const bp = clamp((lt - 0.35) / 0.7); set(R.burst, bp > 0 && bp < 1 ? (1 - bp) * 0.8 : 0, 0, 0, 1 + bp * 1.8);
+    set(R.bname, pr(lt, 0.55, 0.9), 0, (1 - pr(lt, 0.55, 0.9)) * 20);
+    const wi = Math.floor(Math.max(0, lt - 0.85) / 0.3) % WORDS.length, wl = (Math.max(0, lt - 0.85) % 0.3) / 0.3;
+    if (R.wordS.textContent !== WORDS[wi]) R.wordS.textContent = WORDS[wi];
+    set(R.word, pr(lt, 0.85, 1.05), 0, 0); set(R.wordS, 1, 0, (1 - eo(wl * 3)) * 16, 0.9 + 0.1 * eo(wl * 3));
+    const bl = s.caps[1] ? s.caps[1].t0 - s.start : 1.6;
+    set(R.bline, pr(lt, bl, bl + 0.4), 0, (1 - pr(lt, bl, bl + 0.4)) * 18);
+  },
+  chat(lt, d, s) {
+    set(R.chatT, pr(lt, 0.05, 0.4), 0, (1 - pr(lt, 0.05, 0.4)) * 18);
+    set(R.ph, pr(lt, 0, 0.5), 0, (1 - pr(lt, 0, 0.5)) * 60, 0.94 + 0.06 * pr(lt, 0, 0.5));
+    let hidden = 0;
+    R.items.forEach((it) => {
+      const at = ev(s, it.ev), p = pr(lt, at, at + 0.35);
+      hidden += it.h * (1 - p);
+      if (it.reveal) { set(it.n, p > 0 ? 1 : 0); it.n.style.clipPath = `inset(0 ${(100 - 100 * pr(lt, at, at + 0.6)).toFixed(1)}% 0 0)`; }
+      else set(it.n, p, 0, 0, 0.85 + 0.15 * back((lt - at) / 0.35));
+      it.n.style.transformOrigin = it.n.classList.contains('out') ? '100% 100%' : '0% 100%';
+    });
+    R.stack.style.transform = `translateY(${hidden.toFixed(1)}px)`;
+    const t0 = ev(s, 'type'), t1 = ev(s, 'out') - 0.3, chars = Array.from(T.chat.reply);
+    if (lt >= t0 && lt < ev(s, 'out')) {
+      const k = Math.round(chars.length * clamp((lt - t0) / (t1 - t0)));
+      R.box.innerHTML = esc(chars.slice(0, k).join('')) + (Math.floor(lt * 3) % 2 || k < chars.length ? '<span class="caret"></span>' : '');
+    } else R.box.innerHTML = `<span class="ph">${esc(T.chat.placeholder)}</span>`;
+    const sp = lt - (ev(s, 'out') - 0.15);
+    set(R.sendB, 1, 0, 0, sp > 0 && sp < 0.35 ? 1 - Math.sin(sp / 0.35 * Math.PI) * 0.18 : 1);
+    const sa = ev(s, 'out') + 0.2;
+    set(R.sent, Math.min(pr(lt, sa, sa + 0.3), 1 - pr(lt, sa + 1.5, sa + 1.8)), 0, (1 - pr(lt, sa, sa + 0.3)) * 12);
+    R.sent.style.marginLeft = -R.sent.offsetWidth / 2 + 'px';
+  },
+  feat(lt, d, s) {
+    set(R.featT, pr(lt, 0.05, 0.4), 0, (1 - pr(lt, 0.05, 0.4)) * 18);
+    const c = ev(s, 'c');
+    R.fc.forEach((n, i) => set(n, pr(lt, c[i], c[i] + 0.4), (1 - pr(lt, c[i], c[i] + 0.4)) * 80, 0, 0.96 + 0.04 * pr(lt, c[i], c[i] + 0.4)));
+    const vp = clamp((lt - c[0] - 0.35) / 1.0);
+    R.bars.forEach((b, k) => { b.style.background = k / R.bars.length < vp ? '#0ea5e9' : '#cbd5e1'; });
+    set(R.vt, pr(lt, c[0] + 1.0, c[0] + 1.35), 0, (1 - pr(lt, c[0] + 1.0, c[0] + 1.35)) * 8);
+    const sc = clamp((lt - c[1] - 0.35) / 0.8); set(R.scan, sc > 0 && sc < 1 ? 1 : 0, 0, sc * 58);
+    set(R.ptx, pr(lt, c[1] + 1.0, c[1] + 1.35), 0, (1 - pr(lt, c[1] + 1.0, c[1] + 1.35)) * 8);
+    R.tabs.forEach((tb, k) => {
+      const a = c[2] + 0.3 + k * 0.1; set(tb, pr(lt, a, a + 0.3), 0, 0, 0.6 + 0.4 * back((lt - a) / 0.35));
+      const ua = c[2] + 0.9 + k * 0.12; set(tb.querySelector('.u'), pr(lt, ua, ua + 0.2), 0, 0, 0.4 + 0.6 * back((lt - ua) / 0.3));
+    });
+  },
+  stats(lt, d, s) {
+    const n = Math.round(49 * pr(lt, 0.15, 1.4)); if (R.num.textContent !== String(n)) R.num.textContent = n;
+    set(R.num, pr(lt, 0, 0.3), 0, 0, 0.7 + 0.3 * back(lt / 0.5));
+    set(R.nlab, pr(lt, 0.45, 0.8), 0, (1 - pr(lt, 0.45, 0.8)) * 14);
+    [...R.chips.children].forEach((c, i) => { const a = 1.0 + i * 0.22; set(c, pr(lt, a, a + 0.3), 0, (1 - pr(lt, a, a + 0.3)) * 16, 0.8 + 0.2 * back((lt - a) / 0.35)); });
+    set(R.chips, 1);
+    const cy = L.num + 85;
+    R.fws.forEach((w, i) => {
+      const ang = i / R.fws.length * Math.PI * 2 + lt * 0.25, rx = 196, ry = story ? 250 : 230;
+      const x = W / 2 + Math.cos(ang) * rx - w.offsetWidth / 2, y = cy + Math.sin(ang) * ry * (i % 2 ? 0.8 : 1) - 14;
+      w.style.left = x.toFixed(1) + 'px'; w.style.top = y.toFixed(1) + 'px';
+      set(w, pr(lt, 0.1 + i * 0.04, 0.5 + i * 0.04) * 0.16);
+    });
+  },
+  end(lt, d, s) {
+    set(R.card, pr(lt, 0, 0.5), 0, (1 - pr(lt, 0, 0.5)) * 30, 0.94 + 0.06 * pr(lt, 0, 0.5));
+    set(R.cta, 1, 0, 0, 1 + Math.max(0, Math.sin((lt - 1.0) * 4.2)) * 0.05 * pr(lt, 1.0, 1.3));
+    set(R.legal, pr(lt, 0.5, 0.9));
+  },
+};
+
+function seekAd(t) {
+  t = Math.min(t, D.duration - 0.001);
+  R.blobs.forEach((b, i) => { b.style.transform = `translate(${(Math.sin(t * 0.5 + i * 2) * 30).toFixed(1)}px, ${(Math.cos(t * 0.4 + i) * 24).toFixed(1)}px)`; });
+  const cur = SEC.find((x) => t < x.start + x.dur) || SEC[SEC.length - 1];
+  SEC.forEach((s) => {
+    const on = s === cur, lt = t - s.start;
+    const a = on ? Math.min(s.id === 'brand' ? 1 : pr(lt, 0, 0.3), s.id === 'end' ? 1 : 1 - pr(lt, s.dur - 0.25, s.dur)) : 0;
+    set(G[s.id], a);
+    if (on) F[s.id](lt, s.dur, s);
+  });
+  // hook bubbles pop in, then fly into the logo at the start of the brand scene
+  const hk = SEC[0], bs = SEC[1];
+  R.bubs.forEach((b, i) => {
+    if (cur === hk) {
+      const lt = t - hk.start, at = hk.ev.b[i], p = pr(lt, at, at + 0.3);
+      set(b, p, 0, (1 - p) * 30, 0.6 + 0.4 * back((lt - at) / 0.4), Math.sin(lt * 2.2 + i * 1.3) * 1.6);
+      set(b.querySelector('.q'), pr(lt, at + 0.35, at + 0.55), 0, 0, 0.3 + 0.7 * back((lt - at - 0.35) / 0.3));
+    } else if (cur === bs && t - bs.start < 0.55) {
+      const p = eo((t - bs.start) / 0.5), [cx, cy] = R.bubC[i];
+      set(b, 1 - p, (R.logoC[0] - cx) * p, (R.logoC[1] - cy) * p, 1 - 0.85 * p, (1 - p) * 0);
+    } else set(b, 0);
+  });
+  if (R.mark) set(R.mark, ['chat', 'feat', 'stats'].includes(cur.id) ? 1 : 0);
+  // narration subtitles where the big text doesn't already say it
+  const cap = cur.showCaps ? cur.caps.find((c) => t >= c.t0 - 0.05 && t < c.t1 + 0.25) : null;
+  if (cap && R.capSpan.textContent !== cap.show) R.capSpan.textContent = cap.show;
+  set(R.cap, cap ? Math.min(pr(t, cap.t0 - 0.05, cap.t0 + 0.15), 1 - pr(t, cap.t1 + 0.1, cap.t1 + 0.25)) : 0);
+}
+window.seekAd = seekAd; window.READY = false;
+fetch(`promo-${LANG}.json?ts=${Date.now()}`).then((r) => r.json()).then((d) => { D = d; build(); })
+  .then(() => Promise.all([...document.images].map((im) => (im.complete ? 1 : new Promise((ok) => { im.onload = im.onerror = ok; })))))
+  .then(() => document.fonts.ready)
+  .then(() => { measure(); window.READY = true; seekAd(0);
+    if (!Q.get('record')) { const t0 = performance.now(); (function loop() { seekAd(((performance.now() - t0) / 1000) % D.duration); requestAnimationFrame(loop); })(); } });
+</script>
+</body></html>

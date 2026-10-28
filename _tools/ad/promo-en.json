@@ -1,0 +1,262 @@
+{
+ "lang": "en",
+ "duration": 30.0,
+ "sections": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "dur": 4.4,
+   "ev": {
+    "b": [
+     0.2,
+     0.55,
+     0.9,
+     1.25
+    ],
+    "no": 2.4
+   },
+   "caps": [
+    {
+     "t0": 0.25,
+     "t1": 2.274,
+     "show": "Customers worldwide are messaging you…"
+    },
+    {
+     "t0": 2.474,
+     "t1": 3.74,
+     "show": "but you can't read a word?"
+    }
+   ],
+   "showCaps": false
+  },
+  {
+   "id": "brand",
+   "start": 4.4,
+   "dur": 3.6,
+   "ev": {},
+   "caps": [
+    {
+     "t0": 4.7,
+     "t1": 5.841,
+     "show": "Meet GlotChat."
+    },
+    {
+     "t0": 6.041,
+     "t1": 7.813,
+     "show": "Now you understand every customer."
+    }
+   ],
+   "showCaps": false
+  },
+  {
+   "id": "chat",
+   "start": 8.0,
+   "dur": 7.8,
+   "ev": {
+    "in1": 0.55,
+    "tr1": 1.15,
+    "type": 2.5,
+    "out": 4.1,
+    "in2": 5.5,
+    "tr2": 6.0
+   },
+   "caps": [
+    {
+     "t0": 8.35,
+     "t1": 10.494,
+     "show": "Every message is translated instantly."
+    },
+    {
+     "t0": 10.694,
+     "t1": 13.561,
+     "show": "You reply in English, and they read their own language."
+    }
+   ],
+   "showCaps": true
+  },
+  {
+   "id": "feat",
+   "start": 15.8,
+   "dur": 6.0,
+   "ev": {
+    "c": [
+     0.2,
+     2.1,
+     4.0
+    ]
+   },
+   "caps": [
+    {
+     "t0": 16.1,
+     "t1": 17.659,
+     "show": "Voice notes become text."
+    },
+    {
+     "t0": 18.0,
+     "t1": 19.501,
+     "show": "Photos get translated."
+    },
+    {
+     "t0": 19.85,
+     "t1": 21.643,
+     "show": "All your WhatsApp numbers, one window."
+    }
+   ],
+   "showCaps": true
+  },
+  {
+   "id": "stats",
+   "start": 21.8,
+   "dur": 3.7,
+   "ev": {},
+   "caps": [
+    {
+     "t0": 22.0,
+     "t1": 25.326,
+     "show": "49 languages — offline and private, on your PC."
+    }
+   ],
+   "showCaps": true
+  },
+  {
+   "id": "end",
+   "start": 25.5,
+   "dur": 4.5,
+   "ev": {},
+   "caps": [
+    {
+     "t0": 25.8,
+     "t1": 27.741,
+     "show": "Try GlotChat free for 3 days."
+    },
+    {
+     "t0": 27.941,
+     "t1": 29.041,
+     "show": "Contact us now!"
+    }
+   ],
+   "showCaps": false
+  }
+ ],
+ "text": {
+  "hook": {
+   "title": "Customers from <span class=\"grad\">all over the world</span>?",
+   "no": "…but you can't read a word 😵",
+   "bubs": [
+    {
+     "n": "Ahmed",
+     "lang": "Arabic",
+     "c": "#f59e0b",
+     "m": "مرحبا، هل المنتج متوفر؟"
+    },
+    {
+     "n": "Lucía",
+     "lang": "Spanish",
+     "c": "#10b981",
+     "m": "¿Hacen envíos a México?"
+    },
+    {
+     "n": "Wei",
+     "lang": "Chinese",
+     "c": "#ef4444",
+     "m": "你好，可以发样品吗？"
+    },
+    {
+     "n": "Emre",
+     "lang": "Turkish",
+     "c": "#6366f1",
+     "m": "Merhaba, stokta var mı?"
+    }
+   ]
+  },
+  "brand": {
+   "line": "Understand every customer."
+  },
+  "chat": {
+   "title": "Translated <span class=\"grad\">instantly</span> — both ways",
+   "name": "Ahmed · Shop UAE",
+   "status": "online",
+   "pair": "Arabic ⇄ English",
+   "in1": "مرحبا، هل يمكنك الشحن إلى دبي؟",
+   "code1": "AR→EN",
+   "tr1": "Hi, can you ship to Dubai?",
+   "reply": "Yes! It ships tomorrow 🚚",
+   "out": "نعم! سيتم الشحن غدًا 🚚",
+   "code2": "EN→AR",
+   "in2": "رائع، شكرًا جزيلًا! 🙏",
+   "tr2": "Great, thank you so much! 🙏",
+   "placeholder": "Type in English…",
+   "sent": "Sent in Arabic"
+  },
+  "feat": {
+   "title": "And <span class=\"grad\">so much more</span>",
+   "cards": [
+    {
+     "icon": "🎤",
+     "bg": "#e0f2fe",
+     "h": "Voice notes → text",
+     "code": "ES→EN",
+     "text": "“Do you have it in blue?”"
+    },
+    {
+     "icon": "📷",
+     "bg": "#fef3c7",
+     "h": "Photos → translated",
+     "code": "ES→EN",
+     "paperH": "Pedido",
+     "paper": "20 cajas · azul",
+     "text": "Order: 20 boxes · blue"
+    },
+    {
+     "icon": "📱",
+     "bg": "#dcfce7",
+     "h": "All your numbers, one window",
+     "tabs": [
+      [
+       "Shop UAE",
+       "#f59e0b",
+       3
+      ],
+      [
+       "Sales EU",
+       "#10b981",
+       7
+      ],
+      [
+       "Export",
+       "#ef4444",
+       2
+      ],
+      [
+       "Support",
+       "#6366f1",
+       5
+      ],
+      [
+       "Store",
+       "#0ea5e9",
+       4
+      ]
+     ]
+    }
+   ]
+  },
+  "stats": {
+   "label": "languages",
+   "chips": [
+    "🔒 Private",
+    "⚡ Works offline",
+    "💻 On your PC"
+   ]
+  },
+  "end": {
+   "h": "Try it FREE for 3 days",
+   "pts": [
+    "No payment to start",
+    "Windows 10 & 11"
+   ],
+   "cta": "Contact us now",
+   "legal": "GlotChat is not affiliated with WhatsApp or Meta."
+  }
+ }
+}

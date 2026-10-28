@@ -1,0 +1,411 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat multi-account ad</title>
+<!-- 30-second GlotChat ad #3: many WhatsApp accounts in one window + translation (violet style), rendered by multi_build.py.
+     ?lang=en|zh  &fmt=feed (4:5) | story (9:16)  &record=1      Text + timing: multi-<lang>.json -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #1e1b4b; overflow: hidden;
+    font-family: "Segoe UI Variable Display", "Segoe UI", "Nirmala UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #ad { position: relative; width: 540px; overflow: hidden; color: #fff; background: linear-gradient(165deg, #1e1b4b 0%, #2e1065 55%, #3b0764 100%); }
+  .g { position: absolute; inset: 0; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(50px); }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 40px 40px; }
+  .hl { background: linear-gradient(92deg, #34d399, #a3e635 60%, #fde047); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .ttl { position: absolute; left: 22px; right: 22px; text-align: center; font-weight: 850; font-size: 33px; line-height: 1.12; letter-spacing: -.6px; text-shadow: 0 6px 30px rgba(0,0,0,.35); }
+  #ad:not(.story) .ttl.sm { font-size: 28px; }
+  .sub { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 25px; font-weight: 800; color: #fca5a5; }
+  /* hook phones */
+  .ph { position: absolute; width: 124px; height: 226px; border-radius: 24px; background: #0b1020; border: 5px solid #cbd5e1; box-shadow: 0 24px 50px rgba(0,0,0,.5); }
+  .ph::before { content: ""; position: absolute; left: 50%; top: 7px; width: 34px; height: 7px; margin-left: -17px; border-radius: 4px; background: #1e293b; }
+  .ph .tm { position: absolute; left: 12px; top: 22px; font-size: 11px; font-weight: 700; color: #94a3b8; }
+  .ph .acc { position: absolute; left: 8px; right: 8px; top: 40px; padding: 4px 8px; border-radius: 9px; font-size: 11px; font-weight: 800; text-align: center; }
+  .ph .nt { position: absolute; left: 7px; right: 7px; top: 70px; padding: 7px 8px; border-radius: 11px; background: #fff; color: #0f172a; font-size: 12px; font-weight: 650; line-height: 1.28; }
+  .ph .nt small { display: block; color: #64748b; font-size: 10px; font-weight: 800; margin-bottom: 2px; }
+  .ph .nt + .nt { top: 136px; opacity: .75; }
+  .ph .bd { position: absolute; right: -12px; top: -12px; min-width: 32px; height: 32px; padding: 0 8px; border-radius: 16px; background: #ef4444; font-weight: 900; font-size: 15px; display: grid; place-items: center; border: 3px solid #2e1065; }
+  .vib { position: absolute; width: 14px; height: 40px; border: 3px solid rgba(255,255,255,.55); border-left: 0; border-top: 0; border-bottom: 0; border-radius: 0 20px 20px 0; }
+  /* window */
+  .win { position: absolute; left: 50%; border-radius: 18px; overflow: hidden; background: #0b141a; box-shadow: 0 40px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.18); }
+  .tbar { position: absolute; left: 0; right: 0; top: 0; height: 30px; background: #1f2937; display: flex; align-items: center; gap: 6px; padding: 0 12px; font-size: 12px; font-weight: 700; color: #cbd5e1; }
+  .tbar i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+  .tbar img { width: 16px; height: 16px; border-radius: 5px; margin-left: 8px; }
+  .tabs { position: absolute; left: 0; right: 0; top: 30px; height: 52px; background: #fff; border-bottom: 1px solid #e3e7ec; overflow: hidden; }
+  .trow { position: absolute; left: 6px; top: 0; height: 52px; display: flex; }
+  .tab { position: relative; flex: none; display: flex; align-items: center; gap: 7px; padding: 0 10px 0 7px; height: 52px; font-size: 12.5px; font-weight: 700; color: #334155; white-space: nowrap; }
+  .tab .ic { position: relative; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 800; }
+  .tab .ic i { position: absolute; right: -3px; bottom: -3px; width: 10px; height: 10px; border-radius: 50%; background: #22c55e; border: 2px solid #fff; }
+  .tab .un { min-width: 19px; height: 19px; padding: 0 5px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 11px; font-weight: 800; display: grid; place-items: center; }
+  .tab.on { background: #f1f5f9; color: #0f172a; }
+  .tab .bar { position: absolute; left: 7px; right: 7px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; }
+  .plus { position: absolute; right: 0; top: 0; width: 46px; height: 52px; background: linear-gradient(90deg, rgba(255,255,255,0), #fff 30%); display: grid; place-items: center; color: #64748b; font-size: 24px; padding-left: 8px; }
+  .body { position: absolute; left: 0; right: 0; top: 82px; bottom: 0; background-color: #0b141a; background-image: radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px); background-size: 20px 20px; overflow: hidden; }
+  .count { position: absolute; z-index: 6; padding: 8px 14px; border-radius: 99px; background: linear-gradient(135deg, #10b981, #059669); font-weight: 850; font-size: 16px; box-shadow: 0 12px 28px rgba(16,185,129,.45); white-space: nowrap; }
+  /* splash */
+  .splash { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .splash img { width: 96px; height: 96px; border-radius: 28px; box-shadow: 0 18px 44px rgba(16,185,129,.45); }
+  .splash b { font-size: 40px; font-weight: 850; letter-spacing: -1px; }
+  /* list */
+  .list { position: absolute; inset: 0; padding: 8px 0; }
+  .row { display: flex; gap: 11px; align-items: center; padding: 9px 14px; }
+  .row .av { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; flex: none; }
+  .row .t { flex: 1; min-width: 0; } .row .t b { display: block; font-size: 14.5px; font-weight: 650; color: #e9edef; }
+  .row .t span { display: block; font-size: 13px; color: #8696a0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* add-account modal */
+  .dim { position: absolute; inset: 0; background: rgba(5,8,12,.62); }
+  .modal { position: absolute; left: 50%; width: 400px; margin-left: -200px; background: #fff; color: #0f172a; border-radius: 18px; padding: 18px 20px; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
+  .modal h4 { margin: 0 0 12px; font-size: 19px; font-weight: 800; }
+  .fl { font-size: 12px; font-weight: 800; color: #475569; margin: 0 0 5px; }
+  .inp { height: 40px; border: 2px solid #7c5cff; border-radius: 10px; display: flex; align-items: center; padding: 0 12px; font-size: 16px; font-weight: 600; margin-bottom: 12px; box-shadow: 0 0 0 4px rgba(124,92,255,.14); }
+  .caret { display: inline-block; width: 2px; height: 19px; background: #7c5cff; margin-left: 1px; }
+  .pills { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 15px; font-weight: 750; }
+  .pills span { padding: 7px 13px; border-radius: 10px; border: 2px solid #e2e8f0; }
+  .pills .on { border-color: #10b981; background: #ecfdf5; color: #047857; }
+  .btn { display: flex; justify-content: center; align-items: center; height: 42px; border-radius: 11px; background: linear-gradient(135deg, #10c48c, #0b8f6a); color: #fff; font-weight: 800; font-size: 15.5px; }
+  .qrw { display: flex; align-items: center; justify-content: center; gap: 22px; height: 168px; position: relative; }
+  .qr { width: 150px; height: 150px; position: relative; }
+  .qr svg { width: 100%; height: 100%; }
+  .qr .ok { position: absolute; inset: 0; background: rgba(255,255,255,.95); display: grid; place-items: center; text-align: center; color: #059669; font-weight: 850; font-size: 17px; border-radius: 8px; }
+  .qr .ok span { display: block; font-size: 46px; line-height: 1; }
+  .mph { width: 86px; height: 160px; border-radius: 17px; background: #111; border: 4px solid #334155; position: relative; overflow: hidden; display: grid; place-items: center; }
+  .mph .fr { width: 58px; height: 58px; border: 2px solid #fff; border-radius: 9px; position: relative; overflow: hidden; }
+  .mph .ln { position: absolute; left: 0; right: 0; height: 3px; background: #22c55e; box-shadow: 0 0 10px #22c55e; }
+  .qhint { text-align: center; font-size: 13px; color: #64748b; font-weight: 650; margin-top: 4px; }
+  /* toasts */
+  .toast { position: absolute; width: 318px; background: #262626; border: 1px solid #404040; color: #fff; border-radius: 12px; padding: 10px 13px; box-shadow: 0 18px 40px rgba(0,0,0,.55); font-size: 13.5px; z-index: 5; }
+  .toast .top { display: flex; align-items: center; gap: 7px; color: #d4d4d4; font-size: 11.5px; font-weight: 700; margin-bottom: 4px; }
+  .toast .top img { width: 15px; height: 15px; border-radius: 4px; }
+  .toast .top i { width: 8px; height: 8px; border-radius: 50%; display: block; }
+  .toast b { display: block; font-size: 14px; margin-bottom: 2px; }
+  .toast .o { color: #a3a3a3; font-size: 12.5px; margin-top: 3px; unicode-bidi: plaintext; }
+  .bd2 { display: inline-block; font-size: 10.5px; font-weight: 800; padding: 1px 6px; border-radius: 8px; background: #7c5cff; color: #fff; margin-right: 6px; vertical-align: 1px; white-space: nowrap; }
+  .bd2.g2 { background: rgba(140,150,160,.55); }
+  .cursor { position: absolute; width: 24px; height: 24px; z-index: 9; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+  .ripple { position: absolute; width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 50%; border: 3px solid rgba(124,92,255,.95); z-index: 9; }
+  /* chat */
+  .chat { position: absolute; inset: 0; }
+  .chd { position: absolute; left: 0; right: 0; top: 0; height: 52px; background: #202c33; display: flex; align-items: center; gap: 10px; padding: 0 12px; z-index: 2; }
+  .chd .av { width: 34px; height: 34px; border-radius: 50%; background: #f97316; display: grid; place-items: center; font-weight: 800; font-size: 14px; flex: none; }
+  .chd b { display: block; font-size: 14.5px; font-weight: 650; } .chd small { color: #8696a0; font-size: 11.5px; }
+  .chd .pair { margin-left: auto; padding: 5px 10px; border-radius: 99px; background: #fff; color: #0f172a; font-size: 12px; font-weight: 750; white-space: nowrap; }
+  .chd .pair i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #10b981; margin-right: 5px; }
+  .cb { position: absolute; left: 0; right: 0; top: 52px; bottom: 58px; overflow: hidden; }
+  .stack { position: absolute; left: 12px; right: 12px; bottom: 10px; display: flex; flex-direction: column; }
+  .w { max-width: 84%; padding: 8px 11px; font-size: 15.5px; line-height: 1.38; color: #e9edef; border-radius: 12px; }
+  .w.in { align-self: flex-start; background: #202c33; } .w.out { align-self: flex-end; background: #005c4b; }
+  .w.top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 5px; }
+  .w.bot { border-top-left-radius: 0; border-top-right-radius: 0; border-top: 1px dashed rgba(233,237,239,.3); padding-top: 6px; font-weight: 650; color: #fff; }
+  .w .o { display: block; unicode-bidi: plaintext; }
+  .w .s2 { display: block; margin-top: 5px; padding-top: 5px; border-top: 1px dashed rgba(233,237,239,.3); font-size: 12.5px; color: rgba(233,237,239,.72); }
+  .cp { position: absolute; left: 0; right: 0; bottom: 0; height: 58px; background: #202c33; display: flex; align-items: center; gap: 9px; padding: 0 11px; z-index: 2; }
+  .cp .box { flex: 1; height: 40px; border-radius: 20px; background: #2a3942; padding: 0 14px; display: flex; align-items: center; color: #e9edef; font-size: 15px; white-space: nowrap; overflow: hidden; }
+  .cp .phd { color: #8696a0; } .cp .caret { background: #00a884; }
+  .cp .send { width: 40px; height: 40px; border-radius: 50%; background: #00a884; display: grid; place-items: center; flex: none; }
+  .cp .send svg { width: 20px; height: 20px; fill: #fff; }
+  .chd .pair.sent { background: #10b981; color: #fff; box-shadow: 0 0 0 4px rgba(16,185,129,.3); }
+  /* proof */
+  .who { position: absolute; left: 26px; right: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .who div { display: flex; align-items: center; gap: 12px; padding: 15px 16px; border-radius: 18px; background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.18); font-size: 19px; font-weight: 750; }
+  .who div em { font-style: normal; font-size: 28px; }
+  .chk { position: absolute; left: 30px; right: 30px; display: grid; gap: 9px; }
+  .chk div { font-size: 18.5px; font-weight: 650; color: #e2e8f0; }
+  .chk div::before { content: "✓  "; color: #34d399; font-weight: 900; }
+  /* end */
+  .card { position: absolute; left: 22px; right: 22px; text-align: center; }
+  .card .logo2 { width: 92px; height: 92px; border-radius: 27px; box-shadow: 0 18px 44px rgba(16,185,129,.5); }
+  .mini { display: flex; justify-content: center; gap: 7px; margin-top: 14px; }
+  .mini i { width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: 13px; }
+  .card h2 { margin: 14px 0 0; font-size: 44px; font-weight: 850; line-height: 1.06; letter-spacing: -1px; }
+  .card ul { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 7px; font-size: 20px; font-weight: 650; color: #e2e8f0; }
+  .card li::before { content: "✓ "; color: #34d399; font-weight: 900; }
+  .cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 22px; padding: 17px 30px; border-radius: 20px; background: linear-gradient(180deg, #22e0a5, #0b9d72); color: #fff;
+         font-size: 26px; font-weight: 850; box-shadow: 0 18px 44px rgba(16,185,129,.55); }
+  .cta svg { width: 29px; height: 29px; fill: #fff; }
+  .site { margin-top: 16px; font-size: 23px; font-weight: 700; color: #c4b5fd; }
+  .legal { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 11.5px; color: rgba(255,255,255,.5); }
+  /* captions + mark */
+  .cap { position: absolute; left: 18px; right: 18px; display: flex; justify-content: center; z-index: 12; }
+  .cap span { display: inline-block; max-width: 100%; padding: 9px 16px; border-radius: 14px; background: rgba(255,255,255,.95); color: #1e1b4b; font-size: 20px; font-weight: 700;
+              line-height: 1.3; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+  #ad:not(.story) .cap span { font-size: 18px; padding: 7px 14px; }
+  .mark { position: absolute; left: 20px; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 16px; z-index: 8; }
+  .mark img { width: 26px; height: 26px; border-radius: 8px; }
+</style></head>
+<body>
+<div id="ad"><div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="grid"></div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const LANG = Q.get('lang') || 'en', FMT = Q.get('fmt') === 'story' ? 'story' : 'feed';
+const story = FMT === 'story', W = 540, H = story ? 960 : 675;
+/* story keeps the important parts out of the top ~13 % and bottom ~27 % that Reels / Stories cover */
+const L = story
+  ? { cap: 702, ttl: 178, hookT: 150, sub: 700, phones: [[34, 262, -9], [208, 238, 4], [382, 266, 10], [116, 436, 7], [300, 448, -6]],
+      winTop: 262, winH: 420, winW: 504, who: 280, chk: 540, card: 214, legal: 924, mark: 64 }
+  : { cap: null, ttl: 20, hookT: 28, sub: 606, phones: [[30, 104, -9], [206, 84, 4], [382, 110, 10], [114, 336, 7], [298, 348, -6]],
+      winTop: 100, winH: 500, winW: 504, who: 124, chk: 380, card: 74, legal: 650, mark: null };
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const pr = (t, a, b) => eo((t - a) / (b - a));
+const back = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const ad = document.getElementById('ad'); ad.style.height = H + 'px'; if (story) ad.classList.add('story');
+const el = (html, parent = ad) => { const d = document.createElement('div'); d.innerHTML = html.trim(); const n = d.firstChild; parent.append(n); return n; };
+const set = (n, o, x = 0, y = 0, s = 1, r = 0) => { n.style.opacity = o.toFixed(3); n.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) scale(${s.toFixed(3)}) rotate(${r.toFixed(2)}deg)`; n.style.visibility = o < 0.002 ? 'hidden' : 'visible'; };
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const pos = (n, y) => { n.style.top = y + 'px'; return n; };
+const LOGO = '../../assets/img/icon-512.png';
+const CHAT = '<svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></svg>';
+const SEND = '<svg viewBox="0 0 24 24"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z"/></svg>';
+const CURSOR = '<svg class="cursor" viewBox="0 0 24 24"><path d="M4 2l15 11-6.5 1.2L16 21l-3 1.4-3.6-6.9L4 19z" fill="#fff" stroke="#0f172a" stroke-width="1.4" stroke-linejoin="round"/></svg>';
+function qrSvg() {   // deterministic fake QR
+  let s = 7, r = ''; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let y = 0; y < 25; y++) for (let x = 0; x < 25; x++) {
+    const f = (x < 7 && y < 7) || (x > 17 && y < 7) || (x < 7 && y > 17);
+    if (f) { const lx = x > 17 ? x - 18 : x, ly = y > 17 ? y - 18 : y; if (lx === 0 || ly === 0 || lx === 6 || ly === 6 || (lx > 1 && lx < 5 && ly > 1 && ly < 5)) r += `<rect x="${x}" y="${y}" width="1" height="1"/>`; }
+    else if (rnd() > 0.52) r += `<rect x="${x}" y="${y}" width="1" height="1"/>`;
+  }
+  return `<svg viewBox="-1 -1 27 27" fill="#0f172a">${r}</svg>`;
+}
+
+let D, SEC, T, G = {}, R = {};
+function build() {
+  T = D.text; SEC = D.sections; window.DURATION = D.duration;
+  const bl = ad.querySelectorAll('.blob');
+  Object.assign(bl[0].style, { width: '400px', height: '400px', left: '-150px', top: '-120px', background: 'rgba(16,185,129,.32)' });
+  Object.assign(bl[1].style, { width: '440px', height: '440px', right: '-170px', top: H * 0.3 + 'px', background: 'rgba(217,70,239,.30)' });
+  Object.assign(bl[2].style, { width: '420px', height: '420px', left: '-80px', bottom: '-180px', background: 'rgba(56,189,248,.26)' });
+  R.blobs = [...bl];
+  SEC.forEach((s) => { G[s.id] = el('<div class="g"></div>'); });
+  const ACC = T.accounts;   // [name, colour, initial]
+  // ---------- hook: five buzzing phones
+  R.hookT = pos(el(`<div class="ttl">${T.hook.title}</div>`, G.hook), L.hookT);
+  R.sub = pos(el(`<div class="sub">${esc(T.hook.sub)}</div>`, G.hook), L.sub);
+  R.phG = el('<div class="g"></div>');
+  R.phones = T.hook.phones.map((p, i) => {
+    const [nm, col] = ACC[i];
+    const n = el(`<div class="ph"><span class="tm">9:41</span><div class="acc" style="background:${col}33;color:${col}">${esc(nm)}</div>
+      <div class="nt"><small>${esc(p.who)}</small><span dir="auto">${esc(p.m)}</span></div><div class="nt"><small>${esc(p.who2)}</small>${esc(p.m2)}</div>
+      <div class="bd">${p.n}</div></div>`, R.phG);
+    n.style.left = L.phones[i][0] + 'px'; n.style.top = L.phones[i][1] + 'px'; return n;
+  });
+  // ---------- the GlotChat window (brand → add → notify)
+  const wl = (W - L.winW) / 2;
+  R.win = el(`<div class="win"><div class="tbar"><i style="background:#ef4444"></i><i style="background:#f59e0b"></i><i style="background:#22c55e"></i><img src="${LOGO}">GlotChat</div>
+    <div class="tabs"><div class="trow"></div><div class="plus">+</div></div><div class="body"></div></div>`);
+  Object.assign(R.win.style, { top: L.winTop + 'px', width: L.winW + 'px', height: L.winH + 'px', marginLeft: -L.winW / 2 + 'px' });
+  R.trow = R.win.querySelector('.trow'); R.body = R.win.querySelector('.body');
+  R.tabs = ACC.map(([nm, col, ini]) => el(`<div class="tab"><div class="ic" style="background:${col}">${esc(ini)}<i></i></div>${esc(nm)}<span class="un" style="display:none">0</span><div class="bar" style="background:${col}"></div></div>`, R.trow));
+  R.count = el('<div class="count"></div>');
+  // splash
+  R.splash = el(`<div class="splash"><img src="${LOGO}"><b>GlotChat</b></div>`, R.body);
+  // chat list (behind the modal and the toasts)
+  R.list = el(`<div class="list">${T.list.map(([n, m, c]) => `<div class="row"><div class="av" style="background:${c}">${esc(n[0])}</div><div class="t"><b>${esc(n)}</b><span>${esc(m)}</span></div></div>`).join('')}</div>`, R.body);
+  // add-account modal
+  const A = T.add;
+  R.dim = el('<div class="dim"></div>', R.body);
+  R.modal = el(`<div class="modal"><h4>${esc(A.h)}</h4>
+    <div class="s1"><div class="fl">${esc(A.nameL)}</div><div class="inp"></div><div class="fl">${esc(A.langL)}</div>
+      <div class="pills"><span class="on">${esc(A.pairA)}</span>⇄<span class="pb">${esc(A.pairB)}</span></div><div class="btn">${esc(A.next)}</div></div>
+    <div class="s2"><div class="qrw"><div class="qr">${qrSvg()}<div class="ok"><div><span>✓</span>${esc(A.connected)}</div></div></div>
+      <div class="mph"><div class="fr"><div class="ln"></div></div></div></div><div class="qhint">${esc(A.hint)}</div></div></div>`, R.body);
+  R.modal.style.top = (story ? 14 : 30) + 'px';
+  R.s1 = R.modal.querySelector('.s1'); R.s2 = R.modal.querySelector('.s2'); R.inp = R.modal.querySelector('.inp'); R.pb = R.modal.querySelector('.pb');
+  R.btn = R.modal.querySelector('.btn'); R.ok = R.modal.querySelector('.ok'); R.mph = R.modal.querySelector('.mph'); R.ln = R.modal.querySelector('.ln');
+  // toasts
+  R.toasts = T.toasts.map((x) => el(`<div class="toast"><div class="top"><img src="${LOGO}">GlotChat<i style="background:${x.c}"></i>${esc(x.acc)}</div>
+    <b>${esc(x.who)}</b><span class="bd2">🌐 ${x.code}</span>${esc(x.tr)}<div class="o">${esc(x.o)}</div></div>`, R.body));
+  R.cursor = el(CURSOR, R.body); R.ripple = el('<div class="ripple"></div>', R.body);
+  // chat view
+  const C = T.chat;
+  R.chat = el(`<div class="chat"><div class="chd"><div class="av">${esc(C.who[0])}</div><div><b>${esc(C.who)} · ${esc(C.acc)}</b><small>${esc(C.status)}</small></div>
+    <div class="pair"></div></div><div class="cb"><div class="stack"></div></div>
+    <div class="cp"><div class="box"></div><div class="send">${SEND}</div></div></div>`, R.body);
+  R.stack = R.chat.querySelector('.stack'); R.box = R.chat.querySelector('.box'); R.sendB = R.chat.querySelector('.send');
+  const item = (cls, html, mt) => { const n = el(`<div class="w ${cls}">${html}</div>`, R.stack); n.style.marginTop = mt + 'px'; return n; };
+  R.items = [
+    { n: item('in top', `<span class="o" dir="auto">${esc(C.in1)}</span>`, 0), ev: 'in1' },
+    { n: item('in bot', `<span class="bd2">🌐 ${C.code1}</span>${esc(C.tr1)}`, 0), ev: 'tr1', reveal: true },
+    { n: item('out', `<span class="o" dir="auto">${esc(C.out)}</span><span class="s2"><span class="bd2 g2">🌐 ${C.code2}</span>${esc(C.reply)}</span>`, 9), ev: 'out' },
+    { n: item('in top', `<span class="o" dir="auto">${esc(C.in2)}</span>`, 9), ev: 'in2' },
+    { n: item('in bot', `<span class="bd2">🌐 ${C.code1}</span>${esc(C.tr2)}`, 0), ev: 'tr2', reveal: true },
+  ];
+  R.pair = R.chat.querySelector('.pair'); R.pairHTML = `<i></i>${esc(C.pair)}`; R.sentHTML = `✓✓ ${esc(C.sent)}`;
+  // titles over the window
+  R.brandT = pos(el(`<div class="ttl sm">${T.brand.title}</div>`, G.brand), L.ttl);
+  R.addT = pos(el(`<div class="ttl sm">${T.add.title}</div>`, G.add), L.ttl);
+  R.notT = pos(el(`<div class="ttl sm">${T.notify.title}</div>`, G.notify), L.ttl);
+  // ---------- proof
+  const P = T.proof;
+  R.proT = pos(el(`<div class="ttl sm">${P.title}</div>`, G.proof), L.ttl);
+  R.who = pos(el(`<div class="who">${P.items.map(([e, x]) => `<div><em>${e}</em>${esc(x)}</div>`).join('')}</div>`, G.proof), L.who);
+  R.chk = pos(el(`<div class="chk">${P.checks.map((x) => `<div>${esc(x)}</div>`).join('')}</div>`, G.proof), L.chk);
+  // ---------- end
+  const E = T.end;
+  R.card = pos(el(`<div class="card"><img class="logo2" src="${LOGO}"><div class="mini">${ACC.slice(0, 6).map(([, c, i]) => `<i style="background:${c}">${esc(i)}</i>`).join('')}</div>
+    <h2>${esc(E.h)}</h2><ul>${E.pts.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+    <div class="cta">${CHAT}<span>${esc(E.cta)}</span></div><div class="site" dir="ltr">glotchat.com</div></div>`, G.end), L.card);
+  R.cta = R.card.querySelector('.cta'); R.minis = [...R.card.querySelectorAll('.mini i')];
+  R.legal = pos(el(`<div class="legal">${esc(E.legal)}</div>`, G.end), L.legal);
+  if (L.mark != null) R.mark = pos(el(`<div class="mark"><img src="${LOGO}">GlotChat</div>`), L.mark);
+  R.cap = el('<div class="cap"><span></span></div>'); if (L.cap != null) R.cap.style.top = L.cap + 'px'; else R.cap.style.bottom = '12px'; R.capSpan = R.cap.firstChild;
+}
+
+function measure() {
+  const wl = (W - L.winW) / 2;
+  R.tabX = R.tabs.map((t) => [t.offsetLeft, t.offsetWidth]);
+  R.tabC = R.tabs.map((t) => [wl + 6 + t.offsetLeft + 20, L.winTop + 30 + 26]);
+  R.phC = R.phones.map((p) => [p.offsetLeft + p.offsetWidth / 2, p.offsetTop + p.offsetHeight / 2]);
+  R.items.forEach((it) => { it.h = it.n.offsetHeight + parseFloat(it.n.style.marginTop); });
+  R.bodyW = L.winW; R.bodyH = L.winH - 82;
+  R.toastPos = R.toasts.map((t, i) => [R.bodyW - t.offsetWidth - 12, R.bodyH - 12 - (R.toasts.length - i) * (t.offsetHeight + 8) + 8]);
+  R.toasts.forEach((t, i) => { t.style.left = R.toastPos[i][0] + 'px'; t.style.top = R.toastPos[i][1] + 'px'; });
+}
+
+const S = (id) => SEC.find((s) => s.id === id);
+function tabsAt(t) {   // how many tabs are visible, which one is active, unread counts
+  const br = S('brand'), ad_ = S('add'), nt = S('notify');
+  let n = 0, act = -1;
+  if (t >= br.start) n = Math.min(5, R.tabs.length);
+  if (t >= ad_.start + ad_.ev.tab6) n = 6;
+  ad_.ev.more.forEach((m, k) => { if (t >= ad_.start + m) n = 7 + k; });
+  if (t >= br.start + 0.9) act = 0;
+  if (t >= ad_.start + ad_.ev.tab6) act = 5;
+  if (t >= nt.start) act = 1;
+  if (t >= nt.start + nt.ev.click) act = 5;
+  return { n, act };
+}
+
+const F = {
+  hook(lt, d, s) {
+    set(R.hookT, pr(lt, 0.05, 0.45), 0, (1 - pr(lt, 0.05, 0.45)) * 22);
+    set(R.sub, pr(lt, s.ev.sub, s.ev.sub + 0.3), Math.sin(lt * 38) * 4 * (1 - pr(lt, s.ev.sub + 0.2, s.ev.sub + 0.8)), (1 - pr(lt, s.ev.sub, s.ev.sub + 0.3)) * 14);
+  },
+  brand(lt, d, s) { set(R.brandT, pr(lt, 0.1, 0.5), 0, (1 - pr(lt, 0.1, 0.5)) * 18); },
+  add(lt, d, s) {
+    set(R.addT, pr(lt, 0.05, 0.4), 0, (1 - pr(lt, 0.05, 0.4)) * 18);
+    const e = s.ev, mOn = lt >= e.modal && lt < e.close + 0.3;
+    set(R.dim, mOn ? Math.min(pr(lt, e.modal, e.modal + 0.3), 1 - pr(lt, e.close, e.close + 0.3)) : 0);
+    set(R.modal, mOn ? Math.min(pr(lt, e.modal, e.modal + 0.3), 1 - pr(lt, e.close, e.close + 0.3)) : 0, 0, mOn ? (1 - pr(lt, e.modal, e.modal + 0.3)) * 24 : 0, mOn ? 0.92 + 0.08 * pr(lt, e.modal, e.modal + 0.3) : 1);
+    const step2 = lt >= e.qr;
+    R.s1.style.display = step2 ? 'none' : 'block'; R.s2.style.display = step2 ? 'block' : 'none';
+    const chars = Array.from(T.add.nameV), k = Math.round(chars.length * clamp((lt - e.type) / (e.typeEnd - e.type)));
+    R.inp.innerHTML = esc(chars.slice(0, k).join('')) + (lt < e.lang ? '<span class="caret"></span>' : '');
+    R.pb.classList.toggle('on', lt >= e.lang);
+    set(R.btn, 1, 0, 0, lt > e.press && lt < e.press + 0.3 ? 1 - Math.sin((lt - e.press) / 0.3 * Math.PI) * 0.06 : 1);
+    set(R.mph, step2 ? pr(lt, e.qr + 0.2, e.qr + 0.6) : 0, step2 ? (1 - pr(lt, e.qr + 0.2, e.qr + 0.6)) * 60 : 0);
+    const sc = (lt - e.qr - 0.5) / 0.6; set(R.ln, 1, 0, 3 + Math.abs(Math.sin(sc * Math.PI)) * 50);
+    set(R.ok, step2 ? pr(lt, e.ok, e.ok + 0.25) : 0, 0, 0, 0.8 + 0.2 * back((lt - e.ok) / 0.35));
+  },
+  notify(lt, d, s) {
+    set(R.notT, pr(lt, 0.05, 0.4), 0, (1 - pr(lt, 0.05, 0.4)) * 18);
+    const e = s.ev;
+    R.toasts.forEach((tt, i) => {
+      const at = e.toasts[i], a = Math.min(pr(lt, at, at + 0.35), 1 - pr(lt, e.click + 0.1, e.click + 0.35));
+      set(tt, lt < e.click + 0.35 ? a : 0, (1 - pr(lt, at, at + 0.35)) * 60, 0);
+    });
+    // cursor moves to the first toast and clicks it
+    const [tx, ty] = R.toastPos[0], cx = tx + 150, cy = ty + 30, sx = R.bodyW * 0.45, sy = R.bodyH * 0.3;
+    const mp = pr(lt, e.click - 0.75, e.click - 0.05), cOn = lt > e.click - 0.85 && lt < e.click + 0.5;
+    R.cursor.style.left = (sx + (cx - sx) * mp) + 'px'; R.cursor.style.top = (sy + (cy - sy) * mp) + 'px';
+    set(R.cursor, cOn ? Math.min(pr(lt, e.click - 0.85, e.click - 0.6), 1 - pr(lt, e.click + 0.3, e.click + 0.5)) : 0, 0, 0, lt > e.click && lt < e.click + 0.15 ? 0.85 : 1);
+    const rp = clamp((lt - e.click) / 0.45); R.ripple.style.left = cx + 'px'; R.ripple.style.top = cy + 'px'; set(R.ripple, rp > 0 && rp < 1 ? 1 - rp : 0, 0, 0, 0.4 + rp * 1.2);
+    // chat
+    const chOn = lt >= e.click + 0.15; set(R.chat, chOn ? pr(lt, e.click + 0.15, e.click + 0.45) : 0);
+    let hidden = 0;
+    R.items.forEach((it) => {
+      const at = e[it.ev], p = pr(lt, at, at + 0.35); hidden += it.h * (1 - p);
+      if (it.reveal) { set(it.n, p > 0 ? 1 : 0); it.n.style.clipPath = `inset(0 ${(100 - 100 * pr(lt, at, at + 0.6)).toFixed(1)}% 0 0)`; }
+      else set(it.n, p, 0, 0, 0.85 + 0.15 * back((lt - at) / 0.35));
+      it.n.style.transformOrigin = it.n.classList.contains('out') ? '100% 100%' : '0% 100%';
+    });
+    R.stack.style.transform = `translateY(${hidden.toFixed(1)}px)`;
+    const chars = Array.from(T.chat.reply);
+    if (lt >= e.type && lt < e.out) {
+      const k = Math.round(chars.length * clamp((lt - e.type) / (e.out - 0.3 - e.type)));
+      R.box.innerHTML = esc(chars.slice(0, k).join('')) + '<span class="caret"></span>';
+    } else R.box.innerHTML = `<span class="phd">${esc(T.chat.placeholder)}</span>`;
+    const sp = lt - (e.out - 0.15); set(R.sendB, 1, 0, 0, sp > 0 && sp < 0.35 ? 1 - Math.sin(sp / 0.35 * Math.PI) * 0.18 : 1);
+    const sa = e.out + 0.2, sOn = lt >= sa && lt < sa + 1.8, h = sOn ? R.sentHTML : R.pairHTML;
+    if (R.pair.innerHTML !== h) R.pair.innerHTML = h;
+    R.pair.classList.toggle('sent', sOn); set(R.pair, 1, 0, 0, sOn ? 1 + 0.12 * (1 - pr(lt, sa, sa + 0.35)) : 1);
+  },
+  proof(lt, d, s) {
+    set(R.proT, pr(lt, 0.05, 0.4), 0, (1 - pr(lt, 0.05, 0.4)) * 18);
+    [...R.who.children].forEach((c, i) => { const a = 0.3 + i * 0.2; set(c, pr(lt, a, a + 0.35), 0, (1 - pr(lt, a, a + 0.35)) * 22, 0.85 + 0.15 * back((lt - a) / 0.4)); });
+    set(R.who, 1);
+    [...R.chk.children].forEach((c, i) => { const a = 1.7 + i * 0.3; set(c, pr(lt, a, a + 0.35), (1 - pr(lt, a, a + 0.35)) * -24, 0); });
+    set(R.chk, 1);
+  },
+  end(lt, d, s) {
+    set(R.card, pr(lt, 0, 0.5), 0, (1 - pr(lt, 0, 0.5)) * 30, 0.94 + 0.06 * pr(lt, 0, 0.5));
+    R.minis.forEach((m, i) => { const a = 0.35 + i * 0.08; set(m, pr(lt, a, a + 0.25), 0, 0, 0.5 + 0.5 * back((lt - a) / 0.3)); });
+    set(R.cta, 1, 0, 0, 1 + Math.max(0, Math.sin((lt - 1.0) * 4.2)) * 0.05 * pr(lt, 1.0, 1.3));
+    set(R.legal, pr(lt, 0.5, 0.9));
+  },
+};
+
+function seekAd(t) {
+  t = Math.min(t, D.duration - 0.001);
+  R.blobs.forEach((b, i) => { b.style.transform = `translate(${(Math.sin(t * 0.5 + i * 2) * 30).toFixed(1)}px, ${(Math.cos(t * 0.4 + i) * 24).toFixed(1)}px)`; });
+  const cur = SEC.find((x) => t < x.start + x.dur) || SEC[SEC.length - 1];
+  SEC.forEach((s) => {
+    const on = s === cur, lt = t - s.start;
+    const a = on ? Math.min(pr(lt, 0, 0.3), s.id === 'end' ? 1 : 1 - pr(lt, s.dur - 0.25, s.dur)) : 0;
+    set(G[s.id], a); if (on) F[s.id](lt, s.dur, s);
+  });
+  const hk = S('hook'), br = S('brand'), ad_ = S('add'), nt = S('notify');
+  // phones: pop in and buzz, then fly into the window tabs
+  R.phones.forEach((p, i) => {
+    const [, , rot] = L.phones[i];
+    if (cur === hk) {
+      const lt = t - hk.start, at = hk.ev.ph[i], a = pr(lt, at, at + 0.3);
+      const buzz = Math.sin(lt * 50 + i * 3) * 2.6 * (0.5 + 0.5 * Math.sin(lt * 3 + i));
+      set(p, a, buzz, (1 - a) * 40, 0.7 + 0.3 * back((lt - at) / 0.4), rot + buzz * 0.8);
+      set(p.querySelector('.bd'), pr(lt, at + 0.3, at + 0.5), 0, 0, 0.4 + 0.6 * back((lt - at - 0.3) / 0.3));
+    } else if (cur === br && t - br.start < 0.85) {
+      const lt = t - br.start, k = eo((lt - 0.1 - i * 0.06) / 0.6), [cx, cy] = R.phC[i], [tx, ty] = R.tabC[i];
+      set(p, 1 - pr(lt, 0.45 + i * 0.06, 0.7 + i * 0.06), (tx - cx) * k, (ty - cy) * k, 1 - 0.85 * k, rot * (1 - k));
+    } else set(p, 0);
+  });
+  // window
+  const wOn = t >= br.start && t < nt.start + nt.dur;
+  const wa = wOn ? Math.min(pr(t, br.start, br.start + 0.4), 1 - pr(t, nt.start + nt.dur - 0.3, nt.start + nt.dur)) : 0;
+  set(R.win, wa, 0, wOn ? (1 - pr(t, br.start, br.start + 0.45)) * 50 : 0, wOn ? 0.95 + 0.05 * pr(t, br.start, br.start + 0.45) : 1);
+  const { n, act } = tabsAt(t);
+  R.tabs.forEach((tb, i) => {
+    let at = br.start + 0.45 + i * 0.07;
+    if (i === 5) at = ad_.start + ad_.ev.tab6; if (i > 5) at = ad_.start + ad_.ev.more[i - 6];
+    set(tb, i < n ? pr(t, at, at + 0.25) : 0, 0, 0, i < n ? 0.6 + 0.4 * back((t - at) / 0.3) : 1);
+    tb.classList.toggle('on', i === act); tb.querySelector('.bar').style.display = i === act ? 'block' : 'none';
+    const un = tb.querySelector('.un'); let u = 0;
+    T.toasts.forEach((x, k) => { if (x.tab === i && t >= nt.start + nt.ev.toasts[k] && t < nt.start + nt.ev.click + (i === 5 ? 0 : 99)) u++; });
+    if (i < 5 && i !== 1 && t >= br.start + 1 && t < nt.start) u = [3, 0, 2, 5, 4][i];
+    un.style.display = u ? 'grid' : 'none'; un.textContent = u;
+  });
+  // keep the newest tab in view (tabs scroll under the + button)
+  const lastI = Math.max(0, n - 1), right = R.tabX[lastI][0] + R.tabX[lastI][1] * pr(t, 0, 0) + 0;
+  const want = Math.max(0, R.tabX[lastI][0] + R.tabX[lastI][1] - (L.winW - 58));
+  R.trow.style.transform = `translateX(${(-want).toFixed(1)}px)`;
+  // account counter while tabs are being added
+  const cOn = t >= ad_.start + ad_.ev.tab6 && t < ad_.start + ad_.dur;
+  if (cOn) { const txt = T.add.count.replace('{n}', n); if (R.count.textContent !== txt) R.count.textContent = txt; }
+  R.count.style.left = (W - 30 - R.count.offsetWidth) + 'px'; R.count.style.top = (L.winTop - 18) + 'px';
+  set(R.count, cOn ? Math.min(pr(t, ad_.start + ad_.ev.tab6, ad_.start + ad_.ev.tab6 + 0.3), 1 - pr(t, ad_.start + ad_.dur - 0.3, ad_.start + ad_.dur)) : 0, 0, 0,
+      cOn ? 1 + 0.08 * Math.max(0, 1 - ((t - ad_.start - ad_.ev.more.filter((m) => t - ad_.start >= m).slice(-1)[0] || 0) / 0.2)) : 1);
+  // window body: splash (brand) / list (add + notify before the click)
+  set(R.splash, cur === br ? pr(t, br.start + 0.4, br.start + 0.8) : 0, 0, 0, cur === br ? 0.8 + 0.2 * back((t - br.start - 0.4) / 0.5) : 1);
+  set(R.list, cur === ad_ || (cur === nt && t < nt.start + nt.ev.click + 0.4) ? 1 : 0);
+  if (cur !== ad_) { set(R.dim, 0); set(R.modal, 0); }
+  if (cur !== nt) { R.toasts.forEach((x) => set(x, 0)); set(R.cursor, 0); set(R.ripple, 0); set(R.chat, 0); }
+  if (R.mark) set(R.mark, ['add', 'notify', 'proof'].includes(cur.id) ? 1 : 0);
+  // subtitles
+  const cap = cur.showCaps ? cur.caps.find((c) => t >= c.t0 - 0.05 && t < c.t1 + 0.25) : null;
+  if (cap && R.capSpan.textContent !== cap.show) R.capSpan.textContent = cap.show;
+  set(R.cap, cap ? Math.min(pr(t, cap.t0 - 0.05, cap.t0 + 0.15), 1 - pr(t, cap.t1 + 0.1, cap.t1 + 0.25)) : 0);
+}
+window.seekAd = seekAd; window.READY = false;
+fetch(`multi-${LANG}.json?ts=${Date.now()}`).then((r) => r.json()).then((d) => { D = d; build(); })
+  .then(() => Promise.all([...document.images].map((im) => (im.complete ? 1 : new Promise((ok) => { im.onload = im.onerror = ok; })))))
+  .then(() => document.fonts.ready)
+  .then(() => { measure(); window.READY = true; seekAd(0);
+    if (!Q.get('record')) { const t0 = performance.now(); (function loop() { seekAd(((performance.now() - t0) / 1000) % D.duration); requestAnimationFrame(loop); })(); } });
+</script>
+</body></html>

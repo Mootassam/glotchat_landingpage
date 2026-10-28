@@ -1,0 +1,253 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat ad</title>
+<!-- Facebook / Instagram video ad, rendered frame by frame by record_ad.py.
+     ?lang=en|zh|ar|tr|es|pt|ru  &fmt=story (9:16) | feed (4:5)  &cut=full (~31 s) | short (~16 s)  &record=1
+     Served over http from the website folder so the demo scenes (../demo/demo.html) can be driven frame by frame. -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #000; overflow: hidden;
+    font-family: "Segoe UI Variable Display", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #ad { position: relative; width: 540px; overflow: hidden; color: #fff; background: #0b1220; }
+  .bg { position: absolute; inset: -20%; background:
+        radial-gradient(40% 30% at 20% 20%, rgba(124,92,255,.45), transparent 70%),
+        radial-gradient(45% 35% at 85% 30%, rgba(16,196,140,.38), transparent 70%),
+        radial-gradient(50% 40% at 50% 95%, rgba(14,165,233,.35), transparent 70%); }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 36px 36px; }
+  .layer { position: absolute; inset: 0; }
+  .grad { background: linear-gradient(92deg, #34e3a6, #38bdf8 55%, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  /* hook */
+  .phone { position: absolute; width: 112px; height: 200px; border-radius: 22px; background: #111827; border: 4px solid #2b3445; box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+  .phone::before { content: ""; position: absolute; left: 50%; top: 7px; width: 34px; height: 6px; margin-left: -17px; border-radius: 3px; background: #2b3445; }
+  .phone .nt { position: absolute; left: 8px; right: 8px; top: 26px; padding: 7px 8px; border-radius: 10px; background: #fff; color: #0f172a; font-size: 12.5px; font-weight: 600; line-height: 1.25; box-shadow: 0 6px 14px rgba(0,0,0,.35); unicode-bidi: plaintext; }
+  .phone .nt small { display: block; color: #64748b; font-size: 10px; font-weight: 700; margin-bottom: 2px; }
+  .phone .bd { position: absolute; right: -10px; top: -10px; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 14px; background: #ef4444; color: #fff; font-weight: 800; font-size: 14px; display: grid; place-items: center; border: 3px solid #0b1220; }
+  .hookt { position: absolute; left: 30px; right: 30px; text-align: center; font-weight: 800; line-height: 1.12; letter-spacing: -.5px; text-shadow: 0 6px 30px rgba(0,0,0,.6); }
+  .hookt.h1 { font-size: 42px; }
+  .hookt.h2 { font-size: 30px; color: #fde68a; }
+  .scrim { position: absolute; left: 0; right: 0; height: 330px; background: linear-gradient(rgba(11,18,32,.0), rgba(11,18,32,.82) 30%, rgba(11,18,32,.82) 70%, rgba(11,18,32,0)); }
+  /* brand */
+  .logo { position: absolute; left: 50%; width: 132px; height: 132px; margin-left: -66px; border-radius: 34px; box-shadow: 0 20px 60px rgba(16,196,140,.45); }
+  .bname { position: absolute; left: 0; right: 0; text-align: center; font-size: 54px; font-weight: 800; letter-spacing: -1px; }
+  .bline { position: absolute; left: 34px; right: 34px; text-align: center; font-size: 27px; font-weight: 700; line-height: 1.25; }
+  /* features */
+  .mark { position: absolute; left: 22px; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 18px; }
+  .mark img { width: 30px; height: 30px; border-radius: 9px; }
+  .dots { position: absolute; right: 22px; display: flex; gap: 6px; }
+  .dots i { width: 26px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.22); overflow: hidden; position: relative; }
+  .dots i b { position: absolute; inset: 0; width: 0; background: linear-gradient(90deg, #34e3a6, #38bdf8); }
+  .fhead { position: absolute; left: 26px; right: 26px; text-align: center; }
+  .fnum { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #10c48c, #0878aa); font-weight: 800; font-size: 20px; margin-bottom: 8px; }
+  .ftitle { font-size: 33px; font-weight: 800; line-height: 1.12; letter-spacing: -.5px; }
+  .fsub { margin-top: 8px; font-size: 19px; font-weight: 600; color: #cbd5e1; line-height: 1.3; }
+  .frame { position: absolute; left: 50%; border-radius: 22px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,255,.12); background: #0b1220; }
+  .frame iframe { position: absolute; left: 0; top: 0; width: 640px; height: 800px; border: 0; transform-origin: 0 0; }
+  /* end card */
+  .card { position: absolute; left: 28px; right: 28px; text-align: center; }
+  .card .logo2 { width: 92px; height: 92px; border-radius: 26px; box-shadow: 0 16px 40px rgba(16,196,140,.45); }
+  .card h2 { margin: 16px 0 0; font-size: 44px; font-weight: 800; line-height: 1.08; letter-spacing: -.5px; }
+  .card ul { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 8px; font-size: 21px; font-weight: 600; color: #e2e8f0; }
+  .card li::before { content: "✓ "; color: #34e3a6; font-weight: 800; }
+  .cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 24px; padding: 16px 26px; border-radius: 18px; background: linear-gradient(180deg, #14c98f, #0a9a6c); font-size: 23px; font-weight: 800; box-shadow: 0 16px 40px rgba(16,196,140,.5); }
+  .cta svg { width: 28px; height: 28px; fill: #fff; }
+  .handle { margin-top: 14px; font-size: 26px; font-weight: 800; color: #7dd3fc; }
+  .site { margin-top: 14px; font-size: 18px; font-weight: 600; color: #94a3b8; }
+  .legal { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 11.5px; color: rgba(255,255,255,.45); }
+  [dir="rtl"] { direction: rtl; }
+  /* 4:5 feed: compact heading, bigger demo */
+  .feed .fnum { width: 32px; height: 32px; font-size: 16px; border-radius: 10px; margin-bottom: 4px; }
+  .feed .ftitle { font-size: 27px; }
+  .feed .fsub { font-size: 16px; margin-top: 5px; }
+</style></head>
+<body>
+<div id="ad"><div class="bg"></div><div class="grid"></div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const LANG = Q.get('lang') || 'en', FMT = Q.get('fmt') === 'feed' ? 'feed' : 'story', CUT = Q.get('cut') === 'short' ? 'short' : 'full';
+const W = 540, H = FMT === 'story' ? 960 : 675;
+const RTL = LANG === 'ar';
+const TXT = {
+  en: { hook1: 'Too many WhatsApp numbers?', hook2: 'Customers writing in languages you don’t speak?',
+        brand: 'All your WhatsApp accounts in <span class="grad">one window</span>. Every message in <span class="grad">your language</span>.',
+        f: [['Add every number in seconds', 'Each account separate — tested with 27 at once'],
+            ['Know which account it’s for', 'Notifications per account, already translated'],
+            ['Reply in any language', 'You write in yours. They read theirs.'],
+            ['Voice notes → text', 'One click — translated for you'],
+            ['Photos & invoices → text', 'Read and translate any picture']],
+        end: 'Try it FREE for 3 days', pts: ['No payment to start', 'Windows 10 & 11'],
+        cta: 'Message us', legal: 'GlotChat is not affiliated with WhatsApp or Meta.' },
+  zh: { hook1: 'WhatsApp 号码太多，管不过来？', hook2: '客户说的语言你看不懂？',
+        brand: '所有 WhatsApp 账号，<span class="grad">一个窗口</span>。每条消息，都是<span class="grad">你的语言</span>。',
+        f: [['几秒添加一个号码', '每个账号相互独立 — 已测试 27 个同时运行'],
+            ['一眼看出消息来自哪个账号', '每个账号单独通知，并已翻译'],
+            ['用任何语言回复', '你写中文，客户读他们的语言'],
+            ['语音 → 文字', '一键转写并翻译'],
+            ['图片和发票 → 文字', '识别并翻译图片中的文字']],
+        end: '免费试用 3 天', pts: ['无需付款即可开始', '支持 Windows 10 和 11'],
+        cta: '联系我们', legal: 'GlotChat 与 WhatsApp 或 Meta 无关联。' },
+  ar: { hook1: 'أرقام واتساب كثيرة؟', hook2: 'عملاء يكتبون بلغات لا تفهمها؟',
+        brand: 'كل حسابات واتساب في <span class="grad">نافذة واحدة</span>. كل رسالة <span class="grad">بلغتك</span>.',
+        f: [['أضف كل رقم في ثوانٍ', 'كل حساب منفصل — تمت تجربة 27 حسابًا معًا'],
+            ['اعرف لأي حساب وصلت الرسالة', 'إشعارات لكل حساب، ومترجمة مسبقًا'],
+            ['ردّ بأي لغة', 'تكتب بلغتك ويقرأ العميل بلغته'],
+            ['الرسائل الصوتية ← نص', 'بنقرة واحدة، ومترجمة لك'],
+            ['الصور والفواتير ← نص', 'اقرأ وترجم أي نص في صورة']],
+        end: 'جرّبه مجانًا لمدة 3 أيام', pts: ['ابدأ دون دفع', 'ويندوز 10 و11'],
+        cta: 'راسلنا', legal: 'GlotChat غير تابع لواتساب أو Meta.' },
+  tr: { hook1: 'Çok fazla WhatsApp numarası mı var?', hook2: 'Müşterilerin anlamadığın dillerde mi yazıyor?',
+        brand: 'Tüm WhatsApp hesapların <span class="grad">tek pencerede</span>. Her mesaj <span class="grad">senin dilinde</span>.',
+        f: [['Her numarayı saniyeler içinde ekle', 'Her hesap ayrı — aynı anda 27 hesapla test edildi'],
+            ['Mesaj hangi hesaba geldi, hemen gör', 'Hesap başına bildirim, hem de çevrilmiş'],
+            ['Her dilde cevap ver', 'Sen kendi dilinde yaz, müşteri kendi dilinde okusun'],
+            ['Sesli mesaj → yazı', 'Tek tıkla, çevrilmiş olarak'],
+            ['Fotoğraf ve fatura → yazı', 'Resimdeki her yazıyı oku ve çevir']],
+        end: '3 gün ÜCRETSİZ dene', pts: ['Başlamak için ödeme yok', 'Windows 10 ve 11'],
+        cta: 'Bize yaz', legal: 'GlotChat, WhatsApp veya Meta ile bağlantılı değildir.' },
+  es: { hook1: '¿Demasiados números de WhatsApp?', hook2: '¿Clientes que escriben en idiomas que no hablas?',
+        brand: 'Todas tus cuentas de WhatsApp en <span class="grad">una ventana</span>. Cada mensaje en <span class="grad">tu idioma</span>.',
+        f: [['Agrega cada número en segundos', 'Cada cuenta por separado — probado con 27 a la vez'],
+            ['Sabe a qué cuenta llegó', 'Notificaciones por cuenta, ya traducidas'],
+            ['Responde en cualquier idioma', 'Tú escribes en el tuyo. Ellos leen el suyo.'],
+            ['Audios → texto', 'Un clic y traducido'],
+            ['Fotos y facturas → texto', 'Lee y traduce cualquier imagen']],
+        end: 'Pruébalo GRATIS 3 días', pts: ['Sin pagar para empezar', 'Windows 10 y 11'],
+        cta: 'Escríbenos', legal: 'GlotChat no está afiliado a WhatsApp ni a Meta.' },
+  pt: { hook1: 'Números de WhatsApp demais?', hook2: 'Clientes escrevendo em idiomas que você não fala?',
+        brand: 'Todas as suas contas de WhatsApp em <span class="grad">uma janela</span>. Cada mensagem no <span class="grad">seu idioma</span>.',
+        f: [['Adicione cada número em segundos', 'Cada conta separada — testado com 27 ao mesmo tempo'],
+            ['Saiba para qual conta chegou', 'Notificações por conta, já traduzidas'],
+            ['Responda em qualquer idioma', 'Você escreve no seu. Eles leem no deles.'],
+            ['Áudios → texto', 'Um clique e traduzido'],
+            ['Fotos e notas → texto', 'Leia e traduza qualquer imagem']],
+        end: 'Teste GRÁTIS por 3 dias', pts: ['Sem pagar para começar', 'Windows 10 e 11'],
+        cta: 'Fale com a gente', legal: 'O GlotChat não é afiliado ao WhatsApp nem à Meta.' },
+  ru: { hook1: 'Слишком много номеров WhatsApp?', hook2: 'Клиенты пишут на языках, которых вы не знаете?',
+        brand: 'Все аккаунты WhatsApp в <span class="grad">одном окне</span>. Каждое сообщение — <span class="grad">на вашем языке</span>.',
+        f: [['Добавьте любой номер за секунды', 'Каждый аккаунт отдельно — проверено на 27 сразу'],
+            ['Сразу видно, в какой аккаунт', 'Уведомления по аккаунтам, уже с переводом'],
+            ['Отвечайте на любом языке', 'Вы пишете на своём. Клиент читает на своём.'],
+            ['Голосовые → текст', 'Одно нажатие — и с переводом'],
+            ['Фото и счета → текст', 'Распознаёт и переводит текст на фото']],
+        end: 'Попробуйте БЕСПЛАТНО 3 дня', pts: ['Без оплаты для старта', 'Windows 10 и 11'],
+        cta: 'Напишите нам', legal: 'GlotChat не связан с WhatsApp или Meta.' },
+}[LANG];
+
+/* ---------- timeline ---------- */
+const SCENE = { // the part of each demo scene shown in the ad: [from, to] in scene seconds
+  accounts: [1.0, 14.4], notify: [0.4, 8.6], chat: [1.6, 13.0], voice: [1.6, 8.0], photo: [1.4, 8.0] };
+const FEAT = ['accounts', 'notify', 'chat', 'voice', 'photo'];
+const PLAN = CUT === 'full'
+  ? [['hook', 3.2], ['brand', 2.6], ['f', 4.6, 0], ['f', 4.2, 1], ['f', 4.8, 2], ['f', 3.6, 3], ['f', 3.6, 4], ['end', 4.8]]
+  : [['hook', 2.7], ['brand', 2.2], ['f', 4.6, 2], ['f', 3.8, 1], ['end', 3.8]];
+let acc = 0; const SEG = PLAN.map(([type, dur, i]) => { const s = { type, dur, i, t0: acc }; acc += dur; return s; });
+window.DURATION = acc;
+window.FEATURE_MIDS = SEG.filter((s) => s.type === 'f').map((s) => +(s.t0 + s.dur * 0.8).toFixed(2));
+window.COVER_T = (() => { const b = SEG.find((s) => s.type === 'brand'); return b.t0 + b.dur * 0.8; })();
+
+/* ---------- helpers ---------- */
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const pr = (t, a, b) => eo((t - a) / (b - a));                   // eased progress of t between a and b
+const back = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const ad = document.getElementById('ad'); ad.style.height = H + 'px'; ad.classList.add(FMT);
+const el = (html, parent = ad) => { const d = document.createElement('div'); d.innerHTML = html.trim(); const n = d.firstChild; parent.append(n); return n; };
+const set = (n, o, x = 0, y = 0, s = 1, r = 0) => { n.style.opacity = o.toFixed(3); n.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) scale(${s.toFixed(3)}) rotate(${r.toFixed(2)}deg)`; n.style.visibility = o < 0.002 ? 'hidden' : 'visible'; };
+const LOGO = '../../assets/img/icon-512.png';
+const story = FMT === 'story';
+
+/* ---------- layout (story keeps text out of the top 13% and bottom 30% that Reels/Stories cover) ---------- */
+const L = story
+  ? { hook1: 250, hook2: 420, scrim: 190, logo: 250, bname: 400, bline: 490, top: 54, head: 112, frameTop: 300, frameH: 610, card: 170, legal: 922 }
+  : { hook1: 120, hook2: 300, scrim: 70, logo: 120, bname: 270, bline: 360, top: 20, head: 58, frameTop: 196, frameH: 462, card: 70, legal: 648 };
+
+/* hook: phones buzzing with messages in other languages */
+const MSGS = [['Shop 1', '¿Precio? 🙏', '3'], ['Sales', 'مرحبا، هل متوفر؟', '7'], ['Support', 'Merhaba, fiyat ne?', '5'], ['Export', '你好，在吗？', '9'], ['Store', 'Привет! Есть доставка?', '4']];
+const PH = story
+  ? [[30, 560], [400, 520], [210, 640], [60, 140], [380, 90]]
+  : [[18, 420], [410, 400], [214, 470], [20, 30], [410, 20]];
+const phones = MSGS.map(([acc, m, n], i) => {
+  const p = el(`<div class="phone"><div class="nt"><small>${acc}</small>${m}</div><div class="bd">${n}</div></div>`);
+  p.style.left = PH[i][0] + 'px'; p.style.top = PH[i][1] + 'px'; return p;
+});
+const scrim = el('<div class="scrim"></div>'); scrim.style.top = L.scrim + 'px';
+const h1 = el(`<div class="hookt h1"${RTL ? ' dir="rtl"' : ''}>${TXT.hook1}</div>`); h1.style.top = L.hook1 + 'px';
+const h2 = el(`<div class="hookt h2"${RTL ? ' dir="rtl"' : ''}>${TXT.hook2}</div>`); h2.style.top = L.hook2 + 'px';
+/* brand */
+const logo = el(`<img class="logo" src="${LOGO}">`); logo.style.top = L.logo + 'px';
+const bname = el('<div class="bname">GlotChat</div>'); bname.style.top = L.bname + 'px';
+const bline = el(`<div class="bline"${RTL ? ' dir="rtl"' : ''}>${TXT.brand}</div>`); bline.style.top = L.bline + 'px';
+/* features */
+const mark = el(`<div class="mark"><img src="${LOGO}">GlotChat</div>`); mark.style.top = L.top + 'px';
+const nf = PLAN.filter((p) => p[0] === 'f').length;
+const dots = el(`<div class="dots">${Array.from({ length: nf }, () => '<i><b></b></i>').join('')}</div>`); dots.style.top = L.top + 12 + 'px';
+const heads = FEAT.map((id, i) => { const n = el(`<div class="fhead"${RTL ? ' dir="rtl"' : ''}><div class="fnum">${i + 1}</div><div class="ftitle">${TXT.f[i][0]}</div><div class="fsub">${TXT.f[i][1]}</div></div>`); n.style.top = L.head + 'px'; return n; });
+const sc = L.frameH / 800, fw = Math.round(640 * sc);
+const frame = el('<div class="frame"></div>'); Object.assign(frame.style, { top: L.frameTop + 'px', width: fw + 'px', height: L.frameH + 'px', marginLeft: -fw / 2 + 'px' });
+const frames = FEAT.map((id) => { const f = document.createElement('iframe'); f.src = `../demo/demo.html?scene=${id}&lang=${LANG}&fmt=port&record=1`; f.style.transform = `scale(${sc})`; frame.append(f); return f; });
+/* end card */
+const TG = '<svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>';
+const card = el(`<div class="card"${RTL ? ' dir="rtl"' : ''}><img class="logo2" src="${LOGO}"><h2>${TXT.end}</h2><ul>${TXT.pts.map((x) => `<li>${x}</li>`).join('')}</ul>
+  <div class="cta">${TG}<span>${TXT.cta}</span></div><div class="site" dir="ltr">glotchat.com</div></div>`); card.style.top = L.card + 'px';
+const cta = card.querySelector('.cta');
+const legal = el(`<div class="legal"${RTL ? ' dir="rtl"' : ''}>${TXT.legal}</div>`); legal.style.top = L.legal + 'px';
+const bg = ad.querySelector('.bg');
+
+/* ---------- render one frame ---------- */
+function seekAd(t) {
+  const seg = SEG.find((s) => t < s.t0 + s.dur) || SEG[SEG.length - 1];
+  const lt = t - seg.t0, d = seg.dur, out = (k = 0.3) => 1 - pr(lt, d - k, d);
+  bg.style.transform = `translate(${(Math.sin(t * 0.5) * 18).toFixed(1)}px, ${(Math.cos(t * 0.4) * 14).toFixed(1)}px) rotate(${(t * 2).toFixed(1)}deg)`;
+  // hook
+  const hook = seg.type === 'hook';
+  phones.forEach((p, i) => {
+    const a = hook ? pr(lt, 0.05 + i * 0.12, 0.35 + i * 0.12) * out(0.35) : 0;
+    const shake = hook ? Math.sin(t * 38 + i * 2) * 4 * (1 - pr(lt, 0.4 + i * 0.12, 1.2 + i * 0.12) * 0.6) : 0;
+    set(p, a, 0, (1 - a) * 40, 0.85 + back(pr(lt, 0.05 + i * 0.12, 0.45 + i * 0.12)) * 0.15, shake);
+  });
+  set(scrim, hook ? pr(lt, 0.2, 0.6) * out() : 0);
+  set(h1, hook ? pr(lt, 0.15, 0.5) * out() : 0, 0, hook ? (1 - pr(lt, 0.15, 0.5)) * 24 : 0, hook ? 0.92 + back(pr(lt, 0.15, 0.55)) * 0.08 : 1);
+  const h2at = d * 0.42;
+  set(h2, hook ? pr(lt, h2at, h2at + 0.35) * out() : 0, 0, hook ? (1 - pr(lt, h2at, h2at + 0.35)) * 24 : 0);
+  // brand
+  const br = seg.type === 'brand';
+  set(logo, br ? pr(lt, 0, 0.35) * out() : 0, 0, 0, br ? 0.5 + back(pr(lt, 0, 0.5)) * 0.5 : 1, br ? (1 - pr(lt, 0, 0.5)) * -12 : 0);
+  set(bname, br ? pr(lt, 0.2, 0.55) * out() : 0, 0, br ? (1 - pr(lt, 0.2, 0.55)) * 20 : 0);
+  set(bline, br ? pr(lt, 0.45, 0.85) * out() : 0, 0, br ? (1 - pr(lt, 0.45, 0.85)) * 20 : 0);
+  // features
+  const fe = seg.type === 'f';
+  const firstF = SEG.find((s) => s.type === 'f'), lastF = SEG.filter((s) => s.type === 'f').pop();
+  const inF = t >= firstF.t0 && t < lastF.t0 + lastF.dur;
+  const fIn = pr(t, firstF.t0, firstF.t0 + 0.4), fOut = 1 - pr(t, lastF.t0 + lastF.dur - 0.3, lastF.t0 + lastF.dur);
+  set(mark, inF ? fIn * fOut : 0); set(dots, inF ? fIn * fOut : 0);
+  set(frame, inF ? fIn * fOut : 0, 0, inF ? (1 - fIn) * 60 : 0, inF ? 0.94 + 0.06 * fIn : 1);
+  const fsegs = SEG.filter((s) => s.type === 'f');
+  [...dots.children].forEach((dt, j) => { const s = fsegs[j]; dt.firstChild.style.width = (clamp((t - s.t0) / s.dur) * 100).toFixed(1) + '%'; });
+  heads.forEach((n, i) => {
+    const on = fe && seg.i === i;
+    set(n, on ? pr(lt, 0.05, 0.35) * out(0.25) : 0, 0, on ? (1 - pr(lt, 0.05, 0.35)) * 18 : 0);
+  });
+  frames.forEach((f, i) => {
+    const on = fe && seg.i === i;
+    f.style.visibility = on ? 'visible' : 'hidden';
+    if (on && f.contentWindow && f.contentWindow.seek) {
+      const [a, b] = SCENE[FEAT[i]];
+      f.contentWindow.seek(a + (b - a) * clamp(lt / d));
+    }
+  });
+  // end card
+  const en = seg.type === 'end';
+  set(card, en ? pr(lt, 0, 0.45) : 0, 0, en ? (1 - pr(lt, 0, 0.45)) * 30 : 0, en ? 0.94 + 0.06 * pr(lt, 0, 0.45) : 1);
+  set(cta, 1, 0, 0, en ? 1 + Math.max(0, Math.sin((lt - 1) * 5)) * 0.045 * pr(lt, 1, 1.3) : 1);
+  set(legal, en ? pr(lt, 0.4, 0.8) : 0);
+}
+window.seekAd = seekAd;
+/* ready when every demo scene has loaded */
+window.READY = false;
+Promise.all(frames.map((f) => new Promise((ok) => { const chk = () => (f.contentWindow && f.contentWindow.seek ? ok() : setTimeout(chk, 50)); chk(); })))
+  .then(() => Promise.all([...document.images].map((im) => (im.complete ? 1 : new Promise((ok) => { im.onload = im.onerror = ok; })))))
+  .then(() => { window.READY = true; seekAd(0); });
+if (!Q.get('record')) {
+  const t0 = performance.now();
+  (function loop() { if (window.READY) seekAd(((performance.now() - t0) / 1000) % window.DURATION); requestAnimationFrame(loop); })();
+}
+</script>
+</body></html>

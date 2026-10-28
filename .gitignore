@@ -12,3 +12,5 @@ __pycache__/
 Thumbs.db
 desktop.ini
 .DS_Store
+_tools/ad/frames/
+_tools/ad/*.log

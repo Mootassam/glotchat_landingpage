@@ -1,0 +1,230 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>GlotChat explainer</title>
+<!-- Long explainer video with voice-over, rendered frame by frame by explainer_build.py.
+     ?lang=en|zh  &fmt=feed (4:5) | story (9:16)  &record=1
+     Text + timing come from explainer-<lang>.json (written by explainer_build.py from the real voice-over lengths). -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #000; overflow: hidden;
+    font-family: "Segoe UI Variable Display", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif; }
+  #ad { position: relative; width: 540px; overflow: hidden; color: #fff; background: #0b1220; }
+  .bg { position: absolute; inset: -20%; background:
+        radial-gradient(40% 30% at 20% 20%, rgba(124,92,255,.42), transparent 70%),
+        radial-gradient(45% 35% at 85% 30%, rgba(16,196,140,.36), transparent 70%),
+        radial-gradient(50% 40% at 50% 95%, rgba(14,165,233,.32), transparent 70%); }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 36px 36px; }
+  .grad { background: linear-gradient(92deg, #34e3a6, #38bdf8 55%, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .abs { position: absolute; }
+  /* hook */
+  .phone { position: absolute; width: 104px; height: 186px; border-radius: 20px; background: #111827; border: 4px solid #2b3445; box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+  .phone::before { content: ""; position: absolute; left: 50%; top: 7px; width: 32px; height: 6px; margin-left: -16px; border-radius: 3px; background: #2b3445; }
+  .phone .nt { position: absolute; left: 7px; right: 7px; top: 24px; padding: 7px 8px; border-radius: 10px; background: #fff; color: #0f172a; font-size: 12px; font-weight: 600; line-height: 1.25; unicode-bidi: plaintext; }
+  .phone .nt small { display: block; color: #64748b; font-size: 10px; font-weight: 700; margin-bottom: 2px; }
+  .phone .bd { position: absolute; right: -10px; top: -10px; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 14px; background: #ef4444; font-weight: 800; font-size: 14px; display: grid; place-items: center; border: 3px solid #0b1220; }
+  .big { position: absolute; left: 28px; right: 28px; text-align: center; font-weight: 800; line-height: 1.12; letter-spacing: -.5px; text-shadow: 0 6px 30px rgba(0,0,0,.6); }
+  .big.h1 { font-size: 40px; } .big.h2 { font-size: 30px; color: #fde68a; }
+  .scrim { position: absolute; left: 0; right: 0; height: 320px; background: linear-gradient(rgba(11,18,32,0), rgba(11,18,32,.85) 30%, rgba(11,18,32,.85) 70%, rgba(11,18,32,0)); }
+  /* pain */
+  .pain { position: absolute; left: 50px; right: 50px; display: grid; gap: 12px; }
+  .pain div { display: flex; align-items: center; gap: 14px; padding: 15px 18px; border-radius: 16px; background: rgba(239,68,68,.12); border: 1px solid rgba(239,68,68,.45); font-size: 22px; font-weight: 700; }
+  .pain div::after { content: "✕"; margin-left: auto; color: #f87171; font-weight: 900; font-size: 24px; }
+  /* brand */
+  .logo { position: absolute; left: 50%; width: 128px; height: 128px; margin-left: -64px; border-radius: 34px; box-shadow: 0 20px 60px rgba(16,196,140,.45); }
+  .bname { position: absolute; left: 0; right: 0; text-align: center; font-size: 54px; font-weight: 800; letter-spacing: -1px; }
+  .bline { position: absolute; left: 34px; right: 34px; text-align: center; font-size: 27px; font-weight: 700; line-height: 1.25; }
+  /* section chrome */
+  .mark { position: absolute; left: 22px; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 17px; }
+  .mark img { width: 28px; height: 28px; border-radius: 8px; }
+  .dots { position: absolute; right: 22px; display: flex; gap: 6px; }
+  .dots i { width: 26px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.22); overflow: hidden; position: relative; }
+  .dots i b { position: absolute; inset: 0; width: 0; background: linear-gradient(90deg, #34e3a6, #38bdf8); }
+  .head { position: absolute; left: 22px; right: 22px; display: flex; align-items: center; justify-content: center; gap: 12px; text-align: center; }
+  .head .n { flex: none; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 11px; background: linear-gradient(135deg, #10c48c, #0878aa); font-weight: 800; font-size: 19px; }
+  .head .t { font-size: 29px; font-weight: 800; line-height: 1.12; letter-spacing: -.4px; }
+  .frame { position: absolute; left: 50%; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,255,.12); background: #0b1220; }
+  .frame iframe { position: absolute; left: 0; top: 0; height: 800px; border: 0; transform-origin: 0 0; }
+  .cap { position: absolute; left: 18px; right: 18px; display: flex; justify-content: center; }
+  .cap span { display: inline-block; max-width: 100%; padding: 9px 16px; border-radius: 14px; background: rgba(5,8,14,.82); color: #fff; font-size: 21px; font-weight: 650; line-height: 1.3; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+  /* languages per account */
+  .lcards { position: absolute; left: 30px; right: 30px; display: grid; gap: 14px; }
+  .lc { border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); padding: 14px 16px; }
+  .lc .top { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; }
+  .lc .ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font-size: 16px; }
+  .lc .pair { margin-left: auto; font-size: 15px; font-weight: 700; color: #a5f3d0; padding: 4px 10px; border-radius: 99px; background: rgba(16,196,140,.15); }
+  .lc .msg { margin-top: 10px; padding: 9px 12px; border-radius: 10px; background: #202c33; font-size: 16.5px; line-height: 1.35; }
+  .lc .msg .o { unicode-bidi: plaintext; color: #e9edef; }
+  .lc .msg .tr { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(233,237,239,.3); color: #fff; font-weight: 600; }
+  .lc .msg .bdg { display: inline-block; font-size: 11px; font-weight: 800; padding: 1px 7px; border-radius: 9px; background: #7c5cff; margin-right: 7px; vertical-align: 2px; }
+  /* stats */
+  .stats { position: absolute; left: 30px; right: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .stats div { border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); padding: 20px 14px; text-align: center; }
+  .stats b { display: block; font-size: 44px; font-weight: 800; line-height: 1.05; }
+  .stats span { display: block; margin-top: 6px; font-size: 17px; font-weight: 600; color: #cbd5e1; }
+  .shield { position: absolute; left: 50%; width: 92px; height: 92px; margin-left: -46px; border-radius: 28px; display: grid; place-items: center; font-size: 46px; background: linear-gradient(135deg, rgba(16,196,140,.25), rgba(14,165,233,.25)); border: 1px solid rgba(52,227,166,.5); }
+  /* end */
+  .card { position: absolute; left: 28px; right: 28px; text-align: center; }
+  .card .logo2 { width: 88px; height: 88px; border-radius: 26px; box-shadow: 0 16px 40px rgba(16,196,140,.45); }
+  .card h2 { margin: 14px 0 0; font-size: 42px; font-weight: 800; line-height: 1.08; }
+  .card ul { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 7px; font-size: 21px; font-weight: 600; color: #e2e8f0; }
+  .card li::before { content: "✓ "; color: #34e3a6; font-weight: 800; }
+  .cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 22px; padding: 16px 26px; border-radius: 18px; background: linear-gradient(180deg, #19d39a, #0b9d72); font-size: 25px; font-weight: 800; box-shadow: 0 16px 40px rgba(16,196,140,.5); }
+  .cta svg { width: 28px; height: 28px; fill: #fff; }
+  .handle { margin-top: 12px; font-size: 26px; font-weight: 800; color: #7dd3fc; }
+  .site.big2 { margin-top: 16px; font-size: 22px; color: #cbd5e1; }
+  .site { margin-top: 2px; font-size: 18px; font-weight: 600; color: #94a3b8; }
+  #ad:not(.story) .head .t { font-size: 25px; }
+  #ad:not(.story) .cap span { font-size: 18.5px; padding: 8px 14px; }
+  #ad:not(.story) .head .n { width: 32px; height: 32px; font-size: 16px; }
+  .legal { position: absolute; left: 20px; right: 20px; text-align: center; font-size: 11.5px; color: rgba(255,255,255,.45); }
+</style></head>
+<body>
+<div id="ad"><div class="bg"></div><div class="grid"></div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const LANG = Q.get('lang') || 'en', FMT = Q.get('fmt') === 'story' ? 'story' : 'feed';
+const W = 540, H = FMT === 'story' ? 960 : 675;
+const story = FMT === 'story';
+/* layout: story keeps text away from the top 13 % and bottom 30 % that Reels / Stories cover */
+const L = story
+  ? { top: 64, head: 112, cap: 222, frameTop: 336, frameH: 576, vw: 700, cards: 340, legal: 922 }
+  : { top: 16, head: 50, cap: 608, frameTop: 126, frameH: 474, vw: 860, cards: 136, legal: 650 };
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const pr = (t, a, b) => eo((t - a) / (b - a));
+const back = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const ad = document.getElementById('ad'); ad.style.height = H + 'px'; if (story) ad.classList.add('story');
+const el = (html, parent = ad) => { const d = document.createElement('div'); d.innerHTML = html.trim(); const n = d.firstChild; parent.append(n); return n; };
+const set = (n, o, x = 0, y = 0, s = 1, r = 0) => { n.style.opacity = o.toFixed(3); n.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) scale(${s.toFixed(3)}) rotate(${r.toFixed(2)}deg)`; n.style.visibility = o < 0.002 ? 'hidden' : 'visible'; };
+const LOGO = '../../assets/img/icon-512.png';
+const CHAT = '<svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></svg>';
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+
+let D, SEC, R = {};   // data, sections, rendered parts
+function build() {
+  const S = D.sections, T = D.text;
+  SEC = S;
+  window.DURATION = D.duration;
+  const bg = ad.querySelector('.bg'); R.bg = bg;
+  // --- hook
+  const MSGS = [['Shop 1', '¿Precio? 🙏', '3'], ['Sales', 'مرحبا، هل متوفر؟', '7'], ['Support', 'Merhaba, fiyat ne?', '5'], ['Export', '你好，在吗？', '9'], ['Store', 'Привет! Есть доставка?', '4']];
+  const PH = story ? [[30, 560], [400, 520], [210, 650], [56, 150], [380, 100]] : [[18, 440], [418, 420], [218, 480], [24, 40], [416, 30]];
+  R.phones = MSGS.map(([a, m, n], i) => { const p = el(`<div class="phone"><div class="nt"><small>${a}</small>${m}</div><div class="bd">${n}</div></div>`); p.style.left = PH[i][0] + 'px'; p.style.top = PH[i][1] + 'px'; return p; });
+  R.scrim = el('<div class="scrim"></div>'); R.scrim.style.top = (story ? 200 : 110) + 'px';
+  R.h1 = el(`<div class="big h1">${esc(T.hook1)}</div>`); R.h1.style.top = (story ? 250 : 150) + 'px';
+  R.h2 = el(`<div class="big h2">${esc(T.hook2)}</div>`); R.h2.style.top = (story ? 410 : 300) + 'px';
+  // --- pain
+  R.painH = el(`<div class="big h1" style="font-size:36px">${esc(T.painTitle)}</div>`); R.painH.style.top = (story ? 150 : 50) + 'px';
+  R.pain = el(`<div class="pain">${T.pain.map((x) => `<div>${esc(x)}</div>`).join('')}</div>`); R.pain.style.top = (story ? 250 : 140) + 'px';
+  // --- brand
+  R.logo = el(`<img class="logo" src="${LOGO}">`); R.logo.style.top = (story ? 250 : 110) + 'px';
+  R.bname = el('<div class="bname">GlotChat</div>'); R.bname.style.top = (story ? 400 : 262) + 'px';
+  R.bline = el(`<div class="bline">${T.brand}</div>`); R.bline.style.top = (story ? 490 : 350) + 'px';
+  // --- section chrome
+  R.mark = el(`<div class="mark"><img src="${LOGO}">GlotChat</div>`); R.mark.style.top = L.top + 'px';
+  R.dots = el(`<div class="dots">${[0, 1, 2, 3, 4].map(() => '<i><b></b></i>').join('')}</div>`); R.dots.style.top = L.top + 11 + 'px';
+  R.heads = {};
+  S.forEach((s) => { if (s.head) { const n = el(`<div class="head">${s.num ? `<span class="n">${s.num}</span>` : ''}<span class="t">${esc(s.head)}</span></div>`); n.style.top = L.head + 'px'; R.heads[s.id] = n; } });
+  // --- demo scenes
+  const sc = L.frameH / 800, fw = Math.round(L.vw * sc);
+  R.frame = el('<div class="frame"></div>'); Object.assign(R.frame.style, { top: L.frameTop + 'px', width: fw + 'px', height: L.frameH + 'px', marginLeft: -fw / 2 + 'px' });
+  R.iframes = {};
+  S.filter((s) => s.scene).forEach((s) => {
+    const f = document.createElement('iframe');
+    f.src = `../demo/demo.html?scene=${s.scene}&lang=${LANG}&fmt=port&vw=${L.vw}&record=1`;
+    f.style.width = L.vw + 'px'; f.style.transform = `scale(${sc})`; R.frame.append(f); R.iframes[s.id] = f;
+  });
+  // --- languages per account
+  R.lcards = el(`<div class="lcards">${T.langCards.map((c) => `<div class="lc"><div class="top"><span class="ic" style="background:${c.color}">💬</span>${esc(c.name)}<span class="pair">${esc(c.pair)}</span></div>
+    <div class="msg"><span class="o">${esc(c.orig)}</span><span class="tr"><span class="bdg">🌐 ${c.code}</span>${esc(c.tr)}</span></div></div>`).join('')}</div>`);
+  R.lcards.style.top = L.cards + 'px';
+  // --- stats
+  R.shield = el('<div class="shield">🛡</div>'); R.shield.style.top = (story ? 336 : 126) + 'px';
+  R.stats = el(`<div class="stats">${T.stats.map(([b, s]) => `<div><b class="grad">${esc(b)}</b><span>${esc(s)}</span></div>`).join('')}</div>`); R.stats.style.top = (story ? 450 : 240) + 'px';
+  // --- captions (narration subtitles)
+  R.cap = el('<div class="cap"><span></span></div>'); if (story) R.cap.style.top = L.cap + 'px'; else R.cap.style.bottom = '12px'; R.capSpan = R.cap.firstChild;
+  // --- end card
+  R.card = el(`<div class="card"><img class="logo2" src="${LOGO}"><h2>${esc(T.end)}</h2><ul>${T.pts.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+    <div class="cta">${CHAT}<span>${esc(T.cta)}</span></div><div class="site big2" dir="ltr">glotchat.com</div></div>`);
+  R.card.style.top = (story ? 170 : 60) + 'px'; R.ctaBtn = R.card.querySelector('.cta');
+  R.legal = el(`<div class="legal">${esc(T.legal)}</div>`); R.legal.style.top = L.legal + 'px';
+}
+
+function seekAd(t) {
+  const s = SEC.find((x) => t < x.start + x.dur) || SEC[SEC.length - 1];
+  const lt = t - s.start, d = s.dur, inn = (a = 0, b = 0.4) => pr(lt, a, b), out = (k = 0.35) => 1 - pr(lt, d - k, d);
+  R.bg.style.transform = `translate(${(Math.sin(t * 0.4) * 18).toFixed(1)}px, ${(Math.cos(t * 0.3) * 14).toFixed(1)}px) rotate(${(t * 1.5).toFixed(1)}deg)`;
+  const is = (type) => s.type === type;
+  // hook
+  R.phones.forEach((p, i) => {
+    const a = is('hook') ? inn(0.05 + i * 0.12, 0.4 + i * 0.12) * out() : 0;
+    const shake = is('hook') ? Math.sin(t * 36 + i * 2) * 3.5 * (1 - inn(0.6, 2.5) * 0.7) : 0;
+    set(p, a, 0, (1 - a) * 40, 0.85 + back(inn(0.05 + i * 0.12, 0.5 + i * 0.12)) * 0.15, shake);
+  });
+  set(R.scrim, is('hook') ? inn(0.2, 0.6) * out() : 0);
+  const c2 = is('hook') && s.caps[1] ? s.caps[1].t0 - s.start : 99;
+  set(R.h1, is('hook') ? inn(0.15, 0.5) * out() : 0, 0, is('hook') ? (1 - inn(0.15, 0.5)) * 24 : 0);
+  set(R.h2, is('hook') ? inn(c2, c2 + 0.35) * out() : 0, 0, is('hook') ? (1 - inn(c2, c2 + 0.35)) * 24 : 0);
+  // pain: one card per narration sentence
+  set(R.painH, is('pain') ? inn() * out() : 0);
+  [...R.pain.children].forEach((c, i) => {
+    const at = is('pain') && s.caps[i] ? s.caps[i].t0 - s.start : (is('pain') ? 0.3 + i * 0.6 : 99);
+    set(c, is('pain') ? inn(at, at + 0.35) * out() : 0, is('pain') ? (1 - inn(at, at + 0.35)) * -30 : 0, 0);
+  });
+  set(R.pain, 1);
+  // brand
+  set(R.logo, is('brand') ? inn(0, 0.35) * out() : 0, 0, 0, is('brand') ? 0.5 + back(inn(0, 0.5)) * 0.5 : 1, is('brand') ? (1 - inn(0, 0.5)) * -12 : 0);
+  set(R.bname, is('brand') ? inn(0.2, 0.55) * out() : 0, 0, is('brand') ? (1 - inn(0.2, 0.55)) * 20 : 0);
+  const bl = is('brand') && s.caps[1] ? s.caps[1].t0 - s.start : 0.6;
+  set(R.bline, is('brand') ? inn(bl, bl + 0.4) * out() : 0, 0, is('brand') ? (1 - inn(bl, bl + 0.4)) * 20 : 0);
+  // chrome for feature sections
+  const feat = s.chrome;
+  set(R.mark, feat ? 1 : 0); set(R.dots, feat ? 1 : 0);
+  [...R.dots.children].forEach((dt, j) => {
+    const secs = SEC.filter((x) => x.dot === j); if (!secs.length) return;
+    const a = secs[0].start, b = secs[secs.length - 1].start + secs[secs.length - 1].dur;
+    dt.firstChild.style.width = (clamp((t - a) / (b - a)) * 100).toFixed(1) + '%';
+  });
+  Object.entries(R.heads).forEach(([id, n]) => { const on = s.id === id; set(n, on ? inn(0.05, 0.4) * out(0.3) : 0, 0, on ? (1 - inn(0.05, 0.4)) * 16 : 0); });
+  // demo frame
+  const demo = !!s.scene;
+  const prevDemo = SEC[SEC.indexOf(s) - 1] && SEC[SEC.indexOf(s) - 1].scene, nextDemo = SEC[SEC.indexOf(s) + 1] && SEC[SEC.indexOf(s) + 1].scene;
+  const fa = demo ? (prevDemo ? 1 : inn(0, 0.45)) * (nextDemo ? 1 : out()) : 0;
+  set(R.frame, fa, 0, demo && !prevDemo ? (1 - inn(0, 0.45)) * 50 : 0, demo && !prevDemo ? 0.95 + 0.05 * inn(0, 0.45) : 1);
+  Object.entries(R.iframes).forEach(([id, f]) => {
+    const on = s.id === id;
+    f.style.visibility = on ? 'visible' : 'hidden';
+    f.style.opacity = on && prevDemo ? inn(0, 0.3).toFixed(3) : '1';
+    if (on && f.contentWindow && f.contentWindow.seek) {
+      const len = s.sceneLen, sp = Math.max(1, len / Math.max(0.1, d - 0.4));     // faster only when the narration is shorter than the scene
+      f.contentWindow.seek(Math.min(len, lt * sp));
+    }
+  });
+  // languages per account
+  [...R.lcards.children].forEach((c, i) => {
+    const at = is('langs') ? 0.3 + i * Math.min(1.2, (d - 1) / 4) : 99;
+    set(c, is('langs') ? inn(at, at + 0.4) * out() : 0, 0, is('langs') ? (1 - inn(at, at + 0.4)) * 26 : 0);
+  });
+  set(R.lcards, 1);
+  // stats
+  set(R.shield, is('stats') ? inn(0, 0.4) * out() : 0, 0, 0, is('stats') ? 0.6 + back(inn(0, 0.5)) * 0.4 : 1);
+  [...R.stats.children].forEach((c, i) => { const at = 0.35 + i * 0.35; set(c, is('stats') ? inn(at, at + 0.35) * out() : 0, 0, is('stats') ? (1 - inn(at, at + 0.35)) * 20 : 0); });
+  set(R.stats, 1);
+  // end card
+  set(R.card, is('end') ? inn(0, 0.45) : 0, 0, is('end') ? (1 - inn(0, 0.45)) * 30 : 0, is('end') ? 0.94 + 0.06 * inn(0, 0.45) : 1);
+  set(R.ctaBtn, 1, 0, 0, is('end') ? 1 + Math.max(0, Math.sin((lt - 1.2) * 4)) * 0.045 * inn(1.2, 1.5) : 1);
+  set(R.legal, is('end') ? inn(0.4, 0.8) : 0);
+  // narration subtitles (not on the hook / brand / end, where the big text already says it)
+  const cap = s.showCaps ? s.caps.find((c) => t >= c.t0 - 0.05 && t < c.t1 + 0.25) : null;
+  if (cap) { if (R.capSpan.textContent !== cap.show) R.capSpan.textContent = cap.show; }
+  set(R.cap, cap ? Math.min(pr(t, cap.t0 - 0.05, cap.t0 + 0.15), 1 - pr(t, cap.t1 + 0.1, cap.t1 + 0.25)) : 0);
+}
+window.seekAd = seekAd; window.READY = false;
+fetch(`explainer-${LANG}.json?ts=${Date.now()}`).then((r) => r.json()).then((d) => {
+  D = d; build();
+  const fr = Object.values(R.iframes);
+  return Promise.all(fr.map((f) => new Promise((ok) => { const chk = () => (f.contentWindow && f.contentWindow.seek ? ok() : setTimeout(chk, 50)); chk(); })));
+}).then(() => Promise.all([...document.images].map((im) => (im.complete ? 1 : new Promise((ok) => { im.onload = im.onerror = ok; })))))
+  .then(() => { window.READY = true; seekAd(0);
+    if (!Q.get('record')) { const t0 = performance.now(); (function loop() { seekAd(((performance.now() - t0) / 1000) % D.duration); requestAnimationFrame(loop); })(); } });
+</script>
+</body></html>

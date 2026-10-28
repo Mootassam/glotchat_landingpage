@@ -1,0 +1,367 @@
+{
+ "lang": "en",
+ "duration": 107.771,
+ "sections": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "start": 0.0,
+   "dur": 7.023,
+   "caps": [
+    {
+     "t0": 0.45,
+     "t1": 3.249,
+     "show": "Do you run more than one WhatsApp number for your business?"
+    },
+    {
+     "t0": 3.569,
+     "t1": 6.473,
+     "show": "And do your customers write in languages you don't speak?"
+    }
+   ],
+   "showCaps": false,
+   "chrome": false
+  },
+  {
+   "id": "pain",
+   "type": "pain",
+   "start": 7.023,
+   "dur": 10.717,
+   "caps": [
+    {
+     "t0": 7.473,
+     "t1": 9.236,
+     "show": "Switching between phones all day."
+    },
+    {
+     "t0": 9.556,
+     "t1": 11.999,
+     "show": "Copying every message into a translator."
+    },
+    {
+     "t0": 12.319,
+     "t1": 14.31,
+     "show": "Missing messages on the other number."
+    },
+    {
+     "t0": 14.63,
+     "t1": 17.19,
+     "show": "It costs you time, and it costs you customers."
+    }
+   ],
+   "showCaps": false,
+   "chrome": false
+  },
+  {
+   "id": "brand",
+   "type": "brand",
+   "start": 17.74,
+   "dur": 7.594,
+   "caps": [
+    {
+     "t0": 18.19,
+     "t1": 19.331,
+     "show": "Meet GlotChat."
+    },
+    {
+     "t0": 19.651,
+     "t1": 24.784,
+     "show": "All your WhatsApp accounts in one window on your PC, and every message in your own language."
+    }
+   ],
+   "showCaps": false,
+   "chrome": false
+  },
+  {
+   "id": "accounts",
+   "type": "demo",
+   "start": 25.334,
+   "dur": 14.978,
+   "caps": [
+    {
+     "t0": 25.784,
+     "t1": 27.938,
+     "show": "First, connect all your WhatsApp numbers."
+    },
+    {
+     "t0": 28.258,
+     "t1": 33.377,
+     "show": "Give each account a name, choose your language, and scan the QR code, just like WhatsApp Web."
+    },
+    {
+     "t0": 33.697,
+     "t1": 36.234,
+     "show": "Every account is separate, with its own login."
+    },
+    {
+     "t0": 36.554,
+     "t1": 39.761,
+     "show": "We've tested 27 accounts running at the same time."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "scene": "accounts",
+   "sceneLen": 15.0,
+   "head": "Connect all your WhatsApp accounts",
+   "num": 1,
+   "dot": 0
+  },
+  {
+   "id": "notify",
+   "type": "demo",
+   "start": 40.311,
+   "dur": 8.79,
+   "caps": [
+    {
+     "t0": 40.761,
+     "t1": 44.616,
+     "show": "When a message arrives, the notification tells you which account it's for."
+    },
+    {
+     "t0": 44.936,
+     "t1": 46.382,
+     "show": "And it's already translated."
+    },
+    {
+     "t0": 46.702,
+     "t1": 48.551,
+     "show": "Click it, and the right chat opens."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "scene": "notify",
+   "sceneLen": 10.4,
+   "head": "Each account, its own notifications",
+   "num": 2,
+   "dot": 1
+  },
+  {
+   "id": "chat",
+   "type": "demo",
+   "start": 49.101,
+   "dur": 12.381,
+   "caps": [
+    {
+     "t0": 49.551,
+     "t1": 53.209,
+     "show": "Every customer message is translated right under the original."
+    },
+    {
+     "t0": 53.529,
+     "t1": 55.171,
+     "show": "You reply in your own language."
+    },
+    {
+     "t0": 55.491,
+     "t1": 58.208,
+     "show": "GlotChat shows you the translation before it's sent,"
+    },
+    {
+     "t0": 58.528,
+     "t1": 60.933,
+     "show": "and your customer receives it in their language."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "scene": "chat",
+   "sceneLen": 13.848148148148148,
+   "head": "Translate every chat — both ways",
+   "num": 3,
+   "dot": 2
+  },
+  {
+   "id": "langs",
+   "type": "langs",
+   "start": 61.483,
+   "dur": 14.33,
+   "caps": [
+    {
+     "t0": 61.933,
+     "t1": 63.932,
+     "show": "Each account has its own languages."
+    },
+    {
+     "t0": 64.252,
+     "t1": 71.213,
+     "show": "Your shop in Dubai speaks Arabic, your European sales line speaks Spanish, and your export account speaks Chinese."
+    },
+    {
+     "t0": 71.533,
+     "t1": 75.262,
+     "show": "GlotChat even detects each customer's language automatically."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "head": "Each account speaks its customers' language",
+   "num": 3,
+   "dot": 2
+  },
+  {
+   "id": "voice",
+   "type": "demo",
+   "start": 75.812,
+   "dur": 7.36,
+   "caps": [
+    {
+     "t0": 76.262,
+     "t1": 77.87,
+     "show": "Customers love voice notes."
+    },
+    {
+     "t0": 78.19,
+     "t1": 82.141,
+     "show": "One click turns a voice message into text, and translates it for you."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "scene": "voice",
+   "sceneLen": 9.200000000000001,
+   "head": "Voice notes → text",
+   "num": 4,
+   "dot": 3
+  },
+  {
+   "id": "photo",
+   "type": "demo",
+   "start": 83.172,
+   "dur": 7.12,
+   "caps": [
+    {
+     "t0": 83.622,
+     "t1": 85.49,
+     "show": "A photo of an invoice or an order?"
+    },
+    {
+     "t0": 85.81,
+     "t1": 89.441,
+     "show": "GlotChat reads the text in the picture, and translates it too."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "scene": "photo",
+   "sceneLen": 8.9,
+   "head": "Photos & invoices → translated",
+   "num": 5,
+   "dot": 4
+  },
+  {
+   "id": "stats",
+   "type": "stats",
+   "start": 90.292,
+   "dur": 8.808,
+   "caps": [
+    {
+     "t0": 90.742,
+     "t1": 95.596,
+     "show": "Everything is translated offline, on your own computer, in 49 languages."
+    },
+    {
+     "t0": 95.916,
+     "t1": 98.551,
+     "show": "Your chats are never sent to an online translator."
+    }
+   ],
+   "showCaps": true,
+   "chrome": true,
+   "head": "Private · offline · 49 languages"
+  },
+  {
+   "id": "end",
+   "type": "end",
+   "start": 99.101,
+   "dur": 8.67,
+   "caps": [
+    {
+     "t0": 99.551,
+     "t1": 102.844,
+     "show": "Try GlotChat free for 3 days. No payment needed."
+    },
+    {
+     "t0": 103.164,
+     "t1": 105.171,
+     "show": "Contact us now, and start today."
+    }
+   ],
+   "showCaps": false,
+   "chrome": false
+  }
+ ],
+ "text": {
+  "hook1": "Too many WhatsApp numbers?",
+  "hook2": "Customers writing in languages you don't speak?",
+  "painTitle": "Sound familiar?",
+  "pain": [
+   "📱 Switching phones all day",
+   "📋 Copy → translate → paste",
+   "🔕 Missed messages",
+   "💸 Lost customers"
+  ],
+  "brand": "All your WhatsApp accounts in <span class=\"grad\">one window</span>. Every message in <span class=\"grad\">your language</span>.",
+  "heads": {
+   "accounts": "Connect all your WhatsApp accounts",
+   "notify": "Each account, its own notifications",
+   "chat": "Translate every chat — both ways",
+   "langs": "Each account speaks its customers' language",
+   "voice": "Voice notes → text",
+   "photo": "Photos & invoices → translated",
+   "stats": "Private · offline · 49 languages"
+  },
+  "langCards": [
+   {
+    "name": "Shop UAE",
+    "color": "#f59e0b",
+    "pair": "English ⇄ Arabic",
+    "orig": "مرحبا، هل الطلب جاهز؟",
+    "code": "AR→EN",
+    "tr": "Hello, is the order ready?"
+   },
+   {
+    "name": "Sales EU",
+    "color": "#10b981",
+    "pair": "English ⇄ Spanish",
+    "orig": "¿Cuánto cuesta el envío?",
+    "code": "ES→EN",
+    "tr": "How much is shipping?"
+   },
+   {
+    "name": "Export",
+    "color": "#ef4444",
+    "pair": "English ⇄ Chinese",
+    "orig": "好的，明天发货",
+    "code": "ZH→EN",
+    "tr": "OK, it ships tomorrow"
+   }
+  ],
+  "stats": [
+   [
+    "49",
+    "languages"
+   ],
+   [
+    "100%",
+    "offline on your PC"
+   ],
+   [
+    "~100",
+    "voice languages"
+   ],
+   [
+    "27+",
+    "accounts tested at once"
+   ]
+  ],
+  "end": "Try it FREE for 3 days",
+  "pts": [
+   "No payment to start",
+   "Windows 10 & 11"
+  ],
+  "cta": "Contact us now",
+  "legal": "GlotChat is not affiliated with WhatsApp or Meta."
+ }
+}
