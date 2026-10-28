@@ -335,14 +335,15 @@ def build(make_og=True):
 def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
     S = cfg.SITE
     hl = cfg.LANGS[lang]["hreflang"]
-    org = {"@type": "Organization", "@id": S + "/#org", "name": "GlotChat", "url": S + "/",
+    org = {"@type": "Organization", "@id": S + "/#org", "name": "GlotChat", "alternateName": "Glot Chat",
+           "url": S + "/", "description": "Maker of GlotChat, the all-in-one messenger with translation for Windows.",
            "logo": {"@type": "ImageObject", "url": S + "/assets/img/icon-512.png", "width": 512, "height": 512},
-           "sameAs": [f"https://t.me/{cfg.TELEGRAM_USER}"],
+           "sameAs": [f"https://t.me/{cfg.TELEGRAM_USER}", *cfg.SAME_AS],
            "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "url": f"https://t.me/{cfg.TELEGRAM_USER}",
                             "availableLanguage": ["English", "Chinese", "Arabic", "Turkish", "Spanish", "Portuguese", "Russian"]}}
     # alternateName: what GlotChat is, in the words people search ("GlotChat – All-in-One Messenger")
     site = {"@type": "WebSite", "@id": S + "/#website", "url": S + "/", "name": "GlotChat",
-            "alternateName": ["GlotChat All-in-One Messenger", "GlotChat Messenger"],
+            "alternateName": ["Glot Chat", "GlotChat All-in-One Messenger", "GlotChat Messenger"],
             "inLanguage": [cfg.LANGS[l]["hreflang"] for l in cfg.LANGS], "publisher": {"@id": S + "/#org"}}
     webpage = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": page["title"],
                "description": page["description"], "inLanguage": hl, "isPartOf": {"@id": S + "/#website"},

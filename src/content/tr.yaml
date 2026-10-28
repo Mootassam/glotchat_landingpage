@@ -201,7 +201,7 @@ pages:
     blocks:
     - type: hero_home
       eyebrow: "1.4'te yeni — DeepL çevirisi ve her uygulamada profil fotoğrafları"
-      h1: "Hepsi bir arada mesajlaşma. <span class=\"grad\">Her uygulama. Her dil.</span>"
+      h1: "GlotChat: hepsi bir arada mesajlaşma. <span class=\"grad\">Her uygulama. Her dil.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram ve Discord — her birinden istediğiniz kadar hesap — bilgisayarınızda tek pencerede. Her müşteriyi Türkçe okuyun, onun dilinde yanıtlayın ve ne okuyacağını tam olarak bilin."
       micro:
       - 3 gün ücretsiz — kart yok, ödeme yok

@@ -7,6 +7,9 @@ BRAND = "GlotChat"
 # Telegram is the main channel. The others are optional: fill one in and its button
 # appears everywhere automatically (leave "" to hide it).
 TELEGRAM_USER = "GlotChat"
+# Official GlotChat profiles (same name + logo everywhere). Google uses them to recognise "GlotChat"
+# as one brand instead of correcting the search to similar names. Add each one when it exists.
+SAME_AS: list[str] = []
 WHATSAPP_NUMBER = ""      # international format without + or spaces, e.g. "971501234567"
 WECHAT_ID = ""            # shown on the Chinese pages (Telegram is blocked in mainland China)
 EMAIL = ""                # e.g. "hello@glotchat.com"

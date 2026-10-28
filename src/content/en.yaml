@@ -169,7 +169,7 @@ pages:
     blocks:
     - type: hero_home
       eyebrow: "New in 1.4 — DeepL translation & profile photos in every app"
-      h1: "The all-in-one messenger. <span class=\"grad\">Every app. Every language.</span>"
+      h1: "GlotChat, the all-in-one messenger. <span class=\"grad\">Every app. Every language.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram and Discord — as many accounts of each as you need — in one window on your PC. Read every customer in your language and reply in theirs, knowing exactly what they'll read."
       micro:
       - 3 days free — no card, no payment

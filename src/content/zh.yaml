@@ -201,7 +201,7 @@ pages:
     blocks:
     - type: hero_home
       eyebrow: "1.4 新功能 —— DeepL 翻译，所有应用显示账号头像"
-      h1: "多合一聚合聊天软件。<span class=\"grad\">所有应用，任何语言。</span>"
+      h1: "GlotChat 多合一聚合聊天软件。<span class=\"grad\">所有应用，任何语言。</span>"
       lead: "WhatsApp、Telegram、Messenger、Instagram 和 Discord —— 每个应用想开多少账号都行 —— 全部在电脑上的一个窗口里。客户的消息用中文阅读，回复用客户的语言发出，发送前就知道对方会读到什么。"
       micro:
       - 免费试用 3 天，无需付款

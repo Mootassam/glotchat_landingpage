@@ -201,7 +201,7 @@ pages:
     blocks:
     - type: hero_home
       eyebrow: "Nuevo en 1.4 — traducción con DeepL y fotos de perfil en todas las apps"
-      h1: "Mensajería todo en uno. <span class=\"grad\">Todas las apps. Todos los idiomas.</span>"
+      h1: "GlotChat: mensajería todo en uno. <span class=\"grad\">Todas las apps. Todos los idiomas.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram y Discord — con todas las cuentas que necesites de cada una — en una sola ventana en tu PC. Lee a cada cliente en español y responde en su idioma sabiendo exactamente qué va a leer."
       micro:
       - 3 días gratis — sin tarjeta ni pago
