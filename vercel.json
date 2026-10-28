@@ -2,7 +2,10 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "glotchatlandingpage.vercel.app" }], "destination": "https://www.glotchat.com/:path*", "permanent": true }
+    { "source": "/:path*", "has": [{ "type": "host", "value": "glotchatlandingpage.vercel.app" }], "destination": "https://www.glotchat.com/:path*", "permanent": true },
+    { "source": "/guides/best-whatsapp-multi-account-software/", "destination": "/guides/multiple-whatsapp-accounts-on-pc/", "permanent": true },
+    { "source": "/guides/whatsapp-auto-translate-setup/", "destination": "/guides/translate-whatsapp-messages-on-pc/", "permanent": true },
+    { "source": "/guides/foreign-trade-whatsapp-tips/", "destination": "/for/exporters/", "permanent": true }
   ],
   "headers": [
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },

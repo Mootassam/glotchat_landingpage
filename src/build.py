@@ -16,6 +16,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 
 import markdown
@@ -201,6 +202,7 @@ def build(make_og=True):
     MEDIA_V = mv
 
     today = dt.date.today().isoformat()
+    lastmod = load_lastmod()
     generated, sitemap = [], []
     og_jobs = []
     stats = {}
@@ -310,10 +312,12 @@ def build(make_og=True):
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             with open(dest, "w", encoding="utf-8", newline="\n") as f:
                 f.write(html)
-            generated.append(os.path.relpath(dest, ROOT).replace("\\", "/"))
+            rel = os.path.relpath(dest, ROOT).replace("\\", "/")
+            generated.append(rel)
+            touch_lastmod(lastmod, rel, html, today)
             stats[lang] = stats.get(lang, 0) + 1
             if not page.get("special") and "noindex" not in (page.get("robots") or ""):
-                sitemap.append((pid, lang))
+                sitemap.append((pid, lang, rel))
 
     if ONLY:                                       # a one-language build: the other languages' files stay as they are
         print(f"built {len(generated)} pages ({ONLY[0]} only) — build all languages before committing")
@@ -321,7 +325,8 @@ def build(make_og=True):
             render_og(og_jobs)
         return
     clean_old(generated)
-    write_sitemap(sitemap, available, today)
+    save_lastmod({k: v for k, v in lastmod.items() if k in generated})
+    write_sitemap(sitemap, available, lastmod)
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(f"User-agent: *\nAllow: /\nDisallow: /src/\nDisallow: /_tools/\n\nSitemap: {cfg.SITE}/sitemap.xml\n")
     write_llms(content["en"], available)
@@ -427,21 +432,56 @@ def clean_old(generated):
                 d = os.path.dirname(d)
 
 
-def write_sitemap(entries, available, today):
+LASTMOD = os.path.join(HERE, "lastmod.json")
+
+
+def load_lastmod():
+    """{output file: {"hash", "date"}}: the date each page's HTML last really changed.
+
+    A sitemap that says "changed today" for every page on every build teaches Google to ignore
+    <lastmod>; with real dates it can tell which pages are worth crawling again."""
+    try:
+        with open(LASTMOD, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+
+def touch_lastmod(lastmod, rel, html, today):
+    h = hashlib.sha1(html.encode("utf-8")).hexdigest()[:16]
+    old = lastmod.get(rel)
+    if old and old["hash"] == h:
+        return
+    date = today
+    if old is None:  # first time recorded: if the page is the same as in the last commit, use that commit's date
+        committed = subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=ROOT, capture_output=True)
+        if committed.returncode == 0 and hashlib.sha1(committed.stdout).hexdigest()[:16] == h:
+            r = subprocess.run(["git", "log", "-1", "--format=%cs", "--", rel], cwd=ROOT, capture_output=True, text=True)
+            date = r.stdout.strip() or today
+    lastmod[rel] = {"hash": h, "date": date}
+
+
+def save_lastmod(lastmod):
+    with open(LASTMOD, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(dict(sorted(lastmod.items())), f, indent=0)
+
+
+def write_sitemap(entries, available, lastmod):
     S = cfg.SITE
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-    for pid, lang in entries:
+    for pid, lang, rel in entries:
         if pid == "404":
             continue
         out.append("  <url>")
         out.append(f"    <loc>{S}{path_of(lang, pid)}</loc>")
-        out.append(f"    <lastmod>{today}</lastmod>")
+        out.append(f"    <lastmod>{lastmod[rel]['date']}</lastmod>")
         langs = available.get(pid, [])
         if len(langs) > 1:
             for l in langs:
                 out.append(f'    <xhtml:link rel="alternate" hreflang="{cfg.LANGS[l]["hreflang"]}" href="{S}{path_of(l, pid)}"/>')
-            out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{S}{path_of("en", pid)}"/>')
+            if "en" in langs:  # Chinese-only guides have no English page to be the default
+                out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{S}{path_of("en", pid)}"/>')
         out.append("  </url>")
     out.append("</urlset>")
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8", newline="\n") as f:
