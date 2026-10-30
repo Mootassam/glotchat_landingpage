@@ -62,7 +62,7 @@ ui:
     note: 'Tahmin: ayda 22 iş günü, günde 8 saat. GlotChat mesajları geldikleri anda çevirir; bu zaman satışa geri döner.'
     cta: Bu saatleri geri alın — ücretsiz deneyin
   finder:
-    q: Kaç hesap kullanıyorsunuz (tüm uygulamalar birlikte)?
+    q: Tek bir uygulamada kaç hesap kullanıyorsunuz (en yoğun olanında)?
     a: 'Size en uygun:'
     btn: 3 gün ücretsiz deneyin
   plans:
@@ -82,7 +82,7 @@ ui:
   for_you: Size önerilen
   per_year: / yıl
   per_month: USDT / ay
-  up_to_accounts: <b>{n}</b> hesaba kadar
+  up_to_accounts: Uygulama başına <b>{n}</b> hesaba kadar
   unlimited_accounts: <b>Sınırsız</b> hesap
   plan_f:
     translate: Metin, ses ve fotoğraf çevirisi
@@ -149,7 +149,7 @@ ui:
     demo: Merhaba! GlotChat'i bana canlı gösterebilir misiniz?
     trial: Merhaba! GlotChat'i denemek istiyorum. Yaklaşık __ hesabım var (WhatsApp / Telegram / Messenger / Instagram / Discord).
     usecase: 'Merhaba! GlotChat''i denemek istiyorum. İşim: __ · Müşterilerimin dili: __'
-    finder: Merhaba! {n} hesap kullanıyorum. GlotChat {plan} bana uygun mu?
+    finder: Merhaba! Bir uygulamada {n} hesap kullanıyorum. GlotChat {plan} bana uygun mu?
     planTrial: Merhaba! Önce GlotChat {plan} paketini denemek istiyorum.
     plan: Merhaba! GlotChat {plan} paketini istiyorum ({price} USDT / yıl). Nasıl ödeyebilirim?
     custom: 'Merhaba! GlotChat için özel teklif istiyorum: __ bilgisayar, __ hesap (ömür boyu lisans?).'
@@ -513,7 +513,7 @@ pages:
       soft: false
       k: Paketler
       h: Kullandığınız hesap sayısına göre seçin
-      p: WhatsApp ve Telegram hesapları birlikte sayılır. Emin değil misiniz? Bir soruyu yanıtlayın, size doğru paketi gösterelim.
+      p: "Hesaplar uygulama başına sayılır: Starter ile 5 WhatsApp, 5 Telegram, 5 Instagram vb. kullanırsınız. Emin değil misiniz? Bir soruyu yanıtlayın, size doğru paketi gösterelim."
     - type: buying
       soft: true
       k: Satın alma nasıl işler
@@ -537,7 +537,7 @@ pages:
       - Pro
       - Business
       rows:
-      - - Hesaplar (tüm uygulamalar birlikte)
+      - - Uygulama başına hesap
         - 5'e kadar
         - 15'e kadar
         - Sınırsız
@@ -607,7 +607,7 @@ pages:
       - - Nasıl öderim?
         - TRC20, BEP20 veya ERC20 ağında USDT ile. Ödeme adresini Telegram'dan göndeririz, ödeme gelir gelmez yıllık anahtarınızı iletiriz.
       - - Telegram hesapları ayrı mı sayılır?
-        - 'Hayır. Tüm hesaplar birlikte sayılır: örneğin 15 hesaplık Pro paketi 10 WhatsApp numarası ve 5 Telegram hesabı olabilir.'
+        - 'Evet. Her uygulamanın kendi sınırı var: Pro ile 15 WhatsApp numarası ve 15 Telegram hesabı — ayrıca 15 Messenger, 15 Instagram ve 15 Discord hesabı kullanırsınız.'
       - - Bir yıl sonra ne olur?
         - Aynı fiyattan yenilersiniz ve kesintisiz çalışmaya devam edersiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız her zaman bilgisayarınızda kalır.
       - - Yükseltme veya bilgisayar ekleme yapabilir miyim?
@@ -1666,7 +1666,7 @@ pages:
       h: Birden fazla Telegram hesabı — sorular
       items:
       - - Tek PC'de kaç Telegram hesabı kullanabilirim?
-        - 'GlotChat''te paketiniz kadar — Starter 5, Pro 15, Business sınırsız (WhatsApp ve Telegram hesapları birlikte sayılır). Pratik sınır bellektir: hesap başına yaklaşık 300–450 MB.'
+        - 'GlotChat''te paketiniz kadar — Starter 5, Pro 15, Business sınırsız (uygulama başına; WhatsApp numaralarınız bu sayıdan düşmez). Pratik sınır bellektir: hesap başına yaklaşık 300–450 MB.'
       - - Telegram hesabını nasıl eklerim?
         - Hesap ekle'ye tıklayın, Telegram'ı seçin ve QR kodu telefonunuzla okutun (Telegram → Ayarlar → Cihazlar → Cihaz bağla) ya da telefon numaranızla giriş yapın.
       - - Telegram buna izin veriyor mu?
@@ -1817,7 +1817,7 @@ pages:
       - - Aynı uygulamadan birden fazla hesap ekleyebilir miyim?
         - Evet. Paketinizin izin verdiği kadar hesap ekleyin — örneğin 3 WhatsApp numarası, 2 Telegram ve 2 Instagram hesabı. Her biri yalıtılmıştır.
       - - Paketlerde hesaplar nasıl sayılır?
-        - 'Tüm uygulamalar birlikte sayılır: Starter 5 hesap, Pro 15, Business sınırsız — uygulamaları dilediğiniz gibi karıştırın.'
+        - 'Uygulama başına: Starter her uygulamadan 5 hesap, Pro her uygulamadan 15, Business sınırsız — örneğin Starter ile 5 WhatsApp + 5 Telegram + 5 Instagram.'
       - - Sesli mesajlar ve fotoğraflar her uygulamada çevriliyor mu?
         - Sesli mesajlar ve fotoğraflardaki metin WhatsApp ve Telegram'da çevrilir. Messenger, Instagram ve Discord'da metin mesajları iki yönlü çevrilir.
       - - Resmi WhatsApp, Telegram, Messenger, Instagram ve Discord mu?

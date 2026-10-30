@@ -58,7 +58,7 @@ ui:
     note: "Estimate: 22 working days a month, 8-hour days. GlotChat translates as messages arrive, so this time goes back to selling."
     cta: "Get these hours back — try it free"
   finder:
-    q: "How many accounts do you use (all apps together)?"
+    q: "How many accounts do you use in one app (your busiest one)?"
     a: "Best for you:"
     btn: "Try it free for 3 days"
   plans:
@@ -69,7 +69,7 @@ ui:
   for_you: "Recommended for you"
   per_year: "/ year"
   per_month: "USDT / month"
-  up_to_accounts: "Up to <b>{n}</b> accounts"
+  up_to_accounts: "Up to <b>{n}</b> accounts per app"
   unlimited_accounts: "<b>Unlimited</b> accounts"
   plan_f:
     apps: "WhatsApp, Telegram, Messenger, Instagram, Discord"
@@ -118,7 +118,7 @@ ui:
     demo: "Hi! Can you show me GlotChat in a live demo?"
     trial: "Hi! I'd like to try GlotChat. I use about __ accounts (WhatsApp / Telegram / Messenger / Instagram / Discord)."
     usecase: "Hi! I'd like to try GlotChat. My business: __ · My customers speak: __"
-    finder: "Hi! I use {n} accounts. Is GlotChat {plan} right for me?"
+    finder: "Hi! I use {n} accounts in one app. Is GlotChat {plan} right for me?"
     planTrial: "Hi! I'd like to try the GlotChat {plan} plan first."
     plan: "Hi! I want the GlotChat {plan} plan ({price} USDT / year). How can I pay?"
     custom: "Hi! I need a custom GlotChat offer: __ computers, __ accounts (lifetime license?)."
@@ -440,7 +440,7 @@ pages:
         soft: false
         k: "Plans"
         h: "Pick by how many accounts you use"
-        p: "WhatsApp and Telegram accounts count together. Not sure? Answer one question and we'll point you to the right plan."
+        p: "Accounts count per app: Starter gives you 5 WhatsApp, 5 Telegram, 5 Instagram and so on. Not sure? Answer one question and we'll point you to the right plan."
       - type: buying
         soft: true
         k: "How buying works"
@@ -457,7 +457,7 @@ pages:
         hl: 2
         cols: ["", "Starter", "Pro", "Business"]
         rows:
-          - ["Accounts (all apps together)", "Up to 5", "Up to 15", "Unlimited"]
+          - ["Accounts per app", "Up to 5", "Up to 15", "Unlimited"]
           - ["Computers", "1", "1", "Up to 3"]
           - ["WhatsApp & WhatsApp Business", "✓", "✓", "✓"]
           - ["Telegram", "✓", "✓", "✓"]
@@ -482,7 +482,7 @@ pages:
         items:
           - ["How does the free trial work?", "Download and install GlotChat, then click “Start my free 3-day trial” in the app. Your 3-day trial starts at once with every feature unlocked. No payment details are needed, and there is one free trial per computer."]
           - ["How do I pay?", "In USDT on TRC20, BEP20 or ERC20. We send you the payment address on Telegram, and your yearly key as soon as the payment arrives."]
-          - ["Do Telegram accounts count separately?", "No. All accounts count together: a Pro plan with 15 accounts can be 10 WhatsApp numbers and 5 Telegram logins, for example."]
+          - ["Do Telegram accounts count separately?", "Yes. Every app has its own limit: Pro gives you up to 15 WhatsApp numbers and 15 Telegram accounts — plus 15 Messenger, 15 Instagram and 15 Discord accounts."]
           - ["What happens after one year?", "You renew at the same price and keep working without interruption. Your accounts, chats and settings stay on your PC the whole time."]
           - ["Can I upgrade or add computers?", "Yes, at any time. You only pay the difference for the rest of your year. For more computers or a lifetime license, ask for a custom offer."]
           - ["Do I get updates?", "Yes. All updates released during your year are included and install automatically."]
@@ -740,7 +740,7 @@ pages:
         k: "FAQ"
         h: "Multiple Telegram accounts — questions"
         items:
-          - ["How many Telegram accounts can I use on one PC?", "In GlotChat, as many as your plan includes — Starter 5, Pro 15, Business unlimited (WhatsApp and Telegram accounts count together). Memory is the practical limit: about 300–450 MB per account."]
+          - ["How many Telegram accounts can I use on one PC?", "In GlotChat, as many as your plan includes — Starter 5, Pro 15, Business unlimited (per app, so your WhatsApp numbers don't use them up). Memory is the practical limit: about 300–450 MB per account."]
           - ["How do I add a Telegram account?", "Click Add account, choose Telegram, then scan the QR code with your phone (Telegram → Settings → Devices → Add device) or log in with your phone number."]
           - ["Is it allowed by Telegram?", "Yes. GlotChat opens the official Telegram Web for each account, exactly like logging in from a browser. Follow Telegram's rules — no spam or bulk unsolicited messages."]
           - ["Can I use Telegram and WhatsApp together?", "Yes. Both appear on the left of the same window; switch between apps and accounts with one click."]
@@ -810,7 +810,7 @@ pages:
         items:
           - ["Which apps does GlotChat support?", "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct and Discord. All of them are included in every plan."]
           - ["Can I add several accounts of the same app?", "Yes. Add as many accounts as your plan allows — for example 3 WhatsApp numbers, 2 Telegram accounts and 2 Instagram accounts. Each one is isolated."]
-          - ["How are accounts counted in the plans?", "All apps count together: Starter includes 5 accounts, Pro 15 and Business unlimited — mix the apps any way you like."]
+          - ["How are accounts counted in the plans?", "Per app: Starter includes 5 accounts of each app, Pro 15 of each and Business unlimited — for example 5 WhatsApp + 5 Telegram + 5 Instagram on Starter."]
           - ["Are voice notes and photos translated in every app?", "Voice notes and text in photos are translated on WhatsApp and Telegram. On Messenger, Instagram and Discord, text messages are translated both ways."]
           - ["Is it the official WhatsApp, Telegram, Messenger, Instagram and Discord?", "Yes. GlotChat opens each app's official website in its own isolated session — like a browser, just organised and translated. It never sends anything by itself."]
           - ["Does it work on Mac or phone?", "GlotChat is a Windows 10 / 11 desktop app. Your phones keep working normally."]
@@ -1163,7 +1163,7 @@ pages:
         h: "Exporter questions"
         items:
           - ["Can we write in Chinese and have buyers receive Arabic or Spanish?", "Yes. Write in Chinese; buyers receive their language, and you see what they'll read in Chinese before sending. The GlotChat interface is available in Chinese too."]
-          - ["How many sales accounts can we run?", "Pro covers up to 15 accounts, Business is unlimited. We've tested 27 accounts running at the same time on one PC."]
+          - ["How many sales accounts can we run?", "Pro covers up to 15 accounts per app, Business is unlimited. We've tested 27 accounts running at the same time on one PC."]
           - ["Can we pay in USDT?", "Yes — all plans are paid in USDT (TRC20, BEP20 or ERC20)."]
       - type: related
         k: "More"

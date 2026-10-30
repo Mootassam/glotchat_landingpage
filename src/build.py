@@ -506,7 +506,7 @@ def write_llms(en, available):
              f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 3-day trial\"), one trial per computer",
              f"- Download (Windows installer, version {cfg.DOWNLOAD['version']}, {cfg.DOWNLOAD['size_mb']} MB): {cfg.DOWNLOAD['url']} — install guide: {S}{path_of('en', 'download')}",
              "- Prices (per year, paid in USDT " + cfg.PAY_NETWORKS + "): " + ", ".join(
-                 f"{p['id']} {p['price']} USDT ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),
+                 f"{p['id']} {p['price']} USDT ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts per app, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),
              f"- Contact / purchase: Telegram https://t.me/{cfg.TELEGRAM_USER}",
              f"- Website languages: " + ", ".join(cfg.LANGS[l]["name"] for l in available["home"]), "",
              "## Pages", ""]

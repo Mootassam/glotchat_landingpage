@@ -12,7 +12,7 @@ GlotChat is a Windows desktop app — an all-in-one messenger for business. It o
 - Translation: 49 languages, offline on the user's PC; voice notes recognised in about 100 languages
 - Free trial: 3 days, every feature, no payment — starts with one click in the app ("Start my free 3-day trial"), one trial per computer
 - Download (Windows installer, version 1.2.5, 381 MB): https://download.glotchat.com/GlotChat-Setup-1.2.5.exe — install guide: https://www.glotchat.com/download/
-- Prices (per year, paid in USDT TRC20 · BEP20 · ERC20): Starter 69 USDT (up to 5 accounts, 1 PC), Pro 129 USDT (up to 15 accounts, 1 PC), Business 249 USDT (unlimited accounts, 3 PCs)
+- Prices (per year, paid in USDT TRC20 · BEP20 · ERC20): Starter 69 USDT (up to 5 accounts per app, 1 PC), Pro 129 USDT (up to 15 accounts per app, 1 PC), Business 249 USDT (unlimited accounts per app, 3 PCs)
 - Contact / purchase: Telegram https://t.me/GlotChat
 - Website languages: English, 简体中文, 繁體中文, العربية, Türkçe, Español, Português, Русский
 

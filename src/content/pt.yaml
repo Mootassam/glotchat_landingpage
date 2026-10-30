@@ -62,7 +62,7 @@ ui:
     note: 'Estimativa: 22 dias úteis por mês, jornada de 8 horas. O GlotChat traduz as mensagens assim que chegam, então esse tempo volta para as vendas.'
     cta: Recupere essas horas — teste grátis
   finder:
-    q: Quantas contas você usa (todos os apps juntos)?
+    q: Quantas contas você usa em um só app (o que você mais usa)?
     a: 'Melhor para você:'
     btn: Teste grátis por 3 dias
   plans:
@@ -82,7 +82,7 @@ ui:
   for_you: Recomendado para você
   per_year: / ano
   per_month: USDT / mês
-  up_to_accounts: Até <b>{n}</b> contas
+  up_to_accounts: Até <b>{n}</b> contas por app
   unlimited_accounts: Contas <b>ilimitadas</b>
   plan_f:
     translate: Tradução de texto, áudio e fotos
@@ -149,7 +149,7 @@ ui:
     demo: Olá! Vocês podem me mostrar o GlotChat numa demonstração ao vivo?
     trial: Olá! Quero testar o GlotChat. Uso umas __ contas (WhatsApp / Telegram / Messenger / Instagram / Discord).
     usecase: 'Olá! Quero testar o GlotChat. Meu negócio: __ · Meus clientes falam: __'
-    finder: Olá! Uso {n} contas. O GlotChat {plan} é para mim?
+    finder: Olá! Uso {n} contas em um app. O GlotChat {plan} é para mim?
     planTrial: Olá! Quero testar primeiro o plano {plan} do GlotChat.
     plan: Olá! Quero o plano {plan} do GlotChat ({price} USDT / ano). Como pago?
     custom: 'Olá! Preciso de uma oferta personalizada do GlotChat: __ computadores, __ contas (licença vitalícia?).'
@@ -513,7 +513,7 @@ pages:
       soft: false
       k: Planos
       h: Escolha pela quantidade de contas que você usa
-      p: Contas de WhatsApp e Telegram contam juntas. Na dúvida? Responda uma pergunta e indicamos o plano certo.
+      p: "As contas são contadas por app: com o Starter você tem 5 de WhatsApp, 5 de Telegram, 5 de Instagram etc. Na dúvida? Responda uma pergunta e indicamos o plano certo."
     - type: buying
       soft: true
       k: Como comprar
@@ -537,7 +537,7 @@ pages:
       - Pro
       - Business
       rows:
-      - - Contas (todos os apps juntos)
+      - - Contas por app
         - Até 5
         - Até 15
         - Ilimitadas
@@ -607,7 +607,7 @@ pages:
       - - Como pago?
         - Em USDT na rede TRC20, BEP20 ou ERC20. Enviamos o endereço de pagamento pelo Telegram e sua chave anual assim que o pagamento chega.
       - - As contas de Telegram contam separado?
-        - 'Não. Todas as contas contam juntas: um plano Pro de 15 contas pode ser, por exemplo, 10 números de WhatsApp e 5 contas de Telegram.'
+        - 'Sim. Cada app tem o seu próprio limite: com o Pro você tem até 15 números de WhatsApp e 15 contas de Telegram — além de 15 de Messenger, 15 de Instagram e 15 de Discord.'
       - - O que acontece depois de um ano?
         - Você renova pelo mesmo preço e continua sem interrupção. Suas contas, conversas e configurações ficam no seu PC o tempo todo.
       - - Posso fazer upgrade ou adicionar computadores?
@@ -1666,7 +1666,7 @@ pages:
       h: Várias contas de Telegram — dúvidas
       items:
       - - Quantas contas de Telegram posso usar num PC?
-        - 'No GlotChat, quantas o seu plano incluir — Starter 5, Pro 15, Business ilimitadas (contas de WhatsApp e Telegram contam juntas). O limite prático é a memória: cerca de 300–450 MB por conta.'
+        - 'No GlotChat, quantas o seu plano incluir — Starter 5, Pro 15, Business ilimitadas (por app, então seus números de WhatsApp não as consomem). O limite prático é a memória: cerca de 300–450 MB por conta.'
       - - Como adiciono uma conta de Telegram?
         - Clique em Adicionar conta, escolha Telegram e leia o QR code com o celular (Telegram → Configurações → Dispositivos → Conectar dispositivo), ou entre com seu número de telefone.
       - - O Telegram permite isso?
@@ -1817,7 +1817,7 @@ pages:
       - - Posso adicionar várias contas do mesmo app?
         - Sim. Adicione quantas contas seu plano permitir — por exemplo 3 números de WhatsApp, 2 contas de Telegram e 2 de Instagram. Cada uma fica isolada.
       - - Como as contas são contadas nos planos?
-        - 'Todos os apps contam juntos: o Starter inclui 5 contas, o Pro 15 e o Business ilimitadas — combine os apps como quiser.'
+        - 'Por app: o Starter inclui 5 contas de cada app, o Pro 15 de cada um e o Business ilimitadas — por exemplo 5 WhatsApp + 5 Telegram + 5 Instagram no Starter.'
       - - Áudios e fotos são traduzidos em todos os apps?
         - Áudios e texto de fotos são traduzidos no WhatsApp e no Telegram. No Messenger, Instagram e Discord, as mensagens de texto são traduzidas nos dois sentidos.
       - - É o WhatsApp, Telegram, Messenger, Instagram e Discord oficial?
