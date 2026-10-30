@@ -72,7 +72,7 @@ ui:
   up_to_accounts: "Up to <b>{n}</b> accounts per app"
   unlimited_accounts: "<b>Unlimited</b> accounts"
   plan_f:
-    apps: "WhatsApp, Telegram, Messenger, Instagram, Discord"
+    apps: "WhatsApp, Telegram, Messenger, Instagram, Discord, BAND"
     translate: "Text, voice & photo translation"
     templates: "Quick replies · EN / 中文 interface"
     updates: "All updates included"
@@ -462,6 +462,7 @@ pages:
           - ["WhatsApp & WhatsApp Business", "✓", "✓", "✓"]
           - ["Telegram", "✓", "✓", "✓"]
           - ["Messenger, Instagram & Discord", "✓", "✓", "✓"]
+          - ["BAND (Beta)", "✓", "✓", "✓"]
           - ["Two-way chat translation (49 languages)", "✓", "✓", "✓"]
           - ["“They will read” check + number check", "✓", "✓", "✓"]
           - ["Voice notes → text (~100 languages)", "✓", "✓", "✓"]

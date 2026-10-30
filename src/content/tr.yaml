@@ -88,7 +88,7 @@ ui:
     translate: Metin, ses ve fotoğraf çevirisi
     templates: Hızlı yanıtlar · EN / 中文 arayüz
     updates: Tüm güncellemeler dahil
-    apps: WhatsApp, Telegram, Messenger, Instagram, Discord
+    apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
   buy: '{plan} paketini Telegram''dan alın'
   try: veya 3 gün ücretsiz deneyin
   custom_html: <b>Daha fazla bilgisayar, ekip kurulumu veya ömür boyu lisans mı lazım?</b> İhtiyacınızı yazın — size özel teklif hazırlayalım.
@@ -554,6 +554,10 @@ pages:
         - ✓
         - ✓
       - - Messenger, Instagram ve Discord
+        - ✓
+        - ✓
+        - ✓
+      - - BAND (Beta)
         - ✓
         - ✓
         - ✓

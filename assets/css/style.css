@@ -126,14 +126,15 @@ h1 { font-size: clamp(36px, 6.2vw, 66px); font-weight: 800; letter-spacing: -.03
 .micro li::before { content: ""; width: 16px; height: 16px; border-radius: 50%; flex: none;
   background: rgba(15, 181, 126, .14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 12 4 4 8-8' fill='none' stroke='%230a9467' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/11px no-repeat; }
 
-/* app badges */
-.apps-row { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 26px 0 0; }
-.hero .apps-row { margin-top: 10px; }
-.app { display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px 0 9px; border-radius: 99px; background: #fff; border: 1px solid var(--line); font-size: 13.5px; font-weight: 650; color: var(--text); box-shadow: var(--shadow-s); }
-.app .ai { width: 17px; height: 17px; }
-.app a { display: inline-flex; align-items: center; gap: 7px; height: 100%; color: inherit; text-decoration: none; }
-.app:hover { border-color: var(--brand); }
-.app.wa .ai, .app.wab .ai { color: #1faa59; } .app.tgc .ai { color: var(--tg); } .app.ms .ai { color: #0a7cff; } .app.ig .ai { color: #e1306c; } .app.dc .ai { color: #5865f2; }
+/* app logos: every app GlotChat runs, real logos */
+.apps-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; list-style: none; padding: 0; margin: 26px 0 0; }
+.hero .apps-row { margin-top: 26px; }
+.app a, .app .a { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 64px; color: var(--text); text-decoration: none; font-size: 13.5px; font-weight: 650; }
+.app .logo { width: 50px; height: 50px; border-radius: 50%; display: block; background: #fff;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, .06), 0 6px 16px -6px rgba(15, 23, 42, .28); transition: transform .18s ease, box-shadow .18s ease; }
+.app a:hover .logo { transform: translateY(-3px); box-shadow: 0 0 0 1px rgba(15, 23, 42, .06), 0 12px 22px -8px rgba(15, 23, 42, .35); }
+.app a:hover span { color: var(--brand-d, var(--brand)); }
+.app em { position: absolute; top: -7px; left: 50%; margin-left: 10px; font-size: 9.5px !important; padding: 1px 6px !important; box-shadow: 0 0 0 2px #fff; }
 .app em, .betatag, .appchip em { font-style: normal; font-size: 10.5px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; padding: 2px 7px; border-radius: 99px; background: #f1edff; color: #5b43e0; }
 
 /* ---------------------------------------------------------------- home hero */
@@ -644,7 +645,8 @@ details p { color: var(--text2); padding: 0 0 20px; }
   .hero { padding: 32px 0 30px; }
   .hero .eyebrow { font-size: 12.5px; }
   .hero h1 { margin: 16px 0 12px; }
-  .apps-row { gap: 6px; } .app { height: 31px; font-size: 12.5px; }
+  .apps-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; width: 100%; max-width: 420px; margin-inline: auto; }
+  .app a, .app .a { min-width: 0; gap: 6px; font-size: 11.5px; } .app .logo { width: 42px; height: 42px; } .app em { left: auto; right: -2px; margin-left: 0; }
   .player { margin-top: 26px; }
   .cap { font-size: 15.5px; text-align: start; }
   .player.full .stagewrap { width: min(100%, calc((100vh - 190px) * .8)); }

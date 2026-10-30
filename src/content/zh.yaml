@@ -88,7 +88,7 @@ ui:
     translate: 文字、语音和图片翻译
     templates: 快捷回复 · 中英文界面
     updates: 包含所有更新
-    apps: WhatsApp、Telegram、Messenger、Instagram、Discord
+    apps: WhatsApp、Telegram、Messenger、Instagram、Discord、BAND
   buy: 在 Telegram 购买{plan}
   try: 或先免费试用 3 天
   custom_html: <b>需要更多电脑、团队部署或终身授权？</b>告诉我们你的需求，我们为你定制报价。
@@ -555,6 +555,10 @@ pages:
         - ✓
         - ✓
       - - Messenger、Instagram 和 Discord
+        - ✓
+        - ✓
+        - ✓
+      - - BAND (测试版)
         - ✓
         - ✓
         - ✓

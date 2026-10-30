@@ -88,7 +88,7 @@ ui:
     translate: Traducción de texto, voz y fotos
     templates: Respuestas rápidas · interfaz EN / 中文
     updates: Todas las actualizaciones incluidas
-    apps: WhatsApp, Telegram, Messenger, Instagram, Discord
+    apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
   buy: Comprar {plan} por Telegram
   try: o pruébalo gratis 3 días
   custom_html: <b>¿Necesitas más computadoras, un equipo o una licencia de por vida?</b> Cuéntanos qué necesitas — te hacemos una oferta.
@@ -554,6 +554,10 @@ pages:
         - ✓
         - ✓
       - - Messenger, Instagram y Discord
+        - ✓
+        - ✓
+        - ✓
+      - - BAND (Beta)
         - ✓
         - ✓
         - ✓
