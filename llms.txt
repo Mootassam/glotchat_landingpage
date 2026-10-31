@@ -1,6 +1,6 @@
 # GlotChat
 
-> All-in-one messenger for Windows that runs many WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent.
+> All-in-one messenger for Windows that runs many WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent.
 
 GlotChat is a Windows desktop app — an all-in-one messenger for business. It opens the official websites of WhatsApp, Telegram, Facebook Messenger, Instagram and Discord for each account in its own isolated session, several accounts per app, and adds offline two-way translation of messages in every app (plus voice notes and text in photos on WhatsApp and Telegram). Before a reply is sent, it shows the translation translated back into the writer's language and checks that prices, numbers and links are unchanged. It is an independent product, not affiliated with WhatsApp, Meta, Telegram or Discord.
 
@@ -18,13 +18,13 @@ GlotChat is a Windows desktop app — an all-in-one messenger for business. It o
 
 ## Pages
 
-- [Home](https://www.glotchat.com/): All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram & Discord accounts in one window, every chat translated into 49 languages. 3 days free.
+- [Home](https://www.glotchat.com/): All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND accounts in one window, every chat translated into 49 languages. 3 days free.
 - [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter 69, Pro 129, Business 249 USDT a year. WhatsApp, Telegram and every feature included, free 3-day trial, pay in USDT.
 - [WhatsApp translator](https://www.glotchat.com/whatsapp-translator/): Translate WhatsApp chats both ways on your PC: messages, voice notes and text in photos, in 49 languages, offline — with a check before you send. Free trial.
 - [Telegram translator](https://www.glotchat.com/telegram-translator/): Translate Telegram chats both ways on Windows: incoming messages under the original, your replies before you send. 49 languages, offline. Free 3-day trial.
 - [Multiple WhatsApp accounts](https://www.glotchat.com/multiple-whatsapp-accounts/): Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, a proxy per account, notifications per account, built-in translation.
 - [Multiple Telegram accounts](https://www.glotchat.com/multiple-telegram-accounts/): Use many Telegram accounts at once on Windows — each isolated, with its own notifications and proxy, plus built-in translation. Beyond Telegram's 3-account limit.
-- [All-in-one messenger](https://www.glotchat.com/all-in-one-messenger/): WhatsApp, Telegram, Messenger, Instagram and Discord in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial.
+- [All-in-one messenger](https://www.glotchat.com/all-in-one-messenger/): WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial.
 - [Messenger translator](https://www.glotchat.com/messenger-translator/): Translate Facebook Messenger chats both ways on Windows and keep several Messenger accounts open side by side. 49 languages, offline. Free 3-day trial.
 - [Instagram DM translator](https://www.glotchat.com/instagram-dm-translator/): Translate Instagram Direct messages both ways on Windows and keep several Instagram accounts open side by side. 49 languages, offline. Free 3-day trial.
 - [Discord translator](https://www.glotchat.com/discord-translator/): Translate Discord messages in servers and DMs on Windows, and keep several Discord accounts open side by side. 49 languages, offline. Free 3-day trial.

@@ -25,7 +25,7 @@ ui:
     tg_accounts_s: Все аккаунты Telegram рядом
     more_apps: Другие приложения
     all_in_one: Все мессенджеры в одном
-    all_in_one_s: 5 приложений в одном окне, всё с переводом
+    all_in_one_s: 6 приложений в одном окне, всё с переводом
     ms: Переводчик для Messenger
     ms_s: Чаты Facebook на любом языке
     ig: Переводчик для Instagram Direct
@@ -96,7 +96,7 @@ ui:
   paynote: Оплата в USDT (TRC20 · BEP20 · ERC20). Есть вопросы до покупки? Спросите — в Telegram отвечает живой человек.
   final:
     h: Ваш следующий иностранный клиент уже печатает.
-    p: Скачайте GlotChat, нажмите «Начать бесплатный период на 3 дня» и добавьте аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord. Хотите сначала поговорить? Напишите нам — покажем GlotChat вживую или ответим на любой вопрос.
+    p: Скачайте GlotChat, нажмите «Начать бесплатный период на 3 дня» и добавьте аккаунты WhatsApp, Telegram, Messenger, Instagram, Discord и BAND. Хотите сначала поговорить? Напишите нам — покажем GlotChat вживую или ответим на любой вопрос.
     k: 3 дня бесплатно
     tg: Написать в Telegram
     points:
@@ -118,21 +118,21 @@ ui:
     'no': Нет, спасибо
     tg: Или задайте нам вопрос
   footer:
-    tagline: WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый клиент — на своём языке. Для бизнеса, который продаёт за рубеж.
+    tagline: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне, каждый клиент — на своём языке. Для бизнеса, который продаёт за рубеж.
     product: Продукт
     resources: Материалы
     privacy: Политика конфиденциальности (англ.)
     terms: Условия использования (англ.)
-    trademark: WhatsApp, Telegram, Messenger, Instagram и Discord — товарные знаки их владельцев. GlotChat — независимый продукт и не связан с ними, не одобрен и не спонсируется ими.
+    trademark: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND — товарные знаки их владельцев. GlotChat — независимый продукт и не связан с ними, не одобрен и не спонсируется ими.
   og_kicker: "Мессенджер «всё в одном» с переводом для ПК"
   og_sub: Текст, голосовые и фото переводятся офлайн на вашем ПК.
   og_chips:
-  - 5 приложений, одно окно
+  - 6 приложений, одно окно
   - 49 языков
   - 3 дня бесплатно
-  app_description: "Мессенджер «всё в одном» для Windows, который объединяет много аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне — каждый изолирован, со своими уведомлениями и прокси — и переводит чаты без интернета на 49 языков (а в WhatsApp и Telegram ещё голосовые и фото), проверяя каждый перевод перед отправкой."
+  app_description: "Мессенджер «всё в одном» для Windows, который объединяет много аккаунтов WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне — каждый изолирован, со своими уведомлениями и прокси — и переводит чаты без интернета на 49 языков (а в WhatsApp и Telegram ещё голосовые и фото), проверяя каждый перевод перед отправкой."
   feature_list:
-  - Несколько аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне
+  - Несколько аккаунтов WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне
   - Изолированная сессия и прокси для каждого аккаунта
   - Уведомления по аккаунтам
   - Перевод переписки в обе стороны на 49 языках
@@ -145,9 +145,9 @@ ui:
   - Перевод без интернета на вашем ПК
   - Интерфейс на английском и китайском
   msg:
-    general: Здравствуйте! Интересует GlotChat (WhatsApp, Telegram, Messenger, Instagram и Discord + перевод). Расскажете подробнее?
+    general: Здравствуйте! Интересует GlotChat (WhatsApp, Telegram, Messenger, Instagram, Discord и BAND + перевод). Расскажете подробнее?
     demo: Здравствуйте! Можете показать GlotChat вживую?
-    trial: Здравствуйте! Хочу попробовать GlotChat. У меня примерно __ аккаунтов (WhatsApp / Telegram / Messenger / Instagram / Discord).
+    trial: Здравствуйте! Хочу попробовать GlotChat. У меня примерно __ аккаунтов (WhatsApp / Telegram / Messenger / Instagram / Discord / BAND).
     usecase: 'Здравствуйте! Хочу попробовать GlotChat. Мой бизнес: __ · Язык клиентов: __'
     finder: Здравствуйте! У меня {n} аккаунтов в одном приложении. Подойдёт ли мне GlotChat {plan}?
     planTrial: Здравствуйте! Хочу сначала попробовать тариф GlotChat {plan}.
@@ -161,7 +161,7 @@ ui:
     os_short: Windows 10 и 11 (64-бит)
     no_admin: Без прав администратора
     alt_html: 'Не получается скачать? Пришлём файл в Telegram:'
-    card_sub: Переводчик для WhatsApp, Telegram, Messenger, Instagram и Discord на ПК
+    card_sub: Переводчик для WhatsApp, Telegram, Messenger, Instagram, Discord и BAND на ПК
     sha: Контрольная сумма SHA-256
     copy_sha: Копировать сумму
     phone_h: Вы с телефона?
@@ -192,9 +192,9 @@ ui:
 pages:
   home:
     title: "GlotChat – мессенджер «всё в одном» с переводом для ПК"
-    description: "Мессенджер «всё в одном» для ПК: аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый чат переводится на 49 языков. 3 дня бесплатно."
+    description: "Мессенджер «всё в одном» для ПК: аккаунты WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне, перевод чатов на 49 языков. 3 дня бесплатно."
     keywords: "мессенджер все в одном, все мессенджеры в одном приложении, all in one messenger, GlotChat, переводчик whatsapp, переводчик telegram, несколько аккаунтов whatsapp на пк, мультиаккаунт telegram, переводчик messenger, перевод instagram direct, переводчик discord, все мессенджеры в одном"
-    og_title: "GlotChat – мессенджер «всё в одном»: WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый чат переведён"
+    og_title: "GlotChat – мессенджер «всё в одном»: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне, каждый чат переведён"
     og_heading: "Мессенджер «всё в одном». Все приложения, все аккаунты, все языки."
     short: Главная
     icon: 🏠
@@ -202,17 +202,17 @@ pages:
     - type: hero_home
       eyebrow: "Новое в 1.4 — перевод DeepL и фото профиля во всех приложениях"
       h1: "GlotChat — мессенджер «всё в одном». <span class=\"grad\">Все приложения. Любой язык.</span>"
-      lead: "WhatsApp, Telegram, Messenger, Instagram и Discord — сколько угодно аккаунтов в каждом — в одном окне на вашем ПК. Читайте каждого клиента по-русски и отвечайте на его языке, точно зная, что он прочитает."
+      lead: "WhatsApp, Telegram, Messenger, Instagram, Discord и BAND — сколько угодно аккаунтов в каждом — в одном окне на вашем ПК. Читайте каждого клиента по-русски и отвечайте на его языке, точно зная, что он прочитает."
       micro:
       - 3 дня бесплатно — без карты и оплаты
       - В Telegram отвечает живой человек
       - От 69 USDT в год
-      media_alt: "GlotChat, мессенджер «всё в одном»: аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, чаты переведены"
+      media_alt: "GlotChat, мессенджер «всё в одном»: аккаунты WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне, чаты переведены"
       chapters:
       - id: apps
         icon: 🧩
         label: Все приложения
-        cap: WhatsApp, Telegram, Messenger, Instagram и Discord рядом — в один клик, каждый чат переведён.
+        cap: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND рядом — в один клик, каждый чат переведён.
       - id: accounts
         icon: 👥
         label: Аккаунты
@@ -237,7 +237,7 @@ pages:
       label: Главное
       items:
       - - '5'
-        - 'мессенджеров: WhatsApp, Telegram, Messenger, Instagram, Discord'
+        - 'мессенджеров: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND'
       - - 27+
         - аккаунтов одновременно (проверено)
       - - '49'
@@ -247,7 +247,7 @@ pages:
     - type: apps
       id: apps
       k: Одно приложение для всех чатов
-      h: Ваши клиенты в WhatsApp, Telegram, Messenger, Instagram <em>и</em> Discord. Теперь и вы — в одном месте.
+      h: Ваши клиенты в WhatsApp, Telegram, Messenger, Instagram, Discord <em>и</em> BAND. Теперь и вы — в одном месте.
       p: 'Каждый аккаунт работает в своём закрытом пространстве: свой вход, свои уведомления и, если нужно, свой прокси.'
       items:
       - icon: wa
@@ -280,7 +280,7 @@ pages:
         p: 'Серверы и личные сообщения нескольких аккаунтов Discord: переводится каждое сообщение — и то, что пишете вы.'
         link: discord-translator
         more: Переводчик для Discord
-      note: Все пять приложений входят в каждый тариф. Текстовые сообщения переводятся везде; голосовые и фото — в WhatsApp и Telegram.
+      note: Все шесть приложений входят в каждый тариф. Текстовые сообщения переводятся везде; голосовые и фото — в WhatsApp и Telegram.
       link:
       - all-in-one-messenger
       - Что GlotChat умеет в каждом приложении
@@ -446,7 +446,7 @@ pages:
       - Переписка клиентов уходит в онлайн-переводчики
       good_h: С GlotChat
       good:
-      - WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне
+      - WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне
       - Перевод сам появляется под каждым сообщением
       - Вы видите, что прочитает клиент, до отправки
       - Голосовые превращаются в текст на вашем языке
@@ -475,9 +475,9 @@ pages:
       - - Есть бесплатный период?
         - Да. Скачайте GlotChat, откройте и нажмите «Начать бесплатный период на 3 дня» — все функции открываются сразу, без оплаты. Если понравится, покупаете тариф, и все аккаунты и настройки сохраняются.
       - - С какими приложениями работает?
-        - WhatsApp и WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct и Discord — по несколько аккаунтов каждого, в одном окне. Чаты переводятся в обе стороны во всех приложениях; голосовые и фото — в WhatsApp и Telegram.
+        - WhatsApp и WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord и BAND — по несколько аккаунтов каждого, в одном окне. Чаты переводятся в обе стороны во всех приложениях; голосовые и фото — в WhatsApp и Telegram.
       - - Это безопасно для моих аккаунтов?
-        - 'GlotChat открывает официальный сайт каждого приложения (WhatsApp Web, Telegram Web, Messenger, Instagram, Discord) для каждого аккаунта в отдельной изолированной сессии — как браузер, только упорядоченно. Он ничего не отправляет сам: всё отправляете вы. Как и в любом мессенджере, избегайте спама и массовых рассылок.'
+        - 'GlotChat открывает официальный сайт каждого приложения (WhatsApp Web, Telegram Web, Messenger, Instagram, Discord, BAND) для каждого аккаунта в отдельной изолированной сессии — как браузер, только упорядоченно. Он ничего не отправляет сам: всё отправляете вы. Как и в любом мессенджере, избегайте спама и массовых рассылок.'
       - - Насколько хорош перевод?
         - 'Отлично подходит для повседневной деловой переписки — цены, заказы, встречи, вопросы. И гадать не нужно: перед отправкой GlotChat показывает, что прочитает клиент, проверяет каждое число и предлагает другие варианты. Договоры и медицинские тексты пусть проверит специалист.'
       - - Нужен ли интернет для перевода?
@@ -1686,19 +1686,19 @@ pages:
       - pricing
   all-in-one-messenger:
     title: Все мессенджеры в одном окне на ПК с переводом | GlotChat
-    description: WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне Windows. Несколько аккаунтов в каждом приложении, все изолированы, каждый чат переведён.
+    description: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в одном окне Windows. Несколько аккаунтов в каждом приложении, все изолированы, каждый чат переведён.
     keywords: все мессенджеры в одном, программа для всех мессенджеров, мессенджеры в одном окне, управление несколькими аккаунтами соцсетей, whatsapp telegram messenger в одном окне
     short: Все мессенджеры в одном
     icon: 🧩
-    og_heading: WhatsApp, Telegram, Messenger, Instagram и Discord — одно окно
+    og_heading: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND — одно окно
     og_sub: Каждый чат переводится без интернета на вашем ПК — с проверкой перед отправкой.
     blocks:
     - type: hero
       k: Все мессенджеры в одном на ПК
       h1: Все приложения и все аккаунты — <span class="grad">в одном окне, на вашем языке</span>
-      lead: WhatsApp, Telegram, Messenger, Instagram и Discord рядом на одном ПК. Добавьте по несколько аккаунтов каждого приложения, переключайтесь в один клик и общайтесь с каждым клиентом на его языке — перевод без интернета, с проверкой перед отправкой.
+      lead: WhatsApp, Telegram, Messenger, Instagram, Discord и BAND рядом на одном ПК. Добавьте по несколько аккаунтов каждого приложения, переключайтесь в один клик и общайтесь с каждым клиентом на его языке — перевод без интернета, с проверкой перед отправкой.
       media: video:apps
-      media_alt: Переключение между WhatsApp, Telegram, Messenger, Instagram и Discord в GlotChat, каждый чат переведён
+      media_alt: Переключение между WhatsApp, Telegram, Messenger, Instagram, Discord и BAND в GlotChat, каждый чат переведён
     - type: facts
       label: Главное
       items:
@@ -1779,7 +1779,7 @@ pages:
       note: В любом приложении можно также выделить любой текст и перевести его в один клик.
     - type: cards
       soft: true
-      k: Одно окно вместо пяти
+      k: Одно окно вместо шести
       h: Хватит переключаться между приложениями, вкладками и телефонами
       items:
       - icon: 🔒
@@ -1790,7 +1790,7 @@ pages:
         p: Счётчик непрочитанных для каждого приложения и аккаунта, а в каждом уведомлении — название аккаунта. Нажмите — откроется нужный чат.
       - icon: 🌐
         h: Каждый чат с переводом
-        p: Входящие переводятся под оригиналом, ваши ответы — перед отправкой. Во всех пяти приложениях.
+        p: Входящие переводятся под оригиналом, ваши ответы — перед отправкой. Во всех шести приложениях.
       - icon: ↩
         h: Проверка перед отправкой
         p: Смотрите, что прочитает клиент, — в обратном переводе на русский. Не нравится? Выберите другую формулировку.
@@ -1805,9 +1805,9 @@ pages:
       h: Добавьте свои приложения за несколько минут
       items:
       - - Добавьте аккаунт
-        - 'Нажмите «Добавить аккаунт» и выберите приложение: WhatsApp, Telegram, Messenger, Instagram или Discord. Укажите название и свой язык.'
+        - 'Нажмите «Добавить аккаунт» и выберите приложение: WhatsApp, Telegram, Messenger, Instagram, Discord или BAND. Укажите название и свой язык.'
       - - Войдите один раз
-        - Отсканируйте QR-код (WhatsApp, Telegram) или войдите с обычным логином и паролем (Messenger, Instagram, Discord). Вход сохраняется.
+        - Отсканируйте QR-код (WhatsApp, Telegram) или войдите с обычным логином и паролем (Messenger, Instagram, Discord, BAND). Вход сохраняется.
       - - Общайтесь на любом языке
         - 'Откройте чат: сообщения уже на русском. Пишите по-русски — клиент читает на своём языке.'
       cta: Скачать и попробовать все приложения бесплатно
@@ -1817,14 +1817,14 @@ pages:
       h: Все мессенджеры в одном — вопросы
       items:
       - - Какие приложения поддерживает GlotChat?
-        - WhatsApp и WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct и Discord. Все они входят в каждый тариф.
+        - WhatsApp и WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord и BAND. Все они входят в каждый тариф.
       - - Можно добавить несколько аккаунтов одного приложения?
         - Да. Добавляйте столько аккаунтов, сколько позволяет тариф — например, 3 номера WhatsApp, 2 аккаунта Telegram и 2 аккаунта Instagram. Каждый изолирован.
       - - Как считаются аккаунты в тарифах?
         - 'По каждому приложению отдельно: в Starter 5 аккаунтов каждого приложения, в Pro по 15, в Business без ограничений — например, 5 WhatsApp + 5 Telegram + 5 Instagram в Starter.'
       - - Голосовые и фото переводятся во всех приложениях?
-        - Голосовые и текст на фото переводятся в WhatsApp и Telegram. В Messenger, Instagram и Discord текстовые сообщения переводятся в обе стороны.
-      - - Это официальные WhatsApp, Telegram, Messenger, Instagram и Discord?
+        - Голосовые и текст на фото переводятся в WhatsApp и Telegram. В Messenger, Instagram, Discord и BAND текстовые сообщения переводятся в обе стороны.
+      - - Это официальные WhatsApp, Telegram, Messenger, Instagram, Discord и BAND?
         - Да. GlotChat открывает официальный сайт каждого приложения в изолированной сессии — как браузер, только упорядоченно и с переводом. Сам он ничего не отправляет.
       - - Работает на Mac или телефоне?
         - GlotChat — программа для Windows 10 / 11. Ваши телефоны продолжают работать как обычно.
@@ -1883,7 +1883,7 @@ pages:
         p: При необходимости задайте каждому аккаунту Messenger свой HTTP- или SOCKS5-прокси.
       - icon: 💬
         h: Все приложения вместе
-        p: WhatsApp, Telegram, Instagram и Discord в том же окне и с тем же переводом.
+        p: WhatsApp, Telegram, Instagram, Discord и BAND в том же окне и с тем же переводом.
         link: all-in-one-messenger
     - type: split
       k: Несколько аккаунтов Messenger

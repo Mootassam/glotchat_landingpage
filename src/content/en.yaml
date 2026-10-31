@@ -22,7 +22,7 @@ ui:
     tg_accounts_s: "All your Telegram logins side by side"
     more_apps: "More apps"
     all_in_one: "All-in-one messenger"
-    all_in_one_s: "5 apps in one window, all translated"
+    all_in_one_s: "6 apps in one window, all translated"
     ms: "Messenger translator"
     ms_s: "Facebook chats in any language"
     ig: "Instagram DM translator"
@@ -84,7 +84,7 @@ ui:
   final:
     k: "Free for 3 days"
     h: "Your next foreign customer is already typing."
-    p: "Download GlotChat, click “Start my free 3-day trial” and add your WhatsApp, Telegram, Messenger, Instagram and Discord accounts. Prefer to talk first? Message us — we'll show you GlotChat on a live call or answer any question."
+    p: "Download GlotChat, click “Start my free 3-day trial” and add your WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts. Prefer to talk first? Message us — we'll show you GlotChat on a live call or answer any question."
     tg: "Message us on Telegram"
     points: ["Every feature unlocked", "No card, no payment", "Setup in 10 minutes", "Your chats stay on your PC"]
   copy_username: "Copy username"
@@ -102,21 +102,21 @@ ui:
     tg: "Or ask us a question"
     "no": "No thanks"
   footer:
-    tagline: "WhatsApp, Telegram, Messenger, Instagram and Discord in one window, every customer in their language. Made for businesses that sell across borders."
+    tagline: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window, every customer in their language. Made for businesses that sell across borders."
     product: "Product"
     resources: "Resources"
     privacy: "Privacy policy"
     terms: "Terms of use"
-    trademark: "WhatsApp, Telegram, Messenger, Instagram and Discord are trademarks of their respective owners. GlotChat is an independent product and is not affiliated with, endorsed or sponsored by any of them."
+    trademark: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND are trademarks of their respective owners. GlotChat is an independent product and is not affiliated with, endorsed or sponsored by any of them."
   og_kicker: "All-in-one messenger with translation for PC"
   og_sub: "Text, voice notes & photos translated offline on your PC."
-  og_chips: ["5 apps, one window", "49 languages", "3-day free trial"]
-  app_description: "All-in-one messenger for Windows that runs many WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent."
-  feature_list: ["Multiple WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window", "Isolated session and optional proxy per account", "Notifications per account", "Two-way chat translation in 49 languages", "Back-translation check before sending", "Prices and numbers checked in every translation", "Voice message transcription and translation with progress", "Text-in-photo translation (OCR)", "Never-translate list for brand names", "Quick-reply templates", "Offline translation on your PC", "English and Chinese interface"]
+  og_chips: ["6 apps, one window", "49 languages", "3-day free trial"]
+  app_description: "All-in-one messenger for Windows that runs many WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts in one window — each isolated, with its own notifications and proxy — and translates chats offline in 49 languages (plus voice notes and photos on WhatsApp and Telegram), with a check of every translation before it is sent."
+  feature_list: ["Multiple WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts in one window", "Isolated session and optional proxy per account", "Notifications per account", "Two-way chat translation in 49 languages", "Back-translation check before sending", "Prices and numbers checked in every translation", "Voice message transcription and translation with progress", "Text-in-photo translation (OCR)", "Never-translate list for brand names", "Quick-reply templates", "Offline translation on your PC", "English and Chinese interface"]
   msg:
-    general: "Hi! I'm interested in GlotChat (WhatsApp, Telegram, Messenger, Instagram & Discord + translation). Can you tell me more?"
+    general: "Hi! I'm interested in GlotChat (WhatsApp, Telegram, Messenger, Instagram, Discord & BAND + translation). Can you tell me more?"
     demo: "Hi! Can you show me GlotChat in a live demo?"
-    trial: "Hi! I'd like to try GlotChat. I use about __ accounts (WhatsApp / Telegram / Messenger / Instagram / Discord)."
+    trial: "Hi! I'd like to try GlotChat. I use about __ accounts (WhatsApp / Telegram / Messenger / Instagram / Discord / BAND)."
     usecase: "Hi! I'd like to try GlotChat. My business: __ · My customers speak: __"
     finder: "Hi! I use {n} accounts in one app. Is GlotChat {plan} right for me?"
     planTrial: "Hi! I'd like to try the GlotChat {plan} plan first."
@@ -132,7 +132,7 @@ ui:
     os_short: Windows 10 & 11 (64-bit)
     no_admin: No admin rights needed
     alt_html: 'Download problem? We send you the file on Telegram:'
-    card_sub: WhatsApp, Telegram, Messenger, Instagram & Discord translator for PC
+    card_sub: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND translator for PC
     sha: SHA-256 checksum
     copy_sha: Copy checksum
     phone_h: "On your phone?"
@@ -160,9 +160,9 @@ pages:
   # ================================================================ HOME
   home:
     title: "GlotChat – All-in-One Messenger with Translation for PC"
-    description: "All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram & Discord accounts in one window, every chat translated into 49 languages. 3 days free."
+    description: "All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND accounts in one window, every chat translated into 49 languages. 3 days free."
     keywords: "all in one messenger, all-in-one messenger for pc, all in one chat app, glotchat, whatsapp translator pc, telegram translator pc, multiple whatsapp accounts, multiple telegram accounts, messenger translator, instagram dm translator, discord translator"
-    og_title: "GlotChat – the all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram & Discord in one window, every chat translated"
+    og_title: "GlotChat – the all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND in one window, every chat translated"
     og_heading: "The all-in-one messenger. Every app, every account, every language."
     short: "Home"
     icon: "🏠"
@@ -170,17 +170,17 @@ pages:
     - type: hero_home
       eyebrow: "New in 1.4 — DeepL translation & profile photos in every app"
       h1: "GlotChat, the all-in-one messenger. <span class=\"grad\">Every app. Every language.</span>"
-      lead: "WhatsApp, Telegram, Messenger, Instagram and Discord — as many accounts of each as you need — in one window on your PC. Read every customer in your language and reply in theirs, knowing exactly what they'll read."
+      lead: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND — as many accounts of each as you need — in one window on your PC. Read every customer in your language and reply in theirs, knowing exactly what they'll read."
       micro:
       - 3 days free — no card, no payment
       - Real person replies on Telegram
       - From 69 USDT / year
-      media_alt: "GlotChat all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram and Discord accounts in one window, chats translated"
+      media_alt: "GlotChat all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts in one window, chats translated"
       chapters:
       - id: apps
         icon: 🧩
         label: All apps
-        cap: WhatsApp, Telegram, Messenger, Instagram and Discord side by side — one click apart, every chat translated.
+        cap: WhatsApp, Telegram, Messenger, Instagram, Discord and BAND side by side — one click apart, every chat translated.
       - id: accounts
         icon: 👥
         label: Add accounts
@@ -205,7 +205,7 @@ pages:
       label: Key facts
       items:
       - - '5'
-        - chat apps: WhatsApp, Telegram, Messenger, Instagram, Discord
+        - chat apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
       - - 27+
         - accounts at once (tested)
       - - '49'
@@ -215,7 +215,7 @@ pages:
     - type: apps
       id: apps
       k: One app for every chat
-      h: Your customers are on WhatsApp, Telegram, Messenger, Instagram <em>and</em> Discord. Now you are too — in one place.
+      h: Your customers are on WhatsApp, Telegram, Messenger, Instagram, Discord <em>and</em> BAND. Now you are too — in one place.
       p: Each account runs in its own sealed space, with its own login, notifications and (if you want) its own proxy.
       items:
       - {icon: wa, cls: wa, name: "WhatsApp & WhatsApp Business", p: "Every number your business uses — scan the QR code once and it stays connected. Chats, voice notes and photos translated.", link: "whatsapp-translator", more: "WhatsApp translator"}
@@ -223,7 +223,7 @@ pages:
       - {icon: ms, cls: ms, name: "Messenger", p: "Several Facebook accounts' Messenger open at once. Every message translated under the original, every reply translated before you send it.", link: "messenger-translator", more: "Messenger translator"}
       - {icon: ig, cls: ig, name: "Instagram Direct", p: "The DMs of every Instagram account you run, side by side. Customers' messages translated; your replies sent in their language.", link: "instagram-dm-translator", more: "Instagram DM translator"}
       - {icon: dc, cls: dc, name: "Discord", p: "Servers and DMs of several Discord accounts, with every message — and what you write — translated.", link: "discord-translator", more: "Discord translator"}
-      note: "All five apps are included in every plan. Text messages are translated in every app; voice notes and photos on WhatsApp and Telegram."
+      note: "All six apps are included in every plan. Text messages are translated in every app; voice notes and photos on WhatsApp and Telegram."
       link: ["all-in-one-messenger", "See what GlotChat does in each app"]
     - type: showcase
       id: features
@@ -373,7 +373,7 @@ pages:
       - Customer chats pasted into online translators
       good_h: With GlotChat
       good:
-      - WhatsApp, Telegram, Messenger, Instagram and Discord in one window
+      - WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window
       - Translation appears under every message automatically
       - You see what the customer will read before you send
       - Voice notes turned into text, in your language
@@ -402,9 +402,9 @@ pages:
       - - Is there a free trial?
         - "Yes. Download GlotChat, open it and click “Start my free 3-day trial” — every feature is unlocked at once, no payment needed. If you like it, you buy a plan and keep all your accounts and settings."
       - - Which apps does it work with?
-        - "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct and Discord — several accounts of each, in one window. Chats are translated both ways in every app; voice notes and photos are translated on WhatsApp and Telegram."
+        - "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord and BAND — several accounts of each, in one window. Chats are translated both ways in every app; voice notes and photos are translated on WhatsApp and Telegram."
       - - Is it safe for my accounts?
-        - 'GlotChat opens the official website of each app (WhatsApp Web, Telegram Web, Messenger, Instagram, Discord) for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you. As with any messenger, avoid spam and bulk unsolicited messages.'
+        - 'GlotChat opens the official website of each app (WhatsApp Web, Telegram Web, Messenger, Instagram, Discord, BAND) for each account, in its own isolated session — exactly like a browser, just organised. It never sends messages by itself: everything is sent by you. As with any messenger, avoid spam and bulk unsolicited messages.'
       - - How good is the translation?
         - "Very good for everyday business chat — prices, orders, appointments, questions. And you never have to guess: before you send, GlotChat shows what the customer will read, checks every number, and offers other wordings. For contracts or medical wording, have important texts checked by a person."
       - - Does translation need the internet?
@@ -753,19 +753,19 @@ pages:
   # ================================================================ ALL-IN-ONE (new)
   all-in-one-messenger:
     title: "All-in-One Messenger App for PC with Translation | GlotChat"
-    description: "WhatsApp, Telegram, Messenger, Instagram and Discord in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial."
+    description: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial."
     keywords: "all in one messenger, all in one messenger app for pc, multi messenger app, unified inbox whatsapp telegram messenger, manage multiple social media accounts, all in one chat app windows"
     short: "All-in-one messenger"
     icon: "🧩"
-    og_heading: "WhatsApp, Telegram, Messenger, Instagram & Discord — one window"
+    og_heading: "WhatsApp, Telegram, Messenger, Instagram, Discord & BAND — one window"
     og_sub: "Every chat translated offline on your PC — checked before you send."
     blocks:
       - type: hero
         k: "All-in-one messenger for PC"
         h1: "Every chat app, every account — <span class=\"grad\">one window, your language</span>"
-        lead: "WhatsApp, Telegram, Messenger, Instagram and Discord side by side on your PC. Add several accounts of each app, switch with one click, and read and answer every customer in their language — translated offline, checked before you send."
+        lead: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND side by side on your PC. Add several accounts of each app, switch with one click, and read and answer every customer in their language — translated offline, checked before you send."
         media: "video:apps"
-        media_alt: "Switching between WhatsApp, Telegram, Messenger, Instagram and Discord in GlotChat, each chat translated"
+        media_alt: "Switching between WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in GlotChat, each chat translated"
       - type: facts
         label: "Key facts"
         items: [["5", "chat apps in one window"], ["27+", "accounts at once (tested)"], ["49", "translation languages, offline"], ["1", "plan for every app"]]
@@ -787,12 +787,12 @@ pages:
         note: "In every app you can also select any text and translate it with one click."
       - type: cards
         soft: true
-        k: "One window instead of five"
+        k: "One window instead of six"
         h: "Stop switching between apps, tabs and phones"
         items:
           - {icon: "🔒", h: "Every account sealed", p: "Each account — in every app — has its own session and storage. Logins never mix, like separate computers in one app."}
           - {icon: "🔔", h: "Know who wrote, where", p: "Unread counts per app and per account, and every notification names the account. Click it and the right chat opens."}
-          - {icon: "🌐", h: "Every chat translated", p: "Incoming messages are translated under the original; your replies are translated before you send them — in all five apps."}
+          - {icon: "🌐", h: "Every chat translated", p: "Incoming messages are translated under the original; your replies are translated before you send them — in all six apps."}
           - {icon: "↩", h: "Checked before it's sent", p: "See what the customer will read, translated back into your language. Not happy? Pick another wording."}
           - {icon: "🌍", h: "Proxy per account", p: "Give any account its own HTTP or SOCKS5 proxy — useful when you sell in several countries."}
           - {icon: "🛡", h: "Offline & private", p: "Translation runs on your PC. No chat is sent to an online translator or AI service."}
@@ -800,8 +800,8 @@ pages:
         k: "How it works"
         h: "Add your apps in a few minutes"
         items:
-          - ["Add an account", "Click Add account and pick the app: WhatsApp, Telegram, Messenger, Instagram or Discord. Give it a name and your language."]
-          - ["Log in once", "Scan the QR code (WhatsApp, Telegram) or log in with your usual username and password (Messenger, Instagram, Discord). It stays logged in."]
+          - ["Add an account", "Click Add account and pick the app: WhatsApp, Telegram, Messenger, Instagram, Discord or BAND. Give it a name and your language."]
+          - ["Log in once", "Scan the QR code (WhatsApp, Telegram) or log in with your usual username and password (Messenger, Instagram, Discord, BAND). It stays logged in."]
           - ["Chat in any language", "Open a chat: messages are already in your language. Write in yours — the customer reads theirs."]
         cta: "Download & try all apps free"
       - type: faq
@@ -809,11 +809,11 @@ pages:
         k: "FAQ"
         h: "All-in-one messenger — questions"
         items:
-          - ["Which apps does GlotChat support?", "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct and Discord. All of them are included in every plan."]
+          - ["Which apps does GlotChat support?", "WhatsApp and WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord and BAND. All of them are included in every plan."]
           - ["Can I add several accounts of the same app?", "Yes. Add as many accounts as your plan allows — for example 3 WhatsApp numbers, 2 Telegram accounts and 2 Instagram accounts. Each one is isolated."]
           - ["How are accounts counted in the plans?", "Per app: Starter includes 5 accounts of each app, Pro 15 of each and Business unlimited — for example 5 WhatsApp + 5 Telegram + 5 Instagram on Starter."]
-          - ["Are voice notes and photos translated in every app?", "Voice notes and text in photos are translated on WhatsApp and Telegram. On Messenger, Instagram and Discord, text messages are translated both ways."]
-          - ["Is it the official WhatsApp, Telegram, Messenger, Instagram and Discord?", "Yes. GlotChat opens each app's official website in its own isolated session — like a browser, just organised and translated. It never sends anything by itself."]
+          - ["Are voice notes and photos translated in every app?", "Voice notes and text in photos are translated on WhatsApp and Telegram. On Messenger, Instagram, Discord and BAND, text messages are translated both ways."]
+          - ["Is it the official WhatsApp, Telegram, Messenger, Instagram, Discord and BAND?", "Yes. GlotChat opens each app's official website in its own isolated session — like a browser, just organised and translated. It never sends anything by itself."]
           - ["Does it work on Mac or phone?", "GlotChat is a Windows 10 / 11 desktop app. Your phones keep working normally."]
       - type: related
         k: "Keep exploring"
@@ -854,7 +854,7 @@ pages:
           - {icon: "🗂", h: "Many Messenger accounts", p: "Keep several Facebook accounts' Messenger open at once — each isolated, with its own notifications."}
           - {icon: "🔔", h: "Notifications per account", p: "Every notification names the account it belongs to. Click it and the right chat opens."}
           - {icon: "🌍", h: "Proxy per account", p: "Give each Messenger account its own HTTP or SOCKS5 proxy if you need one."}
-          - {icon: "💬", h: "All your apps together", p: "WhatsApp, Telegram, Instagram and Discord in the same window, translated the same way.", link: "all-in-one-messenger"}
+          - {icon: "💬", h: "All your apps together", p: "WhatsApp, Telegram, Instagram, Discord and BAND in the same window, translated the same way.", link: "all-in-one-messenger"}
       - type: split
         k: "Multiple Messenger accounts"
         h: "Several Facebook accounts, open at the same time"
@@ -1507,7 +1507,7 @@ pages:
 
           ## The GlotChat app
 
-          - **Your chat data stays on your PC.** GlotChat shows the official web versions of WhatsApp, Telegram and the other apps you add (Messenger, Instagram, Discord). Messages, contacts, media and settings are stored only on your computer. We have no access to them.
+          - **Your chat data stays on your PC.** GlotChat shows the official web versions of WhatsApp, Telegram and the other apps you add (Messenger, Instagram, Discord, BAND). Messages, contacts, media and settings are stored only on your computer. We have no access to them.
           - **Translation is offline.** Text translation, voice transcription and reading text in photos run on your computer. Language packs are downloaded once; your messages are never sent to us or to any translation or AI service.
           - **Proxies.** If you set a proxy for an account, that account's traffic goes through the proxy you chose. GlotChat checks that the proxy works by asking a public "what is my IP" service through it.
           - **Licensing.** To activate and check your license, the app sends our license server your license key, your computer's Machine ID (an identifier derived from your Windows installation) and the app version. We use this only to issue, verify and renew licenses.
@@ -1581,7 +1581,7 @@ pages:
 
           ## Not affiliated
 
-          WhatsApp, Telegram, Messenger, Instagram and Discord are trademarks of their respective owners. GlotChat is an independent product and is not affiliated with, endorsed or sponsored by any of them. Changes made by these services may affect how GlotChat works.
+          WhatsApp, Telegram, Messenger, Instagram, Discord and BAND are trademarks of their respective owners. GlotChat is an independent product and is not affiliated with, endorsed or sponsored by any of them. Changes made by these services may affect how GlotChat works.
 
           ## No warranty and limitation of liability
 
