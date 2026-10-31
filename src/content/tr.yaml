@@ -35,6 +35,10 @@ ui:
     bd: "BAND çevirmeni"
     bd_s: "BAND sohbetleri her dilde"
     alt: "Rambox alternatifi"
+    buy: "Nasıl satın alınır"
+    safe: "Güvenli mi?"
+    wab: "WhatsApp Business hesapları"
+    pairs: "Popüler dil çiftleri"
   cta_trial: Ücretsiz indir — 3 gün deneme
   cta_demo: Nasıl çalıştığını izleyin
   cta_live: Canlı demo isteyin
@@ -624,10 +628,7 @@ pages:
     - type: related
       k: Satın almadan önce
       h: Tam olarak ne aldığınızı görün
-      items:
-      - whatsapp-translator
-      - telegram-translator
-      - compare
+      items: ["how-to-buy", "is-it-safe", "compare"]
   whatsapp-translator:
     title: PC için WhatsApp Çevirmeni – Sohbet, Ses ve Fotoğraf, Çevrimdışı
     description: 'WhatsApp sohbetlerini PC''de iki yönlü çevirin: mesajlar, sesli mesajlar ve fotoğraftaki metinler, 49 dilde, çevrimdışı — göndermeden önce kontrolle.'
@@ -697,6 +698,10 @@ pages:
       k: 49 dil
       h: Bu dillerden herhangi ikisi arasında çevirin
       p: Her çift çalışır — Türkçeden Arapçaya, Rusçadan İspanyolcaya, Çinceden Portekizceye. Sesli mesajlar yaklaşık 100 konuşma dilinde tanınır.
+    - type: related
+      k: "Dil çiftleri"
+      h: "Popüler dil çiftleri"
+      items: ["translate/turkish-english", "how-to-buy", "is-it-safe"]
     - type: faq
       soft: true
       k: SSS
@@ -2312,4 +2317,242 @@ pages:
         k: "Sıradaki"
         h: "Okumaya devam edin"
         items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+  how-to-buy:
+    title: "GlotChat USDT ile Nasıl Satın Alınır (Adım Adım)"
+    description: "Hiç USDT ile ödeme yapmadınız mı? Binance veya OKX'te USDT alın, doğru ağı seçin, gönderin ve GlotChat anahtarınızı alın — adım adım."
+    keywords: "glotchat satın al, usdt ile ödeme, usdt trc20 nasıl gönderilir, binance p2p usdt al, glotchat lisans anahtarı"
+    short: "Nasıl satın alınır"
+    icon: "🛒"
+    og_heading: "GlotChat USDT ile nasıl satın alınır — adım adım"
+    blocks:
+      - type: hero
+        k: "Nasıl satın alınır"
+        h1: "GlotChat'i <span class=\"grad\">USDT ile adım adım satın alın</span>"
+        lead: "Daha önce kriptoyla hiç ödeme yapmadınız mı? Sorun değil. İlk seferinde yaklaşık 10 dakika sürer ve her adımda Telegram'da gerçek bir kişi size yardım eder."
+        cta2: ["pricing", "Paketleri görün"]
+      - type: prose
+        toc: true
+        md: |
+          > **Kısaca:** GlotChat'i 3 gün ücretsiz deneyin → Telegram'dan paketinizi ve Makine Kimliğinizi yazın → verdiğimiz adrese USDT gönderin → gelen anahtarı yapıştırın. Bitti.
+
+          ## 1. Önce ücretsiz deneyin
+
+          [GlotChat'i indirin](/tr/download/) ve **“3 günlük ücretsiz denememi başlat”** düğmesine tıklayın. Tüm özellikler açık, ödeme yok. Bir şey ödemeden önce hesaplarınızı ekleyin ve GlotChat'in size uygun olduğundan emin olun.
+
+          ## 2. Paketinizi seçin
+
+          Hesaplar **uygulama başına** sayılır: Starter size 5 WhatsApp + 5 Telegram + 5 Instagram vb. verir.
+
+          | Paket | Uygulama başına hesap | Bilgisayar | Yıllık fiyat |
+          |---|---|---|---|
+          | Starter | 5'e kadar | 1 | 69 USDT |
+          | Pro | 15'e kadar | 1 | 129 USDT |
+          | Business | sınırsız | 3'e kadar | 249 USDT |
+
+          ## 3. Makine Kimliğinizi kopyalayın
+
+          GlotChat'te **Ayarlar → Lisans** bölümünü açın ve Makine Kimliğinizin yanındaki **Kopyala**'ya tıklayın. Anahtarınız bu bilgisayar için oluşturulur.
+
+          ## 4. Telegram'dan bize yazın
+
+          **[@GlotChat](https://t.me/GlotChat)** hesabına paketinizi ve Makine Kimliğinizi yazın. Size tam tutarı ve USDT adresimizi göndeririz — **yalnızca @GlotChat'ten aldığınız adrese güvenin**.
+
+          ## 5. USDT edinin (yoksa)
+
+          USDT dijital bir dolardır: 1 USDT ≈ 1 ABD doları. En kolay yollar:
+
+          - **Binance veya OKX:** hesap açın, ardından kart, banka havalesi veya **P2P** (yerel bir satıcıya kendi paranızla ödeme) ile USDT alın.
+          - **Bybit, KuCoin, Bitget** ve çoğu borsa aynı şekilde çalışır.
+          - USDT'si olan **bir arkadaşınız veya iş arkadaşınız** sizin yerinize ödeyebilir.
+
+          ## 6. USDT'yi doğru ağdan gönderin
+
+          USDT birkaç ağda bulunur. **TRC20 (Tron), BEP20 (BNB Smart Chain) ve ERC20 (Ethereum)** kabul ediyoruz. Gönderirken seçtiğiniz ağ, verdiğimiz adresle **aynı olmalıdır**.
+
+          1. Borsanızda **Çekim → USDT**'ye gidin.
+          2. Adresimizi yapıştırın ve belirttiğimiz **aynı ağı** seçin (TRC20 veya BEP20'nin ücretleri genelde en düşüktür; ERC20 pahalı olabilir).
+          3. **Bize ulaşacak** tutarın paketin tam fiyatı olduğunu kontrol edin — borsa ücreti ayrıca eklenir.
+          4. Onaylayın. Sonra Telegram'dan ekran görüntüsünü veya işlem kimliğini (TXID) gönderin.
+
+          ## 7. Anahtarınızı yapıştırın
+
+          Yıllık anahtarınız genellikle birkaç dakika içinde gelir. GlotChat'te **Ayarlar → Yeni anahtar gir** bölümüne gidip yapıştırın. Hesaplarınız, girişleriniz ve ayarlarınız denemedeki gibi kalır.
+
+          ## Güvenlik ipuçları
+
+          - Yalnızca Telegram'da **@GlotChat**'ten aldığınız adrese gönderin. Borsa şifrenizi, kurtarma kelimelerinizi veya kodlarınızı asla istemeyiz.
+          - **Ağı** iki kez kontrol edin. Yanlış ağdan gönderilen USDT kaybolabilir.
+          - Anahtarınız çalışana kadar **TXID**'yi saklayın.
+
+          Ödemeden önce sorunuz mu var? [Telegram'da gerçek bir kişiye sorun](https://t.me/GlotChat) — adım adım yardımcı oluruz.
+      - type: faq
+        k: "SSS"
+        h: "Satın alma soruları"
+        items:
+          - ["Kartla veya PayPal ile ödeyebilir miyim?", "Doğrudan değil — şimdilik yalnızca USDT kabul ediyoruz. En kolayı, Binance veya OKX'te kartınızla USDT alıp bize göndermek. Yaklaşık 10 dakika sürer."]
+          - ["Hangi ağı kullanmalıyım?", "TRC20 veya BEP20 — ücretleri genelde en düşüktür. ERC20 de olur ama ücreti birkaç dolar tutabilir. Her zaman adresle birlikte belirttiğimiz ağı kullanın."]
+          - ["Anahtar ne kadar sürede gelir?", "Ödeme ulaştıktan sonra genellikle birkaç dakika içinde. Her siparişi Telegram'da gerçek bir kişi işler."]
+          - ["Başkası benim yerime ödeyebilir mi?", "Evet. Bir arkadaşınız, iş arkadaşınız veya şirketiniz USDT gönderebilir — Telegram'da hangi ödemenin sizin olduğunu söyleyin yeter."]
+          - ["Bir yıl sonra ne olur?", "Aynı fiyata yenilersiniz ve kesintisiz çalışmaya devam edersiniz. Hesaplarınız ve ayarlarınız PC'nizde kalır."]
+      - type: related
+        k: "Satın almadan önce"
+        h: "Bilmekte fayda var"
+        items: ["pricing", "is-it-safe", "download"]
+  is-it-safe:
+    title: "GlotChat Güvenli mi? WhatsApp Hesabım Kapanır mı?"
+    description: "GlotChat nasıl çalışır, PC'nizde ne kalır ve WhatsApp ile Telegram hesaplarını gerçekte ne kapattırır — numaralarınızı korumak için 7 ipucu."
+    keywords: "glotchat güvenli mi, whatsapp hesabım kapanır mı, birden fazla whatsapp hesabı ban, whatsapp web güvenli mi, whatsapp çevirmen güvenli mi"
+    short: "Güvenli mi?"
+    icon: "🛡"
+    og_heading: "GlotChat güvenli mi? WhatsApp hesabım kapanır mı?"
+    blocks:
+      - type: hero
+        k: "Güvenlik"
+        h1: "GlotChat güvenli mi? <span class=\"grad\">Hesabım kapanır mı?</span>"
+        lead: "Açık sözlü cevap, sade bir dille: GlotChat ne yapar, asla ne yapmaz ve hesapları gerçekte ne kapattırır."
+      - type: cards
+        k: "GlotChat nasıl çalışır"
+        h: "Resmi uygulamalar, sadece düzenli — gizli hiçbir şey yok"
+        items:
+          - {icon: "✅", h: "Resmi web sürümleri", p: "Her hesap resmi WhatsApp Web, Telegram Web, Messenger, Instagram, Discord veya BAND sitesini açar — tarayıcınızda gördüğünüzün aynısı."}
+          - {icon: "🔗", h: "Resmi bağlama", p: "WhatsApp hesapları, WhatsApp'ın kendi Bağlı cihazlar özelliğiyle, telefonunuzla QR kodu okutarak bağlanır."}
+          - {icon: "🤚", h: "Kendi başına asla göndermez", p: "GlotChat yalnızca sizin yazıp onayladığınızı gönderir. Bot yok, toplu mesaj yok, otomatik yanıt yok."}
+          - {icon: "💻", h: "Sohbetler PC'nizde kalır", p: "Mesajlar, kişiler ve medya yalnızca bilgisayarınızda saklanır. Biz asla almayız."}
+          - {icon: "🔒", h: "Çevrimdışı çeviri", p: "Çeviri, sesli mesaj dökümü ve fotoğraf okuma PC'nizde çalışır, bulutta değil (DeepL'i açmadıkça)."}
+          - {icon: "🧱", h: "Her hesap yalıtılmış", p: "Her hesabın kendi oturumu ve depolaması, istenirse kendi proxy'si vardır — girişler asla karışmaz."}
+      - type: prose
+        md: |
+          ## Hesapları gerçekte ne kapattırır
+
+          WhatsApp ve Telegram, hesabınızı *nerede* açtığınız için hesap kapatmaz — bağlı cihazlar ve web sürümleri resmi özelliklerdir. **Davranışa** bakarlar:
+
+          - Size önce yazmamış kişilere **spam ve toplu mesaj**.
+          - Numaranızı **engelleyen veya şikâyet eden çok kişi**.
+          - “GB WhatsApp” veya “WhatsApp Plus” gibi **değiştirilmiş uygulamalar**.
+          - İlk gün çok sayıda yabancıya yazan **yepyeni numaralar**.
+          - Kendi başına mesaj gönderen **otomasyon araçları**.
+
+          GlotChat bunların hiçbirini yapmaz. Müşterilerinize kendi dillerinde daha hızlı **yanıt vermenize** yardım eder.
+
+          ## Numaralarınızı korumak için 7 ipucu
+
+          1. **Yanıtlayın, toplu göndermeyin.** Size ulaşan veya mesajınızı bekleyen kişilerle konuşun.
+          2. **Yeni numaraları ısıtın.** Yeni bir numarayı çok kişiye yazmadan önce birkaç gün normal kullanın.
+          3. **Telefonda WhatsApp'ı** en az 14 günde bir açın, yoksa bağlı cihazların oturumu kapanır.
+          4. Birkaç ülkede satış yapıyorsanız **ülke başına bir proxy** kullanın (isteğe bağlı).
+          5. **Aynı mesajı** yüzlerce kişiye göndermeyin — şablonlar yanıt içindir, kampanya için değil.
+          6. Telefonda **resmi WhatsApp'ı** kullanın, asla değiştirilmiş sürümü değil.
+          7. **Müşterinin dilinde yanıt verin.** Daha az yanlış anlama, daha az şikâyet.
+      - type: faq
+        k: "SSS"
+        h: "Güvenlik soruları"
+        items:
+          - ["GlotChat'i kullanmak güvenli mi?", "Evet. GlotChat her uygulamanın resmi web sürümünü yalıtılmış oturumlarda gösterir, kendi başına hiçbir şey göndermez ve sohbetlerinizi PC'nizde tutar."]
+          - ["Tek PC'de birden fazla hesap kullanırsam WhatsApp beni banlar mı?", "Tek başına bu yüzden hayır. Bağlı cihazlar resmi bir WhatsApp özelliğidir. Banlar spam, toplu mesaj, şikâyetler ve değiştirilmiş uygulamalardan gelir — hesaplarınızı bilgisayarda açmaktan değil."]
+          - ["GlotChat mesajlarımı okuyabilir mi?", "Hayır. Mesajlarınız yalnızca bilgisayarınızda saklanır ve orada çevrilir. Biz asla almayız. Lisans yalnızca anahtarınızı ve Makine Kimliğinizi kullanır."]
+          - ["Müşteri çevirmen kullandığımı anlar mı?", "Hayır. Mesajınızı kendi dilinde alır. Sohbete hiçbir şey eklenmez."]
+          - ["GlotChat otomatik mesaj gönderir mi?", "Asla. Her mesajı siz yazar ve onaylarsınız."]
+      - type: related
+        k: "Daha fazlası"
+        h: "İlgili"
+        items: ["privacy", "how-to-buy", "multiple-whatsapp-accounts"]
+  multiple-whatsapp-business-accounts:
+    title: "PC'de Birden Fazla WhatsApp Business Hesabı + Çeviri"
+    description: "Birden fazla WhatsApp Business numarası tek PC'de, tek pencerede: her biri yalıtılmış, etiketler ve katalog çalışır, her sohbet çevrilir. API gerekmez."
+    keywords: "pc'de birden fazla whatsapp business hesabı, whatsapp business birden fazla numara, whatsapp business masaüstü çoklu hesap, whatsapp business çevirmen, api olmadan whatsapp business"
+    short: "WhatsApp Business hesapları"
+    icon: "🏪"
+    og_heading: "Birden fazla WhatsApp Business numarası, tek pencere, her sohbet çevrilmiş"
+    blocks:
+      - type: hero
+        k: "PC'de WhatsApp Business"
+        h1: "Tüm WhatsApp Business numaralarınız <span class=\"grad\">tek pencerede</span>"
+        lead: "Her mağaza, ülke veya satış temsilcisi için bir numara mı? GlotChat her WhatsApp Business hesabını PC'nizde yan yana açar — her biri kendi yalıtılmış oturumunda — ve her sohbeti iki yönlü çevirir. API yok, Meta onayı yok, numara başına aylık ücret yok."
+        media: "img:switcher"
+        media_alt: "GlotChat'te yan yana birden fazla WhatsApp Business hesabı"
+      - type: steps
+        soft: false
+        k: "Nasıl çalışır"
+        h: "Her Business numarasını bir dakikada ekleyin"
+        items:
+          - ["Hesap ekleyin", "Hesap ekle'ye tıklayın, WhatsApp'ı seçin ve bir ad verin — “İstanbul Mağaza”, “Satış — Ayşe”."]
+          - ["QR kodu okutun", "O WhatsApp Business numarasının telefonunda: Ayarlar → Bağlı cihazlar → Cihaz bağla."]
+          - ["Tek pencereden çalışın", "Tek tıkla geçiş yapın. Her bildirim hangi numaraya ait olduğunu gösterir."]
+      - type: cards
+        soft: true
+        k: "Neler elde edersiniz"
+        h: "WhatsApp Business Web'in yaptığı her şey — her numarada"
+        items:
+          - {icon: "🏷", h: "Etiketler, katalog, hızlı yanıtlar", p: "WhatsApp Web'den bildiğiniz Business özellikleri her numarada her zamanki gibi çalışır."}
+          - {icon: "🌐", h: "Her sohbet çevrilir", p: "Müşteri mesajları orijinalin altında çevrilir, yanıtlarınız göndermeden önce — 49 dil."}
+          - {icon: "🎙", h: "Sesli mesajlar ve fotoğraflar", p: "Sesli mesajlar metne dönüştürülüp çevrilir; fotoğraf ve ekran görüntülerindeki metin de."}
+          - {icon: "🧱", h: "Her numara yalıtılmış", p: "Ayrı oturumlar, ayrı bildirimler ve numara başına isteğe bağlı proxy."}
+          - {icon: "⚡", h: "Ortak şablonlar", p: "Fiyatlar, teslim süreleri ve ödeme bilgileri bir kez kaydedilir, her sohbete eklenir."}
+          - {icon: "👥", h: "WhatsApp ve Business bir arada", p: "Normal ve WhatsApp Business numaraları yan yana — artı Telegram ve daha fazlası.", link: "all-in-one-messenger"}
+      - type: table
+        k: "Karşılaştırma"
+        h: "GlotChat - WhatsApp Business API karşılaştırması"
+        hl: 2
+        cols: ["", "WhatsApp Business API araçları", "GlotChat"]
+        rows:
+          - ["Kurulum", "Meta doğrulaması, bir sağlayıcı, onaylı şablonlar", "QR kodu okutmak — 1 dakika"]
+          - ["Maliyet", "Aylık ücret + konuşma başına ücret", "Yılda 69 USDT'den, mesaj başına ücret yok"]
+          - ["Mevcut numaranız ve sohbetleriniz", "Genellikle API'ye taşınır", "Telefonunuzda olduğu gibi kalır"]
+          - ["Çeviri", "Nadiren dahil", "✓ Her sohbet, iki yönlü"]
+          - ["Kimler için", "Büyük otomatik kampanyalar", "Müşterilerle konuşan insanlar"]
+      - type: faq
+        k: "SSS"
+        h: "WhatsApp Business soruları"
+        items:
+          - ["Tek PC'de birden fazla WhatsApp Business hesabı kullanabilir miyim?", "Evet. GlotChat'te her WhatsApp Business numarası kendi yalıtılmış oturumunda, tek pencerede yan yana çalışır — Starter'da 5, Pro'da 15, Business'ta sınırsız."]
+          - ["WhatsApp Business API gerekir mi?", "Hayır. GlotChat telefonunuzdaki normal WhatsApp Business uygulamasını, WhatsApp Web gibi bağlayarak kullanır. Meta onayı yok, mesaj başına ücret yok."]
+          - ["Etiketler ve katalog çalışmaya devam eder mi?", "Evet. GlotChat resmi WhatsApp Web'i gösterir, bu yüzden oradaki Business özellikleri her zamanki gibi çalışır."]
+          - ["Normal WhatsApp ile WhatsApp Business'ı birlikte kullanabilir miyim?", "Evet. İkisi de paketinizde WhatsApp hesabı sayılır ve yan yana çalışır."]
+      - type: related
+        k: "Keşfetmeye devam edin"
+        h: "İlgili"
+        items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
+  translate/turkish-english:
+    title: "WhatsApp Türkçe-İngilizce Çevirmen (PC) | GlotChat"
+    description: "WhatsApp ve Telegram sohbetlerini Türkçe ile İngilizce arasında PC'nizde çevirin — otomatik, iki yönlü, çevrimdışı. Sesli mesajlar ve fotoğraflar da. 3 gün ücretsiz."
+    keywords: "whatsapp türkçe İngilizce çeviri, whatsapp İngilizce çevirmen, İngilizce türkçe sohbet çevirisi, telegram İngilizce çeviri"
+    short: "Türkçe ↔ İngilizce"
+    icon: "🌐"
+    og_heading: "Türkçe ↔ İngilizce: WhatsApp ve Telegram çevirmeni"
+    blocks:
+      - type: hero
+        k: "Türkçe ↔ İngilizce"
+        h1: "Türkçe ↔ İngilizce çevirmen <span class=\"grad\">WhatsApp ve Telegram için</span>"
+        lead: "Müşterileriniz İngilizce mi yazıyor? GlotChat her mesajı orijinalin altında Türkçeye çevirir — Türkçe yanıtınızı da göndermeden önce doğal bir İngilizceye dönüştürür. WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND'da, PC'nizde çevrimdışı."
+      - type: split
+        k: "İngilizce konuşan müşteriler"
+        h: "Türkçe okuyun, İngilizce yanıtlayın"
+        p: "İngilizce dünyanın her yerindeki müşterilerin dili: ABD, İngiltere, Hindistan, Asya ve Afrika. Türkçe yazın, ne okuyacaklarını kontrol edin, Enter'a basın."
+        ticks: ["Her mesaj geldiği anda çevrilir", "Yanıtınız İngilizce gider", "Ne okuyacakları göndermeden önce görünür"]
+        mock:
+          top: "<span><b>İngilizce</b> gönder</span><span>Türkçeden</span>"
+          main: "Hello! Yes, we can ship tomorrow. Delivery takes 5 days."
+          notes: [["back", "↩ Okuyacakları: Merhaba! Evet, yarın gönderebiliriz. Teslimat 5 gün sürer."]]
+      - type: cards
+        soft: true
+        k: "Bunun için yapıldı"
+        h: "İngilizce satış yapmak için gereken her şey"
+        items:
+          - {icon: "🎙", h: "İngilizce sesli mesajlar", p: "WhatsApp veya Telegram'da sesli mesajın altındaki Metne dök'e tıklayın: metne dönüşür ve çevrilir — çevrimdışı."}
+          - {icon: "🖼", h: "Fotoğraflar ve ekran görüntüleri", p: "Fotoğraflardaki metin — fiyat listeleri, etiketler, fişler — okunur ve çevrilir."}
+          - {icon: "🔢", h: "Rakamlar kontrol edilir", p: "Yanıtınızdaki her fiyat, adet, tarih ve telefon numarası göndermeden önce kontrol edilir."}
+          - {icon: "🗂", h: "Çok sayıda hesap", p: "Birden fazla WhatsApp ve Telegram hesabı yan yana — hepsi aynı şekilde çevrilir."}
+          - {icon: "🌍", h: "49 dilden her çift", p: "Bugün Türkçe-İngilizce, yarın Türkçe-Arapça — her kombinasyon çalışır."}
+      - type: faq
+        k: "SSS"
+        h: "Türkçe ↔ İngilizce çeviri — sorular"
+        items:
+          - ["WhatsApp mesajlarını İngilizceden Türkçeye otomatik çevirebilir miyim?", "Evet. GlotChat gelen her mesajı Türkçeye çevirir ve orijinalin altında gösterir — her sohbette, her hesapta."]
+          - ["İngilizce bilmeden İngilizce yanıt verebilir miyim?", "Evet. Türkçe yazın ve Enter'a basın: GlotChat yanıtınızı çevirir ve müşterinin ne okuyacağını göndermeden önce gösterir."]
+          - ["Sesli mesajları da çeviriyor mu?", "Evet, WhatsApp ve Telegram'da. Sesli mesajın altındaki Metne dök'e tıklayın: GlotChat metne dönüştürüp PC'nizde çevrimdışı çevirir."]
+          - ["Sohbetlerim çevrimiçi bir çevirmene gidiyor mu?", "Hayır. Çeviri bilgisayarınızda çevrimdışı çalışır. Metin yalnızca isteğe bağlı DeepL motorunu açarsanız DeepL'e gönderilir."]
+      - type: related
+        k: "Keşfetmeye devam edin"
+        h: "İlgili"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
 

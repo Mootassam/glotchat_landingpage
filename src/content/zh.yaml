@@ -35,6 +35,10 @@ ui:
     bd: "BAND 翻译"
     bd_s: "BAND 聊天，任何语言"
     alt: "Rambox 替代软件"
+    buy: "购买方法"
+    safe: "安全吗？"
+    wab: "WhatsApp Business 多开"
+    pairs: "热门语言组合"
   cta_trial: 免费下载 · 试用 3 天
   cta_demo: 观看演示
   cta_live: 预约在线演示
@@ -625,10 +629,7 @@ pages:
     - type: related
       k: 购买前
       h: 看清楚你能得到什么
-      items:
-      - whatsapp-translator
-      - telegram-translator
-      - compare
+      items: ["how-to-buy", "is-it-safe", "compare"]
   whatsapp-translator:
     title: WhatsApp 翻译器电脑版 —— 聊天、语音、图片离线翻译
     description: 在电脑上双向翻译 WhatsApp：消息、语音和图片文字，49 种语言，离线翻译，发送前可核对译文。免费试用 3 天。
@@ -698,6 +699,10 @@ pages:
       k: 49 种语言
       h: 以下任意两种语言之间互译
       p: 任意组合都可以 —— 中文到阿拉伯语、土耳其语到西班牙语、俄语到葡萄牙语。语音消息可识别约 100 种口语语言。
+    - type: related
+      k: "语言组合"
+      h: "热门语言组合"
+      items: ["translate/chinese-english", "translate/chinese-spanish", "translate/chinese-arabic", "translate/chinese-russian", "translate/chinese-portuguese", "how-to-buy"]
     - type: faq
       soft: true
       k: 常见问题
@@ -2689,4 +2694,418 @@ pages:
         k: "下一步"
         h: "继续阅读"
         items: ["guides/best-all-in-one-messenger-apps", "guides/best-whatsapp-multi-account-software", "whatsapp-translator"]
+  how-to-buy:
+    title: "如何用 USDT 购买 GlotChat（详细步骤）"
+    description: "没用过 USDT？一步步教你购买 GlotChat：在币安或欧易买 USDT，选对网络，转账，收到授权码。"
+    keywords: "GlotChat 购买, USDT 付款, USDT TRC20 转账, 币安 C2C 买 USDT, GlotChat 授权码"
+    short: "购买方法"
+    icon: "🛒"
+    og_heading: "如何用 USDT 购买 GlotChat —— 详细步骤"
+    blocks:
+      - type: hero
+        k: "购买方法"
+        h1: "如何购买 GlotChat <span class=\"grad\">用 USDT 一步步付款</span>"
+        lead: "从没用过加密货币？没关系。第一次大约 10 分钟，每一步都有真人在 Telegram 上帮你。"
+        cta2: ["pricing", "查看套餐"]
+      - type: prose
+        toc: true
+        md: |
+          > **简单说：** 先免费试用 3 天 → 在 Telegram 上告诉我们套餐和机器码 → 把 USDT 转到我们给的地址 → 粘贴收到的授权码。完成。
+
+          ## 1. 先免费试用
+
+          [下载 GlotChat](/zh/download/)，点击 **“开始 3 天免费试用”**。全部功能解锁，不用付款。先添加你的账号，确认 GlotChat 适合你再付款。
+
+          ## 2. 选择套餐
+
+          账号数量**按应用分别计算**：入门版可用 5 个 WhatsApp + 5 个 Telegram + 5 个 Instagram，以此类推。
+
+          | 套餐 | 每个应用账号数 | 电脑数 | 每年价格 |
+          |---|---|---|---|
+          | 入门版 | 最多 5 个 | 1 台 | 69 USDT |
+          | 专业版 | 最多 15 个 | 1 台 | 129 USDT |
+          | 商业版 | 不限 | 最多 3 台 | 249 USDT |
+
+          ## 3. 复制机器码
+
+          在 GlotChat 中打开 **设置 → 授权**，点击机器码旁边的 **复制**。授权码会绑定这台电脑。
+
+          ## 4. 在 Telegram 上联系我们
+
+          给 **[@GlotChat](https://t.me/GlotChat)** 发消息，告诉我们套餐和机器码。我们会回复准确金额和 USDT 地址 —— **只相信 @GlotChat 发给你的地址**。
+
+          ## 5. 获取 USDT（如果你还没有）
+
+          USDT 是一种数字美元：1 USDT ≈ 1 美元。最简单的获取方式：
+
+          - **币安（Binance）或欧易（OKX）：** 注册账号，然后用银行卡、银行转账或 **C2C/P2P**（用本地货币付款给卖家，支持支付宝、微信、银行卡等）购买 USDT。
+          - **Bybit、KuCoin、Bitget** 等交易所的操作也一样。
+          - **朋友或同事** 有 USDT 的话，也可以帮你付款。
+
+          ## 6. 转账 USDT —— 选对网络
+
+          USDT 有多个网络。我们接受 **TRC20（波场）、BEP20（币安智能链）和 ERC20（以太坊）**。转账时选择的网络**必须和**我们给的地址一致。
+
+          1. 在交易所进入 **提现 → USDT**。
+          2. 粘贴我们的地址，选择我们指定的**同一个网络**（TRC20 或 BEP20 手续费通常最低；ERC20 可能较贵）。
+          3. 确认我们**实际收到**的是套餐全价 —— 交易所手续费另算。
+          4. 确认转账，然后在 Telegram 上发给我们截图或交易哈希（TXID）。
+
+          ## 7. 粘贴授权码
+
+          年度授权码通常几分钟内送达。在 GlotChat 中打开 **设置 → 输入新授权码** 并粘贴。你的账号、登录和设置都保持试用时的样子。
+
+          ## 安全提示
+
+          - 只转账到 **@GlotChat** 在 Telegram 上发给你的地址。我们绝不会索要你的交易所密码、助记词或验证码。
+          - 仔细核对**网络**。选错网络的 USDT 可能会丢失。
+          - 保留 **TXID**，直到授权码可以使用。
+
+          付款前有问题？[在 Telegram 上问真人](https://t.me/GlotChat) —— 我们很乐意一步步带你完成。
+      - type: faq
+        k: "常见问题"
+        h: "购买问题"
+        items:
+          - ["可以用银行卡或支付宝直接付款吗？", "暂时只接受 USDT。最简单的办法是在币安或欧易用银行卡或 C2C 买 USDT，再转给我们，大约 10 分钟。"]
+          - ["用哪个网络？", "TRC20 或 BEP20 —— 手续费通常最低。ERC20 也可以，但手续费可能要几美元。请始终使用我们和地址一起指定的网络。"]
+          - ["多久能收到授权码？", "付款到账后通常几分钟内。每笔订单都由真人在 Telegram 上处理。"]
+          - ["别人可以帮我付款吗？", "可以。朋友、同事或公司都可以转 USDT —— 在 Telegram 上告诉我们是哪一笔即可。"]
+          - ["一年后怎么办？", "按同样价格续费，不会中断使用。你的账号和设置一直保存在你的电脑上。"]
+      - type: related
+        k: "购买前"
+        h: "值得了解"
+        items: ["pricing", "is-it-safe", "download"]
+  is-it-safe:
+    title: "GlotChat 安全吗？WhatsApp 会被封号吗？"
+    description: "GlotChat 是怎么工作的、哪些数据留在你的电脑上、WhatsApp 和 Telegram 真正的封号原因 —— 以及 7 个保护号码的建议。"
+    keywords: "GlotChat 安全吗, WhatsApp 多开 封号, WhatsApp 会被封号吗, WhatsApp 翻译 安全, Telegram 多开 封号, WS 封号原因"
+    short: "安全吗？"
+    icon: "🛡"
+    og_heading: "GlotChat 安全吗？WhatsApp 会被封号吗？"
+    blocks:
+      - type: hero
+        k: "安全"
+        h1: "GlotChat 安全吗？<span class=\"grad\">会被封号吗？</span>"
+        lead: "用大白话说清楚：GlotChat 做什么、绝不做什么，以及真正导致封号的原因。"
+      - type: cards
+        k: "GlotChat 怎么工作"
+        h: "官方应用，只是更有条理 —— 没有任何隐藏操作"
+        items:
+          - {icon: "✅", h: "官方网页版", p: "每个账号打开的都是官方 WhatsApp Web、Telegram Web、Messenger、Instagram、Discord 或 BAND 网站 —— 和浏览器里看到的一样。"}
+          - {icon: "🔗", h: "官方关联方式", p: "WhatsApp 账号通过 WhatsApp 自己的“关联设备”功能，用手机扫码关联。"}
+          - {icon: "🤚", h: "绝不自动发送", p: "GlotChat 只发送你写好并确认的内容。没有机器人、没有群发、没有自动回复。"}
+          - {icon: "💻", h: "聊天留在你的电脑上", p: "消息、联系人和媒体只保存在你的电脑上。我们永远收不到。"}
+          - {icon: "🔒", h: "离线翻译", p: "翻译、语音转文字和图片识别都在你的电脑上完成，不经过云端服务（除非你开启 DeepL）。"}
+          - {icon: "🧱", h: "每个账号独立", p: "每个账号有独立的会话和存储，还可以单独设置代理 —— 登录信息绝不混在一起。"}
+      - type: prose
+        md: |
+          ## 真正导致封号的原因
+
+          WhatsApp 和 Telegram 不会因为你在*哪里*打开账号而封号 —— 关联设备和网页版都是官方功能。它们封的是**行为**：
+
+          - 给没主动联系你的人**发垃圾消息、群发**。
+          - **很多人拉黑或举报**你的号码。
+          - 使用**修改版应用**，比如“GB WhatsApp”“WhatsApp Plus”。
+          - **新号码**第一天就给大量陌生人发消息。
+          - 使用会自己发消息的**自动化工具**。
+
+          GlotChat 不做以上任何一件事。它只是帮你用客户的语言更快地**回复**客户。
+
+          ## 保护号码的 7 个建议
+
+          1. **回复，而不是群发。** 只和联系过你或在等你消息的人聊天。
+          2. **新号先养号。** 新号码正常使用几天，再去联系很多人。
+          3. **至少每 14 天在手机上打开一次 WhatsApp**，否则关联设备会被退出登录。
+          4. **按国家使用代理**，如果你在多个国家做生意（可选）。
+          5. **不要给几百个人发同样的消息** —— 模板用来回复，不是用来做群发活动。
+          6. **手机上用官方 WhatsApp** —— 绝不用修改版。
+          7. **用客户的语言回复。** 误会更少，举报也更少。
+      - type: faq
+        k: "常见问题"
+        h: "安全问题"
+        items:
+          - ["GlotChat 安全吗？", "安全。GlotChat 在独立会话中显示各应用的官方网页版，绝不自己发送任何消息，聊天内容保存在你的电脑上。"]
+          - ["一台电脑登录多个 WhatsApp 会被封号吗？", "单凭这一点不会。关联设备是 WhatsApp 的官方功能。封号来自垃圾消息、群发、被举报和修改版应用 —— 而不是在电脑上打开账号。"]
+          - ["GlotChat 能看到我的消息吗？", "不能。你的消息只保存在你的电脑上，也在电脑上翻译。我们永远收不到。授权只用到你的授权码和机器码。"]
+          - ["客户会知道我在用翻译吗？", "不会。他们只是收到用他们语言写的消息，聊天里不会多出任何内容。"]
+          - ["GlotChat 会自动发消息吗？", "绝不会。每条消息都由你自己写并确认。"]
+      - type: related
+        k: "了解更多"
+        h: "相关"
+        items: ["privacy", "how-to-buy", "multiple-whatsapp-accounts"]
+  multiple-whatsapp-business-accounts:
+    title: "WhatsApp Business 多开（电脑版）+ 翻译 | GlotChat"
+    description: "一台电脑、一个窗口同时运行多个 WhatsApp Business 号码 —— 每个独立，标签、商品目录、快捷回复照常用，每个聊天都翻译。不需要 API。"
+    keywords: "WhatsApp Business 多开, WhatsApp Business 电脑版 多账号, WhatsApp Business 翻译, WS 商业版 多开, 不用 API 的 WhatsApp Business"
+    short: "WhatsApp Business 多开"
+    icon: "🏪"
+    og_heading: "多个 WhatsApp Business 号码，一个窗口，每个聊天都翻译"
+    blocks:
+      - type: hero
+        k: "WhatsApp Business 电脑版"
+        h1: "所有 WhatsApp Business 号码 <span class=\"grad\">一个窗口搞定</span>"
+        lead: "每个店铺、国家或业务员一个号码？GlotChat 在电脑上并排打开每个 WhatsApp Business 账号 —— 每个都在独立会话中 —— 并双向翻译每个聊天。不需要 API，不需要 Meta 审核，不按号码收月费。"
+        media: "img:switcher"
+        media_alt: "GlotChat 中并排运行的多个 WhatsApp Business 账号"
+      - type: steps
+        soft: false
+        k: "使用方法"
+        h: "每个商业号码一分钟添加好"
+        items:
+          - ["添加账号", "点击“添加账号”，选择 WhatsApp 并命名 —— “迪拜店”“销售 —— 小王”。"]
+          - ["扫二维码", "在这个 WhatsApp Business 号码的手机上：设置 → 关联设备 → 关联新设备。"]
+          - ["一个窗口工作", "一键切换。每条通知都会显示属于哪个号码。"]
+      - type: cards
+        soft: true
+        k: "你能得到"
+        h: "WhatsApp Business 网页版能做的，每个号码都能做"
+        items:
+          - {icon: "🏷", h: "标签、商品目录、快捷回复", p: "你在 WhatsApp Web 上熟悉的商业功能，每个号码都照常可用。"}
+          - {icon: "🌐", h: "每个聊天都翻译", p: "客户的消息翻译在原文下方，你的回复在发送前翻译 —— 49 种语言。"}
+          - {icon: "🎙", h: "语音和图片", p: "语音转成文字并翻译；图片和截图中的文字也能翻译。"}
+          - {icon: "🧱", h: "每个号码独立", p: "独立会话、独立通知，每个号码还可以单独设置代理。"}
+          - {icon: "⚡", h: "共享模板", p: "价格、交期、付款信息保存一次，在任何聊天中一键插入。"}
+          - {icon: "👥", h: "个人版和商业版一起用", p: "普通 WhatsApp 和 WhatsApp Business 号码并排运行 —— 还有 Telegram 等。", link: "all-in-one-messenger"}
+      - type: table
+        k: "对比"
+        h: "GlotChat 对比 WhatsApp Business API"
+        hl: 2
+        cols: ["", "WhatsApp Business API 工具", "GlotChat"]
+        rows:
+          - ["开通", "Meta 企业认证、服务商、模板审核", "扫一下二维码 —— 1 分钟"]
+          - ["费用", "月费 + 按会话收费", "69 USDT/年起，不按消息收费"]
+          - ["现有号码和聊天记录", "通常要迁移到 API", "保留在手机上，不变"]
+          - ["翻译", "很少自带", "✓ 每个聊天，双向翻译"]
+          - ["适合", "大规模自动化营销", "真人和客户聊天"]
+      - type: faq
+        k: "常见问题"
+        h: "WhatsApp Business 问题"
+        items:
+          - ["一台电脑可以登录多个 WhatsApp Business 吗？", "可以。在 GlotChat 中，每个 WhatsApp Business 号码在独立会话中并排运行 —— 入门版 5 个，专业版 15 个，商业版不限。"]
+          - ["需要 WhatsApp Business API 吗？", "不需要。GlotChat 用的是你手机上普通的 WhatsApp Business 应用，像 WhatsApp Web 一样关联。不需要 Meta 审核，不按消息收费。"]
+          - ["标签和商品目录还能用吗？", "能。GlotChat 显示的是官方 WhatsApp Web，所以那里有的商业功能都照常可用。"]
+          - ["普通 WhatsApp 和 WhatsApp Business 可以混用吗？", "可以。两者在套餐中都算 WhatsApp 账号，并排运行。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
+  translate/chinese-english:
+    title: "WhatsApp 中英互译软件（电脑版）| GlotChat"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和英语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    keywords: "WhatsApp 中英翻译, WhatsApp 英语翻译, 外贸 英语 聊天翻译, Telegram 英语翻译, 中文英语互译"
+    short: "中文 ↔ 英语"
+    icon: "🌐"
+    og_heading: "中文 ↔ 英语：WhatsApp 和 Telegram 聊天翻译"
+    blocks:
+      - type: hero
+        k: "中文 ↔ 英语"
+        h1: "中文 ↔ 英语聊天翻译 <span class=\"grad\">WhatsApp 和 Telegram 都能用</span>"
+        lead: "客户用英语发消息？GlotChat 把每条消息翻译成中文显示在原文下方，你用中文写的回复在发送前翻译成地道的英语。支持 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND，在电脑上离线完成。"
+      - type: split
+        k: "英语客户"
+        h: "用中文读，用英语回"
+        p: "英语是全球客户的通用语言 —— 美国、英国、印度、东南亚和非洲的买家都用英语沟通。 用中文写，先看对方将读到的内容，再按回车发送。"
+        ticks: ["每条消息到达即翻译", "回复以英语发出", "发送前显示对方将读到的内容"]
+        mock:
+          top: "<span>用<b>英语</b>发送</span><span>原文：中文</span>"
+          main: "Hello! Yes, we can ship tomorrow. Delivery takes 5 days."
+          notes: [["back", "↩ 对方将读到：您好！可以，明天发货，5 天送达。"]]
+      - type: cards
+        soft: true
+        k: "专为此设计"
+        h: "用英语做生意需要的都有"
+        items:
+          - {icon: "🎙", h: "英语语音", p: "在 WhatsApp 或 Telegram 的英语语音下点击“转文字”：转成文字并翻译 —— 离线完成。"}
+          - {icon: "🖼", h: "图片和截图", p: "图片里的文字 —— 价目表、标签、单据 —— 从英语识别并翻译。"}
+          - {icon: "🔢", h: "数字核对", p: "回复中的每个价格、数量、日期和电话号码，发送前都会核对。"}
+          - {icon: "🗂", h: "多个账号", p: "多个 WhatsApp 和 Telegram 账号并排运行 —— 每个都同样翻译。"}
+          - {icon: "🌍", h: "49 种语言任意组合", p: "今天中文对英语，明天中文对阿拉伯语 —— 任何组合都可以。"}
+      - type: faq
+        k: "常见问题"
+        h: "中文 ↔ 英语翻译 —— 常见问题"
+        items:
+          - ["WhatsApp 的英语消息能自动翻译成中文吗？", "可以。GlotChat 把每条收到的英语消息翻译成中文，显示在原文下方，所有聊天、所有账号都可以。"]
+          - ["不会英语也能用英语回复吗？", "可以。用中文写好按回车：GlotChat 把回复翻译成英语，并在发送前显示客户将读到的内容。"]
+          - ["能翻译英语语音吗？", "能，WhatsApp 和 Telegram 都支持。在语音下点击“转文字”：GlotChat 把英语语音转成文字并翻译，在电脑上离线完成。"]
+          - ["聊天内容会发到在线翻译吗？", "不会。翻译在你的电脑上离线完成。只有你开启可选的 DeepL 引擎时，文字才会发送到 DeepL。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
+  translate/chinese-spanish:
+    single: true
+    title: "WhatsApp 中西互译软件（电脑版）| GlotChat"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和西班牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    keywords: "WhatsApp 中西翻译, WhatsApp 西班牙语翻译, 外贸 西班牙语 聊天翻译, Telegram 西班牙语翻译, 中文西班牙语互译"
+    short: "中文 ↔ 西班牙语"
+    icon: "🌐"
+    og_heading: "中文 ↔ 西班牙语：WhatsApp 和 Telegram 聊天翻译"
+    blocks:
+      - type: hero
+        k: "中文 ↔ 西班牙语"
+        h1: "中文 ↔ 西班牙语聊天翻译 <span class=\"grad\">WhatsApp 和 Telegram 都能用</span>"
+        lead: "客户用西班牙语发消息？GlotChat 把每条消息翻译成中文显示在原文下方，你用中文写的回复在发送前翻译成地道的西班牙语。支持 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND，在电脑上离线完成。"
+      - type: split
+        k: "西班牙语客户"
+        h: "用中文读，用西班牙语回"
+        p: "西班牙和整个拉美 —— 墨西哥、哥伦比亚、阿根廷、智利的买家。 用中文写，先看对方将读到的内容，再按回车发送。"
+        ticks: ["每条消息到达即翻译", "回复以西班牙语发出", "发送前显示对方将读到的内容"]
+        mock:
+          top: "<span>用<b>西班牙语</b>发送</span><span>原文：中文</span>"
+          main: "¡Hola! Sí, tenemos la talla M. El envío a Madrid tarda 3 días."
+          notes: [["back", "↩ 对方将读到：您好！有 M 码。寄到马德里需要 3 天。"]]
+      - type: cards
+        soft: true
+        k: "专为此设计"
+        h: "用西班牙语做生意需要的都有"
+        items:
+          - {icon: "🎙", h: "西班牙语语音", p: "在 WhatsApp 或 Telegram 的西班牙语语音下点击“转文字”：转成文字并翻译 —— 离线完成。"}
+          - {icon: "🖼", h: "图片和截图", p: "图片里的文字 —— 价目表、标签、单据 —— 从西班牙语识别并翻译。"}
+          - {icon: "🔢", h: "数字核对", p: "回复中的每个价格、数量、日期和电话号码，发送前都会核对。"}
+          - {icon: "🗂", h: "多个账号", p: "多个 WhatsApp 和 Telegram 账号并排运行 —— 每个都同样翻译。"}
+          - {icon: "🌍", h: "49 种语言任意组合", p: "今天中文对西班牙语，明天中文对阿拉伯语 —— 任何组合都可以。"}
+      - type: faq
+        k: "常见问题"
+        h: "中文 ↔ 西班牙语翻译 —— 常见问题"
+        items:
+          - ["WhatsApp 的西班牙语消息能自动翻译成中文吗？", "可以。GlotChat 把每条收到的西班牙语消息翻译成中文，显示在原文下方，所有聊天、所有账号都可以。"]
+          - ["不会西班牙语也能用西班牙语回复吗？", "可以。用中文写好按回车：GlotChat 把回复翻译成西班牙语，并在发送前显示客户将读到的内容。"]
+          - ["能翻译西班牙语语音吗？", "能，WhatsApp 和 Telegram 都支持。在语音下点击“转文字”：GlotChat 把西班牙语语音转成文字并翻译，在电脑上离线完成。"]
+          - ["聊天内容会发到在线翻译吗？", "不会。翻译在你的电脑上离线完成。只有你开启可选的 DeepL 引擎时，文字才会发送到 DeepL。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
+  translate/chinese-arabic:
+    single: true
+    title: "WhatsApp 中阿互译软件（电脑版）| GlotChat"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和阿拉伯语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    keywords: "WhatsApp 中阿翻译, WhatsApp 阿拉伯语翻译, 外贸 阿拉伯语 聊天翻译, Telegram 阿拉伯语翻译, 中文阿拉伯语互译"
+    short: "中文 ↔ 阿拉伯语"
+    icon: "🌐"
+    og_heading: "中文 ↔ 阿拉伯语：WhatsApp 和 Telegram 聊天翻译"
+    blocks:
+      - type: hero
+        k: "中文 ↔ 阿拉伯语"
+        h1: "中文 ↔ 阿拉伯语聊天翻译 <span class=\"grad\">WhatsApp 和 Telegram 都能用</span>"
+        lead: "客户用阿拉伯语发消息？GlotChat 把每条消息翻译成中文显示在原文下方，你用中文写的回复在发送前翻译成地道的阿拉伯语。支持 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND，在电脑上离线完成。"
+      - type: split
+        k: "阿拉伯语客户"
+        h: "用中文读，用阿拉伯语回"
+        p: "中东和北非 —— 沙特、阿联酋、埃及、摩洛哥的客户，从右到左的文字也能正确显示。 用中文写，先看对方将读到的内容，再按回车发送。"
+        ticks: ["每条消息到达即翻译", "回复以阿拉伯语发出", "发送前显示对方将读到的内容"]
+        mock:
+          top: "<span>用<b>阿拉伯语</b>发送</span><span>原文：中文</span>"
+          main: "أهلًا! السعر 12 دولارًا للقطعة، والشحن إلى الرياض خلال 5 أيام."
+          notes: [["back", "↩ 对方将读到：您好！每件 12 美元，发到利雅得 5 天。"]]
+      - type: cards
+        soft: true
+        k: "专为此设计"
+        h: "用阿拉伯语做生意需要的都有"
+        items:
+          - {icon: "🎙", h: "阿拉伯语语音", p: "在 WhatsApp 或 Telegram 的阿拉伯语语音下点击“转文字”：转成文字并翻译 —— 离线完成。"}
+          - {icon: "🖼", h: "图片和截图", p: "图片里的文字 —— 价目表、标签、单据 —— 从阿拉伯语识别并翻译。"}
+          - {icon: "🔢", h: "数字核对", p: "回复中的每个价格、数量、日期和电话号码，发送前都会核对。"}
+          - {icon: "🗂", h: "多个账号", p: "多个 WhatsApp 和 Telegram 账号并排运行 —— 每个都同样翻译。"}
+          - {icon: "🌍", h: "49 种语言任意组合", p: "今天中文对阿拉伯语，明天中文对阿拉伯语 —— 任何组合都可以。"}
+      - type: faq
+        k: "常见问题"
+        h: "中文 ↔ 阿拉伯语翻译 —— 常见问题"
+        items:
+          - ["WhatsApp 的阿拉伯语消息能自动翻译成中文吗？", "可以。GlotChat 把每条收到的阿拉伯语消息翻译成中文，显示在原文下方，所有聊天、所有账号都可以。"]
+          - ["不会阿拉伯语也能用阿拉伯语回复吗？", "可以。用中文写好按回车：GlotChat 把回复翻译成阿拉伯语，并在发送前显示客户将读到的内容。"]
+          - ["能翻译阿拉伯语语音吗？", "能，WhatsApp 和 Telegram 都支持。在语音下点击“转文字”：GlotChat 把阿拉伯语语音转成文字并翻译，在电脑上离线完成。"]
+          - ["聊天内容会发到在线翻译吗？", "不会。翻译在你的电脑上离线完成。只有你开启可选的 DeepL 引擎时，文字才会发送到 DeepL。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
+  translate/chinese-russian:
+    single: true
+    title: "WhatsApp 中俄互译软件（电脑版）| GlotChat"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和俄语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    keywords: "WhatsApp 中俄翻译, WhatsApp 俄语翻译, 外贸 俄语 聊天翻译, Telegram 俄语翻译, 中文俄语互译"
+    short: "中文 ↔ 俄语"
+    icon: "🌐"
+    og_heading: "中文 ↔ 俄语：WhatsApp 和 Telegram 聊天翻译"
+    blocks:
+      - type: hero
+        k: "中文 ↔ 俄语"
+        h1: "中文 ↔ 俄语聊天翻译 <span class=\"grad\">WhatsApp 和 Telegram 都能用</span>"
+        lead: "客户用俄语发消息？GlotChat 把每条消息翻译成中文显示在原文下方，你用中文写的回复在发送前翻译成地道的俄语。支持 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND，在电脑上离线完成。"
+      - type: split
+        k: "俄语客户"
+        h: "用中文读，用俄语回"
+        p: "俄罗斯、哈萨克斯坦和独联体客户 —— 他们大多用 Telegram。 用中文写，先看对方将读到的内容，再按回车发送。"
+        ticks: ["每条消息到达即翻译", "回复以俄语发出", "发送前显示对方将读到的内容"]
+        mock:
+          top: "<span>用<b>俄语</b>发送</span><span>原文：中文</span>"
+          main: "Здравствуйте! Да, отправим завтра. Доставка в Москву — 6 дней."
+          notes: [["back", "↩ 对方将读到：您好！是的，明天发货。到莫斯科 6 天。"]]
+      - type: cards
+        soft: true
+        k: "专为此设计"
+        h: "用俄语做生意需要的都有"
+        items:
+          - {icon: "🎙", h: "俄语语音", p: "在 WhatsApp 或 Telegram 的俄语语音下点击“转文字”：转成文字并翻译 —— 离线完成。"}
+          - {icon: "🖼", h: "图片和截图", p: "图片里的文字 —— 价目表、标签、单据 —— 从俄语识别并翻译。"}
+          - {icon: "🔢", h: "数字核对", p: "回复中的每个价格、数量、日期和电话号码，发送前都会核对。"}
+          - {icon: "🗂", h: "多个账号", p: "多个 WhatsApp 和 Telegram 账号并排运行 —— 每个都同样翻译。"}
+          - {icon: "🌍", h: "49 种语言任意组合", p: "今天中文对俄语，明天中文对阿拉伯语 —— 任何组合都可以。"}
+      - type: faq
+        k: "常见问题"
+        h: "中文 ↔ 俄语翻译 —— 常见问题"
+        items:
+          - ["WhatsApp 的俄语消息能自动翻译成中文吗？", "可以。GlotChat 把每条收到的俄语消息翻译成中文，显示在原文下方，所有聊天、所有账号都可以。"]
+          - ["不会俄语也能用俄语回复吗？", "可以。用中文写好按回车：GlotChat 把回复翻译成俄语，并在发送前显示客户将读到的内容。"]
+          - ["能翻译俄语语音吗？", "能，WhatsApp 和 Telegram 都支持。在语音下点击“转文字”：GlotChat 把俄语语音转成文字并翻译，在电脑上离线完成。"]
+          - ["聊天内容会发到在线翻译吗？", "不会。翻译在你的电脑上离线完成。只有你开启可选的 DeepL 引擎时，文字才会发送到 DeepL。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
+  translate/chinese-portuguese:
+    single: true
+    title: "WhatsApp 中葡互译软件（电脑版）| GlotChat"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和葡萄牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    keywords: "WhatsApp 中葡翻译, WhatsApp 葡萄牙语翻译, 外贸 葡萄牙语 聊天翻译, Telegram 葡萄牙语翻译, 中文葡萄牙语互译"
+    short: "中文 ↔ 葡萄牙语"
+    icon: "🌐"
+    og_heading: "中文 ↔ 葡萄牙语：WhatsApp 和 Telegram 聊天翻译"
+    blocks:
+      - type: hero
+        k: "中文 ↔ 葡萄牙语"
+        h1: "中文 ↔ 葡萄牙语聊天翻译 <span class=\"grad\">WhatsApp 和 Telegram 都能用</span>"
+        lead: "客户用葡萄牙语发消息？GlotChat 把每条消息翻译成中文显示在原文下方，你用中文写的回复在发送前翻译成地道的葡萄牙语。支持 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND，在电脑上离线完成。"
+      - type: split
+        k: "葡萄牙语客户"
+        h: "用中文读，用葡萄牙语回"
+        p: "巴西和葡萄牙客户 —— 也支持巴西葡萄牙语。 用中文写，先看对方将读到的内容，再按回车发送。"
+        ticks: ["每条消息到达即翻译", "回复以葡萄牙语发出", "发送前显示对方将读到的内容"]
+        mock:
+          top: "<span>用<b>葡萄牙语</b>发送</span><span>原文：中文</span>"
+          main: "Olá! Temos sim. O frete para São Paulo fica em 15 dólares e chega em 7 dias."
+          notes: [["back", "↩ 对方将读到：您好！有货。寄到圣保罗运费 15 美元，7 天到。"]]
+      - type: cards
+        soft: true
+        k: "专为此设计"
+        h: "用葡萄牙语做生意需要的都有"
+        items:
+          - {icon: "🎙", h: "葡萄牙语语音", p: "在 WhatsApp 或 Telegram 的葡萄牙语语音下点击“转文字”：转成文字并翻译 —— 离线完成。"}
+          - {icon: "🖼", h: "图片和截图", p: "图片里的文字 —— 价目表、标签、单据 —— 从葡萄牙语识别并翻译。"}
+          - {icon: "🔢", h: "数字核对", p: "回复中的每个价格、数量、日期和电话号码，发送前都会核对。"}
+          - {icon: "🗂", h: "多个账号", p: "多个 WhatsApp 和 Telegram 账号并排运行 —— 每个都同样翻译。"}
+          - {icon: "🌍", h: "49 种语言任意组合", p: "今天中文对葡萄牙语，明天中文对阿拉伯语 —— 任何组合都可以。"}
+      - type: faq
+        k: "常见问题"
+        h: "中文 ↔ 葡萄牙语翻译 —— 常见问题"
+        items:
+          - ["WhatsApp 的葡萄牙语消息能自动翻译成中文吗？", "可以。GlotChat 把每条收到的葡萄牙语消息翻译成中文，显示在原文下方，所有聊天、所有账号都可以。"]
+          - ["不会葡萄牙语也能用葡萄牙语回复吗？", "可以。用中文写好按回车：GlotChat 把回复翻译成葡萄牙语，并在发送前显示客户将读到的内容。"]
+          - ["能翻译葡萄牙语语音吗？", "能，WhatsApp 和 Telegram 都支持。在语音下点击“转文字”：GlotChat 把葡萄牙语语音转成文字并翻译，在电脑上离线完成。"]
+          - ["聊天内容会发到在线翻译吗？", "不会。翻译在你的电脑上离线完成。只有你开启可选的 DeepL 引擎时，文字才会发送到 DeepL。"]
+      - type: related
+        k: "继续了解"
+        h: "相关"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
 

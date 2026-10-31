@@ -278,6 +278,104 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
   </url>
   <url>
+    <loc>https://www.glotchat.com/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/chinese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/chinese-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/arabic-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/arabic-english/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/translate/arabic-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/arabic-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/spanish-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/spanish-english/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/translate/spanish-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/spanish-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/portuguese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/portuguese-english/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/translate/portuguese-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/portuguese-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/russian-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/russian-english/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/translate/russian-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/russian-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/turkish-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/turkish-english/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/translate/turkish-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/turkish-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/french-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/korean-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/vietnamese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/translate/indonesian-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/privacy/</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
@@ -609,6 +707,77 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/guides/whatsapp-translation-plugin-vs-app/"/>
   </url>
   <url>
+    <loc>https://www.glotchat.com/zh/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/translate/chinese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/chinese-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/translate/chinese-spanish/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-spanish/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-spanish/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/translate/chinese-arabic/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-arabic/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-arabic/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/translate/chinese-russian/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-russian/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-russian/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh/translate/chinese-portuguese/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-portuguese/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-portuguese/"/>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/zh-hant/</loc>
     <lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/"/>
@@ -919,6 +1088,77 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/guides/whatsapp-translation-plugin-vs-app/"/>
   </url>
   <url>
+    <loc>https://www.glotchat.com/zh-hant/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/translate/chinese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/chinese-english/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/translate/chinese-spanish/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-spanish/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-spanish/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/translate/chinese-arabic/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-arabic/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-arabic/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/translate/chinese-russian/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-russian/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-russian/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/zh-hant/translate/chinese-portuguese/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/translate/chinese-portuguese/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/translate/chinese-portuguese/"/>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/ar/</loc>
     <lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/"/>
@@ -1203,6 +1443,52 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ar/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ar/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ar/translate/arabic-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/arabic-english/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/translate/arabic-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/arabic-english/"/>
   </url>
   <url>
     <loc>https://www.glotchat.com/tr/</loc>
@@ -1491,6 +1777,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
   </url>
   <url>
+    <loc>https://www.glotchat.com/tr/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/tr/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/tr/translate/turkish-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/turkish-english/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/translate/turkish-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/turkish-english/"/>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/es/</loc>
     <lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/"/>
@@ -1775,6 +2107,52 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/es/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/es/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/es/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/es/translate/spanish-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/spanish-english/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/translate/spanish-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/spanish-english/"/>
   </url>
   <url>
     <loc>https://www.glotchat.com/pt/</loc>
@@ -2063,6 +2441,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
   </url>
   <url>
+    <loc>https://www.glotchat.com/pt/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/pt/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/pt/translate/portuguese-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/portuguese-english/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/translate/portuguese-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/portuguese-english/"/>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/ru/</loc>
     <lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/"/>
@@ -2347,5 +2771,51 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/guides/best-all-in-one-messenger-apps/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-all-in-one-messenger-apps/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ru/how-to-buy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/how-to-buy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/how-to-buy/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ru/is-it-safe/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/is-it-safe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/is-it-safe/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.glotchat.com/ar/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.glotchat.com/tr/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.glotchat.com/es/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.glotchat.com/pt/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/multiple-whatsapp-business-accounts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/multiple-whatsapp-business-accounts/"/>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/ru/translate/russian-english/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/translate/russian-english/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.glotchat.com/ru/translate/russian-english/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/translate/russian-english/"/>
   </url>
 </urlset>

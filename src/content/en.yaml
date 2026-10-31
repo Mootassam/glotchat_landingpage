@@ -32,6 +32,10 @@ ui:
     bd: "BAND translator"
     bd_s: "BAND chats in any language"
     alt: "Rambox alternative"
+    buy: "How to buy"
+    safe: "Is it safe?"
+    wab: "WhatsApp Business accounts"
+    pairs: "Popular language pairs"
     compare: "Compare"
     compare_s: "GlotChat vs other ways to do it"
     usecases: "Use cases"
@@ -493,8 +497,7 @@ pages:
       - type: related
         k: "Before you buy"
         h: "See exactly what you get"
-        items: ["whatsapp-translator", "telegram-translator", "compare"]
-
+        items: ["how-to-buy", "is-it-safe", "compare"]
   # ================================================================ WHATSAPP TRANSLATOR
   whatsapp-translator:
     title: "WhatsApp Translator for PC – Chats, Voice & Photos, Offline"
@@ -552,6 +555,10 @@ pages:
         k: "49 languages"
         h: "Translate between any of these languages"
         p: "Any pair works — Arabic to Chinese, Turkish to Spanish, Russian to Portuguese. Voice notes are recognised in about 100 spoken languages."
+      - type: related
+        k: "Language pairs"
+        h: "Popular language pairs"
+        items: ["translate/chinese-english", "translate/arabic-english", "translate/spanish-english", "translate/portuguese-english", "translate/russian-english", "translate/turkish-english", "translate/french-english", "translate/korean-english", "translate/vietnamese-english", "translate/indonesian-english"]
       - type: faq
         soft: true
         k: "FAQ"
@@ -1705,6 +1712,654 @@ pages:
         k: "Next"
         h: "Keep reading"
         items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+
+  how-to-buy:
+    title: "How to Buy GlotChat with USDT (Step by Step)"
+    description: "Never paid with USDT? Here's how to buy a GlotChat plan step by step: get USDT on Binance or OKX, pick the right network, send it and receive your key."
+    keywords: "buy glotchat, pay with usdt, how to pay usdt trc20, buy usdt binance p2p, glotchat license key"
+    short: "How to buy"
+    icon: "🛒"
+    og_heading: "How to buy GlotChat with USDT — step by step"
+    blocks:
+      - type: hero
+        k: "How to buy"
+        h1: "How to buy GlotChat <span class=\"grad\">with USDT, step by step</span>"
+        lead: "Never paid with crypto before? No problem. It takes about 10 minutes the first time, and a real person helps you on Telegram at every step."
+        cta2: ["pricing", "See the plans"]
+      - type: prose
+        toc: true
+        md: |
+          > **Short version:** try GlotChat free for 3 days → message us on Telegram with your plan and Machine ID → send USDT to the address we give you → paste the key you receive. Done.
+
+          ## 1. Try it free first
+
+          [Download GlotChat](/download/) and click **“Start my free 3-day trial”**. Every feature is unlocked, no payment. Add your accounts and make sure GlotChat is right for you before you pay anything.
+
+          ## 2. Choose your plan
+
+          Accounts are counted **per app**: Starter gives you 5 WhatsApp + 5 Telegram + 5 Instagram and so on.
+
+          | Plan | Accounts per app | Computers | Price per year |
+          |---|---|---|---|
+          | Starter | up to 5 | 1 | 69 USDT |
+          | Pro | up to 15 | 1 | 129 USDT |
+          | Business | unlimited | up to 3 | 249 USDT |
+
+          ## 3. Copy your Machine ID
+
+          In GlotChat, open **Settings → License** and click **Copy** next to your Machine ID. Your key will be made for this computer.
+
+          ## 4. Message us on Telegram
+
+          Write to **[@GlotChat](https://t.me/GlotChat)** with your plan and your Machine ID. We reply with the exact amount and our USDT address — **only trust an address you get from @GlotChat**.
+
+          ## 5. Get USDT (if you don't have any)
+
+          USDT is a digital dollar: 1 USDT ≈ 1 US dollar. The easiest ways to get it:
+
+          - **Binance or OKX:** create an account, then buy USDT with your card, a bank transfer or **P2P** (you pay a local seller in your own currency — cash apps, bank, mobile money).
+          - **Bybit, KuCoin, Bitget** and most other exchanges work the same way.
+          - **A friend or colleague** who already has USDT can pay for you — that's fine.
+
+          ## 6. Send the USDT — on the right network
+
+          USDT exists on several networks. We accept **TRC20 (Tron), BEP20 (BNB Smart Chain) and ERC20 (Ethereum)**. The network you choose when sending **must match** the address we gave you.
+
+          1. In your exchange, go to **Withdraw → USDT**.
+          2. Paste our address and pick the **same network** we named (TRC20 or BEP20 usually have the lowest fees; ERC20 can be expensive).
+          3. Check that the amount **we receive** is the full plan price — the exchange fee comes on top.
+          4. Confirm. Then send us the screenshot or the transaction ID (TXID) on Telegram.
+
+          ## 7. Paste your key
+
+          Your yearly key usually arrives within minutes. In GlotChat, go to **Settings → Enter a new key** and paste it. Your accounts, logins and settings stay exactly as they were in the trial.
+
+          ## Safety tips
+
+          - Only send to an address you received from **@GlotChat** on Telegram. We never ask for your exchange password, seed phrase or codes.
+          - Double-check the **network**. USDT sent on the wrong network can be lost.
+          - Keep the **TXID** until your key works.
+
+          Questions before paying? [Ask a real person on Telegram](https://t.me/GlotChat) — we're happy to walk you through it.
+      - type: faq
+        k: "FAQ"
+        h: "Buying questions"
+        items:
+          - ["Can I pay with a card or PayPal?", "Not directly — we only accept USDT for now. The easiest way is to buy USDT with your card on Binance or OKX, then send it to us. It takes about 10 minutes."]
+          - ["Which network should I use?", "TRC20 or BEP20 — they usually have the lowest fees. ERC20 also works but can cost several dollars in fees. Always use the network we name with the address."]
+          - ["How long until I get my key?", "Usually within minutes after the payment arrives. A real person handles every order on Telegram."]
+          - ["Can someone else pay for me?", "Yes. A friend, colleague or your company can send the USDT — just tell us on Telegram which payment is yours."]
+          - ["What happens after one year?", "You renew at the same price and keep working without interruption. Your accounts and settings stay on your PC."]
+      - type: related
+        k: "Before you buy"
+        h: "Good to know"
+        items: ["pricing", "is-it-safe", "download"]
+
+  is-it-safe:
+    title: "Is GlotChat Safe? Will My WhatsApp Account Get Banned?"
+    description: "How GlotChat works, what stays on your PC, and what really gets WhatsApp and Telegram accounts banned — plus 7 tips to keep your numbers safe."
+    keywords: "is glotchat safe, will my whatsapp get banned, multiple whatsapp accounts ban, whatsapp web safe, whatsapp translator safe, telegram multiple accounts ban"
+    short: "Is it safe?"
+    icon: "🛡"
+    og_heading: "Is GlotChat safe? Will my WhatsApp get banned?"
+    blocks:
+      - type: hero
+        k: "Safety"
+        h1: "Is GlotChat safe? <span class=\"grad\">Will my account get banned?</span>"
+        lead: "The honest answer, in plain words: what GlotChat does, what it never does, and what really gets accounts banned."
+      - type: cards
+        k: "How GlotChat works"
+        h: "The official apps, organised — nothing hidden"
+        items:
+          - {icon: "✅", h: "Official web versions", p: "Each account opens the official WhatsApp Web, Telegram Web, Messenger, Instagram, Discord or BAND website — exactly what your browser shows."}
+          - {icon: "🔗", h: "Official linking", p: "WhatsApp accounts are linked with WhatsApp's own Linked devices feature, by scanning a QR code with your phone."}
+          - {icon: "🤚", h: "Never sends by itself", p: "GlotChat only sends what you write and confirm. No bots, no bulk messages, no automatic replies."}
+          - {icon: "💻", h: "Chats stay on your PC", p: "Messages, contacts and media are stored only on your computer. We never receive them."}
+          - {icon: "🔒", h: "Offline translation", p: "Translation, voice transcription and photo reading run on your PC, not on a cloud service (unless you turn on DeepL)."}
+          - {icon: "🧱", h: "Every account sealed", p: "Each account has its own isolated session and storage, and optionally its own proxy — logins never mix."}
+      - type: prose
+        md: |
+          ## What really gets accounts banned
+
+          WhatsApp and Telegram don't ban you for *where* you open your account — linked devices and web versions are official features. They ban **behaviour**:
+
+          - **Spam and bulk messages** to people who didn't write to you first.
+          - **Many people blocking or reporting** your number.
+          - **Modified apps** such as “GB WhatsApp” or “WhatsApp Plus”.
+          - **Brand-new numbers** that message lots of strangers on day one.
+          - **Automation tools** that send messages by themselves.
+
+          GlotChat does none of these. It helps you **answer** customers faster, in their language.
+
+          ## 7 tips to keep your numbers safe
+
+          1. **Reply, don't blast.** Talk to people who contacted you or expect your message.
+          2. **Warm up new numbers.** Use a new number normally for a few days before contacting many people.
+          3. **Open WhatsApp on the phone** at least every 14 days, or linked devices get logged out.
+          4. **Use one proxy per country** if you sell in several countries (optional).
+          5. **Don't send the same message** to hundreds of people — use templates for replies, not campaigns.
+          6. **Keep the official WhatsApp app** on the phone — never a modified version.
+          7. **Answer in the customer's language.** Fewer misunderstandings, fewer reports.
+      - type: faq
+        k: "FAQ"
+        h: "Safety questions"
+        items:
+          - ["Is GlotChat safe to use?", "Yes. GlotChat shows the official web versions of each app in isolated sessions, never sends anything by itself and keeps your chats on your PC."]
+          - ["Will WhatsApp ban me for using several accounts on one PC?", "Not for that alone. Linked devices are an official WhatsApp feature. Bans come from spam, bulk messages, reports and modified apps — not from opening your accounts on a computer."]
+          - ["Can GlotChat read my messages?", "No. Your messages are stored only on your computer and translated there. We never receive them. Licensing only uses your key and Machine ID."]
+          - ["Does the customer know I use a translator?", "No. They simply receive your message in their language. Nothing is added to the chat."]
+          - ["Does GlotChat send messages automatically?", "Never. Every message is written and confirmed by you."]
+      - type: related
+        k: "Learn more"
+        h: "Related"
+        items: ["privacy", "how-to-buy", "multiple-whatsapp-accounts"]
+
+  multiple-whatsapp-business-accounts:
+    title: "Multiple WhatsApp Business Accounts on PC + Translation"
+    description: "Run several WhatsApp Business numbers on one PC in one window — each isolated, with labels, catalog and quick replies, and every chat translated. No API needed."
+    keywords: "multiple whatsapp business accounts on pc, whatsapp business multiple numbers, whatsapp business desktop multiple accounts, whatsapp business translator, whatsapp business without api"
+    short: "WhatsApp Business accounts"
+    icon: "🏪"
+    og_heading: "Several WhatsApp Business numbers, one window, every chat translated"
+    blocks:
+      - type: hero
+        k: "WhatsApp Business on PC"
+        h1: "All your WhatsApp Business numbers <span class=\"grad\">in one window</span>"
+        lead: "One number per shop, country or salesperson? GlotChat opens every WhatsApp Business account side by side on your PC — each in its own sealed session — and translates every chat both ways. No API, no Meta approval, no monthly fee per number."
+        media: "img:switcher"
+        media_alt: "Several WhatsApp Business accounts side by side in GlotChat"
+      - type: steps
+        soft: false
+        k: "How it works"
+        h: "Add each Business number in a minute"
+        items:
+          - ["Add an account", "Click Add account, pick WhatsApp and name it — “Shop UAE”, “Sales — Maria”."]
+          - ["Scan the QR code", "On the phone with that WhatsApp Business number: Settings → Linked devices → Link a device."]
+          - ["Work from one window", "Switch with one click. Every notification shows which number it's for."]
+      - type: cards
+        soft: true
+        k: "What you get"
+        h: "Everything WhatsApp Business Web does — for every number"
+        items:
+          - {icon: "🏷", h: "Labels, catalog, quick replies", p: "The Business features you know from WhatsApp Web work as usual, on every number."}
+          - {icon: "🌐", h: "Every chat translated", p: "Customers' messages translated under the original, your replies translated before you send them — 49 languages."}
+          - {icon: "🎙", h: "Voice notes and photos", p: "Voice notes turned into text and translated; text in photos and screenshots translated too."}
+          - {icon: "🧱", h: "Each number isolated", p: "Separate sessions, separate notifications and an optional proxy per number."}
+          - {icon: "⚡", h: "Shared templates", p: "Prices, delivery times and payment details saved once and inserted in any chat."}
+          - {icon: "👥", h: "WhatsApp and Business together", p: "Normal WhatsApp and WhatsApp Business numbers side by side — plus Telegram and more.", link: "all-in-one-messenger"}
+      - type: table
+        k: "Compared"
+        h: "GlotChat vs the WhatsApp Business API"
+        hl: 2
+        cols: ["", "WhatsApp Business API tools", "GlotChat"]
+        rows:
+          - ["Setup", "Meta business verification, a provider, templates approved", "Scan a QR code — 1 minute"]
+          - ["Cost", "Monthly fee + price per conversation", "From 69 USDT a year, no per-message fees"]
+          - ["Your existing number and chats", "Usually moved to the API", "Stays on your phone as it is"]
+          - ["Translation", "Rarely built in", "✓ Every chat, both ways"]
+          - ["Best for", "Big automated campaigns", "People talking to customers"]
+      - type: faq
+        k: "FAQ"
+        h: "WhatsApp Business questions"
+        items:
+          - ["Can I use multiple WhatsApp Business accounts on one PC?", "Yes. In GlotChat each WhatsApp Business number runs in its own isolated session, side by side in one window — up to 5 on Starter, 15 on Pro, unlimited on Business."]
+          - ["Do I need the WhatsApp Business API?", "No. GlotChat uses the normal WhatsApp Business app on your phone, linked like WhatsApp Web. No Meta approval, no per-message fees."]
+          - ["Do labels and the catalog still work?", "Yes. GlotChat shows the official WhatsApp Web, so the Business features available there work as usual."]
+          - ["Can I mix normal WhatsApp and WhatsApp Business?", "Yes. Both count as WhatsApp accounts in your plan and run side by side."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
+
+  translate/chinese-english:
+    title: "Chinese to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Chinese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "chinese to english whatsapp translator, english to chinese whatsapp, translate chinese whatsapp messages, chinese telegram translator, chinese english chat translator"
+    short: "Chinese ↔ English"
+    icon: "🌐"
+    og_heading: "Chinese ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Chinese ↔ English"
+        h1: "Chinese ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Chinese? GlotChat translates every message into English under the original — and turns your English reply into natural Chinese before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Chinese customers"
+        h: "Read in English, reply in Chinese"
+        p: "Suppliers and factories in China, buyers in Taiwan and Hong Kong — Simplified and Traditional Chinese are both supported. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Chinese", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Chinese</b></span><span>from English</span>"
+          main: "您好！这款可以印您的 logo，起订量 500 件，10 天发货。"
+          notes: [["back", "↩ They will read: Hello! We can print your logo on this one. Minimum order 500 pieces, ships in 10 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Chinese"
+        items:
+          - {icon: "⭐", h: "Simplified & Traditional", p: "Both Chinese scripts are supported — pick the one your customer uses."}
+          - {icon: "🎙", h: "Chinese voice notes", p: "Click Transcribe under a Chinese voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Chinese."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Chinese to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Chinese ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Chinese to English automatically?", "Yes. GlotChat translates every incoming Chinese message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Chinese without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Chinese and shows what the customer will read before you send it."]
+          - ["Does it translate Chinese voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Chinese audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/arabic-english"]
+
+  translate/arabic-english:
+    title: "Arabic to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Arabic and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "arabic to english whatsapp translator, english to arabic whatsapp, translate arabic whatsapp messages, arabic telegram translator, arabic english chat translator"
+    short: "Arabic ↔ English"
+    icon: "🌐"
+    og_heading: "Arabic ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Arabic ↔ English"
+        h1: "Arabic ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Arabic? GlotChat translates every message into English under the original — and turns your English reply into natural Arabic before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Arabic customers"
+        h: "Read in English, reply in Arabic"
+        p: "Customers and partners in the Gulf, Egypt and North Africa — Arabic text is shown right-to-left, correctly. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Arabic", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Arabic</b></span><span>from English</span>"
+          main: "أهلًا! السعر 12 دولارًا للقطعة، والشحن إلى الرياض خلال 5 أيام."
+          notes: [["back", "↩ They will read: Hi! The price is $12 per piece, and shipping to Riyadh takes 5 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Arabic"
+        items:
+          - {icon: "⭐", h: "Right-to-left, done right", p: "Arabic messages and your Arabic replies display right-to-left, mixed correctly with numbers and prices."}
+          - {icon: "🎙", h: "Arabic voice notes", p: "Click Transcribe under a Arabic voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Arabic."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Arabic to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Arabic ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Arabic to English automatically?", "Yes. GlotChat translates every incoming Arabic message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Arabic without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Arabic and shows what the customer will read before you send it."]
+          - ["Does it translate Arabic voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Arabic audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/spanish-english"]
+
+  translate/spanish-english:
+    title: "Spanish to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Spanish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "spanish to english whatsapp translator, english to spanish whatsapp, translate spanish whatsapp messages, spanish telegram translator, spanish english chat translator"
+    short: "Spanish ↔ English"
+    icon: "🌐"
+    og_heading: "Spanish ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Spanish ↔ English"
+        h1: "Spanish ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Spanish? GlotChat translates every message into English under the original — and turns your English reply into natural Spanish before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Spanish customers"
+        h: "Read in English, reply in Spanish"
+        p: "Buyers in Spain and across Latin America, from Mexico to Argentina. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Spanish", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Spanish</b></span><span>from English</span>"
+          main: "¡Hola! Sí, tenemos la talla M. El envío a Madrid tarda 3 días."
+          notes: [["back", "↩ They will read: Hi! Yes, we have size M. Shipping to Madrid takes 3 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Spanish"
+        items:
+          - {icon: "⭐", h: "Spain and Latin America", p: "Natural Spanish for customers from Madrid to Mexico City and Buenos Aires."}
+          - {icon: "🎙", h: "Spanish voice notes", p: "Click Transcribe under a Spanish voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Spanish."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Spanish to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Spanish ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Spanish to English automatically?", "Yes. GlotChat translates every incoming Spanish message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Spanish without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Spanish and shows what the customer will read before you send it."]
+          - ["Does it translate Spanish voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Spanish audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/portuguese-english"]
+
+  translate/portuguese-english:
+    title: "Portuguese to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Portuguese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "portuguese to english whatsapp translator, english to portuguese whatsapp, translate portuguese whatsapp messages, portuguese telegram translator, portuguese english chat translator"
+    short: "Portuguese ↔ English"
+    icon: "🌐"
+    og_heading: "Portuguese ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Portuguese ↔ English"
+        h1: "Portuguese ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Portuguese? GlotChat translates every message into English under the original — and turns your English reply into natural Portuguese before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Portuguese customers"
+        h: "Read in English, reply in Portuguese"
+        p: "Customers in Brazil and Portugal — Brazilian Portuguese is available as its own language. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Portuguese", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Portuguese</b></span><span>from English</span>"
+          main: "Olá! Temos sim. O frete para São Paulo fica em 15 dólares e chega em 7 dias."
+          notes: [["back", "↩ They will read: Hi! Yes, we have it. Shipping to São Paulo is $15 and arrives in 7 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Portuguese"
+        items:
+          - {icon: "⭐", h: "Brazil or Portugal", p: "Choose Brazilian or European Portuguese for your replies."}
+          - {icon: "🎙", h: "Portuguese voice notes", p: "Click Transcribe under a Portuguese voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Portuguese."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Portuguese to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Portuguese ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Portuguese to English automatically?", "Yes. GlotChat translates every incoming Portuguese message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Portuguese without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Portuguese and shows what the customer will read before you send it."]
+          - ["Does it translate Portuguese voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Portuguese audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/russian-english"]
+
+  translate/russian-english:
+    title: "Russian to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Russian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "russian to english whatsapp translator, english to russian whatsapp, translate russian whatsapp messages, russian telegram translator, russian english chat translator"
+    short: "Russian ↔ English"
+    icon: "🌐"
+    og_heading: "Russian ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Russian ↔ English"
+        h1: "Russian ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Russian? GlotChat translates every message into English under the original — and turns your English reply into natural Russian before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Russian customers"
+        h: "Read in English, reply in Russian"
+        p: "Customers in Russia, Kazakhstan and across the CIS — most of them on Telegram. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Russian", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Russian</b></span><span>from English</span>"
+          main: "Здравствуйте! Да, отправим завтра. Доставка в Москву — 6 дней."
+          notes: [["back", "↩ They will read: Hello! Yes, we'll ship tomorrow. Delivery to Moscow takes 6 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Russian"
+        items:
+          - {icon: "⭐", h: "Telegram-ready", p: "Russian speakers live on Telegram — every Telegram chat, group and voice note translated.", link: "telegram-translator"}
+          - {icon: "🎙", h: "Russian voice notes", p: "Click Transcribe under a Russian voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Russian."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Russian to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Russian ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Russian to English automatically?", "Yes. GlotChat translates every incoming Russian message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Russian without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Russian and shows what the customer will read before you send it."]
+          - ["Does it translate Russian voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Russian audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/turkish-english"]
+
+  translate/turkish-english:
+    title: "Turkish to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Turkish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "turkish to english whatsapp translator, english to turkish whatsapp, translate turkish whatsapp messages, turkish telegram translator, turkish english chat translator"
+    short: "Turkish ↔ English"
+    icon: "🌐"
+    og_heading: "Turkish ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Turkish ↔ English"
+        h1: "Turkish ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Turkish? GlotChat translates every message into English under the original — and turns your English reply into natural Turkish before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Turkish customers"
+        h: "Read in English, reply in Turkish"
+        p: "Suppliers and buyers in Türkiye — textiles, furniture, food and logistics. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Turkish", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Turkish</b></span><span>from English</span>"
+          main: "Merhaba! Evet, yarın kargoya veriyoruz. İstanbul'a teslimat 2 gün."
+          notes: [["back", "↩ They will read: Hi! Yes, we ship tomorrow. Delivery to Istanbul takes 2 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Turkish"
+        items:
+          - {icon: "⭐", h: "Prices and dates checked", p: "Turkish writes numbers differently — GlotChat checks every price and date in your reply."}
+          - {icon: "🎙", h: "Turkish voice notes", p: "Click Transcribe under a Turkish voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Turkish."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Turkish to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Turkish ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Turkish to English automatically?", "Yes. GlotChat translates every incoming Turkish message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Turkish without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Turkish and shows what the customer will read before you send it."]
+          - ["Does it translate Turkish voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Turkish audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/french-english"]
+
+  translate/french-english:
+    title: "French to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between French and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "french to english whatsapp translator, english to french whatsapp, translate french whatsapp messages, french telegram translator, french english chat translator"
+    short: "French ↔ English"
+    icon: "🌐"
+    og_heading: "French ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "French ↔ English"
+        h1: "French ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in French? GlotChat translates every message into English under the original — and turns your English reply into natural French before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "French customers"
+        h: "Read in English, reply in French"
+        p: "Customers in France, Belgium, Switzerland, Canada and West Africa. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in French", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>French</b></span><span>from English</span>"
+          main: "Bonjour ! Oui, nous livrons à Paris en 4 jours. Le prix est de 25 € la pièce."
+          notes: [["back", "↩ They will read: Hello! Yes, we deliver to Paris in 4 days. The price is €25 per piece."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in French"
+        items:
+          - {icon: "⭐", h: "Europe, Canada, Africa", p: "One translator for French-speaking customers on three continents."}
+          - {icon: "🎙", h: "French voice notes", p: "Click Transcribe under a French voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from French."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "French to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "French ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from French to English automatically?", "Yes. GlotChat translates every incoming French message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in French without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into French and shows what the customer will read before you send it."]
+          - ["Does it translate French voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the French audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/korean-english"]
+
+  translate/korean-english:
+    title: "Korean to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Korean and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "korean to english whatsapp translator, english to korean whatsapp, translate korean whatsapp messages, korean telegram translator, korean english chat translator"
+    short: "Korean ↔ English"
+    icon: "🌐"
+    og_heading: "Korean ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Korean ↔ English"
+        h1: "Korean ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Korean? GlotChat translates every message into English under the original — and turns your English reply into natural Korean before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Korean customers"
+        h: "Read in English, reply in Korean"
+        p: "Partners and customers in Korea — on WhatsApp, Telegram and BAND. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Korean", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Korean</b></span><span>from English</span>"
+          main: "안녕하세요! 네, 내일 발송해 드립니다. 서울까지 2일 걸립니다."
+          notes: [["back", "↩ They will read: Hello! Yes, we'll ship it tomorrow. It takes 2 days to Seoul."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Korean"
+        items:
+          - {icon: "⭐", h: "BAND too", p: "Korean partners often use BAND — GlotChat translates BAND chats as well.", link: "band-translator"}
+          - {icon: "🎙", h: "Korean voice notes", p: "Click Transcribe under a Korean voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Korean."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Korean to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Korean ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Korean to English automatically?", "Yes. GlotChat translates every incoming Korean message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Korean without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Korean and shows what the customer will read before you send it."]
+          - ["Does it translate Korean voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Korean audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/vietnamese-english"]
+
+  translate/vietnamese-english:
+    title: "Vietnamese to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Vietnamese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "vietnamese to english whatsapp translator, english to vietnamese whatsapp, translate vietnamese whatsapp messages, vietnamese telegram translator, vietnamese english chat translator"
+    short: "Vietnamese ↔ English"
+    icon: "🌐"
+    og_heading: "Vietnamese ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Vietnamese ↔ English"
+        h1: "Vietnamese ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Vietnamese? GlotChat translates every message into English under the original — and turns your English reply into natural Vietnamese before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Vietnamese customers"
+        h: "Read in English, reply in Vietnamese"
+        p: "Factories, suppliers and sellers in Vietnam. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Vietnamese", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Vietnamese</b></span><span>from English</span>"
+          main: "Chào anh! Dạ có ạ, giá 20 đô một cái, giao đến Hà Nội trong 5 ngày."
+          notes: [["back", "↩ They will read: Hi! Yes, we have it — $20 each, delivered to Hanoi in 5 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Vietnamese"
+        items:
+          - {icon: "⭐", h: "Supplier chats", p: "Quotes, samples and shipping updates with Vietnamese factories, translated both ways."}
+          - {icon: "🎙", h: "Vietnamese voice notes", p: "Click Transcribe under a Vietnamese voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Vietnamese."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Vietnamese to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Vietnamese ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Vietnamese to English automatically?", "Yes. GlotChat translates every incoming Vietnamese message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Vietnamese without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Vietnamese and shows what the customer will read before you send it."]
+          - ["Does it translate Vietnamese voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Vietnamese audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/indonesian-english"]
+
+  translate/indonesian-english:
+    title: "Indonesian to English WhatsApp Translator on PC | GlotChat"
+    description: "Translate WhatsApp and Telegram chats between Indonesian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free."
+    keywords: "indonesian to english whatsapp translator, english to indonesian whatsapp, translate indonesian whatsapp messages, indonesian telegram translator, indonesian english chat translator"
+    short: "Indonesian ↔ English"
+    icon: "🌐"
+    og_heading: "Indonesian ↔ English translator for WhatsApp & Telegram"
+    blocks:
+      - type: hero
+        k: "Indonesian ↔ English"
+        h1: "Indonesian ↔ English translator <span class=\"grad\">for WhatsApp & Telegram</span>"
+        lead: "Customers write in Indonesian? GlotChat translates every message into English under the original — and turns your English reply into natural Indonesian before you send it. In WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, offline on your PC."
+      - type: split
+        k: "Indonesian customers"
+        h: "Read in English, reply in Indonesian"
+        p: "Resellers and customers in Indonesia — and Malay for Malaysia is supported too. Write in English, check what they will read, press Enter."
+        ticks: ["Every message translated as it arrives", "Your reply sent in Indonesian", "What they will read, shown before sending"]
+        mock:
+          top: "<span>Send in <b>Indonesian</b></span><span>from English</span>"
+          main: "Halo! Ya, ada. Harganya 15 dolar per pcs, pengiriman ke Jakarta 4 hari."
+          notes: [["back", "↩ They will read: Hi! Yes, we have it. The price is $15 per piece, shipping to Jakarta takes 4 days."]]
+      - type: cards
+        soft: true
+        k: "Built for it"
+        h: "Everything you need to sell in Indonesian"
+        items:
+          - {icon: "⭐", h: "Malay too", p: "Bahasa Melayu is supported as well, for customers in Malaysia and Brunei."}
+          - {icon: "🎙", h: "Indonesian voice notes", p: "Click Transcribe under a Indonesian voice note on WhatsApp or Telegram: it becomes text and is translated — offline."}
+          - {icon: "🖼", h: "Photos and screenshots", p: "Text in photos — price lists, labels, receipts — read and translated from Indonesian."}
+          - {icon: "🔢", h: "Numbers checked", p: "Every price, quantity, date and phone number in your reply is checked before it goes out."}
+          - {icon: "🗂", h: "Many accounts", p: "Several WhatsApp and Telegram accounts side by side — each translated the same way."}
+          - {icon: "🌍", h: "Any pair of 49 languages", p: "Indonesian to English today, Arabic to Spanish tomorrow — any combination works.", link: "whatsapp-translator"}
+      - type: faq
+        k: "FAQ"
+        h: "Indonesian ↔ English translation — questions"
+        items:
+          - ["Can I translate WhatsApp messages from Indonesian to English automatically?", "Yes. GlotChat translates every incoming Indonesian message into English and shows it under the original, in every chat and on every account."]
+          - ["Can I reply in Indonesian without speaking it?", "Yes. Write in English and press Enter: GlotChat translates your reply into Indonesian and shows what the customer will read before you send it."]
+          - ["Does it translate Indonesian voice notes?", "Yes, on WhatsApp and Telegram. Click Transcribe under the voice note: GlotChat turns the Indonesian audio into text and translates it, offline on your PC."]
+          - ["Is my chat sent to an online translator?", "No. Translation runs offline on your computer. Only if you turn on the optional DeepL engine is text sent to DeepL."]
+      - type: related
+        k: "Keep exploring"
+        h: "Related"
+        items: ["whatsapp-translator", "telegram-translator", "translate/chinese-english"]
 
   privacy:
     title: "Privacy Policy – GlotChat"

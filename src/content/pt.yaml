@@ -35,6 +35,10 @@ ui:
     bd: "Tradutor do BAND"
     bd_s: "Chats do BAND em qualquer idioma"
     alt: "Alternativa ao Rambox"
+    buy: "Como comprar"
+    safe: "É seguro?"
+    wab: "Contas do WhatsApp Business"
+    pairs: "Pares de idiomas populares"
   cta_trial: Baixe grátis — teste de 3 dias
   cta_demo: Veja funcionando
   cta_live: Peça uma demonstração ao vivo
@@ -624,10 +628,7 @@ pages:
     - type: related
       k: Antes de comprar
       h: Veja exatamente o que você recebe
-      items:
-      - whatsapp-translator
-      - telegram-translator
-      - compare
+      items: ["how-to-buy", "is-it-safe", "compare"]
   whatsapp-translator:
     title: Tradutor de WhatsApp para PC – Conversas, áudios e fotos offline
     description: 'Traduza conversas de WhatsApp nos dois sentidos no PC: mensagens, áudios e texto de fotos, em 49 idiomas, sem internet — com conferência antes de enviar.'
@@ -697,6 +698,10 @@ pages:
       k: 49 idiomas
       h: Traduza entre qualquer um destes idiomas
       p: Qualquer par funciona — português para chinês, árabe para espanhol, russo para inglês. Os áudios são reconhecidos em cerca de 100 idiomas falados.
+    - type: related
+      k: "Pares de idiomas"
+      h: "Pares de idiomas populares"
+      items: ["translate/portuguese-english", "how-to-buy", "is-it-safe"]
     - type: faq
       soft: true
       k: Perguntas frequentes
@@ -2312,4 +2317,242 @@ pages:
         k: "Próximo"
         h: "Continue lendo"
         items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+  how-to-buy:
+    title: "Como comprar o GlotChat com USDT (passo a passo)"
+    description: "Nunca pagou com USDT? Veja como comprar um plano do GlotChat passo a passo: compre USDT na Binance ou OKX, escolha a rede certa, envie e receba sua chave."
+    keywords: "comprar glotchat, pagar com usdt, como pagar usdt trc20, comprar usdt binance p2p, chave de licença glotchat"
+    short: "Como comprar"
+    icon: "🛒"
+    og_heading: "Como comprar o GlotChat com USDT, passo a passo"
+    blocks:
+      - type: hero
+        k: "Como comprar"
+        h1: "Como comprar o GlotChat <span class=\"grad\">com USDT, passo a passo</span>"
+        lead: "Nunca pagou com cripto? Sem problema. Na primeira vez leva uns 10 minutos, e uma pessoa de verdade ajuda você no Telegram em cada passo."
+        cta2: ["pricing", "Ver os planos"]
+      - type: prose
+        toc: true
+        md: |
+          > **Resumindo:** teste o GlotChat grátis por 3 dias → fale com a gente no Telegram com seu plano e seu Machine ID → envie USDT para o endereço que passamos → cole a chave que você receber. Pronto.
+
+          ## 1. Teste grátis primeiro
+
+          [Baixe o GlotChat](/pt/download/) e clique em **“Iniciar meu teste grátis de 3 dias”**. Todos os recursos liberados, sem pagar. Adicione suas contas e veja se o GlotChat serve para você antes de pagar qualquer coisa.
+
+          ## 2. Escolha seu plano
+
+          As contas são contadas **por app**: o Starter dá 5 WhatsApp + 5 Telegram + 5 Instagram e assim por diante.
+
+          | Plano | Contas por app | Computadores | Preço por ano |
+          |---|---|---|---|
+          | Starter | até 5 | 1 | 69 USDT |
+          | Pro | até 15 | 1 | 129 USDT |
+          | Business | ilimitadas | até 3 | 249 USDT |
+
+          ## 3. Copie seu Machine ID
+
+          No GlotChat, abra **Configurações → Licença** e clique em **Copiar** ao lado do seu Machine ID. Sua chave é gerada para este computador.
+
+          ## 4. Fale com a gente no Telegram
+
+          Escreva para **[@GlotChat](https://t.me/GlotChat)** com seu plano e seu Machine ID. Respondemos com o valor exato e nosso endereço USDT — **só confie em um endereço que você receber do @GlotChat**.
+
+          ## 5. Consiga USDT (se ainda não tem)
+
+          USDT é um dólar digital: 1 USDT ≈ 1 dólar americano. Os jeitos mais fáceis de conseguir:
+
+          - **Binance ou OKX:** crie uma conta e compre USDT com cartão, Pix/transferência ou **P2P** (você paga um vendedor local na sua moeda).
+          - **Bybit, KuCoin, Bitget** e a maioria das corretoras funcionam do mesmo jeito.
+          - **Um amigo ou colega** que já tem USDT pode pagar por você, sem problema.
+
+          ## 6. Envie o USDT na rede certa
+
+          O USDT existe em várias redes. Aceitamos **TRC20 (Tron), BEP20 (BNB Smart Chain) e ERC20 (Ethereum)**. A rede que você escolher no envio **precisa ser a mesma** do endereço que passamos.
+
+          1. Na sua corretora, vá em **Sacar → USDT**.
+          2. Cole nosso endereço e escolha **a mesma rede** que indicamos (TRC20 ou BEP20 costumam ter as taxas mais baixas; ERC20 pode sair caro).
+          3. Confira se o valor que **recebemos** é o preço cheio do plano: a taxa da corretora é cobrada à parte.
+          4. Confirme. Depois mande o print ou o ID da transação (TXID) no Telegram.
+
+          ## 7. Cole sua chave
+
+          Sua chave anual costuma chegar em minutos. No GlotChat, vá em **Configurações → Inserir nova chave** e cole. Suas contas, logins e configurações ficam exatamente como estavam no teste.
+
+          ## Dicas de segurança
+
+          - Só envie para um endereço que você recebeu do **@GlotChat** no Telegram. Nunca pedimos senha da corretora, frase-semente ou códigos.
+          - Confira bem a **rede**. USDT enviado na rede errada pode ser perdido.
+          - Guarde o **TXID** até sua chave funcionar.
+
+          Dúvidas antes de pagar? [Pergunte a uma pessoa de verdade no Telegram](https://t.me/GlotChat) — a gente acompanha você passo a passo.
+      - type: faq
+        k: "Perguntas"
+        h: "Perguntas sobre a compra"
+        items:
+          - ["Posso pagar com cartão, Pix ou PayPal?", "Não diretamente: por enquanto só aceitamos USDT. O mais fácil é comprar USDT com cartão ou Pix na Binance ou OKX e enviar para a gente. Leva uns 10 minutos."]
+          - ["Qual rede devo usar?", "TRC20 ou BEP20: costumam ter as taxas mais baixas. ERC20 também funciona, mas a taxa pode passar de alguns dólares. Use sempre a rede que indicamos junto com o endereço."]
+          - ["Quanto tempo até receber a chave?", "Normalmente minutos depois que o pagamento chega. Uma pessoa de verdade cuida de cada pedido no Telegram."]
+          - ["Outra pessoa pode pagar por mim?", "Sim. Um amigo, um colega ou sua empresa podem enviar o USDT; é só dizer no Telegram qual pagamento é o seu."]
+          - ["O que acontece depois de um ano?", "Você renova pelo mesmo preço e continua trabalhando sem interrupção. Suas contas e configurações continuam no seu PC."]
+      - type: related
+        k: "Antes de comprar"
+        h: "Bom saber"
+        items: ["pricing", "is-it-safe", "download"]
+  is-it-safe:
+    title: "O GlotChat é seguro? Meu WhatsApp vai ser banido?"
+    description: "Como o GlotChat funciona, o que fica no seu PC e o que realmente faz contas de WhatsApp e Telegram serem banidas — com 7 dicas para proteger seus números."
+    keywords: "glotchat é seguro, whatsapp vai ser banido, várias contas whatsapp banimento, whatsapp web é seguro, tradutor whatsapp seguro"
+    short: "É seguro?"
+    icon: "🛡"
+    og_heading: "O GlotChat é seguro? Meu WhatsApp vai ser banido?"
+    blocks:
+      - type: hero
+        k: "Segurança"
+        h1: "O GlotChat é seguro? <span class=\"grad\">Minha conta vai ser banida?</span>"
+        lead: "A resposta honesta, em palavras simples: o que o GlotChat faz, o que ele nunca faz e o que realmente faz contas serem banidas."
+      - type: cards
+        k: "Como o GlotChat funciona"
+        h: "Os apps oficiais, organizados — nada escondido"
+        items:
+          - {icon: "✅", h: "Versões web oficiais", p: "Cada conta abre o site oficial do WhatsApp Web, Telegram Web, Messenger, Instagram, Discord ou BAND — o mesmo que você vê no navegador."}
+          - {icon: "🔗", h: "Conexão oficial", p: "As contas de WhatsApp são conectadas pelo recurso Dispositivos conectados do próprio WhatsApp, escaneando um QR code com o celular."}
+          - {icon: "🤚", h: "Nunca envia nada sozinho", p: "O GlotChat só envia o que você escreve e confirma. Sem robôs, sem disparos em massa, sem respostas automáticas."}
+          - {icon: "💻", h: "As conversas ficam no seu PC", p: "Mensagens, contatos e mídias ficam só no seu computador. Nós nunca recebemos nada disso."}
+          - {icon: "🔒", h: "Tradução offline", p: "Tradução, transcrição de áudio e leitura de fotos rodam no seu PC, não num serviço na nuvem (a menos que você ative o DeepL)."}
+          - {icon: "🧱", h: "Cada conta isolada", p: "Cada conta tem sua própria sessão e armazenamento, e se quiser seu próprio proxy — os logins nunca se misturam."}
+      - type: prose
+        md: |
+          ## O que realmente faz uma conta ser banida
+
+          WhatsApp e Telegram não banem você por *onde* você abre a conta: dispositivos conectados e versões web são recursos oficiais. Eles banem por **comportamento**:
+
+          - **Spam e disparos em massa** para quem não falou com você primeiro.
+          - **Muita gente bloqueando ou denunciando** seu número.
+          - **Apps modificados** como “GB WhatsApp” ou “WhatsApp Plus”.
+          - **Números novos** que mandam mensagem para muitos desconhecidos no primeiro dia.
+          - **Ferramentas de automação** que enviam mensagens sozinhas.
+
+          O GlotChat não faz nada disso. Ele ajuda você a **responder** seus clientes mais rápido, no idioma deles.
+
+          ## 7 dicas para proteger seus números
+
+          1. **Responda, não dispare.** Fale com quem entrou em contato ou espera sua mensagem.
+          2. **Aqueça números novos.** Use um número novo normalmente por alguns dias antes de chamar muita gente.
+          3. **Abra o WhatsApp no celular** pelo menos a cada 14 dias, senão os dispositivos conectados são desconectados.
+          4. **Use um proxy por país** se você vende em vários países (opcional).
+          5. **Não mande a mesma mensagem** para centenas de pessoas: modelos são para responder, não para campanhas.
+          6. **Use o WhatsApp oficial** no celular, nunca uma versão modificada.
+          7. **Responda no idioma do cliente.** Menos mal-entendidos, menos denúncias.
+      - type: faq
+        k: "Perguntas"
+        h: "Perguntas sobre segurança"
+        items:
+          - ["É seguro usar o GlotChat?", "Sim. O GlotChat mostra as versões web oficiais de cada app em sessões isoladas, nunca envia nada sozinho e guarda suas conversas no seu PC."]
+          - ["O WhatsApp vai me banir por usar várias contas num PC?", "Não só por isso. Dispositivos conectados são um recurso oficial do WhatsApp. Os banimentos vêm de spam, disparos em massa, denúncias e apps modificados — não de abrir suas contas num computador."]
+          - ["O GlotChat consegue ler minhas mensagens?", "Não. Suas mensagens ficam só no seu computador e são traduzidas lá. Nunca recebemos nada. A licença usa só sua chave e seu Machine ID."]
+          - ["O cliente sabe que eu uso um tradutor?", "Não. Ele simplesmente recebe sua mensagem no idioma dele. Nada é acrescentado à conversa."]
+          - ["O GlotChat envia mensagens automaticamente?", "Nunca. Cada mensagem é escrita e confirmada por você."]
+      - type: related
+        k: "Saiba mais"
+        h: "Relacionado"
+        items: ["privacy", "how-to-buy", "multiple-whatsapp-accounts"]
+  multiple-whatsapp-business-accounts:
+    title: "Várias contas do WhatsApp Business no PC + tradução"
+    description: "Use vários números do WhatsApp Business num PC e numa janela: cada um isolado, com etiquetas, catálogo e respostas rápidas, e cada conversa traduzida. Sem API."
+    keywords: "várias contas whatsapp business pc, whatsapp business vários números, whatsapp business desktop várias contas, tradutor whatsapp business, whatsapp business sem api"
+    short: "Contas do WhatsApp Business"
+    icon: "🏪"
+    og_heading: "Vários números do WhatsApp Business, uma janela, cada conversa traduzida"
+    blocks:
+      - type: hero
+        k: "WhatsApp Business no PC"
+        h1: "Todos os seus números do WhatsApp Business <span class=\"grad\">numa janela</span>"
+        lead: "Um número por loja, país ou vendedor? O GlotChat abre cada conta do WhatsApp Business lado a lado no seu PC — cada uma na sua própria sessão isolada — e traduz cada conversa nos dois sentidos. Sem API, sem aprovação da Meta, sem mensalidade por número."
+        media: "img:switcher"
+        media_alt: "Várias contas do WhatsApp Business lado a lado no GlotChat"
+      - type: steps
+        soft: false
+        k: "Como funciona"
+        h: "Adicione cada número Business em um minuto"
+        items:
+          - ["Adicione uma conta", "Clique em Adicionar conta, escolha WhatsApp e dê um nome: “Loja SP”, “Vendas — Ana”."]
+          - ["Escaneie o QR code", "No celular com esse número do WhatsApp Business: Configurações → Dispositivos conectados → Conectar dispositivo."]
+          - ["Trabalhe numa janela só", "Troque com um clique. Cada notificação mostra de qual número é."]
+      - type: cards
+        soft: true
+        k: "O que você ganha"
+        h: "Tudo o que o WhatsApp Business Web faz, em cada número"
+        items:
+          - {icon: "🏷", h: "Etiquetas, catálogo, respostas rápidas", p: "Os recursos Business que você conhece do WhatsApp Web funcionam normalmente, em cada número."}
+          - {icon: "🌐", h: "Cada conversa traduzida", p: "Mensagens dos clientes traduzidas embaixo do original e suas respostas antes do envio: 49 idiomas."}
+          - {icon: "🎙", h: "Áudios e fotos", p: "Áudios transformados em texto e traduzidos; texto em fotos e prints também."}
+          - {icon: "🧱", h: "Cada número isolado", p: "Sessões separadas, notificações separadas e um proxy opcional por número."}
+          - {icon: "⚡", h: "Modelos compartilhados", p: "Preços, prazos de entrega e dados de pagamento salvos uma vez e inseridos em qualquer conversa."}
+          - {icon: "👥", h: "WhatsApp e Business juntos", p: "Números normais e do WhatsApp Business lado a lado, além de Telegram e mais.", link: "all-in-one-messenger"}
+      - type: table
+        k: "Comparação"
+        h: "GlotChat vs a API do WhatsApp Business"
+        hl: 2
+        cols: ["", "Ferramentas com a API do WhatsApp Business", "GlotChat"]
+        rows:
+          - ["Configuração", "Verificação da Meta, um provedor, modelos aprovados", "Escanear um QR code: 1 minuto"]
+          - ["Custo", "Mensalidade + preço por conversa", "A partir de 69 USDT por ano, sem cobrança por mensagem"]
+          - ["Seu número e conversas atuais", "Normalmente vão para a API", "Ficam no seu celular como estão"]
+          - ["Tradução", "Raramente incluída", "✓ Cada conversa, nos dois sentidos"]
+          - ["Ideal para", "Grandes campanhas automáticas", "Pessoas que conversam com clientes"]
+      - type: faq
+        k: "Perguntas"
+        h: "Perguntas sobre o WhatsApp Business"
+        items:
+          - ["Posso usar várias contas do WhatsApp Business num PC?", "Sim. No GlotChat cada número do WhatsApp Business roda na sua própria sessão isolada, lado a lado numa janela: até 5 no Starter, 15 no Pro e ilimitadas no Business."]
+          - ["Preciso da API do WhatsApp Business?", "Não. O GlotChat usa o app normal do WhatsApp Business do seu celular, conectado como o WhatsApp Web. Sem aprovação da Meta e sem cobrança por mensagem."]
+          - ["Etiquetas e catálogo continuam funcionando?", "Sim. O GlotChat mostra o WhatsApp Web oficial, então os recursos Business disponíveis lá funcionam normalmente."]
+          - ["Posso misturar WhatsApp normal e WhatsApp Business?", "Sim. Os dois contam como contas de WhatsApp no seu plano e rodam lado a lado."]
+      - type: related
+        k: "Continue explorando"
+        h: "Relacionado"
+        items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
+  translate/portuguese-english:
+    title: "Tradutor de WhatsApp português-inglês para PC | GlotChat"
+    description: "Traduza conversas de WhatsApp e Telegram entre português e inglês no seu PC: automático, nos dois sentidos e offline. Áudios e fotos também. 3 dias grátis."
+    keywords: "tradutor whatsapp português inglês, traduzir whatsapp do inglês para português, tradutor de conversa inglês português, tradutor telegram inglês"
+    short: "Português ↔ inglês"
+    icon: "🌐"
+    og_heading: "Português ↔ inglês: tradutor para WhatsApp e Telegram"
+    blocks:
+      - type: hero
+        k: "Português ↔ inglês"
+        h1: "Tradutor português ↔ inglês <span class=\"grad\">para WhatsApp e Telegram</span>"
+        lead: "Seus clientes escrevem em inglês? O GlotChat traduz cada mensagem para o português embaixo do original — e transforma sua resposta num inglês natural antes do envio. No WhatsApp, Telegram, Messenger, Instagram, Discord e BAND, offline no seu PC."
+      - type: split
+        k: "Clientes em inglês"
+        h: "Leia em português, responda em inglês"
+        p: "O inglês é o idioma de clientes do mundo todo: Estados Unidos, Reino Unido, Índia, Ásia e África. Escreva em português, confira o que vão ler e aperte Enter."
+        ticks: ["Cada mensagem traduzida ao chegar", "Sua resposta enviada em inglês", "O que vão ler, antes do envio"]
+        mock:
+          top: "<span>Enviar em <b>inglês</b></span><span>do português</span>"
+          main: "Hello! Yes, we can ship tomorrow. Delivery takes 5 days."
+          notes: [["back", "↩ Vão ler: Olá! Sim, podemos enviar amanhã. A entrega leva 5 dias."]]
+      - type: cards
+        soft: true
+        k: "Feito para isso"
+        h: "Tudo o que você precisa para vender em inglês"
+        items:
+          - {icon: "🎙", h: "Áudios em inglês", p: "Clique em Transcrever embaixo de um áudio no WhatsApp ou Telegram: vira texto e é traduzido, offline."}
+          - {icon: "🖼", h: "Fotos e prints", p: "O texto das fotos — tabelas de preço, etiquetas, recibos — lido e traduzido."}
+          - {icon: "🔢", h: "Números conferidos", p: "Cada preço, quantidade, data e telefone da sua resposta é conferido antes do envio."}
+          - {icon: "🗂", h: "Muitas contas", p: "Várias contas de WhatsApp e Telegram lado a lado, todas traduzidas do mesmo jeito."}
+          - {icon: "🌍", h: "Qualquer par de 49 idiomas", p: "Português e inglês hoje, português e chinês amanhã: qualquer combinação funciona."}
+      - type: faq
+        k: "Perguntas"
+        h: "Tradução português ↔ inglês — perguntas"
+        items:
+          - ["Dá para traduzir mensagens do WhatsApp do inglês para o português automaticamente?", "Sim. O GlotChat traduz para o português cada mensagem em inglês que chega e mostra embaixo do original, em cada conversa e cada conta."]
+          - ["Posso responder em inglês sem falar o idioma?", "Sim. Escreva em português e aperte Enter: o GlotChat traduz sua resposta para o inglês e mostra o que o cliente vai ler antes do envio."]
+          - ["Ele traduz áudios?", "Sim, no WhatsApp e no Telegram. Clique em Transcrever embaixo do áudio: o GlotChat transforma em texto e traduz, offline no seu PC."]
+          - ["Minhas conversas vão para um tradutor online?", "Não. A tradução roda offline no seu computador. Só se você ativar o motor opcional DeepL o texto é enviado ao DeepL."]
+      - type: related
+        k: "Continue explorando"
+        h: "Relacionado"
+        items: ["whatsapp-translator", "telegram-translator", "how-to-buy"]
 
