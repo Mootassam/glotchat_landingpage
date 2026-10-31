@@ -33,6 +33,9 @@ ui:
     ig_s: 每個 Instagram 帳號的私信都翻譯
     dc: Discord 翻譯器
     dc_s: 伺服器和私信，任何語言
+    bd: "BAND 翻譯"
+    bd_s: "BAND 聊天，任何語言"
+    alt: "Rambox 替代軟體"
   cta_trial: 免費下載 · 試用 3 天
   cta_demo: 觀看演示
   cta_live: 預約線上演示
@@ -848,6 +851,61 @@ pages:
       - guides/best-whatsapp-multi-account-software
       - multiple-telegram-accounts
       - pricing
+  band-translator:
+    title: "BAND 翻譯器 + BAND 多開（電腦版）| GlotChat"
+    description: "在 Windows 上翻譯 BAND 聊天，多個 BAND 帳號同時線上，和 WhatsApp、Telegram 在同一個視窗。49 種語言，離線翻譯，免費試用 3 天。"
+    keywords: "BAND 翻譯, BAND 多開, BAND 電腦版, BAND 聊天翻譯, band.us 翻譯, BAND 多帳號"
+    short: "BAND 翻譯"
+    icon: "👥"
+    og_heading: "BAND 翻譯器 —— 每個 BAND 聊天都用你的語言"
+    og_sub: "電腦上多個 BAND 帳號，每個聊天離線翻譯。"
+    blocks:
+      - type: hero
+        k: "BAND 翻譯器（電腦版）"
+        h1: "在 BAND 上 <span class=\"grad\">用任何語言聊天</span>"
+        lead: "合作伙伴、群成員或客戶在 BAND 上用韓語、日語或英語給你發訊息？GlotChat 把每條 BAND 聊天訊息翻譯在原文下方，你的回覆在傳送前翻譯成對方的語言。多個 BAND 帳號並排執行，和 WhatsApp、Telegram 等應用在同一個視窗。"
+      - type: steps
+        soft: false
+        k: "使用方法"
+        h: "三步翻譯 BAND 聊天"
+        items:
+          - ["登入一次", "在 GlotChat 中新增 BAND 帳號，用郵箱或手機號和密碼登入。之後保持登入。"]
+          - ["用你的語言閱讀", "開啟 BAND 聊天：每條訊息的翻譯都顯示在原文下方。"]
+          - ["用對方的語言回覆", "用中文輸入並按 Enter。先看對方將讀到的內容，再傳送。"]
+      - type: split
+        k: "BAND 多開"
+        h: "多個 BAND 帳號，同時線上"
+        p: "每個團隊、學校或客戶群都有一個 BAND？GlotChat 讓每個 BAND 帳號在獨立的會話中保持開啟，所有帳號的新訊息都會提醒你 —— 而且已經翻譯好了。"
+        ticks: ["不用反覆退出、登入", "每個帳號單獨顯示未讀數", "每個人都用自己的語言讀你的訊息"]
+        mock:
+          top: "<span>用<b>韓語</b>傳送</span><span>原文：中文</span>"
+          main: "내일 오후 3시에 샘플 보내드릴게요. 주소 확인 부탁드립니다."
+          notes: [["back", "↩ 對方將讀到：明天下午 3 點給您寄樣品，請確認地址。"]]
+      - type: cards
+        soft: true
+        k: "你能得到"
+        h: "適合在 BAND 上溝通的團隊、群組和合作伙伴"
+        items:
+          - {icon: "🌐", h: "每個聊天都翻譯", p: "收到的 BAND 聊天訊息自動翻譯成中文 —— 49 種語言，在你的電腦上離線完成。"}
+          - {icon: "↩", h: "「對方將讀到」檢查", p: "傳送前先看回譯，價格和數字也會核對。"}
+          - {icon: "🗂", h: "多個 BAND 帳號", p: "每個帳號獨立，有自己的登入和通知 —— 數量按你的套餐。"}
+          - {icon: "⚡", h: "快捷模板", p: "每天要寫的回覆儲存一次，一鍵插入。"}
+          - {icon: "🖱", h: "帖子和評論也能翻譯", p: "在 BAND 上選中任意文字 —— 帖子、評論、公告 —— 一鍵翻譯。"}
+          - {icon: "💬", h: "所有應用在一起", p: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 在同一個視窗。", link: "all-in-one-messenger"}
+      - type: faq
+        k: "常見問題"
+        h: "BAND 翻譯 —— 常見問題"
+        items:
+          - ["BAND 聊天可以自動翻譯嗎？", "可以。在 GlotChat 中，你開啟的 BAND 聊天裡每條訊息都會自動翻譯並顯示在原文下方。你的回覆在傳送前翻譯。"]
+          - ["可以同時登入多個 BAND 帳號嗎？", "可以。每個 BAND 帳號在獨立會話中並排執行 —— 入門版 5 個，專業版 15 個，商業版不限。"]
+          - ["可以用 Google 登入嗎？", "BAND 不允許在桌面應用裡使用 Google 登入。請先在 BAND 中繫結郵箱（設定 → 帳號 → 繫結郵箱），然後在 GlotChat 中用這個郵箱和密碼登入。"]
+          - ["為什麼 BAND 標著「測試版」？", "BAND 現在已經可以在 GlotChat 中使用 —— 登入、聊天、翻譯和傳送都沒問題。測試版表示我們還在繼續完善。如果遇到問題，在 Telegram 上告訴我們，我們會修復。"]
+          - ["是官方的 BAND 嗎？", "是的。GlotChat 為每個帳號開啟官方 BAND 網站（band.us），不會自己傳送任何訊息。"]
+      - type: related
+        k: "繼續瞭解"
+        h: "相關"
+        items: ["all-in-one-messenger", "telegram-translator", "discord-translator"]
+
   compare:
     title: WhatsApp 和 Telegram 多帳號 + 翻譯：哪種方法最好？
     description: WhatsApp 網頁版、Telegram 桌面版、瀏覽器多使用者、翻譯外掛，還是多開軟體？為跨境團隊做的客觀對比。
@@ -966,6 +1024,69 @@ pages:
       - multiple-whatsapp-accounts
       - multiple-telegram-accounts
       - pricing
+  rambox-alternative:
+    title: "Rambox 替代軟體：自帶翻譯的聚合聊天軟體 | GlotChat"
+    description: "在找 Rambox、Ferdium 或 Franz 的替代軟體？GlotChat 把 WhatsApp、Telegram、Instagram 等放在一個視窗 —— 而且每個聊天都自動翻譯。"
+    keywords: "Rambox 替代, Ferdium 替代, Franz 替代, Rambox 中文, 聚合聊天軟體 翻譯, 多平台聊天 翻譯"
+    short: "Rambox 替代軟體"
+    icon: "🔁"
+    og_heading: "會翻譯每個聊天的 Rambox 替代軟體"
+    blocks:
+      - type: hero
+        k: "Rambox 替代軟體"
+        h1: "會說客戶語言的 <span class=\"grad\">Rambox 替代軟體</span>"
+        lead: "Rambox、Ferdium、Franz 和 Wavebox 能把聊天應用放進一個視窗。GlotChat 也能 —— 而且每條訊息都雙向翻譯，在你的電腦上離線完成。專為和海外客戶打交道的人設計。"
+        cta2: ["#compare", "檢視對比表"]
+      - type: table
+        id: compare
+        k: "並排對比"
+        h: "GlotChat 對比 Rambox、Ferdium、Franz 和 Wavebox"
+        hl: 5
+        cols: ["", "Rambox", "Ferdium", "Franz", "Wavebox", "GlotChat"]
+        rows:
+          - ["多個聊天應用一個視窗", "✓", "✓", "✓", "✓", "✓ 6 個聊天應用"]
+          - ["同一應用多個帳號", "✓", "✓", "✓", "✓", "✓"]
+          - ["內建雙向聊天翻譯", "✕", "✕", "✕", "✕", "✓ 49 種語言"]
+          - ["傳送前檢視客戶將讀到的內容", "✕", "✕", "✕", "✕", "✓"]
+          - ["語音和圖片文字翻譯", "✕", "✕", "✕", "✕", "✓ WhatsApp 和 Telegram"]
+          - ["上百種其他應用（Slack、Gmail…）", "✓", "✓", "✓", "✓", "✕ 只做聊天應用"]
+          - ["Windows / Mac / Linux", "✓ 三個都支援", "✓ 三個都支援", "✓ 三個都支援", "✓ 三個都支援", "僅 Windows"]
+          - ["價格", "有免費版；Pro 約 7 美元/月", "免費開源", "3 個服務免費；Pro 60 美元/年", "有免費版；Pro 約 8 美元/月", "免費 3 天；69 USDT/年起"]
+        note: "2026 年 10 月根據各產品官網核對。翻譯一欄的「✕」表示沒有內建的雙向聊天翻譯（部分應用可以加裝第三方外掛）。功能和價格可能變化，購買前請再確認。Rambox、Ferdium、Franz 和 Wavebox 是其所有者的商標，GlotChat 與它們無關。"
+      - type: cards
+        soft: true
+        k: "實話實說"
+        h: "你該選哪個？"
+        cols: 2
+        items:
+          - {icon: "🧰", h: "你需要 Slack、Gmail、Notion 等幾十個工具", p: "Rambox 或 Wavebox 就是為此設計的 —— 上百種辦公應用放在一起。"}
+          - {icon: "🆓", h: "你想要免費、開源", p: "Ferdium 免費，由社群開發，支援 Windows、Mac 和 Linux。"}
+          - {icon: "🍏", h: "你用 Mac", p: "GlotChat 目前只支援 Windows 10 和 11，請選擇其他幾款。"}
+          - {icon: "🌍", h: "你的客戶說其他語言", p: "這正是 GlotChat 的強項：每個聊天雙向翻譯，語音和圖片也能翻譯，每條回覆傳送前都能檢查。", link: "pricing"}
+      - type: cards
+        k: "GlotChat 多了什麼"
+        h: "聚合聊天軟體該有的都有 —— 再加上翻譯"
+        items:
+          - {icon: "🌐", h: "翻譯顯示在原文下方", p: "每條收到的訊息下方都顯示翻譯，支援 49 種語言。"}
+          - {icon: "↩", h: "傳送前檢查", p: "用中文輸入，傳送前先看客戶將讀到的回譯。"}
+          - {icon: "🎙", h: "語音和圖片", p: "WhatsApp 和 Telegram 的語音轉文字並翻譯，圖片中的文字也能翻譯。"}
+          - {icon: "🗂", h: "按應用計算帳號", p: "每個應用 5 個、15 個或不限 —— WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND。"}
+          - {icon: "🔒", h: "離線翻譯", p: "翻譯在你的電腦上完成，聊天內容不會發到雲端翻譯（除非你開啟 DeepL）。"}
+          - {icon: "⚡", h: "快捷模板", p: "常用回覆儲存一次，在每個應用裡一鍵插入。"}
+      - type: faq
+        k: "常見問題"
+        h: "從 Rambox、Ferdium 或 Franz 換過來"
+        items:
+          - ["Rambox 能翻譯訊息嗎？", "不能直接翻譯。截至 2026 年 10 月，Rambox 沒有內建的雙向聊天翻譯，需要另裝第三方外掛，而且看不到客戶將讀到什麼。GlotChat 自帶雙向翻譯。"]
+          - ["有免費又帶翻譯的 Rambox 替代軟體嗎？", "Ferdium 免費但不翻譯。GlotChat 可以免費試用 3 天全部功能，之後每年 69 USDT 起 —— 比按月付費的 Rambox Pro 還便宜。"]
+          - ["怎麼從 Rambox 或 Ferdium 換到 GlotChat？", "不需要匯入任何東西。安裝 GlotChat，點選「新增帳號」，選擇應用，掃碼或登入即可。每個帳號大約一分鐘。"]
+          - ["GlotChat 支援 Mac 或 Linux 嗎？", "暫時不支援 —— GlotChat 執行在 Windows 10 和 11 上。"]
+          - ["GlotChat 支援哪些應用？", "WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信、Discord 和 BAND —— 每個應用都可以多開。"]
+      - type: related
+        k: "詳細瞭解"
+        h: "繼續看看"
+        items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
+
   for/real-estate:
     title: 房產中介 WhatsApp 多開 + 翻譯 – 用買家的語言回覆
     description: 所有經紀人的 WhatsApp 號碼在一個視窗，用外國買家的語言回覆——聊天、語音和證件照片都能翻譯。免費試用。
@@ -2393,3 +2514,182 @@ pages:
       - all-in-one-messenger
       - telegram-translator
       - messenger-translator
+  guides/best-all-in-one-messenger-apps:
+    title: "聚合聊天軟體哪個好？5 款電腦版對比（2026）"
+    description: "GlotChat、Rambox、Ferdium、Franz 和 Wavebox 對比：支援的應用、多開、翻譯和價格。幫你選出合適的聚合聊天軟體。"
+    keywords: "聚合聊天軟體, 聚合聊天軟體哪個好, 多平台聊天軟體, 社交軟體聚合, 聚合聊天 翻譯, Rambox Ferdium 對比"
+    short: "聚合聊天軟體哪個好"
+    icon: "🏆"
+    article: true
+    published: "2026-10-30"
+    updated: "2026-10-30"
+    og_heading: "聚合聊天軟體哪個好？5 款電腦版對比（2026）"
+    blocks:
+      - type: hero
+        k: "指南"
+        h1: "聚合聊天軟體哪個好？5 款電腦版對比（2026）"
+        lead: "五款能把 WhatsApp、Telegram、Messenger、Instagram 等放進一個視窗的軟體 —— 各自擅長什麼、多少錢、適合誰。"
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          聚合聊天軟體是一種電腦軟體，把你的聊天應用 —— WhatsApp、Telegram、Messenger、Instagram、Discord 等 —— 並排放在一個視窗裡，而且通常每個應用都能多開。不用再開十個瀏覽器標籤、拿三部手機。
+
+          > **說明：** GlotChat 是我們自己的產品，也在下面的名單裡。我們儘量客觀：每款軟體都有適合它的人。
+
+          > **簡短回答：** 客戶說外語，選 **GlotChat**（這裡唯一自帶雙向翻譯的）。需要 Slack、Gmail 等大量辦公應用，選 **Rambox** 或 **Wavebox**。想要免費開源，選 **Ferdium**。
+
+          ## 我們怎麼對比
+
+          我們看的是做生意聊天最重要的幾點：支援哪些應用、同一應用能否多開、聊天能否翻譯、支援什麼電腦、價格多少。所有資訊都在 2026 年 10 月根據各產品官網核對。
+
+          ## 1. GlotChat —— 最適合和外國客戶聊天
+
+          GlotChat 在 Windows 上把 **WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND** 放進一個視窗，每個應用都能多開。最大的不同：每個聊天都**雙向翻譯**，支援 49 種語言。收到的訊息在原文下方顯示翻譯，你的回覆在傳送前翻譯 —— 還會先顯示客戶將讀到的內容。在 WhatsApp 和 Telegram 上，語音和圖片中的文字也能翻譯。翻譯在電腦上離線完成。
+
+          - **適合：** 外貿、跨境電商、代理公司和麵向海外客戶的客服團隊。
+          - **不適合：** Mac 使用者，或者需要 Slack、郵箱等辦公應用的人。
+          - **價格：** 免費試用 3 天，之後每年 69、129 或 249 USDT（每個應用 5 個、15 個或不限帳號）。
+
+          ## 2. Rambox —— 最適合大量辦公應用
+
+          Rambox 是一款成熟的工作區軟體，支援上百種應用（WhatsApp、Slack、Gmail、Notion…），支援 Windows、Mac 和 Linux。免費版每個應用最多兩個帳號；Pro 版（約 7 美元/月）不限帳號，還有外掛等功能。
+
+          - **適合：** 同時用很多辦公工具的上班族。
+          - **不適合：** 翻譯聊天 —— 沒有內建聊天翻譯。
+
+          ## 3. Ferdium —— 最好的免費開源選擇
+
+          Ferdium 是社群開發的免費開源軟體（由 Franz 分支而來），支援很多服務、工作區和休眠不常用的應用，支援 Windows、Mac 和 Linux。
+
+          - **適合：** 想用免費軟體、不介意體驗沒那麼精緻的人。
+          - **不適合：** 需要翻譯或官方客服支援的人。
+
+          ## 4. Franz —— 簡單，帶 AI 摘要
+
+          Franz 是最早的聚合聊天軟體之一。Franz 6 增加了 AI 摘要、回覆建議等功能。免費版支援 3 個服務；Pro 版每年 60 美元。
+
+          - **適合：** 只用幾個應用、想要簡潔的人。
+          - **不適合：** 翻譯客戶聊天。
+
+          ## 5. Wavebox —— 適合重度瀏覽器使用者
+
+          Wavebox 是一款效率瀏覽器，把網頁應用和 Google 帳號分組成工作區。有功能有限的免費版；Pro 版按年付約 8 美元/月。
+
+          - **適合：** 整天用 Google Workspace 和大量網頁應用的人。
+          - **不適合：** 聊天翻譯。
+
+          ## 對比表
+
+          | | GlotChat | Rambox | Ferdium | Franz | Wavebox |
+          |---|---|---|---|---|---|
+          | WhatsApp、Telegram、Messenger、Instagram | 支援 | 支援 | 支援 | 支援 | 支援 |
+          | 同一應用多開 | 支援 | 支援 | 支援 | 支援 | 支援 |
+          | 雙向聊天翻譯 | **支援，49 種語言** | 不支援 | 不支援 | 不支援 | 不支援 |
+          | 語音和圖片翻譯 | **支援**（WhatsApp、Telegram） | 不支援 | 不支援 | 不支援 | 不支援 |
+          | 其他辦公應用（Slack、Gmail…） | 不支援 | 支援 | 支援 | 支援 | 支援 |
+          | Windows / Mac / Linux | Windows | 全部 | 全部 | 全部 | 全部 |
+          | 價格 | 69 USDT/年起 | 免費 / 約 7 美元/月 | 免費 | 免費 / 60 美元/年 | 免費 / 約 8 美元/月 |
+
+          ## 怎麼選
+
+          1. **客戶說外語嗎？** 翻譯每天能幫你省下幾個小時 —— 選 GlotChat。
+          2. **除了聊天還需要辦公工具嗎？** Rambox 或 Wavebox。
+          3. **預算為零？** Ferdium。
+          4. **用 Mac？** Rambox、Ferdium、Franz 或 Wavebox —— GlotChat 目前只支援 Windows。
+
+          ## 聚合聊天軟體安全嗎？
+
+          好的聚合聊天軟體會為每個應用開啟**官方網頁版**（比如 WhatsApp Web），每個帳號在獨立會話中執行 —— 和瀏覽器做的事一樣，只是更有條理。不要用修改版應用（比如「GB WhatsApp」）和群發工具：這些才是封號的原因。
+
+          想在自己的聊天裡試試翻譯？[免費試用 GlotChat 3 天](/zh-hant/download/) —— 不用綁卡，不用付款。
+      - type: faq
+        k: "常見問題"
+        h: "快速回答"
+        items:
+          - ["聚合聊天軟體哪個好？", "看你的需要。客戶說外語，選 GlotChat —— 這裡只有它能雙向翻譯聊天。需要大量辦公應用，選 Rambox 或 Wavebox。想要免費開源，選 Ferdium。"]
+          - ["哪款聚合聊天軟體能翻譯訊息？", "GlotChat 能翻譯 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 的每個聊天，雙向翻譯，49 種語言，在電腦上離線完成。"]
+          - ["一個軟體能登入多個 WhatsApp 嗎？", "可以。名單裡的五款都能並排開啟多個 WhatsApp 帳號。GlotChat 實測過 27 個帳號同時執行。"]
+          - ["有免費的聚合聊天軟體嗎？", "Ferdium 免費。Rambox、Franz 和 Wavebox 有功能有限的免費版。GlotChat 可以免費試用 3 天全部功能。"]
+      - type: related
+        k: "下一步"
+        h: "繼續閱讀"
+        items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+  guides/whatsapp-translation-plugin-vs-app:
+    single: true
+    title: "WhatsApp 翻譯外掛 vs 聚合聊天軟體：外貿該選哪個？"
+    description: "瀏覽器翻譯外掛和自帶翻譯的聚合聊天軟體有什麼區別？多開、語音翻譯、隱私和價格對比，幫外貿人選對工具。"
+    keywords: "WhatsApp 翻譯外掛, WhatsApp 翻譯外掛哪個好, 外貿 WhatsApp 翻譯, WhatsApp 自動翻譯, 聚合聊天 翻譯, WS 翻譯"
+    short: "翻譯外掛 vs 聚合聊天軟體"
+    icon: "🧩"
+    article: true
+    published: "2026-10-30"
+    updated: "2026-10-30"
+    og_heading: "WhatsApp 翻譯外掛 vs 聚合聊天軟體：外貿該選哪個？"
+    blocks:
+      - type: hero
+        k: "指南"
+        h1: "WhatsApp 翻譯外掛 vs 聚合聊天軟體：外貿該選哪個？"
+        lead: "很多外貿人從一個瀏覽器翻譯外掛開始。號碼一多、平台一多，問題就來了。這篇講清楚兩者的區別，以及什麼時候該換。"
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          做外貿，客戶來自世界各地。最常見的起步方式是在 Chrome 裡給 WhatsApp Web 裝一個翻譯外掛。一個號碼、一種語言時，這很好用。但當你有 3 個以上號碼，還要回 Telegram、Instagram 和 Facebook 的客戶時，外掛就不夠了。
+
+          > **簡短回答：** 一個號碼、偶爾翻譯 —— 用外掛就夠。多個號碼、多個平台、客戶天天發語音 —— 選自帶翻譯的聚合聊天軟體，比如 GlotChat。
+
+          ## 翻譯外掛能做什麼
+
+          WhatsApp 翻譯外掛裝在瀏覽器裡，在 WhatsApp Web 頁面上翻譯訊息。好的外掛可以自動翻譯收到的訊息，也能翻譯你要發出的回覆。
+
+          - **優點：** 安裝快，很多有免費額度。
+          - **缺點：** 一個瀏覽器只能登入一個 WhatsApp；多數只支援 WhatsApp Web；訊息通常發到雲端翻譯；語音訊息一般不能翻譯。
+
+          ## 聚合聊天軟體能做什麼
+
+          聚合聊天軟體是電腦上的獨立軟體，把多個平台、多個帳號放進一個視窗。GlotChat 這樣的軟體還**自帶翻譯**：
+
+          - WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 在同一個視窗，**每個應用都能多開**。
+          - 每個聊天**雙向翻譯**，49 種語言，傳送前先顯示客戶將讀到的內容。
+          - WhatsApp 和 Telegram 的**語音轉文字並翻譯**，圖片裡的文字也能翻譯。
+          - 翻譯在電腦上**離線**完成，聊天內容不發到雲端。
+
+          ## 對比表
+
+          | | 翻譯外掛 | GlotChat |
+          |---|---|---|
+          | 多個 WhatsApp 號碼 | 一個瀏覽器一個 | 一個視窗多開 |
+          | Telegram、Instagram、Facebook | 一般不支援 | 支援 |
+          | 收到的訊息自動翻譯 | 支援 | 支援 |
+          | 回覆傳送前翻譯 | 部分支援 | 支援，並顯示客戶將讀到的內容 |
+          | 語音訊息翻譯 | 一般不支援 | 支援（WhatsApp、Telegram） |
+          | 圖片文字翻譯 | 一般不支援 | 支援 |
+          | 訊息去哪裡翻譯 | 通常是雲端 | 你的電腦上（離線） |
+          | 價格 | 免費額度 / 按月付費 | 免費 3 天，69 USDT/年起 |
+
+          ## 什麼時候該從外掛換到聚合聊天軟體
+
+          1. **號碼超過 2 個。** 開多個瀏覽器、來回切換，很容易漏回訊息。
+          2. **客戶分散在多個平台。** WhatsApp、Telegram、Instagram 的客戶都要回。
+          3. **客戶常發語音。** 中東、拉美、非洲的客戶特別愛發語音，外掛聽不懂。
+          4. **在意隱私。** 客戶資料和報價不想發到第三方雲端。
+          5. **團隊一起用。** 每個業務員的帳號清楚命名、分開通知。
+
+          ## 會不會封號？
+
+          WhatsApp Web 連結裝置是官方功能，外掛和 GlotChat 都用它。真正導致封號的是**行為**：群發、騷擾陌生人、使用修改版 WhatsApp（比如「GB WhatsApp」）。正常聊天就沒問題。
+
+          想在自己的號碼上試試？[免費試用 GlotChat 3 天](/zh-hant/download/) —— 全部功能，不用付款。
+      - type: faq
+        k: "常見問題"
+        h: "快速回答"
+        items:
+          - ["WhatsApp 翻譯外掛哪個好？", "一個號碼、偶爾翻譯，選一個有免費額度、支援雙向翻譯的外掛就夠了。號碼多、平台多、要翻譯語音，外掛就不夠了，建議用 GlotChat 這樣自帶翻譯的聚合聊天軟體。"]
+          - ["翻譯外掛能翻譯 WhatsApp 語音嗎？", "大多數不能。GlotChat 可以把 WhatsApp 和 Telegram 的語音轉成文字並翻譯，支援約 100 種語言的語音。"]
+          - ["GlotChat 和外掛可以一起用嗎？", "不需要。GlotChat 自帶翻譯，開啟就能用，每個帳號、每個平台都能翻譯。"]
+      - type: related
+        k: "下一步"
+        h: "繼續閱讀"
+        items: ["guides/best-all-in-one-messenger-apps", "guides/best-whatsapp-multi-account-software", "whatsapp-translator"]
+

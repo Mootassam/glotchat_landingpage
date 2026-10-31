@@ -95,6 +95,7 @@
             <a href="{{ link('messenger-translator') }}"><span class="mi ms" aria-hidden="true">{{ icons.ms|safe }}</span><span><b>{{ ui.nav.ms }}</b><small>{{ ui.nav.ms_s }}</small></span></a>
             <a href="{{ link('instagram-dm-translator') }}"><span class="mi ig" aria-hidden="true">{{ icons.ig|safe }}</span><span><b>{{ ui.nav.ig }}</b><small>{{ ui.nav.ig_s }}</small></span></a>
             <a href="{{ link('discord-translator') }}"><span class="mi dc" aria-hidden="true">{{ icons.dc|safe }}</span><span><b>{{ ui.nav.dc }}</b><small>{{ ui.nav.dc_s }}</small></span></a>
+            <a href="{{ link('band-translator') }}"><span class="mi bd" aria-hidden="true">{{ icons.bd|safe }}</span><span><b>{{ ui.nav.bd }}</b><small>{{ ui.nav.bd_s }}</small></span></a>
           </div>
           <a class="mega-foot" href="{{ link('all-in-one-messenger') }}"><b>🧩 {{ ui.nav.all_in_one }}</b><small>{{ ui.nav.all_in_one_s }}</small></a>
           <a class="mega-foot" href="{{ link('compare') }}"><b>⚖️ {{ ui.nav.compare }}</b><small>{{ ui.nav.compare_s }}</small></a>
@@ -137,6 +138,7 @@
     <a href="{{ link('messenger-translator') }}">{{ ui.nav.ms }}</a>
     <a href="{{ link('instagram-dm-translator') }}">{{ ui.nav.ig }}</a>
     <a href="{{ link('discord-translator') }}">{{ ui.nav.dc }}</a>
+    <a href="{{ link('band-translator') }}">{{ ui.nav.bd }}</a>
     <span class="mnav-h">{{ ui.nav.usecases }}</span>
 {%- for s in industries %}
     <a href="{{ link('for/' ~ s.slug) }}">{{ s.icon }} {{ s.name }}</a>
@@ -176,10 +178,12 @@
       <a href="{{ link('messenger-translator') }}">{{ ui.nav.ms }}</a>
       <a href="{{ link('instagram-dm-translator') }}">{{ ui.nav.ig }}</a>
       <a href="{{ link('discord-translator') }}">{{ ui.nav.dc }}</a>
+      <a href="{{ link('band-translator') }}">{{ ui.nav.bd }}</a>
       <a href="{{ link('all-in-one-messenger') }}">{{ ui.nav.all_in_one }}</a>
       <a href="{{ link('pricing') }}">{{ ui.nav.pricing }}</a>
       <a href="{{ link('download') }}">{{ ui.dl.nav_long }}</a>
       <a href="{{ link('compare') }}">{{ ui.nav.compare }}</a>
+      <a href="{{ link('rambox-alternative') }}">{{ ui.nav.alt }}</a>
     </div>
     <div>
       <h3>{{ ui.nav.usecases }}</h3>

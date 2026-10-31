@@ -77,7 +77,7 @@ p { margin: 0; }
 .dd-m a small { display: block; color: var(--muted); font-weight: 500; font-size: 13px; margin-top: 1px; line-height: 1.4; }
 .mi { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--soft); font-size: 17px; }
 .mi.wa { background: #e7f9ef; color: #128c4a; } .mi.tgc { background: #e6f5fd; color: var(--tg-d); }
-.mi.ms { background: #e8f1ff; color: #0a6cf0; } .mi.ig { background: #fdeaf2; color: #d62976; } .mi.dc { background: #eceeff; color: #5865f2; }
+.mi.ms { background: #e8f1ff; color: #0a6cf0; } .mi.ig { background: #fdeaf2; color: #d62976; } .mi.dc { background: #eceeff; color: #5865f2; } .mi.bd { background: #e6f9ee; }
 .mi .ai { width: 18px; height: 18px; }
 .mega { min-width: 860px; display: none; grid-template-columns: repeat(3, 1fr); gap: 4px 8px; }
 .dd.open .mega { display: grid; }

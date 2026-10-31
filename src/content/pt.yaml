@@ -32,6 +32,9 @@ ui:
     ig_s: As mensagens de cada conta, traduzidas
     dc: Tradutor do Discord
     dc_s: Servidores e DMs em qualquer idioma
+    bd: "Tradutor do BAND"
+    bd_s: "Chats do BAND em qualquer idioma"
+    alt: "Alternativa ao Rambox"
   cta_trial: Baixe grátis — teste de 3 dias
   cta_demo: Veja funcionando
   cta_live: Peça uma demonstração ao vivo
@@ -846,6 +849,61 @@ pages:
       - guides/multiple-whatsapp-accounts-on-pc
       - multiple-telegram-accounts
       - pricing
+  band-translator:
+    title: "Tradutor do BAND e várias contas do BAND no PC"
+    description: "Traduza os chats do BAND no Windows e mantenha várias contas do BAND abertas lado a lado, junto ao WhatsApp e Telegram. 49 idiomas, offline. Teste grátis 3 dias."
+    keywords: "tradutor band, traduzir chat band, band app pc, várias contas band, band multicontas"
+    short: "Tradutor do BAND"
+    icon: "👥"
+    og_heading: "Tradutor do BAND: cada chat do BAND no seu idioma"
+    og_sub: "Várias contas do BAND no seu PC, cada chat traduzido offline."
+    blocks:
+      - type: hero
+        k: "Tradutor do BAND para PC"
+        h1: "Converse no BAND <span class=\"grad\">em qualquer idioma</span>"
+        lead: "Parceiros, membros de grupos ou clientes escrevem no BAND em coreano, chinês ou japonês? O GlotChat traduz cada mensagem de chat do BAND embaixo do original — e a sua resposta antes do envio. Várias contas do BAND lado a lado, junto ao WhatsApp, Telegram e seus outros apps."
+      - type: steps
+        soft: false
+        k: "Como funciona"
+        h: "Chats do BAND traduzidos em três passos"
+        items:
+          - ["Entre uma vez", "Adicione uma conta do BAND no GlotChat e entre com seu e-mail ou telefone e senha. A sessão continua aberta."]
+          - ["Leia no seu idioma", "Abra um chat do BAND: cada mensagem mostra a tradução embaixo do original."]
+          - ["Responda no idioma deles", "Escreva no seu idioma e aperte Enter. Confira o que vão ler e envie."]
+      - type: split
+        k: "Várias contas do BAND"
+        h: "Várias contas do BAND abertas ao mesmo tempo"
+        p: "Um band para cada equipe, escola ou grupo de clientes? O GlotChat mantém cada conta do BAND aberta na sua própria sessão isolada, então as mensagens novas de cada conta chegam até você — já traduzidas."
+        ticks: ["Sem sair e entrar de novo", "Não lidas de cada conta", "Todos leem você no idioma deles"]
+        mock:
+          top: "<span>Enviar em <b>coreano</b></span><span>do português</span>"
+          main: "내일 오후 3시에 샘플 보내드릴게요. 주소 확인 부탁드립니다."
+          notes: [["back", "↩ Vão ler: Amanhã às 15h envio as amostras. Confirme o endereço, por favor."]]
+      - type: cards
+        soft: true
+        k: "O que você ganha"
+        h: "Para equipes, grupos e parceiros no BAND"
+        items:
+          - {icon: "🌐", h: "Cada chat traduzido", p: "As mensagens de chat do BAND são traduzidas sozinhas para o seu idioma — 49 idiomas, offline no seu PC."}
+          - {icon: "↩", h: "Conferência «Vão ler»", p: "Veja sua resposta traduzida de volta antes do envio, com preços e números conferidos."}
+          - {icon: "🗂", h: "Muitas contas do BAND", p: "Cada conta isolada, com seu próprio login e notificações — quantas o seu plano incluir."}
+          - {icon: "⚡", h: "Modelos", p: "Salve as respostas que você escreve todo dia e insira com um clique."}
+          - {icon: "🖱", h: "Posts e comentários também", p: "Selecione qualquer texto no BAND — um post, um comentário, um aviso — e traduza com um clique."}
+          - {icon: "💬", h: "Todos os seus apps juntos", p: "WhatsApp, Telegram, Messenger, Instagram e Discord na mesma janela.", link: "all-in-one-messenger"}
+      - type: faq
+        k: "Perguntas"
+        h: "Tradutor do BAND — perguntas"
+        items:
+          - ["Posso traduzir os chats do BAND automaticamente?", "Sim. No GlotChat cada mensagem do chat do BAND que você abre é traduzida sozinha e aparece embaixo do original. Suas respostas são traduzidas antes do envio."]
+          - ["Posso usar várias contas do BAND ao mesmo tempo?", "Sim. Cada conta do BAND roda na sua própria sessão isolada, lado a lado — até 5 contas do BAND no Starter, 15 no Pro e ilimitadas no Business."]
+          - ["Posso entrar com o Google?", "O BAND não aceita login com Google dentro de apps de desktop. Primeiro vincule um e-mail à sua conta do BAND (BAND → Configurações → Conta → Vincular e-mail) e depois entre no GlotChat com esse e-mail e sua senha."]
+          - ["Por que o BAND aparece como Beta?", "O BAND já funciona no GlotChat: login, chats, tradução e envio. Beta quer dizer que ainda estamos melhorando. Se algo não funcionar, fale com a gente no Telegram e a gente corrige."]
+          - ["É o BAND oficial?", "Sim. O GlotChat abre o site oficial do BAND (band.us) para cada conta e nunca envia nada sozinho."]
+      - type: related
+        k: "Continue explorando"
+        h: "Relacionado"
+        items: ["all-in-one-messenger", "telegram-translator", "discord-translator"]
+
   compare:
     title: A melhor forma de gerenciar WhatsApp e Telegram com tradução
     description: WhatsApp Web, Telegram Desktop, perfis de navegador, extensões de tradução ou app multicontas? Um comparativo honesto para equipes que vendem para fora.
@@ -964,6 +1022,69 @@ pages:
       - multiple-whatsapp-accounts
       - multiple-telegram-accounts
       - pricing
+  rambox-alternative:
+    title: "Alternativa ao Rambox com tradução integrada | GlotChat"
+    description: "Procurando uma alternativa ao Rambox, Ferdium ou Franz? O GlotChat junta WhatsApp, Telegram, Instagram e mais numa janela — e traduz cada chat."
+    keywords: "alternativa ao rambox, alternativa ao ferdium, alternativa ao franz, rambox vs ferdium, mensageiro tudo em um com tradutor"
+    short: "Alternativa ao Rambox"
+    icon: "🔁"
+    og_heading: "A alternativa ao Rambox que traduz cada chat"
+    blocks:
+      - type: hero
+        k: "Alternativa ao Rambox"
+        h1: "A alternativa ao Rambox que <span class=\"grad\">fala o idioma dos seus clientes</span>"
+        lead: "Rambox, Ferdium, Franz e Wavebox juntam seus apps de chat numa janela. O GlotChat também — e ainda traduz cada mensagem nos dois sentidos, offline no seu PC. Feito para quem vende para clientes de outros países."
+        cta2: ["#compare", "Ver a comparação"]
+      - type: table
+        id: compare
+        k: "Lado a lado"
+        h: "GlotChat vs Rambox, Ferdium, Franz e Wavebox"
+        hl: 5
+        cols: ["", "Rambox", "Ferdium", "Franz", "Wavebox", "GlotChat"]
+        rows:
+          - ["Apps de chat numa janela", "✓", "✓", "✓", "✓", "✓ 6 apps de chat"]
+          - ["Várias contas do mesmo app", "✓", "✓", "✓", "✓", "✓"]
+          - ["Tradução de chats integrada, nos dois sentidos", "✕", "✕", "✕", "✕", "✓ 49 idiomas"]
+          - ["Ver o que o cliente vai ler antes de enviar", "✕", "✕", "✕", "✕", "✓"]
+          - ["Áudios e texto em fotos traduzidos", "✕", "✕", "✕", "✕", "✓ WhatsApp e Telegram"]
+          - ["Centenas de outros apps (Slack, Gmail…)", "✓", "✓", "✓", "✓", "✕ só apps de chat"]
+          - ["Windows / Mac / Linux", "✓ os três", "✓ os três", "✓ os três", "✓ os três", "Só Windows"]
+          - ["Preço", "Plano grátis; Pro cerca de US$ 7/mês", "Grátis, código aberto", "Grátis para 3 serviços; Pro US$ 60/ano", "Plano grátis; Pro cerca de US$ 8/mês", "3 dias grátis; a partir de 69 USDT/ano"]
+        note: "Conferido em outubro de 2026 no site público de cada produto. «✕» em tradução significa que não há tradução de chats integrada nos dois sentidos (alguns apps permitem adicionar uma extensão de terceiros). Recursos e preços mudam: confira antes de comprar. Rambox, Ferdium, Franz e Wavebox são marcas dos seus donos; o GlotChat não tem ligação com eles."
+      - type: cards
+        soft: true
+        k: "Com sinceridade"
+        h: "Qual você deve escolher?"
+        cols: 2
+        items:
+          - {icon: "🧰", h: "Você precisa de Slack, Gmail, Notion e mais 50", p: "Rambox ou Wavebox foram feitos para isso: centenas de apps de trabalho num só lugar."}
+          - {icon: "🆓", h: "Você quer grátis e de código aberto", p: "O Ferdium é grátis, feito pela comunidade e roda em Windows, Mac e Linux."}
+          - {icon: "🍏", h: "Você usa Mac", p: "Hoje o GlotChat só roda no Windows 10 e 11, então escolha um dos outros."}
+          - {icon: "🌍", h: "Seus clientes escrevem em outros idiomas", p: "Esse é o trabalho do GlotChat: cada chat traduzido nos dois sentidos, áudios e fotos também, e cada resposta conferida antes do envio.", link: "pricing"}
+      - type: cards
+        k: "O que o GlotChat acrescenta"
+        h: "Tudo o que um mensageiro tudo em um faz — e ainda traduz"
+        items:
+          - {icon: "🌐", h: "Traduzido embaixo do original", p: "Cada mensagem recebida mostra a tradução logo abaixo, em 49 idiomas."}
+          - {icon: "↩", h: "Conferido antes do envio", p: "Escreva no seu idioma. Veja o que o cliente vai ler, traduzido de volta, antes de enviar."}
+          - {icon: "🎙", h: "Áudios e fotos", p: "Áudios transformados em texto e texto em fotos traduzido, no WhatsApp e no Telegram."}
+          - {icon: "🗂", h: "Contas por app", p: "5, 15 ou ilimitadas contas de cada app: WhatsApp, Telegram, Messenger, Instagram, Discord e BAND."}
+          - {icon: "🔒", h: "Tradução offline", p: "O tradutor roda no seu PC, então seus chats não vão para um tradutor na nuvem (a menos que você ative o DeepL)."}
+          - {icon: "⚡", h: "Modelos", p: "Suas respostas do dia a dia salvas uma vez e inseridas com um clique, em todos os apps."}
+      - type: faq
+        k: "Perguntas"
+        h: "Mudando do Rambox, Ferdium ou Franz"
+        items:
+          - ["O Rambox traduz mensagens?", "Não sozinho. Em outubro de 2026, o Rambox não tem tradução de chats integrada nos dois sentidos; você precisaria de uma extensão de terceiros e não consegue ver o que o cliente vai ler. O GlotChat traduz cada chat nos dois sentidos por conta própria."]
+          - ["Existe alternativa grátis ao Rambox com tradução?", "O Ferdium é grátis, mas não traduz. O GlotChat é grátis por 3 dias com todos os recursos e depois a partir de 69 USDT por ano — menos que o Rambox Pro pago mês a mês."]
+          - ["Como passo do Rambox ou Ferdium para o GlotChat?", "Não há nada para importar. Instale o GlotChat, clique em Adicionar conta, escolha o app e escaneie o QR code ou entre. Cerca de um minuto por conta."]
+          - ["O GlotChat funciona no Mac ou Linux?", "Ainda não: o GlotChat roda no Windows 10 e 11."]
+          - ["Quais apps o GlotChat suporta?", "WhatsApp e WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord e BAND — várias contas de cada um."]
+      - type: related
+        k: "Detalhes"
+        h: "Veja de perto"
+        items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
+
   for/real-estate:
     title: WhatsApp para Imobiliárias – Várias Contas + Tradução
     description: Gerencie o WhatsApp de todos os corretores numa janela e responda compradores estrangeiros no idioma deles — conversas, áudios e documentos traduzidos.
@@ -2090,3 +2211,105 @@ pages:
       - all-in-one-messenger
       - telegram-translator
       - messenger-translator
+  guides/best-all-in-one-messenger-apps:
+    title: "Melhores mensageiros tudo em um para PC (2026)"
+    description: "GlotChat, Rambox, Ferdium, Franz e Wavebox comparados: apps suportados, várias contas, tradução e preço. Escolha o mensageiro tudo em um certo."
+    keywords: "melhor mensageiro tudo em um, mensageiro tudo em um pc, app para todos os chats, rambox vs ferdium, caixa de entrada unificada"
+    short: "Melhores mensageiros tudo em um"
+    icon: "🏆"
+    article: true
+    published: "2026-10-30"
+    updated: "2026-10-30"
+    og_heading: "Os melhores mensageiros tudo em um para PC em 2026"
+    blocks:
+      - type: hero
+        k: "Guia"
+        h1: "Os melhores mensageiros tudo em um para PC em 2026"
+        lead: "Cinco apps que juntam WhatsApp, Telegram, Messenger, Instagram e mais numa janela: no que cada um se destaca, quanto custa e qual combina com você."
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          Um mensageiro tudo em um é um programa de computador que abre seus apps de chat — WhatsApp, Telegram, Messenger, Instagram, Discord e outros — lado a lado numa janela, muitas vezes com várias contas de cada um. Chega de dez abas e três celulares.
+
+          > **Transparência:** nós fazemos o GlotChat, um dos apps da lista. Tentamos ser justos: cada app é a melhor escolha para alguém.
+
+          > **Resposta rápida:** se seus clientes escrevem em outros idiomas, escolha o **GlotChat** (o único da lista com tradução integrada nos dois sentidos). Para dezenas de apps de trabalho como Slack e Gmail, **Rambox** ou **Wavebox**. Grátis e de código aberto, **Ferdium**.
+
+          ## Como comparamos
+
+          Olhamos o que importa para quem conversa a trabalho: quais apps são suportados, se dá para abrir várias contas do mesmo app, se os chats são traduzidos, em quais computadores roda e o preço. Tudo conferido no site de cada produto em outubro de 2026.
+
+          ## 1. GlotChat — o melhor para clientes de outros idiomas
+
+          O GlotChat junta **WhatsApp, Telegram, Messenger, Instagram, Discord e BAND** numa janela no Windows, com várias contas de cada app. O que o torna diferente: cada chat é **traduzido nos dois sentidos** em 49 idiomas. As mensagens recebidas mostram a tradução embaixo do original e sua resposta é traduzida antes do envio — mostrando antes o que o cliente vai ler. No WhatsApp e no Telegram, áudios e texto em fotos também são traduzidos. O tradutor roda offline no seu PC.
+
+          - **Ideal para:** vendedores, exportadores, agências e equipes de suporte com clientes internacionais.
+          - **Não é para:** quem usa Mac, nem quem precisa de Slack, e-mail e outros apps de trabalho.
+          - **Preço:** grátis por 3 dias, depois 69, 129 ou 249 USDT por ano (5, 15 ou ilimitadas contas por app).
+
+          ## 2. Rambox — o melhor para muitos apps de trabalho
+
+          O Rambox é um app de espaço de trabalho bem acabado com centenas de apps (WhatsApp, Slack, Gmail, Notion…), no Windows, Mac e Linux. O plano grátis permite até duas contas de cada app; o Pro (cerca de US$ 7 por mês) libera contas ilimitadas, extensões e mais.
+
+          - **Ideal para:** quem trabalha em escritório com muitas ferramentas.
+          - **Não é para:** traduzir chats — não tem tradução de chats integrada.
+
+          ## 3. Ferdium — o melhor grátis e de código aberto
+
+          O Ferdium é um app grátis e de código aberto feito pela comunidade (um fork do Franz). Suporta muitos serviços, espaços de trabalho e hibernação de apps parados, no Windows, Mac e Linux.
+
+          - **Ideal para:** quem quer software grátis e não liga para uma experiência menos polida.
+          - **Não é para:** tradução nem suporte oficial.
+
+          ## 4. Franz — simples, com resumos de IA
+
+          O Franz é um dos primeiros mensageiros tudo em um. O Franz 6 traz recursos de IA como resumos e sugestões de resposta. O plano grátis cobre 3 serviços; o Pro custa US$ 60 por ano.
+
+          - **Ideal para:** uma configuração limpa e simples com poucos apps.
+          - **Não é para:** traduzir os chats dos seus clientes.
+
+          ## 5. Wavebox — o melhor para quem vive no navegador
+
+          O Wavebox é um navegador de produtividade que agrupa apps web e contas do Google em espaços de trabalho. Tem um plano grátis limitado; o Pro custa cerca de US$ 8 por mês no plano anual.
+
+          - **Ideal para:** quem vive no Google Workspace e em dezenas de apps web.
+          - **Não é para:** traduzir chats.
+
+          ## Comparação lado a lado
+
+          | | GlotChat | Rambox | Ferdium | Franz | Wavebox |
+          |---|---|---|---|---|---|
+          | WhatsApp, Telegram, Messenger, Instagram | Sim | Sim | Sim | Sim | Sim |
+          | Várias contas de um app | Sim | Sim | Sim | Sim | Sim |
+          | Tradução de chats nos dois sentidos | **Sim, 49 idiomas** | Não | Não | Não | Não |
+          | Áudios e fotos traduzidos | **Sim** (WhatsApp, Telegram) | Não | Não | Não | Não |
+          | Outros apps de trabalho (Slack, Gmail…) | Não | Sim | Sim | Sim | Sim |
+          | Windows / Mac / Linux | Windows | Todos | Todos | Todos | Todos |
+          | Preço | a partir de 69 USDT/ano | grátis / ~US$ 7 por mês | grátis | grátis / US$ 60 por ano | grátis / ~US$ 8 por mês |
+
+          ## Como escolher
+
+          1. **Seus clientes escrevem em outros idiomas?** A tradução economiza horas todo dia: escolha o GlotChat.
+          2. **Precisa de ferramentas de trabalho além do chat?** Rambox ou Wavebox.
+          3. **Orçamento zero?** Ferdium.
+          4. **Usa Mac?** Rambox, Ferdium, Franz ou Wavebox — por enquanto o GlotChat só roda no Windows.
+
+          ## Mensageiros tudo em um são seguros?
+
+          Os bons abrem a **versão web oficial** de cada app (como o WhatsApp Web) numa sessão isolada — o mesmo que seu navegador faz, só que organizado. Evite apps modificados (como o «GB WhatsApp») e ferramentas de envio em massa: é isso que faz contas serem banidas.
+
+          Quer ver a tradução nos seus próprios chats? [Teste o GlotChat grátis por 3 dias](/pt/download/) — sem cartão e sem pagar.
+      - type: faq
+        k: "Perguntas"
+        h: "Respostas rápidas"
+        items:
+          - ["Qual é o melhor mensageiro tudo em um?", "Depende do que você precisa. Para clientes de outros idiomas, o GlotChat: é o único da lista que traduz os chats nos dois sentidos. Para muitos apps de trabalho, Rambox ou Wavebox. Grátis e de código aberto, Ferdium."]
+          - ["Qual mensageiro tudo em um traduz mensagens?", "O GlotChat traduz cada chat do WhatsApp, Telegram, Messenger, Instagram, Discord e BAND, nos dois sentidos, em 49 idiomas — offline no seu PC."]
+          - ["Posso usar várias contas do WhatsApp num só app?", "Sim. Os cinco apps desta lista abrem várias contas do WhatsApp lado a lado. O GlotChat foi testado com 27 contas ao mesmo tempo."]
+          - ["Existe mensageiro tudo em um grátis?", "O Ferdium é grátis. Rambox, Franz e Wavebox têm planos grátis limitados. O GlotChat é grátis por 3 dias com todos os recursos."]
+      - type: related
+        k: "Próximo"
+        h: "Continue lendo"
+        items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+

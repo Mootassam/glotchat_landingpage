@@ -32,6 +32,9 @@ ui:
     ig_s: Her Instagram hesabının DM'leri çevrilir
     dc: Discord çevirmeni
     dc_s: Sunucular ve DM'ler her dilde
+    bd: "BAND çevirmeni"
+    bd_s: "BAND sohbetleri her dilde"
+    alt: "Rambox alternatifi"
   cta_trial: Ücretsiz indir — 3 gün deneme
   cta_demo: Nasıl çalıştığını izleyin
   cta_live: Canlı demo isteyin
@@ -846,6 +849,61 @@ pages:
       - guides/multiple-whatsapp-accounts-on-pc
       - multiple-telegram-accounts
       - pricing
+  band-translator:
+    title: "BAND Çevirmeni ve PC'de Birden Fazla BAND Hesabı"
+    description: "BAND sohbetlerini Windows'ta çevirin, birden fazla BAND hesabını WhatsApp ve Telegram'ın yanında açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz deneyin."
+    keywords: "band çeviri, band çevirmen, band sohbet çevirisi, band pc, birden fazla band hesabı"
+    short: "BAND çevirmeni"
+    icon: "👥"
+    og_heading: "BAND çevirmeni: her BAND sohbeti sizin dilinizde"
+    og_sub: "PC'nizde birden fazla BAND hesabı, her sohbet çevrimdışı çevrilir."
+    blocks:
+      - type: hero
+        k: "PC için BAND çevirmeni"
+        h1: "BAND'da <span class=\"grad\">her dilde sohbet edin</span>"
+        lead: "İş ortaklarınız, grup üyeleriniz veya müşterileriniz BAND'da size Korece, Çince ya da Japonca mı yazıyor? GlotChat her BAND sohbet mesajını orijinalin altında çevirir — yanıtınızı da göndermeden önce. Birden fazla BAND hesabı yan yana, WhatsApp, Telegram ve diğer uygulamalarınızla birlikte."
+      - type: steps
+        soft: false
+        k: "Nasıl çalışır"
+        h: "Üç adımda çevrilmiş BAND sohbetleri"
+        items:
+          - ["Bir kez giriş yapın", "GlotChat'e bir BAND hesabı ekleyin ve e-posta ya da telefon numaranız ve şifrenizle giriş yapın. Oturum açık kalır."]
+          - ["Kendi dilinizde okuyun", "Bir BAND sohbeti açın: her mesajın çevirisi orijinalin altında görünür."]
+          - ["Onların dilinde yanıtlayın", "Kendi dilinizde yazın ve Enter'a basın. Ne okuyacaklarını kontrol edin, sonra gönderin."]
+      - type: split
+        k: "Birden fazla BAND hesabı"
+        h: "Birden fazla BAND hesabı aynı anda açık"
+        p: "Her ekip, okul veya müşteri grubu için ayrı bir band mı var? GlotChat her BAND hesabını kendi yalıtılmış oturumunda açık tutar; her hesaptaki yeni mesajlar size ulaşır — zaten çevrilmiş olarak."
+        ticks: ["Çıkış yapıp tekrar girmek yok", "Her hesap için okunmamış sayısı", "Herkes sizi kendi dilinde okur"]
+        mock:
+          top: "<span><b>Korece</b> gönder</span><span>Türkçeden</span>"
+          main: "내일 오후 3시에 샘플 보내드릴게요. 주소 확인 부탁드립니다."
+          notes: [["back", "↩ Okuyacakları: Numuneleri yarın saat 15:00'te gönderiyorum. Lütfen adresi onaylayın."]]
+      - type: cards
+        soft: true
+        k: "Neler elde edersiniz"
+        h: "BAND'daki ekipler, gruplar ve iş ortakları için"
+        items:
+          - {icon: "🌐", h: "Her sohbet çevrilir", p: "Gelen BAND sohbet mesajları otomatik olarak dilinize çevrilir — 49 dil, PC'nizde çevrimdışı."}
+          - {icon: "↩", h: "“Okuyacakları” kontrolü", p: "Yanıtınızın geri çevirisini göndermeden önce görün; fiyatlar ve rakamlar kontrol edilir."}
+          - {icon: "🗂", h: "Çok sayıda BAND hesabı", p: "Her hesap yalıtılmış, kendi girişi ve bildirimleriyle — paketiniz kadar."}
+          - {icon: "⚡", h: "Şablonlar", p: "Her gün yazdığınız yanıtları kaydedin, tek tıkla ekleyin."}
+          - {icon: "🖱", h: "Gönderiler ve yorumlar da", p: "BAND'da herhangi bir metni — gönderi, yorum, duyuru — seçin ve tek tıkla çevirin."}
+          - {icon: "💬", h: "Tüm uygulamalarınız bir arada", p: "WhatsApp, Telegram, Messenger, Instagram ve Discord aynı pencerede.", link: "all-in-one-messenger"}
+      - type: faq
+        k: "SSS"
+        h: "BAND çevirmeni — sorular"
+        items:
+          - ["BAND sohbetlerini otomatik çevirebilir miyim?", "Evet. GlotChat'te açtığınız BAND sohbetindeki her mesaj otomatik çevrilir ve orijinalin altında gösterilir. Yanıtlarınız göndermeden önce çevrilir."]
+          - ["Aynı anda birden fazla BAND hesabı kullanabilir miyim?", "Evet. Her BAND hesabı kendi yalıtılmış oturumunda, yan yana çalışır — Starter'da 5, Pro'da 15, Business'ta sınırsız BAND hesabı."]
+          - ["Google ile giriş yapabilir miyim?", "BAND, masaüstü uygulamalarının içinde Google ile girişi kabul etmiyor. Önce BAND hesabınıza bir e-posta bağlayın (BAND → Ayarlar → Hesap → E-posta bağla), sonra GlotChat'e bu e-posta ve şifrenizle girin."]
+          - ["BAND neden Beta olarak işaretli?", "BAND bugün GlotChat'te çalışıyor: giriş, sohbetler, çeviri ve gönderme. Beta, hâlâ geliştirdiğimiz anlamına gelir. Bir şey çalışmazsa Telegram'dan bize yazın, düzeltelim."]
+          - ["Resmi BAND mı?", "Evet. GlotChat her hesap için resmi BAND sitesini (band.us) açar ve kendi başına hiçbir şey göndermez."]
+      - type: related
+        k: "Keşfetmeye devam edin"
+        h: "İlgili"
+        items: ["all-in-one-messenger", "telegram-translator", "discord-translator"]
+
   compare:
     title: WhatsApp ve Telegram Hesaplarını Çeviriyle Yönetmenin En İyi Yolu
     description: WhatsApp Web, Telegram Desktop, tarayıcı profilleri, çeviri eklentisi mi, çoklu hesap uygulaması mı? Yurt dışına satan ekipler için dürüst karşılaştırma.
@@ -964,6 +1022,69 @@ pages:
       - multiple-whatsapp-accounts
       - multiple-telegram-accounts
       - pricing
+  rambox-alternative:
+    title: "Çeviri Özellikli Rambox Alternatifi | GlotChat"
+    description: "Rambox, Ferdium veya Franz alternatifi mi arıyorsunuz? GlotChat WhatsApp, Telegram, Instagram ve daha fazlasını tek pencerede toplar — ve her sohbeti çevirir."
+    keywords: "rambox alternatifi, ferdium alternatifi, franz alternatifi, rambox mu ferdium mu, çevirili hepsi bir arada mesajlaşma"
+    short: "Rambox alternatifi"
+    icon: "🔁"
+    og_heading: "Her sohbeti çeviren Rambox alternatifi"
+    blocks:
+      - type: hero
+        k: "Rambox alternatifi"
+        h1: "Müşterilerinizin dilini konuşan <span class=\"grad\">Rambox alternatifi</span>"
+        lead: "Rambox, Ferdium, Franz ve Wavebox sohbet uygulamalarınızı tek pencerede toplar. GlotChat da öyle — ve üstüne her mesajı iki yönlü, PC'nizde çevrimdışı çevirir. Başka ülkelerdeki müşterilere satış yapanlar için."
+        cta2: ["#compare", "Karşılaştırmayı görün"]
+      - type: table
+        id: compare
+        k: "Yan yana"
+        h: "GlotChat - Rambox, Ferdium, Franz ve Wavebox karşılaştırması"
+        hl: 5
+        cols: ["", "Rambox", "Ferdium", "Franz", "Wavebox", "GlotChat"]
+        rows:
+          - ["Sohbet uygulamaları tek pencerede", "✓", "✓", "✓", "✓", "✓ 6 sohbet uygulaması"]
+          - ["Aynı uygulamadan birden fazla hesap", "✓", "✓", "✓", "✓", "✓"]
+          - ["Yerleşik iki yönlü sohbet çevirisi", "✕", "✕", "✕", "✕", "✓ 49 dil"]
+          - ["Göndermeden önce müşterinin ne okuyacağını görme", "✕", "✕", "✕", "✕", "✓"]
+          - ["Sesli mesaj ve fotoğraftaki metin çevirisi", "✕", "✕", "✕", "✕", "✓ WhatsApp ve Telegram"]
+          - ["Yüzlerce başka uygulama (Slack, Gmail…)", "✓", "✓", "✓", "✓", "✕ yalnızca sohbet uygulamaları"]
+          - ["Windows / Mac / Linux", "✓ üçü de", "✓ üçü de", "✓ üçü de", "✓ üçü de", "Yalnızca Windows"]
+          - ["Fiyat", "Ücretsiz paket; Pro ayda yaklaşık 7 $", "Ücretsiz, açık kaynak", "3 servis ücretsiz; Pro yılda 60 $", "Ücretsiz paket; Pro ayda yaklaşık 8 $", "3 gün ücretsiz; yılda 69 USDT'den"]
+        note: "Ekim 2026'da her ürünün resmi sitesinden kontrol edildi. Çeviride “✕”, yerleşik iki yönlü sohbet çevirisi olmadığı anlamına gelir (bazı uygulamalara üçüncü taraf eklenti kurulabilir). Özellikler ve fiyatlar değişebilir; satın almadan önce kontrol edin. Rambox, Ferdium, Franz ve Wavebox sahiplerinin ticari markalarıdır; GlotChat'in onlarla bağlantısı yoktur."
+      - type: cards
+        soft: true
+        k: "Dürüst olalım"
+        h: "Hangisini seçmelisiniz?"
+        cols: 2
+        items:
+          - {icon: "🧰", h: "Slack, Gmail, Notion ve 50 uygulama daha lazım", p: "Rambox veya Wavebox tam bunun için yapıldı — yüzlerce iş uygulaması tek yerde."}
+          - {icon: "🆓", h: "Ücretsiz ve açık kaynak istiyorsunuz", p: "Ferdium ücretsiz, topluluk tarafından geliştiriliyor ve Windows, Mac ve Linux'ta çalışıyor."}
+          - {icon: "🍏", h: "Mac kullanıyorsunuz", p: "GlotChat şu an yalnızca Windows 10 ve 11'de çalışıyor; diğerlerinden birini seçin."}
+          - {icon: "🌍", h: "Müşterileriniz başka dillerde yazıyor", p: "İşte GlotChat'in işi: her sohbet iki yönlü çevrilir, sesli mesajlar ve fotoğraflar da; her yanıt göndermeden önce kontrol edilir.", link: "pricing"}
+      - type: cards
+        k: "GlotChat'in kattıkları"
+        h: "Hepsi bir arada bir mesajlaşma uygulamasının yaptığı her şey — artı çeviri"
+        items:
+          - {icon: "🌐", h: "Orijinalin altında çeviri", p: "Gelen her mesajın çevirisi hemen altında, 49 dilde."}
+          - {icon: "↩", h: "Göndermeden önce kontrol", p: "Kendi dilinizde yazın. Müşterinin ne okuyacağını geri çeviriyle göndermeden önce görün."}
+          - {icon: "🎙", h: "Sesli mesajlar ve fotoğraflar", p: "WhatsApp ve Telegram'da sesli mesajlar metne dönüşür, fotoğraftaki metin çevrilir."}
+          - {icon: "🗂", h: "Uygulama başına hesap", p: "Her uygulamadan 5, 15 veya sınırsız hesap: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND."}
+          - {icon: "🔒", h: "Çevrimdışı çeviri", p: "Çevirmen PC'nizde çalışır; sohbetleriniz bulut çevirmenine gitmez (DeepL'i açmadıkça)."}
+          - {icon: "⚡", h: "Şablonlar", p: "Günlük yanıtlarınız bir kez kaydedilir, her uygulamada tek tıkla eklenir."}
+      - type: faq
+        k: "SSS"
+        h: "Rambox, Ferdium veya Franz'dan geçiş"
+        items:
+          - ["Rambox mesajları çeviriyor mu?", "Kendi başına hayır. Ekim 2026 itibarıyla Rambox'ta yerleşik iki yönlü sohbet çevirisi yok; üçüncü taraf bir eklenti gerekir ve müşterinin ne okuyacağını göremezsiniz. GlotChat her sohbeti kendisi iki yönlü çevirir."]
+          - ["Çevirili ücretsiz bir Rambox alternatifi var mı?", "Ferdium ücretsiz ama çeviri yapmıyor. GlotChat tüm özellikleriyle 3 gün ücretsiz, sonra yılda 69 USDT'den başlıyor — aylık ödenen Rambox Pro'dan daha ucuz."]
+          - ["Rambox veya Ferdium'dan GlotChat'e nasıl geçerim?", "İçe aktarılacak bir şey yok. GlotChat'i kurun, Hesap ekle'ye tıklayın, uygulamayı seçin ve QR kodu okutun ya da giriş yapın. Hesap başına yaklaşık bir dakika."]
+          - ["GlotChat Mac veya Linux'ta çalışıyor mu?", "Henüz değil — GlotChat Windows 10 ve 11'de çalışır."]
+          - ["GlotChat hangi uygulamaları destekliyor?", "WhatsApp ve WhatsApp Business, Telegram, Facebook Messenger, Instagram DM, Discord ve BAND — her birinden birden fazla hesap."]
+      - type: related
+        k: "Ayrıntılar"
+        h: "Daha yakından bakın"
+        items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
+
   for/real-estate:
     title: Emlakçılar için WhatsApp – Çoklu Hesap + Çeviri
     description: Tüm danışmanların WhatsApp numaralarını tek pencerede yönetin, yabancı alıcılara kendi dillerinde yanıt verin — sohbet, sesli not ve belge çevirisi.
@@ -2090,3 +2211,105 @@ pages:
       - all-in-one-messenger
       - telegram-translator
       - messenger-translator
+  guides/best-all-in-one-messenger-apps:
+    title: "PC için En İyi Hepsi Bir Arada Mesajlaşma Uygulamaları (2026)"
+    description: "GlotChat, Rambox, Ferdium, Franz ve Wavebox karşılaştırması: desteklenen uygulamalar, çoklu hesap, çeviri ve fiyat. Size uygun olanı seçin."
+    keywords: "en iyi hepsi bir arada mesajlaşma, hepsi bir arada mesajlaşma pc, tüm sohbetler tek uygulamada, rambox mu ferdium mu, birleşik gelen kutusu"
+    short: "En iyi hepsi bir arada mesajlaşma uygulamaları"
+    icon: "🏆"
+    article: true
+    published: "2026-10-30"
+    updated: "2026-10-30"
+    og_heading: "2026'da PC için en iyi hepsi bir arada mesajlaşma uygulamaları"
+    blocks:
+      - type: hero
+        k: "Rehber"
+        h1: "2026'da PC için en iyi hepsi bir arada mesajlaşma uygulamaları"
+        lead: "WhatsApp, Telegram, Messenger, Instagram ve daha fazlasını tek pencerede toplayan beş uygulama: her biri neyde iyi, ne kadar tutuyor ve hangisi size uygun."
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          Hepsi bir arada mesajlaşma uygulaması, sohbet uygulamalarınızı — WhatsApp, Telegram, Messenger, Instagram, Discord ve diğerleri — tek pencerede yan yana açan bir masaüstü programıdır; çoğu zaman her birinden birden fazla hesapla. On sekme ve üç telefona gerek kalmaz.
+
+          > **Açıklama:** GlotChat'i biz yapıyoruz ve listede o da var. Adil olmaya çalıştık: her uygulama birileri için en iyi seçim.
+
+          > **Kısa cevap:** müşterileriniz başka dillerde yazıyorsa **GlotChat** (listede yerleşik iki yönlü çevirisi olan tek uygulama). Slack ve Gmail gibi onlarca iş uygulaması için **Rambox** veya **Wavebox**. Ücretsiz ve açık kaynak için **Ferdium**.
+
+          ## Nasıl karşılaştırdık
+
+          İş için yazışanlar için önemli olana baktık: hangi uygulamalar destekleniyor, aynı uygulamadan birden fazla hesap açılabiliyor mu, sohbetler çevriliyor mu, hangi bilgisayarlarda çalışıyor ve fiyatı ne. Her şey Ekim 2026'da ürünlerin kendi sitelerinden kontrol edildi.
+
+          ## 1. GlotChat — başka dillerdeki müşteriler için en iyisi
+
+          GlotChat, Windows'ta **WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND**'ı tek pencerede, her uygulamadan birden fazla hesapla çalıştırır. Farkı: her sohbet 49 dilde **iki yönlü çevrilir**. Gelen mesajların çevirisi orijinalin altında görünür, yanıtınız göndermeden önce çevrilir — müşterinin ne okuyacağı önce gösterilir. WhatsApp ve Telegram'da sesli mesajlar ve fotoğraftaki metinler de çevrilir. Çevirmen PC'nizde çevrimdışı çalışır.
+
+          - **Kimler için:** yurt dışı müşterisi olan satıcılar, ihracatçılar, ajanslar ve destek ekipleri.
+          - **Kimler için değil:** Mac kullanıcıları ve Slack, e-posta gibi iş uygulamalarına ihtiyaç duyanlar.
+          - **Fiyat:** 3 gün ücretsiz, sonra yılda 69, 129 veya 249 USDT (uygulama başına 5, 15 veya sınırsız hesap).
+
+          ## 2. Rambox — çok sayıda iş uygulaması için en iyisi
+
+          Rambox, yüzlerce uygulamayı (WhatsApp, Slack, Gmail, Notion…) destekleyen özenli bir çalışma alanı uygulamasıdır; Windows, Mac ve Linux'ta çalışır. Ücretsiz paket her uygulamadan en fazla iki hesaba izin verir; Pro (ayda yaklaşık 7 $) sınırsız hesap, eklentiler ve daha fazlasını ekler.
+
+          - **Kimler için:** birçok iş aracını aynı anda kullanan ofis çalışanları.
+          - **Kimler için değil:** sohbet çevirisi — yerleşik sohbet çevirisi yok.
+
+          ## 3. Ferdium — en iyi ücretsiz ve açık kaynak seçenek
+
+          Ferdium, topluluğun geliştirdiği ücretsiz ve açık kaynaklı bir uygulamadır (Franz'ın bir çatalı). Birçok servisi, çalışma alanlarını ve kullanılmayan uygulamaları uyutmayı destekler; Windows, Mac ve Linux'ta çalışır.
+
+          - **Kimler için:** ücretsiz yazılım isteyen ve daha az cilalı bir deneyime aldırmayanlar.
+          - **Kimler için değil:** çeviri veya resmi destek isteyenler.
+
+          ## 4. Franz — sade, yapay zekâ özetleriyle
+
+          Franz, ilk hepsi bir arada mesajlaşma uygulamalarından biridir. Franz 6, özetler ve yanıt önerileri gibi yapay zekâ özellikleri ekler. Ücretsiz paket 3 servisi kapsar; Pro yılda 60 $.
+
+          - **Kimler için:** birkaç uygulamayla sade bir kurulum isteyenler.
+          - **Kimler için değil:** müşteri sohbetlerini çevirmek.
+
+          ## 5. Wavebox — tarayıcıda yaşayanlar için en iyisi
+
+          Wavebox, web uygulamalarını ve Google hesaplarını çalışma alanlarında gruplayan bir verimlilik tarayıcısıdır. Sınırlı bir ücretsiz paketi var; Pro yıllık ödemede ayda yaklaşık 8 $.
+
+          - **Kimler için:** Google Workspace ve onlarca web uygulamasıyla çalışanlar.
+          - **Kimler için değil:** sohbet çevirisi.
+
+          ## Yan yana karşılaştırma
+
+          | | GlotChat | Rambox | Ferdium | Franz | Wavebox |
+          |---|---|---|---|---|---|
+          | WhatsApp, Telegram, Messenger, Instagram | Evet | Evet | Evet | Evet | Evet |
+          | Bir uygulamadan birden fazla hesap | Evet | Evet | Evet | Evet | Evet |
+          | İki yönlü sohbet çevirisi | **Evet, 49 dil** | Hayır | Hayır | Hayır | Hayır |
+          | Sesli mesaj ve fotoğraf çevirisi | **Evet** (WhatsApp, Telegram) | Hayır | Hayır | Hayır | Hayır |
+          | Diğer iş uygulamaları (Slack, Gmail…) | Hayır | Evet | Evet | Evet | Evet |
+          | Windows / Mac / Linux | Windows | Hepsi | Hepsi | Hepsi | Hepsi |
+          | Fiyat | yılda 69 USDT'den | ücretsiz / ayda ~7 $ | ücretsiz | ücretsiz / yılda 60 $ | ücretsiz / ayda ~8 $ |
+
+          ## Nasıl seçilir
+
+          1. **Müşterileriniz başka dillerde mi yazıyor?** Çeviri size her gün saatler kazandırır — GlotChat'i seçin.
+          2. **Sohbet dışında iş araçlarına da mı ihtiyacınız var?** Rambox veya Wavebox.
+          3. **Bütçeniz sıfır mı?** Ferdium.
+          4. **Mac mi kullanıyorsunuz?** Rambox, Ferdium, Franz veya Wavebox — GlotChat şimdilik yalnızca Windows'ta.
+
+          ## Hepsi bir arada mesajlaşma uygulamaları güvenli mi?
+
+          İyileri her uygulamanın **resmi web sürümünü** (WhatsApp Web gibi) kendi yalıtılmış oturumunda açar — tarayıcınızın yaptığının aynısı, sadece daha düzenli. Değiştirilmiş uygulamalardan (“GB WhatsApp” gibi) ve toplu mesaj araçlarından uzak durun: hesapları kapattıran bunlardır.
+
+          Çeviriyi kendi sohbetlerinizde görmek mi istiyorsunuz? [GlotChat'i 3 gün ücretsiz deneyin](/tr/download/) — kart yok, ödeme yok.
+      - type: faq
+        k: "SSS"
+        h: "Kısa cevaplar"
+        items:
+          - ["En iyi hepsi bir arada mesajlaşma uygulaması hangisi?", "İhtiyacınıza bağlı. Başka dillerdeki müşteriler için GlotChat: listede sohbetleri iki yönlü çeviren tek uygulama. Çok sayıda iş uygulaması için Rambox veya Wavebox. Ücretsiz ve açık kaynak için Ferdium."]
+          - ["Hangi hepsi bir arada mesajlaşma uygulaması mesajları çeviriyor?", "GlotChat; WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND'daki her sohbeti iki yönlü, 49 dilde çevirir — PC'nizde çevrimdışı."]
+          - ["Tek uygulamada birden fazla WhatsApp hesabı kullanabilir miyim?", "Evet. Bu listedeki beş uygulamanın hepsi birden fazla WhatsApp hesabını yan yana açabilir. GlotChat aynı anda 27 hesapla test edildi."]
+          - ["Ücretsiz bir hepsi bir arada mesajlaşma uygulaması var mı?", "Ferdium ücretsiz. Rambox, Franz ve Wavebox'ın sınırlı ücretsiz paketleri var. GlotChat tüm özellikleriyle 3 gün ücretsiz."]
+      - type: related
+        k: "Sıradaki"
+        h: "Okumaya devam edin"
+        items: ["rambox-alternative", "all-in-one-messenger", "guides/multiple-whatsapp-accounts-on-pc"]
+
