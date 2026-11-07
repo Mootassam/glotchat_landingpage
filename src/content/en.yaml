@@ -1441,6 +1441,91 @@ pages:
         h: "Keep reading"
         items: ["guides/translate-whatsapp-messages-on-pc", "guides/multiple-telegram-accounts-on-pc", "multiple-whatsapp-accounts"]
 
+  guides/translate-telegram-messages-on-pc:
+    title: "How to Translate Telegram Messages on PC (Text, Voice & Photos)"
+    description: "Translate Telegram chats on Windows both ways — messages, voice notes and photo text. Copy-paste, a bot, or an app that translates right in the chat."
+    short: "Translate Telegram on PC"
+    icon: "🌐"
+    article: true
+    single: true
+    published: "2026-11-06"
+    updated: "2026-11-06"
+    og_heading: "How to translate Telegram messages on a PC"
+    blocks:
+      - type: hero
+        k: "Guide"
+        h1: "How to translate Telegram messages on a PC"
+        lead: "Three ways to read and reply to Telegram chats in another language on Windows — copy-paste, a translation bot, or an app that translates both ways right in the chat — with the steps, the limits and the privacy trade-offs."
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          Telegram is used all over the world, so many chats cross a language line — a customer in one country, a supplier in another, a group where half the people write in a language you don't read. On a computer you have three ways to handle it.
+
+          > **Quick answer:** for the odd message, copy-paste into an online translator. For a group you follow, a translation bot can help. To actually *chat* — read every incoming message in your language and have your replies translated before you send them — use an app like GlotChat that translates both ways inside Telegram.
+
+          ## Method 1: Copy-paste into an online translator (free, occasional)
+
+          1. Select the message in Telegram and copy it.
+          2. Paste it into Google Translate, DeepL or Bing Translator.
+          3. Read the result; to reply, type your answer, translate it, and paste it back.
+
+          **Good for:** one message now and then. **Limits:** slow for a real conversation, nothing is translated automatically, and your text is sent to a third-party website.
+
+          ## Method 2: A Telegram translation bot (free, groups)
+
+          Some bots translate messages you forward to them, and a few can be added to a group to translate on request.
+
+          1. Search Telegram for a translation bot and start it.
+          2. Forward a message to the bot, or use its command in a group.
+          3. Read the reply it sends back.
+
+          **Good for:** the occasional group message. **Limits:** you forward messages one by one, your own replies aren't translated for you, voice notes and photos aren't covered, and the bot's owner sees whatever you send it.
+
+          ## Method 3: An app that translates both ways in the chat (many languages, private)
+
+          A desktop app runs Telegram in its own window and translates the conversation as it happens. With **GlotChat**:
+
+          1. Install GlotChat on Windows 10 or 11 and add your Telegram account (log in or scan the QR code).
+          2. Pick your language once. Incoming messages appear translated under the original.
+          3. Type your reply in your own language — before it sends, GlotChat shows **what the other person will read**, checks every number, and offers other wordings.
+          4. Voice notes and photo text are translated too, and translation runs **on your own PC**, so your chats aren't sent to a cloud service.
+
+          **Good for:** real conversations, customers who write in other languages, and anyone who also uses WhatsApp — GlotChat runs WhatsApp accounts in the same window. It translates 49 languages offline.
+
+          ## Which method should you choose?
+
+          | | Copy-paste | Translation bot | App in the chat |
+          |---|---|---|---|
+          | Reads incoming automatically | No | No | Yes |
+          | Translates your reply | By hand | No | Yes (with a check first) |
+          | Voice notes & photos | No | No | Yes (GlotChat) |
+          | Stays on your PC | No | No | Yes (GlotChat) |
+          | Cost | Free | Free | Paid (GlotChat, 3 days free) |
+
+          ## A note on privacy
+
+          Copy-paste and bots send your text to someone else's server. For personal, business or financial chats that matters. An app that translates **offline on your computer** keeps the conversation on your machine — only turn on an online engine if you choose to.
+
+          ## Tips for Telegram in another language
+
+          - **Check before you send.** A wrong number or name in a translated reply can cost a sale — GlotChat shows the back-translation and flags missing numbers.
+          - **Reply in their language.** It's the fastest way to earn trust, and with translation built in it takes no extra time.
+          - **Keep accounts separate.** If you run several Telegram numbers, give each a clear name so you always know which one you're answering from.
+
+          Want to see Method 3 on your own Telegram chats? [Download GlotChat and try it free for 3 days](/download/).
+      - type: faq
+        k: "FAQ"
+        h: "Quick answers"
+        items:
+          - ["Can I translate Telegram messages automatically on a PC?", "Yes. An app like GlotChat opens Telegram in its own window, translates incoming messages automatically, and translates your replies before you send them."]
+          - ["Is my Telegram chat sent to an online translator?", "With copy-paste or a bot, yes. GlotChat translates offline on your own computer, so your chats stay on your PC unless you turn on an optional online engine."]
+          - ["Can I translate Telegram voice notes?", "Yes. GlotChat transcribes and translates voice notes and reads text inside photos, in addition to normal messages."]
+      - type: related
+        k: "Next"
+        h: "Keep reading"
+        items: ["guides/translate-whatsapp-messages-on-pc", "guides/multiple-telegram-accounts-on-pc", "telegram-translator"]
+
   guides/translate-whatsapp-messages-on-pc:
     title: "How to Translate WhatsApp Messages on PC (Text, Voice, Photos)"
     description: "How to translate WhatsApp chats on a computer: copy-paste, browser extensions or built-in translation — plus voice notes and photos, and privacy tips."
