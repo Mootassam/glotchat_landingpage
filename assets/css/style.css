@@ -697,3 +697,12 @@ html[lang="ar"] body { line-height: 1.75; }
 .guarantee { display: flex; align-items: center; justify-content: center; gap: .5em; margin: 22px auto 0; max-width: 620px; padding: 11px 18px; border: 1px solid #c7f0e0; background: #f1fbf7; border-radius: 12px; color: var(--brand-d); font-weight: 650; font-size: 15px; line-height: 1.45; text-align: center; }
 .guarantee span { font-size: 1.2em; line-height: 1; }
 .dlguarantee { margin: 14px 0 0; max-width: none; justify-content: flex-start; text-align: start; }
+
+/* language suggestion bar — JS-inserted at the very top for bilingual visitors (main.js) */
+.langbar { display: flex; align-items: center; justify-content: center; gap: 6px 14px; position: relative; padding: 8px 46px 8px 18px; background: #ecfbf4; border-bottom: 1px solid #c7f0e0; font-size: 14px; line-height: 1.35; }
+.langbar-go { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: var(--brand-d); font-weight: 700; }
+.langbar-go:hover { text-decoration: underline; text-underline-offset: 3px; }
+.langbar-globe { font-size: 1.15em; line-height: 1; }
+.langbar-arrow { font-weight: 800; }
+.langbar-x { position: absolute; inset-inline-end: 9px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; display: grid; place-items: center; border: 0; background: transparent; color: var(--brand-d); font-size: 22px; line-height: 1; cursor: pointer; border-radius: 8px; opacity: .7; }
+.langbar-x:hover { opacity: 1; background: #d9f5ea; }

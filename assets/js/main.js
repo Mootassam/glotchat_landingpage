@@ -31,6 +31,55 @@
   })();
   $$('[data-lang]').forEach(function (a) { a.addEventListener('click', function () { store('gc-lang', a.getAttribute('data-lang')); track('language', { lang: a.getAttribute('data-lang') }); }); });
 
+  /* -------- gentle, dismissible "read this in your language" bar --------
+     Complements the first-visit redirect above. That redirect only fires when the
+     visitor's TOP browser language is a supported non-English one. Many bilingual
+     people (Malaysia, Singapore, Hong Kong…) run an English phone yet prefer to READ
+     in Chinese: their top language is English, so the redirect rightly leaves them on
+     English and they have to hunt for the switch. For them we show a small bar that
+     offers their other language. It never redirects on its own, so search engines
+     still see the English page. Shows only when their language list includes a
+     supported language that this page also exists in, and isn't the current one. */
+  (function () {
+    if (/[?&]nolang/.test(location.search)) return;
+    if (store('gc-lang') || store('gc-langbar')) return;          // already picked a language, or closed this bar
+    if (!GC.alts) return;
+    var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']);
+    var want = null;
+    for (var i = 0; i < prefs.length && !want; i++) {
+      var tag = String(prefs[i]).toLowerCase(), code = tag.split('-')[0];
+      if (/^zh-(tw|hk|mo|hant)/.test(tag)) code = 'zh-hant';      // Taiwan / Hong Kong / Macau read 繁體
+      if (code === lang) continue;                                // that preference is already this page's language
+      if (GC.alts[code]) want = code;                             // a supported language this page exists in
+    }
+    if (!want) return;
+    var menuLink = $('.lang-dd [data-lang="' + want + '"]') || $('[data-lang="' + want + '"]');
+    var url = (menuLink && menuLink.getAttribute('href')) || GC.alts[want];
+    var name = (menuLink && (menuLink.textContent || '').trim()) || want;
+    var INVITE = { 'zh': '看中文版？', 'zh-hant': '看繁體中文版？', 'ar': 'هل تريد العربية؟', 'tr': 'Türkçe görüntüle', 'es': '¿Ver en español?', 'pt': 'Ver em português?', 'ru': 'Открыть на русском?', 'en': 'View in English?' };
+    var invite = INVITE[want] || name;
+    var bar = document.createElement('div');
+    bar.className = 'langbar';
+    bar.setAttribute('dir', want === 'ar' ? 'rtl' : 'ltr');
+    var a = document.createElement('a');
+    a.className = 'langbar-go';
+    a.href = url;
+    a.setAttribute('data-lang', want);
+    a.setAttribute('hreflang', want);
+    a.setAttribute('lang', want === 'zh-hant' ? 'zh-Hant' : want);
+    a.innerHTML = '<span class="langbar-globe" aria-hidden="true">🌐</span><span>' + invite + '</span><span class="langbar-arrow" aria-hidden="true">→</span>';
+    a.addEventListener('click', function () { store('gc-lang', want); track('langbar_switch', { lang: want }); });
+    var x = document.createElement('button');
+    x.type = 'button';
+    x.className = 'langbar-x';
+    x.setAttribute('aria-label', 'Close');
+    x.textContent = '×';
+    x.addEventListener('click', function () { store('gc-langbar', '1'); bar.remove(); track('langbar_dismiss', { lang: want }); });
+    bar.appendChild(a);
+    bar.appendChild(x);
+    document.body.insertBefore(bar, document.body.firstChild);
+  })();
+
   /* -------- Telegram links -------- */
   function links() {
     $$('[data-tg]').forEach(function (a) {
