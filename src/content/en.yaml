@@ -88,6 +88,7 @@ ui:
   custom_html: "<b>Need more computers, a team setup or a lifetime license?</b> Tell us what you need — we'll make you an offer."
   custom_btn: "Ask for a custom offer"
   paynote: "Payment in USDT (TRC20 · BEP20 · ERC20). Questions before buying? Just ask — a real person replies on Telegram."
+  guarantee: "14-day money-back guarantee — buy risk-free, no questions asked."
   final:
     k: "Free for 3 days"
     h: "Your next foreign customer is already typing."

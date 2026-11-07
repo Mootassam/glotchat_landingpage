@@ -692,3 +692,8 @@ html[lang="ar"] body { line-height: 1.75; }
 [dir="rtl"] .expand { right: auto; left: 12px; }
 [dir="rtl"] .player.full .pclose { right: auto; left: 14px; }
 .hero-in > *, .phero-in > *, .phero-copy, .hero-copy { min-width: 0; }
+
+/* 14-day money-back guarantee — reassurance line near prices and the download */
+.guarantee { display: flex; align-items: center; justify-content: center; gap: .5em; margin: 22px auto 0; max-width: 620px; padding: 11px 18px; border: 1px solid #c7f0e0; background: #f1fbf7; border-radius: 12px; color: var(--brand-d); font-weight: 650; font-size: 15px; line-height: 1.45; text-align: center; }
+.guarantee span { font-size: 1.2em; line-height: 1; }
+.dlguarantee { margin: 14px 0 0; max-width: none; justify-content: flex-start; text-align: start; }

@@ -101,6 +101,7 @@ ui:
   custom_html: <b>需要更多电脑、团队部署或终身授权？</b>告诉我们你的需求，我们为你定制报价。
   custom_btn: 获取定制报价
   paynote: 使用 USDT 付款（TRC20 · BEP20 · ERC20）。购买前有疑问？直接问我们 —— Telegram 真人回复。
+  guarantee: "14 天退款保证 —— 放心购买，无需任何理由。"
   final:
     h: 你的下一位海外客户，正在输入消息。
     p: 下载 GlotChat，点击“开始 3 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。

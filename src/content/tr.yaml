@@ -101,6 +101,7 @@ ui:
   custom_html: <b>Daha fazla bilgisayar, ekip kurulumu veya ömür boyu lisans mı lazım?</b> İhtiyacınızı yazın — size özel teklif hazırlayalım.
   custom_btn: Özel teklif isteyin
   paynote: Ödeme USDT ile (TRC20 · BEP20 · ERC20). Satın almadan önce sorunuz mu var? Sorun — Telegram'da gerçek bir kişi yanıtlar.
+  guarantee: "14 gün para iade garantisi — içiniz rahat alın, hiçbir soru sorulmaz."
   final:
     h: Bir sonraki yabancı müşteriniz şu an yazıyor.
     p: GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım.

@@ -345,6 +345,7 @@
       </article>
       {%- endfor %}
     </div>
+    <p class="guarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
     <div class="custom">
       <p>{{ ui.custom_html|safe }}</p>
       {{ tgbtn('custom', 'custom', ui.custom_btn, 'btn tgo') }}
@@ -364,6 +365,7 @@
       {%- endfor %}
     </ol>
     <div class="center-cta">{{ tgbtn('general', 'buying-' ~ page_id, b.cta or ui.cta_live, 'btn tg lg') }}</div>
+    <p class="guarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
   </div>
 </section>
 
@@ -446,6 +448,7 @@
           <li>{{ ui.dl.no_admin }}</li>
         </ul>
       </div>
+      <p class="guarantee dlguarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
       <p class="dlalt">{{ ui.dl.alt_html|safe }} <a data-tg="general" data-place="dl-alt" href="{{ tg }}" target="_blank" rel="noopener">@{{ cfg.TELEGRAM_USER }}</a></p>
     </div>
     <div class="phero-media">

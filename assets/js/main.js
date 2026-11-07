@@ -197,8 +197,16 @@
     leave.addEventListener('click', function (e) { if (e.target === leave || (e.target.closest && e.target.closest('[data-close]'))) closeLeave(); });
   }
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('[data-tg]');
-    if (a) { contacted = true; closeLeave(); track('telegram_click', { place: a.getAttribute('data-place') || '', plan: a.getAttribute('data-plan') || '', lang: lang }); }
+    var t = e.target;
+    if (!t || !t.closest) return;
+    var a = t.closest('[data-tg]');
+    if (a) { contacted = true; closeLeave(); track('telegram_click', { place: a.getAttribute('data-place') || '', plan: a.getAttribute('data-plan') || '', lang: lang }); return; }
+    // real installer file grabbed (the true download conversion)
+    var dl = t.closest('[data-dl]');
+    if (dl) { track('download', { place: dl.getAttribute('data-dl') || '', lang: lang }); return; }
+    // clicked a button that leads to the download page (download intent)
+    var cta = t.closest('a.dl[href]');
+    if (cta && /\/download\/?([?#]|$)/.test(cta.getAttribute('href') || '')) track('download_cta', { place: cta.getAttribute('data-place') || '', lang: lang });
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeLeave(); closeDd(); } });
 

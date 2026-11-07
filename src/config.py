@@ -20,6 +20,10 @@ BAIDU_SITE_VERIFICATION = ""   # ziyuan.baidu.com → 用户中心 → 站点管
 BING_SITE_VERIFICATION = ""    # bing.com/webmasters (Bing also powers cn.bing.com, used by many sellers in China)
 YANDEX_VERIFICATION = "b3472f46b43ab025"   # webmaster.yandex.com → Access rights → Meta tag
 
+# ---------------------------------------------------------------- Microsoft Clarity (free heatmaps + session recordings)
+# Project ID from clarity.microsoft.com → GlotChat project → Settings → Setup. Leave "" to disable.
+CLARITY_ID = "z9p6jpbig0"
+
 # ---------------------------------------------------------------- plans (USDT per year)
 # The USDT price is also published as USD in the structured data (USDT is pegged to the dollar).
 PLANS = [
