@@ -252,6 +252,18 @@
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
+    <loc>https://www.glotchat.com/guides/whatsapp-on-two-phones/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.glotchat.com/guides/best-whatsapp-multi-account-software/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/guides/best-whatsapp-multi-account-software/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/guides/best-whatsapp-multi-account-software/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
+  </url>
+  <url>
     <loc>https://www.glotchat.com/guides/translate-whatsapp-messages-on-pc/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/guides/translate-whatsapp-messages-on-pc/"/>
@@ -604,8 +616,10 @@
   <url>
     <loc>https://www.glotchat.com/zh/guides/best-whatsapp-multi-account-software/</loc>
     <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/guides/best-whatsapp-multi-account-software/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/guides/best-whatsapp-multi-account-software/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
   </url>
   <url>
     <loc>https://www.glotchat.com/zh/guides/foreign-trade-whatsapp-tips/</loc>
@@ -985,8 +999,10 @@
   <url>
     <loc>https://www.glotchat.com/zh-hant/guides/best-whatsapp-multi-account-software/</loc>
     <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.glotchat.com/zh/guides/best-whatsapp-multi-account-software/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.glotchat.com/zh-hant/guides/best-whatsapp-multi-account-software/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glotchat.com/guides/best-whatsapp-multi-account-software/"/>
   </url>
   <url>
     <loc>https://www.glotchat.com/zh-hant/guides/foreign-trade-whatsapp-tips/</loc>
