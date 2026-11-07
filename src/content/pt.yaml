@@ -1344,6 +1344,171 @@ pages:
       lead: Ajuda passo a passo para usar vários números de WhatsApp no computador e falar com clientes em outros idiomas.
       no_cta: true
     - type: guides_list
+  guides/translate-telegram-messages-on-pc:
+    single: true
+    title: "Como Traduzir Mensagens do Telegram no PC (Texto, Voz e Fotos)"
+    description: "Traduza conversas do Telegram no Windows nos dois sentidos — mensagens, áudios e texto em fotos. Copiar e colar, um bot ou um app que traduz no chat."
+    keywords: tradutor Telegram, traduzir Telegram, traduzir mensagens Telegram, Telegram tradução PC
+    short: Traduzir Telegram no PC
+    icon: 🌐
+    article: true
+    published: '2026-11-06'
+    updated: '2026-11-06'
+    og_heading: Como traduzir mensagens do Telegram no PC
+    blocks:
+      - type: hero
+        k: Guia
+        h1: Como traduzir mensagens do Telegram no PC
+        lead: Três formas de ler e responder conversas do Telegram em outro idioma no Windows — copiar e colar, um bot tradutor, ou um app que traduz nos dois sentidos dentro do chat — com os passos, os limites e a privacidade.
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          O Telegram é usado no mundo todo, então muitas conversas cruzam idiomas — um cliente num país, um fornecedor noutro, um grupo onde metade escreve numa língua que você não lê. No computador, há três formas de resolver.
+
+          > **Resposta rápida:** para uma mensagem avulsa, copie e cole num tradutor online. Para um grupo, um bot tradutor ajuda. Para realmente *conversar* — ler cada mensagem recebida no seu idioma e ter suas respostas traduzidas antes de enviar — use um app como o GlotChat, que traduz nos dois sentidos dentro do Telegram.
+
+          ## Forma 1: Copiar e colar num tradutor online (grátis, ocasional)
+
+          1. Selecione a mensagem no Telegram e copie.
+          2. Cole no Google Tradutor, DeepL ou Bing Translator.
+          3. Leia o resultado; para responder, digite, traduza e cole de volta.
+
+          **Bom para:** uma mensagem de vez em quando. **Limites:** lento para uma conversa de verdade, nada é traduzido automaticamente e seu texto vai para um site de terceiros.
+
+          ## Forma 2: Um bot tradutor do Telegram (grátis, grupos)
+
+          Alguns bots traduzem mensagens encaminhadas, e alguns podem ser adicionados a um grupo.
+
+          1. Procure um bot tradutor no Telegram e inicie-o.
+          2. Encaminhe a mensagem ao bot ou use o comando dele no grupo.
+          3. Leia a resposta.
+
+          **Bom para:** a mensagem ocasional de grupo. **Limites:** você encaminha uma por uma, suas respostas não são traduzidas, áudios e fotos não entram, e o dono do bot vê tudo o que você envia.
+
+          ## Forma 3: Um app que traduz dentro do chat (muitos idiomas, privado)
+
+          Um app de desktop abre o Telegram na própria janela e traduz a conversa em tempo real. Com o **GlotChat**:
+
+          1. Instale o GlotChat no Windows 10 ou 11 e adicione sua conta do Telegram (login ou QR code).
+          2. Escolha seu idioma uma vez. As mensagens recebidas aparecem traduzidas abaixo do original.
+          3. Digite sua resposta no seu idioma — antes de enviar, o GlotChat mostra **o que a outra pessoa vai ler**, confere cada número e sugere outras formulações.
+          4. Áudios e texto em fotos também são traduzidos, e a tradução roda **no seu PC**, então as conversas não vão para a nuvem.
+
+          **Bom para:** conversas de verdade, clientes que escrevem em outros idiomas e quem também usa WhatsApp — o GlotChat abre contas do WhatsApp na mesma janela. Traduz 49 idiomas offline.
+
+          ## Qual forma escolher?
+
+          | | Copiar e colar | Bot | Traduzir no chat |
+          |---|---|---|---|
+          | Lê recebidas automaticamente | Não | Não | Sim |
+          | Traduz sua resposta | À mão | Não | Sim (com conferência) |
+          | Áudios e fotos | Não | Não | Sim (GlotChat) |
+          | Fica no seu PC | Não | Não | Sim (GlotChat) |
+          | Preço | Grátis | Grátis | Pago (GlotChat, 3 dias grátis) |
+
+          ## Sobre privacidade
+
+          Copiar e colar e bots enviam seu texto para o servidor de outra pessoa. Para conversas pessoais, de negócios ou financeiras, isso importa. Um app que traduz **offline no seu computador** mantém a conversa na sua máquina — o motor online só liga se você quiser.
+
+          ## Dicas para o Telegram em outro idioma
+
+          - **Confira antes de enviar.** Um número ou nome errado numa resposta traduzida pode custar uma venda — o GlotChat mostra a retradução e sinaliza números faltando.
+          - **Responda no idioma do cliente.** É o jeito mais rápido de ganhar confiança, e com tradução embutida não leva tempo extra.
+          - **Separe as contas.** Se você tem vários números de Telegram, dê um nome claro a cada um para sempre saber de qual está respondendo.
+
+          Quer testar a Forma 3 nas suas conversas do Telegram? [Baixe o GlotChat e teste grátis por 3 dias](/pt/download/).
+      - type: faq
+        k: Perguntas
+        h: Respostas rápidas
+        items:
+          - ["Dá para traduzir mensagens do Telegram automaticamente no PC?", "Sim. Um app como o GlotChat abre o Telegram na própria janela, traduz as mensagens recebidas automaticamente e traduz suas respostas antes de enviar."]
+          - ["Minha conversa do Telegram vai para um tradutor online?", "Com copiar e colar ou um bot, sim. O GlotChat traduz offline no seu computador, então as conversas ficam no PC a menos que você ligue o motor online opcional."]
+          - ["Dá para traduzir áudios do Telegram?", "Sim. Além das mensagens normais, o GlotChat transcreve e traduz áudios e lê o texto dentro de fotos."]
+      - type: related
+        k: A seguir
+        h: Continue lendo
+        items: ["guides/translate-whatsapp-messages-on-pc", "telegram-translator", "multiple-telegram-accounts"]
+
+  guides/whatsapp-on-two-phones:
+    single: true
+    title: "Como Usar o WhatsApp em Dois Celulares ao Mesmo Tempo (ou Mais)"
+    description: "Use a mesma conta do WhatsApp em dois celulares, ou vários números ao mesmo tempo no PC — dispositivos conectados, duas contas no celular e um app multi-conta."
+    keywords: WhatsApp em dois celulares, mesma conta WhatsApp dois celulares, WhatsApp duas contas, WhatsApp multi dispositivo
+    short: WhatsApp em dois celulares
+    icon: 📱
+    article: true
+    published: '2026-11-06'
+    updated: '2026-11-06'
+    og_heading: Como usar o WhatsApp em dois celulares ao mesmo tempo
+    blocks:
+      - type: hero
+        k: Guia
+        h1: Como usar o WhatsApp em dois celulares ao mesmo tempo
+        lead: Quer a mesma conta num segundo celular, dois números num só celular, ou todos os seus números abertos ao mesmo tempo no PC? Aqui estão as formas que funcionam em 2026, com os passos e os limites.
+        no_cta: true
+      - type: prose
+        toc: true
+        md: |
+          Quando as pessoas dizem "WhatsApp em dois celulares", querem dizer três coisas diferentes, e cada uma tem sua resposta. Descubra qual é a sua e vá para a seção certa.
+
+          > **Resposta rápida:** a *mesma* conta num segundo celular → conecte-o como dispositivo complementar. *Dois números* num celular → use o recurso de segunda conta embutido (maioria dos Android). *Muitos números* ao mesmo tempo → abra-os juntos no PC com um app como o GlotChat.
+
+          ## 1. A mesma conta do WhatsApp num segundo celular
+
+          O WhatsApp permite que uma conta funcione no celular principal mais até quatro dispositivos "conectados" — um segundo celular pode ser um deles.
+
+          1. No segundo celular, instale o WhatsApp e toque em **Entrar na conta existente / Conectar a uma conta**.
+          2. No celular principal, abra **Configurações → Aparelhos conectados → Conectar aparelho** e escaneie o código.
+          3. Os dois celulares mostram as mesmas conversas. O celular conectado continua funcionando mesmo com o principal desligado por um tempo.
+
+          **Bom para:** ler e responder do celular de trabalho e do pessoal. **Limites:** continua sendo um número, e cada celular precisa entrar online de vez em quando.
+
+          ## 2. Dois números de WhatsApp diferentes num celular
+
+          Muitos celulares Android rodam duas contas do WhatsApp ao mesmo tempo.
+
+          1. No WhatsApp, abra **Configurações** e toque na seta ao lado do seu nome, ou use o recurso **Apps clonados / Segundo espaço** do celular.
+          2. Adicione o segundo número e confirme.
+          3. Alterne entre as contas dentro do app.
+
+          **Bom para:** um número pessoal e um de trabalho no mesmo celular. **Limites:** só duas contas, e no iPhone o segundo número geralmente precisa do app WhatsApp Business.
+
+          ## 3. Muitos números de WhatsApp ao mesmo tempo — no PC
+
+          Quando você tem uma loja, uma equipe ou vários países, dois é pouco — e trocar de celular é lento. Um app de desktop abre cada número em uma janela. Com o **GlotChat**:
+
+          1. Instale o GlotChat no Windows 10 ou 11 e clique em **Adicionar conta** para cada número.
+          2. Escaneie o QR code de cada um (WhatsApp → *Aparelhos conectados*) e dê um nome — "Loja Dubai", "Vendas — Ahmed".
+          3. Troque com um clique; cada notificação mostra de qual conta é. Testamos 27 contas rodando ao mesmo tempo.
+          4. Ligue a tradução e cada conversa é traduzida nos dois sentidos. As contas do Telegram abrem na mesma janela.
+
+          ## Qual opção é a sua?
+
+          | Você quer… | Melhor opção |
+          |---|---|
+          | O mesmo número num 2º celular | Conectar como dispositivo complementar |
+          | Dois números num celular | Conta dupla embutida (Android) |
+          | 3+ números, uma tela, troca rápida | App multi-conta no PC (GlotChat) |
+          | Conversas traduzidas na hora | GlotChat |
+
+          ## Usar dois celulares pode banir minha conta?
+
+          Não — dispositivos conectados e contas duplas são recursos oficiais do WhatsApp. O que bane contas é **comportamento**: spam, mensagens em massa para quem não pediu e apps modificados como o "GB WhatsApp". Use seus números normalmente e está tudo certo.
+
+          Tem vários números para o trabalho? [Baixe o GlotChat e teste grátis por 3 dias](/pt/download/) e abra todos numa só janela.
+      - type: faq
+        k: Perguntas
+        h: Respostas rápidas
+        items:
+          - ["Dá para usar a mesma conta do WhatsApp em dois celulares?", "Sim. Conecte o segundo celular como dispositivo complementar em Configurações → Aparelhos conectados no celular principal. Os dois passam a mostrar as mesmas conversas."]
+          - ["Dá para ter dois números de WhatsApp num celular?", "Na maioria dos Android, sim — adicione uma segunda conta nas configurações do WhatsApp ou pelo recurso de apps clonados. No iPhone, use o WhatsApp Business para o segundo número."]
+          - ["Como rodar muitos números de WhatsApp ao mesmo tempo?", "Abra-os juntos no PC com um app multi-conta como o GlotChat, testado com 27 contas rodando ao mesmo tempo, cada uma em sua sessão."]
+      - type: related
+        k: A seguir
+        h: Continue lendo
+        items: ["guides/multiple-whatsapp-accounts-on-pc", "multiple-whatsapp-accounts", "compare"]
+
   guides/multiple-whatsapp-accounts-on-pc:
     title: Como Usar Várias Contas de WhatsApp em um PC (2026)
     description: '3 jeitos de usar duas ou mais contas de WhatsApp no Windows: WhatsApp Desktop + Web, perfis de navegador ou um app multicontas. Passos e dicas.'
