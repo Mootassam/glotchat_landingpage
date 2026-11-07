@@ -6,8 +6,8 @@ ui:
   lang_label: "Language"
   close: "Close"
   contact: "Chat with us"
-  promo_html: "<b>New in GlotChat 1.4: optional DeepL translation</b> — and Messenger, Instagram & Discord are out of beta."
-  promo_go: "Try it free for 3 days →"
+  promo_html: "<b>All your chats, every language, one window.</b> Free for 3 days — no card needed."
+  promo_go: "Download GlotChat →"
   apps_label: "Works with"
   beta: "Beta"
   nav:
@@ -176,7 +176,7 @@ pages:
     icon: "🏠"
     blocks:
     - type: hero_home
-      eyebrow: "New in 1.4 — DeepL translation & profile photos in every app"
+      eyebrow: "6 chat apps · 49 languages · private translation on your PC"
       h1: "GlotChat, the all-in-one messenger. <span class=\"grad\">Every app. Every language.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND — as many accounts of each as you need — in one window on your PC. Read every customer in your language and reply in theirs, knowing exactly what they'll read."
       micro:

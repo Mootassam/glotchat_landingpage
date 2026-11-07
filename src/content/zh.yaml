@@ -6,8 +6,8 @@ ui:
   lang_label: 语言
   close: 关闭
   contact: 联系我们
-  promo_html: "<b>GlotChat 1.4 新增可选 DeepL 翻译</b> —— Messenger、Instagram 和 Discord 正式上线，不再是测试版。"
-  promo_go: 免费试用 3 天 →
+  promo_html: "<b>所有聊天，一个窗口，任何语言都能聊。</b>免费试用 3 天，无需银行卡。"
+  promo_go: "免费下载 →"
   nav:
     product: 产品
     translator: WhatsApp 翻译器
@@ -208,7 +208,7 @@ pages:
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: "1.4 新功能 —— DeepL 翻译，所有应用显示账号头像"
+      eyebrow: "6 款聊天应用 · 49 种语言 · 翻译在本机运行，保护隐私"
       h1: "GlotChat 多合一聚合聊天软件。<span class=\"grad\">所有应用，任何语言。</span>"
       lead: "WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND —— 每个应用想开多少账号都行 —— 全部在电脑上的一个窗口里。客户的消息用中文阅读，回复用客户的语言发出，发送前就知道对方会读到什么。"
       micro:

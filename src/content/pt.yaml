@@ -6,8 +6,8 @@ ui:
   lang_label: Idioma
   close: Fechar
   contact: Fale com a gente
-  promo_html: "<b>Novo no GlotChat 1.4: tradução opcional com DeepL</b> — e Messenger, Instagram e Discord saíram do beta."
-  promo_go: Teste grátis por 3 dias →
+  promo_html: "<b>Todos os seus chats, cada idioma, uma só janela.</b> Grátis por 3 dias, sem cartão."
+  promo_go: "Baixar grátis →"
   nav:
     product: Produto
     translator: Tradutor de WhatsApp
@@ -208,7 +208,7 @@ pages:
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: "Novo na 1.4 — tradução com DeepL e fotos de perfil em todos os apps"
+      eyebrow: "6 apps de chat · 49 idiomas · tradução privada no seu PC"
       h1: "GlotChat: mensageiro tudo em um. <span class=\"grad\">Todos os apps. Todos os idiomas.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram, Discord e BAND — com quantas contas de cada um você precisar — numa única janela no seu PC. Leia cada cliente em português e responda no idioma dele sabendo exatamente o que ele vai ler."
       micro:

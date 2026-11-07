@@ -11,7 +11,12 @@
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } return null; }
-  function track(name, data) { try { if (window.va) window.va('event', { name: name, data: data }); } catch (e) { /* optional */ } }
+  function track(name, data) {
+    try { if (window.va) window.va('event', { name: name, data: data }); } catch (e) { /* optional */ }
+    // Also send to Microsoft Clarity (free): a named event + a tag for the "place", so
+    // downloads, buy clicks etc. are countable and recordings are filterable there.
+    try { if (window.clarity) { window.clarity('event', name); if (data && data.place) window.clarity('set', name + '_place', String(data.place)); } } catch (e) { /* optional */ }
+  }
 
   /* -------- first visit: send people to their language (once; a manual choice always wins) -------- */
   (function () {

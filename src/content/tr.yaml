@@ -6,8 +6,8 @@ ui:
   lang_label: Dil
   close: Kapat
   contact: Bize yazın
-  promo_html: "<b>GlotChat 1.4'te yeni: isteğe bağlı DeepL çevirisi</b> — Messenger, Instagram ve Discord artık beta değil."
-  promo_go: 3 gün ücretsiz deneyin →
+  promo_html: "<b>Tüm sohbetleriniz, her dil, tek pencere.</b> 3 gün ücretsiz — kart gerekmez."
+  promo_go: "GlotChat'i indir →"
   nav:
     product: Ürün
     translator: WhatsApp çevirmeni
@@ -208,7 +208,7 @@ pages:
     icon: 🏠
     blocks:
     - type: hero_home
-      eyebrow: "1.4'te yeni — DeepL çevirisi ve her uygulamada profil fotoğrafları"
+      eyebrow: "6 sohbet uygulaması · 49 dil · çeviri bilgisayarınızda, gizli"
       h1: "GlotChat: hepsi bir arada mesajlaşma. <span class=\"grad\">Her uygulama. Her dil.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND — her birinden istediğiniz kadar hesap — bilgisayarınızda tek pencerede. Her müşteriyi Türkçe okuyun, onun dilinde yanıtlayın ve ne okuyacağını tam olarak bilin."
       micro:
