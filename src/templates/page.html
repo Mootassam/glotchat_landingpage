@@ -350,7 +350,6 @@
           <li>{{ pt.pcs }}</li>
         </ul>
         {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.start_free, 'btn tg block' if p.popular else 'btn dlo block', p.id) }}
-        {{ tgbtn('planMonth', 'price-' ~ p.id|lower, ui.buy_now, 'trylink buylink', p.id, p.month) }}
       </article>
       {%- endfor %}
     </div>
