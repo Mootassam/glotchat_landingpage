@@ -7,7 +7,7 @@ ui:
   lang_label: 語言
   close: 關閉
   contact: 聯絡我們
-  promo_html: "<b>所有聊天，一個視窗，任何語言都能聊。</b>免費試用 7 天，無需信用卡。"
+  promo_html: "<b>免費試用 GlotChat 7 天</b> —— 全部應用、全部功能，無需信用卡。"
   promo_go: "免費下載 →"
   nav:
     product: 產品
@@ -107,6 +107,8 @@ ui:
     apps: WhatsApp、Telegram、Messenger、Instagram、Discord、BAND
   buy: 在 Telegram 購買{plan}
   try: 或先免費試用 7 天
+  start_free: "免費試用 7 天"
+  buy_now: "或立即透過 Telegram 購買"
   custom_html: <b>需要更多電腦、團隊部署或終身授權？</b>告訴我們你的需求，我們為你定製報價。
   custom_btn: 獲取定製報價
   paynote: 價格以美元計。使用 USDT 付款（TRC20 · BEP20 · ERC20），1 USDT = 1 美元。購買前有疑問？直接問我們 —— Telegram 真人回覆。
@@ -225,7 +227,7 @@ pages:
       micro:
       - 免費試用 7 天，無需付款
       - Telegram 真人客服回覆
-      - 每年 69 USDT 起
+      - "每月 $9 起"
       media_alt: "GlotChat 聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 帳號在一個視窗，聊天自動翻譯"
       chapters:
       - id: apps
@@ -253,21 +255,18 @@ pages:
         label: 圖片
         cap: 發票、訂單、檔案的照片：識別文字並翻譯。
     - type: facts
-      label: 關鍵資料
+      label: "關鍵資料"
       items:
-      - - '5'
-        - 個聊天應用：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND
-      - - 27+
-        - 個帳號同時執行（實測）
-      - - '49'
-        - 種翻譯語言，離線
-      - - '0'
-        - "條訊息傳送到雲端翻譯（除非你開啟 DeepL）"
+      - ["6", "個聊天應用，一個視窗"]
+      - ["∞", "多帳號互相隔離，並排使用"]
+      - ["49", "種語言，在你的電腦上翻譯"]
+      - ["$0", "無需信用卡"]
+      - ["7 天", "免費開始，之後再升級"]
     - type: apps
       id: apps
       k: 一個軟體，管理所有聊天
-      h: 你的客戶在 WhatsApp、Telegram、Messenger、Instagram、Discord <em>和</em> BAND。現在你可以在同一個地方回覆他們。
-      p: 每個帳號都在獨立的空間裡執行：獨立登入、獨立通知，還可以設定獨立代理。
+      h: "所有聊天應用，<em>一個視窗。</em>"
+      p: "WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 並排開啟 —— 每個帳號互不干擾，每條聊天都能翻譯。"
       items:
       - icon: wa
         cls: wa
@@ -313,7 +312,7 @@ pages:
         p: 需要多少個 WhatsApp 和 Telegram 帳號就加多少個。每個帳號獨立：獨立登入、顏色、語言和通知。
         ticks:
         - 掃碼一次，保持登入
-        - 實測 27 個帳號同時執行
+        - "商業版帳號數量不限"
         - 可為每個帳號設定代理，每分鐘自動檢測
       - media: video:telegram
         tag: 1.3 新功能
@@ -363,59 +362,6 @@ pages:
       - 🛡 離線、私密翻譯
       - 🩹 卡住的帳號自動重啟
       - 🀄 中文和英文介面
-    - type: trust
-      id: trust
-      k: 可以信賴的翻譯
-      h: 一個錯誤的價格就可能丟掉客戶。GlotChat 會檢查每一條譯文。
-      p: 機器翻譯速度快，但並不完美。所以 GlotChat 在翻譯前先整理聊天式的寫法，在傳送前再檢查結果。
-      items:
-      - h: 清楚看到客戶將讀到的內容
-        p: 每條譯文下方，GlotChat 都會把它再翻譯回中文。如果意思變了，你會比客戶先發現 —— 可以直接修改，或換一種說法。
-        wide: true
-        mock:
-          top: <span>以 <b>阿拉伯語</b> 傳送</span><span>原文：中文</span>
-          input: 週五前能發 3 箱嗎？總共 45 美元
-          main: هل يمكنك إرسال 3 صناديق بحلول يوم الجمعة؟ المجموع 45 دولارًا
-          rtl: true
-          notes:
-          - - back
-            - ↩ 對方將讀到：週五前能發 3 箱嗎？總共 45 美元
-      - h: 價格和數字絕不會被改錯
-        p: 價格、數量、日期、時間、訂單號、電話號碼和連結，每條譯文都會檢查。被改動的數字會自動改回；缺少的數字會提醒你。
-        mock:
-          input: '訂單 #4521：1,250.50 歐元。下午 3:30 打 +33 6 12 34 56 78。'
-          arrow: true
-          main: 'Commande n° 4521 : 1 250,50 EUR. Appelez le +33 6 12 34 56 78 à 15h30.'
-          notes:
-          - - ok
-            - ✓ 4521 · 1,250.50 · +33 6 12 34 56 78 —— 全部保留
-      - h: 看得懂真實的聊天寫法
-        p: 「how r u pls send ur address thx」、全大寫、「hiiiii」、阿拉伯語方言 —— GlotChat 先把這些整理成規範句子，再交給翻譯。
-        mock:
-          input: how r u? pls send ur address thx
-          arrow: true
-          main: 你好嗎？請把你的地址發給我，謝謝
-          notes:
-          - - info
-            - 阿拉伯語方言也可以：「مرحبااااا كيفك」 → 「你好，最近怎麼樣？」
-      - h: 不滿意？換個說法
-        p: 點一下「換個說法」，就能看到幾種不同的表達方式 —— 每一種都附帶回譯。
-        mock:
-          top: <span>🔁 <b>換個說法</b></span><span>法語</span>
-          chips:
-          - Pouvez-vous m'envoyer la liste des prix aujourd'hui ?
-          - Tu peux m'envoyer la liste des prix aujourd'hui ?
-          - Pouvez-vous m'envoyer la liste de prix aujourd'hui ?
-      - h: 品牌名稱永遠不會被翻譯
-        p: 把店鋪名、品牌名、產品型號加入「不翻譯」列表，在任何聊天、任何語言中都保持原樣。
-        mock:
-          input: 在 GlotShop 下單，優惠碼 SAVE20
-          arrow: true
-          main: Ordena en GlotShop con el código SAVE20
-          notes:
-          - - ok
-            - ✓ 「GlotShop」 在你的不翻譯列表中
-      cta: 免費試用翻譯功能 7 天
     - type: cards
       id: who
       who: true

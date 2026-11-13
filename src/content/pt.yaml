@@ -6,7 +6,7 @@ ui:
   lang_label: Idioma
   close: Fechar
   contact: Fale com a gente
-  promo_html: "<b>Todos os seus chats, cada idioma, uma só janela.</b> Grátis por 7 dias, sem cartão."
+  promo_html: "<b>Teste o GlotChat grátis por 7 dias</b> — todos os apps e recursos, sem cartão."
   promo_go: "Baixar grátis →"
   nav:
     product: Produto
@@ -106,6 +106,8 @@ ui:
     apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
   buy: Assinar o {plan} pelo Telegram
   try: ou teste grátis por 7 dias
+  start_free: "Comece grátis — 7 dias"
+  buy_now: "ou compre agora pelo Telegram"
   custom_html: <b>Precisa de mais computadores, de uma configuração para equipe ou de licença vitalícia?</b> Conte o que precisa — fazemos uma proposta.
   custom_btn: Pedir proposta personalizada
   paynote: 'Preços em dólares americanos. Pagamento em USDT (TRC20 · BEP20 · ERC20): 1 USDT = US$ 1. Dúvidas antes de comprar? Pergunte — uma pessoa de verdade responde no Telegram.'
@@ -224,7 +226,7 @@ pages:
       micro:
       - 7 dias grátis — sem cartão nem pagamento
       - Uma pessoa de verdade responde no Telegram
-      - A partir de 69 USDT por ano
+      - "A partir de $9 por mês"
       media_alt: "GlotChat, mensageiro tudo em um: contas de WhatsApp, Telegram, Messenger, Instagram, Discord e BAND numa janela, conversas traduzidas"
       chapters:
       - id: apps
@@ -252,21 +254,18 @@ pages:
         label: Fotos
         cap: 'Fotos de notas, pedidos e documentos: o texto é lido e traduzido.'
     - type: facts
-      label: Números principais
+      label: "Números principais"
       items:
-      - - '5'
-        - 'apps de conversa: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND'
-      - - 27+
-        - contas ao mesmo tempo (testado)
-      - - '49'
-        - idiomas de tradução, sem internet
-      - - '0'
-        - "mensagens enviadas a um tradutor na nuvem — a menos que você ative o DeepL"
+      - ["6", "apps de chat em uma janela"]
+      - ["∞", "contas separadas, lado a lado"]
+      - ["49", "idiomas, traduzidos no seu PC"]
+      - ["$0", "sem cartão de crédito"]
+      - ["7 dias", "grátis para começar — upgrade depois"]
     - type: apps
       id: apps
       k: Um app para todas as conversas
-      h: Seus clientes estão no WhatsApp, Telegram, Messenger, Instagram, Discord <em>e</em> BAND. Agora você também — num só lugar.
-      p: 'Cada conta roda no seu próprio espaço fechado: sessão, notificações e, se quiser, proxy próprios.'
+      h: "Todos os seus apps de chat. <em>Uma só janela.</em>"
+      p: "WhatsApp, Telegram, Messenger, Instagram, Discord e BAND lado a lado — cada conta separada, cada conversa traduzida."
       items:
       - icon: wa
         cls: wa
@@ -312,7 +311,7 @@ pages:
         p: Adicione quantas contas de WhatsApp e Telegram precisar. Cada uma separada, com sessão, cor, idiomas e notificações próprias.
         ticks:
         - Leia o QR code uma vez — continua conectada
-        - Testado com 27 contas ao mesmo tempo
+        - "Contas sem limite no plano Business"
         - Proxy opcional por conta, verificado a cada minuto
       - media: video:telegram
         tag: Novo na 1.3
@@ -362,59 +361,6 @@ pages:
       - 🛡 Tradução privada sem internet
       - 🩹 Contas travadas reiniciam sozinhas
       - 🀄 Interface em inglês e chinês
-    - type: trust
-      id: trust
-      k: Tradução confiável
-      h: Um preço errado pode custar um cliente. O GlotChat confere cada tradução.
-      p: A tradução automática é rápida, mas não é perfeita. Por isso o GlotChat organiza a escrita de chat antes de traduzir e confere o resultado antes de qualquer envio.
-      items:
-      - h: Veja exatamente o que o cliente vai ler
-        p: Embaixo de cada tradução, o GlotChat mostra o mesmo texto traduzido de volta para o português. Se o sentido mudou, você vê antes do cliente — e pode editar ou escolher outra forma.
-        wide: true
-        mock:
-          top: <span>Enviar em <b>árabe</b></span><span>do português</span>
-          input: Você consegue enviar 3 caixas até sexta? Total de US$ 45
-          main: هل يمكنك إرسال 3 صناديق بحلول يوم الجمعة؟ المجموع 45 دولارًا
-          rtl: true
-          notes:
-          - - back
-            - '↩ Ele vai ler: Você consegue enviar 3 caixas até sexta? Total de US$ 45'
-      - h: Preços e números nunca mudam
-        p: Preços, quantidades, datas, horários, números de pedido e de telefone e links são conferidos em cada tradução. Um número alterado é corrigido; um que falta é sinalizado.
-        mock:
-          input: 'Pedido #4521: 1.250,50 EUR. Ligue para +33 6 12 34 56 78 às 15:30.'
-          arrow: true
-          main: 'Commande n° 4521 : 1 250,50 EUR. Appelez le +33 6 12 34 56 78 à 15:30.'
-          notes:
-          - - ok
-            - ✓ 4521 · 1.250,50 · +33 6 12 34 56 78 · 15:30 — tudo mantido
-      - h: Entende como as pessoas escrevem de verdade
-        p: “how r u pls send ur address thx”, LETRAS MAIÚSCULAS, “oiiiii”, dialeto árabe — o GlotChat transforma a escrita real de chat em frases claras que o tradutor entende.
-        mock:
-          input: how r u? pls send ur address thx
-          arrow: true
-          main: Como você está? Por favor, mande seu endereço, obrigado
-          notes:
-          - - info
-            - 'Dialeto árabe também: “مرحبااااا كيفك” → “Oi, tudo bem?”'
-      - h: Não gostou? Escolha outra forma
-        p: Um clique em “Outra forma” mostra jeitos diferentes de dizer a mesma coisa — cada um com o que o cliente vai ler.
-        mock:
-          top: <span>🔁 <b>Outra forma</b></span><span>francês</span>
-          chips:
-          - Pouvez-vous m'envoyer la liste des prix aujourd'hui ?
-          - Tu peux m'envoyer la liste des prix aujourd'hui ?
-          - Pouvez-vous m'envoyer la liste de prix aujourd'hui ?
-      - h: Suas marcas continuam suas
-        p: Coloque os nomes da sua loja, marca e produtos na lista “Não traduzir” uma vez. Eles nunca mudam — em nenhuma conversa, em nenhum idioma.
-        mock:
-          input: Compre na GlotShop com o cupom SAVE20
-          arrow: true
-          main: Compra en GlotShop con el cupón SAVE20
-          notes:
-          - - ok
-            - ✓ “GlotShop” está na sua lista de não traduzir
-      cta: Teste a tradução grátis por 7 dias
     - type: cards
       id: who
       who: true

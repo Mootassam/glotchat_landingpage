@@ -206,7 +206,7 @@
 
 {%- elif t == 'facts' %}
 <section class="facts" aria-label="{{ b.label or '' }}">
-  <div class="wrap facts-in">{% for big, txt in b['items'] %}<div><b>{{ big }}</b><span>{{ txt }}</span></div>{% endfor %}</div>
+  <div class="wrap facts-in n{{ b['items']|length }}">{% for big, txt in b['items'] %}<div><b>{{ big }}</b><span>{{ txt }}</span></div>{% endfor %}</div>
 </section>
 
 {%- elif t == 'cards' %}
@@ -349,8 +349,8 @@
           <li>{{ ui.plan_f.updates }}</li>
           <li>{{ pt.pcs }}</li>
         </ul>
-        {{ tgbtn('planMonth', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block' if p.popular else 'btn tgo block', p.id, p.month) }}
-        {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.try, 'trylink', p.id) }}
+        {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.start_free, 'btn tg block' if p.popular else 'btn dlo block', p.id) }}
+        {{ tgbtn('planMonth', 'price-' ~ p.id|lower, ui.buy_now, 'trylink buylink', p.id, p.month) }}
       </article>
       {%- endfor %}
     </div>

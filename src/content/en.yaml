@@ -6,8 +6,8 @@ ui:
   lang_label: "Language"
   close: "Close"
   contact: "Chat with us"
-  promo_html: "<b>All your chats, every language, one window.</b> Free for 7 days — no card needed."
-  promo_go: "Download GlotChat →"
+  promo_html: "<b>Try GlotChat free for 7 days</b> — every app, every feature, no card needed."
+  promo_go: "Download free →"
   apps_label: "Works with"
   beta: "Beta"
   nav:
@@ -93,6 +93,8 @@ ui:
     updates: "All updates included"
   buy: "Get {plan} on Telegram"
   try: "or try it free for 7 days"
+  start_free: "Start free — 7 days"
+  buy_now: "or buy now on Telegram"
   custom_html: "<b>Need more computers, a team setup or a lifetime license?</b> Tell us what you need — we'll make you an offer."
   custom_btn: "Ask for a custom offer"
   paynote: 'Prices in US dollars. Pay in USDT (TRC20 · BEP20 · ERC20): 1 USDT = $1. Questions before buying? Just ask — a real person replies on Telegram.'
@@ -192,7 +194,7 @@ pages:
       micro:
       - 7 days free — no card, no payment
       - Real person replies on Telegram
-      - From 69 USDT / year
+      - "From $9 / month"
       media_alt: "GlotChat all-in-one messenger: WhatsApp, Telegram, Messenger, Instagram, Discord and BAND accounts in one window, chats translated"
       chapters:
       - id: apps
@@ -220,21 +222,18 @@ pages:
         label: Photos
         cap: 'Photos of invoices, orders and documents: the text is read and translated.'
     - type: facts
-      label: Key facts
+      label: "Key facts"
       items:
-      - - '5'
-        - chat apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
-      - - 27+
-        - accounts at once (tested)
-      - - '49'
-        - translation languages, offline
-      - - '0'
-        - "messages sent to a cloud translator — unless you turn on DeepL"
+      - ["6", "chat apps in one window"]
+      - ["∞", "separate accounts, side by side"]
+      - ["49", "languages, translated on your PC"]
+      - ["$0", "no credit card required"]
+      - ["7 days", "free to start — upgrade later"]
     - type: apps
       id: apps
       k: One app for every chat
-      h: Your customers are on WhatsApp, Telegram, Messenger, Instagram, Discord <em>and</em> BAND. Now you are too — in one place.
-      p: Each account runs in its own sealed space, with its own login, notifications and (if you want) its own proxy.
+      h: "All your chat apps. <em>One window.</em>"
+      p: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND side by side — every account kept separate, every chat translated."
       items:
       - {icon: wa, cls: wa, name: "WhatsApp & WhatsApp Business", p: "Every number your business uses — scan the QR code once and it stays connected. Chats, voice notes and photos translated.", link: "whatsapp-translator", more: "WhatsApp translator"}
       - {icon: tg, cls: tgc, name: "Telegram", p: "Every Telegram login side by side — personal, shop, support. Log in with a QR code or your phone number. Chats translated both ways.", link: "telegram-translator", more: "Telegram translator"}
@@ -253,7 +252,7 @@ pages:
         p: Add as many WhatsApp and Telegram accounts as you need. Each one is separate, with its own login, colour, languages and notifications.
         ticks:
         - Scan the QR code once — it stays logged in
-        - Tested with 27 accounts at the same time
+        - "No limit on accounts with the Business plan"
         - Optional proxy per account, checked every minute
       - media: video:telegram
         tag: New in 1.3
@@ -299,49 +298,6 @@ pages:
       - 🛡 Offline & private translation
       - 🩹 Frozen accounts restart by themselves
       - 🀄 English & 中文 interface
-    - type: trust
-      id: trust
-      k: Translation you can trust
-      h: A wrong price can lose a customer. GlotChat checks every translation.
-      p: Machine translation is fast but not perfect. So GlotChat cleans up chat-style writing before it translates, and checks the result before anything is sent.
-      items:
-      - h: "See exactly what the customer will read"
-        p: "Under every translation, GlotChat shows the same text translated back into your language. If the meaning changed, you see it before the customer does — and you can edit or pick another wording."
-        wide: true
-        mock:
-          top: "<span>Send in <b>Arabic</b></span><span>from English</span>"
-          input: "Can you send 3 boxes by Friday? Total $45"
-          main: "هل يمكنك إرسال 3 صناديق بحلول يوم الجمعة؟ المجموع 45 دولارًا"
-          rtl: true
-          notes: [["back", "↩ They will read: Can you send 3 boxes by Friday? Total $45"]]
-      - h: "Prices and numbers never change"
-        p: "Prices, quantities, dates, times, order numbers, phone numbers and links are checked in every translation. A changed number is put back; a missing one is flagged."
-        mock:
-          input: "Order #4521: 1,250.50 EUR. Call +33 6 12 34 56 78 at 3:30pm."
-          arrow: true
-          main: "Commande n° 4521 : 1 250,50 EUR. Appelez le +33 6 12 34 56 78 à 3:30pm."
-          notes: [["ok", "✓ 4521 · 1,250.50 · +33 6 12 34 56 78 · 3:30pm — all kept"]]
-      - h: "It understands how people really chat"
-        p: "“how r u pls send ur address thx”, ALL CAPS, “hiiiii”, Arabic dialect — GlotChat turns real chat writing into clean sentences the translator understands."
-        mock:
-          input: "how r u? pls send ur address thx"
-          arrow: true
-          main: "كيف حالك؟ أرجوك أرسل عنوانك، شكراً"
-          rtl: true
-          notes: [["info", "Arabic dialect too: “مرحبااااا كيفك” → “Hi. How are you?”"]]
-      - h: "Not quite right? Pick another wording"
-        p: "One click on “Other wording” shows a few ways to say the same thing — each with what the customer will read."
-        mock:
-          top: "<span>🔁 <b>Other wording</b></span><span>French</span>"
-          chips: ["Pouvez-vous m'envoyer la liste des prix aujourd'hui ?", "Tu peux m'envoyer la liste des prix aujourd'hui ?", "Pouvez-vous m'envoyer la liste de prix aujourd'hui ?"]
-      - h: "Your brand names stay yours"
-        p: "Add your shop, brand and product names to the “Never translate” list once. They're never changed — in any chat, in any language."
-        mock:
-          input: "Order on GlotShop with code SAVE20"
-          arrow: true
-          main: "Commandez sur GlotShop avec le code SAVE20"
-          notes: [["ok", "✓ “GlotShop” is on your never-translate list"]]
-      cta: "Try the translation free for 7 days"
     - type: cards
       id: who
       who: true
