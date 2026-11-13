@@ -1821,7 +1821,7 @@ pages:
       - - Entre uma vez
         - Adicione uma conta de Telegram no GlotChat e entre com QR code (Telegram → Configurações → Dispositivos) ou número de telefone.
       - - Leia no seu idioma
-        - Cada mensagem de cada conversa mostra a tradução embaixo do original ao chegar. O idioma da conversa é detectado sozinho.
+        - "Cada mensagem de cada conversa mostra a tradução sob o original assim que chega. Você escolhe o idioma do cliente uma vez e pode mudá-lo em qualquer conversa."
       - - Responda no deles
         - Escreva no seu idioma e aperte Enter. Confira a prévia — com o que o cliente vai ler — e envie.
     - type: cards

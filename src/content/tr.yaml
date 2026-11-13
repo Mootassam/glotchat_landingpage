@@ -1656,7 +1656,7 @@ pages:
       - - Bir kez giriş yapın
         - GlotChat'e bir Telegram hesabı ekleyin ve QR kodla (Telegram → Ayarlar → Cihazlar) veya telefon numaranızla giriş yapın.
       - - Kendi dilinizde okuyun
-        - Her sohbetteki her mesaj, gelir gelmez orijinalin altında çevirisiyle görünür. Sohbetin dili otomatik algılanır.
+        - "Her sohbetteki her mesajın çevirisi, geldiği anda orijinalin altında görünür. Müşterinin dilini bir kez seçersiniz, istediğiniz sohbet için değiştirebilirsiniz."
       - - Onların dilinde yanıtlayın
         - Kendi dilinizde yazın ve Enter'a basın. Önizlemeyi — müşterinin okuyacağıyla birlikte — kontrol edin ve gönderin.
     - type: cards

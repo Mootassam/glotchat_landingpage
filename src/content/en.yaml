@@ -567,7 +567,7 @@ pages:
         h: "Translated Telegram in three steps"
         items:
           - ["Log in once", "Add a Telegram account in GlotChat and log in with a QR code (Telegram → Settings → Devices) or your phone number."]
-          - ["Read in your language", "Every message in every chat shows its translation under the original, as it arrives. The chat's language is detected for you."]
+          - ["Read in your language", "Every message in every chat shows its translation under the original, as it arrives. You choose the customer's language once, and can change it for any chat."]
           - ["Reply in theirs", "Write in your language and press Enter. Check the preview — with what the customer will read — and send."]
       - type: cards
         soft: true

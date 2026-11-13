@@ -1656,7 +1656,7 @@ pages:
       - - Inicia sesión una vez
         - Añade una cuenta de Telegram en GlotChat y entra con un QR (Telegram → Ajustes → Dispositivos) o con tu número.
       - - Lee en tu idioma
-        - Cada mensaje de cada chat muestra su traducción bajo el original al llegar. El idioma del chat se detecta solo.
+        - "Cada mensaje de cada chat muestra su traducción bajo el original en cuanto llega. Eliges el idioma del cliente una vez y puedes cambiarlo en cualquier chat."
       - - Responde en el suyo
         - Escribe en tu idioma y pulsa Enter. Revisa la vista previa — con lo que leerá el cliente — y envía.
     - type: cards
