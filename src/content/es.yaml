@@ -691,7 +691,7 @@ pages:
       - pricing
   multiple-whatsapp-accounts:
     title: Varias cuentas de WhatsApp en un PC – en una sola ventana
-    description: Usa 2, 10 o más de 27 cuentas de WhatsApp a la vez en Windows. Sesiones aisladas, proxy y notificaciones por cuenta, traducción integrada.
+    description: Usa 2, 10 o más cuentas de WhatsApp a la vez en Windows. Sesiones aisladas, proxy y notificaciones por cuenta, traducción integrada.
     keywords: varias cuentas de whatsapp en pc, whatsapp multicuenta, dos whatsapp en el pc, varios números de whatsapp
     short: Varias cuentas de WhatsApp
     icon: 🗂
@@ -706,8 +706,8 @@ pages:
     - type: facts
       label: Datos clave
       items:
-      - - 27+
-        - cuentas probadas a la vez
+      - - "∞"
+        - "cuentas separadas, lado a lado"
       - - '1'
         - ventana para todas
       - - 1 proxy
@@ -763,7 +763,7 @@ pages:
         - '2'
         - Varias, una ventana cada una
         - Varias, pesadas para el PC
-        - 27+ probadas, una ventana
+        - Ilimitadas (Business), una ventana
       - - La notificación indica la cuenta
         - '~'
         - '~'
@@ -801,7 +801,7 @@ pages:
       h: Varias cuentas de WhatsApp — preguntas
       items:
       - - ¿Cuántas cuentas de WhatsApp puedo usar en un PC?
-        - 'Hemos probado 27 a la vez. El límite real es la memoria: cada cuenta usa unos 300–450 MB, así que 8 GB de RAM dan para unas 10 cuentas y 16 GB o más para 20–30.'
+        - 'El límite real es la memoria: cada cuenta usa unos 300–450 MB, así que 8 GB de RAM dan para unas 10 cuentas y 16 GB o más para 20–30.'
       - - ¿Necesito un teléfono por cuenta?
         - Sí. Cada cuenta de WhatsApp pertenece a un número y se vincula una vez escaneando el QR con ese teléfono. No hace falta tener el móvil junto al PC.
       - - ¿Cada cuenta puede usar su propio proxy?
@@ -904,7 +904,7 @@ pages:
         - ~ una ventana cada una
         - ✕
         - ✓
-        - ✓ 27+ probadas
+        - ✓ ilimitadas (Business)
       - - WhatsApp y Telegram juntos
         - ✕
         - '~'
@@ -1284,7 +1284,7 @@ pages:
       - - ¿Podemos escribir en español y que el proveedor reciba chino?
         - 'Sí. Escribe en español; el proveedor recibe su idioma. Y al revés: sus mensajes te llegan traducidos al español.'
       - - ¿Cuántos números de ventas podemos usar?
-        - Pro cubre hasta 15 cuentas de WhatsApp y Business es ilimitado. Hemos probado 27 cuentas funcionando a la vez en un PC.
+        - Pro cubre hasta 15 cuentas de WhatsApp y Business es ilimitado.
       - - ¿Podemos pagar en USDT?
         - Sí — todos los planes se pagan en USDT (TRC20, BEP20 o ERC20).
     - type: related
@@ -1413,13 +1413,13 @@ pages:
         3. Cambia con un clic o con **Ctrl+K**. Cada notificación muestra a qué cuenta pertenece.
         4. Activa la traducción: los mensajes entrantes se traducen bajo el original y tus respuestas se traducen antes de enviarlas.
 
-        **Sirve para:** muchos números y clientes que escriben en otros idiomas. Hemos probado 27 cuentas funcionando a la vez.
+        **Sirve para:** muchos números y clientes que escriben en otros idiomas.
 
         ## ¿Qué método elegir?
 
         | | Escritorio + Web | Perfiles de navegador | App multicuenta |
         |---|---|---|---|
-        | Cuentas | 2 | 3–5 cómodamente | Muchas (27+ probadas en GlotChat) |
+        | Cuentas | 2 | 3–5 cómodamente | Muchas |
         | Una ventana | No | No | Sí |
         | La notificación muestra la cuenta | En parte | En parte | Sí |
         | Traducción | No | No | Sí (GlotChat) |
@@ -1444,7 +1444,7 @@ pages:
       - - ¿Puedo usar dos cuentas de WhatsApp en una computadora?
         - Sí. Lo más sencillo es la app WhatsApp Escritorio para una cuenta y WhatsApp Web en un navegador para la segunda.
       - - ¿Cuántas cuentas de WhatsApp puedo usar en un PC?
-        - No hay un límite fijo cuando cada cuenta corre en su propia sesión; el límite es la memoria. GlotChat se ha probado con 27 cuentas a la vez.
+        - No hay un límite fijo cuando cada cuenta corre en su propia sesión; el límite es la memoria.
       - - ¿Tengo que dejar los teléfonos encendidos?
         - No, los dispositivos vinculados funcionan con el teléfono apagado. Pero abre WhatsApp en cada teléfono al menos cada dos semanas, o el dispositivo vinculado se desconecta.
     - type: related
@@ -1847,8 +1847,8 @@ pages:
       items:
       - - '5'
         - apps de chat en una ventana
-      - - 27+
-        - cuentas a la vez (probado)
+      - - "∞"
+        - "cuentas separadas, lado a lado"
       - - '49'
         - idiomas de traducción, sin internet
       - - '1'
@@ -2328,7 +2328,7 @@ pages:
         items:
           - ["¿Cuál es la mejor app de mensajería todo en uno?", "Depende de lo que necesites. Para clientes de otros idiomas, GlotChat: es la única de la lista que traduce los chats en ambos sentidos. Para muchas apps de trabajo, Rambox o Wavebox. Gratis y de código abierto, Ferdium."]
           - ["¿Qué app de mensajería todo en uno traduce mensajes?", "GlotChat traduce cada chat de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND, en ambos sentidos, en 49 idiomas — sin conexión en tu PC."]
-          - ["¿Puedo usar varias cuentas de WhatsApp en una sola app?", "Sí. Las cinco apps de esta lista pueden abrir varias cuentas de WhatsApp lado a lado. GlotChat se ha probado con 27 cuentas a la vez."]
+          - ["¿Puedo usar varias cuentas de WhatsApp en una sola app?", "Sí. Las cinco apps de esta lista pueden abrir varias cuentas de WhatsApp lado a lado."]
           - ["¿Hay una app de mensajería todo en uno gratis?", "Ferdium es gratis. Rambox, Franz y Wavebox tienen planes gratis limitados. GlotChat es gratis 7 días con todas las funciones."]
       - type: related
         k: "Siguiente"

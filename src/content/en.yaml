@@ -612,7 +612,7 @@ pages:
   # ================================================================ MULTI WHATSAPP
   multiple-whatsapp-accounts:
     title: "Multiple WhatsApp Accounts on One PC – in One Window"
-    description: "Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, a proxy per account, notifications per account, built-in translation."
+    description: "Run 2, 10 or more WhatsApp accounts side by side on Windows. Isolated sessions, a proxy per account, notifications per account, built-in translation."
     keywords: "multiple whatsapp accounts, multiple whatsapp accounts on pc, whatsapp multi account, two whatsapp on pc, whatsapp multiple numbers"
     short: "Multiple WhatsApp accounts"
     icon: "🗂"
@@ -626,7 +626,7 @@ pages:
         media_alt: "Many WhatsApp accounts side by side in GlotChat"
       - type: facts
         label: "Key facts"
-        items: [["27+", "accounts tested at once"], ["1", "window for all of them"], ["1 proxy", "per account, if you want"], ["0", "mixed-up logins"]]
+        items: [["∞", "separate accounts, side by side"], ["1", "window for all of them"], ["1 proxy", "per account, if you want"], ["0", "mixed-up logins"]]
       - type: cards
         id: features
         k: "Built for many numbers"
@@ -652,7 +652,7 @@ pages:
         hl: 4
         cols: ["", "WhatsApp Desktop + Web", "Browser profiles", "Phone emulators", "GlotChat"]
         rows:
-          - ["Accounts", "2", "Several, one window each", "Several, heavy on the PC", "27+ tested, one window"]
+          - ["Accounts", "2", "Several, one window each", "Several, heavy on the PC", "Unlimited (Business), one window"]
           - ["Notifications show the account", "~", "~", "✕", "✓"]
           - ["Proxy per account", "✕", "~ with extensions", "~", "✓"]
           - ["Restarts frozen accounts", "✕", "✕", "✕", "✓"]
@@ -665,7 +665,7 @@ pages:
         k: "FAQ"
         h: "Multiple WhatsApp accounts — questions"
         items:
-          - ["How many WhatsApp accounts can I run on one PC?", "We've tested 27 at the same time. The real limit is memory: each account uses about 300–450 MB, so 8 GB RAM handles about 10 accounts and 16 GB or more handles 20–30."]
+          - ["How many WhatsApp accounts can I run on one PC?", "The real limit is memory: each account uses about 300–450 MB, so 8 GB RAM handles about 10 accounts and 16 GB or more handles 20–30."]
           - ["Do I need a phone for each account?", "Yes. Every WhatsApp account belongs to a phone number, and you link it once by scanning a QR code with that phone. The phone doesn't have to stay next to the PC."]
           - ["Can each account use its own proxy?", "Yes. Open the account's settings and paste a proxy (http:// or socks5://, with username and password if needed). GlotChat checks it and shows an alert if it stops working."]
           - ["Will my accounts get banned?", "GlotChat uses the official WhatsApp Web, so it's the same as using WhatsApp in a browser. Bans come from behaviour WhatsApp forbids — spam, bulk unsolicited messages, modified apps. Use your accounts normally and you're fine."]
@@ -748,7 +748,7 @@ pages:
         media_alt: "Switching between WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in GlotChat, each chat translated"
       - type: facts
         label: "Key facts"
-        items: [["5", "chat apps in one window"], ["27+", "accounts at once (tested)"], ["49", "translation languages, offline"], ["1", "plan for every app"]]
+        items: [["6", "chat apps in one window"], ["∞", "separate accounts, side by side"], ["49", "translation languages, offline"], ["1", "plan for every app"]]
       - type: table
         id: apps
         k: "Supported apps"
@@ -1049,7 +1049,7 @@ pages:
         hl: 5
         cols: ["", "WhatsApp Web / Telegram Desktop", "Browser profiles", "Translator extension", "Multi-account apps", "GlotChat"]
         rows:
-          - ["Many accounts in one window", "✕", "~ one window each", "✕", "✓", "✓ 27+ tested"]
+          - ["Many accounts in one window", "✕", "~ one window each", "✕", "✓", "✓ unlimited (Business)"]
           - ["WhatsApp and Telegram together", "✕", "~", "✕", "~ some", "✓"]
           - ["Incoming messages translated automatically", "✕", "✕", "✓", "~ some", "✓"]
           - ["Your replies translated before sending", "✕", "✕", "~", "~ some", "✓"]
@@ -1316,7 +1316,7 @@ pages:
         h: "Exporter questions"
         items:
           - ["Can we write in Chinese and have buyers receive Arabic or Spanish?", "Yes. Write in Chinese; buyers receive their language, and you see what they'll read in Chinese before sending. The GlotChat interface is available in Chinese too."]
-          - ["How many sales accounts can we run?", "Pro covers up to 15 accounts per app, Business is unlimited. We've tested 27 accounts running at the same time on one PC."]
+          - ["How many sales accounts can we run?", "Pro covers up to 15 accounts per app, Business is unlimited."]
           - ["Can we pay in USDT?", "Yes — all plans are paid in USDT (TRC20, BEP20 or ERC20)."]
       - type: related
         k: "More"
@@ -1427,13 +1427,13 @@ pages:
           3. Switch with one click. Every notification shows which account it belongs to.
           4. Turn on translation: incoming messages are translated under the original and your replies are translated before you send them — with what the customer will read shown first.
 
-          **Good for:** many numbers, customers who write in other languages, and teams that also use Telegram — GlotChat runs Telegram accounts in the same window. We've tested 27 accounts running at the same time.
+          **Good for:** many numbers, customers who write in other languages, and teams that also use Telegram — GlotChat runs Telegram accounts in the same window.
 
           ## Which method should you choose?
 
           | | Desktop + Web | Browser profiles | Multi-account app |
           |---|---|---|---|
-          | Accounts | 2 | 3–5 comfortably | Many (27+ tested in GlotChat) |
+          | Accounts | 2 | 3–5 comfortably | Many |
           | One window | No | No | Yes |
           | Notification shows the account | Partly | Partly | Yes |
           | Proxy per account | No | With extensions | Yes (GlotChat) |
@@ -1457,7 +1457,7 @@ pages:
         h: "Quick answers"
         items:
           - ["Can I use two WhatsApp accounts on one computer?", "Yes. The simplest way is the WhatsApp Desktop app for one account and WhatsApp Web in a browser for the second."]
-          - ["How many WhatsApp accounts can I use on one PC?", "There's no fixed limit when each account runs in its own session; memory is the limit. GlotChat has been tested with 27 accounts at once."]
+          - ["How many WhatsApp accounts can I use on one PC?", "There's no fixed limit when each account runs in its own session; memory is the limit."]
           - ["Do I need to keep my phones on?", "No, linked devices work while the phone is off. But open WhatsApp on each phone at least every two weeks, or the linked device is logged out."]
       - type: related
         k: "Next"
@@ -1598,7 +1598,7 @@ pages:
 
           1. Install GlotChat on Windows 10 or 11 and click **Add account** for each number.
           2. Scan each one's QR code (WhatsApp → *Linked devices*) and name it — "Shop UAE", "Sales — Ahmed".
-          3. Switch with one click; every notification shows which account it's from. We've tested 27 accounts running at once.
+          3. Switch with one click; every notification shows which account it's from.
           4. Turn on translation and every chat is translated both ways — handy if your customers write in other languages. Telegram accounts open in the same window too.
 
           ## Which option is right for you?
@@ -1621,7 +1621,7 @@ pages:
         items:
           - ["Can I use the same WhatsApp account on two phones?", "Yes. Link the second phone as a companion device from Settings → Linked devices on your main phone. Both phones then show the same chats."]
           - ["Can I have two WhatsApp numbers on one phone?", "On most Android phones, yes — add a second account in WhatsApp settings or your phone's dual-apps feature. On iPhone, use WhatsApp Business for the second number."]
-          - ["How do I run many WhatsApp numbers at once?", "Open them together on a PC with a multi-account app like GlotChat, which has been tested with 27 accounts running at the same time, each in its own session."]
+          - ["How do I run many WhatsApp numbers at once?", "Open them together on a PC with a multi-account app like GlotChat, where each account runs in its own session."]
       - type: related
         k: "Next"
         h: "Keep reading"
@@ -1678,7 +1678,7 @@ pages:
 
           GlotChat is a Windows app made specifically for running many messaging accounts in one window, with translation built in.
 
-          - **Accounts:** many — 27 tested running at the same time, each in its own isolated session.
+          - **Accounts:** as many as you need, each in its own isolated session.
           - **Good:** one window, per-account notifications, optional proxy per account, and **two-way translation** in 49 languages that runs on your PC — with a check of what the other person will read before you send. Telegram, Messenger, Instagram, Discord and BAND run in the same window.
           - **Limits:** Windows only, and it's paid after the trial (7 days free, then from 69 USDT a year).
 
@@ -1686,7 +1686,7 @@ pages:
 
           | | Desktop + Web | Browser profiles | Rambox / Ferdium | GlotChat |
           |---|---|---|---|---|
-          | Accounts | 2 | 3–5 | Several | Many (27+ tested) |
+          | Accounts | 2 | 3–5 | Several | Many |
           | One window | No | No | Yes | Yes |
           | Notification shows account | Partly | Partly | Partly | Yes |
           | Translation | No | No | No | Yes (offline) |
@@ -1706,7 +1706,7 @@ pages:
         items:
           - ["What is the best way to run multiple WhatsApp accounts on a PC?", "For two accounts, WhatsApp Desktop plus WhatsApp Web is enough and free. For many accounts — especially with customers in other languages — a dedicated app like GlotChat keeps them in one window and translates each chat."]
           - ["Is there a free way to use several WhatsApp accounts on Windows?", "Yes. Use the WhatsApp Desktop app for one and separate browser profiles (Chrome or Edge) for the others. It's free but there's no translation and notifications don't clearly show the account."]
-          - ["How many WhatsApp accounts can GlotChat run at once?", "There's no fixed limit — memory is the limit, since each account runs in its own session. GlotChat has been tested with 27 accounts running at the same time."]
+          - ["How many WhatsApp accounts can GlotChat run at once?", "There's no fixed limit — memory is the limit, since each account runs in its own session."]
       - type: related
         k: "Next"
         h: "Keep reading"
@@ -1978,7 +1978,7 @@ pages:
         items:
           - ["What is the best all-in-one messenger app?", "It depends on what you need. For customers in other languages, GlotChat — it's the only one here that translates chats both ways. For many work apps, Rambox or Wavebox. For free and open source, Ferdium."]
           - ["Which all-in-one messenger translates messages?", "GlotChat translates every chat in WhatsApp, Telegram, Messenger, Instagram, Discord and BAND, both ways, in 49 languages — offline on your PC."]
-          - ["Can I use several WhatsApp accounts in one app?", "Yes. All five apps in this list can open several WhatsApp accounts side by side. GlotChat has been tested with 27 accounts at once."]
+          - ["Can I use several WhatsApp accounts in one app?", "Yes. All five apps in this list can open several WhatsApp accounts side by side."]
           - ["Is there a free all-in-one messenger?", "Ferdium is free. Rambox, Franz and Wavebox have limited free plans. GlotChat is free for 7 days with every feature."]
       - type: related
         k: "Next"

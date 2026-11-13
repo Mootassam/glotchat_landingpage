@@ -691,7 +691,7 @@ pages:
       - pricing
   multiple-whatsapp-accounts:
     title: Tek PC'de Birden Fazla WhatsApp Hesabı – Tek Pencerede
-    description: Windows'ta 2, 10 veya 27+ WhatsApp hesabını yan yana çalıştırın. Yalıtılmış oturumlar, hesap başına proxy ve bildirim, yerleşik çeviri.
+    description: Windows'ta 2, 10 veya daha fazla WhatsApp hesabını yan yana çalıştırın. Yalıtılmış oturumlar, hesap başına proxy ve bildirim, yerleşik çeviri.
     keywords: birden fazla whatsapp hesabı, whatsapp çoklu hesap, pc'de iki whatsapp, whatsapp birden fazla numara
     short: Birden fazla WhatsApp hesabı
     icon: 🗂
@@ -706,8 +706,8 @@ pages:
     - type: facts
       label: Temel bilgiler
       items:
-      - - 27+
-        - hesap birlikte test edildi
+      - - "∞"
+        - "ayrı hesap, yan yana"
       - - '1'
         - pencere hepsi için
       - - 1 proxy
@@ -763,7 +763,7 @@ pages:
         - '2'
         - Birkaç, her biri ayrı pencere
         - Birkaç, PC'yi yorar
-        - 27+ test edildi, tek pencere
+        - Sınırsız (Business), tek pencere
       - - Bildirim hesabı gösterir
         - '~'
         - '~'
@@ -801,7 +801,7 @@ pages:
       h: Birden fazla WhatsApp hesabı — sorular
       items:
       - - Tek PC'de kaç WhatsApp hesabı çalıştırabilirim?
-        - '27 hesabı aynı anda test ettik. Gerçek sınır bellektir: her hesap yaklaşık 300–450 MB kullanır; 8 GB RAM yaklaşık 10, 16 GB ve üzeri 20–30 hesap kaldırır.'
+        - 'Gerçek sınır bellektir: her hesap yaklaşık 300–450 MB kullanır; 8 GB RAM yaklaşık 10, 16 GB ve üzeri 20–30 hesap kaldırır.'
       - - Her hesap için bir telefon gerekir mi?
         - Evet. Her WhatsApp hesabı bir telefon numarasına aittir ve o telefonla QR kodu okutarak bir kez bağlanır. Telefonun bilgisayarın yanında durması gerekmez.
       - - Her hesap kendi proxy'sini kullanabilir mi?
@@ -904,7 +904,7 @@ pages:
         - ~ her biri ayrı pencere
         - ✕
         - ✓
-        - ✓ 27+ test edildi
+        - ✓ sınırsız (Business)
       - - WhatsApp ve Telegram birlikte
         - ✕
         - '~'
@@ -1284,7 +1284,7 @@ pages:
       - - Türkçe yazıp alıcının Arapça veya Rusça almasını sağlayabilir miyiz?
         - 'Evet. Türkçe yazın; alıcı kendi dilini alır. Tersi de geçerli: onun mesajları size Türkçe çevrilmiş görünür.'
       - - Kaç satış numarası çalıştırabiliriz?
-        - Pro 15 WhatsApp hesabına kadar, Kurumsal sınırsızdır. Tek bilgisayarda aynı anda çalışan 27 hesabı test ettik.
+        - Pro 15 WhatsApp hesabına kadar, Kurumsal sınırsızdır.
       - - USDT ile ödeyebilir miyiz?
         - Evet — tüm paketler USDT ile ödenir (TRC20, BEP20 veya ERC20).
     - type: related
@@ -1413,13 +1413,13 @@ pages:
         3. Tek tıkla veya **Ctrl+K** ile geçiş yapın. Her bildirim hangi hesaba ait olduğunu gösterir.
         4. Çeviriyi açın: gelen mesajlar orijinalin altında çevrilir, yanıtlarınız göndermeden önce çevrilir.
 
-        **Uygun olduğu durum:** çok numara ve başka dillerde yazan müşteriler. Aynı anda çalışan 27 hesabı test ettik.
+        **Uygun olduğu durum:** çok numara ve başka dillerde yazan müşteriler.
 
         ## Hangi yöntemi seçmelisiniz?
 
         | | Masaüstü + Web | Tarayıcı profilleri | Çoklu hesap uygulaması |
         |---|---|---|---|
-        | Hesap | 2 | Rahatça 3–5 | Çok (GlotChat'te 27+ test edildi) |
+        | Hesap | 2 | Rahatça 3–5 | Çok |
         | Tek pencere | Hayır | Hayır | Evet |
         | Bildirim hesabı gösterir | Kısmen | Kısmen | Evet |
         | Çeviri | Hayır | Hayır | Evet (GlotChat) |
@@ -1444,7 +1444,7 @@ pages:
       - - Bir bilgisayarda iki WhatsApp hesabı kullanabilir miyim?
         - 'Evet. En kolay yol: bir hesap için WhatsApp Masaüstü uygulaması, ikincisi için tarayıcıda WhatsApp Web.'
       - - Bir bilgisayarda kaç WhatsApp hesabı kullanabilirim?
-        - Her hesap kendi oturumunda çalıştığında sabit bir sınır yoktur; sınır bellektir. GlotChat aynı anda 27 hesapla test edildi.
+        - Her hesap kendi oturumunda çalıştığında sabit bir sınır yoktur; sınır bellektir.
       - - Telefonlarımın açık kalması gerekir mi?
         - Hayır, bağlı cihazlar telefon kapalıyken de çalışır. Ama her telefonda en az iki haftada bir WhatsApp'ı açın, yoksa bağlı cihazın oturumu kapanır.
     - type: related
@@ -1847,8 +1847,8 @@ pages:
       items:
       - - '5'
         - mesajlaşma uygulaması tek pencerede
-      - - 27+
-        - hesap aynı anda (test edildi)
+      - - "∞"
+        - "ayrı hesap, yan yana"
       - - '49'
         - çeviri dili, çevrimdışı
       - - '1'
@@ -2328,7 +2328,7 @@ pages:
         items:
           - ["En iyi hepsi bir arada mesajlaşma uygulaması hangisi?", "İhtiyacınıza bağlı. Başka dillerdeki müşteriler için GlotChat: listede sohbetleri iki yönlü çeviren tek uygulama. Çok sayıda iş uygulaması için Rambox veya Wavebox. Ücretsiz ve açık kaynak için Ferdium."]
           - ["Hangi hepsi bir arada mesajlaşma uygulaması mesajları çeviriyor?", "GlotChat; WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND'daki her sohbeti iki yönlü, 49 dilde çevirir — PC'nizde çevrimdışı."]
-          - ["Tek uygulamada birden fazla WhatsApp hesabı kullanabilir miyim?", "Evet. Bu listedeki beş uygulamanın hepsi birden fazla WhatsApp hesabını yan yana açabilir. GlotChat aynı anda 27 hesapla test edildi."]
+          - ["Tek uygulamada birden fazla WhatsApp hesabı kullanabilir miyim?", "Evet. Bu listedeki beş uygulamanın hepsi birden fazla WhatsApp hesabını yan yana açabilir."]
           - ["Ücretsiz bir hepsi bir arada mesajlaşma uygulaması var mı?", "Ferdium ücretsiz. Rambox, Franz ve Wavebox'ın sınırlı ücretsiz paketleri var. GlotChat tüm özellikleriyle 7 gün ücretsiz."]
       - type: related
         k: "Sıradaki"
