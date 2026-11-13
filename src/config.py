@@ -46,14 +46,15 @@ TRIAL_DAYS = 7
 # name keeps serving the old file), then update url/file/version/size/sha256 here and rebuild.
 # Also upload it as GlotChat-Setup.exe for links shared earlier, and purge that URL in Cloudflare.
 DOWNLOAD = {
-    "url": "https://download.glotchat.com/GlotChat-Setup-1.5.1.exe",
-    "file": "GlotChat-Setup-1.5.1.exe",
-    "version": "1.5.1",
-    "date": "2026-11-12",
-    "size_mb": 381,          # as Windows shows it (399,696,405 bytes)
-    "sha256": "978c98844a06a321fb4e67a9273f57baffa87fcee6182281a61c73b396089ea6",
-    # the previous trusted installer, if Windows ever blocks this one: GlotChat-Setup-1.2.5.exe
-    # (56800eb5894ca7f1336cae5c616a1d8ded4b3e90219862014c21f0959c113c5a, 2026-10-22)
+    # the installer Microsoft has cleared (Smart App Control lets it run); it updates itself to the
+    # newest version (1.5.1+) about a minute after the free trial starts. Newer installers are on R2
+    # (GlotChat-Setup-1.5.1.exe) but unsigned new files can be blocked — switch only when signed.
+    "url": "https://download.glotchat.com/GlotChat-Setup-1.2.5.exe",
+    "file": "GlotChat-Setup-1.2.5.exe",
+    "version": "1.2.5",
+    "date": "2026-10-22",
+    "size_mb": 381,          # as Windows shows it (399,644,511 bytes)
+    "sha256": "56800eb5894ca7f1336cae5c616a1d8ded4b3e90219862014c21f0959c113c5a",
 }
 PAY_NETWORKS = "TRC20 · BEP20 · ERC20"
 
