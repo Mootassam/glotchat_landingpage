@@ -12,7 +12,9 @@ TELEGRAM_USER = "GlotChat"
 SAME_AS: list[str] = []
 WHATSAPP_NUMBER = ""      # international format without + or spaces, e.g. "971501234567"
 WECHAT_ID = ""            # shown on the Chinese pages (Telegram is blocked in mainland China)
-EMAIL = ""                # e.g. "hello@glotchat.com"
+EMAIL = ""                # e.g. "support@glotchat.com" (shown in the footer + legal pages; Paddle needs one)
+# Your full legal name, exactly as on your ID. Shown in the Terms, Privacy and Refund pages as the seller.
+LEGAL_NAME = ""
 
 # ---------------------------------------------------------------- search engine ownership checks
 # Paste the code each webmaster tool gives you (only the content="..." part), then rebuild.
@@ -26,12 +28,16 @@ CLARITY_ID = "z9p6jpbig0"
 
 # ---------------------------------------------------------------- plans (USDT per year)
 # The USDT price is also published as USD in the structured data (USDT is pegged to the dollar).
+# "month" = the monthly price (31 days). Keep both in step with the license admin → Settings → Prices.
 PLANS = [
-    {"id": "Starter", "price": 69, "accounts": 5, "pcs": 1},
-    {"id": "Pro", "price": 129, "accounts": 15, "pcs": 1, "popular": True},
-    {"id": "Business", "price": 249, "accounts": None, "pcs": 3},   # None = unlimited
+    {"id": "Starter", "price": 69, "month": 9, "accounts": 5, "pcs": 1},
+    {"id": "Pro", "price": 129, "month": 15, "accounts": 15, "pcs": 1, "popular": True},
+    {"id": "Business", "price": 249, "month": 29, "accounts": None, "pcs": 3},   # None = unlimited
 ]
-TRIAL_DAYS = 3
+# True once online payments are switched on in the license admin (NOWPayments): "How buying works" then shows
+# "Buy in GlotChat → pay in crypto → unlocks by itself" instead of the Telegram steps. Rebuild after changing it.
+PAY_IN_APP = False
+TRIAL_DAYS = 7
 
 # ---------------------------------------------------------------- download (Cloudflare R2 bucket glotchat-download)
 # The installer stays on a version Windows Smart App Control already trusts (a new unsigned installer is

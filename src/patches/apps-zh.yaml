@@ -16,11 +16,11 @@ ui:
   plan_f:
     apps: "WhatsApp、Telegram、Messenger、Instagram、Discord"
   final:
-    p: "下载 GlotChat，点击“开始 3 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。"
+    p: "下载 GlotChat，点击“开始 7 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。"
   footer:
     tagline: "WhatsApp、Telegram、Messenger、Instagram 和 Discord 集中在一个窗口，每位客户都用他的语言沟通。专为跨境生意打造。"
   og_kicker: "WhatsApp、Telegram、Messenger、Instagram、Discord 多开翻译（电脑版）"
-  og_chips: ["5 个应用一个窗口", "49 种语言", "免费试用 3 天"]
+  og_chips: ["5 个应用一个窗口", "49 种语言", "免费试用 7 天"]
   app_description: "Windows 桌面软件：在一个窗口中运行多个 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号（每个账号独立隔离，可单独设置通知和代理），在电脑上离线翻译聊天，支持 49 种语言（WhatsApp 和 Telegram 还可翻译语音和图片文字），发送前可核对译文。"
   feature_first: "一个窗口运行多个 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号"
   msg:
@@ -31,7 +31,7 @@ ui:
 
 home:
   title: "WhatsApp、Telegram 多开翻译软件（电脑版）| GlotChat"
-  description: "一个窗口管理 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号，所有聊天在电脑上离线翻译，支持 49 种语言，发送前可核对译文。免费试用 3 天。"
+  description: "一个窗口管理 WhatsApp、Telegram、Messenger、Instagram 和 Discord 账号，所有聊天在电脑上离线翻译，支持 49 种语言，发送前可核对译文。免费试用 7 天。"
   keywords: "WhatsApp翻译,Telegram翻译,WhatsApp多开,Telegram多开,Messenger翻译,Instagram私信翻译,Discord翻译,聚合聊天软件,外贸WhatsApp翻译软件"
   og_title: "GlotChat —— WhatsApp、Telegram、Messenger、Instagram、Discord 一个窗口，每位客户都用他的语言"
   og_heading: "所有聊天应用一个窗口，每位客户都用他的语言"
@@ -132,7 +132,7 @@ pages:
 
   messenger-translator:
     title: "Facebook Messenger 翻译器 + Messenger 多开（电脑版）"
-    description: "在 Windows 上双向翻译 Facebook Messenger 聊天，多个 Messenger 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    description: "在 Windows 上双向翻译 Facebook Messenger 聊天，多个 Messenger 账号并排运行。49 种语言，离线翻译。免费试用 7 天。"
     keywords: "Messenger翻译,Facebook Messenger翻译,Messenger多开,Facebook多开,Messenger自动翻译,Facebook外贸翻译"
     short: "Messenger 翻译器"
     icon: "💬"
@@ -188,7 +188,7 @@ pages:
 
   instagram-dm-translator:
     title: "Instagram 私信翻译器 + Instagram 多开（电脑版）"
-    description: "在 Windows 上双向翻译 Instagram 私信，多个 Instagram 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    description: "在 Windows 上双向翻译 Instagram 私信，多个 Instagram 账号并排运行。49 种语言，离线翻译。免费试用 7 天。"
     keywords: "Instagram私信翻译,Instagram翻译,Instagram多开,Instagram电脑版,ins私信翻译,Instagram外贸"
     short: "Instagram 私信翻译"
     icon: "📸"
@@ -244,7 +244,7 @@ pages:
 
   discord-translator:
     title: "Discord 翻译器 + Discord 多开（电脑版）"
-    description: "在 Windows 上翻译 Discord 服务器和私信中的消息，多个 Discord 账号并排运行。49 种语言，离线翻译。免费试用 3 天。"
+    description: "在 Windows 上翻译 Discord 服务器和私信中的消息，多个 Discord 账号并排运行。49 种语言，离线翻译。免费试用 7 天。"
     keywords: "Discord翻译,Discord翻译器,Discord自动翻译,Discord多开,Discord电脑版多账号"
     short: "Discord 翻译器"
     icon: "🎮"

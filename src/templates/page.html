@@ -322,16 +322,25 @@
         {{ tgbtn('finder', 'finder', ui.finder.btn, 'btn dl', 'Pro', None, '6–15', 'finderBtn') }}
       </div>
     </div>
-    <div class="plans">
+    {%- set ns = namespace(save=0) %}
+    {%- for p in cfg.PLANS %}{% set sv = ((1 - p.price / (p.month * 12)) * 100)|round|int %}{% if sv > ns.save %}{% set ns.save = sv %}{% endif %}{% endfor %}
+    <div class="period" role="group" aria-label="{{ ui.period_m }} / {{ ui.period_y }}">
+      <button type="button" class="on" data-period="month" aria-pressed="true">{{ ui.period_m }}</button>
+      <button type="button" data-period="year" aria-pressed="false">{{ ui.period_y }} <em>{{ ui.save|replace('{n}', ns.save|string) }}</em></button>
+    </div>
+    <div class="plans" data-period="month">
       {%- for p in cfg.PLANS %}
       {%- set pt = ui.plans[p.id] %}
-      <article class="plan{% if p.popular %} pop{% endif %}" data-plan-card="{{ p.id }}">
+      {%- set sv = ((1 - p.price / (p.month * 12)) * 100)|round|int %}
+      <article class="plan{% if p.popular %} pop{% endif %}" data-plan-card="{{ p.id }}" data-pm="{{ p.month }}" data-py="{{ p.price }}">
         {%- if p.popular %}<span class="ribbon">{{ ui.popular }}</span>{% endif %}
         <span class="ribbon pick-r">{{ ui.for_you }}</span>
         <h3>{{ pt.name }}</h3>
         <p class="who">{{ pt.who }}</p>
-        <div class="price"><b class="amt">{{ p.price }}</b><span>USDT</span><em>{{ ui.per_year }}</em></div>
-        <p class="once">≈ {{ '%.2f'|format(p.price / 12) }} {{ ui.per_month }}</p>
+        <div class="price p-m"><span class="cur">$</span><b class="amt">{{ p.month }}</b><em>{{ ui.per_month_s }}</em></div>
+        <p class="once p-m">{{ ui.or_year|replace('{p}', p.price|string)|replace('{n}', sv|string) }}</p>
+        <div class="price p-y"><span class="cur">$</span><b class="amt">{{ p.price }}</b><em>{{ ui.per_year }}</em></div>
+        <p class="once p-y">{{ ui.eq_month|replace('{p}', '%.2f'|format(p.price / 12)) }}</p>
         <ul class="ticks">
           <li>{{ (ui.unlimited_accounts if p.accounts is none else ui.up_to_accounts|replace('{n}', p.accounts|string))|safe }}</li>
           <li>{{ ui.plan_f.apps }}</li>
@@ -340,12 +349,12 @@
           <li>{{ ui.plan_f.updates }}</li>
           <li>{{ pt.pcs }}</li>
         </ul>
-        {{ tgbtn('plan', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block' if p.popular else 'btn tgo block', p.id, p.price) }}
+        {{ tgbtn('planMonth', 'price-' ~ p.id|lower, ui.buy|replace('{plan}', pt.name), 'btn tg block' if p.popular else 'btn tgo block', p.id, p.month) }}
         {{ tgbtn('planTrial', 'trial-' ~ p.id|lower, ui.try, 'trylink', p.id) }}
       </article>
       {%- endfor %}
     </div>
-    <p class="guarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
+    <p class="guarantee"><span aria-hidden="true">🛡️</span> <a href="/refund/">{{ ui.guarantee }}</a></p>
     <div class="custom">
       <p>{{ ui.custom_html|safe }}</p>
       {{ tgbtn('custom', 'custom', ui.custom_btn, 'btn tgo') }}
@@ -359,13 +368,14 @@
 <section class="sec{% if b.soft %} soft{% endif %}" id="{{ b.id or 'buying' }}">
   <div class="wrap">
     {{ head(b) }}
+    {%- if cfg.PAY_IN_APP and ui.buy_app is defined %}<p class="buy-app">{{ ui.buy_app_p }}</p>{% endif %}
     <ol class="buy">
-      {%- for s in b['items'] %}
+      {%- for s in (ui.buy_app if cfg.PAY_IN_APP and ui.buy_app is defined else b['items']) %}
       <li><span class="bn">{{ loop.index }}</span><div><h3>{{ s[0] }}</h3><p>{{ s[1]|safe }}</p></div></li>
       {%- endfor %}
     </ol>
     <div class="center-cta">{{ tgbtn('general', 'buying-' ~ page_id, b.cta or ui.cta_live, 'btn tg lg') }}</div>
-    <p class="guarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
+    <p class="guarantee"><span aria-hidden="true">🛡️</span> <a href="/refund/">{{ ui.guarantee }}</a></p>
   </div>
 </section>
 
@@ -448,7 +458,7 @@
           <li>{{ ui.dl.no_admin }}</li>
         </ul>
       </div>
-      <p class="guarantee dlguarantee"><span aria-hidden="true">🛡️</span> {{ ui.guarantee }}</p>
+      <p class="guarantee dlguarantee"><span aria-hidden="true">🛡️</span> <a href="/refund/">{{ ui.guarantee }}</a></p>
     </div>
     <div class="phero-media">
       <div class="dlcard" aria-hidden="true">

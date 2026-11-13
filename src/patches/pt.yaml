@@ -1,7 +1,7 @@
 ui:
   contact: "Fale com a gente"
   promo_html: "<b>Novo: GlotChat 1.3 traz o Telegram</b> — e tradução que você confere antes de enviar."
-  promo_go: "Teste grátis por 3 dias →"
+  promo_go: "Teste grátis por 7 dias →"
   apps_label: "Funciona com"
   beta: "Beta"
   nav:
@@ -13,8 +13,8 @@ ui:
     tg_translator_s: "Leia e responda em qualquer idioma"
     tg_accounts: "Várias contas de Telegram"
     tg_accounts_s: "Todas as suas contas de Telegram lado a lado"
-  cta_trial: "Baixe grátis — teste de 3 dias"
-  micro: ["3 dias grátis — sem cartão nem pagamento", "Uma pessoa de verdade responde no Telegram", "A partir de 69 USDT por ano"]
+  cta_trial: "Baixe grátis — teste de 7 dias"
+  micro: ["7 dias grátis — sem cartão nem pagamento", "Uma pessoa de verdade responde no Telegram", "A partir de 69 USDT por ano"]
   trust: ["WhatsApp Web e Telegram oficiais por dentro", "As conversas ficam no seu PC", "Windows 10 e 11", "49 idiomas, sem internet"]
   faq_more: "Outra dúvida? Pergunte a uma pessoa de verdade no Telegram:"
   finder:
@@ -25,9 +25,9 @@ ui:
     apps: "WhatsApp, Telegram + apps beta"
   paynote: "Pagamento em USDT (TRC20 · BEP20 · ERC20). Dúvidas antes de comprar? Pergunte — uma pessoa de verdade responde no Telegram."
   final:
-    k: "Grátis por 3 dias"
+    k: "Grátis por 7 dias"
     h: "Seu próximo cliente estrangeiro já está digitando."
-    p: "Baixe o GlotChat, clique em “Iniciar meu teste grátis de 3 dias” e adicione suas contas de WhatsApp e Telegram. Prefere conversar antes? Mande uma mensagem — mostramos o GlotChat ao vivo ou tiramos qualquer dúvida."
+    p: "Baixe o GlotChat, clique em “Iniciar meu teste grátis de 7 dias” e adicione suas contas de WhatsApp e Telegram. Prefere conversar antes? Mande uma mensagem — mostramos o GlotChat ao vivo ou tiramos qualquer dúvida."
     tg: "Fale com a gente no Telegram"
     points: ["Todos os recursos liberados", "Sem cartão nem pagamento", "Pronto em 10 minutos", "Suas conversas ficam no seu PC"]
   fab: "Dúvidas? Fale com a gente"
@@ -39,7 +39,7 @@ ui:
     tagline: "Todas as contas de WhatsApp e Telegram numa janela, cada cliente no idioma dele. Feito para empresas que vendem para outros países."
     trademark: "WhatsApp, Telegram, Messenger, Instagram e Discord são marcas de seus respectivos donos. O GlotChat é um produto independente e não é afiliado, endossado nem patrocinado por nenhum deles."
   og_kicker: "Tradutor multicontas de WhatsApp + Telegram para PC"
-  og_chips: ["WhatsApp + Telegram", "49 idiomas", "3 dias de teste grátis"]
+  og_chips: ["WhatsApp + Telegram", "49 idiomas", "7 dias de teste grátis"]
   app_description: "App de desktop para Windows que roda várias contas de WhatsApp e Telegram numa janela — cada uma isolada, com notificações e proxy próprios — e traduz mensagens, áudios e fotos sem internet em 49 idiomas, conferindo cada tradução antes do envio."
   feature_list: ["Várias contas de WhatsApp e Telegram numa janela", "Messenger, Instagram e Discord (beta)", "Sessão isolada e proxy opcional por conta", "Notificações por conta", "Tradução das conversas nos dois sentidos em 49 idiomas", "Conferência por retrotradução antes de enviar", "Preços e números verificados em cada tradução", "Transcrição e tradução de áudios com progresso", "Tradução do texto de fotos (OCR)", "Lista de palavras que não são traduzidas para marcas", "Modelos de resposta rápida", "Tradução sem internet no seu PC", "Interface em inglês e chinês"]
   msg:
@@ -58,7 +58,7 @@ ui:
 pages:
   home:
     title: "Tradutor de WhatsApp e Telegram multicontas para PC | GlotChat"
-    description: "Todas as suas contas de WhatsApp e Telegram numa janela no Windows. Conversas, áudios e fotos traduzidos sem internet em 49 idiomas. 3 dias grátis."
+    description: "Todas as suas contas de WhatsApp e Telegram numa janela no Windows. Conversas, áudios e fotos traduzidos sem internet em 49 idiomas. 7 dias grátis."
     keywords: "tradutor whatsapp pc, tradutor telegram, várias contas whatsapp pc, whatsapp multicontas, traduzir mensagens whatsapp, telegram várias contas"
     og_title: "GlotChat – Todas as suas contas de WhatsApp e Telegram numa janela, cada cliente no idioma dele"
     og_heading: "WhatsApp e Telegram numa janela. Cada cliente no idioma dele."
@@ -69,7 +69,7 @@ pages:
       eyebrow: "Novo na 1.3 — Telegram + tradução que você confere"
       h1: "Todo o seu WhatsApp e Telegram. <span class=\"grad\">Uma janela. Todos os idiomas.</span>"
       lead: "Use todos os seus números e contas de Telegram lado a lado no PC. Leia cada mensagem, áudio e foto em português — e responda no idioma do cliente sabendo exatamente o que ele vai ler."
-      micro: ["3 dias grátis — sem cartão nem pagamento", "Uma pessoa de verdade responde no Telegram", "A partir de 69 USDT por ano"]
+      micro: ["7 dias grátis — sem cartão nem pagamento", "Uma pessoa de verdade responde no Telegram", "A partir de 69 USDT por ano"]
       media_alt: "GlotChat traduzindo uma conversa de WhatsApp do espanhol para o português"
       floats:
       - ["↩", "Ele vai ler: “Sim, tamanho L em estoque”", "Cada resposta conferida antes de enviar"]
@@ -167,7 +167,7 @@ pages:
           arrow: true
           main: "Compra en GlotShop con el cupón SAVE20"
           notes: [["ok", "✓ “GlotShop” está na sua lista de não traduzir"]]
-      cta: "Teste a tradução grátis por 3 dias"
+      cta: "Teste a tradução grátis por 7 dias"
     - type: cards
       id: who
       who: true
@@ -192,23 +192,23 @@ pages:
       good: ["Contas de WhatsApp e Telegram numa janela, a um clique", "A tradução aparece sozinha embaixo de cada mensagem", "Você vê o que o cliente vai ler antes de enviar", "Áudios viram texto no seu idioma", "Tudo traduzido sem internet, no seu próprio PC"]
     - type: steps
       k: "Teste antes de pagar"
-      h: "Grátis por 3 dias. Pronto em 10 minutos."
+      h: "Grátis por 7 dias. Pronto em 10 minutos."
       items:
       - ["Baixe o GlotChat", "Pegue o instalador para Windows no nosso site e instale em cerca de um minuto — sem precisar de administrador."]
-      - ["Inicie o teste grátis com um clique", "Abra o GlotChat e clique em “Iniciar meu teste grátis de 3 dias”. Tudo é liberado na hora — sem pagamento, sem mensagem."]
+      - ["Inicie o teste grátis com um clique", "Abra o GlotChat e clique em “Iniciar meu teste grátis de 7 dias”. Tudo é liberado na hora — sem pagamento, sem mensagem."]
       - ["Gostou? Continue.", "Pague em USDT e receba sua chave anual. Suas contas e configurações ficam do jeito que estão — nada para configurar de novo."]
       cta: "Baixar e iniciar meu teste grátis"
     - type: plans
       k: "Preços"
       h: "Planos anuais simples. Teste grátis primeiro."
-      p: "Todo plano inclui todos os recursos, todos os apps e todas as atualizações. Comece com 3 dias grátis — pague só se gostar."
+      p: "Todo plano inclui todos os recursos, todos os apps e todas as atualizações. Comece com 7 dias grátis — pague só se gostar."
       more: "Comparar planos em detalhes"
       soft: false
     - type: faq
       k: "Perguntas frequentes"
       h: "Perguntas, respondidas"
       items:
-      - ["Existe teste grátis?", "Sim. Baixe o GlotChat, abra e clique em “Iniciar meu teste grátis de 3 dias” — tudo é liberado na hora, sem pagamento. Se gostar, você compra um plano e mantém todas as contas e configurações."]
+      - ["Existe teste grátis?", "Sim. Baixe o GlotChat, abra e clique em “Iniciar meu teste grátis de 7 dias” — tudo é liberado na hora, sem pagamento. Se gostar, você compra um plano e mantém todas as contas e configurações."]
       - ["Funciona com Telegram?", "Sim. Desde a versão 1.3 você pode adicionar contas de Telegram ao lado dos números de WhatsApp. Cada uma entra com QR code ou número de telefone, e as conversas são traduzidas nos dois sentidos, igual ao WhatsApp."]
       - ["É seguro para minhas contas?", "O GlotChat abre o WhatsApp Web e o Telegram Web oficiais para cada conta, numa sessão isolada — exatamente como um navegador, só que organizado. Ele nunca envia mensagens sozinho: tudo é enviado por você. Como em qualquer mensageiro, evite spam e envios em massa não solicitados."]
       - ["A tradução é boa?", "Muito boa para a conversa comercial do dia a dia — preços, pedidos, horários, perguntas. E você não precisa adivinhar: antes de enviar, o GlotChat mostra o que o cliente vai ler, confere cada número e oferece outras formas. Para contratos ou textos médicos, peça para uma pessoa revisar."]
@@ -223,15 +223,15 @@ pages:
 
   pricing:
     title: "Preços do GlotChat – Planos a partir de 69 USDT/ano, teste grátis"
-    description: "Planos do GlotChat: Starter 69, Pro 129, Business 249 USDT por ano. WhatsApp, Telegram e todos os recursos inclusos, 3 dias grátis, pagamento em USDT."
+    description: "Planos do GlotChat: Starter 69, Pro 129, Business 249 USDT por ano. WhatsApp, Telegram e todos os recursos inclusos, 7 dias grátis, pagamento em USDT."
     short: "Preços"
     icon: "💳"
-    og_heading: "Planos anuais simples. Todos os recursos. 3 dias grátis."
+    og_heading: "Planos anuais simples. Todos os recursos. 7 dias grátis."
     blocks:
       - type: hero
         k: "Preços"
         h1: "Planos anuais simples. <span class=\"grad\">Teste tudo grátis primeiro.</span>"
-        lead: "Um preço por ano, todos os recursos, todos os apps, todas as atualizações. Comece com 3 dias grátis — sem pagamento, sem cartão, nada para cancelar."
+        lead: "Um preço por ano, todos os recursos, todos os apps, todas as atualizações. Comece com 7 dias grátis — sem pagamento, sem cartão, nada para cancelar."
         cta2: ["#pricing", "Ver os planos"]
       - type: plans
         soft: false
@@ -277,7 +277,7 @@ pages:
         k: "Dúvidas de pagamento"
         h: "Pagar, renovar e fazer upgrade"
         items:
-          - ["Como funciona o teste grátis?", "Baixe e instale o GlotChat e clique em “Iniciar meu teste grátis de 3 dias” no app. O teste começa na hora com tudo liberado. Não precisa de dados de pagamento, e há um teste grátis por computador."]
+          - ["Como funciona o teste grátis?", "Baixe e instale o GlotChat e clique em “Iniciar meu teste grátis de 7 dias” no app. O teste começa na hora com tudo liberado. Não precisa de dados de pagamento, e há um teste grátis por computador."]
           - ["Como pago?", "Em USDT na rede TRC20, BEP20 ou ERC20. Enviamos o endereço de pagamento pelo Telegram e sua chave anual assim que o pagamento chega."]
           - ["As contas de Telegram contam separado?", "Não. Todas as contas contam juntas: um plano Pro de 15 contas pode ser, por exemplo, 10 números de WhatsApp e 5 contas de Telegram."]
           - ["O que acontece depois de um ano?", "Você renova pelo mesmo preço e continua sem interrupção. Suas contas, conversas e configurações ficam no seu PC o tempo todo."]
@@ -353,7 +353,7 @@ pages:
 
   telegram-translator:
     title: "Tradutor de Telegram para PC – Traduza cada conversa sozinho"
-    description: "Traduza conversas do Telegram nos dois sentidos no Windows: mensagens embaixo do original e suas respostas antes de enviar. 49 idiomas, offline. 3 dias grátis."
+    description: "Traduza conversas do Telegram nos dois sentidos no Windows: mensagens embaixo do original e suas respostas antes de enviar. 49 idiomas, offline. 7 dias grátis."
     keywords: "tradutor telegram, traduzir mensagens do telegram, telegram tradução automática, tradutor telegram pc"
     short: "Tradutor de Telegram"
     icon: "✈️"
@@ -578,7 +578,7 @@ pages:
         items:
           - ["O GlotChat é melhor que uma extensão de tradução?", "Para uma conta e tradução de vez em quando, uma extensão pode bastar. O GlotChat acrescenta muitas contas de WhatsApp e Telegram numa janela, tradução de áudios e fotos, conferência das suas respostas antes de enviar, e traduz offline em vez de mandar suas conversas para um serviço web."]
           - ["Por que pagar se o WhatsApp Web e o Telegram Desktop são grátis?", "Eles mostram uma conta por vez e não traduzem suas respostas. Quando você tem muitas contas e fala com clientes em outros idiomas, o tempo perdido trocando e copiando logo custa mais que um plano do GlotChat."]
-          - ["Posso testar o GlotChat antes de decidir?", "Sim — 3 dias com todos os recursos, grátis. Compare com o que você usa hoje nas suas contas reais."]
+          - ["Posso testar o GlotChat antes de decidir?", "Sim — 7 dias com todos os recursos, grátis. Compare com o que você usa hoje nas suas contas reais."]
       - type: related
         k: "Detalhes"
         h: "Veja de perto"
@@ -586,16 +586,16 @@ pages:
 
   download:
     title: "Baixar GlotChat para Windows – Tradutor de WhatsApp e Telegram"
-    description: "Baixe o GlotChat grátis para Windows 10 e 11: contas de WhatsApp e Telegram numa janela com tradução offline. 3 dias de teste, sem cartão."
+    description: "Baixe o GlotChat grátis para Windows 10 e 11: contas de WhatsApp e Telegram numa janela com tradução offline. 7 dias de teste, sem cartão."
     short: "Baixar"
     icon: "⬇️"
-    og_heading: "Baixe o GlotChat para Windows — 3 dias de teste grátis"
+    og_heading: "Baixe o GlotChat para Windows — 7 dias de teste grátis"
     blocks:
     - type: dl_hero
       k: "Download grátis · Windows 10 e 11"
       h1: "Baixe o GlotChat <span class=\"grad\">para Windows</span>"
-      lead: "Todas as suas contas de WhatsApp e Telegram numa janela, cada mensagem traduzida no seu PC. Instale em cerca de um minuto e teste todos os recursos grátis por 3 dias."
-      card: ["Contas de WhatsApp + Telegram", "Tradução de texto, áudio e fotos", "Conferência “Ele vai ler” antes de enviar", "3 dias de teste grátis, sem pagamento"]
+      lead: "Todas as suas contas de WhatsApp e Telegram numa janela, cada mensagem traduzida no seu PC. Instale em cerca de um minuto e teste todos os recursos grátis por 7 dias."
+      card: ["Contas de WhatsApp + Telegram", "Tradução de texto, áudio e fotos", "Conferência “Ele vai ler” antes de enviar", "7 dias de teste grátis, sem pagamento"]
     - type: dl_steps
       k: "Guia de instalação"
       h: "Pronto em 4 passos fáceis"
@@ -603,7 +603,7 @@ pages:
       items:
       - {h: "Baixe o instalador", p: "Clique no botão verde. O instalador é salvo na pasta <b>Downloads</b>. Quando terminar, clique em <b>Abrir arquivo</b>.", tip: "No celular? Abra esta página no seu computador com Windows — o GlotChat é um app de desktop.", mock: download}
       - {h: "Instale — e clique em “Executar assim mesmo” se o Windows pedir", p: "Dê dois cliques no arquivo e siga o instalador (cerca de 1 minuto, sem administrador). Se aparecer uma janela azul <b>“O Windows protegeu o computador”</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.", tip: "É normal com programas novos: o Windows SmartScreen ainda não viu o GlotChat muitas vezes. O arquivo é seguro — você pode conferir o SHA-256 abaixo.", mock: smartscreen}
-      - {h: "Inicie seu teste grátis de 3 dias — um clique", p: "Abra o GlotChat e clique em <b>Iniciar meu teste grátis de 3 dias</b>. Tudo é liberado na hora, e o GlotChat se atualiza sozinho para a versão mais nova em um minuto.", tip: "Um teste grátis por computador. Sem cartão, sem pagamento, nada para cancelar.", mock: activate}
+      - {h: "Inicie seu teste grátis de 7 dias — um clique", p: "Abra o GlotChat e clique em <b>Iniciar meu teste grátis de 7 dias</b>. Tudo é liberado na hora, e o GlotChat se atualiza sozinho para a versão mais nova em um minuto.", tip: "Um teste grátis por computador. Sem cartão, sem pagamento, nada para cancelar.", mock: activate}
       - {h: "Adicione suas contas de WhatsApp e Telegram", p: "Adicione uma conta e leia o QR code com o celular (WhatsApp → <b>Dispositivos conectados</b>, ou Telegram → <b>Configurações → Dispositivos</b>). Repita para cada conta. Mensagens, áudios e fotos são traduzidos na hora.", mock: accounts}
     - type: dl_specs
       k: "Antes de instalar"
@@ -618,10 +618,10 @@ pages:
       h: "Dúvidas sobre baixar e instalar"
       open_first: true
       items:
-      - ["O GlotChat é grátis para baixar?", "Sim. O download é grátis e o teste de 3 dias libera todos os recursos sem pagamento. Depois do teste, os planos começam em 69 USDT por ano."]
+      - ["O GlotChat é grátis para baixar?", "Sim. O download é grátis e o teste de 7 dias libera todos os recursos sem pagamento. Depois do teste, os planos começam em 69 USDT por ano."]
       - ["Por que o Windows diz “O Windows protegeu o computador”?", "O Windows SmartScreen mostra esse aviso para apps novos que ainda não viu muitas vezes. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Baixe o GlotChat sempre desta página — você pode comparar o SHA-256 para ter certeza de que é o arquivo original."]
       - ["Por que a versão do instalador é mais antiga que a do GlotChat mais novo?", "O instalador fica numa versão que o Windows já reconhece, para instalar sem problemas em qualquer PC. Um minuto depois de abrir o GlotChat, ele se atualiza sozinho para a versão mais nova (com Telegram e todas as novidades)."]
-      - ["Preciso de chave de licença?", "Para o teste não: clique em <b>Iniciar meu teste grátis de 3 dias</b> no app e ele começa na hora. Quando comprar um plano, enviamos uma chave anual pelo Telegram — cole em <b>Já tenho uma chave de licença</b>."]
+      - ["Preciso de chave de licença?", "Para o teste não: clique em <b>Iniciar meu teste grátis de 7 dias</b> no app e ele começa na hora. Quando comprar um plano, enviamos uma chave anual pelo Telegram — cole em <b>Já tenho uma chave de licença</b>."]
       - ["Tem versão para Mac, Android ou iPhone?", "Por enquanto não. O GlotChat é um app de desktop para Windows 10 e 11. Suas contas continuam nos celulares — o GlotChat as conecta ao PC como o WhatsApp Web faz."]
       - ["Como desinstalo o GlotChat?", "Abra <b>Configurações → Aplicativos → Aplicativos instalados</b> no Windows, encontre o GlotChat e clique em <b>Desinstalar</b>."]
       - ["O download parou ou está lento. O que faço?", "Clique de novo no botão de download. Se ainda não funcionar, fale com a gente no Telegram e enviamos o instalador direto."]

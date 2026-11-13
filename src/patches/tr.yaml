@@ -1,7 +1,7 @@
 ui:
   contact: "Bize yazın"
   promo_html: "<b>Yeni: GlotChat 1.3 Telegram'ı ekliyor</b> — ve göndermeden önce kontrol edebileceğiniz çeviri."
-  promo_go: "3 gün ücretsiz deneyin →"
+  promo_go: "7 gün ücretsiz deneyin →"
   apps_label: "Desteklenenler"
   beta: "Beta"
   nav:
@@ -13,8 +13,8 @@ ui:
     tg_translator_s: "Her dilde okuyun ve yanıtlayın"
     tg_accounts: "Birden fazla Telegram hesabı"
     tg_accounts_s: "Tüm Telegram hesaplarınız yan yana"
-  cta_trial: "Ücretsiz indir — 3 gün deneme"
-  micro: ["3 gün ücretsiz — kart yok, ödeme yok", "Telegram'da gerçek kişi yanıtlar", "Yılda 69 USDT'den başlayan fiyatlar"]
+  cta_trial: "Ücretsiz indir — 7 gün deneme"
+  micro: ["7 gün ücretsiz — kart yok, ödeme yok", "Telegram'da gerçek kişi yanıtlar", "Yılda 69 USDT'den başlayan fiyatlar"]
   trust: ["Resmi WhatsApp Web ve Telegram içinde", "Sohbetler bilgisayarınızda kalır", "Windows 10 ve 11", "49 dil, çevrimdışı"]
   faq_more: "Başka bir sorunuz mu var? Telegram'da gerçek bir kişiye sorun:"
   finder:
@@ -25,9 +25,9 @@ ui:
     apps: "WhatsApp, Telegram + beta uygulamalar"
   paynote: "Ödeme USDT ile (TRC20 · BEP20 · ERC20). Satın almadan önce sorunuz mu var? Sorun — Telegram'da gerçek bir kişi yanıtlar."
   final:
-    k: "3 gün ücretsiz"
+    k: "7 gün ücretsiz"
     h: "Bir sonraki yabancı müşteriniz şu an yazıyor."
-    p: "GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp ile Telegram hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım."
+    p: "GlotChat'i indirin, “7 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp ile Telegram hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım."
     tg: "Telegram'dan bize yazın"
     points: ["Tüm özellikler açık", "Kart yok, ödeme yok", "10 dakikada kurulum", "Sohbetleriniz bilgisayarınızda kalır"]
   fab: "Sorunuz mu var? Bize yazın"
@@ -39,7 +39,7 @@ ui:
     tagline: "Tüm WhatsApp ve Telegram hesapları tek pencerede, her müşteri kendi dilinde. Sınır ötesi satış yapan işletmeler için."
     trademark: "WhatsApp, Telegram, Messenger, Instagram ve Discord ilgili sahiplerinin ticari markalarıdır. GlotChat bağımsız bir üründür; hiçbiriyle bağlantılı değildir, onlar tarafından onaylanmamış veya desteklenmemiştir."
   og_kicker: "PC için WhatsApp + Telegram çoklu hesap çevirmeni"
-  og_chips: ["WhatsApp + Telegram", "49 dil", "3 gün ücretsiz deneme"]
+  og_chips: ["WhatsApp + Telegram", "49 dil", "7 gün ücretsiz deneme"]
   app_description: "Birçok WhatsApp ve Telegram hesabını tek pencerede çalıştıran Windows masaüstü uygulaması — her biri yalıtılmış, kendi bildirimleri ve proxy'siyle — mesajları, sesli mesajları ve fotoğrafları 49 dilde çevrimdışı çevirir, her çeviriyi göndermeden önce kontrol ettirir."
   feature_list: ["Tek pencerede birden fazla WhatsApp ve Telegram hesabı", "Messenger, Instagram ve Discord (beta)", "Hesap başına yalıtılmış oturum ve isteğe bağlı proxy", "Hesap başına bildirimler", "49 dilde çift yönlü sohbet çevirisi", "Göndermeden önce geri çeviri kontrolü", "Her çeviride fiyat ve rakam kontrolü", "İlerleme gösteren sesli mesaj yazıya dökme ve çeviri", "Fotoğraftaki metni çevirme (OCR)", "Marka adları için çevrilmeyecekler listesi", "Hızlı yanıt şablonları", "Bilgisayarınızda çevrimdışı çeviri", "İngilizce ve Çince arayüz"]
   msg:
@@ -58,7 +58,7 @@ ui:
 pages:
   home:
     title: "PC için WhatsApp ve Telegram Çoklu Hesap Çevirmeni | GlotChat"
-    description: "Tüm WhatsApp ve Telegram hesaplarınız Windows'ta tek pencerede. Sohbetler, sesli mesajlar ve fotoğraflar 49 dilde çevrimdışı çevrilir. 3 gün ücretsiz."
+    description: "Tüm WhatsApp ve Telegram hesaplarınız Windows'ta tek pencerede. Sohbetler, sesli mesajlar ve fotoğraflar 49 dilde çevrimdışı çevrilir. 7 gün ücretsiz."
     keywords: "whatsapp çevirmen, telegram çevirmen, birden fazla whatsapp hesabı, whatsapp çoklu hesap, whatsapp mesaj çevirme, telegram çoklu hesap"
     og_title: "GlotChat – Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her müşteri kendi dilinde"
     og_heading: "WhatsApp ve Telegram tek pencerede. Her müşteri kendi dilinde."
@@ -69,7 +69,7 @@ pages:
       eyebrow: "1.3'te yeni — Telegram + kontrol edebileceğiniz çeviri"
       h1: "Tüm WhatsApp ve Telegram'ınız. <span class=\"grad\">Tek pencere. Her dil.</span>"
       lead: "Tüm numaralarınızı ve Telegram hesaplarınızı bilgisayarınızda yan yana kullanın. Her mesajı, sesli mesajı ve fotoğrafı Türkçe okuyun — müşterinin dilinde yanıtlayın ve ne okuyacağını tam olarak bilin."
-      micro: ["3 gün ücretsiz — kart yok, ödeme yok", "Telegram'da gerçek kişi yanıtlar", "Yılda 69 USDT'den başlayan fiyatlar"]
+      micro: ["7 gün ücretsiz — kart yok, ödeme yok", "Telegram'da gerçek kişi yanıtlar", "Yılda 69 USDT'den başlayan fiyatlar"]
       media_alt: "GlotChat bir WhatsApp sohbetini İspanyolcadan Türkçeye çeviriyor"
       floats:
       - ["↩", "Okuyacağı: “Evet, L beden stokta”", "Her yanıt göndermeden önce kontrol edilir"]
@@ -167,7 +167,7 @@ pages:
           arrow: true
           main: "Order from GlotShop with the code SAVE20"
           notes: [["ok", "✓ “GlotShop” çevrilmeyecekler listenizde"]]
-      cta: "Çeviriyi 3 gün ücretsiz deneyin"
+      cta: "Çeviriyi 7 gün ücretsiz deneyin"
     - type: cards
       id: who
       who: true
@@ -192,23 +192,23 @@ pages:
       good: ["WhatsApp ve Telegram hesapları tek pencerede, bir tık uzakta", "Çeviri her mesajın altında otomatik görünür", "Göndermeden önce müşterinin ne okuyacağını görürsünüz", "Sesli mesajlar kendi dilinizde metne dönüşür", "Her şey kendi bilgisayarınızda çevrimdışı çevrilir"]
     - type: steps
       k: "Ödemeden önce deneyin"
-      h: "3 gün ücretsiz. 10 dakikada hazır."
+      h: "7 gün ücretsiz. 10 dakikada hazır."
       items:
       - ["GlotChat'i indirin", "Windows kurulum dosyasını sitemizden alın ve yaklaşık bir dakikada kurun — yönetici yetkisi gerekmez."]
-      - ["Ücretsiz denemenizi tek tıkla başlatın", "GlotChat'i açın ve “3 günlük ücretsiz denememi başlat”a tıklayın. Tüm özellikler hemen açılır — ödeme yok, mesaj yok."]
+      - ["Ücretsiz denemenizi tek tıkla başlatın", "GlotChat'i açın ve “7 günlük ücretsiz denememi başlat”a tıklayın. Tüm özellikler hemen açılır — ödeme yok, mesaj yok."]
       - ["Beğendiniz mi? Devam edin.", "USDT ile ödeyin ve yıllık anahtarınızı alın. Hesaplarınız ve ayarlarınız olduğu gibi kalır — yeniden kurulum yok."]
       cta: "İndir ve ücretsiz denememi başlat"
     - type: plans
       k: "Fiyatlar"
       h: "Basit yıllık paketler. Önce ücretsiz deneyin."
-      p: "Her paket tüm özellikleri, tüm uygulamaları ve tüm güncellemeleri içerir. 3 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin."
+      p: "Her paket tüm özellikleri, tüm uygulamaları ve tüm güncellemeleri içerir. 7 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin."
       more: "Paketleri ayrıntılı karşılaştırın"
       soft: false
     - type: faq
       k: "SSS"
       h: "Sorular ve yanıtlar"
       items:
-      - ["Ücretsiz deneme var mı?", "Evet. GlotChat'i indirin, açın ve “3 günlük ücretsiz denememi başlat”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesaplarınızı ve ayarlarınızı korursunuz."]
+      - ["Ücretsiz deneme var mı?", "Evet. GlotChat'i indirin, açın ve “7 günlük ücretsiz denememi başlat”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesaplarınızı ve ayarlarınızı korursunuz."]
       - ["Telegram ile çalışıyor mu?", "Evet. 1.3 sürümünden beri WhatsApp numaralarınızın yanına Telegram hesapları ekleyebilirsiniz. Her biri QR kodla veya telefon numarasıyla giriş yapar; sohbetler WhatsApp'taki gibi iki yönlü çevrilir."]
       - ["Hesaplarım için güvenli mi?", "GlotChat her hesap için resmi WhatsApp Web ve Telegram Web'i kendi yalıtılmış oturumunda açar — tıpkı bir tarayıcı gibi, sadece düzenli. Kendi başına mesaj göndermez: her şeyi siz gönderirsiniz. Her mesajlaşma uygulamasında olduğu gibi spam ve toplu istenmeyen mesajlardan kaçının."]
       - ["Çeviri ne kadar iyi?", "Günlük iş yazışmaları için çok iyi — fiyatlar, siparişler, randevular, sorular. Üstelik tahmin etmeniz gerekmez: göndermeden önce GlotChat müşterinin ne okuyacağını gösterir, her rakamı kontrol eder ve başka ifadeler sunar. Sözleşme veya tıbbi metinleri bir uzmana kontrol ettirin."]
@@ -223,15 +223,15 @@ pages:
 
   pricing:
     title: "GlotChat Fiyatları – Yılda 69 USDT'den, Ücretsiz Deneme"
-    description: "GlotChat paketleri: Starter 69, Pro 129, Business 249 USDT/yıl. WhatsApp, Telegram ve tüm özellikler dahil, 3 gün ücretsiz deneme, USDT ile ödeme."
+    description: "GlotChat paketleri: Starter 69, Pro 129, Business 249 USDT/yıl. WhatsApp, Telegram ve tüm özellikler dahil, 7 gün ücretsiz deneme, USDT ile ödeme."
     short: "Fiyatlar"
     icon: "💳"
-    og_heading: "Basit yıllık paketler. Tüm özellikler. 3 gün ücretsiz deneme."
+    og_heading: "Basit yıllık paketler. Tüm özellikler. 7 gün ücretsiz deneme."
     blocks:
       - type: hero
         k: "Fiyatlar"
         h1: "Basit yıllık paketler. <span class=\"grad\">Önce tüm özellikleri ücretsiz deneyin.</span>"
-        lead: "Yılda tek fiyat; tüm özellikler, tüm uygulamalar, tüm güncellemeler. 3 günlük ücretsiz denemeyle başlayın — ödeme yok, kart yok, iptal edilecek bir şey yok."
+        lead: "Yılda tek fiyat; tüm özellikler, tüm uygulamalar, tüm güncellemeler. 7 günlük ücretsiz denemeyle başlayın — ödeme yok, kart yok, iptal edilecek bir şey yok."
         cta2: ["#pricing", "Paketleri görün"]
       - type: plans
         soft: false
@@ -277,7 +277,7 @@ pages:
         k: "Ödeme soruları"
         h: "Ödeme, yenileme ve yükseltme"
         items:
-          - ["Ücretsiz deneme nasıl çalışır?", "GlotChat'i indirip kurun, ardından uygulamada “3 günlük ücretsiz denememi başlat”a tıklayın. Deneme tüm özelliklerle hemen başlar. Ödeme bilgisi gerekmez; bilgisayar başına bir ücretsiz deneme vardır."]
+          - ["Ücretsiz deneme nasıl çalışır?", "GlotChat'i indirip kurun, ardından uygulamada “7 günlük ücretsiz denememi başlat”a tıklayın. Deneme tüm özelliklerle hemen başlar. Ödeme bilgisi gerekmez; bilgisayar başına bir ücretsiz deneme vardır."]
           - ["Nasıl öderim?", "TRC20, BEP20 veya ERC20 ağında USDT ile. Ödeme adresini Telegram'dan göndeririz, ödeme gelir gelmez yıllık anahtarınızı iletiriz."]
           - ["Telegram hesapları ayrı mı sayılır?", "Hayır. Tüm hesaplar birlikte sayılır: örneğin 15 hesaplık Pro paketi 10 WhatsApp numarası ve 5 Telegram hesabı olabilir."]
           - ["Bir yıl sonra ne olur?", "Aynı fiyattan yenilersiniz ve kesintisiz çalışmaya devam edersiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız her zaman bilgisayarınızda kalır."]
@@ -353,7 +353,7 @@ pages:
 
   telegram-translator:
     title: "PC için Telegram Çevirmeni – Her Sohbeti Otomatik Çevirin"
-    description: "Telegram sohbetlerini Windows'ta iki yönlü çevirin: gelen mesajlar orijinalin altında, yanıtlarınız göndermeden önce. 49 dil, çevrimdışı. 3 gün ücretsiz."
+    description: "Telegram sohbetlerini Windows'ta iki yönlü çevirin: gelen mesajlar orijinalin altında, yanıtlarınız göndermeden önce. 49 dil, çevrimdışı. 7 gün ücretsiz."
     keywords: "telegram çevirmen, telegram mesaj çevirme, telegram otomatik çeviri, pc telegram çeviri"
     short: "Telegram çevirmeni"
     icon: "✈️"
@@ -578,7 +578,7 @@ pages:
         items:
           - ["GlotChat bir çeviri eklentisinden daha mı iyi?", "Tek hesap ve ara sıra çeviri için bir eklenti yetebilir. GlotChat tek pencerede çok sayıda WhatsApp ve Telegram hesabı, sesli mesaj ve fotoğraf çevirisi, göndermeden önce yanıt kontrolü ekler ve sohbetlerinizi bir web hizmetine göndermek yerine çevrimdışı çevirir."]
           - ["WhatsApp Web ve Telegram Desktop ücretsizken neden ödeyeyim?", "İkisi de aynı anda bir hesap gösterir ve yanıtlarınızı çevirmez. Çok hesap yönetip başka dillerde müşterilerle konuştuğunuzda, geçişlerde ve kopyala-yapıştırda kaybedilen zaman bir GlotChat paketinden hızla daha pahalıya gelir."]
-          - ["Karar vermeden önce deneyebilir miyim?", "Evet — tüm özelliklerle 3 gün ücretsiz. Gerçek hesaplarınızda mevcut düzeninizle karşılaştırın."]
+          - ["Karar vermeden önce deneyebilir miyim?", "Evet — tüm özelliklerle 7 gün ücretsiz. Gerçek hesaplarınızda mevcut düzeninizle karşılaştırın."]
       - type: related
         k: "Ayrıntılar"
         h: "Yakından bakın"
@@ -586,16 +586,16 @@ pages:
 
   download:
     title: "GlotChat'i Windows için İndirin – WhatsApp ve Telegram Çevirmeni"
-    description: "GlotChat'i Windows 10 ve 11 için ücretsiz indirin: WhatsApp ve Telegram hesapları tek pencerede, çevrimdışı çeviriyle. 3 gün ücretsiz deneme, kart yok."
+    description: "GlotChat'i Windows 10 ve 11 için ücretsiz indirin: WhatsApp ve Telegram hesapları tek pencerede, çevrimdışı çeviriyle. 7 gün ücretsiz deneme, kart yok."
     short: "İndir"
     icon: "⬇️"
-    og_heading: "GlotChat'i Windows için indirin — 3 gün ücretsiz deneme"
+    og_heading: "GlotChat'i Windows için indirin — 7 gün ücretsiz deneme"
     blocks:
     - type: dl_hero
       k: "Ücretsiz indirme · Windows 10 ve 11"
       h1: "GlotChat'i <span class=\"grad\">Windows için indirin</span>"
-      lead: "Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurun ve tüm özellikleri 3 gün ücretsiz deneyin."
-      card: ["WhatsApp + Telegram hesapları", "Metin, ses ve fotoğraf çevirisi", "Göndermeden önce “Okuyacağı” kontrolü", "3 gün ücretsiz deneme, ödeme yok"]
+      lead: "Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurun ve tüm özellikleri 7 gün ücretsiz deneyin."
+      card: ["WhatsApp + Telegram hesapları", "Metin, ses ve fotoğraf çevirisi", "Göndermeden önce “Okuyacağı” kontrolü", "7 gün ücretsiz deneme, ödeme yok"]
     - type: dl_steps
       k: "Kurulum rehberi"
       h: "4 kolay adımda hazır"
@@ -603,7 +603,7 @@ pages:
       items:
       - {h: "Kurulum dosyasını indirin", p: "Yeşil düğmeye tıklayın. Kurulum dosyası <b>İndirilenler</b> klasörüne kaydedilir. Bitince <b>Dosyayı aç</b>'a tıklayın.", tip: "Telefonda mısınız? Bu sayfayı Windows bilgisayarınızda açın — GlotChat bir masaüstü uygulamasıdır.", mock: download}
       - {h: "Kurun — Windows sorarsa “Yine de çalıştır”a tıklayın", p: "Dosyaya çift tıklayıp kurulumu izleyin (yaklaşık 1 dakika, yönetici yetkisi gerekmez). Mavi bir pencere <b>“Windows bilgisayarınızı korudu”</b> derse <b>Ek bilgi</b>'ye, ardından <b>Yine de çalıştır</b>'a tıklayın.", tip: "Yeni yazılımlarda bu normaldir: Windows SmartScreen GlotChat'i henüz çok görmedi. Dosya güvenlidir — SHA-256 sağlama değerini aşağıda kontrol edebilirsiniz.", mock: smartscreen}
-      - {h: "3 günlük ücretsiz denemenizi tek tıkla başlatın", p: "GlotChat'i açın ve <b>3 günlük ücretsiz denememi başlat</b>'a tıklayın. Tüm özellikler hemen açılır ve GlotChat bir dakika içinde kendini en yeni sürüme günceller.", tip: "Bilgisayar başına bir ücretsiz deneme. Kart yok, ödeme yok, iptal edilecek bir şey yok.", mock: activate}
+      - {h: "7 günlük ücretsiz denemenizi tek tıkla başlatın", p: "GlotChat'i açın ve <b>7 günlük ücretsiz denememi başlat</b>'a tıklayın. Tüm özellikler hemen açılır ve GlotChat bir dakika içinde kendini en yeni sürüme günceller.", tip: "Bilgisayar başına bir ücretsiz deneme. Kart yok, ödeme yok, iptal edilecek bir şey yok.", mock: activate}
       - {h: "WhatsApp ve Telegram hesaplarınızı ekleyin", p: "Bir hesap ekleyin ve QR kodu telefonunuzla okutun (WhatsApp → <b>Bağlı cihazlar</b> veya Telegram → <b>Ayarlar → Cihazlar</b>). Her hesap için tekrarlayın. Mesajlar, sesli mesajlar ve fotoğraflar hemen çevrilir.", mock: accounts}
     - type: dl_specs
       k: "Kurmadan önce"
@@ -618,10 +618,10 @@ pages:
       h: "İndirme ve kurulum hakkında sorular"
       open_first: true
       items:
-      - ["GlotChat'i indirmek ücretsiz mi?", "Evet. İndirme ücretsizdir ve 3 günlük deneme tüm özellikleri ödemesiz açar. Denemeden sonra paketler yılda 69 USDT'den başlar."]
+      - ["GlotChat'i indirmek ücretsiz mi?", "Evet. İndirme ücretsizdir ve 7 günlük deneme tüm özellikleri ödemesiz açar. Denemeden sonra paketler yılda 69 USDT'den başlar."]
       - ["Windows neden “Windows bilgisayarınızı korudu” diyor?", "Windows SmartScreen bu uyarıyı henüz çok görmediği yeni uygulamalar için gösterir. <b>Ek bilgi</b>'ye, ardından <b>Yine de çalıştır</b>'a tıklayın. GlotChat'i her zaman bu sayfadan indirin — dosyanın orijinal olduğundan emin olmak için SHA-256 değerini karşılaştırabilirsiniz."]
       - ["Kurulum dosyasının sürümü neden en yeni GlotChat'ten eski?", "Kurulum dosyası Windows'un zaten güvendiği bir sürümde kalır, böylece her yerde sorunsuz kurulur. GlotChat'i başlattıktan bir dakika sonra kendini en yeni sürüme günceller (Telegram ve tüm yeni özelliklerle)."]
-      - ["Lisans anahtarı gerekir mi?", "Deneme için gerekmez: uygulamada <b>3 günlük ücretsiz denememi başlat</b>'a tıklayın, hemen başlar. Paket satın aldığınızda yıllık anahtarı Telegram'dan göndeririz — <b>Zaten bir lisans anahtarım var</b> bölümüne yapıştırın."]
+      - ["Lisans anahtarı gerekir mi?", "Deneme için gerekmez: uygulamada <b>7 günlük ücretsiz denememi başlat</b>'a tıklayın, hemen başlar. Paket satın aldığınızda yıllık anahtarı Telegram'dan göndeririz — <b>Zaten bir lisans anahtarım var</b> bölümüne yapıştırın."]
       - ["Mac, Android veya iPhone sürümü var mı?", "Şu an yok. GlotChat, Windows 10 ve 11 için bir masaüstü uygulamasıdır. Hesaplarınız telefonlarınızda kalır — GlotChat onları WhatsApp Web gibi bilgisayarınıza bağlar."]
       - ["GlotChat'i nasıl kaldırırım?", "Windows <b>Ayarlar → Uygulamalar → Yüklü uygulamalar</b>'ı açın, GlotChat'i bulun ve <b>Kaldır</b>'a tıklayın."]
       - ["İndirme durdu veya yavaş. Ne yapabilirim?", "İndirme düğmesine tekrar tıklayın. Yine olmazsa Telegram'dan bize yazın, kurulum dosyasını doğrudan gönderelim."]

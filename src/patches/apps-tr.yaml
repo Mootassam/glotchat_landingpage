@@ -16,11 +16,11 @@ ui:
   plan_f:
     apps: "WhatsApp, Telegram, Messenger, Instagram, Discord"
   final:
-    p: "GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım."
+    p: "GlotChat'i indirin, “7 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım."
   footer:
     tagline: "WhatsApp, Telegram, Messenger, Instagram ve Discord tek pencerede, her müşteri kendi dilinde. Sınır ötesi satış yapan işletmeler için."
   og_kicker: "PC için WhatsApp, Telegram, Messenger, Instagram ve Discord çevirmeni"
-  og_chips: ["5 uygulama, tek pencere", "49 dil", "3 gün ücretsiz deneme"]
+  og_chips: ["5 uygulama, tek pencere", "49 dil", "7 gün ücretsiz deneme"]
   app_description: "Birçok WhatsApp, Telegram, Messenger, Instagram ve Discord hesabını tek pencerede çalıştıran Windows uygulaması — her hesap yalıtılmış, kendi bildirimleri ve proxy'si ile — sohbetleri 49 dilde bilgisayarınızda çevrimdışı çevirir (WhatsApp ve Telegram'da sesli mesajlar ve fotoğraflar da), her çeviriyi göndermeden önce kontrol eder."
   feature_first: "Birden fazla WhatsApp, Telegram, Messenger, Instagram ve Discord hesabı tek pencerede"
   msg:
@@ -31,7 +31,7 @@ ui:
 
 home:
   title: "PC için WhatsApp ve Telegram Çoklu Hesap Çevirmeni | GlotChat"
-  description: "WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınız Windows'ta tek pencerede. Her sohbet 49 dilde çevrimdışı çevrilir. 3 gün ücretsiz."
+  description: "WhatsApp, Telegram, Messenger, Instagram ve Discord hesaplarınız Windows'ta tek pencerede. Her sohbet 49 dilde çevrimdışı çevrilir. 7 gün ücretsiz."
   keywords: "whatsapp çevirmen, telegram çevirmen, whatsapp çoklu hesap, telegram çoklu hesap, messenger çevirmen, instagram dm çeviri, discord çevirmen, hepsi bir arada mesajlaşma"
   og_title: "GlotChat – WhatsApp, Telegram, Messenger, Instagram ve Discord tek pencerede, her müşteri kendi dilinde"
   og_heading: "Tüm mesajlaşma uygulamalarınız tek pencerede. Her müşteri kendi dilinde."
@@ -132,7 +132,7 @@ pages:
 
   messenger-translator:
     title: "PC için Facebook Messenger Çevirmeni ve Çoklu Hesap"
-    description: "Facebook Messenger sohbetlerini Windows'ta iki yönlü çevirin ve birkaç Messenger hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz."
+    description: "Facebook Messenger sohbetlerini Windows'ta iki yönlü çevirin ve birkaç Messenger hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz."
     keywords: "messenger çevirmen, facebook messenger çeviri, messenger mesaj çevirme, birden fazla messenger hesabı, facebook çoklu hesap pc, messenger otomatik çeviri"
     short: "Messenger çevirmeni"
     icon: "💬"
@@ -188,7 +188,7 @@ pages:
 
   instagram-dm-translator:
     title: "PC için Instagram DM Çevirmeni ve Çoklu Instagram Hesabı"
-    description: "Instagram DM'lerini Windows'ta iki yönlü çevirin ve birkaç Instagram hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz deneme."
+    description: "Instagram DM'lerini Windows'ta iki yönlü çevirin ve birkaç Instagram hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz deneme."
     keywords: "instagram dm çeviri, instagram çevirmen, instagram mesaj çevirme, birden fazla instagram hesabı pc, instagram dm bilgisayar, instagram çoklu hesap"
     short: "Instagram DM çevirmeni"
     icon: "📸"
@@ -244,7 +244,7 @@ pages:
 
   discord-translator:
     title: "PC için Discord Çevirmeni ve Çoklu Discord Hesabı"
-    description: "Discord mesajlarını sunucularda ve DM'lerde Windows'ta çevirin, birkaç Discord hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz."
+    description: "Discord mesajlarını sunucularda ve DM'lerde Windows'ta çevirin, birkaç Discord hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz."
     keywords: "discord çevirmen, discord mesaj çevirme, discord otomatik çeviri, birden fazla discord hesabı, discord çoklu hesap pc"
     short: "Discord çevirmeni"
     icon: "🎮"

@@ -7,7 +7,7 @@ ui:
   lang_label: 語言
   close: 關閉
   contact: 聯絡我們
-  promo_html: "<b>所有聊天，一個視窗，任何語言都能聊。</b>免費試用 3 天，無需信用卡。"
+  promo_html: "<b>所有聊天，一個視窗，任何語言都能聊。</b>免費試用 7 天，無需信用卡。"
   promo_go: "免費下載 →"
   nav:
     product: 產品
@@ -40,15 +40,15 @@ ui:
     safe: "安全嗎？"
     wab: "WhatsApp Business 多開"
     pairs: "熱門語言組合"
-  cta_trial: 免費下載 · 試用 3 天
+  cta_trial: 免費下載 · 試用 7 天
   cta_demo: 觀看演示
   cta_live: 預約線上演示
   expand: 全屏觀看
   demo_label: GlotChat 演示
   micro:
-  - 免費試用 3 天，無需付款
+  - 免費試用 7 天，無需付款
   - Telegram 真人客服回覆
-  - 每年 69 USDT 起
+  - 每月 $9 起
   trust:
   - 內建官方 WhatsApp 網頁版和 Telegram
   - 聊天記錄只在你的電腦上
@@ -72,7 +72,7 @@ ui:
   finder:
     q: 你在一個應用裡最多使用多少個帳號？
     a: 最適合你：
-    btn: 免費試用 3 天
+    btn: 免費試用 7 天
   plans:
     Starter:
       name: 入門版
@@ -90,6 +90,14 @@ ui:
   for_you: 為你推薦
   per_year: / 年
   per_month: USDT / 月
+  per_month_s: "/ 月"
+  period_m: "按月"
+  period_y: "按年"
+  save: "省 {n}%"
+  or_year: "或按年 ${p} —— 省 {n}%"
+  eq_month: "≈ 每月 ${p}，按年付費"
+  buy_app_p: "在 GlotChat 內付款，大約一分鐘搞定。想找真人？在 Telegram 下單 —— 幾分鐘內回覆。"
+  buy_app: [["在 GlotChat 中點選「購買」", "選擇套餐，按月或按年。軟體裡會顯示價格，並標出適合你帳號數的套餐。"], ["用 USDT 或其他加密貨幣付款", "會開啟安全的加密貨幣付款頁面：TRC20、BEP20 或 ERC20 的 USDT，或 300 多種其他幣。"], ["GlotChat 自動解鎖", "付款約一分鐘後自動解鎖 —— 不用複製授權碼。帳號、登入狀態和設定全部保留。"]]
   up_to_accounts: 每個應用最多 <b>{n}</b> 個帳號
   unlimited_accounts: <b>不限</b>帳號數量
   plan_f:
@@ -98,15 +106,15 @@ ui:
     updates: 包含所有更新
     apps: WhatsApp、Telegram、Messenger、Instagram、Discord、BAND
   buy: 在 Telegram 購買{plan}
-  try: 或先免費試用 3 天
+  try: 或先免費試用 7 天
   custom_html: <b>需要更多電腦、團隊部署或終身授權？</b>告訴我們你的需求，我們為你定製報價。
   custom_btn: 獲取定製報價
-  paynote: 使用 USDT 付款（TRC20 · BEP20 · ERC20）。購買前有疑問？直接問我們 —— Telegram 真人回覆。
+  paynote: 價格以美元計。使用 USDT 付款（TRC20 · BEP20 · ERC20），1 USDT = 1 美元。購買前有疑問？直接問我們 —— Telegram 真人回覆。
   guarantee: "14 天退款保證 —— 放心購買，無需任何理由。"
   final:
     h: 你的下一位海外客戶，正在輸入訊息。
-    p: 下載 GlotChat，點選「開始 3 天免費試用」，新增你的 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 帳號。想先聊聊？給我們發訊息 —— 可以線上演示，也可以解答任何問題。
-    k: 免費試用 3 天
+    p: 下載 GlotChat，點選「開始 7 天免費試用」，新增你的 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 帳號。想先聊聊？給我們發訊息 —— 可以線上演示，也可以解答任何問題。
+    k: 免費試用 7 天
     tg: 在 Telegram 上聯絡我們
     points:
     - 全部功能可用
@@ -122,7 +130,7 @@ ui:
   mbar: 諮詢
   leave:
     h: 先別走——免費試用一下
-    p: 下載 GlotChat，在軟體裡一鍵開始 3 天免費試用，全部功能開放 — 無需付款，無需承諾。
+    p: 下載 GlotChat，在軟體裡一鍵開始 7 天免費試用，全部功能開放 — 無需付款，無需承諾。
     btn: 下載並免費試用
     'no': 不用了，謝謝
     tg: 或者問我們一個問題
@@ -132,13 +140,14 @@ ui:
     resources: 資源
     privacy: 隱私政策（英文）
     terms: 使用條款（英文）
+    refund: 退款政策
     trademark: WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 是其各自所有者的商標。GlotChat 是獨立產品，與上述公司沒有任何隸屬、認可或贊助關係。
   og_kicker: "多合一聚合聊天軟體 · 自動翻譯（電腦版）"
   og_sub: 文字、語音和圖片在你的電腦上離線翻譯。
   og_chips:
   - 6 個應用一個視窗
   - 49 種語言
-  - 免費試用 3 天
+  - 免費試用 7 天
   app_description: "多合一聚合聊天軟體（Windows 桌面版）：在一個視窗中執行多個 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 帳號（每個帳號獨立隔離，可單獨設定通知和代理），在電腦上離線翻譯聊天，支援 49 種語言（WhatsApp 和 Telegram 還可翻譯語音和圖片文字），傳送前可核對譯文。"
   feature_list:
   - 一個視窗執行多個 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 帳號
@@ -161,6 +170,7 @@ ui:
     finder: 你好！我一個應用裡有 {n} 個帳號，GlotChat {plan} 適合我嗎？
     planTrial: 你好！我想先試用 GlotChat {plan} 套餐。
     plan: 你好！我想購買 GlotChat {plan} 套餐（{price} USDT / 年），怎麼付款？
+    planMonth: "你好！我想購買 GlotChat {plan} 套餐（{price} USDT / 月），怎麼付款？"
     custom: 你好！我需要 GlotChat 定製方案：__ 台電腦，__ 個帳號（終身授權？）。
   dl:
     nav: 下載
@@ -189,8 +199,8 @@ ui:
       ss_run: 仍要執行
       ss_dont: 不執行
       act_title: 歡迎使用 GlotChat
-      act_sub: 所有功能免費試用 3 天 — 無需付款，無需信用卡。或輸入您購買的啟用碼。
-      act_trial: 開始 3 天免費試用
+      act_sub: 所有功能免費試用 7 天 — 無需付款，無需信用卡。或輸入您購買的啟用碼。
+      act_trial: 開始 7 天免費試用
       act_mid: 立即開始 · 全部功能 · 每台電腦可試用一次
       act_btn: 我已經有啟用碼
     autoupdate: 會自動更新到最新版本
@@ -201,7 +211,7 @@ ui:
 pages:
   home:
     title: "GlotChat – 多合一聚合聊天軟體 | WhatsApp、Telegram 多開自動翻譯（電腦版）"
-    description: "GlotChat 是電腦版多合一聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 多個帳號在一個視窗，所有聊天自動翻譯，支援 49 種語言，傳送前可核對譯文。免費試用 3 天。"
+    description: "GlotChat 是電腦版多合一聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 多個帳號在一個視窗，所有聊天自動翻譯，支援 49 種語言，傳送前可核對譯文。免費試用 7 天。"
     keywords: "多合一聊天軟體,聚合聊天軟體,All-in-one messenger,GlotChat,WhatsApp翻譯,Telegram翻譯,WhatsApp多開,Telegram多開,Messenger翻譯,Instagram私信翻譯,Discord翻譯,外貿WhatsApp翻譯軟體"
     og_title: "GlotChat – 多合一聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 一個視窗，每個聊天自動翻譯"
     og_heading: "多合一聚合聊天軟體。所有應用，所有帳號，所有語言。"
@@ -213,7 +223,7 @@ pages:
       h1: "GlotChat 多合一聚合聊天軟體。<span class=\"grad\">所有應用，任何語言。</span>"
       lead: "WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND —— 每個應用想開多少帳號都行 —— 全部在電腦上的一個視窗裡。客戶的訊息用中文閱讀，回覆用客戶的語言發出，傳送前就知道對方會讀到什麼。"
       micro:
-      - 免費試用 3 天，無需付款
+      - 免費試用 7 天，無需付款
       - Telegram 真人客服回覆
       - 每年 69 USDT 起
       media_alt: "GlotChat 聚合聊天軟體：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 帳號在一個視窗，聊天自動翻譯"
@@ -405,7 +415,7 @@ pages:
           notes:
           - - ok
             - ✓ 「GlotShop」 在你的不翻譯列表中
-      cta: 免費試用翻譯功能 3 天
+      cta: 免費試用翻譯功能 7 天
     - type: cards
       id: who
       who: true
@@ -462,19 +472,19 @@ pages:
       - 全部在你自己的電腦上離線翻譯
     - type: steps
       k: 先試用，再付款
-      h: 免費 3 天，10 分鐘就能用起來
+      h: 免費 7 天，10 分鐘就能用起來
       items:
       - - 下載 GlotChat
         - 從本網站下載 Windows 安裝包，大約 1 分鐘裝好 —— 不需要管理員許可權。
       - - 一鍵開始免費試用
-        - 開啟 GlotChat，點選「開始 3 天免費試用」。全部功能立即可用 —— 無需付款，也不用發訊息。
+        - 開啟 GlotChat，點選「開始 7 天免費試用」。全部功能立即可用 —— 無需付款，也不用發訊息。
       - - 滿意再購買
         - 用 USDT 付款，獲得一年的授權碼。帳號和設定全部保留 —— 不需要重新設定。
       cta: 下載並開始免費試用
     - type: plans
       k: 價格
       h: 簡單的年度套餐，先免費試用
-      p: 每個套餐都包含全部功能、全部應用和全部更新。先免費試用 3 天 —— 滿意再付款。
+      p: 每個套餐都包含全部功能、全部應用和全部更新。先免費試用 7 天 —— 滿意再付款。
       more: 檢視套餐詳細對比
       soft: false
     - type: faq
@@ -482,7 +492,7 @@ pages:
       h: 常見問題解答
       items:
       - - 有免費試用嗎？
-        - 有。下載 GlotChat，開啟後點選「開始 3 天免費試用」，全部功能立即可用，無需付款。滿意的話購買套餐，所有帳號和設定都會保留。
+        - 有。下載 GlotChat，開啟後點選「開始 7 天免費試用」，全部功能立即可用，無需付款。滿意的話購買套餐，所有帳號和設定都會保留。
       - - 支援哪些應用？
         - WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信和 Discord —— 每個應用都可以新增多個帳號，全部在一個視窗裡。所有應用的聊天都雙向翻譯；語音和圖片翻譯在 WhatsApp 和 Telegram 中可用。
       - - 我的帳號安全嗎？
@@ -505,17 +515,17 @@ pages:
       - telegram-translator
       - instagram-dm-translator
   pricing:
-    title: GlotChat 價格 —— 每年 69 USDT 起，免費試用
-    description: GlotChat 套餐：Starter 69、Pro 129、Business 249 USDT/年。包含 WhatsApp、Telegram 和全部功能，免費試用 3 天，USDT 付款。
+    title: GlotChat 價格 —— 每月 $9 起，免費試用
+    description: GlotChat 套餐：Starter $9、Pro $15、Business $29/月，或按年 $69、$129、$249（最多省 36%）。包含全部功能，免費試用 7 天，USDT 付款。
     keywords: GlotChat價格,WhatsApp多開軟體價格,WhatsApp翻譯軟體價格,Telegram多開軟體
     short: 價格
     icon: 💳
-    og_heading: 簡單的年度套餐，全部功能，免費試用 3 天
+    og_heading: 按月或按年付費，全部功能，免費試用 7 天
     blocks:
     - type: hero
       k: 價格
-      h1: 簡單的年度套餐，<span class="grad">先免費試用全部功能</span>
-      lead: 一年一個價格，包含全部功能、全部應用、全部更新。先免費試用 3 天 —— 無需付款，無需信用卡，也不用取消。
+      h1: 按月或按年付費，<span class="grad">先免費試用全部功能</span>
+      lead: 按月付費 $9 起，按年付費最多省 36%。包含全部功能、全部應用、全部更新。先免費試用 7 天 —— 無需付款，無需信用卡，也不用取消。
       cta2:
       - '#pricing'
       - 檢視套餐
@@ -535,7 +545,7 @@ pages:
       - - 用 USDT 付款
         - TRC20、BEP20 或 ERC20。我們會發給你準確的地址和金額 —— 不用信用卡，不用註冊。
       - - 貼上授權碼
-        - 一年的授權碼幾分鐘內送達。在 GlotChat → 設定 → 輸入新授權碼 中貼上即可。帳號、登入狀態和設定全部保留。
+        - 授權碼幾分鐘內送達。在 GlotChat → 設定 → 輸入新授權碼 中貼上即可。帳號、登入狀態和設定全部保留。
       cta: 購買前有問題？直接問我們
     - type: table
       k: 套餐對比
@@ -604,26 +614,30 @@ pages:
         - ✓ 協助設定
         - ✓ 優先支援
       - - 每年價格
-        - 69 USDT
-        - 129 USDT
-        - 249 USDT
+        - $69
+        - $129
+        - $249
+      - - "每月價格"
+        - $9
+        - $15
+        - $29
     - type: calc
       soft: true
       k: 值不值？
       h: 和你現在浪費的時間比一比
-      p: Pro 每月約 10.75 USDT。看看它能幫你省下多少小時的複製貼上翻譯。
+      p: Pro 每月約 $10.75。看看它能幫你省下多少小時的複製貼上翻譯。
     - type: faq
       k: 付款問題
       h: 付款、續費和升級
       items:
       - - 免費試用怎麼用？
-        - 下載並安裝 GlotChat，然後在軟體裡點選「開始 3 天免費試用」。試用立即開始，全部功能可用。不需要任何付款資訊，每台電腦可以免費試用一次。
+        - 下載並安裝 GlotChat，然後在軟體裡點選「開始 7 天免費試用」。試用立即開始，全部功能可用。不需要任何付款資訊，每台電腦可以免費試用一次。
       - - 怎麼付款？
-        - 使用 USDT（TRC20、BEP20 或 ERC20）。我們在 Telegram 上發給你付款地址，收到付款後立即傳送一年的授權碼。
+        - 使用 USDT（TRC20、BEP20 或 ERC20），可按月或按年付費。我們在 Telegram 上發給你付款地址，收到付款後立即傳送授權碼。
       - - Telegram 帳號單獨計算嗎？
         - 單獨計算。每個應用都有自己的數量：例如 Pro 套餐可用 15 個 WhatsApp 號碼和 15 個 Telegram 帳號，另外還有 15 個 Messenger、15 個 Instagram 和 15 個 Discord 帳號。
-      - - 一年後怎麼辦？
-        - 按同樣的價格續費，不會中斷使用。你的帳號、聊天和設定一直儲存在你的電腦上。
+      - - 一個月或一年到期後怎麼辦？
+        - 按同樣的價格續費 —— 新的時間會加在當前套餐之後，一天也不會少。你的帳號、聊天和設定一直儲存在你的電腦上。
       - - 可以升級或增加電腦嗎？
         - 可以，隨時都行。只需補差價（按剩餘時間計算）。需要更多電腦或終身授權，可以向我們要定製報價。
       - - 有更新嗎？
@@ -634,7 +648,7 @@ pages:
       items: ["how-to-buy", "is-it-safe", "compare"]
   whatsapp-translator:
     title: WhatsApp 翻譯器電腦版 —— 聊天、語音、圖片離線翻譯
-    description: 在電腦上雙向翻譯 WhatsApp：訊息、語音和圖片文字，49 種語言，離線翻譯，傳送前可核對譯文。免費試用 3 天。
+    description: 在電腦上雙向翻譯 WhatsApp：訊息、語音和圖片文字，49 種語言，離線翻譯，傳送前可核對譯文。免費試用 7 天。
     keywords: WhatsApp翻譯,WhatsApp翻譯軟體,WhatsApp自動翻譯,WhatsApp語音翻譯,WhatsApp電腦版翻譯,外貿WhatsApp翻譯
     short: WhatsApp 翻譯器
     icon: 🌐
@@ -859,7 +873,7 @@ pages:
       - pricing
   band-translator:
     title: "BAND 翻譯器 + BAND 多開（電腦版）| GlotChat"
-    description: "在 Windows 上翻譯 BAND 聊天，多個 BAND 帳號同時線上，和 WhatsApp、Telegram 在同一個視窗。49 種語言，離線翻譯，免費試用 3 天。"
+    description: "在 Windows 上翻譯 BAND 聊天，多個 BAND 帳號同時線上，和 WhatsApp、Telegram 在同一個視窗。49 種語言，離線翻譯，免費試用 7 天。"
     keywords: "BAND 翻譯, BAND 多開, BAND 電腦版, BAND 聊天翻譯, band.us 翻譯, BAND 多帳號"
     short: "BAND 翻譯"
     icon: "👥"
@@ -1022,7 +1036,7 @@ pages:
       - - WhatsApp 網頁版和 Telegram 桌面版都免費，為什麼要付費？
         - 它們一次只顯示一個帳號，也不翻譯你的回覆。號碼多、客戶說外語時，來回切換和複製貼上浪費的時間，很快就超過 GlotChat 的價格。
       - - 可以先試用再決定嗎？
-        - 可以 —— 免費試用 3 天，全部功能可用。在你真實的帳號上和現在的方法比一比。
+        - 可以 —— 免費試用 7 天，全部功能可用。在你真實的帳號上和現在的方法比一比。
     - type: related
       k: 詳細瞭解
       h: 仔細看看
@@ -1057,7 +1071,7 @@ pages:
           - ["語音和圖片文字翻譯", "✕", "✕", "✕", "✕", "✓ WhatsApp 和 Telegram"]
           - ["上百種其他應用（Slack、Gmail…）", "✓", "✓", "✓", "✓", "✕ 只做聊天應用"]
           - ["Windows / Mac / Linux", "✓ 三個都支援", "✓ 三個都支援", "✓ 三個都支援", "✓ 三個都支援", "僅 Windows"]
-          - ["價格", "有免費版；Pro 約 7 美元/月", "免費開源", "3 個服務免費；Pro 60 美元/年", "有免費版；Pro 約 8 美元/月", "免費 3 天；69 USDT/年起"]
+          - ["價格", "有免費版；Pro 約 7 美元/月", "免費開源", "3 個服務免費；Pro 60 美元/年", "有免費版；Pro 約 8 美元/月", "免費 7 天；69 USDT/年起"]
         note: "2026 年 10 月根據各產品官網核對。翻譯一欄的「✕」表示沒有內建的雙向聊天翻譯（部分應用可以加裝第三方外掛）。功能和價格可能變化，購買前請再確認。Rambox、Ferdium、Franz 和 Wavebox 是其所有者的商標，GlotChat 與它們無關。"
       - type: cards
         soft: true
@@ -1084,7 +1098,7 @@ pages:
         h: "從 Rambox、Ferdium 或 Franz 換過來"
         items:
           - ["Rambox 能翻譯訊息嗎？", "不能直接翻譯。截至 2026 年 10 月，Rambox 沒有內建的雙向聊天翻譯，需要另裝第三方外掛，而且看不到客戶將讀到什麼。GlotChat 自帶雙向翻譯。"]
-          - ["有免費又帶翻譯的 Rambox 替代軟體嗎？", "Ferdium 免費但不翻譯。GlotChat 可以免費試用 3 天全部功能，之後每年 69 USDT 起 —— 比按月付費的 Rambox Pro 還便宜。"]
+          - ["有免費又帶翻譯的 Rambox 替代軟體嗎？", "Ferdium 免費但不翻譯。GlotChat 可以免費試用 7 天全部功能，之後每年 69 USDT 起 —— 比按月付費的 Rambox Pro 還便宜。"]
           - ["怎麼從 Rambox 或 Ferdium 換到 GlotChat？", "不需要匯入任何東西。安裝 GlotChat，點選「新增帳號」，選擇應用，掃碼或登入即可。每個帳號大約一分鐘。"]
           - ["GlotChat 支援 Mac 或 Linux 嗎？", "暫時不支援 —— GlotChat 執行在 Windows 10 和 11 上。"]
           - ["GlotChat 支援哪些應用？", "WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信、Discord 和 BAND —— 每個應用都可以多開。"]
@@ -1412,7 +1426,7 @@ pages:
           | 翻譯你的回覆 | 手動 | 否 | 是（先核對） |
           | 語音和圖片 | 否 | 否 | 是（GlotChat） |
           | 留在你電腦上 | 否 | 否 | 是（GlotChat） |
-          | 價格 | 免費 | 免費 | 付費（GlotChat，免費試用 3 天） |
+          | 價格 | 免費 | 免費 | 付費（GlotChat，免費試用 7 天） |
 
           ## 關於隱私
 
@@ -1424,7 +1438,7 @@ pages:
           - **用對方的語言回覆。** 這是贏得信任最快的方式，而且內建翻譯後不費額外時間。
           - **帳號分清楚。** 如果你有多個 Telegram 號，給每個起個清楚的名字，隨時知道自己在用哪個回覆。
 
-          想在你自己的 Telegram 聊天裡試試方法三？[下載 GlotChat，免費試用 3 天](/zh-hant/download/)。
+          想在你自己的 Telegram 聊天裡試試方法三？[下載 GlotChat，免費試用 7 天](/zh-hant/download/)。
       - type: faq
         k: 常見問題
         h: 快速解答
@@ -1503,7 +1517,7 @@ pages:
 
           不會——連結裝置和雙帳號都是 WhatsApp 的官方功能。被封號的是**行為**：群發、給沒打招呼的人發垃圾訊息，以及「GB WhatsApp」這類改版應用。像平時一樣正常使用就沒問題。
 
-          要為工作管理多個號碼？[下載 GlotChat，免費試用 3 天](/zh-hant/download/)，把所有 WhatsApp 帳號放在一個視窗裡。
+          要為工作管理多個號碼？[下載 GlotChat，免費試用 7 天](/zh-hant/download/)，把所有 WhatsApp 帳號放在一個視窗裡。
       - type: faq
         k: 常見問題
         h: 快速解答
@@ -1593,7 +1607,7 @@ pages:
         - **讓不常用的帳號休眠**，保持電腦流暢。
         - **用客戶的語言回覆。**這是贏得買家最快的方法——有了內建翻譯，不會多花一點時間。
 
-        想在你自己的號碼上試試方法三？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+        想在你自己的號碼上試試方法三？[免費下載 GlotChat，試用 7 天](/zh-hant/download/)。
     - type: faq
       k: 常見問題
       h: 快速解答
@@ -1686,7 +1700,7 @@ pages:
         - **保留原文。**重要內容，也要回看客戶的原始訊息。
         - **合同請人工核對。**機器翻譯非常適合日常溝通；法律或醫療措辭值得人工檢查。
 
-        不想再複製貼上了？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+        不想再複製貼上了？[免費下載 GlotChat，試用 7 天](/zh-hant/download/)。
     - type: faq
       k: 常見問題
       h: 快速解答
@@ -1706,21 +1720,21 @@ pages:
       - pricing
   download:
     title: 下載 GlotChat Windows 版 —— WhatsApp 和 Telegram 翻譯軟體
-    description: 免費下載 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 帳號一個視窗，離線翻譯。免費試用 3 天，無需付款。
+    description: 免費下載 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 帳號一個視窗，離線翻譯。免費試用 7 天，無需付款。
     keywords: GlotChat下載,WhatsApp翻譯軟體下載,WhatsApp多開軟體下載,Telegram翻譯軟體下載
     short: 下載
     icon: ⬇️
-    og_heading: 下載 GlotChat Windows 版 —— 免費試用 3 天
+    og_heading: 下載 GlotChat Windows 版 —— 免費試用 7 天
     blocks:
     - type: dl_hero
       k: 免費下載 · Windows 10 和 11
       h1: 下載 GlotChat <span class="grad">Windows 版</span>
-      lead: 所有 WhatsApp 和 Telegram 帳號一個視窗，每條訊息在你的電腦上翻譯。大約 1 分鐘裝好，免費試用全部功能 3 天。
+      lead: 所有 WhatsApp 和 Telegram 帳號一個視窗，每條訊息在你的電腦上翻譯。大約 1 分鐘裝好，免費試用全部功能 7 天。
       card:
       - WhatsApp + Telegram 帳號
       - 文字、語音、圖片翻譯
       - 傳送前「對方將讀到」核對
-      - 免費試用 3 天，無需付款
+      - 免費試用 7 天，無需付款
     - type: dl_steps
       k: 安裝指南
       h: 4 個簡單步驟就能用起來
@@ -1734,8 +1748,8 @@ pages:
         p: 雙擊檔案，按提示安裝（約 1 分鐘，不需要管理員許可權）。如果出現藍色視窗「<b>Windows 已保護你的電腦</b>」，點選<b>其他資訊</b>，再點選<b>仍要執行</b>。
         tip: 新軟體都會這樣：Windows SmartScreen 只是還沒見過 GlotChat 很多次。檔案是安全的 —— 你可以在下方核對 SHA-256 校驗值。
         mock: smartscreen
-      - h: 一鍵開始 3 天免費試用
-        p: 開啟 GlotChat，點選<b>開始 3 天免費試用</b>。全部功能立即可用，一分鐘內 GlotChat 會自動更新到最新版本。
+      - h: 一鍵開始 7 天免費試用
+        p: 開啟 GlotChat，點選<b>開始 7 天免費試用</b>。全部功能立即可用，一分鐘內 GlotChat 會自動更新到最新版本。
         tip: 每台電腦可免費試用一次。無需信用卡，無需付款，也不用取消。
         mock: activate
       - h: 新增 WhatsApp 和 Telegram 帳號
@@ -1772,13 +1786,13 @@ pages:
       open_first: true
       items:
       - - GlotChat 可以免費下載嗎？
-        - 可以。下載免費，3 天試用期內全部功能可用，無需付款。試用結束後，套餐每年 69 USDT 起。
+        - 可以。下載免費，7 天試用期內全部功能可用，無需付款。試用結束後，套餐每年 69 USDT 起。
       - - 為什麼 Windows 提示「Windows 已保護你的電腦」？
         - Windows SmartScreen 對還不常見的新軟體都會顯示這個提示。點選<b>其他資訊</b>，再點選<b>仍要執行</b>。請只從本頁面下載 GlotChat —— 可以對比 SHA-256 校驗值，確認是原始檔案。
       - - 為什麼安裝包的版本比最新版舊？
         - 安裝包保持在 Windows 已經信任的版本，這樣在任何電腦上都能順利安裝。開啟 GlotChat 一分鐘後，它會自動更新到最新版本（包括 Telegram 和所有新功能）。
       - - 需要授權碼嗎？
-        - 試用不需要：在軟體中點選<b>開始 3 天免費試用</b>即可。購買套餐後，我們會在 Telegram 上發給你一年的授權碼 —— 貼上到<b>我已有授權碼</b>中。
+        - 試用不需要：在軟體中點選<b>開始 7 天免費試用</b>即可。購買套餐後，我們會在 Telegram 上發給你一年的授權碼 —— 貼上到<b>我已有授權碼</b>中。
       - - 有 Mac、Android 或 iPhone 版嗎？
         - 目前沒有。GlotChat 是 Windows 10 和 11 電腦軟體。你的帳號仍在手機上 —— GlotChat 像 WhatsApp 網頁版一樣把它們連結到電腦。
       - - 怎麼解除安裝 GlotChat？
@@ -1820,7 +1834,7 @@ pages:
 
           ## 第 1 步：安裝 GlotChat，開始免費試用
 
-        [下載 GlotChat Windows 版](/zh-hant/download/)（支援 Windows 10 / 11），安裝後開啟，點選 **「開始 3 天免費試用」**。試用包含全部功能，無需付款、無需信用卡。
+        [下載 GlotChat Windows 版](/zh-hant/download/)（支援 Windows 10 / 11），安裝後開啟，點選 **「開始 7 天免費試用」**。試用包含全部功能，無需付款、無需信用卡。
 
         ## 第 2 步：新增 WhatsApp 帳號
 
@@ -1876,7 +1890,7 @@ pages:
         - **給客戶固定語言**：如果自動識別不準（比如很短的訊息），點選聊天上方的語言按鈕，給這個客戶固定一種語言。
         - **多個號碼一個視窗**：所有號碼在左側列表，Ctrl+1…9 快速切換，每個號碼的通知都標明是哪個帳號。
 
-        想馬上試試？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+        想馬上試試？[免費下載 GlotChat，試用 7 天](/zh-hant/download/)。
     - type: faq
       k: 常見問題
       h: WhatsApp 自動翻譯常見問題
@@ -1890,7 +1904,7 @@ pages:
       - - 不知道客戶說什麼語言怎麼辦？
         - 把「客戶使用的語言」設為「自動檢測（推薦）」，GlotChat 會識別每個聊天的語言，並用這個語言傳送你的回覆。
       - - 收費嗎？
-        - 可以免費試用 3 天，包含全部功能。之後按年付費：入門版 69 USDT（5 個帳號）、專業版 129 USDT（15 個帳號）、企業版 249 USDT（不限帳號）。
+        - 可以免費試用 7 天，包含全部功能。之後按年付費：入門版 69 USDT（5 個帳號）、專業版 129 USDT（15 個帳號）、企業版 249 USDT（不限帳號）。
     - type: related
       k: 繼續閱讀
       h: 相關教學
@@ -1976,11 +1990,11 @@ pages:
         | 語音 / 圖片 | 語音轉文字、圖片識字 | ✓ 都能翻譯 |
         | 電腦配置 | 分批啟動、休眠、自動恢復 | ✓ 實測 27 個帳號同時執行 |
         | 中文 | 簡體中文介面 | ✓ |
-        | 價格 | 透明、可試用 | 每年 69 USDT 起，免費試用 3 天 |
+        | 價格 | 透明、可試用 | 每年 69 USDT 起，免費試用 7 天 |
 
         說明：GlotChat 是 **Windows 電腦軟體**，不支援 Mac；它**不提供群發功能**，專注於安全地聊天和翻譯。
 
-        想用自己的號碼測一測？[免費下載 GlotChat，試用 3 天](/zh-hant/download/)。
+        想用自己的號碼測一測？[免費下載 GlotChat，試用 7 天](/zh-hant/download/)。
     - type: faq
       k: 常見問題
       h: WhatsApp 多開常見問題
@@ -2067,7 +2081,7 @@ pages:
 
         ## 讓工具替你省時間
 
-        [GlotChat](/zh-hant/download/) 把這些技巧裡最費時的部分自動化：多個號碼一個視窗，收到的訊息、語音和圖片自動翻成中文，你用中文回覆、客戶收到他的語言，快捷回覆同樣自動翻譯。可以免費試用 3 天。
+        [GlotChat](/zh-hant/download/) 把這些技巧裡最費時的部分自動化：多個號碼一個視窗，收到的訊息、語音和圖片自動翻成中文，你用中文回覆、客戶收到他的語言，快捷回覆同樣自動翻譯。可以免費試用 7 天。
     - type: faq
       k: 常見問題
       h: 外貿 WhatsApp 常見問題
@@ -2087,7 +2101,7 @@ pages:
       - guides/best-whatsapp-multi-account-software
   telegram-translator:
     title: Telegram 翻譯器電腦版 —— 每個聊天自動翻譯
-    description: 在 Windows 上雙向翻譯 Telegram：收到的訊息在原文下方顯示翻譯，回覆在傳送前翻譯。49 種語言，離線翻譯。免費試用 3 天。
+    description: 在 Windows 上雙向翻譯 Telegram：收到的訊息在原文下方顯示翻譯，回覆在傳送前翻譯。49 種語言，離線翻譯。免費試用 7 天。
     keywords: Telegram翻譯,TG翻譯,Telegram翻譯軟體,Telegram自動翻譯,電報翻譯,Telegram電腦版翻譯
     short: Telegram 翻譯器
     icon: ✈️
@@ -2432,7 +2446,7 @@ pages:
       - discord-translator
   messenger-translator:
     title: Facebook Messenger 翻譯器 + Messenger 多開（電腦版）
-    description: 在 Windows 上雙向翻譯 Facebook Messenger 聊天，多個 Messenger 帳號並排執行。49 種語言，離線翻譯。免費試用 3 天。
+    description: 在 Windows 上雙向翻譯 Facebook Messenger 聊天，多個 Messenger 帳號並排執行。49 種語言，離線翻譯。免費試用 7 天。
     keywords: Messenger翻譯,Facebook Messenger翻譯,Messenger多開,Facebook多開,Messenger自動翻譯,Facebook外貿翻譯
     short: Messenger 翻譯器
     icon: 💬
@@ -2517,7 +2531,7 @@ pages:
       - whatsapp-translator
   instagram-dm-translator:
     title: Instagram 私信翻譯器 + Instagram 多開（電腦版）
-    description: 在 Windows 上雙向翻譯 Instagram 私信，多個 Instagram 帳號並排執行。49 種語言，離線翻譯。免費試用 3 天。
+    description: 在 Windows 上雙向翻譯 Instagram 私信，多個 Instagram 帳號並排執行。49 種語言，離線翻譯。免費試用 7 天。
     keywords: Instagram私信翻譯,Instagram翻譯,Instagram多開,Instagram電腦版,ins私信翻譯,Instagram外貿
     short: Instagram 私信翻譯
     icon: 📸
@@ -2602,7 +2616,7 @@ pages:
       - whatsapp-translator
   discord-translator:
     title: Discord 翻譯器 + Discord 多開（電腦版）
-    description: 在 Windows 上翻譯 Discord 伺服器和私信中的訊息，多個 Discord 帳號並排執行。49 種語言，離線翻譯。免費試用 3 天。
+    description: 在 Windows 上翻譯 Discord 伺服器和私信中的訊息，多個 Discord 帳號並排執行。49 種語言，離線翻譯。免費試用 7 天。
     keywords: Discord翻譯,Discord翻譯器,Discord自動翻譯,Discord多開,Discord電腦版多帳號
     short: Discord 翻譯器
     icon: 🎮
@@ -2720,7 +2734,7 @@ pages:
 
           - **適合：** 外貿、跨境電商、代理公司和麵向海外客戶的客服團隊。
           - **不適合：** Mac 使用者，或者需要 Slack、郵箱等辦公應用的人。
-          - **價格：** 免費試用 3 天，之後每年 69、129 或 249 USDT（每個應用 5 個、15 個或不限帳號）。
+          - **價格：** 免費試用 7 天，之後每年 69、129 或 249 USDT（每個應用 5 個、15 個或不限帳號）。
 
           ## 2. Rambox —— 最適合大量辦公應用
 
@@ -2773,7 +2787,7 @@ pages:
 
           好的聚合聊天軟體會為每個應用開啟**官方網頁版**（比如 WhatsApp Web），每個帳號在獨立會話中執行 —— 和瀏覽器做的事一樣，只是更有條理。不要用修改版應用（比如「GB WhatsApp」）和群發工具：這些才是封號的原因。
 
-          想在自己的聊天裡試試翻譯？[免費試用 GlotChat 3 天](/zh-hant/download/) —— 不用綁卡，不用付款。
+          想在自己的聊天裡試試翻譯？[免費試用 GlotChat 7 天](/zh-hant/download/) —— 不用綁卡，不用付款。
       - type: faq
         k: "常見問題"
         h: "快速回答"
@@ -2781,7 +2795,7 @@ pages:
           - ["聚合聊天軟體哪個好？", "看你的需要。客戶說外語，選 GlotChat —— 這裡只有它能雙向翻譯聊天。需要大量辦公應用，選 Rambox 或 Wavebox。想要免費開源，選 Ferdium。"]
           - ["哪款聚合聊天軟體能翻譯訊息？", "GlotChat 能翻譯 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 的每個聊天，雙向翻譯，49 種語言，在電腦上離線完成。"]
           - ["一個軟體能登入多個 WhatsApp 嗎？", "可以。名單裡的五款都能並排開啟多個 WhatsApp 帳號。GlotChat 實測過 27 個帳號同時執行。"]
-          - ["有免費的聚合聊天軟體嗎？", "Ferdium 免費。Rambox、Franz 和 Wavebox 有功能有限的免費版。GlotChat 可以免費試用 3 天全部功能。"]
+          - ["有免費的聚合聊天軟體嗎？", "Ferdium 免費。Rambox、Franz 和 Wavebox 有功能有限的免費版。GlotChat 可以免費試用 7 天全部功能。"]
       - type: related
         k: "下一步"
         h: "繼續閱讀"
@@ -2837,7 +2851,7 @@ pages:
           | 語音訊息翻譯 | 一般不支援 | 支援（WhatsApp、Telegram） |
           | 圖片文字翻譯 | 一般不支援 | 支援 |
           | 訊息去哪裡翻譯 | 通常是雲端 | 你的電腦上（離線） |
-          | 價格 | 免費額度 / 按月付費 | 免費 3 天，69 USDT/年起 |
+          | 價格 | 免費額度 / 按月付費 | 免費 7 天，69 USDT/年起 |
 
           ## 什麼時候該從外掛換到聚合聊天軟體
 
@@ -2851,7 +2865,7 @@ pages:
 
           WhatsApp Web 連結裝置是官方功能，外掛和 GlotChat 都用它。真正導致封號的是**行為**：群發、騷擾陌生人、使用修改版 WhatsApp（比如「GB WhatsApp」）。正常聊天就沒問題。
 
-          想在自己的號碼上試試？[免費試用 GlotChat 3 天](/zh-hant/download/) —— 全部功能，不用付款。
+          想在自己的號碼上試試？[免費試用 GlotChat 7 天](/zh-hant/download/) —— 全部功能，不用付款。
       - type: faq
         k: "常見問題"
         h: "快速回答"
@@ -2879,11 +2893,11 @@ pages:
       - type: prose
         toc: true
         md: |
-          > **簡單說：** 先免費試用 3 天 → 在 Telegram 上告訴我們套餐和機器碼 → 把 USDT 轉到我們給的地址 → 貼上收到的授權碼。完成。
+          > **簡單說：** 先免費試用 7 天 → 在 Telegram 上告訴我們套餐和機器碼 → 把 USDT 轉到我們給的地址 → 貼上收到的授權碼。完成。
 
           ## 1. 先免費試用
 
-          [下載 GlotChat](/zh-hant/download/)，點選 **「開始 3 天免費試用」**。全部功能解鎖，不用付款。先新增你的帳號，確認 GlotChat 適合你再付款。
+          [下載 GlotChat](/zh-hant/download/)，點選 **「開始 7 天免費試用」**。全部功能解鎖，不用付款。先新增你的帳號，確認 GlotChat 適合你再付款。
 
           ## 2. 選擇套餐
 
@@ -3060,7 +3074,7 @@ pages:
         items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
   translate/chinese-english:
     title: "WhatsApp 中英互譯軟體（電腦版）| GlotChat"
-    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和英語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 3 天。"
+    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和英語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 7 天。"
     keywords: "WhatsApp 中英翻譯, WhatsApp 英語翻譯, 外貿 英語 聊天翻譯, Telegram 英語翻譯, 中文英語互譯"
     short: "中文 ↔ 英語"
     icon: "🌐"
@@ -3104,7 +3118,7 @@ pages:
   translate/chinese-spanish:
     single: true
     title: "WhatsApp 中西互譯軟體（電腦版）| GlotChat"
-    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和西班牙語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 3 天。"
+    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和西班牙語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 7 天。"
     keywords: "WhatsApp 中西翻譯, WhatsApp 西班牙語翻譯, 外貿 西班牙語 聊天翻譯, Telegram 西班牙語翻譯, 中文西班牙語互譯"
     short: "中文 ↔ 西班牙語"
     icon: "🌐"
@@ -3148,7 +3162,7 @@ pages:
   translate/chinese-arabic:
     single: true
     title: "WhatsApp 中阿互譯軟體（電腦版）| GlotChat"
-    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和阿拉伯語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 3 天。"
+    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和阿拉伯語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 7 天。"
     keywords: "WhatsApp 中阿翻譯, WhatsApp 阿拉伯語翻譯, 外貿 阿拉伯語 聊天翻譯, Telegram 阿拉伯語翻譯, 中文阿拉伯語互譯"
     short: "中文 ↔ 阿拉伯語"
     icon: "🌐"
@@ -3192,7 +3206,7 @@ pages:
   translate/chinese-russian:
     single: true
     title: "WhatsApp 中俄互譯軟體（電腦版）| GlotChat"
-    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和俄語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 3 天。"
+    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和俄語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 7 天。"
     keywords: "WhatsApp 中俄翻譯, WhatsApp 俄語翻譯, 外貿 俄語 聊天翻譯, Telegram 俄語翻譯, 中文俄語互譯"
     short: "中文 ↔ 俄語"
     icon: "🌐"
@@ -3236,7 +3250,7 @@ pages:
   translate/chinese-portuguese:
     single: true
     title: "WhatsApp 中葡互譯軟體（電腦版）| GlotChat"
-    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和葡萄牙語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 3 天。"
+    description: "在電腦上把 WhatsApp、Telegram 等聊天在中文和葡萄牙語之間自動雙向翻譯，離線完成，語音和圖片也能翻譯。免費試用 7 天。"
     keywords: "WhatsApp 中葡翻譯, WhatsApp 葡萄牙語翻譯, 外貿 葡萄牙語 聊天翻譯, Telegram 葡萄牙語翻譯, 中文葡萄牙語互譯"
     short: "中文 ↔ 葡萄牙語"
     icon: "🌐"

@@ -6,7 +6,7 @@ ui:
   lang_label: Dil
   close: Kapat
   contact: Bize yazın
-  promo_html: "<b>Tüm sohbetleriniz, her dil, tek pencere.</b> 3 gün ücretsiz — kart gerekmez."
+  promo_html: "<b>Tüm sohbetleriniz, her dil, tek pencere.</b> 7 gün ücretsiz — kart gerekmez."
   promo_go: "GlotChat'i indir →"
   nav:
     product: Ürün
@@ -39,15 +39,15 @@ ui:
     safe: "Güvenli mi?"
     wab: "WhatsApp Business hesapları"
     pairs: "Popüler dil çiftleri"
-  cta_trial: Ücretsiz indir — 3 gün deneme
+  cta_trial: Ücretsiz indir — 7 gün deneme
   cta_demo: Nasıl çalıştığını izleyin
   cta_live: Canlı demo isteyin
   expand: Tam ekran izle
   demo_label: GlotChat demosu
   micro:
-  - 3 gün ücretsiz — kart yok, ödeme yok
+  - 7 gün ücretsiz — kart yok, ödeme yok
   - Telegram'da gerçek kişi yanıtlar
-  - Yılda 69 USDT'den başlayan fiyatlar
+  - Ayda $9'dan başlayan fiyatlar
   trust:
   - Resmi WhatsApp Web ve Telegram içinde
   - Sohbetler bilgisayarınızda kalır
@@ -71,7 +71,7 @@ ui:
   finder:
     q: Tek bir uygulamada kaç hesap kullanıyorsunuz (en yoğun olanında)?
     a: 'Size en uygun:'
-    btn: 3 gün ücretsiz deneyin
+    btn: 7 gün ücretsiz deneyin
   plans:
     Starter:
       name: Başlangıç
@@ -89,6 +89,14 @@ ui:
   for_you: Size önerilen
   per_year: / yıl
   per_month: USDT / ay
+  per_month_s: "/ ay"
+  period_m: "Aylık"
+  period_y: "Yıllık"
+  save: "%{n} tasarruf"
+  or_year: "ya da yılda ${p} — %{n} tasarruf"
+  eq_month: "≈ ayda ${p}, yıllık ödeme"
+  buy_app_p: "GlotChat içinden yaklaşık bir dakikada ödeyin. Bir kişiyle konuşmayı mı tercih edersiniz? Telegram'dan sipariş verin — dakikalar içinde yanıtlıyoruz."
+  buy_app: [["GlotChat'te “Satın al”a tıklayın", "Paketinizi aylık veya yıllık seçin. Fiyatlar uygulamada görünür, hesap sayınıza uyan paket işaretlenir."], ["USDT veya başka bir kriptoyla ödeyin", "Güvenli bir kripto ödeme sayfası açılır: TRC20, BEP20 veya ERC20 üzerinde USDT ya da 300'den fazla başka coin."], ["GlotChat kendiliğinden açılır", "Ödemeden yaklaşık bir dakika sonra — anahtar kopyalamak yok. Hesaplarınız, oturumlarınız ve ayarlarınız olduğu gibi kalır."]]
   up_to_accounts: Uygulama başına <b>{n}</b> hesaba kadar
   unlimited_accounts: <b>Sınırsız</b> hesap
   plan_f:
@@ -97,15 +105,15 @@ ui:
     updates: Tüm güncellemeler dahil
     apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
   buy: '{plan} paketini Telegram''dan alın'
-  try: veya 3 gün ücretsiz deneyin
+  try: veya 7 gün ücretsiz deneyin
   custom_html: <b>Daha fazla bilgisayar, ekip kurulumu veya ömür boyu lisans mı lazım?</b> İhtiyacınızı yazın — size özel teklif hazırlayalım.
   custom_btn: Özel teklif isteyin
-  paynote: Ödeme USDT ile (TRC20 · BEP20 · ERC20). Satın almadan önce sorunuz mu var? Sorun — Telegram'da gerçek bir kişi yanıtlar.
+  paynote: 'Fiyatlar ABD doları cinsindendir. Ödeme USDT ile (TRC20 · BEP20 · ERC20): 1 USDT = 1 $. Satın almadan önce sorunuz mu var? Sorun — Telegram''da gerçek bir kişi yanıtlar.'
   guarantee: "14 gün para iade garantisi — içiniz rahat alın, hiçbir soru sorulmaz."
   final:
     h: Bir sonraki yabancı müşteriniz şu an yazıyor.
-    p: GlotChat'i indirin, “3 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım.
-    k: 3 gün ücretsiz
+    p: GlotChat'i indirin, “7 günlük ücretsiz denememi başlat”a tıklayın ve WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesaplarınızı ekleyin. Önce konuşmak mı istersiniz? Bize yazın — GlotChat'i canlı gösterelim ya da sorularınızı yanıtlayalım.
+    k: 7 gün ücretsiz
     tg: Telegram'dan bize yazın
     points:
     - Tüm özellikler açık
@@ -121,7 +129,7 @@ ui:
   mbar: Yaz
   leave:
     h: Gitmeden önce — ücretsiz deneyin
-    p: GlotChat'i indirin ve tüm özellikler açık 3 günlük denemeyi başlatın — uygulamada tek tık, ödeme yok, taahhüt yok.
+    p: GlotChat'i indirin ve tüm özellikler açık 7 günlük denemeyi başlatın — uygulamada tek tık, ödeme yok, taahhüt yok.
     btn: İndir ve ücretsiz dene
     'no': Hayır, teşekkürler
     tg: Ya da bize bir soru sorun
@@ -131,13 +139,14 @@ ui:
     resources: Kaynaklar
     privacy: Gizlilik politikası (İngilizce)
     terms: Kullanım koşulları (İngilizce)
+    refund: İade politikası
     trademark: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND ilgili sahiplerinin ticari markalarıdır. GlotChat bağımsız bir üründür; hiçbiriyle bağlantılı değildir, onlar tarafından onaylanmamış veya desteklenmemiştir.
   og_kicker: "PC için çeviri özellikli hepsi bir arada mesajlaşma"
   og_sub: Metin, sesli notlar ve fotoğraflar bilgisayarınızda çevrimdışı çevrilir.
   og_chips:
   - 6 uygulama, tek pencere
   - 49 dil
-  - 3 gün ücretsiz deneme
+  - 7 gün ücretsiz deneme
   app_description: "Birçok WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesabını tek pencerede çalıştıran hepsi bir arada Windows mesajlaşma uygulaması — her hesap yalıtılmış, kendi bildirimleri ve proxy'si ile — sohbetleri 49 dilde bilgisayarınızda çevrimdışı çevirir (WhatsApp ve Telegram'da sesli mesajlar ve fotoğraflar da), her çeviriyi göndermeden önce kontrol eder."
   feature_list:
   - Birden fazla WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesabı tek pencerede
@@ -160,6 +169,7 @@ ui:
     finder: Merhaba! Bir uygulamada {n} hesap kullanıyorum. GlotChat {plan} bana uygun mu?
     planTrial: Merhaba! Önce GlotChat {plan} paketini denemek istiyorum.
     plan: Merhaba! GlotChat {plan} paketini istiyorum ({price} USDT / yıl). Nasıl ödeyebilirim?
+    planMonth: "Merhaba! GlotChat {plan} paketini istiyorum ({price} USDT / ay). Nasıl ödeyebilirim?"
     custom: 'Merhaba! GlotChat için özel teklif istiyorum: __ bilgisayar, __ hesap (ömür boyu lisans?).'
   dl:
     nav: İndir
@@ -188,8 +198,8 @@ ui:
       ss_run: Yine de çalıştır
       ss_dont: Çalıştırma
       act_title: Welcome to GlotChat
-      act_sub: Try every feature free for 3 days — no payment, no card. Or enter the license key you bought.
-      act_trial: Start my free 3-day trial
+      act_sub: Try every feature free for 7 days — no payment, no card. Or enter the license key you bought.
+      act_trial: Start my free 7-day trial
       act_mid: Starts instantly · every feature · one free trial per PC
       act_btn: I already have a license key
     autoupdate: kendini en yeni sürüme günceller
@@ -200,7 +210,7 @@ ui:
 pages:
   home:
     title: "GlotChat – PC için Çeviri Özellikli Hepsi Bir Arada Mesajlaşma"
-    description: "PC için hepsi bir arada mesajlaşma: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesapları tek pencerede, her sohbet 49 dile çevrilir. 3 gün ücretsiz."
+    description: "PC için hepsi bir arada mesajlaşma: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesapları tek pencerede, her sohbet 49 dile çevrilir. 7 gün ücretsiz."
     keywords: "hepsi bir arada mesajlaşma uygulaması, all in one messenger, GlotChat, whatsapp çevirmen, telegram çevirmen, whatsapp çoklu hesap, telegram çoklu hesap, messenger çevirmen, instagram dm çeviri, discord çevirmen, hepsi bir arada mesajlaşma"
     og_title: "GlotChat – hepsi bir arada mesajlaşma: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND tek pencerede, her sohbet çevrilmiş"
     og_heading: "Hepsi bir arada mesajlaşma. Her uygulama, her hesap, her dil."
@@ -212,7 +222,7 @@ pages:
       h1: "GlotChat: hepsi bir arada mesajlaşma. <span class=\"grad\">Her uygulama. Her dil.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND — her birinden istediğiniz kadar hesap — bilgisayarınızda tek pencerede. Her müşteriyi Türkçe okuyun, onun dilinde yanıtlayın ve ne okuyacağını tam olarak bilin."
       micro:
-      - 3 gün ücretsiz — kart yok, ödeme yok
+      - 7 gün ücretsiz — kart yok, ödeme yok
       - Telegram'da gerçek kişi yanıtlar
       - Yılda 69 USDT'den başlayan fiyatlar
       media_alt: "GlotChat hepsi bir arada mesajlaşma: WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND hesapları tek pencerede, sohbetler çevrilmiş"
@@ -404,7 +414,7 @@ pages:
           notes:
           - - ok
             - ✓ “GlotShop” çevrilmeyecekler listenizde
-      cta: Çeviriyi 3 gün ücretsiz deneyin
+      cta: Çeviriyi 7 gün ücretsiz deneyin
     - type: cards
       id: who
       who: true
@@ -461,19 +471,19 @@ pages:
       - Her şey kendi bilgisayarınızda çevrimdışı çevrilir
     - type: steps
       k: Ödemeden önce deneyin
-      h: 3 gün ücretsiz. 10 dakikada hazır.
+      h: 7 gün ücretsiz. 10 dakikada hazır.
       items:
       - - GlotChat'i indirin
         - Windows kurulum dosyasını sitemizden alın ve yaklaşık bir dakikada kurun — yönetici yetkisi gerekmez.
       - - Ücretsiz denemenizi tek tıkla başlatın
-        - GlotChat'i açın ve “3 günlük ücretsiz denememi başlat”a tıklayın. Tüm özellikler hemen açılır — ödeme yok, mesaj yok.
+        - GlotChat'i açın ve “7 günlük ücretsiz denememi başlat”a tıklayın. Tüm özellikler hemen açılır — ödeme yok, mesaj yok.
       - - Beğendiniz mi? Devam edin.
         - USDT ile ödeyin ve yıllık anahtarınızı alın. Hesaplarınız ve ayarlarınız olduğu gibi kalır — yeniden kurulum yok.
       cta: İndir ve ücretsiz denememi başlat
     - type: plans
       k: Fiyatlar
       h: Basit yıllık paketler. Önce ücretsiz deneyin.
-      p: Her paket tüm özellikleri, tüm uygulamaları ve tüm güncellemeleri içerir. 3 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin.
+      p: Her paket tüm özellikleri, tüm uygulamaları ve tüm güncellemeleri içerir. 7 günlük ücretsiz denemeyle başlayın — sadece beğenirseniz ödeyin.
       more: Paketleri ayrıntılı karşılaştırın
       soft: false
     - type: faq
@@ -481,7 +491,7 @@ pages:
       h: Sorular ve yanıtlar
       items:
       - - Ücretsiz deneme var mı?
-        - Evet. GlotChat'i indirin, açın ve “3 günlük ücretsiz denememi başlat”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesaplarınızı ve ayarlarınızı korursunuz.
+        - Evet. GlotChat'i indirin, açın ve “7 günlük ücretsiz denememi başlat”a tıklayın — tüm özellikler hemen açılır, ödeme gerekmez. Beğenirseniz bir paket alır, tüm hesaplarınızı ve ayarlarınızı korursunuz.
       - - Hangi uygulamalarla çalışıyor?
         - WhatsApp ve WhatsApp Business, Telegram, Facebook Messenger, Instagram DM, Discord ve BAND — her birinden birden fazla hesap, tek pencerede. Sohbetler her uygulamada iki yönlü çevrilir; sesli mesajlar ve fotoğraflar WhatsApp ve Telegram'da çevrilir.
       - - Hesaplarım için güvenli mi?
@@ -504,16 +514,16 @@ pages:
       - telegram-translator
       - instagram-dm-translator
   pricing:
-    title: GlotChat Fiyatları – Yılda 69 USDT'den, Ücretsiz Deneme
-    description: 'GlotChat paketleri: Starter 69, Pro 129, Business 249 USDT/yıl. WhatsApp, Telegram ve tüm özellikler dahil, 3 gün ücretsiz deneme, USDT ile ödeme.'
+    title: GlotChat Fiyatları – Ayda $9'dan, Ücretsiz Deneme
+    description: "GlotChat paketleri: Starter $9, Pro $15, Business $29/ay ya da yılda $69, $129, $249 (%36'ya kadar tasarruf). Tüm özellikler, 7 gün ücretsiz deneme."
     short: Fiyatlar
     icon: 💳
-    og_heading: Basit yıllık paketler. Tüm özellikler. 3 gün ücretsiz deneme.
+    og_heading: Aylık veya yıllık paketler. Tüm özellikler. 7 gün ücretsiz deneme.
     blocks:
     - type: hero
       k: Fiyatlar
-      h1: Basit yıllık paketler. <span class="grad">Önce tüm özellikleri ücretsiz deneyin.</span>
-      lead: Yılda tek fiyat; tüm özellikler, tüm uygulamalar, tüm güncellemeler. 3 günlük ücretsiz denemeyle başlayın — ödeme yok, kart yok, iptal edilecek bir şey yok.
+      h1: Aylık veya yıllık. <span class="grad">Önce tüm özellikleri ücretsiz deneyin.</span>
+      lead: Aylık $9'dan başlayın ya da yıllık ödeyip %36'ya kadar tasarruf edin. Tüm özellikler, tüm uygulamalar, tüm güncellemeler. 7 günlük ücretsiz denemeyle başlayın — ödeme yok, kart yok, iptal edilecek bir şey yok.
       cta2:
       - '#pricing'
       - Paketleri görün
@@ -533,7 +543,7 @@ pages:
       - - USDT ile ödeyin
         - TRC20, BEP20 veya ERC20. Size tam adresi ve tutarı göndeririz — kart yok, hesap yok.
       - - Anahtarınızı yapıştırın
-        - Yıllık anahtarınız dakikalar içinde gelir. GlotChat → Ayarlar → Yeni anahtar gir bölümüne yapıştırın. Hesaplarınız, oturumlarınız ve ayarlarınız olduğu gibi kalır.
+        - Anahtarınız dakikalar içinde gelir. GlotChat → Ayarlar → Yeni anahtar gir bölümüne yapıştırın. Hesaplarınız, oturumlarınız ve ayarlarınız olduğu gibi kalır.
       cta: Satın almadan önce her şeyi sorun
     - type: table
       k: Paketleri karşılaştırın
@@ -602,26 +612,30 @@ pages:
         - ✓ Kurulum yardımı
         - ✓ Öncelikli destek
       - - Yıllık fiyat
-        - 69 USDT
-        - 129 USDT
-        - 249 USDT
+        - $69
+        - $129
+        - $249
+      - - "Aylık fiyat"
+        - $9
+        - $15
+        - $29
     - type: calc
       soft: true
       k: Değer mi?
       h: Fiyatı bugün kaybettiğiniz zamanla karşılaştırın
-      p: Pro ayda yaklaşık 10,75 USDT. Kaç saatlik kopyala-yapıştır çevirinin yerini aldığını görün.
+      p: Pro ayda yaklaşık $10,75. Kaç saatlik kopyala-yapıştır çevirinin yerini aldığını görün.
     - type: faq
       k: Ödeme soruları
       h: Ödeme, yenileme ve yükseltme
       items:
       - - Ücretsiz deneme nasıl çalışır?
-        - GlotChat'i indirip kurun, ardından uygulamada “3 günlük ücretsiz denememi başlat”a tıklayın. Deneme tüm özelliklerle hemen başlar. Ödeme bilgisi gerekmez; bilgisayar başına bir ücretsiz deneme vardır.
+        - GlotChat'i indirip kurun, ardından uygulamada “7 günlük ücretsiz denememi başlat”a tıklayın. Deneme tüm özelliklerle hemen başlar. Ödeme bilgisi gerekmez; bilgisayar başına bir ücretsiz deneme vardır.
       - - Nasıl öderim?
-        - TRC20, BEP20 veya ERC20 ağında USDT ile. Ödeme adresini Telegram'dan göndeririz, ödeme gelir gelmez yıllık anahtarınızı iletiriz.
+        - TRC20, BEP20 veya ERC20 ağında USDT ile, aylık veya yıllık. Ödeme adresini Telegram'dan göndeririz, ödeme gelir gelmez anahtarınızı iletiriz.
       - - Telegram hesapları ayrı mı sayılır?
         - 'Evet. Her uygulamanın kendi sınırı var: Pro ile 15 WhatsApp numarası ve 15 Telegram hesabı — ayrıca 15 Messenger, 15 Instagram ve 15 Discord hesabı kullanırsınız.'
-      - - Bir yıl sonra ne olur?
-        - Aynı fiyattan yenilersiniz ve kesintisiz çalışmaya devam edersiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız her zaman bilgisayarınızda kalır.
+      - - Ayım veya yılım bitince ne olur?
+        - Aynı fiyattan yenilersiniz — yeni süre paketinize eklenir, hiç gün kaybetmezsiniz. Hesaplarınız, sohbetleriniz ve ayarlarınız her zaman bilgisayarınızda kalır.
       - - Yükseltme veya bilgisayar ekleme yapabilir miyim?
         - Evet, istediğiniz zaman. Sadece yılınızın kalanı için farkı ödersiniz. Daha fazla bilgisayar veya ömür boyu lisans için özel teklif isteyin.
       - - Güncellemeler dahil mi?
@@ -857,7 +871,7 @@ pages:
       - pricing
   band-translator:
     title: "BAND Çevirmeni ve PC'de Birden Fazla BAND Hesabı"
-    description: "BAND sohbetlerini Windows'ta çevirin, birden fazla BAND hesabını WhatsApp ve Telegram'ın yanında açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz deneyin."
+    description: "BAND sohbetlerini Windows'ta çevirin, birden fazla BAND hesabını WhatsApp ve Telegram'ın yanında açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz deneyin."
     keywords: "band çeviri, band çevirmen, band sohbet çevirisi, band pc, birden fazla band hesabı"
     short: "BAND çevirmeni"
     icon: "👥"
@@ -1020,7 +1034,7 @@ pages:
       - - WhatsApp Web ve Telegram Desktop ücretsizken neden ödeyeyim?
         - İkisi de aynı anda bir hesap gösterir ve yanıtlarınızı çevirmez. Çok hesap yönetip başka dillerde müşterilerle konuştuğunuzda, geçişlerde ve kopyala-yapıştırda kaybedilen zaman bir GlotChat paketinden hızla daha pahalıya gelir.
       - - Karar vermeden önce deneyebilir miyim?
-        - Evet — tüm özelliklerle 3 gün ücretsiz. Gerçek hesaplarınızda mevcut düzeninizle karşılaştırın.
+        - Evet — tüm özelliklerle 7 gün ücretsiz. Gerçek hesaplarınızda mevcut düzeninizle karşılaştırın.
     - type: related
       k: Ayrıntılar
       h: Yakından bakın
@@ -1055,7 +1069,7 @@ pages:
           - ["Sesli mesaj ve fotoğraftaki metin çevirisi", "✕", "✕", "✕", "✕", "✓ WhatsApp ve Telegram"]
           - ["Yüzlerce başka uygulama (Slack, Gmail…)", "✓", "✓", "✓", "✓", "✕ yalnızca sohbet uygulamaları"]
           - ["Windows / Mac / Linux", "✓ üçü de", "✓ üçü de", "✓ üçü de", "✓ üçü de", "Yalnızca Windows"]
-          - ["Fiyat", "Ücretsiz paket; Pro ayda yaklaşık 7 $", "Ücretsiz, açık kaynak", "3 servis ücretsiz; Pro yılda 60 $", "Ücretsiz paket; Pro ayda yaklaşık 8 $", "3 gün ücretsiz; yılda 69 USDT'den"]
+          - ["Fiyat", "Ücretsiz paket; Pro ayda yaklaşık 7 $", "Ücretsiz, açık kaynak", "3 servis ücretsiz; Pro yılda 60 $", "Ücretsiz paket; Pro ayda yaklaşık 8 $", "7 gün ücretsiz; yılda 69 USDT'den"]
         note: "Ekim 2026'da her ürünün resmi sitesinden kontrol edildi. Çeviride “✕”, yerleşik iki yönlü sohbet çevirisi olmadığı anlamına gelir (bazı uygulamalara üçüncü taraf eklenti kurulabilir). Özellikler ve fiyatlar değişebilir; satın almadan önce kontrol edin. Rambox, Ferdium, Franz ve Wavebox sahiplerinin ticari markalarıdır; GlotChat'in onlarla bağlantısı yoktur."
       - type: cards
         soft: true
@@ -1082,7 +1096,7 @@ pages:
         h: "Rambox, Ferdium veya Franz'dan geçiş"
         items:
           - ["Rambox mesajları çeviriyor mu?", "Kendi başına hayır. Ekim 2026 itibarıyla Rambox'ta yerleşik iki yönlü sohbet çevirisi yok; üçüncü taraf bir eklenti gerekir ve müşterinin ne okuyacağını göremezsiniz. GlotChat her sohbeti kendisi iki yönlü çevirir."]
-          - ["Çevirili ücretsiz bir Rambox alternatifi var mı?", "Ferdium ücretsiz ama çeviri yapmıyor. GlotChat tüm özellikleriyle 3 gün ücretsiz, sonra yılda 69 USDT'den başlıyor — aylık ödenen Rambox Pro'dan daha ucuz."]
+          - ["Çevirili ücretsiz bir Rambox alternatifi var mı?", "Ferdium ücretsiz ama çeviri yapmıyor. GlotChat tüm özellikleriyle 7 gün ücretsiz, sonra yılda 69 USDT'den başlıyor — aylık ödenen Rambox Pro'dan daha ucuz."]
           - ["Rambox veya Ferdium'dan GlotChat'e nasıl geçerim?", "İçe aktarılacak bir şey yok. GlotChat'i kurun, Hesap ekle'ye tıklayın, uygulamayı seçin ve QR kodu okutun ya da giriş yapın. Hesap başına yaklaşık bir dakika."]
           - ["GlotChat Mac veya Linux'ta çalışıyor mu?", "Henüz değil — GlotChat Windows 10 ve 11'de çalışır."]
           - ["GlotChat hangi uygulamaları destekliyor?", "WhatsApp ve WhatsApp Business, Telegram, Facebook Messenger, Instagram DM, Discord ve BAND — her birinden birden fazla hesap."]
@@ -1420,7 +1434,7 @@ pages:
         - **Az kullanılan hesapları uyutun**, bilgisayarınız hızlı kalsın.
         - **Müşterinin dilinde yanıt verin.** Alıcıyı kazanmanın en hızlı yolu — ve dahili çeviriyle ek zaman almaz.
 
-        Yöntem 3'ü kendi numaralarınızda görmek ister misiniz? [GlotChat'i 3 gün ücretsiz deneyin](https://t.me/GlotChat).
+        Yöntem 3'ü kendi numaralarınızda görmek ister misiniz? [GlotChat'i 7 gün ücretsiz deneyin](https://t.me/GlotChat).
     - type: faq
       k: SSS
       h: Kısa yanıtlar
@@ -1512,7 +1526,7 @@ pages:
         - **Orijinali saklayın.** Önemli konularda müşterinin orijinal mesajına da geri bakın.
         - **Sözleşmeleri bir kişiye kontrol ettirin.** Makine çevirisi sohbet için mükemmeldir; hukuki veya tıbbi ifadeler insan kontrolünü hak eder.
 
-        Kopyala-yapıştırı bırakmaya hazır mısınız? [3 günlük ücretsiz GlotChat denemesi alın](https://t.me/GlotChat).
+        Kopyala-yapıştırı bırakmaya hazır mısınız? [7 günlük ücretsiz GlotChat denemesi alın](https://t.me/GlotChat).
     - type: faq
       k: SSS
       h: Kısa yanıtlar
@@ -1532,20 +1546,20 @@ pages:
       - pricing
   download:
     title: GlotChat'i Windows için İndirin – WhatsApp ve Telegram Çevirmeni
-    description: 'GlotChat''i Windows 10 ve 11 için ücretsiz indirin: WhatsApp ve Telegram hesapları tek pencerede, çevrimdışı çeviriyle. 3 gün ücretsiz deneme, kart yok.'
+    description: 'GlotChat''i Windows 10 ve 11 için ücretsiz indirin: WhatsApp ve Telegram hesapları tek pencerede, çevrimdışı çeviriyle. 7 gün ücretsiz deneme, kart yok.'
     short: İndir
     icon: ⬇️
-    og_heading: GlotChat'i Windows için indirin — 3 gün ücretsiz deneme
+    og_heading: GlotChat'i Windows için indirin — 7 gün ücretsiz deneme
     blocks:
     - type: dl_hero
       k: Ücretsiz indirme · Windows 10 ve 11
       h1: GlotChat'i <span class="grad">Windows için indirin</span>
-      lead: Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurun ve tüm özellikleri 3 gün ücretsiz deneyin.
+      lead: Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurun ve tüm özellikleri 7 gün ücretsiz deneyin.
       card:
       - WhatsApp + Telegram hesapları
       - Metin, ses ve fotoğraf çevirisi
       - Göndermeden önce “Okuyacağı” kontrolü
-      - 3 gün ücretsiz deneme, ödeme yok
+      - 7 gün ücretsiz deneme, ödeme yok
     - type: dl_steps
       k: Kurulum rehberi
       h: 4 kolay adımda hazır
@@ -1559,8 +1573,8 @@ pages:
         p: Dosyaya çift tıklayıp kurulumu izleyin (yaklaşık 1 dakika, yönetici yetkisi gerekmez). Mavi bir pencere <b>“Windows bilgisayarınızı korudu”</b> derse <b>Ek bilgi</b>'ye, ardından <b>Yine de çalıştır</b>'a tıklayın.
         tip: 'Yeni yazılımlarda bu normaldir: Windows SmartScreen GlotChat''i henüz çok görmedi. Dosya güvenlidir — SHA-256 sağlama değerini aşağıda kontrol edebilirsiniz.'
         mock: smartscreen
-      - h: 3 günlük ücretsiz denemenizi tek tıkla başlatın
-        p: GlotChat'i açın ve <b>3 günlük ücretsiz denememi başlat</b>'a tıklayın. Tüm özellikler hemen açılır ve GlotChat bir dakika içinde kendini en yeni sürüme günceller.
+      - h: 7 günlük ücretsiz denemenizi tek tıkla başlatın
+        p: GlotChat'i açın ve <b>7 günlük ücretsiz denememi başlat</b>'a tıklayın. Tüm özellikler hemen açılır ve GlotChat bir dakika içinde kendini en yeni sürüme günceller.
         tip: Bilgisayar başına bir ücretsiz deneme. Kart yok, ödeme yok, iptal edilecek bir şey yok.
         mock: activate
       - h: WhatsApp ve Telegram hesaplarınızı ekleyin
@@ -1597,13 +1611,13 @@ pages:
       open_first: true
       items:
       - - GlotChat'i indirmek ücretsiz mi?
-        - Evet. İndirme ücretsizdir ve 3 günlük deneme tüm özellikleri ödemesiz açar. Denemeden sonra paketler yılda 69 USDT'den başlar.
+        - Evet. İndirme ücretsizdir ve 7 günlük deneme tüm özellikleri ödemesiz açar. Denemeden sonra paketler yılda 69 USDT'den başlar.
       - - Windows neden “Windows bilgisayarınızı korudu” diyor?
         - Windows SmartScreen bu uyarıyı henüz çok görmediği yeni uygulamalar için gösterir. <b>Ek bilgi</b>'ye, ardından <b>Yine de çalıştır</b>'a tıklayın. GlotChat'i her zaman bu sayfadan indirin — dosyanın orijinal olduğundan emin olmak için SHA-256 değerini karşılaştırabilirsiniz.
       - - Kurulum dosyasının sürümü neden en yeni GlotChat'ten eski?
         - Kurulum dosyası Windows'un zaten güvendiği bir sürümde kalır, böylece her yerde sorunsuz kurulur. GlotChat'i başlattıktan bir dakika sonra kendini en yeni sürüme günceller (Telegram ve tüm yeni özelliklerle).
       - - Lisans anahtarı gerekir mi?
-        - 'Deneme için gerekmez: uygulamada <b>3 günlük ücretsiz denememi başlat</b>''a tıklayın, hemen başlar. Paket satın aldığınızda yıllık anahtarı Telegram''dan göndeririz — <b>Zaten bir lisans anahtarım var</b> bölümüne yapıştırın.'
+        - 'Deneme için gerekmez: uygulamada <b>7 günlük ücretsiz denememi başlat</b>''a tıklayın, hemen başlar. Paket satın aldığınızda yıllık anahtarı Telegram''dan göndeririz — <b>Zaten bir lisans anahtarım var</b> bölümüne yapıştırın.'
       - - Mac, Android veya iPhone sürümü var mı?
         - Şu an yok. GlotChat, Windows 10 ve 11 için bir masaüstü uygulamasıdır. Hesaplarınız telefonlarınızda kalır — GlotChat onları WhatsApp Web gibi bilgisayarınıza bağlar.
       - - GlotChat'i nasıl kaldırırım?
@@ -1619,7 +1633,7 @@ pages:
       - whatsapp-translator
   telegram-translator:
     title: PC için Telegram Çevirmeni – Her Sohbeti Otomatik Çevirin
-    description: 'Telegram sohbetlerini Windows''ta iki yönlü çevirin: gelen mesajlar orijinalin altında, yanıtlarınız göndermeden önce. 49 dil, çevrimdışı. 3 gün ücretsiz.'
+    description: 'Telegram sohbetlerini Windows''ta iki yönlü çevirin: gelen mesajlar orijinalin altında, yanıtlarınız göndermeden önce. 49 dil, çevrimdışı. 7 gün ücretsiz.'
     keywords: telegram çevirmen, telegram mesaj çevirme, telegram otomatik çeviri, pc telegram çeviri
     short: Telegram çevirmeni
     icon: ✈️
@@ -1964,7 +1978,7 @@ pages:
       - discord-translator
   messenger-translator:
     title: PC için Facebook Messenger Çevirmeni ve Çoklu Hesap
-    description: Facebook Messenger sohbetlerini Windows'ta iki yönlü çevirin ve birkaç Messenger hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz.
+    description: Facebook Messenger sohbetlerini Windows'ta iki yönlü çevirin ve birkaç Messenger hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz.
     keywords: messenger çevirmen, facebook messenger çeviri, messenger mesaj çevirme, birden fazla messenger hesabı, facebook çoklu hesap pc, messenger otomatik çeviri
     short: Messenger çevirmeni
     icon: 💬
@@ -2049,7 +2063,7 @@ pages:
       - whatsapp-translator
   instagram-dm-translator:
     title: PC için Instagram DM Çevirmeni ve Çoklu Instagram Hesabı
-    description: Instagram DM'lerini Windows'ta iki yönlü çevirin ve birkaç Instagram hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz deneme.
+    description: Instagram DM'lerini Windows'ta iki yönlü çevirin ve birkaç Instagram hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz deneme.
     keywords: instagram dm çeviri, instagram çevirmen, instagram mesaj çevirme, birden fazla instagram hesabı pc, instagram dm bilgisayar, instagram çoklu hesap
     short: Instagram DM çevirmeni
     icon: 📸
@@ -2134,7 +2148,7 @@ pages:
       - whatsapp-translator
   discord-translator:
     title: PC için Discord Çevirmeni ve Çoklu Discord Hesabı
-    description: Discord mesajlarını sunucularda ve DM'lerde Windows'ta çevirin, birkaç Discord hesabını yan yana açık tutun. 49 dil, çevrimdışı. 3 gün ücretsiz.
+    description: Discord mesajlarını sunucularda ve DM'lerde Windows'ta çevirin, birkaç Discord hesabını yan yana açık tutun. 49 dil, çevrimdışı. 7 gün ücretsiz.
     keywords: discord çevirmen, discord mesaj çevirme, discord otomatik çeviri, birden fazla discord hesabı, discord çoklu hesap pc
     short: Discord çevirmeni
     icon: 🎮
@@ -2252,7 +2266,7 @@ pages:
 
           - **Kimler için:** yurt dışı müşterisi olan satıcılar, ihracatçılar, ajanslar ve destek ekipleri.
           - **Kimler için değil:** Mac kullanıcıları ve Slack, e-posta gibi iş uygulamalarına ihtiyaç duyanlar.
-          - **Fiyat:** 3 gün ücretsiz, sonra yılda 69, 129 veya 249 USDT (uygulama başına 5, 15 veya sınırsız hesap).
+          - **Fiyat:** 7 gün ücretsiz, sonra yılda 69, 129 veya 249 USDT (uygulama başına 5, 15 veya sınırsız hesap).
 
           ## 2. Rambox — çok sayıda iş uygulaması için en iyisi
 
@@ -2305,7 +2319,7 @@ pages:
 
           İyileri her uygulamanın **resmi web sürümünü** (WhatsApp Web gibi) kendi yalıtılmış oturumunda açar — tarayıcınızın yaptığının aynısı, sadece daha düzenli. Değiştirilmiş uygulamalardan (“GB WhatsApp” gibi) ve toplu mesaj araçlarından uzak durun: hesapları kapattıran bunlardır.
 
-          Çeviriyi kendi sohbetlerinizde görmek mi istiyorsunuz? [GlotChat'i 3 gün ücretsiz deneyin](/tr/download/) — kart yok, ödeme yok.
+          Çeviriyi kendi sohbetlerinizde görmek mi istiyorsunuz? [GlotChat'i 7 gün ücretsiz deneyin](/tr/download/) — kart yok, ödeme yok.
       - type: faq
         k: "SSS"
         h: "Kısa cevaplar"
@@ -2313,7 +2327,7 @@ pages:
           - ["En iyi hepsi bir arada mesajlaşma uygulaması hangisi?", "İhtiyacınıza bağlı. Başka dillerdeki müşteriler için GlotChat: listede sohbetleri iki yönlü çeviren tek uygulama. Çok sayıda iş uygulaması için Rambox veya Wavebox. Ücretsiz ve açık kaynak için Ferdium."]
           - ["Hangi hepsi bir arada mesajlaşma uygulaması mesajları çeviriyor?", "GlotChat; WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND'daki her sohbeti iki yönlü, 49 dilde çevirir — PC'nizde çevrimdışı."]
           - ["Tek uygulamada birden fazla WhatsApp hesabı kullanabilir miyim?", "Evet. Bu listedeki beş uygulamanın hepsi birden fazla WhatsApp hesabını yan yana açabilir. GlotChat aynı anda 27 hesapla test edildi."]
-          - ["Ücretsiz bir hepsi bir arada mesajlaşma uygulaması var mı?", "Ferdium ücretsiz. Rambox, Franz ve Wavebox'ın sınırlı ücretsiz paketleri var. GlotChat tüm özellikleriyle 3 gün ücretsiz."]
+          - ["Ücretsiz bir hepsi bir arada mesajlaşma uygulaması var mı?", "Ferdium ücretsiz. Rambox, Franz ve Wavebox'ın sınırlı ücretsiz paketleri var. GlotChat tüm özellikleriyle 7 gün ücretsiz."]
       - type: related
         k: "Sıradaki"
         h: "Okumaya devam edin"
@@ -2334,11 +2348,11 @@ pages:
       - type: prose
         toc: true
         md: |
-          > **Kısaca:** GlotChat'i 3 gün ücretsiz deneyin → Telegram'dan paketinizi ve Makine Kimliğinizi yazın → verdiğimiz adrese USDT gönderin → gelen anahtarı yapıştırın. Bitti.
+          > **Kısaca:** GlotChat'i 7 gün ücretsiz deneyin → Telegram'dan paketinizi ve Makine Kimliğinizi yazın → verdiğimiz adrese USDT gönderin → gelen anahtarı yapıştırın. Bitti.
 
           ## 1. Önce ücretsiz deneyin
 
-          [GlotChat'i indirin](/tr/download/) ve **“3 günlük ücretsiz denememi başlat”** düğmesine tıklayın. Tüm özellikler açık, ödeme yok. Bir şey ödemeden önce hesaplarınızı ekleyin ve GlotChat'in size uygun olduğundan emin olun.
+          [GlotChat'i indirin](/tr/download/) ve **“7 günlük ücretsiz denememi başlat”** düğmesine tıklayın. Tüm özellikler açık, ödeme yok. Bir şey ödemeden önce hesaplarınızı ekleyin ve GlotChat'in size uygun olduğundan emin olun.
 
           ## 2. Paketinizi seçin
 
@@ -2515,7 +2529,7 @@ pages:
         items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
   translate/turkish-english:
     title: "WhatsApp Türkçe-İngilizce Çevirmen (PC) | GlotChat"
-    description: "WhatsApp ve Telegram sohbetlerini Türkçe ile İngilizce arasında PC'nizde çevirin — otomatik, iki yönlü, çevrimdışı. Sesli mesajlar ve fotoğraflar da. 3 gün ücretsiz."
+    description: "WhatsApp ve Telegram sohbetlerini Türkçe ile İngilizce arasında PC'nizde çevirin — otomatik, iki yönlü, çevrimdışı. Sesli mesajlar ve fotoğraflar da. 7 gün ücretsiz."
     keywords: "whatsapp türkçe İngilizce çeviri, whatsapp İngilizce çevirmen, İngilizce türkçe sohbet çevirisi, telegram İngilizce çeviri"
     short: "Türkçe ↔ İngilizce"
     icon: "🌐"

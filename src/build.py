@@ -94,6 +94,10 @@ def validate(content):
             for k in ("title", "description", "blocks"):
                 if not pg.get(k):
                     problems.append(f"{code}: page '{pid}' has no {k}")
+    if not getattr(cfg, "LEGAL_NAME", "").strip():
+        problems.append("warn config: LEGAL_NAME is empty (Terms/Privacy/Refund need your legal name for Paddle)")
+    if not cfg.EMAIL.strip():
+        problems.append("warn config: EMAIL is empty (Paddle needs a contact email reachable from the home page)")
     for code, c in content.items():
         for pid, pg in (c.get("pages") or {}).items():
             t, d = pg.get("title", ""), pg.get("description", "")
@@ -136,8 +140,18 @@ def slugify(text):
     return re.sub(r"[\s_]+", "-", t)[:60] or "s"
 
 
+def legal_fill(t):
+    """%LEGAL_NAME% / %CONTACT% placeholders used by the legal pages (filled from config.py)."""
+    if "%" not in t:
+        return t
+    tg = f"Telegram [@{cfg.TELEGRAM_USER}](https://t.me/{cfg.TELEGRAM_USER})"
+    email = cfg.EMAIL.strip()
+    contact = f"email at [{email}](mailto:{email}) or on {tg}" if email else f"message on {tg}"
+    return t.replace("%LEGAL_NAME%", cfg.LEGAL_NAME.strip() or "the GlotChat team").replace("%CONTACT%", contact)
+
+
 def render_md(md_text):
-    html = markdown.markdown(md_text, extensions=["tables", "sane_lists"])
+    html = markdown.markdown(legal_fill(md_text), extensions=["tables", "sane_lists"])
     toc, seen = [], set()
 
     def h2(m):
@@ -359,7 +373,7 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
         graph.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": S + c["url"]} for i, c in enumerate(crumbs)]})
         webpage["breadcrumb"] = {"@id": url + "#breadcrumb"}
-    if page.get("app", True) and not page.get("special") and not pid.startswith(("privacy", "terms")):
+    if page.get("app", True) and not page.get("special") and not pid.startswith(("privacy", "terms", "refund")):
         pricing_url = S + path_of(lang, "pricing")
         graph.append({
             "@type": "SoftwareApplication", "@id": S + f"/#app-{lang}", "name": "GlotChat",
@@ -372,13 +386,14 @@ def make_jsonld(lang, pid, page, url, crumbs, ui, og_rel, blocks):
             "softwareVersion": cfg.DOWNLOAD["version"], "fileSize": f"{cfg.DOWNLOAD['size_mb']}MB",
             "softwareRequirements": "Windows 10 or Windows 11, 64-bit", "memoryRequirements": "4 GB RAM",
             "storageRequirements": "2 GB free disk space",
-            "offers": [{"@type": "Offer", "name": ui["plans"][p["id"]]["name"], "price": str(p["price"]),
-                        "priceCurrency": "USD", "url": pricing_url, "availability": "https://schema.org/InStock",
+            # every plan, yearly (ANN) and monthly (MON)
+            "offers": [{"@type": "Offer", "name": ui["plans"][p["id"]]["name"] + (" (" + ui.get("period_m", "Monthly") + ")" if unit == "MON" else ""),
+                        "price": str(amount), "priceCurrency": "USD", "url": pricing_url, "availability": "https://schema.org/InStock",
                         "category": "subscription",
-                        "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p["price"]),
-                                               "priceCurrency": "USD", "unitCode": "ANN", "referenceQuantity":
-                                               {"@type": "QuantitativeValue", "value": 1, "unitCode": "ANN"}}}
-                       for p in cfg.PLANS]})
+                        "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(amount),
+                                               "priceCurrency": "USD", "unitCode": unit, "referenceQuantity":
+                                               {"@type": "QuantitativeValue", "value": 1, "unitCode": unit}}}
+                       for p in cfg.PLANS for unit, amount in (("ANN", p["price"]), ("MON", p["month"]))]})
         webpage["about"] = {"@id": S + f"/#app-{lang}"}
     if page.get("article"):
         graph.append({"@type": "Article", "@id": url + "#article", "headline": re.sub(r"<[^>]+>", "", page.get("og_heading") or page["title"])[:110],
@@ -504,10 +519,10 @@ def write_llms(en, available):
              "- Apps: WhatsApp, WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord (several accounts of each; all apps in every plan)",
              f"- Accounts: tested with {cfg.FACTS['accounts_tested']} accounts at the same time; each uses about {cfg.FACTS['ram_per_account']} of memory",
              f"- Translation: {cfg.FACTS['languages']} languages, offline on the user's PC; voice notes recognised in about {cfg.FACTS['voice_languages']} languages",
-             f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 3-day trial\"), one trial per computer",
+             f"- Free trial: {cfg.TRIAL_DAYS} days, every feature, no payment — starts with one click in the app (\"Start my free 7-day trial\"), one trial per computer",
              f"- Download (Windows installer, version {cfg.DOWNLOAD['version']}, {cfg.DOWNLOAD['size_mb']} MB): {cfg.DOWNLOAD['url']} — install guide: {S}{path_of('en', 'download')}",
-             "- Prices (per year, paid in USDT " + cfg.PAY_NETWORKS + "): " + ", ".join(
-                 f"{p['id']} {p['price']} USDT ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts per app, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),
+             "- Prices (paid in USDT " + cfg.PAY_NETWORKS + ", monthly or yearly): " + ", ".join(
+                 f"{p['id']} {p['month']} USDT a month or {p['price']} USDT a year ({'unlimited' if p['accounts'] is None else 'up to ' + str(p['accounts'])} accounts per app, {p['pcs']} PC{'s' if p['pcs'] > 1 else ''})" for p in cfg.PLANS),
              f"- Contact / purchase: Telegram https://t.me/{cfg.TELEGRAM_USER}",
              f"- Website languages: " + ", ".join(cfg.LANGS[l]["name"] for l in available["home"]), "",
              "## Pages", ""]

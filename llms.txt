@@ -10,25 +10,25 @@ GlotChat is a Windows desktop app — an all-in-one messenger for business. It o
 - Apps: WhatsApp, WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord (several accounts of each; all apps in every plan)
 - Accounts: tested with 27 accounts at the same time; each uses about 300–450 MB of memory
 - Translation: 49 languages, offline on the user's PC; voice notes recognised in about 100 languages
-- Free trial: 3 days, every feature, no payment — starts with one click in the app ("Start my free 3-day trial"), one trial per computer
+- Free trial: 7 days, every feature, no payment — starts with one click in the app ("Start my free 7-day trial"), one trial per computer
 - Download (Windows installer, version 1.2.5, 381 MB): https://download.glotchat.com/GlotChat-Setup-1.2.5.exe — install guide: https://www.glotchat.com/download/
-- Prices (per year, paid in USDT TRC20 · BEP20 · ERC20): Starter 69 USDT (up to 5 accounts per app, 1 PC), Pro 129 USDT (up to 15 accounts per app, 1 PC), Business 249 USDT (unlimited accounts per app, 3 PCs)
+- Prices (paid in USDT TRC20 · BEP20 · ERC20, monthly or yearly): Starter 9 USDT a month or 69 USDT a year (up to 5 accounts per app, 1 PC), Pro 15 USDT a month or 129 USDT a year (up to 15 accounts per app, 1 PC), Business 29 USDT a month or 249 USDT a year (unlimited accounts per app, 3 PCs)
 - Contact / purchase: Telegram https://t.me/GlotChat
 - Website languages: English, 简体中文, 繁體中文, العربية, Türkçe, Español, Português, Русский
 
 ## Pages
 
-- [Home](https://www.glotchat.com/): All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND accounts in one window, every chat translated into 49 languages. 3 days free.
-- [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter 69, Pro 129, Business 249 USDT a year. WhatsApp, Telegram and every feature included, free 3-day trial, pay in USDT.
+- [Home](https://www.glotchat.com/): All-in-one messenger for PC: WhatsApp, Telegram, Messenger, Instagram, Discord & BAND accounts in one window, every chat translated into 49 languages. 7 days free.
+- [Pricing](https://www.glotchat.com/pricing/): GlotChat plans: Starter $9, Pro $15, Business $29 a month — or $69, $129, $249 a year (save up to 36%). Every feature, free 7-day trial, pay in USDT.
 - [WhatsApp translator](https://www.glotchat.com/whatsapp-translator/): Translate WhatsApp chats both ways on your PC: messages, voice notes and text in photos, in 49 languages, offline — with a check before you send. Free trial.
-- [Telegram translator](https://www.glotchat.com/telegram-translator/): Translate Telegram chats both ways on Windows: incoming messages under the original, your replies before you send. 49 languages, offline. Free 3-day trial.
+- [Telegram translator](https://www.glotchat.com/telegram-translator/): Translate Telegram chats both ways on Windows: incoming messages under the original, your replies before you send. 49 languages, offline. Free 7-day trial.
 - [Multiple WhatsApp accounts](https://www.glotchat.com/multiple-whatsapp-accounts/): Run 2, 10 or 27+ WhatsApp accounts side by side on Windows. Isolated sessions, a proxy per account, notifications per account, built-in translation.
 - [Multiple Telegram accounts](https://www.glotchat.com/multiple-telegram-accounts/): Use many Telegram accounts at once on Windows — each isolated, with its own notifications and proxy, plus built-in translation. Beyond Telegram's 3-account limit.
 - [All-in-one messenger](https://www.glotchat.com/all-in-one-messenger/): WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window on Windows. Many accounts per app, each isolated, every chat translated. Free trial.
-- [Messenger translator](https://www.glotchat.com/messenger-translator/): Translate Facebook Messenger chats both ways on Windows and keep several Messenger accounts open side by side. 49 languages, offline. Free 3-day trial.
-- [Instagram DM translator](https://www.glotchat.com/instagram-dm-translator/): Translate Instagram Direct messages both ways on Windows and keep several Instagram accounts open side by side. 49 languages, offline. Free 3-day trial.
-- [Discord translator](https://www.glotchat.com/discord-translator/): Translate Discord messages in servers and DMs on Windows, and keep several Discord accounts open side by side. 49 languages, offline. Free 3-day trial.
-- [BAND translator](https://www.glotchat.com/band-translator/): Translate BAND chats on Windows and keep several BAND accounts open side by side, next to WhatsApp and Telegram. 49 languages, offline. Free 3-day trial.
+- [Messenger translator](https://www.glotchat.com/messenger-translator/): Translate Facebook Messenger chats both ways on Windows and keep several Messenger accounts open side by side. 49 languages, offline. Free 7-day trial.
+- [Instagram DM translator](https://www.glotchat.com/instagram-dm-translator/): Translate Instagram Direct messages both ways on Windows and keep several Instagram accounts open side by side. 49 languages, offline. Free 7-day trial.
+- [Discord translator](https://www.glotchat.com/discord-translator/): Translate Discord messages in servers and DMs on Windows, and keep several Discord accounts open side by side. 49 languages, offline. Free 7-day trial.
+- [BAND translator](https://www.glotchat.com/band-translator/): Translate BAND chats on Windows and keep several BAND accounts open side by side, next to WhatsApp and Telegram. 49 languages, offline. Free 7-day trial.
 - [Compare](https://www.glotchat.com/compare/): WhatsApp Web, Telegram Desktop, browser profiles, translator extensions or a multi-account app? An honest comparison for teams selling across borders.
 - [Rambox alternative](https://www.glotchat.com/rambox-alternative/): Looking for a Rambox, Ferdium or Franz alternative? GlotChat puts WhatsApp, Telegram, Instagram and more in one window — and translates every chat.
 - [Real estate](https://www.glotchat.com/for/real-estate/): Handle every agent's WhatsApp and Telegram in one window and answer foreign buyers in their language — chats, voice notes and documents translated.
@@ -46,16 +46,17 @@ GlotChat is a Windows desktop app — an all-in-one messenger for business. It o
 - [How to buy](https://www.glotchat.com/how-to-buy/): Never paid with USDT? Here's how to buy a GlotChat plan step by step: get USDT on Binance or OKX, pick the right network, send it and receive your key.
 - [Is it safe?](https://www.glotchat.com/is-it-safe/): How GlotChat works, what stays on your PC, and what really gets WhatsApp and Telegram accounts banned — plus 7 tips to keep your numbers safe.
 - [WhatsApp Business accounts](https://www.glotchat.com/multiple-whatsapp-business-accounts/): Run several WhatsApp Business numbers on one PC in one window — each isolated, with labels, catalog and quick replies, and every chat translated. No API needed.
-- [Chinese ↔ English](https://www.glotchat.com/translate/chinese-english/): Translate WhatsApp and Telegram chats between Chinese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Arabic ↔ English](https://www.glotchat.com/translate/arabic-english/): Translate WhatsApp and Telegram chats between Arabic and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Spanish ↔ English](https://www.glotchat.com/translate/spanish-english/): Translate WhatsApp and Telegram chats between Spanish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Portuguese ↔ English](https://www.glotchat.com/translate/portuguese-english/): Translate WhatsApp and Telegram chats between Portuguese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Russian ↔ English](https://www.glotchat.com/translate/russian-english/): Translate WhatsApp and Telegram chats between Russian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Turkish ↔ English](https://www.glotchat.com/translate/turkish-english/): Translate WhatsApp and Telegram chats between Turkish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [French ↔ English](https://www.glotchat.com/translate/french-english/): Translate WhatsApp and Telegram chats between French and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Korean ↔ English](https://www.glotchat.com/translate/korean-english/): Translate WhatsApp and Telegram chats between Korean and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Vietnamese ↔ English](https://www.glotchat.com/translate/vietnamese-english/): Translate WhatsApp and Telegram chats between Vietnamese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Indonesian ↔ English](https://www.glotchat.com/translate/indonesian-english/): Translate WhatsApp and Telegram chats between Indonesian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 3 days free.
-- [Privacy policy](https://www.glotchat.com/privacy/): How GlotChat handles data: chats and translations stay on your PC; the website uses cookie-free analytics; licensing only needs your key and Machine ID.
+- [Chinese ↔ English](https://www.glotchat.com/translate/chinese-english/): Translate WhatsApp and Telegram chats between Chinese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Arabic ↔ English](https://www.glotchat.com/translate/arabic-english/): Translate WhatsApp and Telegram chats between Arabic and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Spanish ↔ English](https://www.glotchat.com/translate/spanish-english/): Translate WhatsApp and Telegram chats between Spanish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Portuguese ↔ English](https://www.glotchat.com/translate/portuguese-english/): Translate WhatsApp and Telegram chats between Portuguese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Russian ↔ English](https://www.glotchat.com/translate/russian-english/): Translate WhatsApp and Telegram chats between Russian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Turkish ↔ English](https://www.glotchat.com/translate/turkish-english/): Translate WhatsApp and Telegram chats between Turkish and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [French ↔ English](https://www.glotchat.com/translate/french-english/): Translate WhatsApp and Telegram chats between French and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Korean ↔ English](https://www.glotchat.com/translate/korean-english/): Translate WhatsApp and Telegram chats between Korean and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Vietnamese ↔ English](https://www.glotchat.com/translate/vietnamese-english/): Translate WhatsApp and Telegram chats between Vietnamese and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Indonesian ↔ English](https://www.glotchat.com/translate/indonesian-english/): Translate WhatsApp and Telegram chats between Indonesian and English on your PC — automatically, both ways, offline. Voice notes and photos too. 7 days free.
+- [Privacy policy](https://www.glotchat.com/privacy/): How GlotChat handles data: chats and translations stay on your PC, the site uses cookie-free analytics, and the trial and license use your email and Machine ID.
 - [Terms of use](https://www.glotchat.com/terms/): The terms for using the GlotChat app and website: licenses, free trial, payments, acceptable use and limits of liability.
-- [Download](https://www.glotchat.com/download/): Download GlotChat free for Windows 10 & 11: WhatsApp and Telegram accounts in one window with offline translation. 3-day free trial, no card.
+- [Refund policy](https://www.glotchat.com/refund/): GlotChat's 14-day money-back guarantee: how to get a refund for a card, PayPal or crypto payment, and how to cancel automatic renewal.
+- [Download](https://www.glotchat.com/download/): Download GlotChat free for Windows 10 & 11: WhatsApp and Telegram accounts in one window with offline translation. 7-day free trial, no card.

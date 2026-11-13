@@ -384,7 +384,19 @@ a.card.rel .more { margin-top: 14px; }
 .price b { font-size: 52px; font-weight: 800; letter-spacing: -.04em; color: var(--ink); }
 .price span { font-weight: 800; color: #26a17b; font-size: 18px; }
 .price em { font-style: normal; color: var(--muted); font-weight: 600; font-size: 15px; }
+.price .cur { align-self: flex-start; margin-top: 8px; margin-inline-end: -6px; font-size: 26px; color: var(--ink); }
+.guarantee a { color: inherit; text-decoration: none; }
+.guarantee a:hover { text-decoration: underline; }
+.foot .foot-mail { font-weight: 600; }
 .once { color: var(--muted); font-size: 13.5px; }
+/* monthly / yearly switch on the plans */
+.period { display: flex; width: max-content; max-width: 100%; margin: 0 auto 22px; padding: 4px; gap: 4px; border-radius: 999px; background: #fff; border: 1px solid var(--line); box-shadow: 0 6px 20px -12px rgba(16, 24, 40, .25); }
+.period button { border: 0; background: none; font: inherit; font-weight: 700; font-size: 15px; color: var(--text2); padding: 9px 20px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.period button.on { background: var(--ink); color: #fff; }
+.period em { font-style: normal; font-size: 12px; font-weight: 800; color: #fff; background: var(--brand); border-radius: 999px; padding: 2px 8px; }
+.plans[data-period="month"] .p-y, .plans[data-period="year"] .p-m { display: none; }
+.once.p-m { color: var(--brand-d); font-weight: 650; }
+.buy-app { text-align: center; color: var(--text2); margin: -6px auto 18px; max-width: 640px; }
 .plan .ticks { margin: 22px 0 26px; flex: 1; }
 .plan.pop { border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, var(--grad) border-box; box-shadow: 0 30px 70px -30px rgba(10, 132, 214, .45); }
 .ribbon { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--grad); color: #fff; font-size: 12.5px; font-weight: 800; padding: 5px 14px; border-radius: 99px; white-space: nowrap; }

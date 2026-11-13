@@ -205,6 +205,26 @@
     if (fin) new IntersectionObserver(function (es) { finIn = es[0].isIntersecting; stick(); }, { threshold: 0.2 }).observe(fin);
   }
 
+  /* -------- monthly / yearly prices -------- */
+  $$('.period').forEach(function (sw) {
+    var plans = sw.nextElementSibling;
+    $$('button', sw).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var per = b.getAttribute('data-period');
+        $$('button', sw).forEach(function (x) { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', String(x === b)); });
+        plans.setAttribute('data-period', per);
+        $$('[data-plan-card]', plans).forEach(function (card) {
+          var btn = $('[data-tg="plan"], [data-tg="planMonth"]', card);
+          if (!btn) return;
+          btn.setAttribute('data-tg', per === 'year' ? 'plan' : 'planMonth');
+          btn.setAttribute('data-price', card.getAttribute(per === 'year' ? 'data-py' : 'data-pm'));
+        });
+        links();
+        track('plan_period', { period: per });
+      });
+    });
+  });
+
   /* -------- plan finder -------- */
   var chips = $$('.chips [role="radio"]');
   chips.forEach(function (c) {

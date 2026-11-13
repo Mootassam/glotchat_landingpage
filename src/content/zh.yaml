@@ -6,7 +6,7 @@ ui:
   lang_label: 语言
   close: 关闭
   contact: 联系我们
-  promo_html: "<b>所有聊天，一个窗口，任何语言都能聊。</b>免费试用 3 天，无需银行卡。"
+  promo_html: "<b>所有聊天，一个窗口，任何语言都能聊。</b>免费试用 7 天，无需银行卡。"
   promo_go: "免费下载 →"
   nav:
     product: 产品
@@ -39,15 +39,15 @@ ui:
     safe: "安全吗？"
     wab: "WhatsApp Business 多开"
     pairs: "热门语言组合"
-  cta_trial: 免费下载 · 试用 3 天
+  cta_trial: 免费下载 · 试用 7 天
   cta_demo: 观看演示
   cta_live: 预约在线演示
   expand: 全屏观看
   demo_label: GlotChat 演示
   micro:
-  - 免费试用 3 天，无需付款
+  - 免费试用 7 天，无需付款
   - Telegram 真人客服回复
-  - 每年 69 USDT 起
+  - 每月 $9 起
   trust:
   - 内置官方 WhatsApp 网页版和 Telegram
   - 聊天记录只在你的电脑上
@@ -71,7 +71,7 @@ ui:
   finder:
     q: 你在一个应用里最多使用多少个账号？
     a: 最适合你：
-    btn: 免费试用 3 天
+    btn: 免费试用 7 天
   plans:
     Starter:
       name: 入门版
@@ -89,6 +89,14 @@ ui:
   for_you: 为你推荐
   per_year: / 年
   per_month: USDT / 月
+  per_month_s: "/ 月"
+  period_m: "按月"
+  period_y: "按年"
+  save: "省 {n}%"
+  or_year: "或按年 ${p} —— 省 {n}%"
+  eq_month: "≈ 每月 ${p}，按年付费"
+  buy_app_p: "在 GlotChat 内付款，大约一分钟搞定。想找真人？在 Telegram 下单 —— 几分钟内回复。"
+  buy_app: [["在 GlotChat 中点击“购买”", "选择套餐，按月或按年。软件里会显示价格，并标出适合你账号数的套餐。"], ["用 USDT 或其他加密货币付款", "会打开安全的加密货币付款页面：TRC20、BEP20 或 ERC20 的 USDT，或 300 多种其他币。"], ["GlotChat 自动解锁", "付款约一分钟后自动解锁 —— 不用复制授权码。账号、登录状态和设置全部保留。"]]
   up_to_accounts: 每个应用最多 <b>{n}</b> 个账号
   unlimited_accounts: <b>不限</b>账号数量
   plan_f:
@@ -97,15 +105,15 @@ ui:
     updates: 包含所有更新
     apps: WhatsApp、Telegram、Messenger、Instagram、Discord、BAND
   buy: 在 Telegram 购买{plan}
-  try: 或先免费试用 3 天
+  try: 或先免费试用 7 天
   custom_html: <b>需要更多电脑、团队部署或终身授权？</b>告诉我们你的需求，我们为你定制报价。
   custom_btn: 获取定制报价
-  paynote: 使用 USDT 付款（TRC20 · BEP20 · ERC20）。购买前有疑问？直接问我们 —— Telegram 真人回复。
+  paynote: 价格以美元计。使用 USDT 付款（TRC20 · BEP20 · ERC20），1 USDT = 1 美元。购买前有疑问？直接问我们 —— Telegram 真人回复。
   guarantee: "14 天退款保证 —— 放心购买，无需任何理由。"
   final:
     h: 你的下一位海外客户，正在输入消息。
-    p: 下载 GlotChat，点击“开始 3 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。
-    k: 免费试用 3 天
+    p: 下载 GlotChat，点击“开始 7 天免费试用”，添加你的 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 账号。想先聊聊？给我们发消息 —— 可以在线演示，也可以解答任何问题。
+    k: 免费试用 7 天
     tg: 在 Telegram 上联系我们
     points:
     - 全部功能可用
@@ -121,7 +129,7 @@ ui:
   mbar: 咨询
   leave:
     h: 先别走——免费试用一下
-    p: 下载 GlotChat，在软件里一键开始 3 天免费试用，全部功能开放 — 无需付款，无需承诺。
+    p: 下载 GlotChat，在软件里一键开始 7 天免费试用，全部功能开放 — 无需付款，无需承诺。
     btn: 下载并免费试用
     'no': 不用了，谢谢
     tg: 或者问我们一个问题
@@ -131,13 +139,14 @@ ui:
     resources: 资源
     privacy: 隐私政策（英文）
     terms: 使用条款（英文）
+    refund: 退款政策
     trademark: WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 是其各自所有者的商标。GlotChat 是独立产品，与上述公司没有任何隶属、认可或赞助关系。
   og_kicker: "多合一聚合聊天软件 · 自动翻译（电脑版）"
   og_sub: 文字、语音和图片在你的电脑上离线翻译。
   og_chips:
   - 6 个应用一个窗口
   - 49 种语言
-  - 免费试用 3 天
+  - 免费试用 7 天
   app_description: "多合一聚合聊天软件（Windows 桌面版）：在一个窗口中运行多个 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 账号（每个账号独立隔离，可单独设置通知和代理），在电脑上离线翻译聊天，支持 49 种语言（WhatsApp 和 Telegram 还可翻译语音和图片文字），发送前可核对译文。"
   feature_list:
   - 一个窗口运行多个 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 账号
@@ -160,6 +169,7 @@ ui:
     finder: 你好！我一个应用里有 {n} 个账号，GlotChat {plan} 适合我吗？
     planTrial: 你好！我想先试用 GlotChat {plan} 套餐。
     plan: 你好！我想购买 GlotChat {plan} 套餐（{price} USDT / 年），怎么付款？
+    planMonth: "你好！我想购买 GlotChat {plan} 套餐（{price} USDT / 月），怎么付款？"
     custom: 你好！我需要 GlotChat 定制方案：__ 台电脑，__ 个账号（终身授权？）。
   dl:
     nav: 下载
@@ -188,8 +198,8 @@ ui:
       ss_run: 仍要运行
       ss_dont: 不运行
       act_title: 欢迎使用 GlotChat
-      act_sub: 所有功能免费试用 3 天 — 无需付款，无需银行卡。或输入您购买的激活码。
-      act_trial: 开始 3 天免费试用
+      act_sub: 所有功能免费试用 7 天 — 无需付款，无需银行卡。或输入您购买的激活码。
+      act_trial: 开始 7 天免费试用
       act_mid: 立即开始 · 全部功能 · 每台电脑可试用一次
       act_btn: 我已经有激活码
     autoupdate: 会自动更新到最新版本
@@ -200,7 +210,7 @@ ui:
 pages:
   home:
     title: "GlotChat – 多合一聚合聊天软件 | WhatsApp、Telegram 多开自动翻译（电脑版）"
-    description: "GlotChat 是电脑版多合一聚合聊天软件：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 多个账号在一个窗口，所有聊天自动翻译，支持 49 种语言，发送前可核对译文。免费试用 3 天。"
+    description: "GlotChat 是电脑版多合一聚合聊天软件：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 多个账号在一个窗口，所有聊天自动翻译，支持 49 种语言，发送前可核对译文。免费试用 7 天。"
     keywords: "多合一聊天软件,聚合聊天软件,All-in-one messenger,GlotChat,WhatsApp翻译,Telegram翻译,WhatsApp多开,Telegram多开,Messenger翻译,Instagram私信翻译,Discord翻译,外贸WhatsApp翻译软件"
     og_title: "GlotChat – 多合一聚合聊天软件：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 一个窗口，每个聊天自动翻译"
     og_heading: "多合一聚合聊天软件。所有应用，所有账号，所有语言。"
@@ -212,7 +222,7 @@ pages:
       h1: "GlotChat 多合一聚合聊天软件。<span class=\"grad\">所有应用，任何语言。</span>"
       lead: "WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND —— 每个应用想开多少账号都行 —— 全部在电脑上的一个窗口里。客户的消息用中文阅读，回复用客户的语言发出，发送前就知道对方会读到什么。"
       micro:
-      - 免费试用 3 天，无需付款
+      - 免费试用 7 天，无需付款
       - Telegram 真人客服回复
       - 每年 69 USDT 起
       media_alt: "GlotChat 聚合聊天软件：WhatsApp、Telegram、Messenger、Instagram、Discord、BAND 账号在一个窗口，聊天自动翻译"
@@ -404,7 +414,7 @@ pages:
           notes:
           - - ok
             - ✓ “GlotShop” 在你的不翻译列表中
-      cta: 免费试用翻译功能 3 天
+      cta: 免费试用翻译功能 7 天
     - type: cards
       id: who
       who: true
@@ -461,19 +471,19 @@ pages:
       - 全部在你自己的电脑上离线翻译
     - type: steps
       k: 先试用，再付款
-      h: 免费 3 天，10 分钟就能用起来
+      h: 免费 7 天，10 分钟就能用起来
       items:
       - - 下载 GlotChat
         - 从本网站下载 Windows 安装包，大约 1 分钟装好 —— 不需要管理员权限。
       - - 一键开始免费试用
-        - 打开 GlotChat，点击“开始 3 天免费试用”。全部功能立即可用 —— 无需付款，也不用发消息。
+        - 打开 GlotChat，点击“开始 7 天免费试用”。全部功能立即可用 —— 无需付款，也不用发消息。
       - - 满意再购买
         - 用 USDT 付款，获得一年的授权码。账号和设置全部保留 —— 不需要重新设置。
       cta: 下载并开始免费试用
     - type: plans
       k: 价格
       h: 简单的年度套餐，先免费试用
-      p: 每个套餐都包含全部功能、全部应用和全部更新。先免费试用 3 天 —— 满意再付款。
+      p: 每个套餐都包含全部功能、全部应用和全部更新。先免费试用 7 天 —— 满意再付款。
       more: 查看套餐详细对比
       soft: false
     - type: faq
@@ -481,7 +491,7 @@ pages:
       h: 常见问题解答
       items:
       - - 有免费试用吗？
-        - 有。下载 GlotChat，打开后点击“开始 3 天免费试用”，全部功能立即可用，无需付款。满意的话购买套餐，所有账号和设置都会保留。
+        - 有。下载 GlotChat，打开后点击“开始 7 天免费试用”，全部功能立即可用，无需付款。满意的话购买套餐，所有账号和设置都会保留。
       - - 支持哪些应用？
         - WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信和 Discord —— 每个应用都可以添加多个账号，全部在一个窗口里。所有应用的聊天都双向翻译；语音和图片翻译在 WhatsApp 和 Telegram 中可用。
       - - 我的账号安全吗？
@@ -504,17 +514,17 @@ pages:
       - telegram-translator
       - instagram-dm-translator
   pricing:
-    title: GlotChat 价格 —— 每年 69 USDT 起，免费试用
-    description: GlotChat 套餐：Starter 69、Pro 129、Business 249 USDT/年。包含 WhatsApp、Telegram 和全部功能，免费试用 3 天，USDT 付款。
+    title: GlotChat 价格 —— 每月 $9 起，免费试用
+    description: GlotChat 套餐：Starter $9、Pro $15、Business $29/月，或按年 $69、$129、$249（最多省 36%）。包含全部功能，免费试用 7 天，USDT 付款。
     keywords: GlotChat价格,WhatsApp多开软件价格,WhatsApp翻译软件价格,Telegram多开软件
     short: 价格
     icon: 💳
-    og_heading: 简单的年度套餐，全部功能，免费试用 3 天
+    og_heading: 按月或按年付费，全部功能，免费试用 7 天
     blocks:
     - type: hero
       k: 价格
-      h1: 简单的年度套餐，<span class="grad">先免费试用全部功能</span>
-      lead: 一年一个价格，包含全部功能、全部应用、全部更新。先免费试用 3 天 —— 无需付款，无需银行卡，也不用取消。
+      h1: 按月或按年付费，<span class="grad">先免费试用全部功能</span>
+      lead: 按月付费 $9 起，按年付费最多省 36%。包含全部功能、全部应用、全部更新。先免费试用 7 天 —— 无需付款，无需银行卡，也不用取消。
       cta2:
       - '#pricing'
       - 查看套餐
@@ -534,7 +544,7 @@ pages:
       - - 用 USDT 付款
         - TRC20、BEP20 或 ERC20。我们会发给你准确的地址和金额 —— 不用银行卡，不用注册。
       - - 粘贴授权码
-        - 一年的授权码几分钟内送达。在 GlotChat → 设置 → 输入新授权码 中粘贴即可。账号、登录状态和设置全部保留。
+        - 授权码几分钟内送达。在 GlotChat → 设置 → 输入新授权码 中粘贴即可。账号、登录状态和设置全部保留。
       cta: 购买前有问题？直接问我们
     - type: table
       k: 套餐对比
@@ -603,26 +613,30 @@ pages:
         - ✓ 协助设置
         - ✓ 优先支持
       - - 每年价格
-        - 69 USDT
-        - 129 USDT
-        - 249 USDT
+        - $69
+        - $129
+        - $249
+      - - "每月价格"
+        - $9
+        - $15
+        - $29
     - type: calc
       soft: true
       k: 值不值？
       h: 和你现在浪费的时间比一比
-      p: Pro 每月约 10.75 USDT。看看它能帮你省下多少小时的复制粘贴翻译。
+      p: Pro 每月约 $10.75。看看它能帮你省下多少小时的复制粘贴翻译。
     - type: faq
       k: 付款问题
       h: 付款、续费和升级
       items:
       - - 免费试用怎么用？
-        - 下载并安装 GlotChat，然后在软件里点击“开始 3 天免费试用”。试用立即开始，全部功能可用。不需要任何付款信息，每台电脑可以免费试用一次。
+        - 下载并安装 GlotChat，然后在软件里点击“开始 7 天免费试用”。试用立即开始，全部功能可用。不需要任何付款信息，每台电脑可以免费试用一次。
       - - 怎么付款？
-        - 使用 USDT（TRC20、BEP20 或 ERC20）。我们在 Telegram 上发给你付款地址，收到付款后立即发送一年的授权码。
+        - 使用 USDT（TRC20、BEP20 或 ERC20），可按月或按年付费。我们在 Telegram 上发给你付款地址，收到付款后立即发送授权码。
       - - Telegram 账号单独计算吗？
         - 单独计算。每个应用都有自己的数量：例如 Pro 套餐可用 15 个 WhatsApp 号码和 15 个 Telegram 账号，另外还有 15 个 Messenger、15 个 Instagram 和 15 个 Discord 账号。
-      - - 一年后怎么办？
-        - 按同样的价格续费，不会中断使用。你的账号、聊天和设置一直保存在你的电脑上。
+      - - 一个月或一年到期后怎么办？
+        - 按同样的价格续费 —— 新的时间会加在当前套餐之后，一天也不会少。你的账号、聊天和设置一直保存在你的电脑上。
       - - 可以升级或增加电脑吗？
         - 可以，随时都行。只需补差价（按剩余时间计算）。需要更多电脑或终身授权，可以向我们要定制报价。
       - - 有更新吗？
@@ -633,7 +647,7 @@ pages:
       items: ["how-to-buy", "is-it-safe", "compare"]
   whatsapp-translator:
     title: WhatsApp 翻译器电脑版 —— 聊天、语音、图片离线翻译
-    description: 在电脑上双向翻译 WhatsApp：消息、语音和图片文字，49 种语言，离线翻译，发送前可核对译文。免费试用 3 天。
+    description: 在电脑上双向翻译 WhatsApp：消息、语音和图片文字，49 种语言，离线翻译，发送前可核对译文。免费试用 7 天。
     keywords: WhatsApp翻译,WhatsApp翻译软件,WhatsApp自动翻译,WhatsApp语音翻译,WhatsApp电脑版翻译,外贸WhatsApp翻译
     short: WhatsApp 翻译器
     icon: 🌐
@@ -858,7 +872,7 @@ pages:
       - pricing
   band-translator:
     title: "BAND 翻译器 + BAND 多开（电脑版）| GlotChat"
-    description: "在 Windows 上翻译 BAND 聊天，多个 BAND 账号同时在线，和 WhatsApp、Telegram 在同一个窗口。49 种语言，离线翻译，免费试用 3 天。"
+    description: "在 Windows 上翻译 BAND 聊天，多个 BAND 账号同时在线，和 WhatsApp、Telegram 在同一个窗口。49 种语言，离线翻译，免费试用 7 天。"
     keywords: "BAND 翻译, BAND 多开, BAND 电脑版, BAND 聊天翻译, band.us 翻译, BAND 多账号"
     short: "BAND 翻译"
     icon: "👥"
@@ -1021,7 +1035,7 @@ pages:
       - - WhatsApp 网页版和 Telegram 桌面版都免费，为什么要付费？
         - 它们一次只显示一个账号，也不翻译你的回复。号码多、客户说外语时，来回切换和复制粘贴浪费的时间，很快就超过 GlotChat 的价格。
       - - 可以先试用再决定吗？
-        - 可以 —— 免费试用 3 天，全部功能可用。在你真实的账号上和现在的方法比一比。
+        - 可以 —— 免费试用 7 天，全部功能可用。在你真实的账号上和现在的方法比一比。
     - type: related
       k: 详细了解
       h: 仔细看看
@@ -1056,7 +1070,7 @@ pages:
           - ["语音和图片文字翻译", "✕", "✕", "✕", "✕", "✓ WhatsApp 和 Telegram"]
           - ["上百种其他应用（Slack、Gmail…）", "✓", "✓", "✓", "✓", "✕ 只做聊天应用"]
           - ["Windows / Mac / Linux", "✓ 三个都支持", "✓ 三个都支持", "✓ 三个都支持", "✓ 三个都支持", "仅 Windows"]
-          - ["价格", "有免费版；Pro 约 7 美元/月", "免费开源", "3 个服务免费；Pro 60 美元/年", "有免费版；Pro 约 8 美元/月", "免费 3 天；69 USDT/年起"]
+          - ["价格", "有免费版；Pro 约 7 美元/月", "免费开源", "3 个服务免费；Pro 60 美元/年", "有免费版；Pro 约 8 美元/月", "免费 7 天；69 USDT/年起"]
         note: "2026 年 10 月根据各产品官网核对。翻译一栏的“✕”表示没有内置的双向聊天翻译（部分应用可以加装第三方插件）。功能和价格可能变化，购买前请再确认。Rambox、Ferdium、Franz 和 Wavebox 是其所有者的商标，GlotChat 与它们无关。"
       - type: cards
         soft: true
@@ -1083,7 +1097,7 @@ pages:
         h: "从 Rambox、Ferdium 或 Franz 换过来"
         items:
           - ["Rambox 能翻译消息吗？", "不能直接翻译。截至 2026 年 10 月，Rambox 没有内置的双向聊天翻译，需要另装第三方插件，而且看不到客户将读到什么。GlotChat 自带双向翻译。"]
-          - ["有免费又带翻译的 Rambox 替代软件吗？", "Ferdium 免费但不翻译。GlotChat 可以免费试用 3 天全部功能，之后每年 69 USDT 起 —— 比按月付费的 Rambox Pro 还便宜。"]
+          - ["有免费又带翻译的 Rambox 替代软件吗？", "Ferdium 免费但不翻译。GlotChat 可以免费试用 7 天全部功能，之后每年 69 USDT 起 —— 比按月付费的 Rambox Pro 还便宜。"]
           - ["怎么从 Rambox 或 Ferdium 换到 GlotChat？", "不需要导入任何东西。安装 GlotChat，点击“添加账号”，选择应用，扫码或登录即可。每个账号大约一分钟。"]
           - ["GlotChat 支持 Mac 或 Linux 吗？", "暂时不支持 —— GlotChat 运行在 Windows 10 和 11 上。"]
           - ["GlotChat 支持哪些应用？", "WhatsApp 和 WhatsApp Business、Telegram、Facebook Messenger、Instagram 私信、Discord 和 BAND —— 每个应用都可以多开。"]
@@ -1411,7 +1425,7 @@ pages:
           | 翻译你的回复 | 手动 | 否 | 是（先核对） |
           | 语音和图片 | 否 | 否 | 是（GlotChat） |
           | 留在你电脑上 | 否 | 否 | 是（GlotChat） |
-          | 价格 | 免费 | 免费 | 付费（GlotChat，免费试用 3 天） |
+          | 价格 | 免费 | 免费 | 付费（GlotChat，免费试用 7 天） |
 
           ## 关于隐私
 
@@ -1423,7 +1437,7 @@ pages:
           - **用对方的语言回复。** 这是赢得信任最快的方式，而且内置翻译后不费额外时间。
           - **账号分清楚。** 如果你有多个 Telegram 号，给每个起个清楚的名字，随时知道自己在用哪个回复。
 
-          想在你自己的 Telegram 聊天里试试方法三？[下载 GlotChat，免费试用 3 天](/zh/download/)。
+          想在你自己的 Telegram 聊天里试试方法三？[下载 GlotChat，免费试用 7 天](/zh/download/)。
       - type: faq
         k: 常见问题
         h: 快速解答
@@ -1502,7 +1516,7 @@ pages:
 
           不会——关联设备和双账号都是 WhatsApp 的官方功能。被封号的是**行为**：群发、给没打招呼的人发垃圾消息，以及“GB WhatsApp”这类改版应用。像平时一样正常使用就没问题。
 
-          要为工作管理多个号码？[下载 GlotChat，免费试用 3 天](/zh/download/)，把所有 WhatsApp 账号放在一个窗口里。
+          要为工作管理多个号码？[下载 GlotChat，免费试用 7 天](/zh/download/)，把所有 WhatsApp 账号放在一个窗口里。
       - type: faq
         k: 常见问题
         h: 快速解答
@@ -1592,7 +1606,7 @@ pages:
         - **让不常用的账号休眠**，保持电脑流畅。
         - **用客户的语言回复。**这是赢得买家最快的方法——有了内置翻译，不会多花一点时间。
 
-        想在你自己的号码上试试方法三？[免费下载 GlotChat，试用 3 天](/zh/download/)。
+        想在你自己的号码上试试方法三？[免费下载 GlotChat，试用 7 天](/zh/download/)。
     - type: faq
       k: 常见问题
       h: 快速解答
@@ -1685,7 +1699,7 @@ pages:
         - **保留原文。**重要内容，也要回看客户的原始消息。
         - **合同请人工核对。**机器翻译非常适合日常沟通；法律或医疗措辞值得人工检查。
 
-        不想再复制粘贴了？[免费下载 GlotChat，试用 3 天](/zh/download/)。
+        不想再复制粘贴了？[免费下载 GlotChat，试用 7 天](/zh/download/)。
     - type: faq
       k: 常见问题
       h: 快速解答
@@ -1705,21 +1719,21 @@ pages:
       - pricing
   download:
     title: 下载 GlotChat Windows 版 —— WhatsApp 和 Telegram 翻译软件
-    description: 免费下载 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 账号一个窗口，离线翻译。免费试用 3 天，无需付款。
+    description: 免费下载 GlotChat（Windows 10 和 11）：WhatsApp 和 Telegram 账号一个窗口，离线翻译。免费试用 7 天，无需付款。
     keywords: GlotChat下载,WhatsApp翻译软件下载,WhatsApp多开软件下载,Telegram翻译软件下载
     short: 下载
     icon: ⬇️
-    og_heading: 下载 GlotChat Windows 版 —— 免费试用 3 天
+    og_heading: 下载 GlotChat Windows 版 —— 免费试用 7 天
     blocks:
     - type: dl_hero
       k: 免费下载 · Windows 10 和 11
       h1: 下载 GlotChat <span class="grad">Windows 版</span>
-      lead: 所有 WhatsApp 和 Telegram 账号一个窗口，每条消息在你的电脑上翻译。大约 1 分钟装好，免费试用全部功能 3 天。
+      lead: 所有 WhatsApp 和 Telegram 账号一个窗口，每条消息在你的电脑上翻译。大约 1 分钟装好，免费试用全部功能 7 天。
       card:
       - WhatsApp + Telegram 账号
       - 文字、语音、图片翻译
       - 发送前“对方将读到”核对
-      - 免费试用 3 天，无需付款
+      - 免费试用 7 天，无需付款
     - type: dl_steps
       k: 安装指南
       h: 4 个简单步骤就能用起来
@@ -1733,8 +1747,8 @@ pages:
         p: 双击文件，按提示安装（约 1 分钟，不需要管理员权限）。如果出现蓝色窗口“<b>Windows 已保护你的电脑</b>”，点击<b>更多信息</b>，再点击<b>仍要运行</b>。
         tip: 新软件都会这样：Windows SmartScreen 只是还没见过 GlotChat 很多次。文件是安全的 —— 你可以在下方核对 SHA-256 校验值。
         mock: smartscreen
-      - h: 一键开始 3 天免费试用
-        p: 打开 GlotChat，点击<b>开始 3 天免费试用</b>。全部功能立即可用，一分钟内 GlotChat 会自动更新到最新版本。
+      - h: 一键开始 7 天免费试用
+        p: 打开 GlotChat，点击<b>开始 7 天免费试用</b>。全部功能立即可用，一分钟内 GlotChat 会自动更新到最新版本。
         tip: 每台电脑可免费试用一次。无需银行卡，无需付款，也不用取消。
         mock: activate
       - h: 添加 WhatsApp 和 Telegram 账号
@@ -1771,13 +1785,13 @@ pages:
       open_first: true
       items:
       - - GlotChat 可以免费下载吗？
-        - 可以。下载免费，3 天试用期内全部功能可用，无需付款。试用结束后，套餐每年 69 USDT 起。
+        - 可以。下载免费，7 天试用期内全部功能可用，无需付款。试用结束后，套餐每年 69 USDT 起。
       - - 为什么 Windows 提示“Windows 已保护你的电脑”？
         - Windows SmartScreen 对还不常见的新软件都会显示这个提示。点击<b>更多信息</b>，再点击<b>仍要运行</b>。请只从本页面下载 GlotChat —— 可以对比 SHA-256 校验值，确认是原始文件。
       - - 为什么安装包的版本比最新版旧？
         - 安装包保持在 Windows 已经信任的版本，这样在任何电脑上都能顺利安装。打开 GlotChat 一分钟后，它会自动更新到最新版本（包括 Telegram 和所有新功能）。
       - - 需要授权码吗？
-        - 试用不需要：在软件中点击<b>开始 3 天免费试用</b>即可。购买套餐后，我们会在 Telegram 上发给你一年的授权码 —— 粘贴到<b>我已有授权码</b>中。
+        - 试用不需要：在软件中点击<b>开始 7 天免费试用</b>即可。购买套餐后，我们会在 Telegram 上发给你一年的授权码 —— 粘贴到<b>我已有授权码</b>中。
       - - 有 Mac、安卓或 iPhone 版吗？
         - 目前没有。GlotChat 是 Windows 10 和 11 电脑软件。你的账号仍在手机上 —— GlotChat 像 WhatsApp 网页版一样把它们关联到电脑。
       - - 怎么卸载 GlotChat？
@@ -1817,7 +1831,7 @@ pages:
 
         ## 第 1 步：安装 GlotChat，开始免费试用
 
-        [下载 GlotChat Windows 版](/zh/download/)（支持 Windows 10 / 11），安装后打开，点击 **“开始 3 天免费试用”**。试用包含全部功能，无需付款、无需银行卡。
+        [下载 GlotChat Windows 版](/zh/download/)（支持 Windows 10 / 11），安装后打开，点击 **“开始 7 天免费试用”**。试用包含全部功能，无需付款、无需银行卡。
 
         ## 第 2 步：添加 WhatsApp 账号
 
@@ -1873,7 +1887,7 @@ pages:
         - **给客户固定语言**：如果自动识别不准（比如很短的消息），点击聊天上方的语言按钮，给这个客户固定一种语言。
         - **多个号码一个窗口**：所有号码在左侧列表，Ctrl+1…9 快速切换，每个号码的通知都标明是哪个账号。
 
-        想马上试试？[免费下载 GlotChat，试用 3 天](/zh/download/)。
+        想马上试试？[免费下载 GlotChat，试用 7 天](/zh/download/)。
     - type: faq
       k: 常见问题
       h: WhatsApp 自动翻译常见问题
@@ -1887,7 +1901,7 @@ pages:
       - - 不知道客户说什么语言怎么办？
         - 把“客户使用的语言”设为“自动检测（推荐）”，GlotChat 会识别每个聊天的语言，并用这个语言发送你的回复。
       - - 收费吗？
-        - 可以免费试用 3 天，包含全部功能。之后按年付费：入门版 69 USDT（5 个账号）、专业版 129 USDT（15 个账号）、企业版 249 USDT（不限账号）。
+        - 可以免费试用 7 天，包含全部功能。之后按年付费：入门版 69 USDT（5 个账号）、专业版 129 USDT（15 个账号）、企业版 249 USDT（不限账号）。
     - type: related
       k: 继续阅读
       h: 相关教程
@@ -1973,11 +1987,11 @@ pages:
         | 语音 / 图片 | 语音转文字、图片识字 | ✓ 都能翻译 |
         | 电脑配置 | 分批启动、休眠、自动恢复 | ✓ 实测 27 个账号同时运行 |
         | 中文 | 中文界面 | ✓ |
-        | 价格 | 透明、可试用 | 每年 69 USDT 起，免费试用 3 天 |
+        | 价格 | 透明、可试用 | 每年 69 USDT 起，免费试用 7 天 |
 
         说明：GlotChat 是 **Windows 电脑软件**，不支持 Mac；它**不提供群发功能**，专注于安全地聊天和翻译。
 
-        想用自己的号码测一测？[免费下载 GlotChat，试用 3 天](/zh/download/)。
+        想用自己的号码测一测？[免费下载 GlotChat，试用 7 天](/zh/download/)。
     - type: faq
       k: 常见问题
       h: WhatsApp 多开常见问题
@@ -2064,7 +2078,7 @@ pages:
 
         ## 让工具替你省时间
 
-        [GlotChat](/zh/download/) 把这些技巧里最费时的部分自动化：多个号码一个窗口，收到的消息、语音和图片自动翻成中文，你用中文回复、客户收到他的语言，快捷回复同样自动翻译。可以免费试用 3 天。
+        [GlotChat](/zh/download/) 把这些技巧里最费时的部分自动化：多个号码一个窗口，收到的消息、语音和图片自动翻成中文，你用中文回复、客户收到他的语言，快捷回复同样自动翻译。可以免费试用 7 天。
     - type: faq
       k: 常见问题
       h: 外贸 WhatsApp 常见问题
@@ -2084,7 +2098,7 @@ pages:
       - guides/best-whatsapp-multi-account-software
   telegram-translator:
     title: Telegram 翻译器电脑版 —— 每个聊天自动翻译
-    description: 在 Windows 上双向翻译 Telegram：收到的消息在原文下方显示翻译，回复在发送前翻译。49 种语言，离线翻译。免费试用 3 天。
+    description: 在 Windows 上双向翻译 Telegram：收到的消息在原文下方显示翻译，回复在发送前翻译。49 种语言，离线翻译。免费试用 7 天。
     keywords: Telegram翻译,TG翻译,Telegram翻译软件,Telegram自动翻译,电报翻译,Telegram电脑版翻译
     short: Telegram 翻译器
     icon: ✈️
@@ -2429,7 +2443,7 @@ pages:
       - discord-translator
   messenger-translator:
     title: Facebook Messenger 翻译器 + Messenger 多开（电脑版）
-    description: 在 Windows 上双向翻译 Facebook Messenger 聊天，多个 Messenger 账号并排运行。49 种语言，离线翻译。免费试用 3 天。
+    description: 在 Windows 上双向翻译 Facebook Messenger 聊天，多个 Messenger 账号并排运行。49 种语言，离线翻译。免费试用 7 天。
     keywords: Messenger翻译,Facebook Messenger翻译,Messenger多开,Facebook多开,Messenger自动翻译,Facebook外贸翻译
     short: Messenger 翻译器
     icon: 💬
@@ -2514,7 +2528,7 @@ pages:
       - whatsapp-translator
   instagram-dm-translator:
     title: Instagram 私信翻译器 + Instagram 多开（电脑版）
-    description: 在 Windows 上双向翻译 Instagram 私信，多个 Instagram 账号并排运行。49 种语言，离线翻译。免费试用 3 天。
+    description: 在 Windows 上双向翻译 Instagram 私信，多个 Instagram 账号并排运行。49 种语言，离线翻译。免费试用 7 天。
     keywords: Instagram私信翻译,Instagram翻译,Instagram多开,Instagram电脑版,ins私信翻译,Instagram外贸
     short: Instagram 私信翻译
     icon: 📸
@@ -2599,7 +2613,7 @@ pages:
       - whatsapp-translator
   discord-translator:
     title: Discord 翻译器 + Discord 多开（电脑版）
-    description: 在 Windows 上翻译 Discord 服务器和私信中的消息，多个 Discord 账号并排运行。49 种语言，离线翻译。免费试用 3 天。
+    description: 在 Windows 上翻译 Discord 服务器和私信中的消息，多个 Discord 账号并排运行。49 种语言，离线翻译。免费试用 7 天。
     keywords: Discord翻译,Discord翻译器,Discord自动翻译,Discord多开,Discord电脑版多账号
     short: Discord 翻译器
     icon: 🎮
@@ -2717,7 +2731,7 @@ pages:
 
           - **适合：** 外贸、跨境电商、代理公司和面向海外客户的客服团队。
           - **不适合：** Mac 用户，或者需要 Slack、邮箱等办公应用的人。
-          - **价格：** 免费试用 3 天，之后每年 69、129 或 249 USDT（每个应用 5 个、15 个或不限账号）。
+          - **价格：** 免费试用 7 天，之后每年 69、129 或 249 USDT（每个应用 5 个、15 个或不限账号）。
 
           ## 2. Rambox —— 最适合大量办公应用
 
@@ -2770,7 +2784,7 @@ pages:
 
           好的聚合聊天软件会为每个应用打开**官方网页版**（比如 WhatsApp Web），每个账号在独立会话中运行 —— 和浏览器做的事一样，只是更有条理。不要用修改版应用（比如“GB WhatsApp”）和群发工具：这些才是封号的原因。
 
-          想在自己的聊天里试试翻译？[免费试用 GlotChat 3 天](/zh/download/) —— 不用绑卡，不用付款。
+          想在自己的聊天里试试翻译？[免费试用 GlotChat 7 天](/zh/download/) —— 不用绑卡，不用付款。
       - type: faq
         k: "常见问题"
         h: "快速回答"
@@ -2778,7 +2792,7 @@ pages:
           - ["聚合聊天软件哪个好？", "看你的需要。客户说外语，选 GlotChat —— 这里只有它能双向翻译聊天。需要大量办公应用，选 Rambox 或 Wavebox。想要免费开源，选 Ferdium。"]
           - ["哪款聚合聊天软件能翻译消息？", "GlotChat 能翻译 WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 的每个聊天，双向翻译，49 种语言，在电脑上离线完成。"]
           - ["一个软件能登录多个 WhatsApp 吗？", "可以。名单里的五款都能并排打开多个 WhatsApp 账号。GlotChat 实测过 27 个账号同时运行。"]
-          - ["有免费的聚合聊天软件吗？", "Ferdium 免费。Rambox、Franz 和 Wavebox 有功能有限的免费版。GlotChat 可以免费试用 3 天全部功能。"]
+          - ["有免费的聚合聊天软件吗？", "Ferdium 免费。Rambox、Franz 和 Wavebox 有功能有限的免费版。GlotChat 可以免费试用 7 天全部功能。"]
       - type: related
         k: "下一步"
         h: "继续阅读"
@@ -2834,7 +2848,7 @@ pages:
           | 语音消息翻译 | 一般不支持 | 支持（WhatsApp、Telegram） |
           | 图片文字翻译 | 一般不支持 | 支持 |
           | 消息去哪里翻译 | 通常是云端 | 你的电脑上（离线） |
-          | 价格 | 免费额度 / 按月付费 | 免费 3 天，69 USDT/年起 |
+          | 价格 | 免费额度 / 按月付费 | 免费 7 天，69 USDT/年起 |
 
           ## 什么时候该从插件换到聚合聊天软件
 
@@ -2848,7 +2862,7 @@ pages:
 
           WhatsApp Web 关联设备是官方功能，插件和 GlotChat 都用它。真正导致封号的是**行为**：群发、骚扰陌生人、使用修改版 WhatsApp（比如“GB WhatsApp”）。正常聊天就没问题。
 
-          想在自己的号码上试试？[免费试用 GlotChat 3 天](/zh/download/) —— 全部功能，不用付款。
+          想在自己的号码上试试？[免费试用 GlotChat 7 天](/zh/download/) —— 全部功能，不用付款。
       - type: faq
         k: "常见问题"
         h: "快速回答"
@@ -2876,11 +2890,11 @@ pages:
       - type: prose
         toc: true
         md: |
-          > **简单说：** 先免费试用 3 天 → 在 Telegram 上告诉我们套餐和机器码 → 把 USDT 转到我们给的地址 → 粘贴收到的授权码。完成。
+          > **简单说：** 先免费试用 7 天 → 在 Telegram 上告诉我们套餐和机器码 → 把 USDT 转到我们给的地址 → 粘贴收到的授权码。完成。
 
           ## 1. 先免费试用
 
-          [下载 GlotChat](/zh/download/)，点击 **“开始 3 天免费试用”**。全部功能解锁，不用付款。先添加你的账号，确认 GlotChat 适合你再付款。
+          [下载 GlotChat](/zh/download/)，点击 **“开始 7 天免费试用”**。全部功能解锁，不用付款。先添加你的账号，确认 GlotChat 适合你再付款。
 
           ## 2. 选择套餐
 
@@ -3057,7 +3071,7 @@ pages:
         items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
   translate/chinese-english:
     title: "WhatsApp 中英互译软件（电脑版）| GlotChat"
-    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和英语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和英语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 7 天。"
     keywords: "WhatsApp 中英翻译, WhatsApp 英语翻译, 外贸 英语 聊天翻译, Telegram 英语翻译, 中文英语互译"
     short: "中文 ↔ 英语"
     icon: "🌐"
@@ -3101,7 +3115,7 @@ pages:
   translate/chinese-spanish:
     single: true
     title: "WhatsApp 中西互译软件（电脑版）| GlotChat"
-    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和西班牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和西班牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 7 天。"
     keywords: "WhatsApp 中西翻译, WhatsApp 西班牙语翻译, 外贸 西班牙语 聊天翻译, Telegram 西班牙语翻译, 中文西班牙语互译"
     short: "中文 ↔ 西班牙语"
     icon: "🌐"
@@ -3145,7 +3159,7 @@ pages:
   translate/chinese-arabic:
     single: true
     title: "WhatsApp 中阿互译软件（电脑版）| GlotChat"
-    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和阿拉伯语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和阿拉伯语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 7 天。"
     keywords: "WhatsApp 中阿翻译, WhatsApp 阿拉伯语翻译, 外贸 阿拉伯语 聊天翻译, Telegram 阿拉伯语翻译, 中文阿拉伯语互译"
     short: "中文 ↔ 阿拉伯语"
     icon: "🌐"
@@ -3189,7 +3203,7 @@ pages:
   translate/chinese-russian:
     single: true
     title: "WhatsApp 中俄互译软件（电脑版）| GlotChat"
-    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和俄语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和俄语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 7 天。"
     keywords: "WhatsApp 中俄翻译, WhatsApp 俄语翻译, 外贸 俄语 聊天翻译, Telegram 俄语翻译, 中文俄语互译"
     short: "中文 ↔ 俄语"
     icon: "🌐"
@@ -3233,7 +3247,7 @@ pages:
   translate/chinese-portuguese:
     single: true
     title: "WhatsApp 中葡互译软件（电脑版）| GlotChat"
-    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和葡萄牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 3 天。"
+    description: "在电脑上把 WhatsApp、Telegram 等聊天在中文和葡萄牙语之间自动双向翻译，离线完成，语音和图片也能翻译。免费试用 7 天。"
     keywords: "WhatsApp 中葡翻译, WhatsApp 葡萄牙语翻译, 外贸 葡萄牙语 聊天翻译, Telegram 葡萄牙语翻译, 中文葡萄牙语互译"
     short: "中文 ↔ 葡萄牙语"
     icon: "🌐"

@@ -16,11 +16,11 @@ ui:
   plan_f:
     apps: "WhatsApp, Telegram, Messenger, Instagram, Discord"
   final:
-    p: "Baixe o GlotChat, clique em “Iniciar meu teste grátis de 3 dias” e adicione suas contas de WhatsApp, Telegram, Messenger, Instagram e Discord. Prefere conversar antes? Mande uma mensagem — mostramos o GlotChat ao vivo ou tiramos qualquer dúvida."
+    p: "Baixe o GlotChat, clique em “Iniciar meu teste grátis de 7 dias” e adicione suas contas de WhatsApp, Telegram, Messenger, Instagram e Discord. Prefere conversar antes? Mande uma mensagem — mostramos o GlotChat ao vivo ou tiramos qualquer dúvida."
   footer:
     tagline: "WhatsApp, Telegram, Messenger, Instagram e Discord numa janela, cada cliente no idioma dele. Feito para empresas que vendem para outros países."
   og_kicker: "Tradutor de WhatsApp, Telegram, Messenger, Instagram e Discord para PC"
-  og_chips: ["5 apps, uma janela", "49 idiomas", "3 dias grátis"]
+  og_chips: ["5 apps, uma janela", "49 idiomas", "7 dias grátis"]
   app_description: "App para Windows que reúne muitas contas de WhatsApp, Telegram, Messenger, Instagram e Discord numa janela — cada uma isolada, com suas notificações e seu proxy — e traduz as conversas sem internet em 49 idiomas (e, no WhatsApp e no Telegram, também áudios e fotos), conferindo cada tradução antes do envio."
   feature_first: "Várias contas de WhatsApp, Telegram, Messenger, Instagram e Discord numa janela"
   msg:
@@ -31,7 +31,7 @@ ui:
 
 home:
   title: "Tradutor de WhatsApp e Telegram multicontas para PC | GlotChat"
-  description: "Contas de WhatsApp, Telegram, Messenger, Instagram e Discord numa janela no Windows. Cada conversa traduzida sem internet em 49 idiomas. 3 dias grátis."
+  description: "Contas de WhatsApp, Telegram, Messenger, Instagram e Discord numa janela no Windows. Cada conversa traduzida sem internet em 49 idiomas. 7 dias grátis."
   keywords: "tradutor whatsapp pc, tradutor telegram, várias contas whatsapp, whatsapp multicontas, tradutor messenger, tradutor instagram, tradutor discord, mensageiro tudo em um"
   og_title: "GlotChat – WhatsApp, Telegram, Messenger, Instagram e Discord numa janela, cada cliente no idioma dele"
   og_heading: "Todos os seus apps de conversa numa janela. Cada cliente no idioma dele."
@@ -244,7 +244,7 @@ pages:
 
   discord-translator:
     title: "Tradutor do Discord e várias contas do Discord no PC"
-    description: "Traduza mensagens do Discord em servidores e DMs no Windows e mantenha várias contas do Discord abertas lado a lado. 49 idiomas, sem internet. 3 dias grátis."
+    description: "Traduza mensagens do Discord em servidores e DMs no Windows e mantenha várias contas do Discord abertas lado a lado. 49 idiomas, sem internet. 7 dias grátis."
     keywords: "tradutor discord, traduzir mensagens do discord, discord tradução automática, várias contas do discord, discord multicontas pc"
     short: "Tradutor do Discord"
     icon: "🎮"

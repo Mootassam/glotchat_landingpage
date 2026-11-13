@@ -6,7 +6,7 @@ ui:
   lang_label: Idioma
   close: Cerrar
   contact: Escríbenos
-  promo_html: "<b>Todos tus chats, cada idioma, una sola ventana.</b> Gratis 3 días, sin tarjeta."
+  promo_html: "<b>Todos tus chats, cada idioma, una sola ventana.</b> Gratis 7 días, sin tarjeta."
   promo_go: "Descargar gratis →"
   nav:
     product: Producto
@@ -39,15 +39,15 @@ ui:
     safe: "¿Es seguro?"
     wab: "Cuentas de WhatsApp Business"
     pairs: "Pares de idiomas populares"
-  cta_trial: Descarga gratis — 3 días de prueba
+  cta_trial: Descarga gratis — 7 días de prueba
   cta_demo: Míralo en acción
   cta_live: Pide una demo en vivo
   expand: Ver en pantalla completa
   demo_label: Demo de GlotChat
   micro:
-  - 3 días gratis — sin tarjeta ni pago
+  - 7 días gratis — sin tarjeta ni pago
   - Responde una persona real en Telegram
-  - Desde 69 USDT al año
+  - Desde $9 al mes
   trust:
   - WhatsApp Web y Telegram oficiales dentro
   - Los chats se quedan en tu PC
@@ -71,7 +71,7 @@ ui:
   finder:
     q: ¿Cuántas cuentas usas en una sola app (la que más usas)?
     a: 'Lo mejor para ti:'
-    btn: Pruébalo gratis 3 días
+    btn: Pruébalo gratis 7 días
   plans:
     Starter:
       name: Starter
@@ -89,6 +89,14 @@ ui:
   for_you: Recomendado para ti
   per_year: / año
   per_month: USDT / mes
+  per_month_s: "/ mes"
+  period_m: "Mensual"
+  period_y: "Anual"
+  save: "ahorra {n}%"
+  or_year: "o ${p} al año — ahorra {n}%"
+  eq_month: "≈ ${p} al mes, pago anual"
+  buy_app_p: "Paga dentro de GlotChat en un minuto. ¿Prefieres hablar con una persona? Pide por Telegram: respondemos en minutos."
+  buy_app: [["Haz clic en «Comprar» en GlotChat", "Elige tu plan, mensual o anual. Los precios aparecen en la app, con el plan que encaja con tus cuentas."], ["Paga con USDT u otra cripto", "Se abre un pago cripto seguro: USDT en TRC20, BEP20 o ERC20, o más de 300 monedas."], ["GlotChat se desbloquea solo", "Un minuto después del pago, sin copiar ninguna clave. Tus cuentas, sesiones y ajustes se quedan como están."]]
   up_to_accounts: Hasta <b>{n}</b> cuentas por app
   unlimited_accounts: Cuentas <b>ilimitadas</b>
   plan_f:
@@ -97,15 +105,15 @@ ui:
     updates: Todas las actualizaciones incluidas
     apps: WhatsApp, Telegram, Messenger, Instagram, Discord, BAND
   buy: Comprar {plan} por Telegram
-  try: o pruébalo gratis 3 días
+  try: o pruébalo gratis 7 días
   custom_html: <b>¿Necesitas más computadoras, un equipo o una licencia de por vida?</b> Cuéntanos qué necesitas — te hacemos una oferta.
   custom_btn: Pedir una oferta a medida
-  paynote: Pago en USDT (TRC20 · BEP20 · ERC20). ¿Dudas antes de comprar? Pregunta — te responde una persona real en Telegram.
+  paynote: 'Precios en dólares estadounidenses. Pago en USDT (TRC20 · BEP20 · ERC20): 1 USDT = 1 $. ¿Dudas antes de comprar? Pregunta — te responde una persona real en Telegram.'
   guarantee: "Garantía de reembolso de 14 días: compra sin riesgo y sin preguntas."
   final:
     h: Tu próximo cliente extranjero ya está escribiendo.
-    p: Descarga GlotChat, haz clic en «Empezar mi prueba gratis de 3 días» y añade tus cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND. ¿Prefieres hablar antes? Escríbenos — te mostramos GlotChat en directo o resolvemos cualquier duda.
-    k: Gratis durante 3 días
+    p: Descarga GlotChat, haz clic en «Empezar mi prueba gratis de 7 días» y añade tus cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND. ¿Prefieres hablar antes? Escríbenos — te mostramos GlotChat en directo o resolvemos cualquier duda.
+    k: Gratis durante 7 días
     tg: Escríbenos por Telegram
     points:
     - Todas las funciones activas
@@ -121,7 +129,7 @@ ui:
   mbar: Chat
   leave:
     h: Antes de irte — pruébalo gratis
-    p: 'Descarga GlotChat y empieza una prueba de 3 días con todas las funciones: un clic en la app, sin pago y sin compromiso.'
+    p: 'Descarga GlotChat y empieza una prueba de 7 días con todas las funciones: un clic en la app, sin pago y sin compromiso.'
     btn: Descargar y probar gratis
     'no': No, gracias
     tg: O haznos una pregunta
@@ -131,13 +139,14 @@ ui:
     resources: Recursos
     privacy: Política de privacidad (en inglés)
     terms: Términos de uso (en inglés)
+    refund: Política de reembolso
     trademark: WhatsApp, Telegram, Messenger, Instagram, Discord y BAND son marcas de sus respectivos propietarios. GlotChat es un producto independiente y no está afiliado, respaldado ni patrocinado por ninguno de ellos.
   og_kicker: "Mensajería todo en uno con traducción para PC"
   og_sub: Texto, notas de voz y fotos traducidos sin conexión en tu PC.
   og_chips:
   - 6 apps, una ventana
   - 49 idiomas
-  - 3 días gratis
+  - 7 días gratis
   app_description: "App de mensajería todo en uno para Windows que reúne muchas cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana — cada una aislada, con sus notificaciones y su proxy — y traduce los chats sin internet en 49 idiomas (y en WhatsApp y Telegram también notas de voz y fotos), revisando cada traducción antes de enviarla."
   feature_list:
   - Varias cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana
@@ -160,6 +169,7 @@ ui:
     finder: ¡Hola! Uso {n} cuentas en una app. ¿GlotChat {plan} es para mí?
     planTrial: ¡Hola! Quiero probar primero el plan {plan} de GlotChat.
     plan: ¡Hola! Quiero el plan {plan} de GlotChat ({price} USDT / año). ¿Cómo pago?
+    planMonth: "¡Hola! Quiero el plan {plan} de GlotChat ({price} USDT / mes). ¿Cómo pago?"
     custom: '¡Hola! Necesito una oferta a medida de GlotChat: __ ordenadores, __ cuentas (¿licencia de por vida?).'
   dl:
     nav: Descargar
@@ -188,8 +198,8 @@ ui:
       ss_run: Ejecutar de todas formas
       ss_dont: No ejecutar
       act_title: Welcome to GlotChat
-      act_sub: Try every feature free for 3 days — no payment, no card. Or enter the license key you bought.
-      act_trial: Start my free 3-day trial
+      act_sub: Try every feature free for 7 days — no payment, no card. Or enter the license key you bought.
+      act_trial: Start my free 7-day trial
       act_mid: Starts instantly · every feature · one free trial per PC
       act_btn: I already have a license key
     autoupdate: se actualiza sola a la última versión
@@ -200,7 +210,7 @@ ui:
 pages:
   home:
     title: "GlotChat – Mensajería todo en uno con traducción para PC"
-    description: "Mensajería todo en uno para PC: cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana, cada chat traducido a 49 idiomas. 3 días gratis."
+    description: "Mensajería todo en uno para PC: cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana, cada chat traducido a 49 idiomas. 7 días gratis."
     keywords: "mensajería todo en uno, app de mensajería todo en uno para pc, all in one messenger, GlotChat, traductor whatsapp pc, traductor telegram, varias cuentas whatsapp, whatsapp multicuenta, traductor messenger, traductor instagram, traductor discord"
     og_title: "GlotChat – mensajería todo en uno: WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana, cada chat traducido"
     og_heading: "Mensajería todo en uno. Todas las apps, todas las cuentas, todos los idiomas."
@@ -212,7 +222,7 @@ pages:
       h1: "GlotChat: mensajería todo en uno. <span class=\"grad\">Todas las apps. Todos los idiomas.</span>"
       lead: "WhatsApp, Telegram, Messenger, Instagram, Discord y BAND — con todas las cuentas que necesites de cada una — en una sola ventana en tu PC. Lee a cada cliente en español y responde en su idioma sabiendo exactamente qué va a leer."
       micro:
-      - 3 días gratis — sin tarjeta ni pago
+      - 7 días gratis — sin tarjeta ni pago
       - Responde una persona real en Telegram
       - Desde 69 USDT al año
       media_alt: "GlotChat, mensajería todo en uno: cuentas de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND en una ventana, chats traducidos"
@@ -404,7 +414,7 @@ pages:
           notes:
           - - ok
             - ✓ «GlotShop» está en tu lista de no traducir
-      cta: Prueba la traducción gratis 3 días
+      cta: Prueba la traducción gratis 7 días
     - type: cards
       id: who
       who: true
@@ -461,19 +471,19 @@ pages:
       - Todo traducido sin internet, en tu propio PC
     - type: steps
       k: Prueba antes de pagar
-      h: Gratis 3 días. Listo en 10 minutos.
+      h: Gratis 7 días. Listo en 10 minutos.
       items:
       - - Descarga GlotChat
         - Descarga el instalador de Windows desde nuestra web e instálalo en un minuto — sin permisos de administrador.
       - - Empieza tu prueba gratis con un clic
-        - Abre GlotChat y haz clic en «Empezar mi prueba gratis de 3 días». Todo se activa al instante — sin pago ni mensajes.
+        - Abre GlotChat y haz clic en «Empezar mi prueba gratis de 7 días». Todo se activa al instante — sin pago ni mensajes.
       - - ¿Te gusta? Quédatelo.
         - Paga en USDT y recibe tu clave anual. Tus cuentas y ajustes se quedan tal cual — no hay que configurar nada de nuevo.
       cta: Descargar y empezar mi prueba gratis
     - type: plans
       k: Precios
       h: Planes anuales sencillos. Prueba gratis primero.
-      p: Cada plan incluye todas las funciones, todas las apps y todas las actualizaciones. Empieza con 3 días gratis — paga solo si te encanta.
+      p: Cada plan incluye todas las funciones, todas las apps y todas las actualizaciones. Empieza con 7 días gratis — paga solo si te encanta.
       more: Comparar planes en detalle
       soft: false
     - type: faq
@@ -481,7 +491,7 @@ pages:
       h: Preguntas, respondidas
       items:
       - - ¿Hay prueba gratis?
-        - Sí. Descarga GlotChat, ábrelo y haz clic en «Empezar mi prueba gratis de 3 días» — todo se activa al instante, sin pago. Si te gusta, compras un plan y conservas todas tus cuentas y ajustes.
+        - Sí. Descarga GlotChat, ábrelo y haz clic en «Empezar mi prueba gratis de 7 días» — todo se activa al instante, sin pago. Si te gusta, compras un plan y conservas todas tus cuentas y ajustes.
       - - ¿Con qué apps funciona?
         - WhatsApp y WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord y BAND — varias cuentas de cada una, en una ventana. Los chats se traducen en los dos sentidos en todas las apps; las notas de voz y las fotos, en WhatsApp y Telegram.
       - - ¿Es seguro para mis cuentas?
@@ -504,16 +514,16 @@ pages:
       - telegram-translator
       - instagram-dm-translator
   pricing:
-    title: Precios de GlotChat – Planes desde 69 USDT al año, prueba gratis
-    description: 'Planes de GlotChat: Starter 69, Pro 129, Business 249 USDT al año. WhatsApp, Telegram y todas las funciones incluidas, 3 días gratis, pago en USDT.'
+    title: Precios de GlotChat – Planes desde $9 al mes, prueba gratis
+    description: "Planes de GlotChat: Starter $9, Pro $15, Business $29/mes — o $69, $129, $249/año (ahorra hasta un 36%). Todas las funciones, 7 días gratis."
     short: Precios
     icon: 💳
-    og_heading: Planes anuales sencillos. Todas las funciones. 3 días gratis.
+    og_heading: Planes mensuales o anuales. Todas las funciones. 7 días gratis.
     blocks:
     - type: hero
       k: Precios
-      h1: Planes anuales sencillos. <span class="grad">Prueba todo gratis primero.</span>
-      lead: Un precio al año, todas las funciones, todas las apps, todas las actualizaciones. Empieza con 3 días gratis — sin pago, sin tarjeta, nada que cancelar.
+      h1: Mensual o anual. <span class="grad">Prueba todo gratis primero.</span>
+      lead: Paga al mes desde $9, o al año y ahorra hasta un 36%. Todas las funciones, todas las apps, todas las actualizaciones. Empieza con 7 días gratis — sin pago, sin tarjeta, nada que cancelar.
       cta2:
       - '#pricing'
       - Ver los planes
@@ -533,7 +543,7 @@ pages:
       - - Paga en USDT
         - TRC20, BEP20 o ERC20. Te enviamos la dirección y el importe exactos — sin tarjeta ni registro.
       - - Pega tu clave
-        - Tu clave anual llega en minutos. Pégala en GlotChat → Ajustes → Introducir nueva clave. Tus cuentas, sesiones y ajustes se quedan como están.
+        - Tu clave llega en minutos. Pégala en GlotChat → Ajustes → Introducir nueva clave. Tus cuentas, sesiones y ajustes se quedan como están.
       cta: Pregúntanos lo que quieras antes de comprar
     - type: table
       k: Comparar planes
@@ -602,26 +612,30 @@ pages:
         - ✓ Ayuda de configuración
         - ✓ Soporte prioritario
       - - Precio anual
-        - 69 USDT
-        - 129 USDT
-        - 249 USDT
+        - $69
+        - $129
+        - $249
+      - - "Precio al mes"
+        - $9
+        - $15
+        - $29
     - type: calc
       soft: true
       k: ¿Merece la pena?
       h: Compara el precio con el tiempo que pierdes hoy
-      p: Pro cuesta unos 10,75 USDT al mes. Mira cuántas horas de copiar y pegar traducciones sustituye.
+      p: Pro cuesta unos $10,75 al mes. Mira cuántas horas de copiar y pegar traducciones sustituye.
     - type: faq
       k: Preguntas de pago
       h: Pagar, renovar y mejorar
       items:
       - - ¿Cómo funciona la prueba gratis?
-        - Descarga e instala GlotChat y haz clic en «Empezar mi prueba gratis de 3 días» en la app. La prueba empieza al momento con todo activado. No necesitas datos de pago, y hay una prueba gratis por ordenador.
+        - Descarga e instala GlotChat y haz clic en «Empezar mi prueba gratis de 7 días» en la app. La prueba empieza al momento con todo activado. No necesitas datos de pago, y hay una prueba gratis por ordenador.
       - - ¿Cómo pago?
-        - En USDT por TRC20, BEP20 o ERC20. Te enviamos la dirección de pago por Telegram y tu clave anual en cuanto llega el pago.
+        - En USDT por TRC20, BEP20 o ERC20, al mes o al año. Te enviamos la dirección de pago por Telegram y tu clave en cuanto llega el pago.
       - - ¿Las cuentas de Telegram cuentan aparte?
         - 'Sí. Cada app tiene su propio límite: con Pro tienes hasta 15 números de WhatsApp y 15 cuentas de Telegram — además de 15 de Messenger, 15 de Instagram y 15 de Discord.'
-      - - ¿Qué pasa después de un año?
-        - Renuevas al mismo precio y sigues sin interrupción. Tus cuentas, chats y ajustes siguen en tu PC en todo momento.
+      - - ¿Qué pasa cuando termina mi mes o mi año?
+        - Renuevas al mismo precio — el tiempo nuevo se suma a tu plan, así que no pierdes ningún día. Tus cuentas, chats y ajustes siguen en tu PC en todo momento.
       - - ¿Puedo mejorar el plan o añadir ordenadores?
         - Sí, cuando quieras. Solo pagas la diferencia por lo que queda de año. Para más ordenadores o una licencia de por vida, pide una oferta a medida.
       - - ¿Recibo actualizaciones?
@@ -857,7 +871,7 @@ pages:
       - pricing
   band-translator:
     title: "Traductor de BAND y varias cuentas de BAND en PC"
-    description: "Traduce los chats de BAND en Windows y abre varias cuentas de BAND a la vez, junto a WhatsApp y Telegram. 49 idiomas, sin conexión. Prueba gratis 3 días."
+    description: "Traduce los chats de BAND en Windows y abre varias cuentas de BAND a la vez, junto a WhatsApp y Telegram. 49 idiomas, sin conexión. Prueba gratis 7 días."
     keywords: "traductor band, traducir chat band, band app pc, varias cuentas band, band multicuenta"
     short: "Traductor de BAND"
     icon: "👥"
@@ -1020,7 +1034,7 @@ pages:
       - - ¿Por qué pagar si WhatsApp Web y Telegram Desktop son gratis?
         - Muestran una cuenta cada vez y no traducen tus respuestas. Cuando llevas muchas cuentas y hablas con clientes en otros idiomas, el tiempo perdido cambiando y copiando cuesta enseguida más que un plan de GlotChat.
       - - ¿Puedo probar GlotChat antes de decidir?
-        - Sí — 3 días con todas las funciones, gratis. Compáralo con lo que usas hoy en tus cuentas reales.
+        - Sí — 7 días con todas las funciones, gratis. Compáralo con lo que usas hoy en tus cuentas reales.
     - type: related
       k: Detalles
       h: Míralo de cerca
@@ -1055,7 +1069,7 @@ pages:
           - ["Notas de voz y texto en fotos traducidos", "✕", "✕", "✕", "✕", "✓ WhatsApp y Telegram"]
           - ["Cientos de otras apps (Slack, Gmail…)", "✓", "✓", "✓", "✓", "✕ solo apps de chat"]
           - ["Windows / Mac / Linux", "✓ los tres", "✓ los tres", "✓ los tres", "✓ los tres", "Solo Windows"]
-          - ["Precio", "Plan gratis; Pro unos 7 $/mes", "Gratis, código abierto", "Gratis para 3 servicios; Pro 60 $/año", "Plan gratis; Pro unos 8 $/mes", "3 días gratis; desde 69 USDT/año"]
+          - ["Precio", "Plan gratis; Pro unos 7 $/mes", "Gratis, código abierto", "Gratis para 3 servicios; Pro 60 $/año", "Plan gratis; Pro unos 8 $/mes", "7 días gratis; desde 69 USDT/año"]
         note: "Revisado en octubre de 2026 en la web pública de cada producto. «✕» en traducción significa que no hay traducción de chats integrada en ambos sentidos (algunas apps permiten añadir una extensión de terceros). Las funciones y los precios cambian: compruébalos antes de comprar. Rambox, Ferdium, Franz y Wavebox son marcas de sus propietarios; GlotChat no está afiliado a ellos."
       - type: cards
         soft: true
@@ -1082,7 +1096,7 @@ pages:
         h: "Cambiar desde Rambox, Ferdium o Franz"
         items:
           - ["¿Rambox traduce mensajes?", "No por sí solo. A octubre de 2026, Rambox no tiene traducción de chats integrada en ambos sentidos; necesitarías una extensión de terceros y no puedes ver lo que leerá el cliente. GlotChat traduce cada chat en ambos sentidos por sí mismo."]
-          - ["¿Hay una alternativa gratis a Rambox con traducción?", "Ferdium es gratis pero no traduce. GlotChat es gratis 3 días con todas las funciones y después desde 69 USDT al año — menos que Rambox Pro pagando mes a mes."]
+          - ["¿Hay una alternativa gratis a Rambox con traducción?", "Ferdium es gratis pero no traduce. GlotChat es gratis 7 días con todas las funciones y después desde 69 USDT al año — menos que Rambox Pro pagando mes a mes."]
           - ["¿Cómo paso de Rambox o Ferdium a GlotChat?", "No hay nada que importar. Instala GlotChat, pulsa Añadir cuenta, elige la app y escanea el QR o inicia sesión. Más o menos un minuto por cuenta."]
           - ["¿GlotChat funciona en Mac o Linux?", "Todavía no: GlotChat funciona en Windows 10 y 11."]
           - ["¿Qué apps admite GlotChat?", "WhatsApp y WhatsApp Business, Telegram, Facebook Messenger, Instagram Direct, Discord y BAND — varias cuentas de cada una."]
@@ -1420,7 +1434,7 @@ pages:
         - **Pon a dormir las cuentas que casi no usas** para que tu PC vaya rápido.
         - **Responde en el idioma del cliente.** Es la forma más rápida de ganar una venta — y con la traducción integrada no te quita tiempo extra.
 
-        ¿Quieres ver el Método 3 en tus propios números? [Prueba GlotChat gratis 3 días](https://t.me/GlotChat).
+        ¿Quieres ver el Método 3 en tus propios números? [Prueba GlotChat gratis 7 días](https://t.me/GlotChat).
     - type: faq
       k: Preguntas frecuentes
       h: Respuestas rápidas
@@ -1512,7 +1526,7 @@ pages:
         - **Conserva el original.** Para algo importante, vuelve a leer también el mensaje original del cliente.
         - **Que una persona revise los contratos.** La traducción automática es excelente para conversar; los textos legales o médicos merecen una revisión humana.
 
-        ¿Listo para dejar de copiar y pegar? [Consigue una prueba gratis de 3 días de GlotChat](https://t.me/GlotChat).
+        ¿Listo para dejar de copiar y pegar? [Consigue una prueba gratis de 7 días de GlotChat](https://t.me/GlotChat).
     - type: faq
       k: Preguntas frecuentes
       h: Respuestas rápidas
@@ -1532,20 +1546,20 @@ pages:
       - pricing
   download:
     title: Descargar GlotChat para Windows – Traductor de WhatsApp y Telegram
-    description: 'Descarga GlotChat gratis para Windows 10 y 11: cuentas de WhatsApp y Telegram en una ventana con traducción sin internet. 3 días de prueba, sin tarjeta.'
+    description: 'Descarga GlotChat gratis para Windows 10 y 11: cuentas de WhatsApp y Telegram en una ventana con traducción sin internet. 7 días de prueba, sin tarjeta.'
     short: Descargar
     icon: ⬇️
-    og_heading: Descarga GlotChat para Windows — 3 días de prueba gratis
+    og_heading: Descarga GlotChat para Windows — 7 días de prueba gratis
     blocks:
     - type: dl_hero
       k: Descarga gratis · Windows 10 y 11
       h1: Descarga GlotChat <span class="grad">para Windows</span>
-      lead: Todas tus cuentas de WhatsApp y Telegram en una ventana, cada mensaje traducido en tu PC. Instálalo en un minuto y prueba todas las funciones gratis durante 3 días.
+      lead: Todas tus cuentas de WhatsApp y Telegram en una ventana, cada mensaje traducido en tu PC. Instálalo en un minuto y prueba todas las funciones gratis durante 7 días.
       card:
       - Cuentas de WhatsApp + Telegram
       - Traducción de texto, voz y fotos
       - Comprobación «Leerá» antes de enviar
-      - 3 días de prueba gratis, sin pago
+      - 7 días de prueba gratis, sin pago
     - type: dl_steps
       k: Guía de instalación
       h: Listo en 4 pasos sencillos
@@ -1559,8 +1573,8 @@ pages:
         p: Haz doble clic en el archivo y sigue el instalador (un minuto, sin permisos de administrador). Si aparece una ventana azul <b>«Windows protegió su PC»</b>, haz clic en <b>Más información</b> y luego en <b>Ejecutar de todas formas</b>.
         tip: 'Es normal en programas nuevos: Windows SmartScreen aún no ha visto GlotChat muchas veces. El archivo es seguro — puedes comprobar su suma SHA-256 más abajo.'
         mock: smartscreen
-      - h: Empieza tu prueba gratis de 3 días — un clic
-        p: Abre GlotChat y haz clic en <b>Empezar mi prueba gratis de 3 días</b>. Todo se activa al momento y GlotChat se actualiza solo a la última versión en un minuto.
+      - h: Empieza tu prueba gratis de 7 días — un clic
+        p: Abre GlotChat y haz clic en <b>Empezar mi prueba gratis de 7 días</b>. Todo se activa al momento y GlotChat se actualiza solo a la última versión en un minuto.
         tip: Una prueba gratis por ordenador. Sin tarjeta, sin pago, nada que cancelar.
         mock: activate
       - h: Añade tus cuentas de WhatsApp y Telegram
@@ -1597,13 +1611,13 @@ pages:
       open_first: true
       items:
       - - ¿GlotChat se descarga gratis?
-        - Sí. La descarga es gratis y la prueba de 3 días activa todas las funciones sin pagar. Después, los planes empiezan en 69 USDT al año.
+        - Sí. La descarga es gratis y la prueba de 7 días activa todas las funciones sin pagar. Después, los planes empiezan en 69 USDT al año.
       - - ¿Por qué Windows dice «Windows protegió su PC»?
         - Windows SmartScreen muestra este aviso con apps nuevas que aún no ha visto muchas veces. Haz clic en <b>Más información</b> y luego en <b>Ejecutar de todas formas</b>. Descarga GlotChat siempre desde esta página — puedes comparar la suma SHA-256 para asegurarte de que es el original.
       - - ¿Por qué la versión del instalador es anterior a la última de GlotChat?
         - El instalador se queda en una versión en la que Windows ya confía, para que se instale sin problemas en cualquier PC. Un minuto después de abrir GlotChat, se actualiza solo a la última versión (con Telegram y todas las novedades).
       - - ¿Necesito una clave de licencia?
-        - 'Para la prueba no: haz clic en <b>Empezar mi prueba gratis de 3 días</b> en la app y empieza al momento. Al comprar un plan te enviamos una clave anual por Telegram — pégala en <b>Ya tengo una clave de licencia</b>.'
+        - 'Para la prueba no: haz clic en <b>Empezar mi prueba gratis de 7 días</b> en la app y empieza al momento. Al comprar un plan te enviamos una clave anual por Telegram — pégala en <b>Ya tengo una clave de licencia</b>.'
       - - ¿Hay versión para Mac, Android o iPhone?
         - Por ahora no. GlotChat es una app de escritorio para Windows 10 y 11. Tus cuentas siguen en tus teléfonos — GlotChat las vincula a tu PC como hace WhatsApp Web.
       - - ¿Cómo desinstalo GlotChat?
@@ -1619,7 +1633,7 @@ pages:
       - whatsapp-translator
   telegram-translator:
     title: Traductor de Telegram para PC – Traduce cada chat solo
-    description: 'Traduce chats de Telegram en ambos sentidos en Windows: los mensajes bajo el original y tus respuestas antes de enviar. 49 idiomas, sin internet. 3 días gratis.'
+    description: 'Traduce chats de Telegram en ambos sentidos en Windows: los mensajes bajo el original y tus respuestas antes de enviar. 49 idiomas, sin internet. 7 días gratis.'
     keywords: traductor telegram, traducir mensajes de telegram, telegram traducción automática, traductor telegram pc
     short: Traductor de Telegram
     icon: ✈️
@@ -1964,7 +1978,7 @@ pages:
       - discord-translator
   messenger-translator:
     title: Traductor de Facebook Messenger y varias cuentas en PC
-    description: Traduce los chats de Facebook Messenger en los dos sentidos en Windows y ten varias cuentas de Messenger abiertas a la vez. 49 idiomas, sin internet. 3 días gratis.
+    description: Traduce los chats de Facebook Messenger en los dos sentidos en Windows y ten varias cuentas de Messenger abiertas a la vez. 49 idiomas, sin internet. 7 días gratis.
     keywords: traductor messenger, traductor facebook messenger, traducir mensajes de messenger, varias cuentas de messenger, facebook multicuenta pc, messenger traducción automática
     short: Traductor de Messenger
     icon: 💬
@@ -2049,7 +2063,7 @@ pages:
       - whatsapp-translator
   instagram-dm-translator:
     title: Traductor de DM de Instagram y varias cuentas en PC
-    description: Traduce los DM de Instagram en los dos sentidos en Windows y ten varias cuentas de Instagram abiertas a la vez. 49 idiomas, sin internet. 3 días gratis.
+    description: Traduce los DM de Instagram en los dos sentidos en Windows y ten varias cuentas de Instagram abiertas a la vez. 49 idiomas, sin internet. 7 días gratis.
     keywords: traductor de instagram, traducir mensajes de instagram, traductor dm instagram, varias cuentas de instagram en pc, instagram direct en pc, instagram multicuenta
     short: Traductor de DM de Instagram
     icon: 📸
@@ -2134,7 +2148,7 @@ pages:
       - whatsapp-translator
   discord-translator:
     title: Traductor de Discord y varias cuentas de Discord en PC
-    description: Traduce los mensajes de Discord en servidores y MD en Windows, y ten varias cuentas de Discord abiertas a la vez. 49 idiomas, sin internet. 3 días gratis.
+    description: Traduce los mensajes de Discord en servidores y MD en Windows, y ten varias cuentas de Discord abiertas a la vez. 49 idiomas, sin internet. 7 días gratis.
     keywords: traductor de discord, traducir mensajes de discord, discord traducción automática, varias cuentas de discord, discord multicuenta pc
     short: Traductor de Discord
     icon: 🎮
@@ -2252,7 +2266,7 @@ pages:
 
           - **Ideal para:** vendedores, exportadores, agencias y equipos de soporte con clientes internacionales.
           - **No es para:** usuarios de Mac, ni quien necesita Slack, correo y otras apps de trabajo.
-          - **Precio:** gratis 3 días, luego 69, 129 o 249 USDT al año (5, 15 o ilimitadas cuentas por app).
+          - **Precio:** gratis 7 días, luego 69, 129 o 249 USDT al año (5, 15 o ilimitadas cuentas por app).
 
           ## 2. Rambox — la mejor para muchas apps de trabajo
 
@@ -2305,7 +2319,7 @@ pages:
 
           Las buenas abren la **versión web oficial** de cada app (como WhatsApp Web) en su propia sesión aislada — lo mismo que hace tu navegador, solo que ordenado. Evita las apps modificadas (como «GB WhatsApp») y las herramientas de envío masivo: eso es lo que hace que bloqueen cuentas.
 
-          ¿Quieres ver la traducción en tus propios chats? [Prueba GlotChat gratis 3 días](/es/download/) — sin tarjeta y sin pagar.
+          ¿Quieres ver la traducción en tus propios chats? [Prueba GlotChat gratis 7 días](/es/download/) — sin tarjeta y sin pagar.
       - type: faq
         k: "Preguntas"
         h: "Respuestas rápidas"
@@ -2313,7 +2327,7 @@ pages:
           - ["¿Cuál es la mejor app de mensajería todo en uno?", "Depende de lo que necesites. Para clientes de otros idiomas, GlotChat: es la única de la lista que traduce los chats en ambos sentidos. Para muchas apps de trabajo, Rambox o Wavebox. Gratis y de código abierto, Ferdium."]
           - ["¿Qué app de mensajería todo en uno traduce mensajes?", "GlotChat traduce cada chat de WhatsApp, Telegram, Messenger, Instagram, Discord y BAND, en ambos sentidos, en 49 idiomas — sin conexión en tu PC."]
           - ["¿Puedo usar varias cuentas de WhatsApp en una sola app?", "Sí. Las cinco apps de esta lista pueden abrir varias cuentas de WhatsApp lado a lado. GlotChat se ha probado con 27 cuentas a la vez."]
-          - ["¿Hay una app de mensajería todo en uno gratis?", "Ferdium es gratis. Rambox, Franz y Wavebox tienen planes gratis limitados. GlotChat es gratis 3 días con todas las funciones."]
+          - ["¿Hay una app de mensajería todo en uno gratis?", "Ferdium es gratis. Rambox, Franz y Wavebox tienen planes gratis limitados. GlotChat es gratis 7 días con todas las funciones."]
       - type: related
         k: "Siguiente"
         h: "Sigue leyendo"
@@ -2334,11 +2348,11 @@ pages:
       - type: prose
         toc: true
         md: |
-          > **En corto:** prueba GlotChat gratis 3 días → escríbenos por Telegram con tu plan y tu Machine ID → envía USDT a la dirección que te damos → pega la clave que recibes. Listo.
+          > **En corto:** prueba GlotChat gratis 7 días → escríbenos por Telegram con tu plan y tu Machine ID → envía USDT a la dirección que te damos → pega la clave que recibes. Listo.
 
           ## 1. Pruébalo gratis primero
 
-          [Descarga GlotChat](/es/download/) y pulsa **«Empezar mi prueba gratis de 3 días»**. Todas las funciones desbloqueadas, sin pagar. Añade tus cuentas y comprueba que GlotChat es para ti antes de pagar nada.
+          [Descarga GlotChat](/es/download/) y pulsa **«Empezar mi prueba gratis de 7 días»**. Todas las funciones desbloqueadas, sin pagar. Añade tus cuentas y comprueba que GlotChat es para ti antes de pagar nada.
 
           ## 2. Elige tu plan
 
@@ -2515,7 +2529,7 @@ pages:
         items: ["multiple-whatsapp-accounts", "whatsapp-translator", "is-it-safe"]
   translate/spanish-english:
     title: "Traductor de WhatsApp español-inglés para PC | GlotChat"
-    description: "Traduce chats de WhatsApp y Telegram entre español e inglés en tu PC: automático, en ambos sentidos y sin conexión. También notas de voz y fotos. 3 días gratis."
+    description: "Traduce chats de WhatsApp y Telegram entre español e inglés en tu PC: automático, en ambos sentidos y sin conexión. También notas de voz y fotos. 7 días gratis."
     keywords: "traductor whatsapp español inglés, traducir whatsapp de inglés a español, traductor de chat inglés español, traductor telegram inglés"
     short: "Español ↔ inglés"
     icon: "🌐"

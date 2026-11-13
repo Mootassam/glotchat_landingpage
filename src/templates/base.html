@@ -176,6 +176,9 @@
         <span class="appchip ms">{{ icons.ms|safe }}Messenger</span><span class="appchip ig">{{ icons.ig|safe }}Instagram</span><span class="appchip dc">{{ icons.dc|safe }}Discord</span>
       </div>
       <a class="btn tg sm" data-tg="general" data-place="footer" href="{{ tg }}" target="_blank" rel="noopener">{{ icon_tg|safe }}<span>@{{ cfg.TELEGRAM_USER }}</span></a>
+      {%- if cfg.EMAIL %}
+      <a class="foot-mail" href="mailto:{{ cfg.EMAIL }}">✉️ {{ cfg.EMAIL }}</a>
+      {%- endif %}
     </div>
     <div>
       <h3>{{ ui.footer.product }}</h3>
@@ -210,6 +213,7 @@
 {%- endfor %}
       <a href="/privacy/">{{ ui.footer.privacy }}</a>
       <a href="/terms/">{{ ui.footer.terms }}</a>
+      <a href="/refund/">{{ ui.footer.refund }}</a>
     </div>
   </div>
   <div class="wrap foot-bottom">

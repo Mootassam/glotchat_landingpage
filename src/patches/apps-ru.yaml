@@ -16,11 +16,11 @@ ui:
   plan_f:
     apps: "WhatsApp, Telegram, Messenger, Instagram, Discord"
   final:
-    p: "Скачайте GlotChat, нажмите «Начать бесплатный период на 3 дня» и добавьте аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord. Хотите сначала поговорить? Напишите нам — покажем GlotChat вживую или ответим на любой вопрос."
+    p: "Скачайте GlotChat, нажмите «Начать бесплатный период на 7 дней» и добавьте аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord. Хотите сначала поговорить? Напишите нам — покажем GlotChat вживую или ответим на любой вопрос."
   footer:
     tagline: "WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый клиент — на своём языке. Для бизнеса, который продаёт за рубеж."
   og_kicker: "Переводчик для WhatsApp, Telegram, Messenger, Instagram и Discord на ПК"
-  og_chips: ["5 приложений, одно окно", "49 языков", "3 дня бесплатно"]
+  og_chips: ["5 приложений, одно окно", "49 языков", "7 дней бесплатно"]
   app_description: "Программа для Windows, которая объединяет много аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне — каждый изолирован, со своими уведомлениями и прокси — и переводит чаты без интернета на 49 языков (а в WhatsApp и Telegram ещё голосовые и фото), проверяя каждый перевод перед отправкой."
   feature_first: "Несколько аккаунтов WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне"
   msg:
@@ -31,7 +31,7 @@ ui:
 
 home:
   title: "Переводчик и мультиаккаунт WhatsApp и Telegram для ПК | GlotChat"
-  description: "Аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне Windows. Каждый чат переводится без интернета на 49 языков. 3 дня бесплатно."
+  description: "Аккаунты WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне Windows. Каждый чат переводится без интернета на 49 языков. 7 дней бесплатно."
   keywords: "переводчик whatsapp, переводчик telegram, несколько аккаунтов whatsapp на пк, мультиаккаунт telegram, переводчик messenger, перевод instagram direct, переводчик discord, все мессенджеры в одном"
   og_title: "GlotChat – WhatsApp, Telegram, Messenger, Instagram и Discord в одном окне, каждый клиент на своём языке"
   og_heading: "Все мессенджеры в одном окне. Каждый клиент — на своём языке."
@@ -132,7 +132,7 @@ pages:
 
   messenger-translator:
     title: "Переводчик для Facebook Messenger и несколько аккаунтов на ПК"
-    description: "Переводите чаты Facebook Messenger в обе стороны в Windows и держите несколько аккаунтов Messenger открытыми рядом. 49 языков, без интернета. 3 дня бесплатно."
+    description: "Переводите чаты Facebook Messenger в обе стороны в Windows и держите несколько аккаунтов Messenger открытыми рядом. 49 языков, без интернета. 7 дней бесплатно."
     keywords: "переводчик messenger, переводчик facebook messenger, перевод сообщений messenger, несколько аккаунтов messenger, мультиаккаунт facebook пк, автоперевод messenger"
     short: "Переводчик для Messenger"
     icon: "💬"
@@ -188,7 +188,7 @@ pages:
 
   instagram-dm-translator:
     title: "Переводчик Instagram Direct и несколько аккаунтов на ПК"
-    description: "Переводите сообщения Instagram Direct в обе стороны в Windows и держите несколько аккаунтов Instagram открытыми рядом. 49 языков, без интернета. 3 дня бесплатно."
+    description: "Переводите сообщения Instagram Direct в обе стороны в Windows и держите несколько аккаунтов Instagram открытыми рядом. 49 языков, без интернета. 7 дней бесплатно."
     keywords: "переводчик instagram, перевод сообщений instagram, переводчик директ instagram, несколько аккаунтов instagram на пк, instagram direct на компьютере, мультиаккаунт instagram"
     short: "Переводчик для Instagram Direct"
     icon: "📸"
@@ -244,7 +244,7 @@ pages:
 
   discord-translator:
     title: "Переводчик для Discord и несколько аккаунтов Discord на ПК"
-    description: "Переводите сообщения Discord на серверах и в личке в Windows и держите несколько аккаунтов Discord открытыми рядом. 49 языков, без интернета. 3 дня бесплатно."
+    description: "Переводите сообщения Discord на серверах и в личке в Windows и держите несколько аккаунтов Discord открытыми рядом. 49 языков, без интернета. 7 дней бесплатно."
     keywords: "переводчик discord, перевод сообщений discord, автоперевод discord, несколько аккаунтов discord, мультиаккаунт discord пк"
     short: "Переводчик для Discord"
     icon: "🎮"
