@@ -457,7 +457,7 @@
           <li>{{ ui.dl.no_admin }}</li>
         </ul>
       </div>
-      <p class="guarantee dlguarantee"><span aria-hidden="true">🛡️</span> <a href="/refund/">{{ ui.guarantee }}</a></p>
+      <div class="dlfree"><b>🎁 {{ ui.dl.free_h }}</b><ul>{% for x in ui.dl.free %}<li>{{ x }}</li>{% endfor %}</ul></div>
     </div>
     <div class="phero-media">
       <div class="dlcard" aria-hidden="true">

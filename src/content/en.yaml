@@ -158,6 +158,8 @@ ui:
     phone_h: "On your phone?"
     phone_p: "GlotChat is a Windows app for your PC. Send yourself this link and download it on your computer."
     phone_send: "Send the link to my PC"
+    free_h: "Try GlotChat free — no risk"
+    free: ["No credit card", "Every feature free for 7 days", "Nothing to cancel"]
     mock:
       downloads: Downloads
       done: Done
@@ -1142,6 +1144,60 @@ pages:
         k: "Details"
         h: "Look closer"
         items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
+
+  for/marketing:
+    title: GlotChat for Marketers & Agencies – Every Client Chat in One Window
+    description: Manage the Instagram, Messenger, WhatsApp and Telegram chats of every brand you run in one window, and reply to leads from any country in their language.
+    short: Marketing & agencies
+    nav_sub: Leads and clients from every country
+    icon: 📣
+    og_heading: 'Marketing on WhatsApp, Instagram & Messenger: every lead answered in their language'
+    blocks:
+    - type: hero
+      k: For marketers, agencies & social media managers
+      h1: Every lead, every brand, every language — <span class="grad">in one window</span>
+      lead: Your ads bring people from many countries into WhatsApp, Instagram DMs, Messenger and Telegram. GlotChat opens every account you manage side by side and translates each conversation, so no lead waits and none is lost to language.
+      media: video:apps
+      media_alt: Several brand accounts open side by side in GlotChat
+    - type: cards
+      k: Made for marketing teams
+      h: Answer faster. Convert more.
+      items:
+      - icon: 📣
+        h: Every client account together
+        p: Instagram, Messenger, WhatsApp and Telegram for each brand you manage — each in its own sealed space, with its own login and optional proxy.
+      - icon: 🌍
+        h: Talk to leads in their language
+        p: Campaigns in the Gulf, Latin America or Europe? Read every message in your language and reply in theirs.
+      - icon: ⚡
+        h: Reply in seconds
+        p: Quick-reply templates for prices, offers and next steps — translated automatically for each customer.
+      - icon: 🔔
+        h: Never miss a lead
+        p: Every notification names the account and brand. Unread counts for each account show where people are waiting.
+      - icon: 🎤
+        h: Voice notes and screenshots
+        p: Leads send voice messages and screenshots. Read them as text, translated.
+      - icon: 👥
+        h: Ready for your team
+        p: Business covers unlimited accounts on up to 3 PCs, so your team works from the same setup.
+    - type: faq
+      k: FAQ
+      h: Marketing questions
+      items:
+      - - Can I manage Instagram and Messenger for several clients?
+        - Yes. Add each client's accounts as separate accounts. Every one has its own login, notifications and optional proxy. Pro includes up to 15 accounts per app; Business is unlimited.
+      - - Does GlotChat send bulk messages?
+        - No. GlotChat is for real conversations with your leads and customers, not mass messaging. Please follow the rules of each chat app.
+      - - Can I try it with my real accounts first?
+        - Yes. The 7-day free trial unlocks every feature, with no card and no payment.
+    - type: related
+      k: More
+      h: Related
+      items:
+      - instagram-dm-translator
+      - messenger-translator
+      - all-in-one-messenger
 
   for/real-estate:
     title: "WhatsApp for Real Estate Agents – Multi-Account + Translation"
@@ -2782,9 +2838,9 @@ pages:
     - type: dl_hero
       k: Free download · Windows 10 & 11
       h1: Download GlotChat <span class="grad">for Windows</span>
-      lead: All your WhatsApp and Telegram accounts in one window, every message translated on your PC. Install in about a minute and try every feature free for 7 days.
+      lead: "WhatsApp, Telegram, Messenger, Instagram, Discord and BAND in one window, every message translated on your PC. Installs in about a minute — then every feature is yours free for 7 days."
       card:
-      - WhatsApp + Telegram accounts
+      - "6 chat apps, many accounts"
       - Text, voice & photo translation
       - “They will read” check before sending
       - 7-day free trial, no payment

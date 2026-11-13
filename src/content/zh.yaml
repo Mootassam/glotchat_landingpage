@@ -187,6 +187,8 @@ ui:
     phone_h: 在手机上浏览？
     phone_p: GlotChat 是 Windows 电脑软件。把这个链接发给自己（WhatsApp、微信或邮件），在电脑上打开下载。
     phone_send: 发送链接到电脑
+    free_h: "免费试用 GlotChat —— 零风险"
+    free: ["无需信用卡", "全部功能免费用 7 天", "无需取消任何东西"]
     mock:
       downloads: 下载
       done: 已完成
@@ -1052,6 +1054,60 @@ pages:
         h: "继续看看"
         items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
 
+  for/marketing:
+    title: GlotChat 营销与代理团队版 – 所有客户聊天一个窗口
+    description: 在一个窗口管理你运营的每个品牌的 Instagram、Messenger、WhatsApp 和 Telegram 聊天，用对方的语言回复来自任何国家的潜在客户。
+    short: 营销与代理公司
+    nav_sub: 来自各国的潜在客户
+    icon: 📣
+    og_heading: WhatsApp、Instagram、Messenger 营销：用对方的语言回复每个潜在客户
+    blocks:
+    - type: hero
+      k: 适合营销人员、代理公司和社媒运营
+      h1: 每个客户、每个品牌、每种语言 —— <span class="grad">一个窗口</span>
+      lead: 你的广告把各国用户带到 WhatsApp、Instagram 私信、Messenger 和 Telegram。GlotChat 把你管理的所有账号并排打开，并翻译每段对话 —— 不让任何潜在客户等待，也不因语言流失任何客户。
+      media: video:apps
+      media_alt: GlotChat 中并排打开多个品牌账号
+    - type: cards
+      k: 为营销团队打造
+      h: 回复更快，成交更多。
+      items:
+      - icon: 📣
+        h: 所有客户账号集中管理
+        p: 你管理的每个品牌的 Instagram、Messenger、WhatsApp 和 Telegram —— 每个账号独立隔离，有自己的登录和可选代理。
+      - icon: 🌍
+        h: 用对方的语言沟通
+        p: 在中东、拉美或欧洲投放广告？用你的语言阅读每条消息，用对方的语言回复。
+      - icon: ⚡
+        h: 几秒内回复
+        p: 价格、优惠和下一步的快捷回复模板 —— 自动翻译成每位客户的语言。
+      - icon: 🔔
+        h: 不错过任何潜在客户
+        p: 每条通知都显示账号和品牌，每个账号的未读数一目了然，知道谁在等你。
+      - icon: 🎤
+        h: 语音和截图
+        p: 潜在客户发来语音和截图？转成文字并翻译。
+      - icon: 👥
+        h: 适合团队使用
+        p: 商业版账号数量不限，最多 3 台电脑，团队使用同一套设置。
+    - type: faq
+      k: 常见问题
+      h: 营销相关问题
+      items:
+      - - 可以为多个客户管理 Instagram 和 Messenger 吗？
+        - 可以。把每个客户的账号作为独立账号添加，每个都有自己的登录、通知和可选代理。专业版每个应用最多 15 个账号，商业版不限。
+      - - GlotChat 会群发消息吗？
+        - 不会。GlotChat 用于和潜在客户、客户的真实对话，不用于群发。请遵守各聊天应用的规则。
+      - - 可以先用我的真实账号试用吗？
+        - 可以。7 天免费试用开放全部功能，无需信用卡，无需付款。
+    - type: related
+      k: 更多
+      h: 相关页面
+      items:
+      - instagram-dm-translator
+      - messenger-translator
+      - all-in-one-messenger
+
   for/real-estate:
     title: 房产中介 WhatsApp 多开 + 翻译 – 用买家的语言回复
     description: 所有经纪人的 WhatsApp 号码在一个窗口，用外国买家的语言回复——聊天、语音和证件照片都能翻译。免费试用。
@@ -1674,9 +1730,9 @@ pages:
     - type: dl_hero
       k: 免费下载 · Windows 10 和 11
       h1: 下载 GlotChat <span class="grad">Windows 版</span>
-      lead: 所有 WhatsApp 和 Telegram 账号一个窗口，每条消息在你的电脑上翻译。大约 1 分钟装好，免费试用全部功能 7 天。
+      lead: "WhatsApp、Telegram、Messenger、Instagram、Discord 和 BAND 一个窗口搞定，每条消息在你的电脑上翻译。大约 1 分钟装好，全部功能免费用 7 天。"
       card:
-      - WhatsApp + Telegram 账号
+      - "6 个聊天应用，多个账号"
       - 文字、语音、图片翻译
       - 发送前“对方将读到”核对
       - 免费试用 7 天，无需付款

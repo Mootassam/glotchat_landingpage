@@ -187,6 +187,8 @@ ui:
     phone_h: Está no celular?
     phone_p: O GlotChat é um aplicativo para PC com Windows. Envie este link para você mesmo e baixe no computador.
     phone_send: Enviar o link para o meu PC
+    free_h: "Teste o GlotChat grátis — sem risco"
+    free: ["Sem cartão de crédito", "Todos os recursos grátis por 7 dias", "Nada para cancelar"]
     mock:
       downloads: Downloads
       done: Concluído
@@ -1051,6 +1053,60 @@ pages:
         h: "Veja de perto"
         items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
 
+  for/marketing:
+    title: "GlotChat para marketing: chats de clientes numa janela"
+    description: Gerencie os chats de Instagram, Messenger, WhatsApp e Telegram de cada marca que você cuida numa janela e responda leads de qualquer país no idioma deles.
+    short: Marketing e agências
+    nav_sub: Leads e clientes de todos os países
+    icon: 📣
+    og_heading: 'Marketing no WhatsApp, Instagram e Messenger: cada lead atendido no idioma dele'
+    blocks:
+    - type: hero
+      k: Para profissionais de marketing, agências e social media
+      h1: Cada lead, cada marca, cada idioma — <span class="grad">numa só janela</span>
+      lead: Seus anúncios trazem pessoas de muitos países para o WhatsApp, as DMs do Instagram, o Messenger e o Telegram. O GlotChat abre todas as contas que você gerencia lado a lado e traduz cada conversa — nenhum lead espera e nenhum se perde por causa do idioma.
+      media: video:apps
+      media_alt: Várias contas de marcas abertas lado a lado no GlotChat
+    - type: cards
+      k: Feito para equipes de marketing
+      h: Responda mais rápido. Venda mais.
+      items:
+      - icon: 📣
+        h: Todas as contas de clientes juntas
+        p: Instagram, Messenger, WhatsApp e Telegram de cada marca que você gerencia — cada uma no seu espaço, com login próprio e proxy opcional.
+      - icon: 🌍
+        h: Fale com os leads no idioma deles
+        p: Campanhas no Golfo, na América Latina ou na Europa? Leia cada mensagem no seu idioma e responda no deles.
+      - icon: ⚡
+        h: Responda em segundos
+        p: Modelos de resposta rápida para preços, ofertas e próximos passos — traduzidos automaticamente para cada cliente.
+      - icon: 🔔
+        h: Não perca nenhum lead
+        p: Cada notificação mostra a conta e a marca. O contador de não lidas de cada conta mostra quem está esperando.
+      - icon: 🎤
+        h: Áudios e prints
+        p: Leads mandam áudios e prints. Leia tudo como texto traduzido.
+      - icon: 👥
+        h: Pronto para a sua equipe
+        p: O Business inclui contas ilimitadas em até 3 PCs, para a equipe trabalhar com a mesma configuração.
+    - type: faq
+      k: Perguntas
+      h: Perguntas de marketing
+      items:
+      - - Posso gerenciar Instagram e Messenger de vários clientes?
+        - Sim. Adicione as contas de cada cliente como contas separadas, cada uma com login, notificações e proxy opcional. O Pro inclui até 15 contas por app; o Business é ilimitado.
+      - - O GlotChat envia mensagens em massa?
+        - Não. O GlotChat é para conversas reais com seus leads e clientes, não para disparos em massa. Siga as regras de cada app de chat.
+      - - Posso testar com minhas contas reais primeiro?
+        - Sim. O teste grátis de 7 dias libera todos os recursos, sem cartão e sem pagamento.
+    - type: related
+      k: Mais
+      h: Relacionado
+      items:
+      - instagram-dm-translator
+      - messenger-translator
+      - all-in-one-messenger
+
   for/real-estate:
     title: WhatsApp para Imobiliárias – Várias Contas + Tradução
     description: Gerencie o WhatsApp de todos os corretores numa janela e responda compradores estrangeiros no idioma deles — conversas, áudios e documentos traduzidos.
@@ -1665,9 +1721,9 @@ pages:
     - type: dl_hero
       k: Download grátis · Windows 10 e 11
       h1: Baixe o GlotChat <span class="grad">para Windows</span>
-      lead: Todas as suas contas de WhatsApp e Telegram numa janela, cada mensagem traduzida no seu PC. Instale em cerca de um minuto e teste todos os recursos grátis por 7 dias.
+      lead: "WhatsApp, Telegram, Messenger, Instagram, Discord e BAND numa janela, cada mensagem traduzida no seu PC. Instala em cerca de um minuto — e todos os recursos ficam grátis por 7 dias."
       card:
-      - Contas de WhatsApp + Telegram
+      - "6 apps de chat, várias contas"
       - Tradução de texto, áudio e fotos
       - Conferência “Ele vai ler” antes de enviar
       - 7 dias de teste grátis, sem pagamento

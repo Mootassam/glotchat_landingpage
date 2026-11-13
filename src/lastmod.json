@@ -1,998 +1,1030 @@
 {
 "404.html": {
-"hash": "f55369197192879b",
+"hash": "d2f7a0aabeb37fcf",
 "date": "2026-11-12"
 },
 "all-in-one-messenger/index.html": {
-"hash": "77147d64e203280b",
+"hash": "5e3f8cd0ae1acd42",
 "date": "2026-11-12"
 },
 "ar/all-in-one-messenger/index.html": {
-"hash": "2730526dc09f2d7e",
+"hash": "10358a6af5db59af",
 "date": "2026-11-12"
 },
 "ar/band-translator/index.html": {
-"hash": "6ddf3dad4b405519",
+"hash": "6e075feefcd833ac",
 "date": "2026-11-12"
 },
 "ar/compare/index.html": {
-"hash": "97b609e8a4868c44",
+"hash": "0b3e47ddc6108398",
 "date": "2026-11-12"
 },
 "ar/discord-translator/index.html": {
-"hash": "09a2ae9f06c9ad57",
+"hash": "7c2b28bf22c194a6",
 "date": "2026-11-12"
 },
 "ar/download/index.html": {
-"hash": "31550d50bc69c4c5",
+"hash": "8b838aabe04c5ae0",
 "date": "2026-11-12"
 },
 "ar/for/clinics/index.html": {
-"hash": "fbc00535d7ab5fe7",
+"hash": "22a9543164ea53c8",
 "date": "2026-11-12"
 },
 "ar/for/exporters/index.html": {
-"hash": "899aed3839114191",
+"hash": "04bf3685a8a4946d",
+"date": "2026-11-12"
+},
+"ar/for/marketing/index.html": {
+"hash": "bc1ffd00359e7824",
 "date": "2026-11-12"
 },
 "ar/for/real-estate/index.html": {
-"hash": "f15bb6f3ea7c694c",
+"hash": "0ca1596c1a378a66",
 "date": "2026-11-12"
 },
 "ar/for/travel/index.html": {
-"hash": "038b606e87c23c2a",
+"hash": "0e485a9e9cf337be",
 "date": "2026-11-12"
 },
 "ar/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "745b5d91f09bac10",
+"hash": "5d576f780b0373f5",
 "date": "2026-11-12"
 },
 "ar/guides/index.html": {
-"hash": "194a7825da33577d",
+"hash": "8ba3dd474cfbc9af",
 "date": "2026-11-12"
 },
 "ar/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "51256ce70ac232bb",
+"hash": "89b1486c64d2245e",
 "date": "2026-11-12"
 },
 "ar/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "9eb1c9edc6e037c3",
+"hash": "a952d6c6dc5e6ee5",
 "date": "2026-11-12"
 },
 "ar/how-to-buy/index.html": {
-"hash": "21c161afe5430ad6",
+"hash": "e7f7f854952a3af1",
 "date": "2026-11-12"
 },
 "ar/index.html": {
-"hash": "73b68aef742c6527",
+"hash": "9973f00ae824cd15",
 "date": "2026-11-12"
 },
 "ar/instagram-dm-translator/index.html": {
-"hash": "9bd279a367faf7cb",
+"hash": "0ef40dc80f774373",
 "date": "2026-11-12"
 },
 "ar/is-it-safe/index.html": {
-"hash": "5fd824975e79942e",
+"hash": "c7ea2642bbbe6fca",
 "date": "2026-11-12"
 },
 "ar/messenger-translator/index.html": {
-"hash": "d27d240d9493877d",
+"hash": "0fe037d86f3a29e6",
 "date": "2026-11-12"
 },
 "ar/multiple-telegram-accounts/index.html": {
-"hash": "fe71f85265ab1e0e",
+"hash": "92ed4dc56811def0",
 "date": "2026-11-12"
 },
 "ar/multiple-whatsapp-accounts/index.html": {
-"hash": "cc8dca81bca1ae93",
+"hash": "699fc982474f7e1b",
 "date": "2026-11-12"
 },
 "ar/multiple-whatsapp-business-accounts/index.html": {
-"hash": "7b983f33562d6c4e",
+"hash": "5c95283667f6d235",
 "date": "2026-11-12"
 },
 "ar/pricing/index.html": {
-"hash": "064d91773fb0c8be",
+"hash": "32e7c92a05f01174",
 "date": "2026-11-12"
 },
 "ar/rambox-alternative/index.html": {
-"hash": "520b1b21038ecd28",
+"hash": "b41794056b105fa3",
 "date": "2026-11-12"
 },
 "ar/telegram-translator/index.html": {
-"hash": "4d8138b77e36f671",
+"hash": "7744dc5b76f5556d",
 "date": "2026-11-12"
 },
 "ar/translate/arabic-english/index.html": {
-"hash": "ed88e9335db32f3f",
+"hash": "2945a2f19e2c888f",
 "date": "2026-11-12"
 },
 "ar/whatsapp-translator/index.html": {
-"hash": "4542eaa1abba098c",
+"hash": "9b9d563513753582",
 "date": "2026-11-12"
 },
 "band-translator/index.html": {
-"hash": "7eaebe4f2db197e8",
+"hash": "ded9656eeadf3bf3",
 "date": "2026-11-12"
 },
 "compare/index.html": {
-"hash": "d7500f36b2028b98",
+"hash": "0b383935cbf0d86b",
 "date": "2026-11-12"
 },
 "discord-translator/index.html": {
-"hash": "686a082ff32bfc97",
+"hash": "ab000b171c3089ab",
 "date": "2026-11-12"
 },
 "download/index.html": {
-"hash": "be7e29b507b3017d",
+"hash": "d7b97151c3946127",
 "date": "2026-11-12"
 },
 "es/all-in-one-messenger/index.html": {
-"hash": "d879d4f937c5357d",
+"hash": "d33992f231f688a1",
 "date": "2026-11-12"
 },
 "es/band-translator/index.html": {
-"hash": "7b78a0a5bafe7017",
+"hash": "49c5a4101b25ebf6",
 "date": "2026-11-12"
 },
 "es/compare/index.html": {
-"hash": "bafc351e7a21afcc",
+"hash": "8a750a367a9376fd",
 "date": "2026-11-12"
 },
 "es/discord-translator/index.html": {
-"hash": "579170ae3a6c7c3c",
+"hash": "3f7deb93b19f4a39",
 "date": "2026-11-12"
 },
 "es/download/index.html": {
-"hash": "c4b1dbba8d50cc6f",
+"hash": "1c96e9cd0f6cce4c",
 "date": "2026-11-12"
 },
 "es/for/clinics/index.html": {
-"hash": "66cdf31c28631ec6",
+"hash": "f12c7912005edb05",
 "date": "2026-11-12"
 },
 "es/for/exporters/index.html": {
-"hash": "96672a51599b493b",
+"hash": "4da36aea766d112c",
+"date": "2026-11-12"
+},
+"es/for/marketing/index.html": {
+"hash": "4af44e4342d3f034",
 "date": "2026-11-12"
 },
 "es/for/real-estate/index.html": {
-"hash": "605affadc9bbd32c",
+"hash": "c6b2ca48149bea46",
 "date": "2026-11-12"
 },
 "es/for/travel/index.html": {
-"hash": "28ca0e41b2fe54e0",
+"hash": "139e495f2e577f58",
 "date": "2026-11-12"
 },
 "es/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "f442211e3211c06b",
+"hash": "bcb07315aeca8c12",
 "date": "2026-11-12"
 },
 "es/guides/index.html": {
-"hash": "3dd5558d0d56f14c",
+"hash": "5043e084323a5e9c",
 "date": "2026-11-12"
 },
 "es/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "7ad54f8cdb6f9cb8",
+"hash": "6acf86edb11dd853",
 "date": "2026-11-12"
 },
 "es/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "3ea526f0f9fb3f19",
+"hash": "e352f83ef6b9f62b",
 "date": "2026-11-12"
 },
 "es/how-to-buy/index.html": {
-"hash": "9ed973d7a0abba3a",
+"hash": "fd277b7e91b0ee94",
 "date": "2026-11-12"
 },
 "es/index.html": {
-"hash": "29c4a093382894e2",
+"hash": "d498079f78c9b6fe",
 "date": "2026-11-12"
 },
 "es/instagram-dm-translator/index.html": {
-"hash": "1aaf97b21fa6a98a",
+"hash": "af9a5187a9572137",
 "date": "2026-11-12"
 },
 "es/is-it-safe/index.html": {
-"hash": "607de8c0278deab9",
+"hash": "a12154524f54d235",
 "date": "2026-11-12"
 },
 "es/messenger-translator/index.html": {
-"hash": "eaba6af20765dd5b",
+"hash": "01c307d79bf9400f",
 "date": "2026-11-12"
 },
 "es/multiple-telegram-accounts/index.html": {
-"hash": "fadbcbcf9d0a41f3",
+"hash": "d48b7d0824cf1fb2",
 "date": "2026-11-12"
 },
 "es/multiple-whatsapp-accounts/index.html": {
-"hash": "e881c4ab17550d7b",
+"hash": "6cddb26c3de13b5e",
 "date": "2026-11-12"
 },
 "es/multiple-whatsapp-business-accounts/index.html": {
-"hash": "eed8b6d0b42d6a65",
+"hash": "3c9665d19d0d6dc5",
 "date": "2026-11-12"
 },
 "es/pricing/index.html": {
-"hash": "c2968dc95a45e2af",
+"hash": "6df6db1cfe05b31d",
 "date": "2026-11-12"
 },
 "es/rambox-alternative/index.html": {
-"hash": "db1985c11650196a",
+"hash": "1fb9005aa8731d3a",
 "date": "2026-11-12"
 },
 "es/telegram-translator/index.html": {
-"hash": "aaade4c79938e9fc",
+"hash": "c324f88abb5e6380",
 "date": "2026-11-12"
 },
 "es/translate/spanish-english/index.html": {
-"hash": "27f8b604611accb9",
+"hash": "1880b32a855c9979",
 "date": "2026-11-12"
 },
 "es/whatsapp-translator/index.html": {
-"hash": "ab212827954b73f5",
+"hash": "ec24b8b5f5a4c02a",
 "date": "2026-11-12"
 },
 "for/clinics/index.html": {
-"hash": "a3c06f0893fabc29",
+"hash": "4093fc736ba53b3e",
 "date": "2026-11-12"
 },
 "for/exporters/index.html": {
-"hash": "9d3c54fe6e1ea696",
+"hash": "6b40032943856700",
+"date": "2026-11-12"
+},
+"for/marketing/index.html": {
+"hash": "6ff66699e32d31e1",
 "date": "2026-11-12"
 },
 "for/real-estate/index.html": {
-"hash": "6accae9e7ebe0495",
+"hash": "a08c20b0a17d94fd",
 "date": "2026-11-12"
 },
 "for/travel/index.html": {
-"hash": "8f4129c92456f17e",
+"hash": "5de4f595184ca7b2",
 "date": "2026-11-12"
 },
 "guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "19fd49ba213ccb78",
+"hash": "e50233b08bccf354",
 "date": "2026-11-12"
 },
 "guides/best-whatsapp-multi-account-software/index.html": {
-"hash": "676e9b6d888f197f",
+"hash": "768d51aa02d87e03",
 "date": "2026-11-12"
 },
 "guides/index.html": {
-"hash": "9bdd17a4def905ff",
+"hash": "16250188feae11f2",
 "date": "2026-11-12"
 },
 "guides/multiple-telegram-accounts-on-pc/index.html": {
-"hash": "093d31bd2671f1f1",
+"hash": "d8678f2afc600580",
 "date": "2026-11-12"
 },
 "guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "d3c39ca487c89f33",
+"hash": "faf78aac0cadb035",
 "date": "2026-11-12"
 },
 "guides/translate-telegram-messages-on-pc/index.html": {
-"hash": "c2c3afa6573edd48",
+"hash": "1344c1f742197241",
 "date": "2026-11-12"
 },
 "guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "6f9652138b08b637",
+"hash": "2b33e3ea9d5fdcd2",
 "date": "2026-11-12"
 },
 "guides/whatsapp-on-two-phones/index.html": {
-"hash": "929be9b868e2bc9c",
+"hash": "b0ff7d0618277f19",
 "date": "2026-11-12"
 },
 "how-to-buy/index.html": {
-"hash": "843930b59032e4d4",
+"hash": "5745acd6a6d3ec14",
 "date": "2026-11-12"
 },
 "index.html": {
-"hash": "a05123153ad4baca",
+"hash": "0b2df5cc1ead3cd8",
 "date": "2026-11-12"
 },
 "instagram-dm-translator/index.html": {
-"hash": "4da47aeb28bd7cad",
+"hash": "7384cf1a1065103e",
 "date": "2026-11-12"
 },
 "is-it-safe/index.html": {
-"hash": "fee1ba98afa43c92",
+"hash": "c5739fa843c1a425",
 "date": "2026-11-12"
 },
 "messenger-translator/index.html": {
-"hash": "4195a00097c54edd",
+"hash": "2410d3d4b33b710f",
 "date": "2026-11-12"
 },
 "multiple-telegram-accounts/index.html": {
-"hash": "a200c50777932cae",
+"hash": "2528554b6abdde78",
 "date": "2026-11-12"
 },
 "multiple-whatsapp-accounts/index.html": {
-"hash": "19db7f301c517823",
+"hash": "11ac40b80a1900bf",
 "date": "2026-11-12"
 },
 "multiple-whatsapp-business-accounts/index.html": {
-"hash": "2b58d8ee8a3d9e8c",
+"hash": "73557c6992293a47",
 "date": "2026-11-12"
 },
 "pricing/index.html": {
-"hash": "51d060524df84c63",
+"hash": "2129eb8c12d1f2b7",
 "date": "2026-11-12"
 },
 "privacy/index.html": {
-"hash": "6da84cf17a1ac581",
+"hash": "700feef72daf495c",
 "date": "2026-11-12"
 },
 "pt/all-in-one-messenger/index.html": {
-"hash": "ba9e3af6a1651a1e",
+"hash": "7fa5cf79d4d46633",
 "date": "2026-11-12"
 },
 "pt/band-translator/index.html": {
-"hash": "8ffb18521c57468f",
+"hash": "f009a1d89d5fcc12",
 "date": "2026-11-12"
 },
 "pt/compare/index.html": {
-"hash": "9995d8c0f2cb0e5a",
+"hash": "ae0a5acd201f6339",
 "date": "2026-11-12"
 },
 "pt/discord-translator/index.html": {
-"hash": "24cb300920b92e02",
+"hash": "2dda228169bb754c",
 "date": "2026-11-12"
 },
 "pt/download/index.html": {
-"hash": "c1edb7d7e57cbf6c",
+"hash": "fa247481a44c0a5a",
 "date": "2026-11-12"
 },
 "pt/for/clinics/index.html": {
-"hash": "3041177d60db3147",
+"hash": "a4e6215d7a384f9e",
 "date": "2026-11-12"
 },
 "pt/for/exporters/index.html": {
-"hash": "13c51ae7bfd3b21d",
+"hash": "08c105a65987c2fc",
+"date": "2026-11-12"
+},
+"pt/for/marketing/index.html": {
+"hash": "9df9101074050e81",
 "date": "2026-11-12"
 },
 "pt/for/real-estate/index.html": {
-"hash": "6be5e46908fa11db",
+"hash": "f4e4818e84212965",
 "date": "2026-11-12"
 },
 "pt/for/travel/index.html": {
-"hash": "1506e41dd23834bc",
+"hash": "503f94f33ac0cd54",
 "date": "2026-11-12"
 },
 "pt/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "a6eff7e78f4c2f81",
+"hash": "7c3b594533d9eb51",
 "date": "2026-11-12"
 },
 "pt/guides/index.html": {
-"hash": "5ac1549c0712a638",
+"hash": "d4aed3fbf5292c9a",
 "date": "2026-11-12"
 },
 "pt/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "e4dd22aae11d0c97",
+"hash": "372c06e91ce07b69",
 "date": "2026-11-12"
 },
 "pt/guides/translate-telegram-messages-on-pc/index.html": {
-"hash": "fc740ffb3a83c137",
+"hash": "0980aa6b428de4fc",
 "date": "2026-11-12"
 },
 "pt/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "d8d50bd274c4cf92",
+"hash": "0b89c703b5c3bd4e",
 "date": "2026-11-12"
 },
 "pt/guides/whatsapp-on-two-phones/index.html": {
-"hash": "e695183be01e8fb4",
+"hash": "fbc0e42750640e9f",
 "date": "2026-11-12"
 },
 "pt/how-to-buy/index.html": {
-"hash": "e057b9655b788ff8",
+"hash": "ccf6658cc09850da",
 "date": "2026-11-12"
 },
 "pt/index.html": {
-"hash": "d6235f057799ed60",
+"hash": "15c75992f4093aef",
 "date": "2026-11-12"
 },
 "pt/instagram-dm-translator/index.html": {
-"hash": "15e43555f1110878",
+"hash": "34b8bc5597312960",
 "date": "2026-11-12"
 },
 "pt/is-it-safe/index.html": {
-"hash": "821dc1a9bd0b5100",
+"hash": "09820465483ed4e9",
 "date": "2026-11-12"
 },
 "pt/messenger-translator/index.html": {
-"hash": "44bf5bfc41b471fd",
+"hash": "726d6d396c6070b1",
 "date": "2026-11-12"
 },
 "pt/multiple-telegram-accounts/index.html": {
-"hash": "10bcfb935ea72912",
+"hash": "178e3cea6b4872b1",
 "date": "2026-11-12"
 },
 "pt/multiple-whatsapp-accounts/index.html": {
-"hash": "aa8bff51e0b7b654",
+"hash": "7dfd6fa0e7ed44f1",
 "date": "2026-11-12"
 },
 "pt/multiple-whatsapp-business-accounts/index.html": {
-"hash": "49dca74d4d73ce15",
+"hash": "f4c3eb3b1b457919",
 "date": "2026-11-12"
 },
 "pt/pricing/index.html": {
-"hash": "ff38334f46ae151c",
+"hash": "83c577173cef4138",
 "date": "2026-11-12"
 },
 "pt/rambox-alternative/index.html": {
-"hash": "859f892e6d8b27c8",
+"hash": "a20d3f613b612a4c",
 "date": "2026-11-12"
 },
 "pt/telegram-translator/index.html": {
-"hash": "27125056d751f970",
+"hash": "093064372dfb6eea",
 "date": "2026-11-12"
 },
 "pt/translate/portuguese-english/index.html": {
-"hash": "f55a5a99287fb1ab",
+"hash": "32fcd265f8b17a0b",
 "date": "2026-11-12"
 },
 "pt/whatsapp-translator/index.html": {
-"hash": "a9ddbe28669c6ca9",
+"hash": "6876876ecc4e869d",
 "date": "2026-11-12"
 },
 "rambox-alternative/index.html": {
-"hash": "cbd8300014fa39a0",
+"hash": "dda038aedc82e729",
 "date": "2026-11-12"
 },
 "refund/index.html": {
-"hash": "b67998bc026624e7",
+"hash": "82db850a86c47727",
 "date": "2026-11-12"
 },
 "ru/all-in-one-messenger/index.html": {
-"hash": "848fc1168952de89",
+"hash": "5bcd9bea6b9cf52d",
 "date": "2026-11-12"
 },
 "ru/band-translator/index.html": {
-"hash": "1b1aef56b0d86d4b",
+"hash": "c800ac1ac3e2494c",
 "date": "2026-11-12"
 },
 "ru/compare/index.html": {
-"hash": "c31b692e38e9d8f9",
+"hash": "86c94f93604eea48",
 "date": "2026-11-12"
 },
 "ru/discord-translator/index.html": {
-"hash": "5484fc820476099f",
+"hash": "84149b43b267d566",
 "date": "2026-11-12"
 },
 "ru/download/index.html": {
-"hash": "031fa3d5ffedd998",
+"hash": "434e8f257492d6d9",
 "date": "2026-11-12"
 },
 "ru/for/clinics/index.html": {
-"hash": "93ade8d7d7de4227",
+"hash": "8904b1f8c717555f",
 "date": "2026-11-12"
 },
 "ru/for/exporters/index.html": {
-"hash": "08c9bfc4f6c47c92",
+"hash": "d7774a5faad52fd9",
+"date": "2026-11-12"
+},
+"ru/for/marketing/index.html": {
+"hash": "6dc4b293a2548c10",
 "date": "2026-11-12"
 },
 "ru/for/real-estate/index.html": {
-"hash": "f6e01de8c88da8d9",
+"hash": "72cccc876b48d0f9",
 "date": "2026-11-12"
 },
 "ru/for/travel/index.html": {
-"hash": "f1ab408e8acc7a90",
+"hash": "44327aed3929b184",
 "date": "2026-11-12"
 },
 "ru/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "056fb1cf7837319b",
+"hash": "8fed2feed6956c09",
 "date": "2026-11-12"
 },
 "ru/guides/index.html": {
-"hash": "2de6d992d9971a53",
+"hash": "5c55bafc1614c857",
 "date": "2026-11-12"
 },
 "ru/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "220fc34e2fd14579",
+"hash": "d6c611b95169fbfd",
 "date": "2026-11-12"
 },
 "ru/guides/translate-telegram-messages-on-pc/index.html": {
-"hash": "93c17a7a95bd84bb",
+"hash": "f20c39aae7a8170e",
 "date": "2026-11-12"
 },
 "ru/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "c3883b8eb2511cbd",
+"hash": "71bf3fc96765574e",
 "date": "2026-11-12"
 },
 "ru/guides/whatsapp-on-two-phones/index.html": {
-"hash": "2ea0188788f19037",
+"hash": "ef22359961a88a2d",
 "date": "2026-11-12"
 },
 "ru/how-to-buy/index.html": {
-"hash": "79039286e0525c8d",
+"hash": "62c4e9a606211f1c",
 "date": "2026-11-12"
 },
 "ru/index.html": {
-"hash": "eb60777bfb2ce537",
+"hash": "01aa767f68034532",
 "date": "2026-11-12"
 },
 "ru/instagram-dm-translator/index.html": {
-"hash": "33b8e8d419317a0e",
+"hash": "78c62f90e698c881",
 "date": "2026-11-12"
 },
 "ru/is-it-safe/index.html": {
-"hash": "9582f9aedbc7bd0c",
+"hash": "1d01549ad273b767",
 "date": "2026-11-12"
 },
 "ru/messenger-translator/index.html": {
-"hash": "fe9ad7ed10853498",
+"hash": "ba321946ece892d2",
 "date": "2026-11-12"
 },
 "ru/multiple-telegram-accounts/index.html": {
-"hash": "7d16f9d73d8b9323",
+"hash": "82ef555a9bcfe766",
 "date": "2026-11-12"
 },
 "ru/multiple-whatsapp-accounts/index.html": {
-"hash": "f2d14d0ca1b5c461",
+"hash": "0082c53831df5f25",
 "date": "2026-11-12"
 },
 "ru/multiple-whatsapp-business-accounts/index.html": {
-"hash": "b2a2ff78fae841ef",
+"hash": "d31cfc1b376caafd",
 "date": "2026-11-12"
 },
 "ru/pricing/index.html": {
-"hash": "34fc9ddb8293ecf8",
+"hash": "fd3f1c4f38253b46",
 "date": "2026-11-12"
 },
 "ru/rambox-alternative/index.html": {
-"hash": "e1d9121dd6080269",
+"hash": "23662757ad942bde",
 "date": "2026-11-12"
 },
 "ru/telegram-translator/index.html": {
-"hash": "c3f8b82cceb465d6",
+"hash": "416cf7fdab9fe5a5",
 "date": "2026-11-12"
 },
 "ru/translate/russian-english/index.html": {
-"hash": "4ef99de787e51666",
+"hash": "a975999727d0f949",
 "date": "2026-11-12"
 },
 "ru/whatsapp-translator/index.html": {
-"hash": "04076e438b18f759",
+"hash": "6e6c341888ef0a19",
 "date": "2026-11-12"
 },
 "telegram-translator/index.html": {
-"hash": "68d45cd0d68ffa2e",
+"hash": "6715aa19418d1251",
 "date": "2026-11-12"
 },
 "terms/index.html": {
-"hash": "5149b75e34d2758e",
+"hash": "0bd48204fa0252a2",
 "date": "2026-11-12"
 },
 "tr/all-in-one-messenger/index.html": {
-"hash": "0bef2d013e02e5f8",
+"hash": "8e85914fe965693b",
 "date": "2026-11-12"
 },
 "tr/band-translator/index.html": {
-"hash": "1571317732916d0d",
+"hash": "0acc1cb592004af2",
 "date": "2026-11-12"
 },
 "tr/compare/index.html": {
-"hash": "5c5e9fd90ed478d1",
+"hash": "5f0e5e0ef0f05c53",
 "date": "2026-11-12"
 },
 "tr/discord-translator/index.html": {
-"hash": "a752197247a3d131",
+"hash": "0001e3c8bcee8dfa",
 "date": "2026-11-12"
 },
 "tr/download/index.html": {
-"hash": "3eba329a5c223036",
+"hash": "173595576727c56b",
 "date": "2026-11-12"
 },
 "tr/for/clinics/index.html": {
-"hash": "4459081c46a7f995",
+"hash": "de69d661564b8a7f",
 "date": "2026-11-12"
 },
 "tr/for/exporters/index.html": {
-"hash": "3e14b1075e9a2282",
+"hash": "9125831a790cd481",
+"date": "2026-11-12"
+},
+"tr/for/marketing/index.html": {
+"hash": "ff19ab38bdcc5b8e",
 "date": "2026-11-12"
 },
 "tr/for/real-estate/index.html": {
-"hash": "72cdc8dafcdcd1ae",
+"hash": "7e20fa775a8fbd67",
 "date": "2026-11-12"
 },
 "tr/for/travel/index.html": {
-"hash": "6a65a827b7f45cc3",
+"hash": "d14e4647dd5d48a1",
 "date": "2026-11-12"
 },
 "tr/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "d17d7ed7e07c8d4b",
+"hash": "506c6bd084c0475f",
 "date": "2026-11-12"
 },
 "tr/guides/index.html": {
-"hash": "0bbd3ba6c28e10b5",
+"hash": "496bef506cca9d9e",
 "date": "2026-11-12"
 },
 "tr/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "6bd49316465ab6a0",
+"hash": "860aff6bfb0e2023",
 "date": "2026-11-12"
 },
 "tr/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "71fe8b175a09ede8",
+"hash": "a9cbe295e7e87ed2",
 "date": "2026-11-12"
 },
 "tr/how-to-buy/index.html": {
-"hash": "9617a20eac8ce171",
+"hash": "f95fcfc2e1172c8a",
 "date": "2026-11-12"
 },
 "tr/index.html": {
-"hash": "0641da1972eec661",
+"hash": "131d4453ccba82bd",
 "date": "2026-11-12"
 },
 "tr/instagram-dm-translator/index.html": {
-"hash": "d81831822c0eb223",
+"hash": "c6202ea01c9d0299",
 "date": "2026-11-12"
 },
 "tr/is-it-safe/index.html": {
-"hash": "5ada9f88896bdb78",
+"hash": "0cd121df25eb39ca",
 "date": "2026-11-12"
 },
 "tr/messenger-translator/index.html": {
-"hash": "3d9a08728afb85b4",
+"hash": "ae1b13ac1c565024",
 "date": "2026-11-12"
 },
 "tr/multiple-telegram-accounts/index.html": {
-"hash": "f5a0b0f1a9fa8df1",
+"hash": "05ae18ddd8d51ec5",
 "date": "2026-11-12"
 },
 "tr/multiple-whatsapp-accounts/index.html": {
-"hash": "f52472a19e8feb68",
+"hash": "607a1d75c91cca0c",
 "date": "2026-11-12"
 },
 "tr/multiple-whatsapp-business-accounts/index.html": {
-"hash": "a368e8508ee097d3",
+"hash": "7f0e0d1fec4ad860",
 "date": "2026-11-12"
 },
 "tr/pricing/index.html": {
-"hash": "fb143a1b8a49bb69",
+"hash": "85eec7f0c1f98f77",
 "date": "2026-11-12"
 },
 "tr/rambox-alternative/index.html": {
-"hash": "ed408ebf4b5ea598",
+"hash": "c4b8bb72e2d2b827",
 "date": "2026-11-12"
 },
 "tr/telegram-translator/index.html": {
-"hash": "7640adcfc0771eab",
+"hash": "6b202cd132792dca",
 "date": "2026-11-12"
 },
 "tr/translate/turkish-english/index.html": {
-"hash": "1735f569bc2d53b7",
+"hash": "186b5b8ab1ff6a9b",
 "date": "2026-11-12"
 },
 "tr/whatsapp-translator/index.html": {
-"hash": "78e0f9ea5577df5f",
+"hash": "374edeb8f679076f",
 "date": "2026-11-12"
 },
 "translate/arabic-english/index.html": {
-"hash": "05d48f30ffb27037",
+"hash": "aeb38be20eb7a638",
 "date": "2026-11-12"
 },
 "translate/chinese-english/index.html": {
-"hash": "7453baa7ebc9a817",
+"hash": "14227d96422dbd2d",
 "date": "2026-11-12"
 },
 "translate/french-english/index.html": {
-"hash": "978fe5bd510db3e5",
+"hash": "64ec9106cbd14e98",
 "date": "2026-11-12"
 },
 "translate/indonesian-english/index.html": {
-"hash": "ffdcd3de4f86e929",
+"hash": "98e5ed86f48c30b8",
 "date": "2026-11-12"
 },
 "translate/korean-english/index.html": {
-"hash": "ab43a6caa22f105b",
+"hash": "025df0bbc3d18298",
 "date": "2026-11-12"
 },
 "translate/portuguese-english/index.html": {
-"hash": "c0fcbd6dc466b928",
+"hash": "8c20d4a1bfb0f26a",
 "date": "2026-11-12"
 },
 "translate/russian-english/index.html": {
-"hash": "7ad160fde2792017",
+"hash": "80e2ec24072f4d5e",
 "date": "2026-11-12"
 },
 "translate/spanish-english/index.html": {
-"hash": "0748fd5dff34b598",
+"hash": "2153f65a1f797d49",
 "date": "2026-11-12"
 },
 "translate/turkish-english/index.html": {
-"hash": "4c7a709d04268d28",
+"hash": "ab1ca1d82cd5fcf5",
 "date": "2026-11-12"
 },
 "translate/vietnamese-english/index.html": {
-"hash": "11751cd43bf129b9",
+"hash": "7e57705b70f3bdd8",
 "date": "2026-11-12"
 },
 "whatsapp-translator/index.html": {
-"hash": "c112c7f34f68d9a4",
+"hash": "c6c513bfe4e8f1d6",
 "date": "2026-11-12"
 },
 "zh-hant/all-in-one-messenger/index.html": {
-"hash": "62907d12a22584ac",
+"hash": "621dbb15ec615f7b",
 "date": "2026-11-12"
 },
 "zh-hant/band-translator/index.html": {
-"hash": "e98505c240113096",
+"hash": "6232c241a3d5df42",
 "date": "2026-11-12"
 },
 "zh-hant/compare/index.html": {
-"hash": "f49623b368b41d84",
+"hash": "4051431c4670c8c1",
 "date": "2026-11-12"
 },
 "zh-hant/discord-translator/index.html": {
-"hash": "08b624caccb65bac",
+"hash": "9c46154243aec5b8",
 "date": "2026-11-12"
 },
 "zh-hant/download/index.html": {
-"hash": "1efae8b55e2644a2",
+"hash": "69ee6c52f04e52df",
 "date": "2026-11-12"
 },
 "zh-hant/for/clinics/index.html": {
-"hash": "2d001c286b144978",
+"hash": "ce0ddf1b37994c89",
 "date": "2026-11-12"
 },
 "zh-hant/for/exporters/index.html": {
-"hash": "bb43c561207b285d",
+"hash": "0e0a277a0dc6bca0",
+"date": "2026-11-12"
+},
+"zh-hant/for/marketing/index.html": {
+"hash": "59957e718aef2afa",
 "date": "2026-11-12"
 },
 "zh-hant/for/real-estate/index.html": {
-"hash": "d94724729bdc886b",
+"hash": "68556a243c6e7058",
 "date": "2026-11-12"
 },
 "zh-hant/for/travel/index.html": {
-"hash": "e3f822ced023a6b0",
+"hash": "a169da9161cf1401",
 "date": "2026-11-12"
 },
 "zh-hant/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "465a3b239fb98eae",
+"hash": "2b72976160614ed2",
 "date": "2026-11-12"
 },
 "zh-hant/guides/best-whatsapp-multi-account-software/index.html": {
-"hash": "e4de949519e14e65",
+"hash": "1856039d1ee535cb",
 "date": "2026-11-12"
 },
 "zh-hant/guides/foreign-trade-whatsapp-tips/index.html": {
-"hash": "7723201113405882",
+"hash": "56bbb317977af5bb",
 "date": "2026-11-12"
 },
 "zh-hant/guides/index.html": {
-"hash": "ebe9023b8cb46ac4",
+"hash": "1d49c9c495ff6925",
 "date": "2026-11-12"
 },
 "zh-hant/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "09b372867bdadd23",
+"hash": "fcd3ead3c6388200",
 "date": "2026-11-12"
 },
 "zh-hant/guides/translate-telegram-messages-on-pc/index.html": {
-"hash": "d97ce173e9c97b3a",
+"hash": "fb19e255552bff71",
 "date": "2026-11-12"
 },
 "zh-hant/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "97e8cdef3e6d067f",
+"hash": "8e38d13811b4d6d9",
 "date": "2026-11-12"
 },
 "zh-hant/guides/whatsapp-auto-translate-setup/index.html": {
-"hash": "a6b887aee08a55bb",
+"hash": "61440669516b7baa",
 "date": "2026-11-12"
 },
 "zh-hant/guides/whatsapp-on-two-phones/index.html": {
-"hash": "9ba54fd5de2185a4",
+"hash": "1f95c1835a2716f9",
 "date": "2026-11-12"
 },
 "zh-hant/guides/whatsapp-translation-plugin-vs-app/index.html": {
-"hash": "6937f4b3ea63bb57",
+"hash": "c1c739d867029fe2",
 "date": "2026-11-12"
 },
 "zh-hant/how-to-buy/index.html": {
-"hash": "323eb8fc74fd1c52",
+"hash": "259a80f9a76d6223",
 "date": "2026-11-12"
 },
 "zh-hant/index.html": {
-"hash": "8d44e0f9eaf6855a",
+"hash": "06e666e11b7b3e1d",
 "date": "2026-11-12"
 },
 "zh-hant/instagram-dm-translator/index.html": {
-"hash": "55115c2b1be3eacd",
+"hash": "3c9e5e2ddc0cda38",
 "date": "2026-11-12"
 },
 "zh-hant/is-it-safe/index.html": {
-"hash": "fe4a25d7b0bc4987",
+"hash": "3393e3f7e7999a78",
 "date": "2026-11-12"
 },
 "zh-hant/messenger-translator/index.html": {
-"hash": "e1f1140c5d0a3bc6",
+"hash": "9eb504b1c6e8f82f",
 "date": "2026-11-12"
 },
 "zh-hant/multiple-telegram-accounts/index.html": {
-"hash": "c1717351cdeaa203",
+"hash": "353b2616fdd66739",
 "date": "2026-11-12"
 },
 "zh-hant/multiple-whatsapp-accounts/index.html": {
-"hash": "8209ccb55a14f743",
+"hash": "aea6165a2a008e09",
 "date": "2026-11-12"
 },
 "zh-hant/multiple-whatsapp-business-accounts/index.html": {
-"hash": "0c1151f60552f4b3",
+"hash": "1c4a44559e1df33b",
 "date": "2026-11-12"
 },
 "zh-hant/pricing/index.html": {
-"hash": "40cf3cac8cb3254a",
+"hash": "03d98cef2116dda7",
 "date": "2026-11-12"
 },
 "zh-hant/rambox-alternative/index.html": {
-"hash": "ce9997891ed546dd",
+"hash": "81e9643e12a5f69c",
 "date": "2026-11-12"
 },
 "zh-hant/telegram-translator/index.html": {
-"hash": "629c0b8a4741f4fe",
+"hash": "b48d1dea7ceb3526",
 "date": "2026-11-12"
 },
 "zh-hant/translate/chinese-arabic/index.html": {
-"hash": "350cb07b957df9b5",
+"hash": "f08dbdf9b9f3bbc2",
 "date": "2026-11-12"
 },
 "zh-hant/translate/chinese-english/index.html": {
-"hash": "60438d28c5bb9ef0",
+"hash": "560b6c258577f361",
 "date": "2026-11-12"
 },
 "zh-hant/translate/chinese-portuguese/index.html": {
-"hash": "da9ad6135193ca0c",
+"hash": "0ac83c734c9b7370",
 "date": "2026-11-12"
 },
 "zh-hant/translate/chinese-russian/index.html": {
-"hash": "1e93e90c524e5853",
+"hash": "7ecae3d5fd58d908",
 "date": "2026-11-12"
 },
 "zh-hant/translate/chinese-spanish/index.html": {
-"hash": "1bfc200d44f39867",
+"hash": "3e2ca857aae8c7d8",
 "date": "2026-11-12"
 },
 "zh-hant/whatsapp-translator/index.html": {
-"hash": "6a1dad077fd8a901",
+"hash": "8d2a48e3ddf32178",
 "date": "2026-11-12"
 },
 "zh/all-in-one-messenger/index.html": {
-"hash": "9147539cacbb5c07",
+"hash": "76f5861fe395b72b",
 "date": "2026-11-12"
 },
 "zh/band-translator/index.html": {
-"hash": "6ab455993cccd922",
+"hash": "4bf601003e253bfd",
 "date": "2026-11-12"
 },
 "zh/compare/index.html": {
-"hash": "e78517cdb6f94d76",
+"hash": "66c2fb45389a3ef7",
 "date": "2026-11-12"
 },
 "zh/discord-translator/index.html": {
-"hash": "61a3830561aff4a5",
+"hash": "212058a142dde013",
 "date": "2026-11-12"
 },
 "zh/download/index.html": {
-"hash": "8a6fa04656769665",
+"hash": "56f4b535198fef66",
 "date": "2026-11-12"
 },
 "zh/for/clinics/index.html": {
-"hash": "12f3e1e8d009a52c",
+"hash": "2cf46521f38d6449",
 "date": "2026-11-12"
 },
 "zh/for/exporters/index.html": {
-"hash": "9a8998ba7f3d5a5d",
+"hash": "412031221574afa6",
+"date": "2026-11-12"
+},
+"zh/for/marketing/index.html": {
+"hash": "3e77cc83e9b8d553",
 "date": "2026-11-12"
 },
 "zh/for/real-estate/index.html": {
-"hash": "ca0d093b8ace7bf2",
+"hash": "8f1f7ac002c2801b",
 "date": "2026-11-12"
 },
 "zh/for/travel/index.html": {
-"hash": "bafce6914350ee4c",
+"hash": "da845bff6f1b6b06",
 "date": "2026-11-12"
 },
 "zh/guides/best-all-in-one-messenger-apps/index.html": {
-"hash": "94284fd98cd59d8c",
+"hash": "e642f30c1563feb1",
 "date": "2026-11-12"
 },
 "zh/guides/best-whatsapp-multi-account-software/index.html": {
-"hash": "b9e403346e8f404a",
+"hash": "1baeffa59151bfa9",
 "date": "2026-11-12"
 },
 "zh/guides/foreign-trade-whatsapp-tips/index.html": {
-"hash": "f75dbfeae093d525",
+"hash": "b65641d64edb92cb",
 "date": "2026-11-12"
 },
 "zh/guides/index.html": {
-"hash": "b7cc0ca0c555700c",
+"hash": "904b2426ed0c95b5",
 "date": "2026-11-12"
 },
 "zh/guides/multiple-whatsapp-accounts-on-pc/index.html": {
-"hash": "3f1bdd5e01951274",
+"hash": "500c8512dfd27546",
 "date": "2026-11-12"
 },
 "zh/guides/translate-telegram-messages-on-pc/index.html": {
-"hash": "bcfce4ef694d0a30",
+"hash": "0a190210ac2ba69a",
 "date": "2026-11-12"
 },
 "zh/guides/translate-whatsapp-messages-on-pc/index.html": {
-"hash": "ed263874d240bf7b",
+"hash": "3ffd5278c356150a",
 "date": "2026-11-12"
 },
 "zh/guides/whatsapp-auto-translate-setup/index.html": {
-"hash": "28aa9380d3a667d4",
+"hash": "92a88bb3cbdcae28",
 "date": "2026-11-12"
 },
 "zh/guides/whatsapp-on-two-phones/index.html": {
-"hash": "f7f9ace72108cd93",
+"hash": "b5c5067d9a4b8d56",
 "date": "2026-11-12"
 },
 "zh/guides/whatsapp-translation-plugin-vs-app/index.html": {
-"hash": "2204e947318c01c2",
+"hash": "906fbba0677c014b",
 "date": "2026-11-12"
 },
 "zh/how-to-buy/index.html": {
-"hash": "d3c1b84749742e2c",
+"hash": "703e5b58a0272dff",
 "date": "2026-11-12"
 },
 "zh/index.html": {
-"hash": "0c55cb64fc2e4b4c",
+"hash": "2bf1b9d9ccacf4f7",
 "date": "2026-11-12"
 },
 "zh/instagram-dm-translator/index.html": {
-"hash": "1d99316cc4d12469",
+"hash": "c428d35edeca00a2",
 "date": "2026-11-12"
 },
 "zh/is-it-safe/index.html": {
-"hash": "9f8c8621ab1e1fdf",
+"hash": "6db8350da9e705f9",
 "date": "2026-11-12"
 },
 "zh/messenger-translator/index.html": {
-"hash": "bce7373a1c2aa244",
+"hash": "3050ec04e775ff57",
 "date": "2026-11-12"
 },
 "zh/multiple-telegram-accounts/index.html": {
-"hash": "f0fb24db10e820c7",
+"hash": "611765792b6becab",
 "date": "2026-11-12"
 },
 "zh/multiple-whatsapp-accounts/index.html": {
-"hash": "d333b5cb44c4c64c",
+"hash": "af13577c94c9a142",
 "date": "2026-11-12"
 },
 "zh/multiple-whatsapp-business-accounts/index.html": {
-"hash": "b176778f6753d5f0",
+"hash": "ffe37869344fd5e6",
 "date": "2026-11-12"
 },
 "zh/pricing/index.html": {
-"hash": "a5cf94650641a954",
+"hash": "85c90d5ddf56a554",
 "date": "2026-11-12"
 },
 "zh/rambox-alternative/index.html": {
-"hash": "e593f2416988934b",
+"hash": "de74d43048ece26b",
 "date": "2026-11-12"
 },
 "zh/telegram-translator/index.html": {
-"hash": "8d0290683b6fd894",
+"hash": "46aa2f2730595852",
 "date": "2026-11-12"
 },
 "zh/translate/chinese-arabic/index.html": {
-"hash": "e895c01d92b8ff68",
+"hash": "870e090e499336ab",
 "date": "2026-11-12"
 },
 "zh/translate/chinese-english/index.html": {
-"hash": "545a760778030d1e",
+"hash": "e874463902eb1ca8",
 "date": "2026-11-12"
 },
 "zh/translate/chinese-portuguese/index.html": {
-"hash": "83e5a2e3e4b91731",
+"hash": "8503b3b582fb62fb",
 "date": "2026-11-12"
 },
 "zh/translate/chinese-russian/index.html": {
-"hash": "2697827991720f01",
+"hash": "9d34357c670f4519",
 "date": "2026-11-12"
 },
 "zh/translate/chinese-spanish/index.html": {
-"hash": "4c7315c782efaca2",
+"hash": "4f7bcefa82e60fbc",
 "date": "2026-11-12"
 },
 "zh/whatsapp-translator/index.html": {
-"hash": "85d954f7f7394416",
+"hash": "18e6f5a07897a756",
 "date": "2026-11-12"
 }
 }

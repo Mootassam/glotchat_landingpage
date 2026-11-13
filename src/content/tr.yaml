@@ -187,6 +187,8 @@ ui:
     phone_h: Telefondan mı bakıyorsunuz?
     phone_p: GlotChat, Windows bilgisayarlar için bir uygulamadır. Bu bağlantıyı kendinize gönderin ve bilgisayarınızda indirin.
     phone_send: Bağlantıyı bilgisayarıma gönder
+    free_h: "GlotChat'i ücretsiz deneyin — risk yok"
+    free: ["Kredi kartı gerekmez", "Tüm özellikler 7 gün ücretsiz", "İptal edilecek bir şey yok"]
     mock:
       downloads: İndirilenler
       done: Tamamlandı
@@ -1051,6 +1053,60 @@ pages:
         h: "Daha yakından bakın"
         items: ["guides/best-all-in-one-messenger-apps", "all-in-one-messenger", "pricing"]
 
+  for/marketing:
+    title: "Pazarlama için GlotChat: Tüm Müşteri Sohbetleri Tek Pencerede"
+    description: Yönettiğiniz her markanın Instagram, Messenger, WhatsApp ve Telegram sohbetlerini tek pencerede yönetin, her ülkeden gelen adaylara kendi dillerinde yanıt verin.
+    short: Pazarlama ve ajanslar
+    nav_sub: Her ülkeden adaylar ve müşteriler
+    icon: 📣
+    og_heading: 'WhatsApp, Instagram ve Messenger ile pazarlama: her aday kendi dilinde yanıt alır'
+    blocks:
+    - type: hero
+      k: Pazarlamacılar, ajanslar ve sosyal medya yöneticileri için
+      h1: Her aday, her marka, her dil — <span class="grad">tek pencerede</span>
+      lead: Reklamlarınız birçok ülkeden insanı WhatsApp'a, Instagram DM'lerine, Messenger'a ve Telegram'a getiriyor. GlotChat yönettiğiniz tüm hesapları yan yana açar ve her sohbeti çevirir; hiçbir aday beklemez, dil yüzünden kaybolmaz.
+      media: video:apps
+      media_alt: GlotChat'te yan yana açık birkaç marka hesabı
+    - type: cards
+      k: Pazarlama ekipleri için
+      h: Daha hızlı yanıt. Daha çok satış.
+      items:
+      - icon: 📣
+        h: Tüm müşteri hesapları bir arada
+        p: Yönettiğiniz her markanın Instagram, Messenger, WhatsApp ve Telegram hesapları — her biri ayrı alanda, kendi girişi ve isteğe bağlı proxy ile.
+      - icon: 🌍
+        h: Adaylarla kendi dillerinde konuşun
+        p: Körfez'de, Latin Amerika'da veya Avrupa'da kampanya mı? Her mesajı kendi dilinizde okuyun, onların dilinde yanıtlayın.
+      - icon: ⚡
+        h: Saniyeler içinde yanıt
+        p: Fiyat, teklif ve sonraki adımlar için hazır yanıtlar — her müşteri için otomatik çevrilir.
+      - icon: 🔔
+        h: Hiçbir adayı kaçırmayın
+        p: Her bildirim hesabı ve markayı gösterir. Hesap başına okunmamış sayısı kimin beklediğini gösterir.
+      - icon: 🎤
+        h: Sesli mesajlar ve ekran görüntüleri
+        p: Adaylar sesli mesaj ve ekran görüntüsü gönderir. Bunları çevrilmiş metin olarak okuyun.
+      - icon: 👥
+        h: Ekibiniz için hazır
+        p: Business paketi 3 bilgisayara kadar sınırsız hesap içerir; ekibiniz aynı kurulumla çalışır.
+    - type: faq
+      k: SSS
+      h: Pazarlama soruları
+      items:
+      - - Birkaç müşteri için Instagram ve Messenger yönetebilir miyim?
+        - Evet. Her müşterinin hesaplarını ayrı hesaplar olarak ekleyin; her birinin kendi girişi, bildirimleri ve isteğe bağlı proxy'si olur. Pro uygulama başına 15 hesap içerir, Business sınırsızdır.
+      - - GlotChat toplu mesaj gönderir mi?
+        - Hayır. GlotChat adaylarınız ve müşterilerinizle gerçek sohbetler içindir, toplu mesaj için değil. Lütfen her sohbet uygulamasının kurallarına uyun.
+      - - Önce gerçek hesaplarımla deneyebilir miyim?
+        - Evet. 7 günlük ücretsiz deneme tüm özellikleri açar; kart ve ödeme gerekmez.
+    - type: related
+      k: Daha fazla
+      h: İlgili
+      items:
+      - instagram-dm-translator
+      - messenger-translator
+      - all-in-one-messenger
+
   for/real-estate:
     title: Emlakçılar için WhatsApp – Çoklu Hesap + Çeviri
     description: Tüm danışmanların WhatsApp numaralarını tek pencerede yönetin, yabancı alıcılara kendi dillerinde yanıt verin — sohbet, sesli not ve belge çevirisi.
@@ -1500,9 +1556,9 @@ pages:
     - type: dl_hero
       k: Ücretsiz indirme · Windows 10 ve 11
       h1: GlotChat'i <span class="grad">Windows için indirin</span>
-      lead: Tüm WhatsApp ve Telegram hesaplarınız tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurun ve tüm özellikleri 7 gün ücretsiz deneyin.
+      lead: "WhatsApp, Telegram, Messenger, Instagram, Discord ve BAND tek pencerede, her mesaj bilgisayarınızda çevrilir. Yaklaşık bir dakikada kurulur — sonra tüm özellikler 7 gün ücretsiz sizin."
       card:
-      - WhatsApp + Telegram hesapları
+      - "6 sohbet uygulaması, çok hesap"
       - Metin, ses ve fotoğraf çevirisi
       - Göndermeden önce “Okuyacağı” kontrolü
       - 7 gün ücretsiz deneme, ödeme yok
